@@ -1,0 +1,25 @@
+{
+  "name": "youngsun-paper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "YOUNGSUN PAPER — Premium Paper Trading & Manufacturing. Global B2B paper solutions with excellence in quality, sustainability, and service.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "deploy": "vite build && gh-pages -d dist",
+    "deploy:build": "vite build"
+  },
+  "homepage": "https://www.youngsunpaper.com",
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "esbuild": "^0.28.1",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

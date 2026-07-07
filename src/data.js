@@ -40,41 +40,41 @@ export const productCategories = [
     id: "package-board",
     title: "Package Board",
     icon: "📦",
-    tagline: "Structural paperboard for packaging that protects, presents, and performs.",
+    tagline: "Durable structural packaging — from rigid boxes to folding cartons.",
     summary:
-      "Grey board, black paper, color card, folding box board, C2S art board, kraft paper, duplex board, and PE coated paper — the full range of rigid and folding packaging substrates. Supplied in sheets or reels, cut to your specification.",
-    image: "/images/hero/background-main-products.png",
-    background: "/images/hero/background-main-products.png",
+      "Your comprehensive source for durable structural packaging. Our extensive range covers Grey Board, Black Cardboard, Folding Box Board (FBB), C2S Art Board, Kraft Paper, and Duplex Board to meet all your rigid box and container needs.",
+    image: "images/hero/background-main-products.png",
+    background: "images/hero/background-main-products.png",
   },
   {
     id: "culture-paper",
     title: "Culture Paper",
     icon: "📄",
-    tagline: "Printing and writing papers for commercial print, publishing, and office use.",
+    tagline: "High-performance surfaces for premium printing and publishing.",
     summary:
-      "Woodfree paper, color offset paper, LWC (lightweight coated), and NCR (carbonless) paper. Smooth, bright, and engineered for sharp print reproduction across offset, digital, and inkjet presses.",
-    image: "/images/products/culture-paper/culture-paper-01.png",
-    background: "/images/products/culture-paper/background-colored-offset-paper-dark.png",
+      "We supply Woodfree Paper, Color Offset Paper, LWC Paper, and NCR Paper, ensuring crisp, consistent results for your brochures, books, and professional stationery.",
+    image: "images/products/culture-paper/culture-paper-01.png",
+    background: "images/products/culture-paper/background-colored-offset-paper-dark.png",
   },
   {
     id: "fancy-paper",
     title: "Fancy Paper",
     icon: "✨",
-    tagline: "Specialty decorative papers that make brands look and feel unmistakable.",
+    tagline: "Curated textures for high-end luxury branding.",
     summary:
-      "Soft-touch, leather-embossed, pearlescent, textured embossed, label paper, and tracing paper — tactile, visual, and memorable. Used by luxury brands, designers, and premium packaging converters worldwide.",
-    image: "/images/products/fancy-paper/fancy-paper-overview.png",
-    background: "/images/products/fancy-paper/background-hangtag-section-clean.png",
+      "Explore our specialized collection, including Soft Touch, Leather, Pearlescent, and Embossed papers, as well as dedicated Label papers for distinctive, premium design projects.",
+    image: "images/products/fancy-paper/fancy-paper-overview.png",
+    background: "images/products/fancy-paper/background-hangtag-section-clean.png",
   },
   {
     id: "food-packaging",
     title: "Food Packaging Paper",
     icon: "🍽️",
-    tagline: "Food-safe papers engineered for contact, barrier, and heat-seal applications.",
+    tagline: "Safe, food-grade solutions for culinary and beverage applications.",
     summary:
-      "Cup paper, greaseproof paper, and silicone coated paper — compliant with FDA and EU food-contact regulations. Designed for hot cups, cold cups, baking, wrapping, and takeaway packaging.",
-    image: "/images/products/food-packaging/food-packaging-paper-01.png",
-    background: "/images/products/food-packaging/food-packaging-paper-detail.png",
+      "Our selection features Cup Paper, Greaseproof Paper, and Silicone Coated Paper, specifically engineered for hygiene, moisture resistance, and reliable food safety.",
+    image: "images/products/food-packaging/food-packaging-paper-01.png",
+    background: "images/products/food-packaging/food-packaging-paper-detail.png",
   },
 ];
 
@@ -118,7 +118,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Recycled", "ISO 14001"],
     keywords: ["grey board", "grey chipboard", "recycled greyboard", "rigid box board", "bookbinding board", "puzzle board"],
-    image: "/images/products/package-board/package-board-01.png",
+    image: "images/products/package-board/package-board-01.png",
   },
   "black-paper": {
     id: "black-paper",
@@ -145,7 +145,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 14001"],
     keywords: ["black paper", "black card stock", "through-dyed paper", "black cardboard", "luxury black paper", "core-dyed black board"],
-    image: "/images/products/package-board/black-paper-detail.png",
+    image: "images/products/package-board/black-paper-detail.png",
   },
   "color-card-paper": {
     id: "color-card-paper",
@@ -172,7 +172,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["color card paper", "colored cardboard", "solid color cardstock", "colored paper board", "Pantone paper", "craft cardstock"],
-    image: "/images/products/culture-paper/colored-offset-paper-product-1.png",
+    image: "images/products/culture-paper/colored-offset-paper-product-1.png",
   },
   "folding-box-board": {
     id: "folding-box-board",
@@ -199,7 +199,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001", "FDA-compliant grades"],
     keywords: ["folding box board", "FBB", "GC1 board", "carton board", "pharma packaging board", "cosmetic box board"],
-    image: "/images/products/package-board/package-board-02.png",
+    image: "images/products/package-board/package-board-02.png",
   },
   "c2s-art-board": {
     id: "c2s-art-board",
@@ -226,7 +226,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["C2S art board", "coated art card", "SBS board", "art card paper", "premium card stock", "double-coated board"],
-    image: "/images/products/package-board/white-woodfree-paper-detail.png",
+    image: "images/products/package-board/white-woodfree-paper-detail.png",
   },
   "kraft-paper": {
     id: "kraft-paper",
@@ -253,7 +253,7 @@ export const subProducts = {
     ],
     certifications: ["FSC 100%", "PEFC", "ISO 9001"],
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
-    image: "/images/products/package-board/product-kraft-paper.png",
+    image: "images/products/package-board/product-kraft-paper.png",
   },
   "duplex-board": {
     id: "duplex-board",
@@ -280,7 +280,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Recycled", "ISO 9001"],
     keywords: ["duplex board", "white-lined chipboard", "WLC", "coated duplex board", "grey back board", "FMCG carton board"],
-    image: "/images/products/package-board/duplex-board.png",
+    image: "images/products/package-board/duplex-board.png",
   },
   "pe-coated-paper": {
     id: "pe-coated-paper",
@@ -307,34 +307,7 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix"],
     keywords: ["PE coated paper", "polyethylene coated paper", "paper cup stock", "PE coated board", "heat seal paper", "food-grade coated paper"],
-    image: "/images/products/package-board/pe-coated-paper.png",
-  },
-  "c1s-ivory-board": {
-    id: "c1s-ivory-board",
-    name: "C1S Ivory Board",
-    category: "package-board",
-    tagline: "Coated-one-side ivory board with bright white surface and high bulk — ideal for premium folding cartons and graphic packaging.",
-    description:
-      "C1S (Coated One Side) Ivory Board — also known as ivory board, SBB (Solid Bleached Board), or GC1 — is a high-bulk paperboard with a bright white coated surface on the top side and an uncoated cream or white reverse. The single-side coating delivers excellent print reproduction for offset, UV, and digital printing, while the uncoated reverse provides stiffness and a natural feel. It is the go-to board for premium folding cartons in cosmetics, pharmaceuticals, electronics, and dry food packaging. Also used for greeting cards, book covers, and high-end promotional materials.",
-    specs: [
-      "Grammage: 200 – 400 gsm",
-      "Coating: Single-side coated (C1S), gloss or matt",
-      "Brightness: ISO 90%+ (coated side)",
-      "Bulk: ≥ 1.3 cm³/g (high bulk for stiffness)",
-      "Format: Sheets (standard & custom sizes), reels",
-      "Food-grade options available",
-    ],
-    applications: [
-      "Premium folding cartons — cosmetics, pharma, electronics",
-      "Dry food packaging — cereal, biscuit, tea cartons",
-      "Greeting cards and postcards",
-      "Book covers and dust jackets",
-      "Promotional folders and presentation materials",
-      "Display packaging and shelf-ready trays",
-    ],
-    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["C1S ivory board", "ivory board", "SBB board", "GC1 board", "coated one side board", "premium carton board"],
-    image: "/images/products/package-board/folding-box-board.png",
+    image: "images/products/package-board/pe-coated-paper.png",
   },
   "art-paper": {
     id: "art-paper",
@@ -361,7 +334,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["art paper", "C2S coated paper", "coated art paper", "woodfree coated paper", "gloss art paper", "matt art paper"],
-    image: "/images/products/culture-paper/culture-paper-01.png",
+    image: "images/products/culture-paper/culture-paper-01.png",
   },
 
   // ========================
@@ -392,7 +365,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9706 (archival)", "ISO 9001"],
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
-    image: "/images/products/culture-paper/culture-paper-01.png",
+    image: "images/products/culture-paper/culture-paper-01.png",
   },
   "color-offset-paper": {
     id: "color-offset-paper",
@@ -419,7 +392,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["color offset paper", "colored uncoated paper", "tinted offset", "colored printing paper", "dyed paper", "offset color paper"],
-    image: "/images/products/culture-paper/colored-offset-paper-product-1.png",
+    image: "images/products/culture-paper/colored-offset-paper-product-1.png",
   },
   "lwc-paper": {
     id: "lwc-paper",
@@ -446,7 +419,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "PEFC", "ISO 9001"],
     keywords: ["LWC paper", "lightweight coated paper", "magazine paper", "catalog paper", "low grammage coated", "heatset web paper"],
-    image: "/images/products/culture-paper/culture-paper-02.png",
+    image: "images/products/culture-paper/culture-paper-02.png",
   },
   "ncr-paper": {
     id: "ncr-paper",
@@ -473,34 +446,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
-    image: "/images/products/culture-paper/culture-paper-applications.png",
-  },
-  "offset-paper": {
-    id: "offset-paper",
-    name: "Offset Paper",
-    category: "culture-paper",
-    tagline: "Uncoated woodfree paper optimized for offset lithography — high bulk, excellent runnability, and clean print fidelity.",
-    description:
-      "Offset paper — also called uncoated offset, woodfree offset, or offset printing paper — is a premium uncoated paper engineered for sheet-fed and web offset presses. It offers high bulk, good opacity, and a smooth, sized surface that holds ink without feathering or show-through. The uncoated surface provides a natural, tactile feel preferred for books, textbooks, notebooks, and commercial printing where readability matters. Available in natural white and high-white shades. Grammages from 50 gsm (lightweight book) to 120 gsm (heavy text). Surface-sized for both conventional and UV offset inks.",
-    specs: [
-      "Grammage: 50 – 120 gsm",
-      "Shades: Natural white / High white (ISO 90–100%)",
-      "Opacity: ≥ 90% at 70 gsm",
-      "Bulk: ≥ 1.2 cm³/g",
-      "Surface: Sized for offset, smooth uncoated finish",
-      "Format: Sheets & reels",
-    ],
-    applications: [
-      "Books and textbooks — text stock",
-      "Notebooks, notepads, and writing pads",
-      "Commercial flyers, leaflets, and newsletters",
-      "Office documents and business stationery",
-      "Diaries and journals",
-      "Educational materials and workbooks",
-    ],
-    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["offset paper", "uncoated offset paper", "woodfree offset", "offset printing paper", "book paper", "text paper"],
-    image: "/images/products/culture-paper/culture-paper-01.png",
+    image: "images/products/culture-paper/culture-paper-applications.png",
   },
   "copy-paper": {
     id: "copy-paper",
@@ -528,7 +474,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["copy paper", "A4 copy paper", "office paper", "printer paper", "multi-purpose paper", "copy paper wholesale"],
-    image: "/images/products/culture-paper/culture-paper-02.png",
+    image: "images/products/culture-paper/culture-paper-02.png",
   },
   "multi-color-bond-paper": {
     id: "multi-color-bond-paper",
@@ -555,66 +501,91 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["multi-color bond paper", "colored bond paper", "color printer paper", "colored office paper", "multi-color printing paper", "color copy paper"],
-    image: "/images/products/culture-paper/colored-offset-paper-product-2.png",
+    image: "images/products/culture-paper/colored-offset-paper-product-2.png",
   },
-  "assorted-color-paper": {
-    id: "assorted-color-paper",
-    name: "Assorted Color Paper (Mixed-Color Reams)",
+  "a4-copy-paper": {
+    id: "a4-copy-paper",
+    name: "A4 Copy Paper",
     category: "culture-paper",
-    tagline: "A full palette in one ream — assorted colors in a single package for creative projects, color-coding, and vibrant everyday printing.",
+    tagline: "Standard A4 office copy paper — bright white, jam-free, and laser/inkjet compatible in bulk packaging for export.",
     description:
-      "Assorted Color Paper — also called Mixed-Color Ream Paper or Rainbow Pack — packages multiple colors together in a single ream or pack. Rather than buying a full ream of each individual color, users get a curated selection of vibrant hues in one convenient package. The paper is smooth-surfaced, compatible with standard printers and copiers, and thick enough to prevent ink bleed-through. This product is especially popular in education, creative studios, offices with color-coded workflows, and craft enthusiasts who need variety without bulk commitment for each color.",
+      "A4 Copy Paper is the universal office paper standard — 210×297mm, 70–80 gsm, high brightness (ISO 92%+). Designed for reliable performance across laser printers, inkjet printers, copiers, and fax machines. Smooth, dust-free surface ensures sharp text, clean graphics, and minimal paper jams. Packaged 500 sheets per ream, 5 or 10 reams per carton. Supplied in container loads to distributors, office supply chains, and government procurement programs worldwide. This is the highest-volume paper grade in global trade.",
     specs: [
-      "Grammage: 70–80 gsm",
-      "Colors per pack: 5–10 assorted colors",
-      "Surface: Smooth, sized for printer compatibility",
-      "Format: A4 / Letter size",
-      "Ink compatibility: Laser and inkjet",
-      "Packaging: 100–500 sheets per pack, assorted colors",
+      "Grammage: 70 / 75 / 80 gsm",
+      "Brightness: ISO 92–100%",
+      "Format: A4 (210×297mm)",
+      "Opacity: ≥ 92% at 80 gsm",
+      "Packaging: 500 sheets/ream, 5–10 reams/carton",
+      "Export carton: Palletized, moisture-barrier wrapped",
     ],
     applications: [
-      "Color-coding documents, folders, and records",
-      "Creative crafts, scrapbooking, and DIY projects",
-      "Making important notices and signs stand out",
-      "School art classes and educational activities",
-      "Office organization and visual management",
-      "Party invitations and seasonal decorations",
+      "Office printing and copying — laser, inkjet, copier",
+      "School and educational procurement",
+      "Government and institutional bulk supply",
+      "Home office and remote work",
+      "Wholesale distribution to office supply chains",
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["assorted color paper", "mixed color paper", "rainbow paper pack", "multi-color ream", "colored craft paper", "color coding paper"],
-    image: "/images/products/culture-paper/colored-offset-paper-product-1.png",
+    keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
+    image: "images/products/culture-paper/culture-paper-02.png",
   },
-  "letter-size-mixed-color-paper": {
-    id: "letter-size-mixed-color-paper",
-    name: "Letter Size Mixed Color Paper",
+  "a4-thermal-paper": {
+    id: "a4-thermal-paper",
+    name: "A4 Thermal Paper",
     category: "culture-paper",
-    tagline: "Letter-sized mixed color sheets with a curated palette of soft tones — easy sorting, no bleed-through, perfect for North American office and study use.",
+    tagline: "A4-sized thermal paper for portable and mobile printing — no ink, no toner, just heat. Ideal for on-the-go professionals.",
     description:
-      "Letter Size Mixed Color Paper is specifically cut to the North American Letter format (216×279mm) and packaged with a curated mix of soft, appealing colors. Designed for everyday office and study use, the colors make it easy to sort and organize different documents by category. The paper is thick enough to prevent ink from bleeding through to the reverse side — a critical requirement for double-sided printing. Compatible with standard laser and inkjet printers, copiers, and multifunction office machines. A best-selling export SKU for customers in the United States, Canada, and Latin America.",
+      "A4 Thermal Paper is a heat-sensitive paper that produces images through direct thermal transfer — no ink cartridges, ribbons, or toner required. Compatible with compact portable thermal printers widely used by field sales teams, logistics coordinators, healthcare workers, and remote professionals. Each sheet is standard A4 size (210×297mm), pre-cut for immediate use. The thermal coating produces sharp black images with good contrast and reasonable archival stability. An innovative solution for printing contracts, invoices, reports, and documents anywhere.",
     specs: [
-      "Grammage: 70–80 gsm",
-      "Size: Letter (216×279mm / 8.5×11 inches)",
-      "Colors: Soft mixed palette (pastels and brights)",
-      "Surface: Smooth, printer-optimized",
-      "Opacity: High — suitable for duplex printing",
-      "Packaging: 500 sheets/ream, mixed colors",
-      "Markets: USA, Canada, Latin America export standard",
+      "Size: A4 (210×297mm)",
+      "Coating: Direct thermal (BPA-free options available)",
+      "Image color: Black",
+      "Compatibility: Portable thermal printers",
+      "Packaging: Pre-cut sheets, boxed or bulk",
+      "No ink/toner required",
     ],
     applications: [
-      "North American office document management",
-      "Student study notes and subject organization",
-      "Color-coded client files and records",
-      "Home office and remote work organization",
-      "Church, school, and nonprofit communications",
-      "Daily bulletins, memos, and interoffice notices",
+      "Portable printing for field sales and service teams",
+      "On-the-spot contracts, invoices, and receipts",
+      "Healthcare patient documents and prescriptions",
+      "Logistics waybills and delivery confirmations",
+      "Remote work and co-working space printing",
+      "Travel and hospitality documentation",
     ],
-    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["letter size color paper", "mixed color letter paper", "8.5x11 colored paper", "US letter color paper", "North American office paper", "letter size assorted colors"],
-    image: "/images/products/culture-paper/letter-size-mixed-color-paper.png",
+    certifications: ["BPA-free grades available", "ISO 9001"],
+    keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
+    image: "images/products/culture-paper/culture-paper-02.png",
+  },
+  "thermal-paper-roll": {
+    id: "thermal-paper-roll",
+    name: "Thermal Paper Roll",
+    category: "culture-paper",
+    tagline: "Small-format thermal paper rolls for POS terminals, receipt printers, and instant photo printers — crisp images, reliable performance.",
+    description:
+      "Thermal Paper Rolls are heat-sensitive paper wound into compact rolls for use in point-of-sale (POS) terminals, credit card terminals, receipt printers, kitchen printers, and mini instant photo printers. Available in standard widths (57mm, 80mm) and various roll diameters. The thermal coating produces sharp, clear prints without ink or toner. BPA-free and phenol-free grades are available for food-service and healthcare applications. A high-volume consumable with consistent global demand from retail, hospitality, banking, and logistics sectors.",
+    specs: [
+      "Width: 57mm / 80mm (standard), custom widths available",
+      "Roll diameter: 30–80mm",
+      "Core size: 12mm / 17mm / 25mm",
+      "Coating: Direct thermal (BPA-free, phenol-free options)",
+      "Image color: Black, high contrast",
+      "Packaging: Shrink-wrapped rolls, carton-packed",
+    ],
+    applications: [
+      "POS receipt printing — retail, restaurants, cafes",
+      "Credit card terminal receipts",
+      "Kitchen order tickets",
+      "Logistics label and barcode printing",
+      "Mini instant photo printers",
+      "ATM and banking transaction records",
+    ],
+    certifications: ["BPA-free grades", "Phenol-free grades", "ISO 9001"],
+    keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
+    image: "images/products/culture-paper/culture-paper-02.png",
   },
 
   // ========================
-  // FANCY PAPER (6 sub-products)
+  // FANCY PAPER (5 sub-products — Tracing Paper moved to Culture)
   // ========================
   "soft-touch-paper": {
     id: "soft-touch-paper",
@@ -641,7 +612,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
-    image: "/images/products/fancy-paper/soft-touch-paper.png",
+    image: "images/products/fancy-paper/soft-touch-paper.png",
   },
   "leather-paper": {
     id: "leather-paper",
@@ -668,7 +639,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "Vegan certified", "ISO 9001"],
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
-    image: "/images/products/fancy-paper/leather-paper.png",
+    image: "images/products/fancy-paper/leather-paper.png",
   },
   "pearlescent-paper": {
     id: "pearlescent-paper",
@@ -695,7 +666,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
-    image: "/images/products/fancy-paper/pearlescent-paper.png",
+    image: "images/products/fancy-paper/pearlescent-paper.png",
   },
   "embossed-paper": {
     id: "embossed-paper",
@@ -722,7 +693,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
-    image: "/images/products/fancy-paper/embossed-paper.png",
+    image: "images/products/fancy-paper/embossed-paper.png",
   },
   "label-paper": {
     id: "label-paper",
@@ -749,12 +720,12 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
-    image: "/images/products/fancy-paper/product-hangtag-paper.png",
+    image: "images/products/fancy-paper/product-hangtag-paper.png",
   },
   "tracing-paper": {
     id: "tracing-paper",
     name: "Tracing Paper",
-    category: "fancy-paper",
+    category: "culture-paper",
     tagline: "Translucent, smooth, and dimensionally stable — the paper that reveals what's beneath.",
     description:
       "Tracing paper — also called transparent paper, translucent paper, or vellum — is a highly refined, greaseproof-like paper treated to achieve a high degree of translucency (typically 50–70% light transmission). It is smooth, strong, and accepts ink, pencil, and toner cleanly without bleeding or feathering. Used for technical drawing, architectural overlay, design sketching, creative stationery, and decorative packaging. Grammages from 45 gsm (fine tracing) to 200 gsm (heavy translucent card). Acid-free archival grades are available for artists and conservators.",
@@ -776,7 +747,7 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
-    image: "/images/products/fancy-paper/product-tracing-paper.png",
+    image: "images/products/fancy-paper/product-tracing-paper.png",
   },
 
   // ========================
@@ -807,7 +778,7 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
-    image: "/images/products/food-packaging/food-packaging-paper-01.png",
+    image: "images/products/food-packaging/food-packaging-paper-01.png",
   },
   "greaseproof-paper": {
     id: "greaseproof-paper",
@@ -834,7 +805,7 @@ export const subProducts = {
     ],
     certifications: ["FDA 21 CFR 176.170", "EU 1935/2004", "PFAS-free certified", "FSC Mix"],
     keywords: ["greaseproof paper", "grease resistant paper", "baking paper", "food wrap paper", "oil proof paper", "PFAS-free food paper"],
-    image: "/images/products/food-packaging/product-greaseproof-paper.png",
+    image: "images/products/food-packaging/product-greaseproof-paper.png",
   },
   "silicone-coated-paper": {
     id: "silicone-coated-paper",
@@ -861,7 +832,7 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
-    image: "/images/products/food-packaging/food-packaging-paper-02.png",
+    image: "images/products/food-packaging/food-packaging-paper-02.png",
   },
 };
 
@@ -877,7 +848,7 @@ export const processingServices = [
     description:
       "Mechanical embossing creates raised relief patterns on paper and board under heat and pressure. We offer a library of standard patterns — linen, felt, canvas, leather-grain, woodgrain — plus custom embossing roller fabrication for brand-specific textures. Compatible with subsequent printing, foil stamping, and die-cutting. Applied to packaging, book covers, hang tags, and luxury stationery.",
     highlights: ["Standard & custom patterns", "Fine to deep relief", "Inline or offline processing"],
-    image: "/images/processing/processing-embossing.png",
+    image: "images/processing/processing-embossing.png",
   },
   {
     id: "die-cutting",
@@ -886,7 +857,7 @@ export const processingServices = [
     description:
       "Precision die-cutting and punching convert paper and board into finished shapes — carton blanks, labels, hang tags, envelopes, and custom profiles. We use flat-bed and rotary die-cutting lines capable of handling grammages from 80 gsm to 800 gsm. Steel-rule dies are fabricated in-house for fast turnaround on custom shapes. Tight registration tolerances ensure consistent results across production runs.",
     highlights: ["Flat-bed & rotary die-cutting", "Steel-rule die fabrication", "Grammage range: 80–800 gsm"],
-    image: "/images/processing/processing-die-cutting-punching.png",
+    image: "images/processing/processing-die-cutting-punching.png",
   },
   {
     id: "printing",
@@ -895,7 +866,7 @@ export const processingServices = [
     description:
       "Offset, flexo, and screen printing services for paper and board products — from single-color branding to full-color process printing. We print on a wide range of substrates including coated paper, uncoated board, kraft paper, and specialty fancy papers. Our press operators ensure color consistency, registration accuracy, and fast drying. Available for product face stock, packaging, labels, and promotional materials.",
     highlights: ["Offset / Flexo / Screen printing", "Up to 6-color + coating", "Color management with Delta E ≤ 2"],
-    image: "/images/processing/processing-printing.png",
+    image: "images/processing/processing-printing.png",
   },
   {
     id: "slitting",
@@ -904,7 +875,7 @@ export const processingServices = [
     description:
       "High-precision slitting and sheeting convert jumbo reels into finished rolls or sheets at exact widths and lengths. Our slitter-rewinders handle web widths up to 2,500 mm with ±0.5 mm width tolerance. Sheeting lines produce cut-size sheets (A4, A3, SRA3, custom) with square edges and accurate count. Essential for converting mill reels into customer-ready formats.",
     highlights: ["Web width up to 2,500 mm", "Width tolerance ±0.5 mm", "Sheets ream-packed or bulk-packed"],
-    image: "/images/processing/processing-slitting-cutting.png",
+    image: "images/processing/processing-slitting-cutting.png",
   },
   {
     id: "lamination",
@@ -913,7 +884,7 @@ export const processingServices = [
     description:
       "Lamination and coating add functional or decorative layers to paper and board — gloss or matt film lamination, soft-touch coating, spot UV varnish, aqueous coating, and PE extrusion coating. These processes enhance durability, moisture resistance, tactile appeal, and visual impact. We offer both thermal and wet lamination for different application requirements.",
     highlights: ["Gloss / Matt / Soft-touch lamination", "PE extrusion coating", "Spot UV & aqueous coating"],
-    image: "/images/processing/processing-lamination-finishing.png",
+    image: "images/processing/processing-lamination-finishing.png",
   },
   {
     id: "export-packing",
@@ -922,7 +893,7 @@ export const processingServices = [
     description:
       "Export-grade packing ensures your paper products arrive in perfect condition — whether shipped by container, air freight, or courier. Standard packing includes moisture-barrier wrapping, edge protectors, palletization, and strapping. Custom labeling, barcoding, and packing lists are prepared to your destination country's requirements. We handle fumigation certificates and ISPM 15 compliance for wooden pallets.",
     highlights: ["Moisture-barrier wrapping", "ISPM 15 pallets", "Custom labeling & barcoding"],
-    image: "/images/processing/processing-export-packing.png",
+    image: "images/processing/processing-export-packing.png",
   },
 ];
 
@@ -946,7 +917,7 @@ export const hero = {
   titleLine1: "Paper Without",
   titleLine2: "Boundaries",
   subtitle:
-    "YOUNGSUN PAPER — Dongguan Banyan Material Co., Ltd. — a trusted paper and board supplier since 2002. 20,000m² workshop, 50,000 tons warehouse stock, 36,000+ tons exported annually. FSC and SGS certified. Four product categories. Reliable delivery worldwide.",
+    "Headquartered in Dongguan, China, Youngsun Group is a leading manufacturer and exporter with over 20 years of industry experience. We specialize in high-quality grey board, black cardboard, and specialty paper, offering extensive expertise in custom paper solutions tailored for luxury brands and high-end packaging needs. Beyond our core manufacturing, we maintain close strategic partnerships with major domestic mills—including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai—allowing us to provide a comprehensive, one-stop sourcing experience for products such as FBB GC1, Art Paper, and Woodfree Paper.",
   ctaPrimary: { label: "Explore Products", href: "#products" },
   ctaSecondary: { label: "Get a Quote", href: "#contact" },
 };

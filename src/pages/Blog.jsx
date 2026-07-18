@@ -26,7 +26,7 @@ export default function Blog() {
       <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
         {posts.map((post) => (
           <Link key={post.id} to={`/blog/${post.id}`} className="subproduct-card" style={{ display: "block", color: "inherit", gridTemplateColumns: "unset" }}>
-            <div className="subproduct-image-wrap" style={{ aspectRatio: "16/10" }}><img src={post.image} alt={post.title} className="subproduct-image" loading="lazy" /></div>
+            <div className="subproduct-image-wrap" style={{ aspectRatio: "16/10" }}><img src={post.image.startsWith('/') ? post.image : '/' + post.image} alt={post.title} className="subproduct-image" loading="lazy" /></div>
             <div className="subproduct-info">
               <span style={{ color: "var(--gold)", fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em" }}>{post.category}</span>
               <h3 style={{ fontSize: 17, marginTop: 6, marginBottom: 6 }}>{post.title}</h3>

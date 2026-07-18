@@ -23,7 +23,7 @@ export default function ProductDetail() {
       <div className="container">
         <Link to="/products" style={{ color: "var(--lime)", fontSize: 13, fontWeight: 700 }}>← {t("Products")}</Link>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, marginTop: 28 }}>
-          <div><img src={`/${p.image}`} alt={p.name} style={{ width: "100%", height: "auto" }} /></div>
+          <div><img src={p.image} alt={p.name} style={{ width: "100%", height: "auto" }} /></div>
           <div>
             <span className="section-label" style={{ color: "var(--lime)" }}>{p.category.replace("-", " ").toUpperCase()}</span>
             <h1 style={{ color: "var(--white)", marginBottom: 12, fontSize: "clamp(28px, 4vw, 40px)" }}>{p.name}</h1>
@@ -57,14 +57,14 @@ function Gallery({ images, productName }) {
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 16 }}>
         {images.map((img, i) => (
           <div key={i} onClick={() => setLightbox(i)} style={{ cursor: "pointer", borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", transition: "transform .2s", aspectRatio: "4/3" }} onMouseEnter={function(e){e.currentTarget.style.transform="scale(1.02)"}} onMouseLeave={function(e){e.currentTarget.style.transform="scale(1)"}}>
-            <img src={`/${img.src}`} alt={img.alt || `${productName} photo ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src={img.src} alt={img.alt || `${productName} photo ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
         ))}
       </div>
       {lightbox !== null && (
         <div onClick={() => setLightbox(null)} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.92)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer" }}>
           <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p - 1 + images.length) % images.length); }} style={{ position: "absolute", left: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1 }}>‹</button>
-          <img src={`/${images[lightbox].src}`} alt={images[lightbox].alt || `${productName} photo ${lightbox+1}`} style={{ maxWidth: "90vw", maxHeight: "90vh", objectFit: "contain" }} />
+          <img src={images[lightbox].src} alt={images[lightbox].alt || `${productName} photo ${lightbox+1}`} style={{ maxWidth: "90vw", maxHeight: "90vh", objectFit: "contain" }} />
           <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p + 1) % images.length); }} style={{ position: "absolute", right: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1 }}>›</button>
           <span style={{ position: "absolute", bottom: 24, color: "rgba(255,255,255,0.5)", fontSize: 13 }}>{lightbox + 1} / {images.length}</span>
         </div>

@@ -43,7 +43,7 @@ export const productCategories = [
     tagline: "Durable structural packaging — from rigid boxes to folding cartons.",
     summary:
       "Your comprehensive source for durable structural packaging. Our extensive range covers Grey Board, Black Cardboard, Folding Box Board (FBB), C2S Art Board, Kraft Paper, and Duplex Board to meet all your rigid box and container needs.",
-    image: "images/products/package-board/package-category-card.jpg",
+    image: "/images/products/package-board/package-category-card.jpg",
     background: "images/products/package-board/package-category-card.jpg",
   },
   {
@@ -53,7 +53,7 @@ export const productCategories = [
     tagline: "High-performance surfaces for premium printing and publishing.",
     summary:
       "We supply Woodfree Paper, Color Offset Paper, LWC Paper, and NCR Paper, ensuring crisp, consistent results for your brochures, books, and professional stationery.",
-    image: "images/products/culture-paper/culture-category-card.jpg",
+    image: "/images/products/culture-paper/culture-category-card.jpg",
     background: "images/products/culture-paper/culture-category-card.jpg",
   },
   {
@@ -63,7 +63,7 @@ export const productCategories = [
     tagline: "Curated textures for high-end luxury branding.",
     summary:
       "Explore our specialized collection, including Soft Touch, Leather, Pearlescent, and Embossed papers, as well as dedicated Label papers for distinctive, premium design projects.",
-    image: "images/products/fancy-paper/fancy-paper-category-card.jpg",
+    image: "/images/products/fancy-paper/fancy-paper-category-card.jpg",
     background: "images/products/fancy-paper/fancy-paper-category-card.jpg",
   },
   {
@@ -73,7 +73,7 @@ export const productCategories = [
     tagline: "Safe, food-grade solutions for culinary and beverage applications.",
     summary:
       "Our selection features Cup Paper, Greaseproof Paper, and Silicone Coated Paper, specifically engineered for hygiene, moisture resistance, and reliable food safety.",
-    image:"images/products/food-packaging/food-packaging-paper-01.jpg",
+    image: "/images/products/food-packaging/food-packaging-paper-01.jpg",
     background: "images/products/food-packaging/food-packaging-paper-detail.jpg",
   },
 ];
@@ -99,7 +99,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "FSC-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging.",
     description:
-      "YOUNGSUN Grey Board is made from 100% post-consumer recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, reels, custom-cut panels and laminated structures for rigid box, bookbinding and stationery production.",
+      "YOUNGSUN Grey Board is made from 100% post-consumer recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, reels, custom-cut panels and laminated structures. For enhanced surface appearance, buyers can choose laminated variants with coated white, uncoated white, colored, kraft, black, gold, silver or specialty facing papers bonded to the grey board base according to the required look and converting process.",
     specs: [
       "Thickness: 0.5 mm – 4.0 mm (500 – 4000 gsm equivalent)",
       "Color: Natural grey / Custom tint available",
@@ -118,59 +118,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Recycled", "ISO 14001"],
     keywords: ["grey board", "grey chipboard", "recycled greyboard", "rigid box board", "bookbinding board", "puzzle board"],
-    image:"images/products/package-board/package-board-01.jpg",
+    image: "/images/products/package-board/grey-board-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-01.jpg",
             "alt": "grey board scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-02.jpg",
             "alt": "grey board scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-03.jpg",
             "alt": "grey board scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-04.jpg",
             "alt": "grey board scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-05.jpg",
             "alt": "grey board scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-06.jpg",
             "alt": "grey board scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-07.jpg",
             "alt": "grey board scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-scene-08.jpg",
             "alt": "grey board scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-photo-01.jpg",
             "alt": "grey board procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-photo-02.jpg",
             "alt": "grey board spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-photo-03.jpg",
             "alt": "grey board design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-photo-04.jpg",
             "alt": "grey board application photo"
       },
       {
-            "src": "images/products/package-board/gallery/grey-board-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/grey-board-photo-05.jpg",
             "alt": "grey board website banner"
       }
 ,
@@ -201,59 +201,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 14001"],
     keywords: ["black paper", "black card stock", "through-dyed paper", "black cardboard", "luxury black paper", "core-dyed black board"],
-    image:"images/products/package-board/black-paper-detail.jpg",
+    image: "/images/products/package-board/black-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-01.jpg",
             "alt": "black paper scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-02.jpg",
             "alt": "black paper scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-03.jpg",
             "alt": "black paper scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-04.jpg",
             "alt": "black paper scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-05.jpg",
             "alt": "black paper scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-06.jpg",
             "alt": "black paper scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-07.jpg",
             "alt": "black paper scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-scene-08.jpg",
             "alt": "black paper scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-photo-01.jpg",
             "alt": "black paper card procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-photo-02.jpg",
             "alt": "black paper card spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-photo-03.jpg",
             "alt": "black paper card design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-photo-04.jpg",
             "alt": "black paper card application photo"
       },
       {
-            "src": "images/products/package-board/gallery/black-paper-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/black-paper-photo-05.jpg",
             "alt": "black paper card website banner"
       }
 ,
@@ -284,59 +284,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["color card paper", "colored cardboard", "solid color cardstock", "colored paper board", "Pantone paper", "craft cardstock"],
-    image:"images/products/culture-paper/colored-offset-paper-product-1.jpg",
+    image: "/images/products/package-board/color-card-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-01.jpg",
             "alt": "color card paper scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-02.jpg",
             "alt": "color card paper scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-03.jpg",
             "alt": "color card paper scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-04.jpg",
             "alt": "color card paper scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-05.jpg",
             "alt": "color card paper scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-06.jpg",
             "alt": "color card paper scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-07.jpg",
             "alt": "color card paper scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-scene-08.jpg",
             "alt": "color card paper scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-photo-01.jpg",
             "alt": "color card paper procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-photo-02.jpg",
             "alt": "color card paper spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-photo-03.jpg",
             "alt": "color card paper design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-photo-04.jpg",
             "alt": "color card paper application photo"
       },
       {
-            "src": "images/products/package-board/gallery/color-card-paper-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/color-card-paper-photo-05.jpg",
             "alt": "color card paper website banner"
       }
 ,
@@ -367,59 +367,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001", "FDA-compliant grades"],
     keywords: ["folding box board", "FBB", "GC1 board", "carton board", "pharma packaging board", "cosmetic box board"],
-    image:"images/products/package-board/package-board-02.jpg",
+    image: "/images/products/package-board/folding-box-board-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-01.jpg",
             "alt": "folding box board scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-02.jpg",
             "alt": "folding box board scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-03.jpg",
             "alt": "folding box board scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-04.jpg",
             "alt": "folding box board scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-05.jpg",
             "alt": "folding box board scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-06.jpg",
             "alt": "folding box board scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-07.jpg",
             "alt": "folding box board scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-scene-08.jpg",
             "alt": "folding box board scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-photo-01.jpg",
             "alt": "folding box board procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-photo-02.jpg",
             "alt": "folding box board spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-photo-03.jpg",
             "alt": "folding box board design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-photo-04.jpg",
             "alt": "folding box board application photo"
       },
       {
-            "src": "images/products/package-board/gallery/folding-box-board-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/folding-box-board-photo-05.jpg",
             "alt": "folding box board website banner"
       }
 ,
@@ -450,59 +450,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["C2S art board", "coated art card", "SBS board", "art card paper", "premium card stock", "double-coated board"],
-    image:"images/products/package-board/white-woodfree-paper-detail.jpg",
+    image: "/images/products/package-board/c2s-art-board-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-01.jpg",
             "alt": "c2s art board card scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-02.jpg",
             "alt": "c2s art board card scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-03.jpg",
             "alt": "c2s art board card scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-04.jpg",
             "alt": "c2s art board card scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-05.jpg",
             "alt": "c2s art board card scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-06.jpg",
             "alt": "c2s art board card scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-07.jpg",
             "alt": "c2s art board card scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-scene-08.jpg",
             "alt": "c2s art board card scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-photo-01.jpg",
             "alt": "c2s art board card procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-photo-02.jpg",
             "alt": "c2s art board card spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-photo-03.jpg",
             "alt": "c2s art board card design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-photo-04.jpg",
             "alt": "c2s art board card application photo"
       },
       {
-            "src": "images/products/package-board/gallery/c2s-art-board-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/c2s-art-board-photo-05.jpg",
             "alt": "c2s art board card website banner"
       }
 ,
@@ -533,59 +533,59 @@ export const subProducts = {
     ],
     certifications: ["FSC 100%", "PEFC", "ISO 9001"],
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
-    image:"images/products/package-board/product-kraft-paper.jpg",
+    image: "/images/products/package-board/kraft-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-01.jpg",
             "alt": "kraft paper scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-02.jpg",
             "alt": "kraft paper scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-03.jpg",
             "alt": "kraft paper scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-04.jpg",
             "alt": "kraft paper scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-05.jpg",
             "alt": "kraft paper scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-06.jpg",
             "alt": "kraft paper scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-07.jpg",
             "alt": "kraft paper scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-scene-08.jpg",
             "alt": "kraft paper scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-photo-01.jpg",
             "alt": "kraft paper procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-photo-02.jpg",
             "alt": "kraft paper spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-photo-03.jpg",
             "alt": "kraft paper design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-photo-04.jpg",
             "alt": "kraft paper application photo"
       },
       {
-            "src": "images/products/package-board/gallery/kraft-paper-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/kraft-paper-photo-05.jpg",
             "alt": "kraft paper website banner"
       }
 ,
@@ -616,59 +616,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Recycled", "ISO 9001"],
     keywords: ["duplex board", "white-lined chipboard", "WLC", "coated duplex board", "grey back board", "FMCG carton board"],
-    image:"images/products/package-board/duplex-board.jpg",
+    image: "/images/products/package-board/duplex-board-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-01.jpg",
             "alt": "duplex board scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-02.jpg",
             "alt": "duplex board scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-03.jpg",
             "alt": "duplex board scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-04.jpg",
             "alt": "duplex board scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-05.jpg",
             "alt": "duplex board scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-06.jpg",
             "alt": "duplex board scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-07.jpg",
             "alt": "duplex board scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-scene-08.jpg",
             "alt": "duplex board scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-photo-01.jpg",
             "alt": "duplex board procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-photo-02.jpg",
             "alt": "duplex board spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-photo-03.jpg",
             "alt": "duplex board design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-photo-04.jpg",
             "alt": "duplex board application photo"
       },
       {
-            "src": "images/products/package-board/gallery/duplex-board-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/duplex-board-photo-05.jpg",
             "alt": "duplex board website banner"
       }
 ,
@@ -699,59 +699,59 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix"],
     keywords: ["PE coated paper", "polyethylene coated paper", "paper cup stock", "PE coated board", "heat seal paper", "food-grade coated paper"],
-    image:"images/products/package-board/pe-coated-paper.jpg",
+    image: "/images/products/package-board/pe-coated-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-01.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-01.jpg",
             "alt": "pe coated paper scene 01 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-02.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-02.jpg",
             "alt": "pe coated paper scene 02 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-03.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-03.jpg",
             "alt": "pe coated paper scene 03 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-04.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-04.jpg",
             "alt": "pe coated paper scene 04 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-05.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-05.jpg",
             "alt": "pe coated paper scene 05 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-06.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-06.jpg",
             "alt": "pe coated paper scene 06 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-07.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-07.jpg",
             "alt": "pe coated paper scene 07 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-scene-08.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-scene-08.jpg",
             "alt": "pe coated paper scene 08 scene"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-photo-01.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-photo-01.jpg",
             "alt": "pe coated paper procurement photo"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-photo-02.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-photo-02.jpg",
             "alt": "pe coated paper spec sample photo"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-photo-03.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-photo-03.jpg",
             "alt": "pe coated paper design hero photo"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-photo-04.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-photo-04.jpg",
             "alt": "pe coated paper application photo"
       },
       {
-            "src": "images/products/package-board/gallery/pe-coated-paper-photo-05.jpg",
+            "src": "/images/products/package-board/gallery/pe-coated-paper-photo-05.jpg",
             "alt": "pe coated paper website banner"
       }
 ,
@@ -782,7 +782,17 @@ export const subProducts = {
     ],
     certifications: ["FSC certified"],
     keywords: ["coated kraft back board", "CKB paperboard supplier", "kraft back folding carton", "beverage packaging board", "frozen food paperboard"],
-    image: "images/products/package-board/ckb-main.jpg",
+    image: "/images/products/package-board/ckb-main.jpg",
+    gallery: [
+      { src: "/images/products/package-board/gallery/01-CBK-Raw-Material-Jumbo-Roll.jpg", alt: "CKB raw material jumbo roll" },
+      { src: "/images/products/package-board/gallery/02-CBK-Spiral-Paper-Tube-Line.jpg", alt: "CKB spiral paper tube line" },
+      { src: "/images/products/package-board/gallery/03-CBK-Flexible-Film-Roll-Core.jpg", alt: "CKB flexible film roll core" },
+      { src: "/images/products/package-board/gallery/04-CBK-Textile-Yarn-Cones.jpg", alt: "CKB textile yarn cones" },
+      { src: "/images/products/package-board/gallery/05-CBK-Tissue-Roll-Cores.jpg", alt: "CKB tissue roll cores" },
+      { src: "/images/products/package-board/gallery/06-CBK-Pallet-Edge-Protectors.jpg", alt: "CKB pallet edge protectors" },
+      { src: "/images/products/package-board/gallery/07-CBK-Fiber-Drums.jpg", alt: "CKB fiber drums" },
+      { src: "/images/products/package-board/gallery/08-CBK-Industrial-Roll-Cores.jpg", alt: "CKB industrial roll cores" },
+    ],
   },
 
   "art-paper": {
@@ -810,11 +820,11 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["art paper", "C2S coated paper", "coated art paper", "woodfree coated paper", "gloss art paper", "matt art paper"],
-    image:"images/products/culture-paper/culture-paper-01.jpg",
+    image: "/images/products/culture-paper/art-paper-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
+      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
+      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
 
@@ -846,59 +856,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9706 (archival)", "ISO 9001"],
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
-    image:"images/products/culture-paper/culture-paper-01.jpg",
+    image: "/images/products/culture-paper/woodfree-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-01.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-01.jpg",
             "alt": "woodfree paper scene 01 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-02.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-02.jpg",
             "alt": "woodfree paper scene 02 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-03.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-03.jpg",
             "alt": "woodfree paper scene 03 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-04.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-04.jpg",
             "alt": "woodfree paper scene 04 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-05.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-05.jpg",
             "alt": "woodfree paper scene 05 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-06.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-06.jpg",
             "alt": "woodfree paper scene 06 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-07.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-07.jpg",
             "alt": "woodfree paper scene 07 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-scene-08.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-scene-08.jpg",
             "alt": "woodfree paper scene 08 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-photo-01.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-photo-01.jpg",
             "alt": "woodfree paper procurement photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-photo-02.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-photo-02.jpg",
             "alt": "woodfree paper spec sample photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-photo-03.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-photo-03.jpg",
             "alt": "woodfree paper design hero photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-photo-04.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-photo-04.jpg",
             "alt": "woodfree paper application photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/woodfree-paper-photo-05.jpg",
+            "src": "/images/products/culture-paper/gallery/woodfree-paper-photo-05.jpg",
             "alt": "woodfree paper website banner"
       }
 ,
@@ -929,59 +939,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["color offset paper", "colored uncoated paper", "tinted offset", "colored printing paper", "dyed paper", "offset color paper"],
-    image:"images/products/culture-paper/colored-offset-paper-product-1.jpg",
+    image: "/images/products/culture-paper/color-offset-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-01.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-01.jpg",
             "alt": "color offset paper scene 01 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-02.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-02.jpg",
             "alt": "color offset paper scene 02 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-03.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-03.jpg",
             "alt": "color offset paper scene 03 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-04.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-04.jpg",
             "alt": "color offset paper scene 04 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-05.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-05.jpg",
             "alt": "color offset paper scene 05 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-06.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-06.jpg",
             "alt": "color offset paper scene 06 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-07.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-07.jpg",
             "alt": "color offset paper scene 07 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-scene-08.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-scene-08.jpg",
             "alt": "color offset paper scene 08 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-photo-01.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-photo-01.jpg",
             "alt": "color offset paper procurement photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-photo-02.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-photo-02.jpg",
             "alt": "color offset paper spec sample photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-photo-03.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-photo-03.jpg",
             "alt": "color offset paper design hero photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-photo-04.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-photo-04.jpg",
             "alt": "color offset paper application photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/color-offset-paper-photo-05.jpg",
+            "src": "/images/products/culture-paper/gallery/color-offset-paper-photo-05.jpg",
             "alt": "color offset paper website banner"
       }
 ,
@@ -1012,59 +1022,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "PEFC", "ISO 9001"],
     keywords: ["LWC paper", "lightweight coated paper", "magazine paper", "catalog paper", "low grammage coated", "heatset web paper"],
-    image:"images/products/culture-paper/culture-paper-02.jpg",
+    image: "/images/products/culture-paper/lwc-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-01.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-01.jpg",
             "alt": "lwc paper scene 01 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-02.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-02.jpg",
             "alt": "lwc paper scene 02 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-03.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-03.jpg",
             "alt": "lwc paper scene 03 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-04.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-04.jpg",
             "alt": "lwc paper scene 04 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-05.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-05.jpg",
             "alt": "lwc paper scene 05 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-06.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-06.jpg",
             "alt": "lwc paper scene 06 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-07.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-07.jpg",
             "alt": "lwc paper scene 07 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-scene-08.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-scene-08.jpg",
             "alt": "lwc paper scene 08 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-photo-01.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-photo-01.jpg",
             "alt": "lwc paper procurement photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-photo-02.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-photo-02.jpg",
             "alt": "lwc paper spec sample photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-photo-03.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-photo-03.jpg",
             "alt": "lwc paper design hero photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-photo-04.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-photo-04.jpg",
             "alt": "lwc paper application photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/lwc-paper-photo-05.jpg",
+            "src": "/images/products/culture-paper/gallery/lwc-paper-photo-05.jpg",
             "alt": "lwc paper website banner"
       }
 ,
@@ -1095,59 +1105,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
-    image:"images/products/culture-paper/culture-paper-applications.jpg",
+    image: "/images/products/culture-paper/ncr-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-01.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-01.jpg",
             "alt": "ncr paper scene 01 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-02.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-02.jpg",
             "alt": "ncr paper scene 02 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-03.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-03.jpg",
             "alt": "ncr paper scene 03 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-04.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-04.jpg",
             "alt": "ncr paper scene 04 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-05.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-05.jpg",
             "alt": "ncr paper scene 05 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-06.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-06.jpg",
             "alt": "ncr paper scene 06 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-07.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-07.jpg",
             "alt": "ncr paper scene 07 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-scene-08.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-scene-08.jpg",
             "alt": "ncr paper scene 08 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-photo-01.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-photo-01.jpg",
             "alt": "ncr paper procurement photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-photo-02.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-photo-02.jpg",
             "alt": "ncr paper spec sample photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-photo-03.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-photo-03.jpg",
             "alt": "ncr paper design hero photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-photo-04.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-photo-04.jpg",
             "alt": "ncr paper application photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/ncr-paper-photo-05.jpg",
+            "src": "/images/products/culture-paper/gallery/ncr-paper-photo-05.jpg",
             "alt": "ncr paper website banner"
       }
 ,
@@ -1179,45 +1189,50 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["copy paper", "A4 copy paper", "office paper", "printer paper", "multi-purpose paper", "copy paper wholesale"],
-    image:"images/products/culture-paper/culture-paper-02.jpg",
+    image: "/images/products/culture-paper/copy-paper-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
+      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
+      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
-  "multi-color-bond-paper": {
-    id: "multi-color-bond-paper",
-    name: "Multi-Color Bond Paper",
+  "newsprint": {
+    id: "newsprint",
+    name: "Newsprint",
     category: "culture-paper",
-    tagline: "Practical colored bond paper in multiple colors — smooth surface, jam-free printer feeding, and reliable everyday performance.",
+    tagline: "Cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications.",
     description:
-      "Multi-Color Bond Paper is a versatile colored bond paper available in several practical colors for everyday office, school, and creative use. It features a smooth surface that accepts ink and toner cleanly, and is engineered to feed reliably through most standard printers, copiers, and multifunction devices without jamming. The paper is thick enough to prevent ink bleed-through while remaining flexible for folding, stapling, and binding. Ideal for color-coded filing systems, flyers, notices, crafts, and general-purpose color printing where appearance matters.",
+      "Newsprint is a low-cost, lightweight paper grade designed primarily for high-speed web offset (coldset) printing of newspapers, advertising flyers, and mass-circulation periodicals. Made predominantly from mechanical wood pulp (groundwood or TMP) with a small percentage of chemical pulp for strength, newsprint is engineered for runnability, printability, and economy at scale.",
     specs: [
-      "Grammage: 70–80 gsm",
-      "Colors: Multiple practical colors (red, blue, green, yellow, pink, orange, etc.)",
-      "Surface: Smooth, sized for inkjet and laser",
-      "Format: A4 (210×297mm), Letter (216×279mm)",
-      "Printer compatibility: Laser, inkjet, copier, fax",
-      "Packaging: 500 sheets/ream, 5–10 reams/carton",
+      "Grammage: 40 / 42 / 45 / 48.8 / 52 / 57 gsm",
+      "Brightness: ISO 56–68%",
+      "Opacity: ≥ 92% at 48.8 gsm",
+      "Format: Reels (standard width 600–1800mm), sheets on request",
+      "Composition: 80–90% mechanical pulp, 10–20% chemical pulp",
     ],
     applications: [
-      "Color-coded office filing and document organization",
-      "Flyers, notices, and announcements",
-      "School and educational craft projects",
-      "Restaurant menus and daily specials",
-      "Church bulletins and community newsletters",
-      "Event programs and signage",
+      "Daily and weekly newspaper printing (coldset web offset)",
+      "Advertising inserts and flyers for retail distribution",
+      "Mass-circulation community and free newspapers",
+      "Trade and industry newsletters and bulletins",
+      "Election and political campaign materials",
+      "Directory and catalog printing (economy grade)",
     ],
-    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["multi-color bond paper", "colored bond paper", "color printer paper", "colored office paper", "multi-color printing paper", "color copy paper"],
-    image:"images/products/culture-paper/colored-offset-paper-product-2.jpg",
+    certifications: ["FSC Mix", "SGS certified", "ISO 14001"],
+    keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
+    image: "/images/products/culture-paper/newsprint-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      { src: "/images/products/culture-paper/gallery/01-Newsprint-Printing-Press.jpg", alt: "Newsprint printing press" },
+      { src: "/images/products/culture-paper/gallery/02-Newsprint-Cafe-Reader.jpg", alt: "Newsprint cafe reader" },
+      { src: "/images/products/culture-paper/gallery/03-Newsprint-Newspaper-Kiosk.jpg", alt: "Newsprint newspaper kiosk" },
+      { src: "/images/products/culture-paper/gallery/04-Newsprint-Advertising-Circulars.jpg", alt: "Newsprint advertising circulars" },
+      { src: "/images/products/culture-paper/gallery/05-Newsprint-Free-Sheet-Distribution.jpg", alt: "Newsprint free sheet distribution" },
+      { src: "/images/products/culture-paper/gallery/06-Newsprint-Weekend-Supplement.jpg", alt: "Newsprint weekend supplement" },
+      { src: "/images/products/culture-paper/gallery/07-Newsprint-Protective-Wrapping.jpg", alt: "Newsprint protective wrapping" },
+      { src: "/images/products/culture-paper/gallery/08-Newsprint-Charcoal-Sketch-Pad.jpg", alt: "Newsprint charcoal sketch pad" },
     ],
   },
+
   "a4-copy-paper": {
     id: "a4-copy-paper",
     name: "A4 Copy Paper",
@@ -1242,11 +1257,11 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
     keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
-    image:"images/products/culture-paper/culture-paper-02.jpg",
+    image: "/images/products/culture-paper/a4-copy-paper-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
+      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
+      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
   "a4-thermal-paper": {
@@ -1274,11 +1289,11 @@ export const subProducts = {
     ],
     certifications: ["BPA-free grades available", "ISO 9001"],
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
-    image:"images/products/culture-paper/culture-paper-02.jpg",
+    image: "/images/products/culture-paper/a4-thermal-paper-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
+      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
+      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
   "thermal-paper-roll": {
@@ -1306,11 +1321,16 @@ export const subProducts = {
     ],
     certifications: ["BPA-free grades", "Phenol-free grades", "ISO 9001"],
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
-    image:"images/products/culture-paper/culture-paper-02.jpg",
+    image: "/images/products/culture-paper/thermal-paper-roll-main.jpg",
     gallery: [
-      // { src: "images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-01.jpg", alt: "Thermal paper roll POS receipt" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-02.jpg", alt: "Thermal paper roll credit card terminal" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-03.jpg", alt: "Thermal paper roll kitchen order" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-04.jpg", alt: "Thermal paper roll logistics label" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-05.jpg", alt: "Thermal paper roll mini photo printer" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-06.jpg", alt: "Thermal paper roll ATM receipt" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-07.jpg", alt: "Thermal paper roll retail POS" },
+      { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-08.jpg", alt: "Thermal paper roll banking transaction" },
     ],
   },
 
@@ -1342,59 +1362,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
-    image:"images/products/fancy-paper/soft-touch-paper.jpg",
+    image: "/images/products/fancy-paper/soft-touch-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-01.jpg",
             "alt": "soft touch paper scene 01 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-02.jpg",
             "alt": "soft touch paper scene 02 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-03.jpg",
             "alt": "soft touch paper scene 03 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-04.jpg",
             "alt": "soft touch paper scene 04 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-05.jpg",
             "alt": "soft touch paper scene 05 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-06.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-06.jpg",
             "alt": "soft touch paper scene 06 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-07.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-07.jpg",
             "alt": "soft touch paper scene 07 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-scene-08.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-scene-08.jpg",
             "alt": "soft touch paper scene 08 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-photo-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-photo-01.jpg",
             "alt": "soft touch paper procurement photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-photo-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-photo-02.jpg",
             "alt": "soft touch paper spec sample photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-photo-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-photo-03.jpg",
             "alt": "soft touch paper design hero photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-photo-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-photo-04.jpg",
             "alt": "soft touch paper application photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/soft-touch-paper-photo-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/soft-touch-paper-photo-05.jpg",
             "alt": "soft touch paper website banner"
       }
 ,
@@ -1425,59 +1445,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "Vegan certified", "ISO 9001"],
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
-    image:"images/products/fancy-paper/leather-paper.jpg",
+    image: "/images/products/fancy-paper/leather-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-01.jpg",
             "alt": "leather paper scene 01 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-02.jpg",
             "alt": "leather paper scene 02 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-03.jpg",
             "alt": "leather paper scene 03 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-04.jpg",
             "alt": "leather paper scene 04 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-05.jpg",
             "alt": "leather paper scene 05 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-06.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-06.jpg",
             "alt": "leather paper scene 06 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-07.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-07.jpg",
             "alt": "leather paper scene 07 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-scene-08.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-scene-08.jpg",
             "alt": "leather paper scene 08 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-photo-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-photo-01.jpg",
             "alt": "leather paper procurement photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-photo-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-photo-02.jpg",
             "alt": "leather paper spec sample photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-photo-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-photo-03.jpg",
             "alt": "leather paper design hero photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-photo-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-photo-04.jpg",
             "alt": "leather paper application photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/leather-paper-photo-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/leather-paper-photo-05.jpg",
             "alt": "leather paper website banner"
       }
 ,
@@ -1508,59 +1528,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
-    image:"images/products/fancy-paper/pearlescent-paper.jpg",
+    image: "/images/products/fancy-paper/pearlescent-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-01.jpg",
             "alt": "pearlescent paper scene 01 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-02.jpg",
             "alt": "pearlescent paper scene 02 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-03.jpg",
             "alt": "pearlescent paper scene 03 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-04.jpg",
             "alt": "pearlescent paper scene 04 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-05.jpg",
             "alt": "pearlescent paper scene 05 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-06.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-06.jpg",
             "alt": "pearlescent paper scene 06 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-07.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-07.jpg",
             "alt": "pearlescent paper scene 07 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-scene-08.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-scene-08.jpg",
             "alt": "pearlescent paper scene 08 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-photo-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-photo-01.jpg",
             "alt": "pearlescent paper procurement photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-photo-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-photo-02.jpg",
             "alt": "pearlescent paper spec sample photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-photo-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-photo-03.jpg",
             "alt": "pearlescent paper design hero photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-photo-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-photo-04.jpg",
             "alt": "pearlescent paper application photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/pearlescent-paper-photo-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/pearlescent-paper-photo-05.jpg",
             "alt": "pearlescent paper website banner"
       }
 ,
@@ -1591,64 +1611,121 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
-    image:"images/products/fancy-paper/embossed-paper.jpg",
+    image: "/images/products/fancy-paper/embossed-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-01.jpg",
             "alt": "embossed paper scene 01 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-02.jpg",
             "alt": "embossed paper scene 02 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-03.jpg",
             "alt": "embossed paper scene 03 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-04.jpg",
             "alt": "embossed paper scene 04 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-05.jpg",
             "alt": "embossed paper scene 05 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-06.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-06.jpg",
             "alt": "embossed paper scene 06 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-07.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-07.jpg",
             "alt": "embossed paper scene 07 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-scene-08.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-scene-08.jpg",
             "alt": "embossed paper scene 08 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-photo-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-photo-01.jpg",
             "alt": "embossed paper procurement photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-photo-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-photo-02.jpg",
             "alt": "embossed paper spec sample photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-photo-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-photo-03.jpg",
             "alt": "embossed paper design hero photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-photo-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-photo-04.jpg",
             "alt": "embossed paper application photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/embossed-paper-photo-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/embossed-paper-photo-05.jpg",
             "alt": "embossed paper website banner"
       }
 ,
     ],
   },
+
+  "gold-silver-card": {
+    id: "gold-silver-card",
+    name: "Gold & Silver Card Paper",
+    category: "fancy-paper",
+    tagline: "Brilliant metallic gold and silver card paper with mirror-like reflective surface — for luxury packaging, gift boxes, greeting cards, and high-end brand presentation.",
+    description:
+      "Gold & Silver Card Paper features a brilliant metallic surface achieved through vacuum metallization, foil lamination, or metallic coating on a premium paper or board substrate. Available in classic gold, bright silver, rose gold, champagne gold, and custom metallic finishes. The mirror-like reflective surface offers exceptional visual impact and can accept offset printing, screen printing, embossing, debossing, and foil stamping. Grammages from 200 gsm to 400 gsm cover everything from lightweight inserts and greeting cards to structural luxury packaging boards.",
+    specs: [
+      "Grammage: 200 – 400 gsm",
+      "Finishes: Gold / Silver / Rose Gold / Champagne Gold / Custom metallic",
+      "Surface: Mirror-reflective metallic, smooth both sides",
+      "Format: Sheets (standard & custom sizes) or reels",
+      "Print compatibility: Offset, screen, foil stamping, embossing, debossing",
+      "Metallization: Vacuum metallized or foil-laminated options",
+    ],
+    applications: [
+      "Luxury gift boxes and rigid packaging",
+      "Greeting cards and invitation cards",
+      "Cosmetic and perfume packaging",
+      "Jewelry and watch box interiors and exteriors",
+      "Wine and spirits packaging",
+      "Premium business cards and presentation folders",
+      "Certificate and award folders",
+      "Holiday and festive packaging",
+    ],
+    certifications: ["FSC Mix", "ISO 9001", "SGS certified"],
+    keywords: ["gold silver card paper", "metallic card paper", "gold foil paper", "silver cardstock", "metallic board", "luxury metallic paper"],
+    image: "/images/products/fancy-paper/gold-silver-card-main.jpg",
+    gallery: [
+      { src: "/images/products/fancy-paper/gallery/GOLD-Chocolate-Packaging.jpg", alt: "Gold chocolate packaging" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Cosmetic-Packaging.jpg", alt: "Gold cosmetic packaging" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Gift-Box-Sleeves.jpg", alt: "Gold gift box sleeves" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Jewelry-Packaging.jpg", alt: "Gold jewelry packaging" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Shopping-Bag-and-Tags.jpg", alt: "Gold shopping bag and tags" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Tea-Packaging.jpg", alt: "Gold tea packaging" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Wedding-Stationery.jpg", alt: "Gold wedding stationery" },
+      { src: "/images/products/fancy-paper/gallery/GOLD-Wine-Gift-Carton.jpg", alt: "Gold wine gift carton" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Catalog-and-Folder.jpg", alt: "Silver catalog and folder" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Chocolate-Packaging.jpg", alt: "Silver chocolate packaging" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Cosmetic-Packaging.jpg", alt: "Silver cosmetic packaging" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Electronics-Packaging.jpg", alt: "Silver electronics packaging" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Garment-Hang-Tags.jpg", alt: "Silver garment hang tags" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Supplement-Packaging.jpg", alt: "Silver supplement packaging" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Wedding-Stationery.jpg", alt: "Silver wedding stationery" },
+      { src: "/images/products/fancy-paper/gallery/SILVER-Wine-Gift-Carton.jpg", alt: "Silver wine gift carton" },
+      { src: "/images/products/fancy-paper/gallery/Black-Fragrance-Packaging.jpg", alt: "Black fragrance packaging" },
+      { src: "/images/products/fancy-paper/gallery/Blue-Electronics-Packaging.jpg", alt: "Blue electronics packaging" },
+      { src: "/images/products/fancy-paper/gallery/Champagne-Soap-Packaging.jpg", alt: "Champagne soap packaging" },
+      { src: "/images/products/fancy-paper/gallery/Copper-Coffee-Packaging.jpg", alt: "Copper coffee packaging" },
+      { src: "/images/products/fancy-paper/gallery/Green-Skincare-Packaging.jpg", alt: "Green skincare packaging" },
+      { src: "/images/products/fancy-paper/gallery/Purple-Magenta-Perfume-Packaging.jpg", alt: "Purple magenta perfume packaging" },
+      { src: "/images/products/fancy-paper/gallery/Red-Chocolate-Packaging.jpg", alt: "Red chocolate packaging" },
+      { src: "/images/products/fancy-paper/gallery/Rose-Pink-Cosmetic-Packaging.jpg", alt: "Rose pink cosmetic packaging" },
+    ],
+  },
+
   "label-paper": {
     id: "label-paper",
     name: "Label Paper",
@@ -1674,64 +1751,102 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
-    image:"images/products/fancy-paper/product-hangtag-paper.jpg",
+    image: "/images/products/fancy-paper/label-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-01.jpg",
             "alt": "label paper scene 01 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-02.jpg",
             "alt": "label paper scene 02 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-03.jpg",
             "alt": "label paper scene 03 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-04.jpg",
             "alt": "label paper scene 04 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-05.jpg",
             "alt": "label paper scene 05 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-06.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-06.jpg",
             "alt": "label paper scene 06 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-07.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-07.jpg",
             "alt": "label paper scene 07 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-scene-08.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-scene-08.jpg",
             "alt": "label paper scene 08 scene"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-photo-01.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-photo-01.jpg",
             "alt": "label paper procurement photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-photo-02.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-photo-02.jpg",
             "alt": "label paper spec sample photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-photo-03.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-photo-03.jpg",
             "alt": "label paper design hero photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-photo-04.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-photo-04.jpg",
             "alt": "label paper application photo"
       },
       {
-            "src": "images/products/fancy-paper/gallery/label-paper-photo-05.jpg",
+            "src": "/images/products/fancy-paper/gallery/label-paper-photo-05.jpg",
             "alt": "label paper website banner"
       }
 ,
     ],
   },
+
+  "color-tissue-paper": {
+    id: "color-tissue-paper",
+    name: "Color Tissue Paper",
+    category: "fancy-paper",
+    tagline: "Vibrant translucent tissue in a rainbow palette — the finishing touch that transforms packaging into an experience.",
+    description:
+      "Color tissue paper is a lightweight, translucent, acid-free tissue available in an extensive color range — from soft pastels to bold saturated hues. Made from high-quality virgin wood pulp or recycled fiber, it is soft, flexible, and cleanly cut for use in luxury gift wrapping, retail packaging, shoe and garment stuffing, floral arrangements, and creative craft projects. The paper is colorfast and non-bleeding, so it can be safely used to wrap clothing, accessories, and delicate items without risk of color transfer.",
+    specs: [
+      "Grammage: 17 / 20 / 24 / 28 gsm",
+      "Color range: 30+ standard colors, custom PMS matching available",
+      "Composition: Virgin wood pulp or recycled fiber, acid-free",
+      "Properties: Colorfast, non-bleeding, soft fold",
+      "Format: Sheets (standard 500×750mm / 750×1000mm), custom sizes",
+    ],
+    applications: [
+      "Luxury retail gift wrapping and tissue lining",
+      "Shoe and handbag stuffing and presentation",
+      "Garment and apparel packaging — boutique folding tissue",
+      "Floral and bouquet wrapping",
+      "Craft, scrapbooking, and DIY decoration",
+      "Branded unboxing experience — custom-printed tissue options",
+    ],
+    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
+    keywords: ["color tissue paper", "colored tissue paper", "gift tissue paper", "luxury tissue paper", "acid-free tissue", "packaging tissue paper"],
+    image: "/images/products/fancy-paper/color-tissue-paper-main.jpg",
+    gallery: [
+      { src: "/images/products/fancy-paper/gallery/01-Color-Tissue-Apparel-Gift-Box.jpg", alt: "Color tissue apparel gift box" },
+      { src: "/images/products/fancy-paper/gallery/02-Color-Tissue-Florist-Bouquet.jpg", alt: "Color tissue florist bouquet" },
+      { src: "/images/products/fancy-paper/gallery/03-Color-Tissue-Shoe-Box.jpg", alt: "Color tissue shoe box" },
+      { src: "/images/products/fancy-paper/gallery/04-Color-Tissue-Cosmetics-Unboxing.jpg", alt: "Color tissue cosmetics unboxing" },
+      { src: "/images/products/fancy-paper/gallery/05-Color-Tissue-Jewelry-Protection.jpg", alt: "Color tissue jewelry protection" },
+      { src: "/images/products/fancy-paper/gallery/06-Color-Tissue-Retail-Shopping-Bags.jpg", alt: "Color tissue retail shopping bags" },
+      { src: "/images/products/fancy-paper/gallery/07-Color-Tissue-Party-Pom-Poms.jpg", alt: "Color tissue party pom poms" },
+      { src: "/images/products/fancy-paper/gallery/08-Color-Tissue-Paper-Flowers.jpg", alt: "Color tissue paper flowers" },
+    ],
+  },
+
   "tracing-paper": {
     id: "tracing-paper",
     name: "Tracing Paper",
@@ -1757,59 +1872,59 @@ export const subProducts = {
     ],
     certifications: ["FSC Mix", "ISO 9001"],
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
-    image:"images/products/fancy-paper/product-tracing-paper.jpg",
+    image: "/images/products/culture-paper/tracing-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-01.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-01.jpg",
             "alt": "tracing paper scene 01 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-02.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-02.jpg",
             "alt": "tracing paper scene 02 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-03.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-03.jpg",
             "alt": "tracing paper scene 03 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-04.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-04.jpg",
             "alt": "tracing paper scene 04 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-05.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-05.jpg",
             "alt": "tracing paper scene 05 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-06.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-06.jpg",
             "alt": "tracing paper scene 06 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-07.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-07.jpg",
             "alt": "tracing paper scene 07 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-scene-08.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-scene-08.jpg",
             "alt": "tracing paper scene 08 scene"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-photo-01.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-photo-01.jpg",
             "alt": "tracing paper procurement photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-photo-02.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-photo-02.jpg",
             "alt": "tracing paper spec sample photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-photo-03.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-photo-03.jpg",
             "alt": "tracing paper design hero photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-photo-04.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-photo-04.jpg",
             "alt": "tracing paper application photo"
       },
       {
-            "src": "images/products/culture-paper/gallery/tracing-paper-photo-05.jpg",
+            "src": "/images/products/culture-paper/gallery/tracing-paper-photo-05.jpg",
             "alt": "tracing paper website banner"
       }
 ,
@@ -1844,59 +1959,59 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
-    image:"images/products/food-packaging/food-packaging-paper-01.jpg",
+    image: "/images/products/food-packaging/cup-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-01.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-01.jpg",
             "alt": "cup paper scene 01 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-02.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-02.jpg",
             "alt": "cup paper scene 02 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-03.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-03.jpg",
             "alt": "cup paper scene 03 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-04.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-04.jpg",
             "alt": "cup paper scene 04 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-05.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-05.jpg",
             "alt": "cup paper scene 05 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-06.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-06.jpg",
             "alt": "cup paper scene 06 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-07.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-07.jpg",
             "alt": "cup paper scene 07 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-scene-08.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-scene-08.jpg",
             "alt": "cup paper scene 08 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-photo-01.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-photo-01.jpg",
             "alt": "cup paper procurement photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-photo-02.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-photo-02.jpg",
             "alt": "cup paper spec sample photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-photo-03.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-photo-03.jpg",
             "alt": "cup paper design hero photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-photo-04.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-photo-04.jpg",
             "alt": "cup paper application photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/cup-paper-photo-05.jpg",
+            "src": "/images/products/food-packaging/gallery/cup-paper-photo-05.jpg",
             "alt": "cup paper website banner"
       }
 ,
@@ -1927,59 +2042,59 @@ export const subProducts = {
     ],
     certifications: ["FDA 21 CFR 176.170", "EU 1935/2004", "PFAS-free certified", "FSC Mix"],
     keywords: ["greaseproof paper", "grease resistant paper", "baking paper", "food wrap paper", "oil proof paper", "PFAS-free food paper"],
-    image:"images/products/food-packaging/product-greaseproof-paper.jpg",
+    image: "/images/products/food-packaging/greaseproof-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-01.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-01.jpg",
             "alt": "greaseproof paper scene 01 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-02.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-02.jpg",
             "alt": "greaseproof paper scene 02 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-03.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-03.jpg",
             "alt": "greaseproof paper scene 03 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-04.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-04.jpg",
             "alt": "greaseproof paper scene 04 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-05.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-05.jpg",
             "alt": "greaseproof paper scene 05 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-06.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-06.jpg",
             "alt": "greaseproof paper scene 06 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-07.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-07.jpg",
             "alt": "greaseproof paper scene 07 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-scene-08.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-scene-08.jpg",
             "alt": "greaseproof paper scene 08 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-photo-01.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-photo-01.jpg",
             "alt": "greaseproof paper procurement photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-photo-02.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-photo-02.jpg",
             "alt": "greaseproof paper spec sample photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-photo-03.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-photo-03.jpg",
             "alt": "greaseproof paper design hero photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-photo-04.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-photo-04.jpg",
             "alt": "greaseproof paper application photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/greaseproof-paper-photo-05.jpg",
+            "src": "/images/products/food-packaging/gallery/greaseproof-paper-photo-05.jpg",
             "alt": "greaseproof paper website banner"
       }
 ,
@@ -2010,7 +2125,7 @@ export const subProducts = {
     ],
     certifications: ["FSC certified"],
     keywords: ["MG paper supplier", "machine glazed paper", "food wrapping paper", "paper bag material", "glazed packaging paper"],
-    image: "images/products/food-packaging/mg-paper-main.jpg",
+    image: "/images/products/food-packaging/mg-paper-main.jpg",
   },
 
   "silicone-coated-paper": {
@@ -2038,59 +2153,59 @@ export const subProducts = {
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
-    image:"images/products/food-packaging/food-packaging-paper-02.jpg",
+    image: "/images/products/food-packaging/silicone-coated-paper-main.jpg",
     gallery: [
       
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-01.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-01.jpg",
             "alt": "silicone coated paper scene 01 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-02.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-02.jpg",
             "alt": "silicone coated paper scene 02 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-03.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-03.jpg",
             "alt": "silicone coated paper scene 03 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-04.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-04.jpg",
             "alt": "silicone coated paper scene 04 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-05.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-05.jpg",
             "alt": "silicone coated paper scene 05 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-06.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-06.jpg",
             "alt": "silicone coated paper scene 06 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-07.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-07.jpg",
             "alt": "silicone coated paper scene 07 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-scene-08.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-scene-08.jpg",
             "alt": "silicone coated paper scene 08 scene"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-photo-01.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-photo-01.jpg",
             "alt": "silicone coated paper procurement photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-photo-02.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-photo-02.jpg",
             "alt": "silicone coated paper spec sample photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-photo-03.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-photo-03.jpg",
             "alt": "silicone coated paper design hero photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-photo-04.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-photo-04.jpg",
             "alt": "silicone coated paper application photo"
       },
       {
-            "src": "images/products/food-packaging/gallery/silicone-coated-paper-photo-05.jpg",
+            "src": "/images/products/food-packaging/gallery/silicone-coated-paper-photo-05.jpg",
             "alt": "silicone coated paper website banner"
       }
 ,
@@ -2110,7 +2225,7 @@ export const processingServices = [
     description:
       "Mechanical embossing creates raised relief patterns on paper and board under heat and pressure. We offer a library of standard patterns — linen, felt, canvas, leather-grain, woodgrain — plus custom embossing roller fabrication for brand-specific textures. Compatible with subsequent printing, foil stamping, and die-cutting. Applied to packaging, book covers, hang tags, and luxury stationery.",
     highlights: ["Standard & custom patterns", "Fine to deep relief", "Inline or offline processing"],
-    image:"images/processing/processing-embossing.jpg",
+    image: "/images/processing/processing-embossing.jpg",
   },
   {
     id: "die-cutting",
@@ -2119,7 +2234,7 @@ export const processingServices = [
     description:
       "Precision die-cutting and punching convert paper and board into finished shapes — carton blanks, labels, hang tags, envelopes, and custom profiles. We use flat-bed and rotary die-cutting lines capable of handling grammages from 80 gsm to 800 gsm. Steel-rule dies are fabricated in-house for fast turnaround on custom shapes. Tight registration tolerances ensure consistent results across production runs.",
     highlights: ["Flat-bed & rotary die-cutting", "Steel-rule die fabrication", "Grammage range: 80–800 gsm"],
-    image:"images/processing/processing-die-cutting-punching.jpg",
+    image: "/images/processing/processing-die-cutting-punching.jpg",
   },
   {
     id: "printing",
@@ -2128,7 +2243,7 @@ export const processingServices = [
     description:
       "Offset, flexo, and screen printing services for paper and board products — from single-color branding to full-color process printing. We print on a wide range of substrates including coated paper, uncoated board, kraft paper, and specialty fancy papers. Our press operators ensure color consistency, registration accuracy, and fast drying. Available for product face stock, packaging, labels, and promotional materials.",
     highlights: ["Offset / Flexo / Screen printing", "Up to 6-color + coating", "Color management with Delta E ≤ 2"],
-    image:"images/processing/processing-printing.jpg",
+    image: "/images/processing/processing-printing.jpg",
   },
   {
     id: "slitting",
@@ -2137,7 +2252,7 @@ export const processingServices = [
     description:
       "High-precision slitting and sheeting convert jumbo reels into finished rolls or sheets at exact widths and lengths. Our slitter-rewinders handle web widths up to 2,500 mm with ±0.5 mm width tolerance. Sheeting lines produce cut-size sheets (A4, A3, SRA3, custom) with square edges and accurate count. Essential for converting mill reels into customer-ready formats.",
     highlights: ["Web width up to 2,500 mm", "Width tolerance ±0.5 mm", "Sheets ream-packed or bulk-packed"],
-    image:"images/processing/processing-slitting-cutting.jpg",
+    image: "/images/processing/processing-slitting-cutting.jpg",
   },
   {
     id: "lamination",
@@ -2146,7 +2261,7 @@ export const processingServices = [
     description:
       "Lamination and coating add functional or decorative layers to paper and board — gloss or matt film lamination, soft-touch coating, spot UV varnish, aqueous coating, and PE extrusion coating. These processes enhance durability, moisture resistance, tactile appeal, and visual impact. We offer both thermal and wet lamination for different application requirements.",
     highlights: ["Gloss / Matt / Soft-touch lamination", "PE extrusion coating", "Spot UV & aqueous coating"],
-    image:"images/processing/processing-lamination-finishing.jpg",
+    image: "/images/processing/processing-lamination-finishing.jpg",
   },
   {
     id: "export-packing",
@@ -2155,7 +2270,7 @@ export const processingServices = [
     description:
       "Export-grade packing ensures your paper products arrive in perfect condition — whether shipped by container, air freight, or courier. Standard packing includes moisture-barrier wrapping, edge protectors, palletization, and strapping. Custom labeling, barcoding, and packing lists are prepared to your destination country's requirements. We handle fumigation certificates and ISPM 15 compliance for wooden pallets.",
     highlights: ["Moisture-barrier wrapping", "ISPM 15 pallets", "Custom labeling & barcoding"],
-    image:"images/processing/processing-export-packing.jpg",
+    image: "/images/processing/processing-export-packing.jpg",
   },
 ];
 

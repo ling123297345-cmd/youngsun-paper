@@ -31,7 +31,7 @@ export default function FancyPaperGallery() {
         <Link to="/" style={{ color: "var(--lime)", fontSize: 13, fontWeight: 700 }}>← Back to Home</Link>
 
         {/* Overview images */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 24, marginBottom: 48 }}>
+        <div className="fancy-overview-grid" style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12, marginTop: 24, marginBottom: 48 }}>
           {overviewImages.map((img, i) => (
             <div key={i} onClick={() => setLightbox({ type: "overview", index: i })} style={{ cursor: "pointer", borderRadius: 8, overflow: "hidden", aspectRatio: "16/10", border: "1px solid rgba(255,255,255,0.08)" }}>
               <img src={`/${img}`} alt={`Fancy paper overview ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />

@@ -19,7 +19,7 @@ export default function Home() {
       <OrganizationSchema />
       {/* ===== HERO ===== */}
       <section className="hero" id="home">
-        <div className="hero-bg"><img src="images/products/fancy-paper/background-hangtag-section-clean.jpg" alt="" aria-hidden="true" /></div>
+        <div className="hero-bg"><img src="images/products/fancy-paper/background-hangtag-section-clean.jpg" alt="" aria-hidden="true" fetchpriority="high" /></div>
         <div className="hero-content">
           <p className="hero-eyebrow">{t("Sustainable Paper, Global Reach")}</p>
           <div className="hero-title"><h1>Premium Paper &amp; Paperboard<br /><span className="gold-text">Supplier in China</span></h1></div>

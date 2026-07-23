@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LangProvider, useLang } from "./i18n.jsx";
 import SearchBar from "./SearchBar.jsx";
@@ -37,7 +37,7 @@ function Header() {
   return (
     <header className={`site-header${scrolled ? " scrolled" : ""}`}>
       <Link className="site-logo" to="/"><img className="logo-image" src="/images/logo.png" alt="YOUNGSUN PAPER" width="160" height="40" /></Link>
-      <nav className="desktop-nav">{links.map((item) => <Link key={item.label} to={item.href}>{t(item.label)}</Link>)}</nav>
+      <nav className="desktop-nav">{links.map((item) => <NavLink key={item.label} to={item.href} end={item.href === "/"}>{t(item.label)}</NavLink>)}</nav>
       <SearchBar />
       <div className="header-actions">
         <button className="lang-switch" onClick={toggleLang}>{langLabel[lang]}</button>
@@ -101,7 +101,7 @@ export default function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Header />
-        <main>
+        <main id="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />

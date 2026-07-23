@@ -23,7 +23,7 @@ export default function Blog() {
           <button key={cat} className={`filter-btn${filter === cat ? " active" : ""}`} onClick={() => setFilter(cat)}>{cat}</button>
         ))}
       </div>
-      <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
+      <div className="container blog-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}>
         {posts.map((post) => (
           <Link key={post.id} to={`/blog/${post.id}`} className="subproduct-card" style={{ display: "block", color: "inherit", gridTemplateColumns: "unset" }}>
             <div className="subproduct-image-wrap" style={{ aspectRatio: "16/10" }}><img src={post.image.startsWith('/') ? post.image : '/' + post.image} alt={post.title} className="subproduct-image" loading="lazy" /></div>

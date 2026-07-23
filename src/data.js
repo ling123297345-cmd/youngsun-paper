@@ -99,7 +99,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "FSC-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging.",
     description:
-      "YOUNGSUN Grey Board is made from 100% post-consumer recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, reels, custom-cut panels and laminated structures. For enhanced surface appearance, buyers can choose laminated variants with coated white, uncoated white, colored, kraft, black, gold, silver or specialty facing papers bonded to the grey board base according to the required look and converting process.",
+      "YOUNGSUN Grey Board is made from 100% post-consumer recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, reels, custom-cut panels and laminated structures for rigid box, bookbinding and stationery production. The board features a working thickness range of 0.5–4.0 mm (300–3000 gsm in sheet form, 250–600 gsm in reel form), with stock sizes of 787×1092 mm and 889×1194 mm and maximum sheet dimensions up to 1600×3000 mm. The natural grey uncoated surface provides excellent adhesion for laminating, wrapping, and gluing. For enhanced surface appearance, buyers can choose laminated variants with coated white, uncoated white, colored, kraft, black, gold, silver or specialty facing papers bonded to the grey board base according to the required look and converting process. Common applications include rigid gift boxes, magnetic closure boxes, hardcover books, lever arch files, puzzles, game boards, photo albums, and packaging inserts. Custom grammage, sheet dimensions, panel cutting, die-cutting, and export pallet packing are all supported.",
     specs: [
       "Thickness: 0.5 mm – 4.0 mm (500 – 4000 gsm equivalent)",
       "Color: Natural grey / Custom tint available",
@@ -117,6 +117,30 @@ export const subProducts = {
       "Archival and conservation mounting boards",
     ],
     certifications: ["FSC Recycled", "ISO 14001"],
+    variants: [
+      "Single Layer Grey Board",
+      "Laminated Grey Board",
+      "One-Side Kraft-Lined Grey Board",
+      "One-Side White Grey Board",
+      "One-Side Black Grey Board",
+    ],
+    features: [
+      "Stable Thickness — Supports consistent box dimensions, cover alignment and batch production.",
+      "Reliable Rigidity — Provides a strong structural base for rigid packaging and bookbinding.",
+      "Clean Converting — Suitable for cutting, die-cutting, grooving, laminating and wrapping.",
+      "Flexible Processing — Available as full sheets, reels or finished components according to drawings.",
+    ],
+    customization: [
+      "Custom grammage and thickness",
+      "Custom sheet dimensions",
+      "Panel cutting and die-cutting",
+      "Single-side or laminated surface options",
+      "Export pallet packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage or thickness", "Sheet or reel size", "Quantity", "Application", "Destination port", "Cutting requirements"],
+    seoTitle: "Grey Board Manufacturer for Rigid Boxes | YOUNGSUN",
+    metaDescription: "FSC-certified recycled grey board in sheets, reels and custom-cut panels for rigid boxes, bookbinding, files and packaging.",
     keywords: ["grey board", "grey chipboard", "recycled greyboard", "rigid box board", "bookbinding board", "puzzle board"],
     image: "/images/products/package-board/grey-board-main.jpg",
     gallery: [
@@ -182,7 +206,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "Deep-black paper and cardboard for luxury packaging, hang tags, stationery, printing and creative converting.",
     description:
-      "YOUNGSUN supplies black paper in virgin-fibre and recycled-fibre grades. The material has a uniform black appearance, clean cutting edges and good performance in printing, hot stamping, embossing, die-cutting and box converting.",
+      "YOUNGSUN supplies black paper in virgin-fibre and recycled-fibre grades, offering a comprehensive range from 80 gsm lightweight paper up to 1500 gsm laminated heavy board. The material features a uniform through-dyed black appearance — not surface-printed — ensuring clean cutting edges with no white line on cuts or folds, which is critical for premium packaging and printed products. Standard single-ply grades range from 80–600 gsm in uncoated black finish, with stock sheet sizes of 787×1092 mm and 889×1194 mm. The material performs exceptionally well with hot foil stamping, screen printing, UV printing, embossing, and lamination. Key applications span luxury rigid box lining and wrapping, photo albums, greeting cards, high-end retail shopping bags, business cards, presentation folders, and envelope inserts. Custom grammage, sheet size, virgin or recycled fibre selection, laminated heavy board construction, and custom packing are all available.",
     specs: [
       "Grammage: 80 – 400 gsm",
       "Color: Through-dyed black (not surface-printed)",
@@ -200,6 +224,28 @@ export const subProducts = {
       "Envelope and stationery inserts",
     ],
     certifications: ["FSC Mix", "ISO 14001"],
+    variants: [
+      "Virgin Black Paper",
+      "Recycled Black Paper",
+      "Laminated Heavy Black Board",
+    ],
+    features: [
+      "Uniform Black Appearance — Provides a premium dark surface for visible packaging and printed products.",
+      "Clean Cutting Edges — Suitable for precise die-cutting, card making and structural converting.",
+      "Multiple Finishing Options — Works with hot foil stamping, screen printing, UV printing, embossing and lamination.",
+      "Wide Grammage Range — Covers lightweight paper, card and laminated heavy-board applications.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Custom sheet size",
+      "Virgin or recycled fibre",
+      "Laminated heavy board",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Required grammage", "Sheet or reel size", "Virgin or recycled grade", "Quantity", "Application", "Destination port"],
+    seoTitle: "Black Paper and Black Cardboard Supplier | YOUNGSUN",
+    metaDescription: "Virgin and recycled black paper from 80 to 1500 gsm for luxury packaging, hang tags, stationery and premium printing.",
     keywords: ["black paper", "black card stock", "through-dyed paper", "black cardboard", "luxury black paper", "core-dyed black board"],
     image: "/images/products/package-board/black-paper-main.jpg",
     gallery: [
@@ -265,7 +311,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "Colored card paper for packaging, hang tags, stationery, invitations and creative printing.",
     description:
-      "YOUNGSUN Color Card Paper is available in a broad range of standard, deep and embossed colors. It combines a uniform shade with clean converting performance for packaging, garment tags, stationery and promotional applications.",
+      "YOUNGSUN Color Card Paper is available in a broad range of standard, deep, and embossed colors, combining uniform shade consistency with clean converting performance for packaging, garment tags, stationery, and promotional applications. The grammage range spans 110–400 gsm, with common weights at 110, 150, 180, 230, 250, 300, 350, and 400 gsm. Standard sheet sizes are 787×1092 mm and 889×1194 mm, with supply in sheets, reels, and custom-cut sizes. Surface options include smooth uncoated and embossed textures. The paper delivers wide color selection for coordinated branding projects, consistent shade across repeat production runs, and good converting performance for cutting, folding, die-cutting, embossing, and lamination. It is compatible with hot stamping, screen printing, UV, and selected offset printing. Typical applications include hang tags, gift boxes, greeting cards, invitations, folders, book covers, and paper crafts. Custom color matching is available subject to order quantity, along with custom grammage, size, embossed textures, and packing.",
     specs: [
       "Grammage: 120 – 400 gsm",
       "Color: Through-dyed, 30+ standard colors, custom Pantone available",
@@ -283,6 +329,28 @@ export const subProducts = {
       "Educational and art supplies",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "Standard Color Card",
+      "Deep Color Card",
+      "Embossed Color Card",
+    ],
+    features: [
+      "Wide Color Selection — Supports coordinated packaging, branding and stationery projects.",
+      "Consistent Shade — Helps maintain visual consistency across repeat production.",
+      "Good Converting Performance — Suitable for cutting, folding, die-cutting, embossing and lamination.",
+      "Premium Finishing Compatibility — Suitable for hot stamping, screen printing, UV and selected offset printing.",
+    ],
+    customization: [
+      "Custom color matching subject to quantity",
+      "Custom grammage",
+      "Custom size",
+      "Embossed textures",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Color reference or code", "Grammage", "Sheet or reel size", "Quantity", "Application", "Destination port"],
+    seoTitle: "Color Card Paper Supplier for Packaging and Hang Tags | YOUNGSUN",
+    metaDescription: "Colored card paper from 110 to 400 gsm in standard and embossed finishes for packaging, hang tags, stationery and printing.",
     keywords: ["color card paper", "colored cardboard", "solid color cardstock", "colored paper board", "Pantone paper", "craft cardstock"],
     image: "/images/products/package-board/color-card-paper-main.jpg",
     gallery: [
@@ -348,7 +416,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "C1S ivory board with a smooth coated surface, high brightness and reliable folding performance for printed cartons.",
     description:
-      "YOUNGSUN Folding Box Board is a coated virgin-fibre paperboard developed for high-quality printing and folding carton conversion. Regular-bulk and high-bulk options are available to balance caliper, stiffness, print performance and material yield.",
+      "YOUNGSUN Folding Box Board is a coated virgin-fibre paperboard (GC1/C1S Ivory Board) developed for high-quality printing and folding carton conversion. Regular-bulk (170–400 gsm) and high-bulk (195–345 gsm) options allow buyers to balance caliper, stiffness, print performance, and material yield. The board features a smooth, coated white printing surface on the front side with a light-treated reverse, delivering excellent brightness for detailed graphics, strong color reproduction, and premium carton presentation. It is engineered for reliable scoring, folding, die-cutting, and gluing on high-speed converting lines. Primary applications include cosmetic cartons, pharmaceutical boxes, retail packaging, food secondary packaging, and personal care packaging. Buyers can specify regular or high bulk, custom grammage, sheet or reel supply, custom cutting, and export packing.",
     specs: [
       "Grammage: 200 – 450 gsm",
       "Grades: GC1 (white back) / GC2 (cream back) / GC3 (kraft back)",
@@ -366,6 +434,27 @@ export const subProducts = {
       "Chocolate and confectionery boxes",
     ],
     certifications: ["FSC Mix", "ISO 9001", "FDA-compliant grades"],
+    variants: [
+      "Regular Bulk C1S Ivory Board",
+      "High Bulk C1S Ivory Board",
+    ],
+    features: [
+      "High-Quality Print Surface — Supports detailed graphics, strong color reproduction and premium carton presentation.",
+      "Reliable Folding — Designed for scoring, folding, die-cutting and gluing.",
+      "Regular and High Bulk Options — Allows buyers to select the required thickness and material yield.",
+      "Broad Packaging Use — Suitable for retail, beauty, pharmaceutical and secondary food packaging.",
+    ],
+    customization: [
+      "Regular or high bulk",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom cutting",
+      "Export packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Regular or high bulk","Grammage","Sheet or reel size","Quantity","Application","Destination port"],
+    seoTitle: "Folding Box Board and C1S Ivory Board Supplier | YOUNGSUN",
+    metaDescription: "Regular and high bulk C1S ivory board from 170 to 400 gsm for cosmetics, pharmaceuticals, retail and folding cartons.",
     keywords: ["folding box board", "FBB", "GC1 board", "carton board", "pharma packaging board", "cosmetic box board"],
     image: "/images/products/package-board/folding-box-board-main.jpg",
     gallery: [
@@ -431,7 +520,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "Coated-two-sides art board with bright white surface and smooth finish — for premium print and high-end card applications.",
     description:
-      "C2S (Coated Two Sides) Art Board — also referred to as art card, SBS board, or coated duplex board — features a double-coated white surface on both sides. The coating layer ensures sharp dot reproduction, high ink gloss, and consistent color fidelity for offset, UV offset, and digital printing. This is the board of choice for premium greeting cards, luxury hang tags, book covers, and heavy-duty promotional materials where print quality is the primary differentiator.",
+      "YOUNGSUN C2S (Coated Two Sides) Art Board — also referred to as art card, SBS board, or coated duplex board — features a double-coated white surface on both sides with ISO 92%+ brightness and CIE 140+ whiteness. The coating layer ensures sharp dot reproduction, high ink gloss, and consistent color fidelity for offset, UV offset, and digital printing. Available in 200–400 gsm, the board can be specified in C2S High Bulk Bristol Board configuration (210–320 gsm) which combines a coated surface on both sides with increased caliper at a controlled grammage, providing a more substantial hand feel. Smoothness is rated at ≤1.5 μm (PPS), making it the board of choice for luxury greeting cards, premium hang tags and swing tickets, book covers and dust jackets, high-end brochure and catalog covers, promotional card mailers, and certificate stock. Custom grammage, sheet size, sheet or reel supply, and custom packing options are available.",
     specs: [
       "Grammage: 200 – 400 gsm",
       "Coating: Double-coated both sides (C2S)",
@@ -449,6 +538,25 @@ export const subProducts = {
       "Certificate and diploma stock",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "C2S High Bulk Bristol Board",
+    ],
+    features: [
+      "Two-Side Printability — Supports high-quality printing on both sides.",
+      "High Bulk — Provides greater thickness and a premium hand feel at a controlled basis weight.",
+      "Clean Converting — Suitable for cutting, scoring, folding and die-cutting.",
+      "Versatile Graphic Use — Works for covers, cards, folders and premium printed packaging.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Custom sheet size",
+      "Sheet or reel supply",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
+    seoTitle: "C2S High Bulk Bristol Board Supplier | YOUNGSUN",
+    metaDescription: "Two-side coated high bulk bristol board from 210 to 320 gsm for premium printing, covers, cards and packaging.",
     keywords: ["C2S art board", "coated art card", "SBS board", "art card paper", "premium card stock", "double-coated board"],
     image: "/images/products/package-board/c2s-art-board-main.jpg",
     gallery: [
@@ -514,7 +622,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "Natural kraft paper for sacks, bags, wrapping, industrial packaging and paper converting.",
     description:
-      "YOUNGSUN supplies extensible sack kraft, high-strength sack kraft and premium kraft paper for packaging and industrial converting. Grades can be selected according to the required tensile strength, tear resistance, extensibility and printability.",
+      "YOUNGSUN supplies extensible sack kraft, high-strength sack kraft, and premium kraft paper for packaging and industrial converting, with grades selectable according to required tensile strength, tear resistance, extensibility, and printability. Commercial grades range from 50–120 gsm, with extensible sack kraft at 65–95 gsm. Tensile index is rated at ≥80 Nm/g (MD) with tear index ≥12 mNm²/g. Available in natural brown, bleached white, and recycled options, the paper features controlled porosity per application and is supplied in standard and jumbo rolls as well as sheets. The strong fibre structure supports demanding sack, bag, and wrapping applications, with extensible grades that absorb stress during filling, handling, and transport. Key applications span industrial sacks, shopping bags, food bags, wrapping paper, protective packaging, laminated packaging, and general paper converting. Custom grade selection, grammage, sheet or reel supply, size, and printing support are available.",
     specs: [
       "Grammage: 35 – 200 gsm",
       "Grades: Natural (brown) / Bleached (white) / Recycled",
@@ -532,6 +640,28 @@ export const subProducts = {
       "Protective interleaving and dunnage",
     ],
     certifications: ["FSC 100%", "PEFC", "ISO 9001"],
+    variants: [
+      "Extensible Sack Kraft Paper",
+      "High Strength Sack Kraft Paper",
+      "Premium Kraft Paper",
+    ],
+    features: [
+      "Strong Fibre Structure — Supports demanding sack, bag and wrapping applications.",
+      "Extensible Grade Available — Helps absorb stress during filling, handling and transport.",
+      "Good Converting Performance — Suitable for bag making, printing, laminating and wrapping.",
+      "Multiple Strength Grades — Allows selection according to product weight and packaging structure.",
+    ],
+    customization: [
+      "Grade selection",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Printing and converting support",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grade (natural/bleached/recycled)","Grammage","Roll or sheet size","Quantity","End use","Destination port"],
+    seoTitle: "Kraft Paper Supplier for Packaging and Industrial Use | YOUNGSUN",
+    metaDescription: "Natural, bleached and recycled kraft paper from 35 to 200 gsm for sacks, bags, wrapping and industrial converting.",
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
     image: "/images/products/package-board/kraft-paper-main.jpg",
     gallery: [
@@ -597,7 +727,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "Coated white-top duplex board with grey back for economical folding cartons and printed packaging.",
     description:
-      "YOUNGSUN Duplex Board provides a smooth coated white printing side and an economical recycled grey reverse. It is suitable for high-volume packaging where print quality, converting efficiency and cost control are important.",
+      "YOUNGSUN Duplex Board provides a smooth, coated white printing front side with an economical recycled grey reverse, making it ideal for high-volume packaging where print quality, converting efficiency, and cost control must be balanced. Available in 200–450 gsm, the board offers ISO 85%+ brightness on the coated top side with stiffness optimized for carton converting. It comes in grey back as standard, with white back available subject to order quantity. The printable white surface supports multicolor carton printing, while the recycled base balances packaging performance and cost. The board is suitable for die-cutting, scoring, folding, and gluing on automated lines. Typical applications include consumer product cartons, food secondary packaging, toy boxes, shoe boxes, household packaging, and display packaging. Food-grade options with barrier coating are also available. Custom grammage, size, sheet or reel supply, cutting, and export packing are supported.",
     specs: [
       "Grammage: 200 – 450 gsm",
       "Structure: White coated top + grey uncoated back",
@@ -615,6 +745,27 @@ export const subProducts = {
       "General retail and display packaging",
     ],
     certifications: ["FSC Recycled", "ISO 9001"],
+    variants: [
+      "Duplex Board Grey Back",
+      "Duplex Board White Back (subject to availability)",
+    ],
+    features: [
+      "Printable White Surface — Provides a suitable surface for multicolor carton printing.",
+      "Economical Recycled Base — Balances packaging performance and cost.",
+      "Good Converting Performance — Suitable for die-cutting, scoring, folding and gluing.",
+      "Flexible Supply — Available in sheets, reels and custom dimensions.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Custom size",
+      "Sheet or reel supply",
+      "Custom cutting",
+      "Export packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grey back or white back","Grammage","Size","Quantity","Application","Destination port"],
+    seoTitle: "Duplex Board Grey Back Supplier | YOUNGSUN",
+    metaDescription: "Coated white-top duplex board from 200 to 400 gsm for economical folding cartons, retail packaging and printed boxes.",
     keywords: ["duplex board", "white-lined chipboard", "WLC", "coated duplex board", "grey back board", "FMCG carton board"],
     image: "/images/products/package-board/duplex-board-main.jpg",
     gallery: [
@@ -698,6 +849,26 @@ export const subProducts = {
       "Butter and margarine wraps",
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix"],
+    variants: [
+      "Single-Side PE Coated Paper (1PE)",
+      "Double-Side PE Coated Paper (2PE)",
+      "PE Coated Kraft Paper",
+      "PE Coated White Board",
+    ],
+    features: [
+      "Moisture Barrier — PE layer prevents water and moisture penetration for food and liquid packaging.",
+      "Heat-Sealable — Standard PE heat-seal range 110–150°C for cup and container forming.",
+      "Grease Resistant — Suitable for oily and greasy food applications.",
+      "Food-Grade Compliance — FDA 21 CFR 176.170 & EU 1935/2004 compliant for direct food contact.",
+    ],
+    customization: [
+      "Custom PE coating weight (12–30 gsm)",
+      "Single or double side coating",
+      "Custom substrate grammage",
+      "Slit-to-width reels",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["PE coated paper", "polyethylene coated paper", "paper cup stock", "PE coated board", "heat seal paper", "food-grade coated paper"],
     image: "/images/products/package-board/pe-coated-paper-main.jpg",
     gallery: [
@@ -764,7 +935,7 @@ export const subProducts = {
     category: "package-board",
     tagline: "High-strength coated kraft back board for beverage, food, frozen, retail and industrial folding cartons.",
     description:
-      "YOUNGSUN Coated Kraft Back Board combines a multi-coated white printing surface with a strong unbleached kraft reverse. Hard sizing and high structural strength make it suitable for demanding packaging and cold-storage applications.",
+      "YOUNGSUN Coated Kraft Back Board (CKB) combines a multi-coated (triple-coated) white printing surface with a strong unbleached kraft reverse, delivering both attractive retail presentation and robust structural performance. Available in 200–350 gsm with common weights at 200, 235, 245, 255, 280, 300, 325, and 350 gsm, the board is hard-sized for demanding applications including cold storage, frozen food, and beverage packaging. The strong kraft reverse provides reliable tear and compression performance, while the high-quality coated top supports detailed printing and branding. The board can be supplied in sheets, reels, and custom sizes. Primary applications include beverage packaging, dry food cartons, frozen food packaging, cold storage packaging, toy boxes, shoe boxes, and tool packaging. Custom grammage, sheet or reel supply, size, cutting, and export packing are all supported. Food-contact certification is available upon request.",
     specs: [
       "Grammage: 200 – 350 gsm",
       "Surface: Triple-coated white top with unbleached kraft back",
@@ -781,6 +952,26 @@ export const subProducts = {
       "Tool packaging",
     ],
     certifications: ["FSC certified"],
+    variants: [
+      "Coated Kraft Back Board",
+    ],
+    features: [
+      "Strong Kraft Reverse — Provides reliable tear and compression performance.",
+      "High-Quality Coated Top — Supports attractive printing and retail presentation.",
+      "Hard-Sized Structure — Suitable for cold storage, frozen and beverage packaging applications.",
+      "High Yield — Combines structural performance with efficient material use.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Custom cutting",
+      "Export packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or reel size","Quantity","End use","Food-contact requirement","Destination port"],
+    seoTitle: "Coated Kraft Back Board Supplier | YOUNGSUN",
+    metaDescription: "CKB coated kraft back board from 200 to 350 gsm for beverage, frozen food, retail and industrial folding cartons.",
     keywords: ["coated kraft back board", "CKB paperboard supplier", "kraft back folding carton", "beverage packaging board", "frozen food paperboard"],
     image: "/images/products/package-board/ckb-main.jpg",
     gallery: [
@@ -795,39 +986,6 @@ export const subProducts = {
     ],
   },
 
-  "art-paper": {
-    id: "art-paper",
-    name: "Art Paper (C2S Coated)",
-    category: "package-board",
-    tagline: "Two-side coated gloss and matt art paper for catalogs, magazines, brochures, labels and premium commercial printing.",
-    description:
-      "YOUNGSUN C2S Art Paper offers a smooth coated surface on both sides for sharp images, fine text and consistent color reproduction. Gloss and matt options are available for different visual and tactile requirements.",
-    specs: [
-      "Grammage: 80 – 200 gsm",
-      "Finish: Gloss / Matt / Silk (semi-matt)",
-      "Brightness: ISO 92%+",
-      "Whiteness: CIE 145+",
-      "Smoothness: ≤ 1.0 μm (PPS)",
-      "Format: Sheets & reels",
-    ],
-    applications: [
-      "Magazines, catalogs, and annual reports",
-      "Art books and photography books",
-      "Posters, calendars, and wall art",
-      "High-end brochures and sales literature",
-      "Luxury brand lookbooks and portfolios",
-      "High-quality commercial flyers and inserts",
-    ],
-    certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
-    keywords: ["art paper", "C2S coated paper", "coated art paper", "woodfree coated paper", "gloss art paper", "matt art paper"],
-    image: "/images/products/culture-paper/art-paper-main.jpg",
-    gallery: [
-      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
-    ],
-  },
-
   // ========================
   // CULTURE PAPER (6 sub-products)
   // ========================
@@ -837,7 +995,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing.",
     description:
-      "YOUNGSUN Woodfree Offset Paper is an uncoated printing paper developed for clear text, balanced ink absorption and reliable press performance. It is suitable for books, notebooks, manuals, forms and general commercial printing.",
+      "YOUNGSUN Woodfree Offset Paper is an uncoated printing paper developed for clear text reproduction, balanced ink absorption, and reliable high-speed press performance. Available in 60–120 gsm with common weights at 60, 65, 70, 80, 100, and 120 gsm, the paper offers high white and natural white color options depending on the grade. It delivers good opacity for double-sided printing, making it suitable for books, notebooks, textbooks, manuals, forms, envelopes, and general commercial printing. The balanced ink absorption supports clean offset results without show-through, while reliable runnability ensures consistent feeding and printing on high-speed equipment. Available in sheets, reels, and custom-cut formats. Custom grammage, color selection, sheet or reel supply, size, and packing are all available to order.",
     specs: [
       "Grammage: 60 – 120 gsm (custom up to 300 gsm)",
       "Brightness: ISO 90–100%",
@@ -855,6 +1013,27 @@ export const subProducts = {
       "Archival documents — ISO 9706 permanent paper",
     ],
     certifications: ["FSC Mix", "ISO 9706 (archival)", "ISO 9001"],
+    variants: [
+      "High White Offset Paper",
+      "Natural White Offset Paper (subject to order)",
+    ],
+    features: [
+      "Balanced Ink Absorption — Supports clean text and stable offset printing.",
+      "Good Opacity — Suitable for double-sided books, manuals and forms.",
+      "Reliable Runnability — Designed for consistent feeding and printing performance.",
+      "Multiple Supply Forms — Available in sheets, reels and custom formats.",
+    ],
+    customization: [
+      "Custom grammage",
+      "High white or natural white",
+      "Sheet or reel supply",
+      "Custom size",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
+    seoTitle: "Woodfree Offset Paper Supplier | YOUNGSUN",
+    metaDescription: "Woodfree offset paper for premium commercial printing, books, brochures and business stationery.",
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
     image: "/images/products/culture-paper/woodfree-paper-main.jpg",
     gallery: [
@@ -920,7 +1099,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Lightweight colored offset paper for office forms, inserts, publishing, stationery and promotional printing.",
     description:
-      "YOUNGSUN Color Offset Paper is available in standard, deep and fluorescent shades for printing and converting applications. The uncoated surface is suitable for offset printing, copying, writing and general paper converting.",
+      "YOUNGSUN Color Offset Paper is available in standard, deep, and fluorescent shades for a wide range of printing and converting applications. The grammage range spans 60–150 gsm with an uncoated surface suitable for offset printing, copying, writing, and general paper converting. Lighter weights work well for inserts, forms, and multi-page printed products, while heavier weights serve stationery and promotional items. The broad color range supports coding, branding, publishing, and promotional use. Common applications include office forms, book inserts, flyers, stationery, educational materials, tickets, and promotional printing. Available in sheets, reels, and custom-cut sizes. Custom color selection, grammage, sheet or reel supply, size, and packing are supported.",
     specs: [
       "Grammage: 60 – 200 gsm",
       "Colors: 20+ standard, custom matching available",
@@ -938,6 +1117,28 @@ export const subProducts = {
       "Colored divider pages and interleaving",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "Standard Color Offset Paper",
+      "Deep Color Offset Paper",
+      "Fluorescent Offset Paper",
+    ],
+    features: [
+      "Broad Color Range — Supports coding, branding, publishing and promotional use.",
+      "Uncoated Printing Surface — Suitable for offset printing, writing and selected digital applications.",
+      "Lightweight Options — Suitable for inserts, forms and multi-page printed products.",
+      "Custom Converting — Available in sheets, reels and custom-cut sizes.",
+    ],
+    customization: [
+      "Color selection",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Color reference","Grammage","Sheet or reel size","Quantity","Printing method","Destination port"],
+    seoTitle: "Color Offset Paper Supplier | YOUNGSUN",
+    metaDescription: "Color offset paper in a wide range of shades for commercial printing, stationery and specialty applications.",
     keywords: ["color offset paper", "colored uncoated paper", "tinted offset", "colored printing paper", "dyed paper", "offset color paper"],
     image: "/images/products/culture-paper/color-offset-paper-main.jpg",
     gallery: [
@@ -1003,7 +1204,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Lightweight coated paper for magazines, catalogs, inserts, manuals and high-volume commercial printing.",
     description:
-      "YOUNGSUN LWC Paper combines low basis weight with a coated printing surface, helping publishers and printers reduce product weight while maintaining image quality and opacity. It is suitable for high-volume publication and advertising applications.",
+      "YOUNGSUN LWC (Lightweight Coated) Paper combines low basis weight with a coated printing surface, helping publishers and printers reduce product weight and distribution cost while maintaining image quality and opacity. Available in 58–80 gsm with common weights at 58, 60, 62, 64, 70, and 80 gsm. Typical specifications include 43% gloss, ISO 84% whiteness, and opacity ranging from approximately 89.5% to 96% depending on grammage — suitable for double-sided publication printing. The coated surface supports clear images and consistent color reproduction, making it ideal for high-volume magazine, catalog, advertising insert, instruction manual, retail leaflet, and direct mail applications. Available in sheets, reels, and custom sizes with export packing options.",
     specs: [
       "Grammage: 35 – 70 gsm",
       "Coating: Light on-machine coated, gloss or matt",
@@ -1021,6 +1222,25 @@ export const subProducts = {
       "Telephone directories and reference books",
     ],
     certifications: ["FSC Mix", "PEFC", "ISO 9001"],
+    variants: [
+      "Lightweight Coated Paper",
+    ],
+    features: [
+      "Low Basis Weight — Helps reduce publication weight and distribution cost.",
+      "Coated Print Surface — Supports clear images and consistent color reproduction.",
+      "Good Opacity — Suitable for double-sided publication printing.",
+      "High-Volume Printing Use — Designed for magazines, catalogs, inserts and commercial print runs.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
+    seoTitle: "LWC Paper Supplier for Magazines and Catalogs | YOUNGSUN",
+    metaDescription: "Lightweight coated paper with high opacity for magazines, catalogs, inserts and high-volume commercial printing.",
     keywords: ["LWC paper", "lightweight coated paper", "magazine paper", "catalog paper", "low grammage coated", "heatset web paper"],
     image: "/images/products/culture-paper/lwc-paper-main.jpg",
     gallery: [
@@ -1086,7 +1306,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Self-copying carbonless paper for forms, invoices, and receipts — no carbon sheet needed, clean and smudge-free.",
     description:
-      "NCR (No Carbon Required) paper — also called carbonless copy paper or self-copying paper — is a chemically coated paper that creates duplicate copies without an intermediate carbon sheet. When pressure is applied (by pen, typewriter, or dot-matrix printer), microcapsules of dye on the back of the top sheet rupture and react with a clay-based coating on the front of the sheet below, creating a permanent image. Standard sets include 2-part (CB+CF) and multi-part configurations up to 6 parts. Used universally for business forms, delivery notes, invoices, receipts, and contracts.",
+      "YOUNGSUN NCR (No Carbon Required) carbonless copy paper provides reliable image transfer in multi-part forms, invoices, receipts, and business documents. Available in 2-part to 6-part configurations, the paper uses a chemical coating system — CB (Coated Back), CFB (Coated Front and Back), and CF (Coated Front) sheets — to produce clean, consistent copies without carbon interleaves. The paper delivers sharp blue or black image transfer under writing or impact printing pressure, with good fade resistance for archival records. Common applications include business forms, invoices, delivery notes, receipts, contracts, bank slips, and warehouse documentation. The paper is compatible with offset and letterpress printing for form design and branding. Custom ply configurations, grammage, sheet or roll sizes, and packing are available to order.",
     specs: [
       "Types: CB (Coated Back) / CFB (Coated Front & Back) / CF (Coated Front)",
       "Grammage: 50 – 60 gsm per ply",
@@ -1104,6 +1324,29 @@ export const subProducts = {
       "Bank deposit and withdrawal slips",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "CB (Coated Back) — Top Sheet",
+      "CFB (Coated Front & Back) — Middle Sheet",
+      "CF (Coated Front) — Bottom Sheet",
+      "2-Part to 6-Part Sets",
+    ],
+    features: [
+      "Clean Self-Copying — Creates instant copies without carbon sheets, pressure-activated microcapsule technology.",
+      "Multi-Part Capability — Standard sets from 2-part up to 6-part for complex business forms.",
+      "Color-Coded Plies — Sequential colors (white, pink, yellow, blue, green) for easy identification.",
+      "Smudge-Free Images — Blue or black image options with sharp contrast for permanent records.",
+    ],
+    customization: [
+      "Custom sheet size",
+      "Multi-part set configuration",
+      "Sequential color plies",
+      "Blue or black image color",
+      "Reel or sheet supply",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Number of plies","Grammage","Sheet or roll size","Quantity","Printing method","Destination port"],
+    seoTitle: "NCR Carbonless Paper Supplier | YOUNGSUN",
+    metaDescription: "NCR carbonless copy paper in multi-ply configurations for forms, invoices, receipts and business documents.",
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
     image: "/images/products/culture-paper/ncr-paper-main.jpg",
     gallery: [
@@ -1169,7 +1412,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Office copy paper in multiple grammages, sheet formats and packing options for distributors, institutions and private-label buyers.",
     description:
-      "YOUNGSUN supplies copy paper for photocopying, laser printing, inkjet printing and general office use. Standard and customized sheet formats are available, with flexible ream and carton configurations for wholesale distribution. Private-label packaging can be developed for qualified container-volume orders.",
+      "YOUNGSUN supplies copy paper for photocopying, laser printing, inkjet printing, and general office use in both 70 gsm and 80 gsm grades. Standard sheet formats cover A-series (A3, A4, A5), B-series (B4, B5), K-series (8K, 16K), and US formats. Ream configurations are flexible: standard 400 or 500 sheets per ream, with customized counts from 240 to 500 sheets available. Carton packing options include 5, 6, 8, or 10 reams per carton according to target market requirements. For wholesale distribution and institutional buyers, private-label packaging can be developed — custom ream wrapper and carton designs are available for qualified container-volume orders (MOQ approximately 2×40HQ, around 20,000 cartons). Standard packing MOQ is 500 cartons. Key applications span office printing, photocopying, schools and universities, government and institutional procurement, corporate stationery, and wholesale/retail distribution.",
     specs: [
       "Grammage: 70 / 75 / 80 gsm",
       "Brightness: ISO 92–100%",
@@ -1188,12 +1431,32 @@ export const subProducts = {
       "Export wholesale — container-load supply",
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
+    variants: [
+      "70 gsm Copy Paper",
+      "80 gsm Copy Paper",
+      "Standard Packing",
+      "Private-Label Packing",
+    ],
+    features: [
+      "Multiple Office Formats — Available in common A-, B- and K-series formats, including A3, A4, A5, B4, B5, 8K and 16K.",
+      "Flexible Ream Configuration — Standard 400- or 500-sheet reams are available, with customized packs from 240 to 500 sheets.",
+      "Wholesale Carton Options — Cartons can be arranged with 5, 6, 8 or 10 reams according to the target market.",
+      "Private-Label Supply — Customized wrapper and carton designs are available for qualified container-volume programs.",
+    ],
+    customization: [
+      "Private-label ream wrapper",
+      "Customized carton design",
+      "Custom sheet count from 240 to 500 sheets",
+      "5, 6, 8 or 10 reams per carton",
+      "Selected A-, B-, K- and US sheet formats",
+    ],
+    commercial: { moq: "500 cartons (standard) / 2×40HQ ~20,000 cartons (private label)", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage (70/75 gsm)","Sheet size (A4/A3/Letter)","Quantity (reams/pallets)","Brightness requirement","Destination port"],
+    seoTitle: "Copy Paper Supplier for Office and Commercial Use | YOUNGSUN",
+    metaDescription: "High-brightness copy paper in A4/A3/Letter formats for office, commercial printing and stationery use.",
     keywords: ["copy paper", "A4 copy paper", "office paper", "printer paper", "multi-purpose paper", "copy paper wholesale"],
     image: "/images/products/culture-paper/copy-paper-main.jpg",
     gallery: [
-      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
   "newsprint": {
@@ -1219,6 +1482,24 @@ export const subProducts = {
       "Directory and catalog printing (economy grade)",
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 14001"],
+    variants: [
+      "Standard Newsprint (40–57 gsm)",
+      "Improved Newsprint (higher brightness)",
+      "Colored Newsprint (subject to order)",
+    ],
+    features: [
+      "Cost-Efficient — Low basis weight designed for high-volume, economical printing at scale.",
+      "High-Speed Runnability — Engineered for coldset web offset presses with minimal web breaks.",
+      "Good Opacity — Maintains readability even at lightweight grammages for double-sided printing.",
+      "Reel Supply — Standard and jumbo reels for high-speed newspaper and publication presses.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Custom reel width",
+      "Sheet supply on request",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
     image: "/images/products/culture-paper/newsprint-main.jpg",
     gallery: [
@@ -1256,12 +1537,28 @@ export const subProducts = {
       "Wholesale distribution to office supply chains",
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
+    variants: [
+      "70 gsm A4 Copy Paper",
+      "75 gsm A4 Copy Paper",
+      "80 gsm A4 Copy Paper",
+    ],
+    features: [
+      "Universal Compatibility — Optimized for laser, inkjet, copier and fax machines with jam-free performance.",
+      "High Brightness — ISO 92–100% brightness for sharp text and clean document appearance.",
+      "Smooth Surface — Dust-free finish ensures consistent toner/ink adhesion and crisp output.",
+      "Export-Ready Packaging — Palletized with moisture-barrier wrapping for container shipping.",
+    ],
+    customization: [
+      "Private-label ream wrapper",
+      "Custom carton design",
+      "Grammage selection (70/75/80 gsm)",
+      "Ream count configuration",
+      "Export pallet packing",
+    ],
+    commercial: { moq: "500 cartons", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
     image: "/images/products/culture-paper/a4-copy-paper-main.jpg",
     gallery: [
-      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
   "a4-thermal-paper": {
@@ -1288,12 +1585,26 @@ export const subProducts = {
       "Travel and hospitality documentation",
     ],
     certifications: ["BPA-free grades available", "ISO 9001"],
+    variants: [
+      "Standard A4 Thermal Paper",
+      "BPA-Free A4 Thermal Paper",
+    ],
+    features: [
+      "No Ink Required — Direct thermal transfer produces sharp images without cartridges, ribbons or toner.",
+      "Portable Printer Compatible — Pre-cut A4 sheets for compact mobile thermal printers used by field professionals.",
+      "Good Image Contrast — Produces clear black text and graphics for documents, contracts and invoices.",
+      "Instant Printing — Heat-sensitive coating enables immediate output without warm-up time.",
+    ],
+    customization: [
+      "BPA-free option",
+      "Custom sheet count per box",
+      "Custom packing",
+      "Branded packaging",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
     image: "/images/products/culture-paper/a4-thermal-paper-main.jpg",
     gallery: [
-      // { src: "/images/products/culture-paper/gallery-01.jpg", alt: "Product photo 1" },
-      // { src: "/images/products/culture-paper/gallery-02.jpg", alt: "Product photo 2" },
-      // { src: "/images/products/culture-paper/gallery-03.jpg", alt: "Product photo 3" },
     ],
   },
   "thermal-paper-roll": {
@@ -1320,6 +1631,26 @@ export const subProducts = {
       "ATM and banking transaction records",
     ],
     certifications: ["BPA-free grades", "Phenol-free grades", "ISO 9001"],
+    variants: [
+      "57mm Width Thermal Roll",
+      "80mm Width Thermal Roll",
+      "BPA-Free Thermal Roll",
+      "Phenol-Free Thermal Roll",
+    ],
+    features: [
+      "Universal POS Compatibility — Standard 57mm and 80mm widths fit all major POS and receipt printer brands.",
+      "Crisp Print Quality — High-contrast black imaging for barcode scanning and long-term record keeping.",
+      "BPA-Free & Phenol-Free Options — Safer chemistry for food-service, healthcare and retail environments.",
+      "Consistent Roll Winding — Uniform tension ensures smooth feeding without jams or misalignment.",
+    ],
+    customization: [
+      "Custom roll width and diameter",
+      "Core size selection (12/17/25mm)",
+      "BPA-free or phenol-free grade",
+      "Custom packing and labeling",
+      "Shrink-wrapped or bulk-packed",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
     image: "/images/products/culture-paper/thermal-paper-roll-main.jpg",
     gallery: [
@@ -1361,6 +1692,26 @@ export const subProducts = {
       "Hang tags and swing tickets for fashion brands",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "Soft Touch Coated Paper (120–250 gsm)",
+      "Soft Touch Coated Board (250–400 gsm)",
+      "Matte Soft Touch",
+      "Anti-Scuff Soft Touch",
+    ],
+    features: [
+      "Velvet-Smooth Tactile Surface — Creates an irresistible touch sensation that signals luxury and quality.",
+      "Fingerprint Resistant — Maintains a clean, premium appearance even with repeated handling.",
+      "Deepens Printed Colors — Blacks appear richer, colors more saturated for dramatic visual impact.",
+      "Scuff & Scratch Resistant — Durable coating withstands converting, handling and shipping.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Printing coordination",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
     image: "/images/products/fancy-paper/soft-touch-paper-main.jpg",
     gallery: [
@@ -1444,6 +1795,26 @@ export const subProducts = {
       "Certificate and diploma holders",
     ],
     certifications: ["FSC Mix", "Vegan certified", "ISO 9001"],
+    variants: [
+      "Crocodile Grain Leather Paper",
+      "Calf Grain Leather Paper",
+      "Ostrich Grain Leather Paper",
+      "Pebble Grain Leather Paper",
+    ],
+    features: [
+      "Authentic Leather Look & Feel — Embossed texture replicates genuine leather without animal materials.",
+      "100% Vegan — Animal-free alternative that delivers the same luxury aesthetic for ethical brands.",
+      "Multiple Leather Patterns — Crocodile, calf, ostrich, pebble grain and custom textures available.",
+      "Rich Color Palette — Classic leather tones: black, brown, tan, burgundy, navy, dark green.",
+    ],
+    customization: [
+      "Leather grain pattern selection",
+      "Custom color matching",
+      "Custom grammage and substrate",
+      "Sheet or reel supply",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
     image: "/images/products/fancy-paper/leather-paper-main.jpg",
     gallery: [
@@ -1527,6 +1898,27 @@ export const subProducts = {
       "High-end brochure and menu covers",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "White Pearl Paper",
+      "Champagne Pearl Paper",
+      "Gold Pearl Paper",
+      "Silver Pearl Paper",
+      "Custom Tinted Pearl Paper",
+    ],
+    features: [
+      "Light-Reflecting Shimmer — Mica-based pigments create a luminous finish that shifts with viewing angle.",
+      "Premium Visual Impact — Instantly communicates luxury for weddings, cosmetics and high-end brands.",
+      "Multiple Pearl Tones — White, champagne, gold, silver and custom tinted pearl variants available.",
+      "Print & Finish Compatible — Works with offset, screen, foil stamping, embossing and debossing.",
+    ],
+    customization: [
+      "Pearlescent tone selection",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Foil and embossing coordination",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
     image: "/images/products/fancy-paper/pearlescent-paper-main.jpg",
     gallery: [
@@ -1610,6 +2002,27 @@ export const subProducts = {
       "Bespoke wedding and event stationery",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "Linen Embossed Paper",
+      "Felt Embossed Paper",
+      "Canvas Embossed Paper",
+      "Woodgrain Embossed Paper",
+      "Custom Pattern Embossed Paper",
+    ],
+    features: [
+      "Genuine 3D Texture — Mechanically pressed relief patterns create real topography, not printed imitation.",
+      "Tactile Brand Experience — Invites touch and signals premium quality for luxury packaging and stationery.",
+      "Wide Pattern Library — Standard patterns include linen, felt, canvas, woodgrain; custom patterns available.",
+      "Post-Emboss Compatible — Accepts subsequent printing, foil stamping and die-cutting without pattern loss.",
+    ],
+    customization: [
+      "Pattern selection (standard or custom)",
+      "Custom embossing depth",
+      "Custom grammage and substrate",
+      "Sheet or reel supply",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
     image: "/images/products/fancy-paper/embossed-paper-main.jpg",
     gallery: [
@@ -1696,6 +2109,27 @@ export const subProducts = {
       "Holiday and festive packaging",
     ],
     certifications: ["FSC Mix", "ISO 9001", "SGS certified"],
+    variants: [
+      "Classic Gold Card Paper",
+      "Bright Silver Card Paper",
+      "Rose Gold Card Paper",
+      "Champagne Gold Card Paper",
+      "Custom Metallic Finish",
+    ],
+    features: [
+      "Mirror-Like Reflective Surface — Vacuum metallization creates brilliant, light-catching metallic finish.",
+      "Multiple Metallic Tones — Gold, silver, rose gold, champagne and custom metallic shades available.",
+      "Print-Compatible — Accepts offset, screen printing, embossing, debossing and foil stamping.",
+      "Luxury Brand Positioning — Instantly elevates gift boxes, cosmetics, jewelry and spirits packaging.",
+    ],
+    customization: [
+      "Metallic finish selection",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Embossing and foil coordination",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["gold silver card paper", "metallic card paper", "gold foil paper", "silver cardstock", "metallic board", "luxury metallic paper"],
     image: "/images/products/fancy-paper/gold-silver-card-main.jpg",
     gallery: [
@@ -1750,6 +2184,26 @@ export const subProducts = {
       "Security and tamper-evident label face stock",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "C1S Label Face Stock (coated one side)",
+      "C2S Hang Tag Paper (coated two sides)",
+      "Metallized Label Paper",
+      "Wet-Glue Label Paper",
+    ],
+    features: [
+      "High-Speed Converting — Engineered for die-cutting, matrix stripping and rewinding at production speeds.",
+      "Smooth Print Surface — Delivers fine text, barcodes and brand graphics with sharp reproduction.",
+      "Dimensional Stability — Resists curling and stretching under adhesive coating for reliable label application.",
+      "Multi-Purpose Grades — C1S for pressure-sensitive labels, C2S for premium hang tags and swing tickets.",
+    ],
+    customization: [
+      "C1S or C2S grade",
+      "Gloss, matt or semi-gloss finish",
+      "Custom grammage",
+      "Reel or sheet supply",
+      "Adhesive compatibility consultation",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
     image: "/images/products/fancy-paper/label-paper-main.jpg",
     gallery: [
@@ -1833,6 +2287,26 @@ export const subProducts = {
       "Branded unboxing experience — custom-printed tissue options",
     ],
     certifications: ["FSC Mix", "SGS certified", "ISO 9001"],
+    variants: [
+      "Pastel Color Tissue Paper",
+      "Bold Saturated Color Tissue Paper",
+      "Virgin Fiber Tissue Paper",
+      "Recycled Fiber Tissue Paper",
+    ],
+    features: [
+      "Extensive Color Palette — 30+ standard colors from soft pastels to bold saturated hues for any brand.",
+      "Colorfast & Non-Bleeding — Safe for wrapping clothing, accessories and delicate items without color transfer.",
+      "Acid-Free & Archival Safe — pH neutral composition protects wrapped items from discoloration.",
+      "Soft Flexible Fold — Lightweight and pliable for creating luxurious unboxing experiences.",
+    ],
+    customization: [
+      "Custom PMS color matching",
+      "Custom sheet size",
+      "Virgin or recycled fiber",
+      "Custom printing",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["color tissue paper", "colored tissue paper", "gift tissue paper", "luxury tissue paper", "acid-free tissue", "packaging tissue paper"],
     image: "/images/products/fancy-paper/color-tissue-paper-main.jpg",
     gallery: [
@@ -1853,7 +2327,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Translucent tracing paper for luxury packaging, printing, drawing, invitations and decorative applications.",
     description:
-      "YOUNGSUN Tracing Paper combines controlled transparency with a smooth, clean surface for printing, drawing and premium packaging. Multiple grammages are available to balance transparency, handling strength and visual effect.",
+      "YOUNGSUN Tracing Paper combines controlled transparency (approximately 56%–73% depending on grammage) with a smooth, clean surface for printing, drawing, and premium packaging applications. Available from 50–180 gsm across eleven common weight points (50, 60, 70, 80, 90, 100, 110, 130, 150, 170, and 180 gsm), the paper is supplied in sheets, reels, and custom sizes in its natural translucent white color. The controlled transparency creates layered visual effects while maintaining readability and structural integrity. The smooth surface is suitable for printing, drawing, hot stamping, and decorative converting, adding a refined translucent effect to luxury packaging, book and brochure inserts, and invitations. Applications extend to envelopes, architectural drawing, garment patterns, hang tags, and decorative printing. Custom grammage, transparency specification, sheet or reel supply, size, and printing/hot stamping coordination are all supported.",
     specs: [
       "Grammage: 45 – 200 gsm",
       "Translucency: 50–70% light transmission",
@@ -1871,6 +2345,27 @@ export const subProducts = {
       "Wedding invitation overlays and belly bands",
     ],
     certifications: ["FSC Mix", "ISO 9001"],
+    variants: [
+      "Standard Tracing Paper",
+      "Heavyweight Tracing Paper",
+    ],
+    features: [
+      "Controlled Transparency — Creates layered visual effects while maintaining readability and structure.",
+      "Smooth Surface — Suitable for printing, drawing, hot stamping and decorative converting.",
+      "Wide Grammage Range — Covers lightweight overlays and heavier packaging inserts.",
+      "Premium Appearance — Adds a refined translucent effect to invitations, books and packaging.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Printing and hot stamping coordination",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or roll size","Quantity","Transparency requirement","Application","Destination port"],
+    seoTitle: "Tracing Paper Supplier for Drawing and Design | YOUNGSUN",
+    metaDescription: "Tracing paper in various grammages for sketching, drafting, overlays and creative projects.",
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
     image: "/images/products/culture-paper/tracing-paper-main.jpg",
     gallery: [
@@ -1940,7 +2435,7 @@ export const subProducts = {
     category: "food-packaging",
     tagline: "Food-grade cupstock base board for paper cups, food containers and PE-coated packaging.",
     description:
-      "YOUNGSUN Cupstock Board is a virgin-fibre paperboard developed for cup making and food packaging conversion. It offers a clean printing surface, reliable forming performance and compatibility with single- or double-side PE coating.",
+      "YOUNGSUN Cupstock Board is a virgin-fibre paperboard developed specifically for cup making and food packaging conversion. Available from 160–330 gsm across twelve common weight points (160, 170, 190, 210, 230, 240, 250, 260, 280, 300, 310, and 330 gsm), the board offers a clean, uncoated printing surface with reliable forming performance for cup sidewalls and food container converting. It is compatible with both single-side and double-side PE coating for moisture and liquid barrier requirements. The virgin-fibre base is suitable for food packaging applications subject to required compliance documentation. Key applications include hot drink cups, cold drink cups, food containers, ice cream cups, and takeaway packaging. Custom grammage, sheet or reel supply, PE coating coordination, size, and packing are supported.",
     specs: [
       "Substrate: Bleached kraft / White board, 180–350 gsm",
       "PE coating: 1PE (cold cup) or 2PE (hot cup), 15–25 gsm per side",
@@ -1958,6 +2453,27 @@ export const subProducts = {
       "Sampling cups for promotions and events",
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
+    variants: [
+      "Uncoated Cupstock Board",
+      "PE-Coated Cupstock (subject to order)",
+    ],
+    features: [
+      "Reliable Forming — Suitable for cup sidewalls and food container converting.",
+      "Clean Printing Surface — Supports food-service graphics and branding.",
+      "PE-Coating Compatibility — Can be converted with single- or double-side PE coating.",
+      "Virgin-Fibre Base — Suitable for food packaging applications subject to the required compliance documents.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "PE coating coordination",
+      "Custom size",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","PE coating (single/double side)","Roll width","Quantity","Food safety certification needed","Destination port"],
+    seoTitle: "Cupstock Board Supplier for Paper Cups | YOUNGSUN",
+    metaDescription: "Food-grade cupstock board with PE coating for paper cups, food containers and hot/cold beverage packaging.",
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
     image: "/images/products/food-packaging/cup-paper-main.jpg",
     gallery: [
@@ -2023,7 +2539,7 @@ export const subProducts = {
     category: "food-packaging",
     tagline: "White and natural greaseproof paper for bakery, fast food, takeaway and food wrapping applications.",
     description:
-      "YOUNGSUN Greaseproof Paper is designed to resist oil and grease while maintaining suitable strength and converting performance. White and natural options are available for food wrapping, liners, bags and printed food-service packaging.",
+      "YOUNGSUN Greaseproof Paper is engineered to resist oil and grease penetration while maintaining suitable strength and converting performance for food-service applications. Available in 35–60 gsm with common weights at 35, 40, 50, and 60 gsm, the paper achieves 3M KIT level 6 or higher grease resistance for the referenced grade. Both white and natural color options are available, supplied in sheets, reels, and custom-cut formats. The paper provides good strength for wrapping, folding, bag making, and food handling, with white and natural options supporting different brand and sustainability aesthetics. Custom printing can be applied for branded sheets, wraps, and bags. Typical applications include bakery wrapping, burger and sandwich wraps, fried food liners, takeaway bags, tray liners, confectionery wrapping, and food interleaving. Custom grammage, color, sheet or reel supply, printing, and cut-sheet formats are available.",
     specs: [
       "Grammage: 28 – 80 gsm",
       "Grease resistance: Kit rating 8–12 (TAPPI T559)",
@@ -2041,6 +2557,28 @@ export const subProducts = {
       "Fish and chip wrapping (traditional chippy paper)",
     ],
     certifications: ["FDA 21 CFR 176.170", "EU 1935/2004", "PFAS-free certified", "FSC Mix"],
+    variants: [
+      "White Greaseproof Paper",
+      "Natural Greaseproof Paper",
+      "Printed Greaseproof Paper (subject to order)",
+    ],
+    features: [
+      "Grease Resistance — Helps prevent oil and grease penetration in food-service use.",
+      "Good Strength — Suitable for wrapping, folding, bag making and food handling.",
+      "White and Natural Options — Supports different brand and sustainability aesthetics.",
+      "Custom Printing Available — Can be converted into branded sheets, wraps and bags.",
+    ],
+    customization: [
+      "White or natural color",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom printing",
+      "Custom-cut sheets",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Grammage","Sheet or roll size","Quantity","Food-contact requirement","Application","Destination port"],
+    seoTitle: "Greaseproof Paper Supplier for Food Packaging | YOUNGSUN",
+    metaDescription: "Greaseproof paper for food wrapping, bakery packaging and grease-resistant applications.",
     keywords: ["greaseproof paper", "grease resistant paper", "baking paper", "food wrap paper", "oil proof paper", "PFAS-free food paper"],
     image: "/images/products/food-packaging/greaseproof-paper-main.jpg",
     gallery: [
@@ -2124,6 +2662,24 @@ export const subProducts = {
       "Printed inserts",
     ],
     certifications: ["FSC certified"],
+    variants: [
+      "White MG Paper",
+      "Natural MG Paper",
+      "Bleached MG Paper",
+    ],
+    features: [
+      "Smooth Glazed Side — Machine-glazed front surface provides a smooth, printable face for branding.",
+      "Absorbent Reverse — Open-fiber back side designed for adhesion, lamination and converting.",
+      "Lightweight Efficiency — Available from 23 gsm for economical food wrapping and bag applications.",
+      "Flexible Converting — Suitable for bag making, wrapping, interleaving and liner applications.",
+    ],
+    customization: [
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom size",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["MG paper supplier", "machine glazed paper", "food wrapping paper", "paper bag material", "glazed packaging paper"],
     image: "/images/products/food-packaging/mg-paper-main.jpg",
   },
@@ -2152,6 +2708,26 @@ export const subProducts = {
       "Silicone-coated kraft for bakery and patisserie",
     ],
     certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
+    variants: [
+      "Single-Side Silicone Coated (1S)",
+      "Double-Side Silicone Coated (2S)",
+      "Bleached Silicone Paper (White)",
+      "Unbleached Silicone Paper (Natural Brown)",
+    ],
+    features: [
+      "Non-Stick Performance — Food-grade silicone layer ensures clean release for baking and cooking.",
+      "High Heat Resistance — Withstands 230°C continuous and up to 250°C short-term for oven and grill use.",
+      "Adjustable Release Force — Easy, medium or tight release options for different industrial applications.",
+      "Dual-Purpose Design — Serves both food-contact baking and industrial release liner applications.",
+    ],
+    customization: [
+      "Single or double side silicone",
+      "Release force level (easy/medium/tight)",
+      "Custom grammage",
+      "Sheet or reel supply",
+      "Custom packing",
+    ],
+    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
     image: "/images/products/food-packaging/silicone-coated-paper-main.jpg",
     gallery: [

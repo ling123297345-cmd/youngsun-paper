@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { siteConfig, productCategories, subProducts, whyChooseUs, contactInfo, faqItems, testimonials } from "../data.js";
 import { productEs } from "../productEs.js";
+import { industries } from "../industriesData.js";
+import { caseStudies } from "../caseStudiesData.js";
 import { PageMeta, OrganizationSchema } from "../SEO.jsx";
 
 function ArrowIcon() {
@@ -58,6 +60,15 @@ export default function Home() {
 
       {/* ===== FANCY PAPER BANNER ===== */}
       <FancyPaperBanner />
+
+      {/* ===== INDUSTRIES OVERVIEW ===== */}
+      <IndustriesOverview />
+
+      {/* ===== CLIENT LOGOS / TRUST BAR ===== */}
+      <TrustBar />
+
+      {/* ===== CASE STUDY HIGHLIGHTS ===== */}
+      <CaseStudyHighlights />
 
       {/* ===== WHY US ===== */}
       <WhyUsHome />
@@ -145,6 +156,97 @@ function FancyPaperBanner() {
   );
 }
 
+function IndustriesOverview() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  return (
+    <section className="section" style={{ background: "#fff" }}>
+      <div className="section-header">
+        <span className="section-label">{isEs ? "Soluciones por Industria" : "Solutions by Industry"}</span>
+        <h2>{isEs ? "Papel Diseñado para Su Sector" : "Paper Engineered for Your Industry"}</h2>
+        <p style={{ maxWidth: 600, margin: "0 auto" }}>{isEs ? "Cada industria exige algo diferente del papel. Explore nuestras soluciones adaptadas." : "Every industry demands something different from paper. Explore our tailored solutions."}</p>
+      </div>
+      <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))", gap: 16, maxWidth: 1200 }}>
+        {industries.map((ind) => (
+          <Link key={ind.id} to={`/industries/${ind.id}`} style={{ background: "var(--paper)", borderRadius: 12, padding: "24px 20px", textAlign: "center", textDecoration: "none", color: "inherit", transition: "transform 0.2s var(--ease-out)" }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.transform = ""; }}
+          >
+            <div style={{ fontSize: 36, marginBottom: 10 }}>{ind.icon}</div>
+            <h4 style={{ fontSize: 14, fontWeight: 700, color: "var(--forest)" }}>{ind.title[lang]}</h4>
+          </Link>
+        ))}
+      </div>
+      <div style={{ textAlign: "center", marginTop: 28 }}>
+        <Link to="/industries" className="btn btn-outline">{isEs ? "Ver Todas las Industrias" : "View All Industries"} →</Link>
+      </div>
+    </section>
+  );
+}
+
+function TrustBar() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const clients = [
+    { name: "Nikon", region: "Japan" },
+    { name: "Toyota", region: "Japan" },
+    { name: "Festo", region: "Germany" },
+    { name: "Microsoft", region: "USA" },
+    { name: "Emerson", region: "USA" },
+    { name: "APP", region: "China" },
+    { name: "NINEDRAGON", region: "China" },
+    { name: "CHENMING", region: "China" },
+  ];
+  return (
+    <section className="section" style={{ background: "var(--paper)", padding: "48px 0" }}>
+      <div className="container" style={{ textAlign: "center", maxWidth: 1000 }}>
+        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 24 }}>
+          {isEs ? "Nuestros Socios y Clientes" : "Our Mill Partners & Trusted By"}
+        </span>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "28px 36px", opacity: 0.65 }}>
+          {clients.map((c) => (
+            <span key={c.name} style={{ fontSize: 16, fontWeight: 700, color: "var(--forest)", letterSpacing: 1 }}>{c.name}</span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CaseStudyHighlights() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const featured = caseStudies.slice(0, 3);
+  return (
+    <section className="section" style={{ background: "#fff" }}>
+      <div className="section-header">
+        <span className="section-label">{isEs ? "Casos de Estudio" : "Case Studies"}</span>
+        <h2>{isEs ? "Resultados Reales con YOUNGSUN" : "Real Results with YOUNGSUN"}</h2>
+        <p>{isEs ? "Vea cómo clientes reales logran ahorros de costos, mejoras de calidad y eficiencia en la cadena de suministro." : "See how real clients achieve cost savings, quality improvements, and supply chain efficiency."}</p>
+      </div>
+      <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24, maxWidth: 1100 }}>
+        {featured.map((cs) => (
+          <Link key={cs.id} to={`/case-studies/${cs.id}`} style={{ background: "var(--paper)", borderRadius: 14, padding: "28px", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm)", transition: "box-shadow 0.2s var(--ease-out)" }}>
+            <span style={{ background: "var(--gold-pale)", color: "var(--gold)", padding: "3px 12px", borderRadius: 20, fontSize: 11, fontWeight: 600 }}>{cs.category}</span>
+            <h4 style={{ fontSize: 16, fontWeight: 700, color: "var(--forest)", margin: "12px 0 8px", lineHeight: 1.4 }}>{cs.title[lang]}</h4>
+            <div style={{ display: "flex", gap: 16, marginTop: 14, paddingTop: 14, borderTop: "1px solid var(--line)" }}>
+              {cs.results.slice(0, 2).map((r, i) => (
+                <div key={i}>
+                  <div style={{ fontSize: 20, fontWeight: 800, color: "var(--gold)" }}>{r.metric[lang]}</div>
+                  <div style={{ fontSize: 10, color: "var(--muted-light)" }}>{r.label[lang]}</div>
+                </div>
+              ))}
+            </div>
+          </Link>
+        ))}
+      </div>
+      <div style={{ textAlign: "center", marginTop: 28 }}>
+        <Link to="/case-studies" className="btn btn-outline">{isEs ? "Ver Todos los Casos" : "View All Case Studies"} →</Link>
+      </div>
+    </section>
+  );
+}
+
 function WhyUsHome() {
   const { t } = useLang(); const dk = ["whyus_1_desc","whyus_2_desc","whyus_3_desc","whyus_4_desc","whyus_5_desc","whyus_6_desc"];
   return (
@@ -210,7 +312,7 @@ function FAQHome() {
     <section className="section faq-section" id="faq">
       <div className="section-header"><span className="section-label">{t("Frequently Asked Questions")}</span><h2>{t("Questions About Our Paper Products and Services")}</h2></div>
       <div className="faq-grid container">{faqItems.slice(0, 5).map((_, i) => (<details className="faq-item" key={i}><summary className="faq-question">{t(qk[i])}</summary><div className="faq-answer"><p>{t(ak[i])}</p></div></details>))}</div>
-      <div style={{ textAlign: "center", marginTop: 28 }}><Link to="/contact" className="btn btn-outline" style={{ color: "var(--lime)", borderColor: "var(--lime)" }}>View All FAQs</Link></div>
+      <div style={{ textAlign: "center", marginTop: 28 }}><Link to="/faq" className="btn btn-outline">View All FAQs →</Link></div>
     </section>
   );
 }

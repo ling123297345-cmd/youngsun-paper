@@ -11,6 +11,15 @@ import Contact from "./pages/Contact.jsx";
 import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
 import FancyPaperGallery from "./pages/FancyPaperGallery.jsx";
+import Industries from "./pages/Industries.jsx";
+import IndustryDetail from "./pages/IndustryDetail.jsx";
+import Materials from "./pages/Materials.jsx";
+import CaseStudies from "./pages/CaseStudies.jsx";
+import CaseStudyDetail from "./pages/CaseStudyDetail.jsx";
+import Processing from "./pages/Processing.jsx";
+import Quality from "./pages/Quality.jsx";
+import FAQ from "./pages/FAQ.jsx";
+import HowToOrder from "./pages/HowToOrder.jsx";
 import { contactInfo } from "./data.js";
 
 // ── PWA Install Prompt (Android / Chrome / Edge) ──────────
@@ -141,8 +150,12 @@ function Header() {
   const links = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/products" },
-    { label: "About", href: "/about" },
+    { label: "Industries", href: "/industries" },
+    { label: "Materials", href: "/materials" },
+    { label: "Case Studies", href: "/case-studies" },
+    { label: "Processing", href: "/processing" },
     { label: "Blog", href: "/blog" },
+    { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ];
 
@@ -168,9 +181,9 @@ function Footer() {
     <footer className="site-footer">
       <div className="footer-grid">
         <div className="footer-brand"><div className="footer-logo">YOUNGSUN<span>PAPER</span></div><p>Premium paper and board supply since 2002.</p></div>
-        <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products">{t("Package Board")}</Link><Link to="/products">{t("Culture Paper")}</Link><Link to="/products">{t("Fancy Paper")}</Link><Link to="/products">{t("Food Packaging Paper")}</Link></div>
-        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/contact">{t("Contact")}</Link><Link to="/blog">Blog</Link></div>
-        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
+        <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products">{t("Package Board")}</Link><Link to="/products">{t("Culture Paper")}</Link><Link to="/products">{t("Fancy Paper")}</Link><Link to="/products">{t("Food Packaging Paper")}</Link><Link to="/materials">📋 {t("Materials Library") || "Materials Library"}</Link></div>
+        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/case-studies">{t("Case Studies") || "Case Studies"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
+        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide") || "Paper Grade Guide"}</Link><Link to="/processing">{t("Processing Services") || "Processing"}</Link><Link to="/how-to-order">{t("How to Order") || "How to Order"}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
       </div>
       <div className="footer-bottom" style={{ flexDirection: "column", gap: 12 }}>
         <div style={{ display: "flex", gap: 18, alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>
@@ -232,6 +245,15 @@ export default function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/fancy-paper-collection" element={<FancyPaperGallery />} />
+            <Route path="/industries" element={<Industries />} />
+            <Route path="/industries/:id" element={<IndustryDetail />} />
+            <Route path="/materials" element={<Materials />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
+            <Route path="/processing" element={<Processing />} />
+            <Route path="/quality" element={<Quality />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/how-to-order" element={<HowToOrder />} />
           </Routes>
         </main>
         <Footer />

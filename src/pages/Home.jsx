@@ -5,6 +5,7 @@ import { siteConfig, productCategories, subProducts, whyChooseUs, contactInfo, f
 import { productEs } from "../productEs.js";
 import { industries } from "../industriesData.js";
 import { caseStudies } from "../caseStudiesData.js";
+import { blogPosts } from "../blogData.js";
 import { PageMeta, OrganizationSchema } from "../SEO.jsx";
 
 function ArrowIcon() {
@@ -69,6 +70,9 @@ export default function Home() {
 
       {/* ===== CASE STUDY HIGHLIGHTS ===== */}
       <CaseStudyHighlights />
+
+      {/* ===== BLOG HIGHLIGHTS ===== */}
+      <BlogHighlights />
 
       {/* ===== WHY US ===== */}
       <WhyUsHome />
@@ -242,6 +246,43 @@ function CaseStudyHighlights() {
       </div>
       <div style={{ textAlign: "center", marginTop: 28 }}>
         <Link to="/case-studies" className="btn btn-outline">{isEs ? "Ver Todos los Casos" : "View All Case Studies"} →</Link>
+      </div>
+    </section>
+  );
+}
+
+function BlogHighlights() {
+  const { lang } = useLang();
+  const recent = blogPosts.slice(0, 3);
+  return (
+    <section className="section" style={{ background: "var(--paper)" }}>
+      <div className="section-header">
+        <span className="section-label">{lang === "es" ? "Blog y Guías" : "Blog & Guides"}</span>
+        <h2>{lang === "es" ? "Últimos Artículos y Guías" : "Latest Articles & Guides"}</h2>
+        <p>{lang === "es" ? "Conocimiento de la industria papelera, guías de compra y consejos de diseño." : "Paper industry knowledge, sourcing guides, and design insights."}</p>
+      </div>
+      <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24, maxWidth: 1100 }}>
+        {recent.map((post) => (
+          <Link key={post.id} to={`/blog/${post.id}`} style={{ background: "#fff", borderRadius: 14, overflow: "hidden", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm)", transition: "transform 0.2s var(--ease-out)" }}
+            onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; }}
+            onMouseLeave={(e) => { e.currentTarget.style.transform = ""; }}
+          >
+            <div style={{ height: 180, overflow: "hidden", background: "var(--forest-light)" }}>
+              <img src={post.image} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
+            </div>
+            <div style={{ padding: "20px 24px" }}>
+              <div style={{ display: "flex", gap: 8, marginBottom: 10, alignItems: "center" }}>
+                <span style={{ background: "var(--gold-pale)", color: "var(--gold)", padding: "2px 10px", borderRadius: 20, fontSize: 11, fontWeight: 600 }}>{post.category}</span>
+                <span style={{ fontSize: 11, color: "var(--muted-light)" }}>{post.date}</span>
+              </div>
+              <h4 style={{ fontSize: 15, fontWeight: 700, color: "var(--forest)", lineHeight: 1.4, marginBottom: 8 }}>{post.title}</h4>
+              <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6 }}>{post.excerpt.slice(0, 120)}…</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+      <div style={{ textAlign: "center", marginTop: 28 }}>
+        <Link to="/blog" className="btn btn-outline">{lang === "es" ? "Ver Todos los Artículos" : "View All Articles"} →</Link>
       </div>
     </section>
   );

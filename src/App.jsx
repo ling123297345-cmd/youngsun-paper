@@ -20,6 +20,7 @@ import Processing from "./pages/Processing.jsx";
 import Quality from "./pages/Quality.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import HowToOrder from "./pages/HowToOrder.jsx";
+import Resources from "./pages/Resources.jsx";
 import { contactInfo } from "./data.js";
 
 // ── PWA Install Prompt (Android / Chrome / Edge) ──────────
@@ -177,31 +178,51 @@ function Header() {
 
 function Footer() {
   const { t } = useLang();
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribe = (e) => {
+    e.preventDefault();
+    if (!email) return;
+    setSubscribed(true);
+    setEmail("");
+    setTimeout(() => setSubscribed(false), 5000);
+  };
+
   return (
     <footer className="site-footer">
       <div className="footer-grid">
-        <div className="footer-brand"><div className="footer-logo">YOUNGSUN<span>PAPER</span></div><p>Premium paper and board supply since 2002.</p></div>
+        <div className="footer-brand">
+          <div className="footer-logo">YOUNGSUN<span>PAPER</span></div>
+          <p>Premium paper and board supply since 2002.</p>
+          <div style={{ marginTop: 18 }}>
+            <h4 style={{ color: "#fff", fontSize: 13, marginBottom: 6, fontWeight: 600 }}>📬 {t("Subscribe") || "Subscribe"}</h4>
+            <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 11, marginBottom: 10, lineHeight: 1.5 }}>Get product updates, paper guides & sourcing tips.</p>
+            <form onSubmit={handleSubscribe} style={{ display: "flex", gap: 6 }}>
+              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="your@email.com" required
+                style={{ flex: 1, padding: "9px 12px", borderRadius: 6, border: "1px solid rgba(255,255,255,0.2)", background: "rgba(255,255,255,0.08)", color: "#fff", fontSize: 12, outline: "none", minWidth: 130 }} />
+              <button type="submit"
+                style={{ padding: "9px 14px", borderRadius: 6, border: "none", background: subscribed ? "var(--leaf)" : "var(--gold)", color: "#fff", fontWeight: 700, fontSize: 12, cursor: "pointer", whiteSpace: "nowrap" }}>
+                {subscribed ? "✓ Done!" : "Subscribe"}
+              </button>
+            </form>
+          </div>
+        </div>
         <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products">{t("Package Board")}</Link><Link to="/products">{t("Culture Paper")}</Link><Link to="/products">{t("Fancy Paper")}</Link><Link to="/products">{t("Food Packaging Paper")}</Link><Link to="/materials">📋 {t("Materials Library") || "Materials Library"}</Link></div>
         <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/case-studies">{t("Case Studies") || "Case Studies"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
-        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide") || "Paper Grade Guide"}</Link><Link to="/processing">{t("Processing Services") || "Processing"}</Link><Link to="/how-to-order">{t("How to Order") || "How to Order"}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
+        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide") || "Paper Grade Guide"}</Link><Link to="/resources">📥 {t("Downloads") || "Downloads"}</Link><Link to="/processing">{t("Processing Services") || "Processing"}</Link><Link to="/how-to-order">{t("How to Order") || "How to Order"}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
       </div>
       <div className="footer-bottom" style={{ flexDirection: "column", gap: 12 }}>
         <div style={{ display: "flex", gap: 18, alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>
           <p>© {new Date().getFullYear()} YOUNGSUN PAPER.</p>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
-          <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>📊 网站统计</a>
+          <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.4)", fontSize: 11 }}>📊 Analytics</a>
           <span style={{ color: "rgba(255,255,255,0.2)" }}>|</span>
           <div className="footer-social">
             <a href="https://www.linkedin.com/company/133053995/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href={`mailto:${contactInfo.email}`}>Email</a>
             <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
-        </div>
-        <div style={{ display: "flex", gap: 20, justifyContent: "center", flexWrap: "wrap" }}>
-          <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 10 }}>📊 网站分析：</span>
-          <a href="https://analytics.google.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--lime)", fontSize: 10, fontWeight: 600 }}>Google Analytics → 访客量、来源、转化</a>
-          <span style={{ color: "rgba(255,255,255,0.15)", fontSize: 10 }}>|</span>
-          <a href="https://clarity.microsoft.com" target="_blank" rel="noopener noreferrer" style={{ color: "var(--lime)", fontSize: 10, fontWeight: 600 }}>Microsoft Clarity → 录屏回放、热力图</a>
         </div>
       </div>
     </footer>
@@ -210,12 +231,96 @@ function Footer() {
 
 function Floating() {
   const [show, setShow] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
+  const { t, lang } = useLang();
+  const isEs = lang === "es";
   useEffect(() => { const f = () => setShow(window.scrollY > 600); window.addEventListener("scroll", f, { passive: true }); return () => window.removeEventListener("scroll", f); }, []);
+
+  const chatOptions = [
+    { icon: "💬", label: "WhatsApp", desc: isEs ? "Charla instantánea" : "Instant chat", href: `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`, color: "#25D366" },
+    { icon: "✉️", label: "Email", desc: contactInfo.email, href: `mailto:${contactInfo.email}`, color: "var(--gold)" },
+    { icon: "💬", label: "WeChat", desc: contactInfo.wechat, href: "#", color: "#07C160", isCopy: true },
+  ];
+
   return (
-    <div className="floating-actions">
-      {show && <button className="float-btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>↑</button>}
-      <a className="float-btn whatsapp" href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer">WA</a>
-    </div>
+    <>
+      <div className="floating-actions" style={{ position: "fixed", bottom: 24, right: 24, zIndex: 999, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12 }}>
+        {/* Chat panel */}
+        {chatOpen && (
+          <div style={{
+            background: "#fff", borderRadius: 16, boxShadow: "0 12px 48px rgba(0,0,0,0.18)", width: 280, overflow: "hidden",
+            animation: "pwaSlideUp 0.3s cubic-bezier(0.34,1.56,0.64,1)", marginBottom: 8,
+          }}>
+            <div style={{ background: "var(--forest)", color: "#fff", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+              <div>
+                <div style={{ fontWeight: 700, fontSize: 15 }}>{isEs ? "¿Cómo podemos ayudar?" : "How can we help?"}</div>
+                <div style={{ fontSize: 11, opacity: 0.7, marginTop: 2 }}>{isEs ? "Respondemos en minutos" : "We reply within minutes"}</div>
+              </div>
+              <button onClick={() => setChatOpen(false)} style={{ background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 28, height: 28, borderRadius: "50%", cursor: "pointer", fontSize: 14 }}>✕</button>
+            </div>
+            <div style={{ padding: "8px 0" }}>
+              {chatOptions.map((opt, i) => (
+                opt.isCopy ? (
+                  <button
+                    key={i}
+                    onClick={() => { navigator.clipboard?.writeText(contactInfo.wechat); alert(isEs ? `WeChat copiado: ${contactInfo.wechat}` : `WeChat copied: ${contactInfo.wechat}`); }}
+                    style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "14px 20px", border: "none", background: "transparent", cursor: "pointer", textAlign: "left", fontSize: 13 }}
+                  >
+                    <span style={{ fontSize: 22 }}>{opt.icon}</span>
+                    <div><div style={{ fontWeight: 700, color: "var(--forest)" }}>{opt.label}</div><div style={{ fontSize: 12, color: "var(--muted)" }}>{opt.desc} <span style={{ color: "var(--gold)", fontSize: 10 }}>({isEs ? "toca para copiar" : "tap to copy"})</span></div></div>
+                  </button>
+                ) : (
+                  <a
+                    key={i}
+                    href={opt.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 20px", textDecoration: "none", textAlign: "left", fontSize: 13 }}
+                  >
+                    <span style={{ fontSize: 22 }}>{opt.icon}</span>
+                    <div><div style={{ fontWeight: 700, color: "var(--forest)" }}>{opt.label}</div><div style={{ fontSize: 12, color: "var(--muted)" }}>{opt.desc}</div></div>
+                  </a>
+                )
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Scroll to top */}
+        {show && (
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            style={{
+              width: 48, height: 48, borderRadius: "50%", background: "#fff", border: "1px solid var(--line-strong)",
+              boxShadow: "var(--shadow-md)", cursor: "pointer", fontSize: 18, display: "flex", alignItems: "center", justifyContent: "center",
+              transition: "all 0.2s var(--ease-out)",
+            }}
+            aria-label="Back to top"
+          >↑</button>
+        )}
+
+        {/* Main chat button */}
+        <button
+          onClick={() => setChatOpen(!chatOpen)}
+          style={{
+            width: 56, height: 56, borderRadius: "50%", background: chatOpen ? "#fff" : "var(--lime, #25D366)",
+            border: chatOpen ? "2px solid var(--line-strong)" : "none",
+            boxShadow: "0 6px 24px rgba(37,211,102,0.35)", cursor: "pointer", fontSize: 24, display: "flex",
+            alignItems: "center", justifyContent: "center", transition: "all 0.25s var(--ease-out)",
+            transform: chatOpen ? "rotate(180deg)" : "none",
+          }}
+          aria-label={isEs ? "Abrir chat" : "Open chat"}
+        >
+          {chatOpen ? "✕" : "💬"}
+        </button>
+      </div>
+      <style>{`
+        @keyframes pwaSlideUp {
+          from { opacity: 0; transform: translateY(16px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
+    </>
   );
 }
 
@@ -254,6 +359,7 @@ export default function App() {
             <Route path="/quality" element={<Quality />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/how-to-order" element={<HowToOrder />} />
+            <Route path="/resources" element={<Resources />} />
           </Routes>
         </main>
         <Footer />

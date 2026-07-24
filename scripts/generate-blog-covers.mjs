@@ -46,6 +46,60 @@ const covers = [
     icon: "✨",
     width: 800, height: 500
   },
+  {
+    filename: "grey-board-vs-duplex-vs-fbb-comparison.jpg",
+    title: "Grey Board vs\nDuplex Board vs FBB",
+    subtitle: "Packaging Board Comparison",
+    bg: "#1a3a2a",
+    accent: "#8fbc5a",
+    icon: "📦",
+    width: 800, height: 500
+  },
+  {
+    filename: "paper-thickness-guide-gsm-caliper-points.jpg",
+    title: "Paper Thickness\nExplained",
+    subtitle: "GSM · Caliper · Microns · Points",
+    bg: "#1a2a3a",
+    accent: "#5a9fd4",
+    icon: "📏",
+    width: 800, height: 500
+  },
+  {
+    filename: "ocean-freight-paper-logistics-guide.jpg",
+    title: "Ocean Freight\nfor Paper Buyers",
+    subtitle: "Container Guide & Transit Times",
+    bg: "#0f2b1a",
+    accent: "#4a8c5c",
+    icon: "🚢",
+    width: 800, height: 500
+  },
+  {
+    filename: "paper-moisture-content-control-guide.jpg",
+    title: "Paper Moisture\nContent Control",
+    subtitle: "Export Quality & Protection",
+    bg: "#1a3a3a",
+    accent: "#5abcd4",
+    icon: "💧",
+    width: 800, height: 500
+  },
+  {
+    filename: "paper-glossary-terms-buyers-should-know.jpg",
+    title: "Paper Buyer's\nGlossary",
+    subtitle: "50+ Essential Industry Terms",
+    bg: "#2a1a3a",
+    accent: "#b890d4",
+    icon: "📖",
+    width: 800, height: 500
+  },
+  {
+    filename: "how-to-compare-paper-quotes.jpg",
+    title: "How to Compare\nPaper Quotes",
+    subtitle: "10-Point Buyer Checklist",
+    bg: "#3a2a1a",
+    accent: "#d4a858",
+    icon: "📊",
+    width: 800, height: 500
+  },
 ];
 
 async function generate() {
@@ -82,7 +136,7 @@ async function generate() {
     }
 
     svg += `\n  <!-- Subtitle -->
-  <text x="60" y="350" font-family="Arial, sans-serif" font-size="15" fill="${cov.accent}" font-weight="600" letter-spacing="2">${cov.subtitle}</text>
+  <text x="60" y="350" font-family="Arial, sans-serif" font-size="15" fill="${cov.accent}" font-weight="600" letter-spacing="2">${esc(cov.subtitle)}</text>
   <!-- Brand -->
   <text x="60" y="440" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.35)" letter-spacing="1">YOUNGSUN PAPER</text>
 </svg>`;

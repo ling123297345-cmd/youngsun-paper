@@ -21,6 +21,7 @@ import Quality from "./pages/Quality.jsx";
 import FAQ from "./pages/FAQ.jsx";
 import HowToOrder from "./pages/HowToOrder.jsx";
 import Resources from "./pages/Resources.jsx";
+import Testimonials from "./pages/Testimonials.jsx";
 import { contactInfo } from "./data.js";
 
 // ── PWA Install Prompt (Android / Chrome / Edge) ──────────
@@ -209,7 +210,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products">{t("Package Board")}</Link><Link to="/products">{t("Culture Paper")}</Link><Link to="/products">{t("Fancy Paper")}</Link><Link to="/products">{t("Food Packaging Paper")}</Link><Link to="/materials">📋 {t("Materials Library") || "Materials Library"}</Link></div>
-        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/case-studies">{t("Case Studies") || "Case Studies"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
+        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/case-studies">{t("Case Studies") || "Case Studies"}</Link><Link to="/testimonials">{t("Testimonials") || "Testimonials"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
         <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide") || "Paper Grade Guide"}</Link><Link to="/resources">📥 {t("Downloads") || "Downloads"}</Link><Link to="/processing">{t("Processing Services") || "Processing"}</Link><Link to="/how-to-order">{t("How to Order") || "How to Order"}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
       </div>
       <div className="footer-bottom" style={{ flexDirection: "column", gap: 12 }}>
@@ -360,6 +361,7 @@ export default function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/how-to-order" element={<HowToOrder />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/testimonials" element={<Testimonials />} />
           </Routes>
         </main>
         <Footer />

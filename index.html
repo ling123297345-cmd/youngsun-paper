@@ -63,9 +63,29 @@
     <link rel="preload" as="image" href="/images/products/fancy-paper/background-hangtag-section-clean.jpg" fetchpriority="high" />
     <link rel="preload" as="image" href="/images/logo.png" />
 
-    <!-- ===== Favicon ===== -->
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
 
     <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
     <script type="application/ld+json">
@@ -208,6 +228,19 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
@@ -216,6 +249,41 @@
         sessionStorage.removeItem("redirectPath");
         if (p && p !== "/" && p !== location.pathname) {
           history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
         }
       })();
     </script>

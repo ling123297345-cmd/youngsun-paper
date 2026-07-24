@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LangProvider, useLang } from "./i18n.jsx";
@@ -12,6 +12,118 @@ import Blog from "./pages/Blog.jsx";
 import BlogPost from "./pages/BlogPost.jsx";
 import FancyPaperGallery from "./pages/FancyPaperGallery.jsx";
 import { contactInfo } from "./data.js";
+
+// ── PWA Install Prompt (Android / Chrome / Edge) ──────────
+function PwaInstallBanner() {
+  const [show, setShow] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState(null);
+
+  useEffect(() => {
+    // Already installed — don't show
+    if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+    const handler = (e) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+      // Show after a short delay so the page loads first
+      setTimeout(() => setShow(true), 2500);
+    };
+
+    window.addEventListener("beforeinstallprompt", handler);
+
+    // If the app was installed via this prompt, hide
+    window.addEventListener("appinstalled", () => {
+      setShow(false);
+      setDeferredPrompt(null);
+      console.log("[PWA] App installed successfully!");
+    });
+
+    return () => window.removeEventListener("beforeinstallprompt", handler);
+  }, []);
+
+  const handleInstall = useCallback(async () => {
+    if (!deferredPrompt) return;
+    deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`[PWA] Install prompt outcome: ${outcome}`);
+    setDeferredPrompt(null);
+    setShow(false);
+  }, [deferredPrompt]);
+
+  if (!show) return null;
+
+  return (
+    <div
+      className="pwa-install-toast"
+      style={{
+        position: "fixed",
+        bottom: 20,
+        left: "50%",
+        transform: "translateX(-50%)",
+        zIndex: 9999,
+        background: "var(--forest, #0f2b1a)",
+        color: "#fff",
+        padding: "14px 22px",
+        borderRadius: 14,
+        display: "flex",
+        alignItems: "center",
+        gap: 14,
+        boxShadow: "0 8px 32px rgba(15,43,26,0.35)",
+        maxWidth: "calc(100vw - 32px)",
+        animation: "pwaSlideUp 0.4s cubic-bezier(0.34,1.56,0.64,1)",
+      }}
+    >
+      <img
+        src="/apple-touch-icon.png"
+        alt=""
+        width="36"
+        height="36"
+        style={{ borderRadius: 8, flexShrink: 0 }}
+      />
+      <span style={{ fontSize: 14, fontWeight: 600, whiteSpace: "nowrap" }}>
+        Install YOUNGSUN PAPER App
+      </span>
+      <button
+        onClick={handleInstall}
+        style={{
+          background: "var(--gold, #c8923f)",
+          border: "none",
+          color: "#fff",
+          padding: "8px 16px",
+          borderRadius: 8,
+          fontWeight: 700,
+          fontSize: 13,
+          cursor: "pointer",
+          whiteSpace: "nowrap",
+          flexShrink: 0,
+        }}
+      >
+        Install
+      </button>
+      <button
+        onClick={() => { setShow(false); }}
+        style={{
+          background: "transparent",
+          border: "none",
+          color: "rgba(255,255,255,0.5)",
+          padding: "4px",
+          cursor: "pointer",
+          fontSize: 16,
+          lineHeight: 1,
+        }}
+        aria-label="Dismiss"
+      >
+        ✕
+      </button>
+      <style>{`
+        @keyframes pwaSlideUp {
+          from { opacity: 0; transform: translateX(-50%) translateY(20px); }
+          to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+        }
+      `}</style>
+    </div>
+  );
+}
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -95,6 +207,15 @@ function Floating() {
 }
 
 export default function App() {
+  const [updateReady, setUpdateReady] = useState(false);
+
+  // ── PWA: Listen for update available ──────────────────
+  useEffect(() => {
+    const handler = () => setUpdateReady(true);
+    window.addEventListener("pwa-update-available", handler);
+    return () => window.removeEventListener("pwa-update-available", handler);
+  }, []);
+
   return (
     <HelmetProvider>
     <LangProvider>
@@ -115,6 +236,49 @@ export default function App() {
         </main>
         <Footer />
         <Floating />
+
+        {/* PWA: Install banner (Android / Chrome / Edge) */}
+        <PwaInstallBanner />
+
+        {/* PWA: Update available toast */}
+        {updateReady && (
+          <div
+            style={{
+              position: "fixed",
+              top: 16,
+              left: "50%",
+              transform: "translateX(-50%)",
+              zIndex: 9999,
+              background: "var(--forest, #0f2b1a)",
+              color: "#fff",
+              padding: "12px 22px",
+              borderRadius: 12,
+              display: "flex",
+              alignItems: "center",
+              gap: 14,
+              boxShadow: "0 6px 24px rgba(15,43,26,0.3)",
+              fontSize: 14,
+              fontWeight: 600,
+            }}
+          >
+            🔄 New version available
+            <button
+              onClick={() => window.location.reload()}
+              style={{
+                background: "var(--gold, #c8923f)",
+                border: "none",
+                color: "#fff",
+                padding: "6px 14px",
+                borderRadius: 6,
+                fontWeight: 700,
+                fontSize: 13,
+                cursor: "pointer",
+              }}
+            >
+              Update
+            </button>
+          </div>
+        )}
       </BrowserRouter>
     </LangProvider>
     </HelmetProvider>

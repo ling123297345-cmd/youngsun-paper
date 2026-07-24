@@ -9,7 +9,7 @@ export const industries = [
     id: "packaging-printing",
     title: { en: "Packaging & Printing", es: "Embalaje e Impresión" },
     icon: "📦",
-    heroImage: "/images/products/package-board/package-category-card.jpg",
+    heroImage: "/images/industries/industry-packaging.jpg",
     tagline: {
       en: "Structural integrity and print brilliance — from folding cartons to rigid luxury boxes.",
       es: "Integridad estructural y brillo de impresión — desde cajas plegables hasta cajas rígidas de lujo."
@@ -51,7 +51,7 @@ export const industries = [
     id: "food-beverage",
     title: { en: "Food & Beverage", es: "Alimentos y Bebidas" },
     icon: "🍽️",
-    heroImage: "/images/products/food-packaging/food-packaging-paper-detail.jpg",
+    heroImage: "/images/industries/industry-food.jpg",
     tagline: {
       en: "Food-safe paper and board — from disposable cups to grease-resistant wraps.",
       es: "Papel y cartón aptos para alimentos — desde vasos desechables hasta envolturas resistentes a la grasa."
@@ -93,7 +93,7 @@ export const industries = [
     id: "luxury-cosmetics",
     title: { en: "Luxury & Cosmetics", es: "Lujo y Cosmética" },
     icon: "✨",
-    heroImage: "/images/products/fancy-paper/fancy-paper-overview.png",
+    heroImage: "/images/industries/industry-luxury.jpg",
     tagline: {
       en: "Tactile surfaces and premium finishes — packaging that communicates luxury before the product is revealed.",
       es: "Superficies táctiles y acabados premium — embalaje que comunica lujo antes de revelar el producto."
@@ -135,7 +135,7 @@ export const industries = [
     id: "publishing-stationery",
     title: { en: "Publishing & Stationery", es: "Editorial y Papelería" },
     icon: "📚",
-    heroImage: "/images/products/culture-paper/culture-paper.png",
+    heroImage: "/images/industries/industry-publishing.jpg",
     tagline: {
       en: "High-performance printing surfaces — from art books to business stationery.",
       es: "Superficies de impresión de alto rendimiento — desde libros de arte hasta papelería comercial."
@@ -172,7 +172,7 @@ export const industries = [
     id: "electronics-industrial",
     title: { en: "Electronics & Industrial", es: "Electrónica e Industrial" },
     icon: "⚙️",
-    heroImage: "/images/hero/paper-products-banner-background.png",
+    heroImage: "/images/industries/industry-electronics.jpg",
     tagline: {
       en: "High-performance papers for demanding technical applications — from electrical insulation to industrial packaging.",
       es: "Papeles de alto rendimiento para aplicaciones técnicas exigentes — desde aislamiento eléctrico hasta embalaje industrial."
@@ -209,7 +209,7 @@ export const industries = [
     id: "construction-decoration",
     title: { en: "Construction & Decoration", es: "Construcción y Decoración" },
     icon: "🏗️",
-    heroImage: "/images/hero/background-processing-services-dark.png",
+    heroImage: "/images/industries/industry-construction.jpg",
     tagline: {
       en: "Durable paper-based materials for building, interior design, and surface decoration.",
       es: "Materiales duraderos a base de papel para construcción, diseño interior y decoración de superficies."

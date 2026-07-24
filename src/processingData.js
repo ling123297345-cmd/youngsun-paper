@@ -9,8 +9,8 @@ export const processingServices = [
     id: "slitting-rewinding",
     title: { en: "Slitting & Rewinding", es: "Corte y Rebobinado" },
     icon: "✂️",
-    image: "/images/processing/processing-slitting-cutting.png",
-    heroImage: "/images/processing/process-slitting-line-01.png",
+    image: "/images/processing/processing-slitting-cutting.jpg",
+    heroImage: "/images/processing/process-slitting-line-01.jpg",
     tagline: {
       en: "Precision slitting to your exact width specifications — from master rolls to finished reels.",
       es: "Corte de precisión a sus especificaciones exactas de ancho — desde bobinas maestras hasta carretes terminados."
@@ -40,8 +40,8 @@ export const processingServices = [
     id: "die-cutting",
     title: { en: "Die Cutting & Punching", es: "Troquelado y Punzonado" },
     icon: "🔲",
-    image: "/images/processing/processing-die-cutting-punching.png",
-    heroImage: "/images/processing/process-die-cutting-line-01.png",
+    image: "/images/processing/processing-die-cutting-punching.jpg",
+    heroImage: "/images/processing/process-die-cutting-line-01.jpg",
     tagline: {
       en: "Custom die-cut shapes for packaging inserts, hang tags, and specialty components.",
       es: "Formas troqueladas personalizadas para insertos de embalaje, etiquetas colgantes y componentes especiales."
@@ -70,8 +70,8 @@ export const processingServices = [
     id: "lamination-coating",
     title: { en: "Lamination & Coating", es: "Laminación y Recubrimiento" },
     icon: "🛡️",
-    image: "/images/processing/processing-lamination-finishing.png",
-    heroImage: "/images/processing/process-lamination-coating-line-01.png",
+    image: "/images/processing/processing-lamination-finishing.jpg",
+    heroImage: "/images/processing/process-lamination-coating-line-01.jpg",
     tagline: {
       en: "Protective and decorative surface treatments — from gloss lamination to soft-touch coating.",
       es: "Tratamientos superficiales protectores y decorativos — desde laminación brillante hasta recubrimiento soft-touch."
@@ -101,8 +101,8 @@ export const processingServices = [
     id: "printing",
     title: { en: "Printing Services", es: "Servicios de Impresión" },
     icon: "🖨️",
-    image: "/images/processing/processing-printing.png",
-    heroImage: "/images/processing/processing-printing.png",
+    image: "/images/processing/processing-printing.jpg",
+    heroImage: "/images/processing/processing-printing.jpg",
     tagline: {
       en: "Flexographic and offset printing — from simple logos to full-color brand graphics.",
       es: "Impresión flexográfica y offset — desde logos simples hasta gráficos de marca a todo color."
@@ -132,8 +132,8 @@ export const processingServices = [
     id: "embossing-debossing",
     title: { en: "Embossing & Debossing", es: "Gofrado y Relieve" },
     icon: "✨",
-    image: "/images/processing/processing-embossing.png",
-    heroImage: "/images/processing/processing-embossing.png",
+    image: "/images/processing/processing-embossing.jpg",
+    heroImage: "/images/processing/processing-embossing.jpg",
     tagline: {
       en: "Add texture and dimension — from subtle linen patterns to bold brand monograms.",
       es: "Añada textura y dimensión — desde patrones de lino sutiles hasta monogramas de marca audaces."
@@ -163,8 +163,8 @@ export const processingServices = [
     id: "export-packing",
     title: { en: "Export Packing & Logistics", es: "Embalaje de Exportación y Logística" },
     icon: "🚢",
-    image: "/images/processing/processing-export-packing.png",
-    heroImage: "/images/processing/processing-export-packing.png",
+    image: "/images/processing/processing-export-packing.jpg",
+    heroImage: "/images/processing/processing-export-packing.jpg",
     tagline: {
       en: "Professional export packing, container loading, and documentation for damage-free global delivery.",
       es: "Embalaje profesional de exportación, carga de contenedores y documentación para entrega global sin daños."

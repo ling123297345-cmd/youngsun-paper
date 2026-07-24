@@ -3,7 +3,7 @@
 // Smart caching: offline access + always-fresh content
 // ============================================================
 
-const CACHE_VERSION = "ysp-v2";
+const CACHE_VERSION = "ysp-v3";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const IMAGE_CACHE = `${CACHE_VERSION}-images`;
 const PAGE_CACHE = `${CACHE_VERSION}-pages`;

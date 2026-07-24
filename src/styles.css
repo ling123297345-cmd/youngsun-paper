@@ -324,7 +324,7 @@ p, li, blockquote {
 
 .site-header {
   align-items: center;
-  background: transparent;
+  background: linear-gradient(180deg, rgba(10,26,16,0.75) 0%, rgba(10,26,16,0) 100%);
   display: flex;
   justify-content: space-between;
   left: 0;

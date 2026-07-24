@@ -191,25 +191,35 @@ function IndustriesOverview() {
 function TrustBar() {
   const { lang } = useLang();
   const isEs = lang === "es";
+  const partners = [
+    { name: "APP", logo: "/images/partners/partner-app.png" },
+    { name: "NINE DRAGONS", logo: "/images/partners/partner-ninedragon.png" },
+    { name: "CHENMING", logo: "/images/partners/partner-chenming.png" },
+    { name: "BOHUI", logo: "/images/partners/partner-bohui.png" },
+    { name: "SUN PAPER", logo: "/images/partners/partner-sunpaper.png" },
+  ];
   const clients = [
-    { name: "Nikon", region: "Japan" },
-    { name: "Toyota", region: "Japan" },
-    { name: "Festo", region: "Germany" },
-    { name: "Microsoft", region: "USA" },
-    { name: "Emerson", region: "USA" },
-    { name: "APP", region: "China" },
-    { name: "NINEDRAGON", region: "China" },
-    { name: "CHENMING", region: "China" },
+    { name: "Nikon", logo: "/images/partners/client-nikon.png" },
+    { name: "Toyota", logo: "/images/partners/client-toyota.png" },
+    { name: "Microsoft", logo: "/images/partners/client-microsoft.png" },
   ];
   return (
     <section className="section" style={{ background: "var(--paper)", padding: "48px 0" }}>
       <div className="container" style={{ textAlign: "center", maxWidth: 1000 }}>
-        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 24 }}>
-          {isEs ? "Nuestros Socios y Clientes" : "Our Mill Partners & Trusted By"}
+        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 20 }}>
+          {isEs ? "Nuestros Socios de Fábrica" : "Our Mill Partners"}
         </span>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "28px 36px", opacity: 0.65 }}>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "20px 28px", marginBottom: 32 }}>
+          {partners.map((p) => (
+            <img key={p.name} src={p.logo} alt={p.name} title={p.name} style={{ height: 40, width: "auto", opacity: 0.8, filter: "grayscale(30%)" }} loading="lazy" />
+          ))}
+        </div>
+        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 20 }}>
+          {isEs ? "En Quienes Confían" : "Trusted By"}
+        </span>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "20px 28px" }}>
           {clients.map((c) => (
-            <span key={c.name} style={{ fontSize: 16, fontWeight: 700, color: "var(--forest)", letterSpacing: 1 }}>{c.name}</span>
+            <img key={c.name} src={c.logo} alt={c.name} title={c.name} style={{ height: 40, width: "auto", opacity: 0.75 }} loading="lazy" />
           ))}
         </div>
       </div>

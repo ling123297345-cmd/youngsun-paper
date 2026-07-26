@@ -100,6 +100,60 @@ const covers = [
     icon: "📊",
     width: 800, height: 500
   },
+  {
+    filename: "paper-surface-finishing-guide-gloss-matt-soft-touch-uv-foil.jpg",
+    title: "Paper Surface\nFinishing Guide",
+    subtitle: "Gloss · Matt · Soft-Touch · UV · Foil",
+    bg: "#1a1a2a",
+    accent: "#c8923f",
+    icon: "🖌️",
+    width: 800, height: 500
+  },
+  {
+    filename: "reduce-packaging-costs-without-sacrificing-quality.jpg",
+    title: "Reduce Packaging\nCosts Without Sacrificing Quality",
+    subtitle: "8 Proven Strategies",
+    bg: "#1a2a1a",
+    accent: "#8fbc5a",
+    icon: "💰",
+    width: 800, height: 500
+  },
+  {
+    filename: "pe-coated-vs-greaseproof-vs-silicone-barrier-paper-comparison.jpg",
+    title: "PE Coated vs\nGreaseproof vs Silicone",
+    subtitle: "Barrier Paper Comparison",
+    bg: "#0f2b1a",
+    accent: "#4a8c5c",
+    icon: "🛡️",
+    width: 800, height: 500
+  },
+  {
+    filename: "paper-trade-shows-events-calendar-2026-2027.jpg",
+    title: "Paper &\nPackaging Trade Shows",
+    subtitle: "2026-2027 Global Calendar",
+    bg: "#1a2a3a",
+    accent: "#d4a858",
+    icon: "📅",
+    width: 800, height: 500
+  },
+  {
+    filename: "custom-paper-sizes-slitting-minimize-waste-guide.jpg",
+    title: "Custom Paper Sizes\n& Slitting Guide",
+    subtitle: "Minimize Waste, Save Money",
+    bg: "#2a1a2a",
+    accent: "#8fbc5a",
+    icon: "✂️",
+    width: 800, height: 500
+  },
+  {
+    filename: "food-grade-paper-certifications-guide-fda-eu-gb.jpg",
+    title: "Food-Grade Paper\nCertifications",
+    subtitle: "FDA · EU 1935/2004 · GB 9685 · PFAS-Free",
+    bg: "#1a3a2a",
+    accent: "#5abcd4",
+    icon: "✅",
+    width: 800, height: 500
+  },
 ];
 
 async function generate() {

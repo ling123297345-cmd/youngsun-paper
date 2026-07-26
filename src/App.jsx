@@ -1,28 +1,43 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LangProvider, useLang } from "./i18n.jsx";
 import SearchBar from "./SearchBar.jsx";
-import Home from "./pages/Home.jsx";
-import Products from "./pages/Products.jsx";
-import ProductDetail from "./pages/ProductDetail.jsx";
-import About from "./pages/About.jsx";
-import Contact from "./pages/Contact.jsx";
-import Blog from "./pages/Blog.jsx";
-import BlogPost from "./pages/BlogPost.jsx";
-import FancyPaperGallery from "./pages/FancyPaperGallery.jsx";
-import Industries from "./pages/Industries.jsx";
-import IndustryDetail from "./pages/IndustryDetail.jsx";
-import Materials from "./pages/Materials.jsx";
-import CaseStudies from "./pages/CaseStudies.jsx";
-import CaseStudyDetail from "./pages/CaseStudyDetail.jsx";
-import Processing from "./pages/Processing.jsx";
-import Quality from "./pages/Quality.jsx";
-import FAQ from "./pages/FAQ.jsx";
-import HowToOrder from "./pages/HowToOrder.jsx";
-import Resources from "./pages/Resources.jsx";
-import Testimonials from "./pages/Testimonials.jsx";
 import { contactInfo } from "./data.js";
+
+// ── Eager: Home loads immediately (first page users see) ────
+import Home from "./pages/Home.jsx";
+
+// ── Lazy: All other pages load on demand ────────────────────
+const Products = lazy(() => import("./pages/Products.jsx"));
+const ProductDetail = lazy(() => import("./pages/ProductDetail.jsx"));
+const About = lazy(() => import("./pages/About.jsx"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
+const Blog = lazy(() => import("./pages/Blog.jsx"));
+const BlogPost = lazy(() => import("./pages/BlogPost.jsx"));
+const FancyPaperGallery = lazy(() => import("./pages/FancyPaperGallery.jsx"));
+const Industries = lazy(() => import("./pages/Industries.jsx"));
+const IndustryDetail = lazy(() => import("./pages/IndustryDetail.jsx"));
+const Materials = lazy(() => import("./pages/Materials.jsx"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies.jsx"));
+const CaseStudyDetail = lazy(() => import("./pages/CaseStudyDetail.jsx"));
+const Processing = lazy(() => import("./pages/Processing.jsx"));
+const Quality = lazy(() => import("./pages/Quality.jsx"));
+const FAQ = lazy(() => import("./pages/FAQ.jsx"));
+const HowToOrder = lazy(() => import("./pages/HowToOrder.jsx"));
+const Resources = lazy(() => import("./pages/Resources.jsx"));
+const Testimonials = lazy(() => import("./pages/Testimonials.jsx"));
+
+// ── Loading fallback ────────────────────────────────────────
+function PageLoading() {
+  return (
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "60vh", flexDirection: "column", gap: 16, paddingTop: 100 }}>
+      <div style={{ width: 36, height: 36, border: "3px solid var(--line)", borderTopColor: "var(--gold)", borderRadius: "50%", animation: "spin 0.7s linear infinite" }} />
+      <span style={{ fontSize: 13, color: "var(--muted)" }}>Loading…</span>
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+    </div>
+  );
+}
 
 // ── PWA Install Prompt (Android / Chrome / Edge) ──────────
 function PwaInstallBanner() {
@@ -342,6 +357,7 @@ export default function App() {
         <ScrollToTop />
         <Header />
         <main id="main-content">
+          <Suspense fallback={<PageLoading />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
@@ -363,6 +379,7 @@ export default function App() {
             <Route path="/resources" element={<Resources />} />
             <Route path="/testimonials" element={<Testimonials />} />
           </Routes>
+          </Suspense>
         </main>
         <Footer />
         <Floating />

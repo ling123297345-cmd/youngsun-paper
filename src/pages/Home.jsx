@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { ArrowUpRight, BookOpen, Building2, Cpu, Gem, PackageOpen, UtensilsCrossed } from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { siteConfig, productCategories, subProducts, whyChooseUs, contactInfo, faqItems, testimonials } from "../data.js";
+import { siteConfig, productCategories, subProducts, whyChooseUs, contactInfo, faqItems } from "../data.js";
 import { productEs } from "../productEs.js";
 import { industries } from "../industriesData.js";
-import { caseStudies } from "../caseStudiesData.js";
 import { blogPosts } from "../blogData.js";
 import { useContactForm } from "../useContactForm.js";
 import { PageMeta, OrganizationSchema } from "../SEO.jsx";
@@ -66,11 +66,11 @@ export default function Home() {
       {/* ===== INDUSTRIES OVERVIEW ===== */}
       <IndustriesOverview />
 
-      {/* ===== CLIENT LOGOS / TRUST BAR ===== */}
+      {/* ===== VERIFIED SUPPLY NETWORK ===== */}
       <TrustBar />
 
-      {/* ===== CASE STUDY HIGHLIGHTS ===== */}
-      <CaseStudyHighlights />
+      {/* ===== COMMON BUYER APPLICATIONS ===== */}
+      <BuyerApplications />
 
       {/* ===== BLOG HIGHLIGHTS ===== */}
       <BlogHighlights />
@@ -78,8 +78,8 @@ export default function Home() {
       {/* ===== WHY US ===== */}
       <WhyUsHome />
 
-      {/* ===== TESTIMONIALS ===== */}
-      <TestimonialsHome />
+      {/* ===== BUYER VERIFICATION PROCESS ===== */}
+      <BuyerVerification />
 
       {/* ===== CONTACT ===== */}
       <ContactHome />
@@ -164,23 +164,38 @@ function FancyPaperBanner() {
 function IndustriesOverview() {
   const { lang } = useLang();
   const isEs = lang === "es";
+  const iconMap = {
+    "packaging-printing": PackageOpen,
+    "food-beverage": UtensilsCrossed,
+    "luxury-cosmetics": Gem,
+    "publishing-stationery": BookOpen,
+    "electronics-industrial": Cpu,
+    "construction-decoration": Building2,
+  };
   return (
-    <section className="section" style={{ background: "#fff" }}>
-      <div className="section-header">
+    <section className="section industry-solutions-home">
+      <div className="container industry-home-heading">
+        <div>
         <span className="section-label">{isEs ? "Soluciones por Industria" : "Solutions by Industry"}</span>
         <h2>{isEs ? "Papel Diseñado para Su Sector" : "Paper Engineered for Your Industry"}</h2>
-        <p style={{ maxWidth: 600, margin: "0 auto" }}>{isEs ? "Cada industria exige algo diferente del papel. Explore nuestras soluciones adaptadas." : "Every industry demands something different from paper. Explore our tailored solutions."}</p>
+        </div>
+        <p>{isEs ? "Cada industria exige algo diferente del papel. Explore nuestras soluciones adaptadas." : "Every industry demands something different from paper. Explore our tailored solutions."}</p>
       </div>
-      <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(170px, 1fr))", gap: 16, maxWidth: 1200 }}>
-        {industries.map((ind) => (
-          <Link key={ind.id} to={`/industries/${ind.id}`} style={{ background: "var(--paper)", borderRadius: 12, padding: "24px 20px", textAlign: "center", textDecoration: "none", color: "inherit", transition: "transform 0.2s var(--ease-out)" }}
-            onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-4px)"; }}
-            onMouseLeave={(e) => { e.currentTarget.style.transform = ""; }}
-          >
-            <div style={{ fontSize: 36, marginBottom: 10 }}>{ind.icon}</div>
-            <h4 style={{ fontSize: 14, fontWeight: 700, color: "var(--forest)" }}>{ind.title[lang]}</h4>
-          </Link>
-        ))}
+      <div className="container industry-solution-grid">
+        {industries.map((ind, index) => {
+          const IndustryIcon = iconMap[ind.id] || PackageOpen;
+          return (
+            <Link key={ind.id} to={`/industries/${ind.id}`} className={`industry-solution-card industry-tone-${index + 1}`}>
+              <div className="industry-solution-card-top">
+                <span className="industry-solution-icon"><IndustryIcon size={24} strokeWidth={1.7} aria-hidden="true" /></span>
+                <ArrowUpRight className="industry-solution-arrow" size={20} strokeWidth={1.8} aria-hidden="true" />
+              </div>
+              <h3>{ind.title[lang]}</h3>
+              <p>{ind.tagline[lang]}</p>
+              <span className="industry-solution-link">{isEs ? "Explorar soluciones" : "Explore solutions"}</span>
+            </Link>
+          );
+        })}
       </div>
       <div style={{ textAlign: "center", marginTop: 28 }}>
         <Link to="/industries" className="btn btn-outline">{isEs ? "Ver Todas las Industrias" : "View All Industries"} →</Link>
@@ -193,70 +208,133 @@ function TrustBar() {
   const { lang } = useLang();
   const isEs = lang === "es";
   const partners = [
-    { name: "APP", logo: "/images/partners/partner-app.png" },
-    { name: "NINE DRAGONS", logo: "/images/partners/partner-ninedragon.png" },
-    { name: "CHENMING", logo: "/images/partners/partner-chenming.png" },
-    { name: "BOHUI", logo: "/images/partners/partner-bohui.png" },
-    { name: "SUN PAPER", logo: "/images/partners/partner-sunpaper.png" },
-  ];
-  const clients = [
-    { name: "Nikon", logo: "/images/partners/client-nikon.png" },
-    { name: "Toyota", logo: "/images/partners/client-toyota.png" },
-    { name: "Microsoft", logo: "/images/partners/client-microsoft.png" },
+    {
+      name: "APP",
+      detail: isEs ? "Grupo de pulpa y papel" : "Pulp & paper group",
+      logo: "/images/partners/app-official.png",
+    },
+    {
+      name: "Sun Paper",
+      detail: isEs ? "Papel y nuevos materiales" : "Paper & new materials",
+      logo: "/images/partners/sun-paper-official.png",
+      logoClass: "sun-paper-logo",
+    },
+    {
+      name: "Nine Dragons Paper",
+      detail: isEs ? "Papel para embalaje" : "Packaging paper",
+      logo: "/images/partners/nine-dragons-official.png",
+    },
+    {
+      name: "Liansheng Paper",
+      detail: isEs ? "Papel para embalaje" : "Packaging paper",
+      monogram: "LS",
+      tone: "blue",
+    },
+    {
+      name: "Huatai Paper",
+      detail: isEs ? "Papel cultural y especial" : "Culture & specialty paper",
+      monogram: "HT",
+      tone: "green",
+    },
   ];
   return (
-    <section className="section" style={{ background: "var(--paper)", padding: "48px 0" }}>
-      <div className="container" style={{ textAlign: "center", maxWidth: 1000 }}>
-        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 20 }}>
-          {isEs ? "Nuestros Socios de Fábrica" : "Our Mill Partners"}
-        </span>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "20px 28px", marginBottom: 32 }}>
-          {partners.map((p) => (
-            <img key={p.name} src={p.logo} alt={p.name} title={p.name} style={{ height: 40, width: "auto", opacity: 0.8, filter: "grayscale(30%)" }} loading="lazy" />
-          ))}
+    <section className="section mill-network-section">
+      <div className="container mill-network-inner">
+        <div className="mill-network-heading">
+          <span className="section-label">{isEs ? "Red de Abastecimiento" : "Mill & Supply Network"}</span>
+          <h2>{isEs ? "Acceso a los principales fabricantes de papel de China" : "Connected to China's leading paper mills"}</h2>
+          <p>
+            {isEs
+              ? "Combinamos nuestra producción propia con una red de abastecimiento estable para ofrecer más grados, especificaciones y opciones de entrega."
+              : "We combine in-house manufacturing with an established sourcing network to offer broader grades, specifications, and delivery options."}
+          </p>
         </div>
-        <span style={{ color: "var(--muted)", fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 20 }}>
-          {isEs ? "En Quienes Confían" : "Trusted By"}
-        </span>
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "20px 28px" }}>
-          {clients.map((c) => (
-            <img key={c.name} src={c.logo} alt={c.name} title={c.name} style={{ height: 40, width: "auto", opacity: 0.75 }} loading="lazy" />
-          ))}
+        <div className="mill-logo-marquee" aria-label={isEs ? "Red de fábricas de papel" : "Paper mill network"}>
+          <div className="mill-logo-track">
+            {[0, 1].map((groupIndex) => (
+              <div className="mill-logo-group" key={groupIndex} aria-hidden={groupIndex === 1}>
+                {partners.map((partner) => (
+                  <div className="mill-logo-card" key={`${groupIndex}-${partner.name}`}>
+                    <div className="mill-logo-visual">
+                      {partner.logo ? (
+                        <img className={partner.logoClass || ""} src={partner.logo} alt={groupIndex === 0 ? `${partner.name} logo` : ""} loading="lazy" />
+                      ) : (
+                        <span className={`mill-monogram ${partner.tone || ""}`} aria-hidden="true">{partner.monogram}</span>
+                      )}
+                    </div>
+                    {!partner.logo && <strong>{partner.name}</strong>}
+                    <span className="mill-logo-detail">{partner.detail}</span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
+        <p className="mill-network-note">
+          {isEs
+            ? "Trabajamos con una red de fábricas nacionales para ampliar la disponibilidad de grados. Los nombres se muestran como referencias de abastecimiento, no como clientes ni como avales de marca."
+            : "We work with established domestic mills to broaden grade availability. Mill names are shown as sourcing references, not as customer endorsements."}
+        </p>
       </div>
     </section>
   );
 }
 
-function CaseStudyHighlights() {
+function BuyerApplications() {
   const { lang } = useLang();
   const isEs = lang === "es";
-  const featured = caseStudies.slice(0, 3);
+  const applications = [
+    {
+      label: isEs ? "Embalaje Rígido" : "Rigid Packaging",
+      title: isEs ? "Cartón gris y papel negro para cajas rígidas" : "Grey board and black paper for rigid boxes",
+      description: isEs
+        ? "Seleccione por espesor, rigidez, acabado y proceso de conversión. Se admiten hojas y paneles a medida."
+        : "Select by thickness, stiffness, surface finish, and converting process. Custom sheets and cut panels are available.",
+      href: "/products/grey-board",
+      facts: [isEs ? "Muestras disponibles" : "Samples available", isEs ? "Corte a medida" : "Custom cutting"],
+    },
+    {
+      label: isEs ? "Impresión Comercial" : "Commercial Printing",
+      title: isEs ? "Papel woodfree y cartulina estucada para impresión" : "Woodfree paper and coated board for print",
+      description: isEs
+        ? "Compare gramaje, blancura, suavidad y formato antes de realizar un pedido de producción."
+        : "Compare grammage, brightness, smoothness, and sheet or reel format before placing a production order.",
+      href: "/products/woodfree-paper",
+      facts: [isEs ? "Hojas o bobinas" : "Sheets or reels", isEs ? "Ficha técnica" : "Technical data"],
+    },
+    {
+      label: isEs ? "Envases Alimentarios" : "Food Packaging",
+      title: isEs ? "Papel para vasos y papel antigrasa" : "Cup paper and greaseproof paper",
+      description: isEs
+        ? "Confirme la estructura de barrera, el uso final y los requisitos de contacto alimentario para cada mercado."
+        : "Confirm barrier structure, end use, and food-contact requirements for the destination market.",
+      href: "/products/cup-paper",
+      facts: [isEs ? "Revisión de uso final" : "End-use review", isEs ? "Documentos por grado" : "Grade documents"],
+    },
+  ];
   return (
     <section className="section" style={{ background: "#fff" }}>
       <div className="section-header">
-        <span className="section-label">{isEs ? "Casos de Estudio" : "Case Studies"}</span>
-        <h2>{isEs ? "Resultados Reales con YOUNGSUN" : "Real Results with YOUNGSUN"}</h2>
-        <p>{isEs ? "Vea cómo clientes reales logran ahorros de costos, mejoras de calidad y eficiencia en la cadena de suministro." : "See how real clients achieve cost savings, quality improvements, and supply chain efficiency."}</p>
+        <span className="section-label">{isEs ? "Aplicaciones de Compra" : "Buyer Applications"}</span>
+        <h2>{isEs ? "Empiece por el uso final" : "Start with the end use"}</h2>
+        <p>{isEs ? "Ejemplos prácticos para ayudarle a elegir un grado. No se presentan como resultados de clientes ni como garantías de rendimiento." : "Practical examples to help you select a grade. These are not presented as customer results or performance guarantees."}</p>
       </div>
       <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24, maxWidth: 1100 }}>
-        {featured.map((cs) => (
-          <Link key={cs.id} to={`/case-studies/${cs.id}`} style={{ background: "var(--paper)", borderRadius: 14, padding: "28px", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm)", transition: "box-shadow 0.2s var(--ease-out)" }}>
-            <span style={{ background: "var(--gold-pale)", color: "var(--gold)", padding: "3px 12px", borderRadius: 20, fontSize: 11, fontWeight: 600 }}>{cs.category}</span>
-            <h4 style={{ fontSize: 16, fontWeight: 700, color: "var(--forest)", margin: "12px 0 8px", lineHeight: 1.4 }}>{cs.title[lang]}</h4>
-            <div style={{ display: "flex", gap: 16, marginTop: 14, paddingTop: 14, borderTop: "1px solid var(--line)" }}>
-              {cs.results.slice(0, 2).map((r, i) => (
-                <div key={i}>
-                  <div style={{ fontSize: 20, fontWeight: 800, color: "var(--gold)" }}>{r.metric[lang]}</div>
-                  <div style={{ fontSize: 10, color: "var(--muted-light)" }}>{r.label[lang]}</div>
-                </div>
+        {applications.map((item) => (
+          <Link key={item.href} to={item.href} style={{ background: "var(--paper)", borderRadius: 8, padding: "28px", textDecoration: "none", color: "inherit", border: "1px solid var(--line)", transition: "border-color 0.2s var(--ease-out)" }}>
+            <span style={{ color: "var(--gold)", fontSize: 11, fontWeight: 700, textTransform: "uppercase" }}>{item.label}</span>
+            <h4 style={{ fontSize: 17, fontWeight: 700, color: "var(--forest)", margin: "12px 0 10px", lineHeight: 1.4 }}>{item.title}</h4>
+            <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.7 }}>{item.description}</p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 16, paddingTop: 16, borderTop: "1px solid var(--line)" }}>
+              {item.facts.map((fact) => (
+                <span key={fact} style={{ color: "var(--forest)", fontSize: 11, fontWeight: 600 }}>{fact}</span>
               ))}
             </div>
           </Link>
         ))}
       </div>
       <div style={{ textAlign: "center", marginTop: 28 }}>
-        <Link to="/case-studies" className="btn btn-outline">{isEs ? "Ver Todos los Casos" : "View All Case Studies"} →</Link>
+        <Link to="/products" className="btn btn-outline">{isEs ? "Ver Todos los Productos" : "View All Products"} →</Link>
       </div>
     </section>
   );
@@ -309,12 +387,45 @@ function WhyUsHome() {
   );
 }
 
-function TestimonialsHome() {
-  const { t } = useLang(); const qk = ["testimonial_1_quote","testimonial_2_quote","testimonial_3_quote"]; const ak = ["testimonial_1_author","testimonial_2_author","testimonial_3_author"];
+function BuyerVerification() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const checks = [
+    {
+      number: "01",
+      title: isEs ? "Aprobación de muestras" : "Sample approval",
+      description: isEs ? "Confirme color, espesor, superficie y rendimiento de conversión antes de la producción en masa." : "Confirm color, thickness, surface, and converting performance before bulk production.",
+    },
+    {
+      number: "02",
+      title: isEs ? "Documentos por producto" : "Product-specific documents",
+      description: isEs ? "Solicite fichas técnicas, certificados y documentos de prueba aplicables al grado cotizado." : "Request technical data, certificates, and test documents that apply to the quoted grade.",
+    },
+    {
+      number: "03",
+      title: isEs ? "Control antes del envío" : "Pre-shipment control",
+      description: isEs ? "El gramaje, tamaño, embalaje y marcas de envío se confirman contra su pedido antes de la expedición." : "Grammage, size, packing, and shipping marks are checked against your order before dispatch.",
+    },
+  ];
   return (
     <section className="section testimonials-section" id="testimonials">
-      <div className="section-header"><span className="section-label">{t("Client Voices")}</span><h2>{t("Trusted by Industry Leaders")}</h2><p>{t("testimonials_desc")}</p></div>
-      <div className="testimonials-grid container">{testimonials.map((tm, i) => (<div className="testimonial-card" key={i}><span className="quote-mark">&ldquo;</span><blockquote>{t(qk[i])}</blockquote><div className="testimonial-author"><span className="author-name">{t(ak[i])}</span><span className="author-company">{tm.company}, {tm.region}</span></div></div>))}</div>
+      <div className="section-header">
+        <span className="section-label">{isEs ? "Confianza Verificable" : "Verifiable Confidence"}</span>
+        <h2>{isEs ? "Compruebe antes de comprar" : "Verify before you buy"}</h2>
+        <p>{isEs ? "La confianza debe basarse en muestras, documentos y controles claros, no en logotipos o testimonios anónimos." : "Confidence should come from samples, documents, and clear checks, not logos or anonymous testimonials."}</p>
+      </div>
+      <div className="testimonials-grid container">
+        {checks.map((item) => (
+          <div className="testimonial-card" key={item.number}>
+            <span style={{ color: "var(--lime)", fontSize: 13, fontWeight: 800 }}>{item.number}</span>
+            <h3 style={{ color: "#fff", fontSize: 18, margin: "14px 0 10px" }}>{item.title}</h3>
+            <p style={{ color: "rgba(255,255,255,0.68)", fontSize: 14, lineHeight: 1.7 }}>{item.description}</p>
+          </div>
+        ))}
+      </div>
+      <div style={{ textAlign: "center", marginTop: 30 }}>
+        <Link to="/quality" className="btn btn-outline">{isEs ? "Ver Control de Calidad" : "View Quality Control"} →</Link>
+      </div>
     </section>
   );
 }

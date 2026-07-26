@@ -16,6 +16,7 @@
   "dependencies": {
     "@vitejs/plugin-react": "latest",
     "esbuild": "^0.28.1",
+    "lucide-react": "^1.27.0",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet-async": "^3.0.0",

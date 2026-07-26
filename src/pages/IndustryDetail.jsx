@@ -1,13 +1,12 @@
 // ============================================================
 // YOUNGSUN PAPER — Industry Detail Page
 // Deep-dive into each industry with challenges, solutions,
-// recommended products, case studies, and FAQs
+// recommended products and FAQs
 // ============================================================
 import { useParams, Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { industries } from "../industriesData.js";
 import { subProducts } from "../data.js";
-import { caseStudies } from "../caseStudiesData.js";
 import { PageMeta } from "../SEO.jsx";
 
 export default function IndustryDetail() {
@@ -28,10 +27,6 @@ export default function IndustryDetail() {
   const relatedProducts = industry.recommendedProducts
     .map((pid) => subProducts[pid])
     .filter(Boolean);
-
-  const relatedCaseStudies = caseStudies.filter(
-    (cs) => cs.industry === industry.title.en || cs.industry === industry.title.es
-  );
 
   const ind = industry;
 
@@ -129,45 +124,6 @@ export default function IndustryDetail() {
           </div>
         </div>
       </section>
-
-      {/* Related Case Studies */}
-      {relatedCaseStudies.length > 0 && (
-        <section className="section" style={{ background: "var(--paper)" }}>
-          <div className="container" style={{ maxWidth: 900 }}>
-            <h2 style={{ fontSize: 24, color: "var(--forest)", marginBottom: 24 }}>
-              {isEs ? "Casos de Estudio Relacionados" : "Related Case Studies"}
-            </h2>
-            <div style={{ display: "grid", gap: 20 }}>
-              {relatedCaseStudies.slice(0, 3).map((cs) => (
-                <Link
-                  key={cs.id}
-                  to={`/case-studies/${cs.id}`}
-                  style={{
-                    background: "#fff",
-                    padding: "24px 28px",
-                    borderRadius: 12,
-                    textDecoration: "none",
-                    color: "inherit",
-                    boxShadow: "var(--shadow-sm)",
-                    transition: "box-shadow 0.2s var(--ease-out)",
-                  }}
-                >
-                  <span style={{ fontSize: 12, color: "var(--gold)", fontWeight: 600, textTransform: "uppercase" }}>
-                    {cs.category}
-                  </span>
-                  <h4 style={{ fontSize: 17, fontWeight: 700, marginTop: 6, color: "var(--forest)" }}>{cs.title[lang]}</h4>
-                  <p style={{ fontSize: 14, color: "var(--muted)", marginTop: 8, lineHeight: 1.6 }}>{cs.summary[lang]}</p>
-                </Link>
-              ))}
-            </div>
-            <div style={{ textAlign: "center", marginTop: 24 }}>
-              <Link to="/case-studies" style={{ color: "var(--gold)", fontWeight: 600 }}>
-                {isEs ? "Ver todos los casos →" : "View all case studies →"}
-              </Link>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* FAQs */}
       <section className="section" style={{ background: "#fff" }}>

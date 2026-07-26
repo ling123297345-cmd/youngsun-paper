@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, NavLink, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { LangProvider, useLang } from "./i18n.jsx";
 import SearchBar from "./SearchBar.jsx";
@@ -19,14 +19,11 @@ const FancyPaperGallery = lazy(() => import("./pages/FancyPaperGallery.jsx"));
 const Industries = lazy(() => import("./pages/Industries.jsx"));
 const IndustryDetail = lazy(() => import("./pages/IndustryDetail.jsx"));
 const Materials = lazy(() => import("./pages/Materials.jsx"));
-const CaseStudies = lazy(() => import("./pages/CaseStudies.jsx"));
-const CaseStudyDetail = lazy(() => import("./pages/CaseStudyDetail.jsx"));
 const Processing = lazy(() => import("./pages/Processing.jsx"));
 const Quality = lazy(() => import("./pages/Quality.jsx"));
 const FAQ = lazy(() => import("./pages/FAQ.jsx"));
 const HowToOrder = lazy(() => import("./pages/HowToOrder.jsx"));
 const Resources = lazy(() => import("./pages/Resources.jsx"));
-const Testimonials = lazy(() => import("./pages/Testimonials.jsx"));
 
 // ── Loading fallback ────────────────────────────────────────
 function PageLoading() {
@@ -169,7 +166,6 @@ function Header() {
     { label: "Products", href: "/products" },
     { label: "Industries", href: "/industries" },
     { label: "Materials", href: "/materials" },
-    { label: "Case Studies", href: "/case-studies" },
     { label: "Processing", href: "/processing" },
     { label: "Blog", href: "/blog" },
     { label: "About", href: "/about" },
@@ -225,7 +221,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products">{t("Package Board")}</Link><Link to="/products">{t("Culture Paper")}</Link><Link to="/products">{t("Fancy Paper")}</Link><Link to="/products">{t("Food Packaging Paper")}</Link><Link to="/materials">📋 {t("Materials Library") || "Materials Library"}</Link></div>
-        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/case-studies">{t("Case Studies") || "Case Studies"}</Link><Link to="/testimonials">{t("Testimonials") || "Testimonials"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
+        <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link><Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link><Link to="/contact">{t("Contact")}</Link></div>
         <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide") || "Paper Grade Guide"}</Link><Link to="/resources">📥 {t("Downloads") || "Downloads"}</Link><Link to="/processing">{t("Processing Services") || "Processing"}</Link><Link to="/how-to-order">{t("How to Order") || "How to Order"}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
       </div>
       <div className="footer-bottom" style={{ flexDirection: "column", gap: 12 }}>
@@ -247,96 +243,20 @@ function Footer() {
 
 function Floating() {
   const [show, setShow] = useState(false);
-  const [chatOpen, setChatOpen] = useState(false);
-  const { t, lang } = useLang();
-  const isEs = lang === "es";
   useEffect(() => { const f = () => setShow(window.scrollY > 600); window.addEventListener("scroll", f, { passive: true }); return () => window.removeEventListener("scroll", f); }, []);
-
-  const chatOptions = [
-    { icon: "💬", label: "WhatsApp", desc: isEs ? "Charla instantánea" : "Instant chat", href: `https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`, color: "#25D366" },
-    { icon: "✉️", label: "Email", desc: contactInfo.email, href: `mailto:${contactInfo.email}`, color: "var(--gold)" },
-    { icon: "💬", label: "WeChat", desc: contactInfo.wechat, href: "#", color: "#07C160", isCopy: true },
-  ];
-
   return (
-    <>
-      <div className="floating-actions" style={{ position: "fixed", bottom: 24, right: 24, zIndex: 999, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12 }}>
-        {/* Chat panel */}
-        {chatOpen && (
-          <div style={{
-            background: "#fff", borderRadius: 16, boxShadow: "0 12px 48px rgba(0,0,0,0.18)", width: 280, overflow: "hidden",
-            animation: "pwaSlideUp 0.3s cubic-bezier(0.34,1.56,0.64,1)", marginBottom: 8,
-          }}>
-            <div style={{ background: "var(--forest)", color: "#fff", padding: "16px 20px", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div>
-                <div style={{ fontWeight: 700, fontSize: 15 }}>{isEs ? "¿Cómo podemos ayudar?" : "How can we help?"}</div>
-                <div style={{ fontSize: 11, opacity: 0.7, marginTop: 2 }}>{isEs ? "Respondemos en minutos" : "We reply within minutes"}</div>
-              </div>
-              <button onClick={() => setChatOpen(false)} style={{ background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 28, height: 28, borderRadius: "50%", cursor: "pointer", fontSize: 14 }}>✕</button>
-            </div>
-            <div style={{ padding: "8px 0" }}>
-              {chatOptions.map((opt, i) => (
-                opt.isCopy ? (
-                  <button
-                    key={i}
-                    onClick={() => { navigator.clipboard?.writeText(contactInfo.wechat); alert(isEs ? `WeChat copiado: ${contactInfo.wechat}` : `WeChat copied: ${contactInfo.wechat}`); }}
-                    style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "14px 20px", border: "none", background: "transparent", cursor: "pointer", textAlign: "left", fontSize: 13 }}
-                  >
-                    <span style={{ fontSize: 22 }}>{opt.icon}</span>
-                    <div><div style={{ fontWeight: 700, color: "var(--forest)" }}>{opt.label}</div><div style={{ fontSize: 12, color: "var(--muted)" }}>{opt.desc} <span style={{ color: "var(--gold)", fontSize: 10 }}>({isEs ? "toca para copiar" : "tap to copy"})</span></div></div>
-                  </button>
-                ) : (
-                  <a
-                    key={i}
-                    href={opt.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 20px", textDecoration: "none", textAlign: "left", fontSize: 13 }}
-                  >
-                    <span style={{ fontSize: 22 }}>{opt.icon}</span>
-                    <div><div style={{ fontWeight: 700, color: "var(--forest)" }}>{opt.label}</div><div style={{ fontSize: 12, color: "var(--muted)" }}>{opt.desc}</div></div>
-                  </a>
-                )
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Scroll to top */}
-        {show && (
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            style={{
-              width: 48, height: 48, borderRadius: "50%", background: "#fff", border: "1px solid var(--line-strong)",
-              boxShadow: "var(--shadow-md)", cursor: "pointer", fontSize: 18, display: "flex", alignItems: "center", justifyContent: "center",
-              transition: "all 0.2s var(--ease-out)",
-            }}
-            aria-label="Back to top"
-          >↑</button>
-        )}
-
-        {/* Main chat button */}
-        <button
-          onClick={() => setChatOpen(!chatOpen)}
-          style={{
-            width: 56, height: 56, borderRadius: "50%", background: chatOpen ? "#fff" : "var(--lime, #25D366)",
-            border: chatOpen ? "2px solid var(--line-strong)" : "none",
-            boxShadow: "0 6px 24px rgba(37,211,102,0.35)", cursor: "pointer", fontSize: 24, display: "flex",
-            alignItems: "center", justifyContent: "center", transition: "all 0.25s var(--ease-out)",
-            transform: chatOpen ? "rotate(180deg)" : "none",
-          }}
-          aria-label={isEs ? "Abrir chat" : "Open chat"}
-        >
-          {chatOpen ? "✕" : "💬"}
-        </button>
-      </div>
-      <style>{`
-        @keyframes pwaSlideUp {
-          from { opacity: 0; transform: translateY(16px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
-    </>
+    <div className="floating-actions" style={{ position: "fixed", bottom: 24, right: 24, zIndex: 999, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 12 }}>
+      {show && (
+        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          style={{ width: 48, height: 48, borderRadius: "50%", background: "#fff", border: "1px solid var(--line-strong)", boxShadow: "var(--shadow-md)", cursor: "pointer", fontSize: 18, display: "flex", alignItems: "center", justifyContent: "center" }}
+          aria-label="Back to top">↑</button>
+      )}
+      <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noopener noreferrer"
+        style={{ width: 56, height: 56, borderRadius: "50%", background: "#25D366", boxShadow: "0 6px 24px rgba(37,211,102,0.35)", cursor: "pointer", fontSize: 26, display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none" }}
+        aria-label="Chat on WhatsApp">
+        💬
+      </a>
+    </div>
   );
 }
 
@@ -370,14 +290,14 @@ export default function App() {
             <Route path="/industries" element={<Industries />} />
             <Route path="/industries/:id" element={<IndustryDetail />} />
             <Route path="/materials" element={<Materials />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
+            <Route path="/case-studies" element={<Navigate to="/quality" replace />} />
+            <Route path="/case-studies/:id" element={<Navigate to="/quality" replace />} />
             <Route path="/processing" element={<Processing />} />
             <Route path="/quality" element={<Quality />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/how-to-order" element={<HowToOrder />} />
             <Route path="/resources" element={<Resources />} />
-            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/testimonials" element={<Navigate to="/quality" replace />} />
           </Routes>
           </Suspense>
         </main>

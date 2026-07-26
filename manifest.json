@@ -1,0 +1,158 @@
+{
+  "name": "YOUNGSUN PAPER — Premium Paper & Board",
+  "short_name": "YOUNGSUN PAPER",
+  "description": "Premium paper trading and manufacturing — grey board, kraft paper, specialty paper, and food packaging. FSC & SGS certified. Serving 60+ countries since 2002.",
+  "categories": ["business", "manufacturing", "shopping"],
+  "lang": "en",
+  "dir": "ltr",
+
+  "start_url": "/?utm_source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+
+  "theme_color": "#0f2b1a",
+  "background_color": "#faf7f2",
+
+  "iarc_rating_id": "e0b9c5c6-7a1a-4d8a-8e9d-9e0a1b2c3d4e",
+
+  "icons": [
+    {
+      "src": "/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "Products",
+      "short_name": "Products",
+      "description": "Browse all paper and board products",
+      "url": "/products",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch or request a quote",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Blog — Paper Guides",
+      "short_name": "Blog",
+      "description": "Read sourcing guides and industry insights",
+      "url": "/blog",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "/images/hero/youngsun-paper-hero-banner-hd.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "YOUNGSUN PAPER home page — Premium paper supplier"
+    }
+  ],
+
+  "related_applications": [],
+
+  "prefer_related_applications": false,
+
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "/contact"
+    }
+  ]
+}

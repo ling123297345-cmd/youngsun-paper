@@ -6,6 +6,7 @@ import { productEs } from "../productEs.js";
 import { industries } from "../industriesData.js";
 import { caseStudies } from "../caseStudiesData.js";
 import { blogPosts } from "../blogData.js";
+import { useContactForm } from "../useContactForm.js";
 import { PageMeta, OrganizationSchema } from "../SEO.jsx";
 
 function ArrowIcon() {
@@ -320,43 +321,8 @@ function TestimonialsHome() {
 
 function ContactHome() {
   const { t } = useLang();
-  const [form, setForm] = useState({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" });
-  const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState("");
-  const h = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-  const s = async (e) => {
-    e.preventDefault();
-    setSending(true);
-    setError("");
-    try {
-      const res = await fetch("https://formsubmit.co/ajax/Alice@yspaper.com", {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          name: form.name, email: form.email,
-          company: form.company || "(not provided)",
-          phone: form.phone || "(not provided)",
-          product: form.product || "(not specified)",
-          gsm: form.gsm || "(not specified)", size: form.size || "(not specified)",
-          quantity: form.quantity || "(not specified)", destination: form.destination || "(not specified)",
-          message: form.message,
-          _subject: `New Inquiry: ${form.product || "Paper Products"} from ${form.name || "Website Visitor"}`,
-          _captcha: "false",
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setForm({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" });
-        setTimeout(() => setSubmitted(false), 5000);
-      } else {
-        setError("Failed to send. Please email us directly at Alice@yspaper.com");
-      }
-    } catch {
-      setError("Network error. Please email us directly at Alice@yspaper.com");
-    }
-    setSending(false);
-  };
+  const FORM_INITIAL = { name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" };
+  const { form, submitted, sending, error, honeypotRef, submitTimeRef, handleChange, handleSubmit } = useContactForm(FORM_INITIAL);
   return (
     <section className="section contact-section" id="contact">
       <div className="section-header"><span className="section-label">{t("Get In Touch")}</span><h2>{t("Let's Talk Paper")}</h2><p>{t("contact_subtitle")}</p></div>
@@ -369,25 +335,36 @@ function ContactHome() {
             <div className="contact-method"><span className="method-icon">💬</span><div><span className="method-label">WeChat</span><span className="method-value">{contactInfo.wechat}</span></div></div>
           </div>
         </div>
-        <form className="contact-form" onSubmit={s}>
+        <form className="contact-form" onSubmit={handleSubmit} onFocus={submitTimeRef}>
           <h3>{t("Send Us a Message")}</h3>
-          <div className="form-group"><label htmlFor="hname">{t("Your Name *")}</label><input type="text" id="hname" name="name" value={form.name} onChange={h} required /></div>
-          <div className="form-group"><label>Company</label><input type="text" name="company" value={form.company} onChange={h} /></div>
-          <div className="form-group"><label htmlFor="hemail">{t("Email Address *")}</label><input type="email" id="hemail" name="email" value={form.email} onChange={h} required /></div>
-          <div className="form-group"><label>Phone / WhatsApp</label><input type="text" name="phone" value={form.phone} onChange={h} /></div>
-          <div className="form-group"><label htmlFor="hproduct">{t("Product Interest")}</label><select id="hproduct" name="product" value={form.product} onChange={h}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
+
+          {submitted && (
+            <div style={{ background: "#F0FDF4", border: "1px solid #86EFAC", color: "#166534", padding: "20px", borderRadius: 12, marginBottom: 16, textAlign: "center" }}>
+              <div style={{ fontSize: 36, marginBottom: 4 }}>✅</div><div style={{ fontWeight: 700 }}>Message Sent! We'll reply within 24h.</div>
+            </div>
+          )}
+          {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13 }}>⚠️ {error}</div>}
+
+          <div style={{ position: "absolute", left: "-9999px", opacity: 0 }} aria-hidden="true">
+            <input ref={honeypotRef} type="text" name="hp_field" tabIndex={-1} autoComplete="off" />
+          </div>
+
+          <div className="form-group"><label htmlFor="hname">{t("Your Name *")}</label><input type="text" id="hname" name="name" value={form.name} onChange={handleChange} required /></div>
+          <div className="form-group"><label>Company</label><input type="text" name="company" value={form.company} onChange={handleChange} /></div>
+          <div className="form-group"><label htmlFor="hemail">{t("Email Address *")}</label><input type="email" id="hemail" name="email" value={form.email} onChange={handleChange} required /></div>
+          <div className="form-group"><label>Phone / WhatsApp</label><input type="text" name="phone" value={form.phone} onChange={handleChange} /></div>
+          <div className="form-group"><label htmlFor="hproduct">{t("Product Interest")}</label><select id="hproduct" name="product" value={form.product} onChange={handleChange}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
           <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12 }}>
-            <div className="form-group"><label>GSM / Thickness</label><input type="text" name="gsm" value={form.gsm} onChange={h} placeholder="e.g. 200-400 gsm" /></div>
-            <div className="form-group"><label>Size</label><input type="text" name="size" value={form.size} onChange={h} placeholder="e.g. A4, custom" /></div>
+            <div className="form-group"><label>GSM / Thickness</label><input type="text" name="gsm" value={form.gsm} onChange={handleChange} placeholder="e.g. 200-400 gsm" /></div>
+            <div className="form-group"><label>Size</label><input type="text" name="size" value={form.size} onChange={handleChange} placeholder="e.g. A4, custom" /></div>
           </div>
           <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12 }}>
-            <div className="form-group"><label>Quantity</label><input type="text" name="quantity" value={form.quantity} onChange={h} placeholder="e.g. 1x20ft container" /></div>
-            <div className="form-group"><label>Destination Country / Port</label><input type="text" name="destination" value={form.destination} onChange={h} placeholder="e.g. Hamburg, Germany" /></div>
+            <div className="form-group"><label>Quantity</label><input type="text" name="quantity" value={form.quantity} onChange={handleChange} placeholder="e.g. 1x20ft container" /></div>
+            <div className="form-group"><label>Destination Country / Port</label><input type="text" name="destination" value={form.destination} onChange={handleChange} placeholder="e.g. Hamburg, Germany" /></div>
           </div>
-          {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13 }}>{error}</div>}
-          <div className="form-group"><label htmlFor="hmessage">{t("Your Message *")}</label><textarea id="hmessage" name="message" value={form.message} onChange={h} required /></div>
+          <div className="form-group"><label htmlFor="hmessage">{t("Your Message *")}</label><textarea id="hmessage" name="message" value={form.message} onChange={handleChange} required /></div>
           <button type="submit" className="form-submit" disabled={sending}>
-            {sending ? "⏳ Sending..." : submitted ? "✅ Message Sent! We'll reply within 24h" : t("Send Inquiry")}
+            {sending ? "⏳ Sending..." : t("Send Inquiry")}
           </button>
         </form>
       </div>

@@ -1,56 +1,16 @@
-import { useState } from "react";
 import { useLang } from "../i18n.jsx";
 import { contactInfo, productCategories, faqItems } from "../data.js";
+import { useContactForm } from "../useContactForm.js";
 import { PageMeta, FAQSchema } from "../SEO.jsx";
 
-// FormSubmit endpoint — submissions go to Alice@yspaper.com
-const FORM_ENDPOINT = "https://formsubmit.co/ajax/Alice@yspaper.com";
+const FORM_INITIAL = { name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" };
 
 export default function Contact() {
   const { t } = useLang();
-  const [form, setForm] = useState({ name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
-  const [error, setError] = useState("");
+  const { form, submitted, sending, error, honeypotRef, submitTimeRef, handleChange, handleSubmit } = useContactForm(FORM_INITIAL);
   const qk = ["faq_q1","faq_q2","faq_q3","faq_q4","faq_q5","faq_q6","faq_q7","faq_q8"];
   const ak = ["faq_a1","faq_a2","faq_a3","faq_a4","faq_a5","faq_a6","faq_a7","faq_a8"];
   const faqSchemaItems = faqItems.map((_, i) => ({ q: t(qk[i]), a: t(ak[i]) }));
-  const h = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-  const s = async (e) => {
-    e.preventDefault();
-    setSending(true);
-    setError("");
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "Accept": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          email: form.email,
-          company: form.company || "(not provided)",
-          phone: form.phone || "(not provided)",
-          product: form.product || "(not specified)",
-          gsm: form.gsm || "(not specified)",
-          size: form.size || "(not specified)",
-          quantity: form.quantity || "(not specified)",
-          destination: form.destination || "(not specified)",
-          message: form.message,
-          _subject: `New Inquiry: ${form.product || "Paper Products"} from ${form.name || "Website Visitor"}`,
-          _captcha: "false",
-        }),
-      });
-      if (res.ok) {
-        setSubmitted(true);
-        setForm({ name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" });
-        setTimeout(() => setSubmitted(false), 5000);
-      } else {
-        setError(t("send_error") || "Failed to send. Please email us directly at Alice@yspaper.com");
-      }
-    } catch {
-      setError(t("send_error") || "Network error. Please email us directly at Alice@yspaper.com");
-    }
-    setSending(false);
-  };
 
   return (
     <section>
@@ -70,27 +30,58 @@ export default function Contact() {
               <div className="contact-method"><span className="method-icon">💬</span><div><span className="method-label">WeChat</span><span className="method-value">{contactInfo.wechat}</span></div></div>
             </div>
           </div>
-          <form className="contact-form" onSubmit={s}>
+          <form className="contact-form" onSubmit={handleSubmit} onFocus={submitTimeRef}>
             <h3>{t("Send Us a Message")}</h3>
-            {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13, lineHeight: 1.6 }}>{error}</div>}
-            <div className="form-group"><label htmlFor="name">{t("Your Name *")}</label><input type="text" id="name" name="name" value={form.name} onChange={h} required /></div>
-            <div className="form-group"><label htmlFor="email">{t("Email Address *")}</label><input type="email" id="email" name="email" value={form.email} onChange={h} required /></div>
-            <div className="form-group"><label>{t("Company")}</label><input type="text" name="company" value={form.company} onChange={h} /></div>
-            <div className="form-group"><label>{t("Phone / WhatsApp")}</label><input type="text" name="phone" value={form.phone} onChange={h} /></div>
-            <div className="form-group"><label htmlFor="product">{t("Product Interest")}</label><select id="product" name="product" value={form.product} onChange={h}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
+
+            {/* ── Success ──────────────────────────────────── */}
+            {submitted && (
+              <div style={{ background: "#F0FDF4", border: "1px solid #86EFAC", color: "#166534", padding: "24px", borderRadius: 12, marginBottom: 20, textAlign: "center", animation: "fadeIn 0.3s ease-out" }}>
+                <div style={{ fontSize: 40, marginBottom: 8 }}>✅</div>
+                <div style={{ fontWeight: 700, fontSize: 16 }}>Message Sent!</div>
+                <div style={{ fontSize: 13, marginTop: 4, opacity: 0.8 }}>We'll reply within 24 hours. Check your inbox for a confirmation.</div>
+              </div>
+            )}
+
+            {/* ── Error ────────────────────────────────────── */}
+            {error && (
+              <div style={{ background: "#FEF2F2", border: "1px solid #FECACA", color: "#DC2626", padding: "14px 16px", borderRadius: 10, marginBottom: 16, fontSize: 13, lineHeight: 1.6 }}>
+                ⚠️ {error}
+              </div>
+            )}
+
+            {/* ── Honeypot: hidden from humans, visible to bots ── */}
+            <div style={{ position: "absolute", left: "-9999px", opacity: 0 }} aria-hidden="true">
+              <label htmlFor="hp_field">Leave empty</label>
+              <input ref={honeypotRef} type="text" id="hp_field" name="hp_field" tabIndex={-1} autoComplete="off" />
+            </div>
+
+            {/* ── Form fields ──────────────────────────────── */}
+            <div className="form-group"><label htmlFor="name">{t("Your Name *")}</label><input type="text" id="name" name="name" value={form.name} onChange={handleChange} required /></div>
+            <div className="form-group"><label htmlFor="email">{t("Email Address *")}</label><input type="email" id="email" name="email" value={form.email} onChange={handleChange} required /></div>
+            <div className="form-group"><label>{t("Company")}</label><input type="text" name="company" value={form.company} onChange={handleChange} /></div>
+            <div className="form-group"><label>{t("Phone / WhatsApp")}</label><input type="text" name="phone" value={form.phone} onChange={handleChange} /></div>
+            <div className="form-group"><label htmlFor="product">{t("Product Interest")}</label><select id="product" name="product" value={form.product} onChange={handleChange}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-              <div className="form-group"><label>GSM / {t("Thickness")}</label><input type="text" name="gsm" value={form.gsm} onChange={h} placeholder="e.g. 200-400 gsm" /></div>
-              <div className="form-group"><label>{t("Size")}</label><input type="text" name="size" value={form.size} onChange={h} placeholder="e.g. 787×1092mm" /></div>
+              <div className="form-group"><label>GSM / {t("Thickness")}</label><input type="text" name="gsm" value={form.gsm} onChange={handleChange} placeholder="e.g. 200-400 gsm" /></div>
+              <div className="form-group"><label>{t("Size")}</label><input type="text" name="size" value={form.size} onChange={handleChange} placeholder="e.g. 787×1092mm" /></div>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
-              <div className="form-group"><label>{t("Quantity")}</label><input type="text" name="quantity" value={form.quantity} onChange={h} placeholder="e.g. 25 tons" /></div>
-              <div className="form-group"><label>{t("Destination")}</label><input type="text" name="destination" value={form.destination} onChange={h} placeholder="e.g. Hamburg, Germany" /></div>
+              <div className="form-group"><label>{t("Quantity")}</label><input type="text" name="quantity" value={form.quantity} onChange={handleChange} placeholder="e.g. 25 tons" /></div>
+              <div className="form-group"><label>{t("Destination")}</label><input type="text" name="destination" value={form.destination} onChange={handleChange} placeholder="e.g. Hamburg, Germany" /></div>
             </div>
-            <div className="form-group"><label htmlFor="message">{t("Your Message *")}</label><textarea id="message" name="message" value={form.message} onChange={h} required placeholder={t("Tell us about your paper requirements...")} /></div>
+            <div className="form-group"><label htmlFor="message">{t("Your Message *")}</label><textarea id="message" name="message" value={form.message} onChange={handleChange} required placeholder={t("Tell us about your paper requirements...")} /></div>
             <button type="submit" className="form-submit" disabled={sending}>
-              {sending ? "⏳ " + (t("Sending...") || "Sending...") : submitted ? "✅ " + (t("✓ Message Sent! We'll reply within 24h") || "✓ Message Sent! We'll reply within 24h") : t("Send Inquiry")}
+              {sending ? (
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ width: 16, height: 16, border: "2px solid rgba(255,255,255,0.3)", borderTopColor: "#fff", borderRadius: "50%", display: "inline-block", animation: "spin 0.6s linear infinite" }} />
+                  {t("Sending...")}
+                </span>
+              ) : (
+                t("Send Inquiry")
+              )}
             </button>
           </form>
+          <style>{`@keyframes fadeIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}@keyframes spin{to{transform:rotate(360deg)}}`}</style>
         </div>
       </div>
       {/* Book a Meeting */}

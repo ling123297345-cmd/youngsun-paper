@@ -319,9 +319,44 @@ function TestimonialsHome() {
 }
 
 function ContactHome() {
-  const { t } = useLang(); const [form, setForm] = useState({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" }); const [submitted, setSubmitted] = useState(false);
+  const { t } = useLang();
+  const [form, setForm] = useState({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" });
+  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
   const h = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-  const s = (e) => { e.preventDefault(); setSubmitted(true); setForm({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" }); setTimeout(() => setSubmitted(false), 4000); };
+  const s = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/Alice@yspaper.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          name: form.name, email: form.email,
+          company: form.company || "(not provided)",
+          phone: form.phone || "(not provided)",
+          product: form.product || "(not specified)",
+          gsm: form.gsm || "(not specified)", size: form.size || "(not specified)",
+          quantity: form.quantity || "(not specified)", destination: form.destination || "(not specified)",
+          message: form.message,
+          _subject: `New Inquiry: ${form.product || "Paper Products"} from ${form.name || "Website Visitor"}`,
+          _captcha: "false",
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setForm({ name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError("Failed to send. Please email us directly at Alice@yspaper.com");
+      }
+    } catch {
+      setError("Network error. Please email us directly at Alice@yspaper.com");
+    }
+    setSending(false);
+  };
   return (
     <section className="section contact-section" id="contact">
       <div className="section-header"><span className="section-label">{t("Get In Touch")}</span><h2>{t("Let's Talk Paper")}</h2><p>{t("contact_subtitle")}</p></div>
@@ -349,8 +384,11 @@ function ContactHome() {
             <div className="form-group"><label>Quantity</label><input type="text" name="quantity" value={form.quantity} onChange={h} placeholder="e.g. 1x20ft container" /></div>
             <div className="form-group"><label>Destination Country / Port</label><input type="text" name="destination" value={form.destination} onChange={h} placeholder="e.g. Hamburg, Germany" /></div>
           </div>
+          {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13 }}>{error}</div>}
           <div className="form-group"><label htmlFor="hmessage">{t("Your Message *")}</label><textarea id="hmessage" name="message" value={form.message} onChange={h} required /></div>
-          <button type="submit" className="form-submit">{submitted ? t("✓ Message Sent!") : t("Send Inquiry")}</button>
+          <button type="submit" className="form-submit" disabled={sending}>
+            {sending ? "⏳ Sending..." : submitted ? "✅ Message Sent! We'll reply within 24h" : t("Send Inquiry")}
+          </button>
         </form>
       </div>
     </section>

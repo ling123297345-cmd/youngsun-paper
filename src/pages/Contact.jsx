@@ -3,15 +3,54 @@ import { useLang } from "../i18n.jsx";
 import { contactInfo, productCategories, faqItems } from "../data.js";
 import { PageMeta, FAQSchema } from "../SEO.jsx";
 
+// FormSubmit endpoint — submissions go to Alice@yspaper.com
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/Alice@yspaper.com";
+
 export default function Contact() {
   const { t } = useLang();
-  const [form, setForm] = useState({ name: "", email: "", product: "", message: "" });
+  const [form, setForm] = useState({ name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
   const qk = ["faq_q1","faq_q2","faq_q3","faq_q4","faq_q5","faq_q6","faq_q7","faq_q8"];
   const ak = ["faq_a1","faq_a2","faq_a3","faq_a4","faq_a5","faq_a6","faq_a7","faq_a8"];
   const faqSchemaItems = faqItems.map((_, i) => ({ q: t(qk[i]), a: t(ak[i]) }));
   const h = (e) => setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
-  const s = (e) => { e.preventDefault(); setSubmitted(true); setForm({ name: "", email: "", product: "", message: "" }); setTimeout(() => setSubmitted(false), 4000); };
+  const s = async (e) => {
+    e.preventDefault();
+    setSending(true);
+    setError("");
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company || "(not provided)",
+          phone: form.phone || "(not provided)",
+          product: form.product || "(not specified)",
+          gsm: form.gsm || "(not specified)",
+          size: form.size || "(not specified)",
+          quantity: form.quantity || "(not specified)",
+          destination: form.destination || "(not specified)",
+          message: form.message,
+          _subject: `New Inquiry: ${form.product || "Paper Products"} from ${form.name || "Website Visitor"}`,
+          _captcha: "false",
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+        setForm({ name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" });
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError(t("send_error") || "Failed to send. Please email us directly at Alice@yspaper.com");
+      }
+    } catch {
+      setError(t("send_error") || "Network error. Please email us directly at Alice@yspaper.com");
+    }
+    setSending(false);
+  };
 
   return (
     <section>
@@ -33,11 +72,24 @@ export default function Contact() {
           </div>
           <form className="contact-form" onSubmit={s}>
             <h3>{t("Send Us a Message")}</h3>
+            {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13, lineHeight: 1.6 }}>{error}</div>}
             <div className="form-group"><label htmlFor="name">{t("Your Name *")}</label><input type="text" id="name" name="name" value={form.name} onChange={h} required /></div>
             <div className="form-group"><label htmlFor="email">{t("Email Address *")}</label><input type="email" id="email" name="email" value={form.email} onChange={h} required /></div>
+            <div className="form-group"><label>{t("Company")}</label><input type="text" name="company" value={form.company} onChange={h} /></div>
+            <div className="form-group"><label>{t("Phone / WhatsApp")}</label><input type="text" name="phone" value={form.phone} onChange={h} /></div>
             <div className="form-group"><label htmlFor="product">{t("Product Interest")}</label><select id="product" name="product" value={form.product} onChange={h}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
-            <div className="form-group"><label htmlFor="message">{t("Your Message *")}</label><textarea id="message" name="message" value={form.message} onChange={h} required /></div>
-            <button type="submit" className="form-submit">{submitted ? t("✓ Message Sent!") : t("Send Inquiry")}</button>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              <div className="form-group"><label>GSM / {t("Thickness")}</label><input type="text" name="gsm" value={form.gsm} onChange={h} placeholder="e.g. 200-400 gsm" /></div>
+              <div className="form-group"><label>{t("Size")}</label><input type="text" name="size" value={form.size} onChange={h} placeholder="e.g. 787×1092mm" /></div>
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+              <div className="form-group"><label>{t("Quantity")}</label><input type="text" name="quantity" value={form.quantity} onChange={h} placeholder="e.g. 25 tons" /></div>
+              <div className="form-group"><label>{t("Destination")}</label><input type="text" name="destination" value={form.destination} onChange={h} placeholder="e.g. Hamburg, Germany" /></div>
+            </div>
+            <div className="form-group"><label htmlFor="message">{t("Your Message *")}</label><textarea id="message" name="message" value={form.message} onChange={h} required placeholder={t("Tell us about your paper requirements...")} /></div>
+            <button type="submit" className="form-submit" disabled={sending}>
+              {sending ? "⏳ " + (t("Sending...") || "Sending...") : submitted ? "✅ " + (t("✓ Message Sent! We'll reply within 24h") || "✓ Message Sent! We'll reply within 24h") : t("Send Inquiry")}
+            </button>
           </form>
         </div>
       </div>

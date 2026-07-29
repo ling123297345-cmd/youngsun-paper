@@ -24,6 +24,8 @@ const Quality = lazy(() => import("./pages/Quality.jsx"));
 const FAQ = lazy(() => import("./pages/FAQ.jsx"));
 const HowToOrder = lazy(() => import("./pages/HowToOrder.jsx"));
 const Resources = lazy(() => import("./pages/Resources.jsx"));
+const PulpMaterials = lazy(() => import("./pages/PulpMaterials.jsx"));
+const PulpArticle = lazy(() => import("./pages/PulpArticle.jsx"));
 
 // ── Loading fallback ────────────────────────────────────────
 function PageLoading() {
@@ -290,6 +292,8 @@ export default function App() {
             <Route path="/industries" element={<Industries />} />
             <Route path="/industries/:id" element={<IndustryDetail />} />
             <Route path="/materials" element={<Materials />} />
+            <Route path="/materials/pulp" element={<PulpMaterials />} />
+            <Route path="/materials/:id" element={<PulpArticle />} />
             <Route path="/case-studies" element={<Navigate to="/quality" replace />} />
             <Route path="/case-studies/:id" element={<Navigate to="/quality" replace />} />
             <Route path="/processing" element={<Processing />} />

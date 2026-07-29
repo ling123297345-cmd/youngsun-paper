@@ -119,9 +119,6 @@ export default function Materials() {
                 {/* Image */}
                 <div style={{ height: 180, overflow: "hidden", background: "var(--forest-light)", position: "relative" }}>
                   <img src={mat.image} alt={mat.name[lang]} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                  <span style={{ position: "absolute", top: 12, right: 12, background: "var(--gold)", color: "#fff", padding: "4px 10px", borderRadius: 6, fontSize: 12, fontWeight: 700 }}>
-                    {mat.priceLevel}
-                  </span>
                 </div>
                 {/* Content */}
                 <div style={{ padding: "20px 22px", flex: 1, display: "flex", flexDirection: "column" }}>

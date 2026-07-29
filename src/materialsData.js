@@ -99,61 +99,6 @@ export const materials = [
     productPage: "/products/duplex-board"
   },
   {
-    id: "ckb",
-    name: { en: "CKB (Coated Kraft Back)", es: "CKB (Kraft Reverso Estucado)" },
-    category: "structural-board",
-    image: "/images/products/package-board/ckb.jpg",
-    thumbnail: "/images/products/package-board/ckb.jpg",
-    priceLevel: "$$",
-    specs: {
-      gsm: "200 – 450 gsm",
-      sheetSize: "Custom sizes available",
-      surface: "Multi-coated white top, unbleached kraft reverse",
-      certifications: ["FSC", "SGS"],
-      form: "Sheets, reels"
-    },
-    properties: [
-      { label: { en: "Print Quality", es: "Calidad Impresión" }, value: "★★★★★" },
-      { label: { en: "Strength", es: "Resistencia" }, value: "★★★★★" },
-      { label: { en: "Moisture Resistance", es: "Resistencia Humedad" }, value: "★★★★☆" },
-    ],
-    applications: [
-      { en: "Beverage cartons", es: "Envases de bebidas" },
-      { en: "Frozen food packaging", es: "Embalaje congelado" },
-      { en: "Retail folding cartons", es: "Cajas plegables minoristas" },
-    ],
-    description: { en: "Premium packaging board with a brilliant white coated printing surface and strong unbleached kraft reverse. Ideal for beverage carriers, frozen food cartons, and applications requiring both print quality and wet strength.", es: "Cartón de embalaje premium con superficie de impresión blanca brillante y reverso kraft crudo fuerte. Ideal para portabebidas, cajas de alimentos congelados y aplicaciones que requieren calidad de impresión y resistencia en húmedo." },
-    productPage: "/products/ckb"
-  },
-  {
-    id: "folding-box-board",
-    name: { en: "Folding Box Board (FBB)", es: "Folding Box Board (FBB)" },
-    category: "structural-board",
-    image: "/images/products/package-board/fbb.jpg",
-    thumbnail: "/images/products/package-board/fbb.jpg",
-    priceLevel: "$$",
-    specs: {
-      gsm: "200 – 450 gsm",
-      sheetSize: "Custom sizes available",
-      surface: "Coated virgin fibre, high brightness",
-      certifications: ["FSC", "SGS"],
-      form: "Sheets, reels"
-    },
-    properties: [
-      { label: { en: "Print Quality", es: "Calidad Impresión" }, value: "★★★★★" },
-      { label: { en: "Fold Performance", es: "Rendimiento Plegado" }, value: "★★★★★" },
-      { label: { en: "Stiffness-to-Weight", es: "Rigidez/Peso" }, value: "★★★★☆" },
-    ],
-    applications: [
-      { en: "Cosmetics packaging", es: "Embalaje cosmético" },
-      { en: "Pharmaceutical cartons", es: "Cajas farmacéuticas" },
-      { en: "Premium food cartons", es: "Cajas de alimentos premium" },
-      { en: "Consumer goods packaging", es: "Embalaje de bienes de consumo" },
-    ],
-    description: { en: "Virgin-fibre coated board with excellent printing surface and folding performance. The preferred choice for high-speed carton converting lines in cosmetics, pharma, and premium food packaging.", es: "Cartón estucado de fibra virgen con excelente superficie de impresión y rendimiento de plegado. La opción preferida para líneas de conversión de cajas de alta velocidad en cosmética, farmacéutica y embalaje de alimentos premium." },
-    productPage: "/products/folding-box-board"
-  },
-  {
     id: "c2s-art-board",
     name: { en: "C2S Art Board / Art Paper", es: "Papel Arte C2S / Cartulina Arte" },
     category: "structural-board",

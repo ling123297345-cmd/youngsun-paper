@@ -30,8 +30,14 @@ export default function Materials() {
         path="/materials"
       />
 
+      {/* Pulp Materials Banner */}
+      <section style={{ background: "var(--forest)", padding: "16px 0", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+        <Link to="/materials/pulp" style={{ color: "var(--gold)", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
+          🧬 {isEs ? "Biblioteca de Pulpa de Papel" : "Paper Pulp Library"} — {isEs ? "Cómo la fibra determina el rendimiento del papel" : "How fiber shapes paper performance"} →
+        </Link>
+      </section>
       {/* Hero */}
-      <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 140, paddingBottom: 80, textAlign: "center" }}>
+      <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 100, paddingBottom: 80, textAlign: "center" }}>
         <div className="container">
           <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: 13, textTransform: "uppercase", letterSpacing: 2 }}>
             {isEs ? "Biblioteca de Materiales" : "Materials Library"}

@@ -2787,6 +2787,40 @@ export const subProducts = {
 ,
     ],
   },
+  "absorbent-paper": {
+    id: "absorbent-paper",
+    name: "Absorbent Paper",
+    category: "fancy-paper",
+    tagline: "High-performance absorbent cotton paper for perfume test strips, beverage coasters, and creative packaging — fast absorption, natural texture.",
+    description:
+      "YOUNGSUN absorbent paper — also known as blotting paper or absorbent cotton paper — is made from 100% cotton fiber with a highly porous structure that delivers fast liquid absorption and excellent retention. The natural felt-like textured surface adds tactile quality and visual depth, creating a premium hand-feel for luxury branding. Available in seven thicknesses (0.4mm–1.6mm) and two color tones (super white and natural white). Fully compatible with embossing, debossing, die-cutting, and logo printing. Common applications include perfume test strips, beverage coasters, desiccant cards, food freshness cards, hangtags, and creative stationery.",
+    specs: [
+      "Material: 100% Cotton fiber / High absorbent pulp",
+      "Thickness: 0.4 / 0.5 / 0.6 / 0.8 / 1.0 / 1.2 / 1.6 mm",
+      "Grammage: Approx. 380–1500 gsm (varies by thickness)",
+      "Color: Super White / Natural White",
+      "Surface: Textured, natural felt-like finish",
+      "Absorption: Fast absorption, excellent liquid retention",
+      "Format: Sheets, reels, and die-cut components",
+      "Certifications: FSC certified, food contact safe",
+    ],
+    applications: [
+      "Perfume test strips / blotters",
+      "Beer and beverage coasters",
+      "Desiccant and moisture absorber cards",
+      "Food freshness indicator cards",
+      "Hangtags and product tags",
+      "Gift box liners and inserts",
+      "Creative stationery cards",
+      "Aromatherapy and fragrance cards",
+      "Tea and coffee packaging inserts",
+    ],
+    certifications: ["FSC", "SGS"],
+    image: "/images/products/fancy-paper/absorbent-paper-main.jpg",
+    images: [],
+    processingNote:
+      "Customized converting services available: sheet cutting, strip die-cutting (any shape), coaster die-cutting (round/square/custom), embossing and debossing, logo printing (single/multi-color). Pre-cut and pre-printed components supplied according to customer drawings.",
+  },
 };
 
 // ============================================================

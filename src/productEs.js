@@ -141,4 +141,9 @@ export const productEs = {
     specs: ["Sustrato: Kraft, 40–120 gsm", "Silicona: Una o dos caras", "Resistencia al calor: 230°C", "Fuerza de liberación: Ajustable", "Grado alimentario: FDA, EU"],
     applications: ["Papel de hornear", "Liner para etiquetas", "Envoltura antiadherente", "Liner de moldeo industrial", "Papel para hamburguesas"],
   },
+  "absorbent-paper": {
+    tagline: "Papel absorbente de algodón de alto rendimiento — absorción rápida, textura natural.",
+    specs: ["Material: 100% fibra de algodón", "Espesor: 0.4–1.6 mm", "Gramaje: 380–1500 gsm", "Color: Blanco / Natural", "Certificado: FSC, contacto alimentario"],
+    applications: ["Tiras para perfume", "Posavasos", "Tarjetas desecantes", "Tarjetas de frescura", "Etiquetas colgantes", "Forros de cajas de regalo"],
+  },
 };

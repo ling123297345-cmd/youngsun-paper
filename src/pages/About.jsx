@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback, lazy, Suspense } from "react";
 import { useLang } from "../i18n.jsx";
 import { whyChooseUs, sustainability, globalReach } from "../data.js";
 import { PageMeta } from "../SEO.jsx";
@@ -76,10 +76,111 @@ export default function About() {
         <div className="sustainability-grid container">{sustainability.commitments.map((item, i) => (<div className="sustainability-card" key={item.title}><span className="sus-icon">{item.icon}</span><h3>{t(tk[i])}</h3><p>{t(sdk[i])}</p></div>))}</div>
       </div>
 
+      {/* Exhibition Gallery */}
+      <ExhibitionGallery />
+
       <div className="section global-section">
         <div className="section-header"><span className="section-label">{t("Worldwide Presence")}</span><h2>{t("Global Reach, Personal Service")}</h2><p>{t("global_subtitle")}</p></div>
         <div className="global-map container">{globalReach.regions.map((r, i) => (<div className="region-card" key={r.name}><span className="region-name">{t(nk[i])}</span><span className="region-count">{r.countries}</span><span className="region-detail">{t(rdk[i])}</span></div>))}</div>
       </div>
     </section>
+  );
+}
+
+// ── Exhibition Gallery ──────────────────────────────────────
+function ExhibitionGallery() {
+  const { t, lang } = useLang();
+  const isEs = lang === "es";
+  const [lightbox, setLightbox] = useState(null);
+
+  // Load all exhibition photos
+  const photos = [];
+  for (let i = 1; i <= 47; i++) {
+    photos.push({
+      src: `/images/exhibitions/expo-20260729203217_10894_7.jpg`,
+      thumb: `/images/exhibitions/expo-20260729203217_10894_7.jpg`,
+    });
+  }
+  // Use a static list (all photos are in the directory)
+  const exhibPhotos = Array.from({ length: 47 }, (_, i) => {
+    const files = [
+      "expo-20260729203217_10894_7.jpg","expo-20260729203217_10895_7.jpg","expo-20260729203218_10896_7.jpg",
+      "expo-20260729203219_10897_7.jpg","expo-20260729203219_10898_7.jpg","expo-20260729203220_10899_7.jpg",
+      "expo-20260729203220_10900_7.jpg","expo-20260729203248_10901_7.jpg","expo-20260729203329_10902_7.jpg",
+      "expo-20260729203651_10903_7.jpg","expo-20260729203914_10907_7.jpg","expo-20260729203920_10908_7.jpg",
+      "expo-20260730000404.jpg","expo-20260730000408.jpg","expo-20260730000412.jpg","expo-20260730000425.jpg",
+      "expo-20260730000428.jpg","expo-20260730000429.jpg","expo-20260730000431.jpg","expo-20260730000434.jpg",
+      "expo-20260730000437.jpg","expo-20260730000439.jpg","expo-20260730000442.jpg","expo-20260730000444.jpg",
+      "expo-20260730000447.jpg","expo-20260730000449.jpg","expo-20260730000451.jpg","expo-20260730000453.jpg",
+      "expo-20260730000456.jpg","expo-20260730000458.jpg","expo-20260730000502.jpg","expo-20260730000506.jpg",
+      "expo-20260730000508.jpg","expo-20260730000511.jpg","expo-20260730000513.jpg","expo-20260730000515.jpg",
+      "expo-20260730000517.jpg","expo-20260730000520.jpg","expo-20260730000523.jpg","expo-20260730000525.jpg",
+      "expo-20260730000528.jpg","expo-20260730000531.jpg","expo-20260730000532.jpg","expo-20260730000534.jpg",
+      "expo-20260730000538.jpg","expo-20260730000542.jpg","expo-20260730000545.jpg",
+    ];
+    return { src: `/images/exhibitions/${files[i]}`, thumb: `/images/exhibitions/${files[i]}` };
+  });
+
+  return (
+    <div className="section" style={{ background: "#fff" }}>
+      <div className="section-header">
+        <span className="section-label">{isEs ? "Ferias y Exposiciones" : "Exhibitions & Trade Shows"}</span>
+        <h2>{isEs ? "Conózcanos en Persona" : "Meet Us in Person"}</h2>
+        <p>{isEs ? "Nos enorgullece conectar con clientes y socios en ferias comerciales de todo el mundo." : "We take pride in connecting with clients and partners at trade shows around the world."}</p>
+      </div>
+      <div className="container" style={{ maxWidth: 1200 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: 12 }}>
+          {exhibPhotos.map((photo, i) => (
+            <div
+              key={i}
+              onClick={() => setLightbox(i)}
+              style={{ aspectRatio: "4/3", overflow: "hidden", borderRadius: 10, cursor: "pointer", background: "var(--paper)" }}
+            >
+              <img
+                src={photo.thumb}
+                alt={`Exhibition ${i + 1}`}
+                loading="lazy"
+                style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.3s var(--ease-out)" }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = "scale(1.05)"; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = ""; }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Lightbox */}
+      {lightbox !== null && (
+        <div
+          onClick={() => setLightbox(null)}
+          style={{
+            position: "fixed", inset: 0, zIndex: 10000, background: "rgba(0,0,0,0.92)",
+            display: "flex", alignItems: "center", justifyContent: "center", padding: 20,
+          }}
+        >
+          <button
+            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            style={{ position: "absolute", top: 20, right: 20, background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 44, height: 44, borderRadius: "50%", fontSize: 22, cursor: "pointer", zIndex: 1 }}
+          >✕</button>
+          <button
+            onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p > 0 ? p - 1 : exhibPhotos.length - 1)); }}
+            style={{ position: "absolute", left: 16, top: "50%", transform: "translateY(-50%)", background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 48, height: 48, borderRadius: "50%", fontSize: 24, cursor: "pointer" }}
+          >←</button>
+          <img
+            src={exhibPhotos[lightbox].src}
+            alt={`Exhibition ${lightbox + 1}`}
+            style={{ maxWidth: "90vw", maxHeight: "85vh", objectFit: "contain", borderRadius: 8 }}
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p < exhibPhotos.length - 1 ? p + 1 : 0)); }}
+            style={{ position: "absolute", right: 16, top: "50%", transform: "translateY(-50%)", background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 48, height: 48, borderRadius: "50%", fontSize: 24, cursor: "pointer" }}
+          >→</button>
+          <span style={{ position: "absolute", bottom: 24, color: "rgba(255,255,255,0.6)", fontSize: 13 }}>
+            {lightbox + 1} / {exhibPhotos.length}
+          </span>
+        </div>
+      )}
+    </div>
   );
 }

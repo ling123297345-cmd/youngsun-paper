@@ -63,6 +63,9 @@ export default function Home() {
       {/* ===== FANCY PAPER BANNER ===== */}
       <FancyPaperBanner />
 
+      {/* ===== EXHIBITION GALLERY ===== */}
+      <HomeExhibitionGallery />
+
       {/* ===== INDUSTRIES OVERVIEW ===== */}
       <IndustriesOverview />
 
@@ -479,6 +482,38 @@ function ContactHome() {
           </button>
         </form>
       </div>
+    </section>
+  );
+}
+
+function HomeExhibitionGallery() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const [lightbox, setLightbox] = useState(null);
+  const files = ["expo-20260730000412.jpg","expo-20260730000425.jpg","expo-20260730000434.jpg","expo-20260730000444.jpg"];
+  const photos = files.map(f => ({ src: `/images/exhibitions/${f}`, thumb: `/images/exhibitions/${f}` }));
+  return (
+    <section className="section" style={{ background: "#fff" }}>
+      <div className="section-header">
+        <span className="section-label">{isEs ? "Ferias y Exposiciones" : "Exhibitions & Trade Shows"}</span>
+        <h2>{isEs ? "Conózcanos en Persona" : "Meet Us in Person"}</h2>
+      </div>
+      <div className="container" style={{ maxWidth: 900 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 12 }}>
+          {photos.map((p, i) => (
+            <div key={i} onClick={() => setLightbox(i)} style={{ aspectRatio: "4/3", overflow: "hidden", borderRadius: 10, cursor: "pointer" }}>
+              <img src={p.thumb} alt={`Exhibition ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            </div>
+          ))}
+        </div>
+      </div>
+      {lightbox !== null && (
+        <div onClick={() => setLightbox(null)} style={{ position: "fixed", inset: 0, zIndex: 10000, background: "rgba(0,0,0,0.92)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <button onClick={e => { e.stopPropagation(); setLightbox(null); }} style={{ position: "absolute", top: 20, right: 20, background: "rgba(255,255,255,0.15)", border: "none", color: "#fff", width: 44, height: 44, borderRadius: "50%", fontSize: 22, cursor: "pointer" }}>✕</button>
+          <img src={photos[lightbox].src} alt="" style={{ maxWidth: "90vw", maxHeight: "85vh", objectFit: "contain", borderRadius: 8 }} onClick={e => e.stopPropagation()} />
+          <span style={{ position: "absolute", bottom: 24, color: "rgba(255,255,255,0.5)", fontSize: 13 }}>{lightbox + 1} / {photos.length}</span>
+        </div>
+      )}
     </section>
   );
 }

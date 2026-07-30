@@ -293,7 +293,7 @@ function ExhibitionGallery() {
   const photos = files.map(f => ({ src: `/images/exhibitions/${f}`, thumb: `/images/exhibitions/${f}` }));
 
   return (
-    <div className="section" style={{ background: "var(--paper)" }}>
+    <div className="section" style={{ background: "#fff" }}>
       <div className="section-header">
         <span className="section-label">{isEs ? "Ferias y Exposiciones" : "Exhibitions & Trade Shows"}</span>
         <h2>{isEs ? "Conózcanos en Persona" : "Meet Us in Person"}</h2>

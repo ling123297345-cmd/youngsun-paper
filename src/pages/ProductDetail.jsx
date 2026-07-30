@@ -287,19 +287,8 @@ function ExhibitionGallery() {
   const [lightbox, setLightbox] = useState(null);
 
   const files = [
-    "expo-20260729203217_10894_7.jpg","expo-20260729203217_10895_7.jpg","expo-20260729203218_10896_7.jpg",
-    "expo-20260729203219_10897_7.jpg","expo-20260729203219_10898_7.jpg","expo-20260729203220_10899_7.jpg",
-    "expo-20260729203220_10900_7.jpg","expo-20260729203248_10901_7.jpg","expo-20260729203329_10902_7.jpg",
-    "expo-20260729203651_10903_7.jpg","expo-20260729203914_10907_7.jpg","expo-20260729203920_10908_7.jpg",
-    "expo-20260730000404.jpg","expo-20260730000408.jpg","expo-20260730000412.jpg","expo-20260730000425.jpg",
-    "expo-20260730000428.jpg","expo-20260730000429.jpg","expo-20260730000431.jpg","expo-20260730000434.jpg",
-    "expo-20260730000437.jpg","expo-20260730000439.jpg","expo-20260730000442.jpg","expo-20260730000444.jpg",
-    "expo-20260730000447.jpg","expo-20260730000449.jpg","expo-20260730000451.jpg","expo-20260730000453.jpg",
-    "expo-20260730000456.jpg","expo-20260730000458.jpg","expo-20260730000502.jpg","expo-20260730000506.jpg",
-    "expo-20260730000508.jpg","expo-20260730000511.jpg","expo-20260730000513.jpg","expo-20260730000515.jpg",
-    "expo-20260730000517.jpg","expo-20260730000520.jpg","expo-20260730000523.jpg","expo-20260730000525.jpg",
-    "expo-20260730000528.jpg","expo-20260730000531.jpg","expo-20260730000532.jpg","expo-20260730000534.jpg",
-    "expo-20260730000538.jpg","expo-20260730000542.jpg","expo-20260730000545.jpg",
+    "expo-20260730000412.jpg","expo-20260730000425.jpg","expo-20260730000434.jpg",
+    "expo-20260730000444.jpg","expo-20260730000456.jpg","expo-20260730000513.jpg",
   ];
   const photos = files.map(f => ({ src: `/images/exhibitions/${f}`, thumb: `/images/exhibitions/${f}` }));
 
@@ -311,7 +300,7 @@ function ExhibitionGallery() {
         <p>{isEs ? "Visítenos en ferias comerciales de todo el mundo." : "Visit us at trade shows around the world."}</p>
       </div>
       <div className="container" style={{ maxWidth: 1200 }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))", gap: 10 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: 14 }}>
           {photos.map((photo, i) => (
             <div key={i} onClick={() => setLightbox(i)} style={{ aspectRatio: "4/3", overflow: "hidden", borderRadius: 10, cursor: "pointer", background: "var(--paper)" }}>
               <img src={photo.thumb} alt={`Exhibition ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }}

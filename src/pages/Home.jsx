@@ -490,7 +490,7 @@ function HomeExhibitionGallery() {
   const { lang } = useLang();
   const isEs = lang === "es";
   const [lightbox, setLightbox] = useState(null);
-  const files = ["expo-20260730000412.jpg","expo-20260730000425.jpg","expo-20260730000434.jpg","expo-20260730000444.jpg"];
+  const files = ["expo-20260730000425.jpg","expo-20260730000434.jpg","expo-20260730000456.jpg","expo-20260730000458.jpg"];
   const photos = files.map(f => ({ src: `/images/exhibitions/${f}`, thumb: `/images/exhibitions/${f}` }));
   return (
     <section className="section" style={{ background: "#fff" }}>

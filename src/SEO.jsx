@@ -66,3 +66,50 @@ export function OrganizationSchema() {
   };
   return <Helmet><script type="application/ld+json">{JSON.stringify(json)}</script></Helmet>;
 }
+
+// ── Article Schema for blog posts ───────────────────────────
+export function ArticleSchema({ post }) {
+  if (!post) return null;
+  const json = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt || post.metaDescription || "",
+    image: `https://youngsunpaper.com${post.image}`,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author || "YOUNGSUN PAPER Editorial",
+      url: "https://youngsunpaper.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "YOUNGSUN PAPER",
+      url: "https://youngsunpaper.com",
+      logo: { "@type": "ImageObject", url: "https://youngsunpaper.com/images/logo.png" },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://youngsunpaper.com/blog/${post.id}`,
+    },
+    about: post.tags?.map((tag) => ({ "@type": "Thing", name: tag })) || [],
+  };
+  return <Helmet><script type="application/ld+json">{JSON.stringify(json)}</script></Helmet>;
+}
+
+// ── Breadcrumb Schema ────────────────────────────────────────
+export function BreadcrumbSchema({ items }) {
+  if (!items || items.length === 0) return null;
+  const json = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: item.name,
+      item: `https://youngsunpaper.com${item.url}`,
+    })),
+  };
+  return <Helmet><script type="application/ld+json">{JSON.stringify(json)}</script></Helmet>;
+}

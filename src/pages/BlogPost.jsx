@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../blogData.js";
-import { PageMeta } from "../SEO.jsx";
+import { PageMeta, ArticleSchema, BreadcrumbSchema } from "../SEO.jsx";
 
 // Parse [text](url) into clickable links, mixed with plain text
 function renderText(text) {
@@ -20,6 +20,8 @@ export default function BlogPost() {
   return (
     <section className="section" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
       <PageMeta title={post.seoTitle || post.title} description={post.metaDescription || post.excerpt.slice(0, 155)} path={`/blog/${id}`} />
+      <ArticleSchema post={post} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: post.title, url: `/blog/${id}` }]} />
       <div className="container" style={{ maxWidth: 780 }}>
         <Link to="/blog" style={{ color: "var(--lime)", fontSize: 13, fontWeight: 700 }}>← Back to Blog</Link>
         <div style={{ marginTop: 24 }}>

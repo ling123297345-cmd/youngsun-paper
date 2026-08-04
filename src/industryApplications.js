@@ -18,6 +18,7 @@ export const industryChannels = [
         name: { en: "Folding Carton", es: "Caja Plegable" },
         icon: "📐",
         desc: { en: "Lightweight retail packaging that folds flat for shipping — cosmetics, pharma, food, and consumer goods cartons.", es: "Embalaje minorista ligero que se pliega plano para envío — cajas de cosmética, farmacia, alimentos y bienes de consumo." },
+        image: "CANDY BOX 250g black paper.jpg",
         materials: [
           { name: "Duplex Board", url: "/products/duplex-board", desc: { en: "Coated white-top, grey back — the economical choice for retail cartons.", es: "Superficie blanca estucada, reverso gris — la opción económica para cajas minoristas." } },
           { name: "Folding Box Board (FBB)", url: "/products/folding-box-board", desc: { en: "Virgin-fibre, excellent print surface and fold performance for premium cartons.", es: "Fibra virgen, excelente superficie de impresión y rendimiento de plegado para cajas premium." } },
@@ -27,6 +28,7 @@ export const industryChannels = [
       {
         name: { en: "Rigid Box", es: "Caja Rígida" },
         icon: "🎁",
+        image: "gift box 230g folding box board.jpg",
         desc: { en: "Premium structural boxes for luxury products — gift sets, electronics, and high-end cosmetics.", es: "Cajas estructurales premium para productos de lujo — sets de regalo, electrónica y cosmética de alta gama." },
         materials: [
           { name: "Grey Board", url: "/products/grey-board", desc: { en: "100% recycled structural base — the industry standard for rigid box making.", es: "Base estructural 100% reciclada — el estándar de la industria para cajas rígidas." } },
@@ -37,6 +39,7 @@ export const industryChannels = [
       {
         name: { en: "Paper Bag", es: "Bolsa de Papel" },
         icon: "🛍️",
+        image: "album 1mm full black board -laminated board.jpg",
         desc: { en: "Shopping bags, food bags, and branded retail carriers — strength with natural appeal.", es: "Bolsas de compras, bolsas de alimentos y portadoras minoristas de marca — resistencia con atractivo natural." },
         materials: [
           { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural strength, tear-resistant — the classic paper bag material.", es: "Resistencia natural, resistente al desgarro — el material clásico para bolsas de papel." } },
@@ -46,6 +49,7 @@ export const industryChannels = [
       {
         name: { en: "Display Card", es: "Tarjeta de Exhibición" },
         icon: "🖼️",
+        image: "20260803_152623_011.jpg",
         desc: { en: "Point-of-sale displays, shelf talkers, and promotional cards that need to catch the eye.", es: "Exhibidores de punto de venta, tarjetas de estantería y tarjetas promocionales que necesitan llamar la atención." },
         materials: [
           { name: "C2S Art Board", url: "/products/art-paper", desc: { en: "Premium print surface with high color saturation for retail displays.", es: "Superficie de impresión premium con alta saturación de color para exhibidores minoristas." } },

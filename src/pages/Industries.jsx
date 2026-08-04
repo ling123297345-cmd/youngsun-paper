@@ -8,6 +8,40 @@ import { useLang } from "../i18n.jsx";
 import { industryChannels } from "../industryApplications.js";
 import { PageMeta } from "../SEO.jsx";
 
+// ── App-to-image mapping ────────────────────────────────────
+const appImages = {
+  // Packaging & Printing
+  "Folding Carton": "CANDY BOX 250g black paper.jpg",
+  "Rigid Box": "gift box 230g folding box board.jpg",
+  "Paper Bag": "album 1mm full black board -laminated board.jpg",
+  "Display Card": "20260803_152623_011.jpg",
+  // Food & Beverage
+  "Paper Cup": "20260801_100758_049.jpg",
+  "Burger Wrap": "20260801_100942_063.jpg",
+  "Bakery Bag": "20260801_101402_067.jpg",
+  "Takeaway Box": "20260801_102027_082.jpg",
+  // Luxury & Cosmetics
+  "Perfume Box": "20260803_185310_093.jpg",
+  "Cosmetic Box": "20260803_185439_103.jpg",
+  "Jewelry Box": "20260803_165638_236.jpg",
+  "Luxury Gift Set": "20260803_170740_270.jpg",
+  // Publishing & Stationery
+  "Hardcover Book": "20260801_104421_247.jpg",
+  "Notebook": "20260801_104623_267.jpg",
+  "Catalogue": "20260801_105109_273.jpg",
+  "Folder": "20260801_102835_128.jpg",
+  // Gift Wrapping
+  "Gift Wrap": "20260801_110021_372.jpg",
+  "Gift Bag": "20260801_110454_441.jpg",
+  "Greeting Card": "20260801_110538_450.jpg",
+  "Decorative Liner": "20260801_110941_468.jpg",
+  // Hang Tags
+  "Garment Tag": "20260801_103337_136.jpg",
+  "Jewelry Tag": "20260801_103356_142.jpg",
+  "Bottle Neck Tag": "20260801_103511_165.jpg",
+  "Premium Brand Tag": "20260801_103640_171.jpg",
+};
+
 export default function Industries() {
   const { lang } = useLang();
   const isEs = lang === "es";
@@ -76,6 +110,17 @@ export default function Industries() {
                     flexDirection: "column",
                   }}
                 >
+                  {/* Product image */}
+                  {appImages[app.name.en] && (
+                    <div style={{ height: 180, overflow: "hidden", borderRadius: 10, marginBottom: 14, background: "var(--paper)" }}>
+                      <img
+                        src={`/images/industries/applications/${appImages[app.name.en]}`}
+                        alt={app.name[lang]}
+                        loading="lazy"
+                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                      />
+                    </div>
+                  )}
                   {/* App header */}
                   <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
                     <span style={{ fontSize: 28 }}>{app.icon}</span>
@@ -198,14 +243,9 @@ export default function Industries() {
             <div style={{
               display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 8, maxWidth: 600, margin: "0 auto 32px",
             }}>
-              {[
-                "/images/products/fancy-paper/hangtag-black-card.jpg",
-                "/images/products/fancy-paper/hangtag-embossed.jpg",
-                "/images/products/fancy-paper/hangtag-hero-main.jpg",
-                "/images/products/fancy-paper/hangtag-white-pearl.jpg",
-              ].map((src, i) => (
+              {["20260801_103337_136.jpg","20260801_103356_142.jpg","20260801_103511_165.jpg","20260801_103640_171.jpg"].map((src, i) => (
                 <div key={i} style={{ aspectRatio: "3/4", borderRadius: 8, overflow: "hidden" }}>
-                  <img src={src} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                  <img src={`/images/industries/applications/${src}`} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 </div>
               ))}
             </div>

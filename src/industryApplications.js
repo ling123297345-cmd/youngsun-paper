@@ -1,0 +1,314 @@
+// ============================================================
+// YOUNGSUN PAPER — Industry Applications Data
+// 6 channels mapping end-use products to paper grades
+// ============================================================
+
+export const industryChannels = [
+  {
+    id: "packaging-printing",
+    title: { en: "Packaging & Printing", es: "Embalaje e Impresión" },
+    icon: "📦",
+    heroImage: "/images/industries/industry-packaging.jpg",
+    tagline: {
+      en: "From folding cartons to rigid boxes — the right paperboard for every packaging format.",
+      es: "Desde cajas plegables hasta cajas rígidas — el cartón adecuado para cada formato de embalaje."
+    },
+    applications: [
+      {
+        name: { en: "Folding Carton", es: "Caja Plegable" },
+        icon: "📐",
+        desc: { en: "Lightweight retail packaging that folds flat for shipping — cosmetics, pharma, food, and consumer goods cartons.", es: "Embalaje minorista ligero que se pliega plano para envío — cajas de cosmética, farmacia, alimentos y bienes de consumo." },
+        materials: [
+          { name: "Duplex Board", url: "/products/duplex-board", desc: { en: "Coated white-top, grey back — the economical choice for retail cartons.", es: "Superficie blanca estucada, reverso gris — la opción económica para cajas minoristas." } },
+          { name: "Folding Box Board (FBB)", url: "/products/folding-box-board", desc: { en: "Virgin-fibre, excellent print surface and fold performance for premium cartons.", es: "Fibra virgen, excelente superficie de impresión y rendimiento de plegado para cajas premium." } },
+          { name: "C2S Art Board", url: "/products/art-paper", desc: { en: "Double-side coated for high-resolution printing on both sides.", es: "Estucado doble cara para impresión de alta resolución en ambos lados." } },
+        ]
+      },
+      {
+        name: { en: "Rigid Box", es: "Caja Rígida" },
+        icon: "🎁",
+        desc: { en: "Premium structural boxes for luxury products — gift sets, electronics, and high-end cosmetics.", es: "Cajas estructurales premium para productos de lujo — sets de regalo, electrónica y cosmética de alta gama." },
+        materials: [
+          { name: "Grey Board", url: "/products/grey-board", desc: { en: "100% recycled structural base — the industry standard for rigid box making.", es: "Base estructural 100% reciclada — el estándar de la industria para cajas rígidas." } },
+          { name: "Black Paper", url: "/products/black-paper", desc: { en: "Through-dyed black, perfect for wrapping with gold foil stamping.", es: "Negro teñido en masa, perfecto para envolver con estampado foil dorado." } },
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Brand-matched colors for coordinated packaging suites.", es: "Colores a juego con la marca para conjuntos de embalaje coordinados." } },
+        ]
+      },
+      {
+        name: { en: "Paper Bag", es: "Bolsa de Papel" },
+        icon: "🛍️",
+        desc: { en: "Shopping bags, food bags, and branded retail carriers — strength with natural appeal.", es: "Bolsas de compras, bolsas de alimentos y portadoras minoristas de marca — resistencia con atractivo natural." },
+        materials: [
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural strength, tear-resistant — the classic paper bag material.", es: "Resistencia natural, resistente al desgarro — el material clásico para bolsas de papel." } },
+          { name: "MG Paper", url: "/products/mg-paper", desc: { en: "Machine-glazed with one glossy side — clean appearance for retail bags.", es: "Una cara brillante — apariencia limpia para bolsas minoristas." } },
+        ]
+      },
+      {
+        name: { en: "Display Card", es: "Tarjeta de Exhibición" },
+        icon: "🖼️",
+        desc: { en: "Point-of-sale displays, shelf talkers, and promotional cards that need to catch the eye.", es: "Exhibidores de punto de venta, tarjetas de estantería y tarjetas promocionales que necesitan llamar la atención." },
+        materials: [
+          { name: "C2S Art Board", url: "/products/art-paper", desc: { en: "Premium print surface with high color saturation for retail displays.", es: "Superficie de impresión premium con alta saturación de color para exhibidores minoristas." } },
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Colored base eliminates need for full-surface ink coverage.", es: "Base coloreada elimina la necesidad de cobertura total de tinta." } },
+          { name: "Gold & Silver Card", url: "/products/gold-silver-card", desc: { en: "Metallic brilliance for maximum shelf impact.", es: "Brillo metálico para máximo impacto en estantería." } },
+        ]
+      },
+    ]
+  },
+  {
+    id: "food-beverage",
+    title: { en: "Food & Beverage", es: "Alimentos y Bebidas" },
+    icon: "🍽️",
+    heroImage: "/images/industries/industry-food.jpg",
+    tagline: {
+      en: "Food-safe papers for cups, wraps, bags, and takeaway — certified, compliant, and PFAS-free.",
+      es: "Papeles seguros para alimentos para vasos, envolturas, bolsas y comida para llevar — certificados y libres de PFAS."
+    },
+    applications: [
+      {
+        name: { en: "Paper Cup", es: "Vaso de Papel" },
+        icon: "☕",
+        desc: { en: "Hot and cold drink cups — formed at high speed, must hold liquids without leaking.", es: "Vasos para bebidas frías y calientes — formados a alta velocidad, deben contener líquidos sin fugas." },
+        materials: [
+          { name: "Cupstock Board", url: "/products/cup-paper", desc: { en: "Virgin-fibre board, 160–330 gsm, engineered for cup-forming machines.", es: "Cartón de fibra virgen, 160–330 gsm, diseñado para máquinas formadoras de vasos." } },
+          { name: "PE Coated Paper", url: "/products/pe-coated-paper", desc: { en: "Polyethylene barrier layer for liquid resistance and heat-sealing.", es: "Capa de barrera de polietileno para resistencia a líquidos y termosellado." } },
+        ]
+      },
+      {
+        name: { en: "Burger Wrap", es: "Envoltura de Hamburguesa" },
+        icon: "🍔",
+        desc: { en: "Grease-resistant wraps for burgers, sandwiches, and fried foods.", es: "Envolturas resistentes a la grasa para hamburguesas, sándwiches y frituras." },
+        materials: [
+          { name: "Greaseproof Paper", url: "/products/greaseproof-paper", desc: { en: "PFAS-free, KIT 6+, oil barrier through mechanical fiber densification.", es: "Libre de PFAS, KIT 6+, barrera de aceite por densificación mecánica de fibra." } },
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural look with good strength — popular for eco-branded QSR wraps.", es: "Aspecto natural con buena resistencia — popular para envolturas QSR de marca ecológica." } },
+        ]
+      },
+      {
+        name: { en: "Bakery Bag", es: "Bolsa de Panadería" },
+        icon: "🥐",
+        desc: { en: "Breathable bags for fresh bread, pastries, and baked goods.", es: "Bolsas transpirables para pan fresco, pasteles y productos horneados." },
+        materials: [
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural brown or bleached white — the standard bakery bag material.", es: "Marrón natural o blanqueado — el material estándar para bolsas de panadería." } },
+          { name: "Greaseproof Paper", url: "/products/greaseproof-paper", desc: { en: "For buttery pastries and oily baked goods — prevents grease bleed-through.", es: "Para pasteles con mantequilla y productos grasos — previene el traspaso de grasa." } },
+        ]
+      },
+      {
+        name: { en: "Takeaway Box", es: "Caja para Llevar" },
+        icon: "📦",
+        desc: { en: "Leak-resistant containers for hot and cold takeaway food.", es: "Recipientes resistentes a fugas para comida caliente y fría para llevar." },
+        materials: [
+          { name: "PE Coated Paper", url: "/products/pe-coated-paper", desc: { en: "Moisture barrier and heat-seal capability for leak-proof containers.", es: "Barrera de humedad y capacidad de termosellado para recipientes a prueba de fugas." } },
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Structural strength for stackable takeaway packaging.", es: "Resistencia estructural para embalaje apilable para llevar." } },
+        ]
+      },
+    ]
+  },
+  {
+    id: "luxury-cosmetics",
+    title: { en: "Luxury & Cosmetics", es: "Lujo y Cosmética" },
+    icon: "✨",
+    heroImage: "/images/industries/industry-luxury.jpg",
+    tagline: {
+      en: "Tactile papers and metallic finishes — packaging that communicates luxury before the product is revealed.",
+      es: "Papeles táctiles y acabados metálicos — embalaje que comunica lujo antes de revelar el producto."
+    },
+    applications: [
+      {
+        name: { en: "Perfume Box", es: "Caja de Perfume" },
+        icon: "🌸",
+        desc: { en: "Premium rigid or folding boxes for fragrances — tactile surfaces, foil stamping, and embossing.", es: "Cajas rígidas o plegables premium para fragancias — superficies táctiles, estampado foil y relieve." },
+        materials: [
+          { name: "Soft Touch Paper", url: "/products/soft-touch-paper", desc: { en: "Velvet-smooth surface — the signature luxury packaging finish.", es: "Superficie aterciopelada — el acabado de embalaje de lujo por excelencia." } },
+          { name: "Black Paper", url: "/products/black-paper", desc: { en: "Through-dyed deep black with gold foil — the iconic perfume packaging combination.", es: "Negro profundo teñido en masa con foil dorado — la combinación icónica de embalaje de perfume." } },
+          { name: "Gold & Silver Card", url: "/products/gold-silver-card", desc: { en: "Metallic surface for maximum shelf presence and gift appeal.", es: "Superficie metálica para máxima presencia en estantería y atractivo de regalo." } },
+        ]
+      },
+      {
+        name: { en: "Cosmetic Box", es: "Caja de Cosmética" },
+        icon: "💄",
+        desc: { en: "Retail cartons and gift sets for makeup, skincare, and beauty products.", es: "Cajas minoristas y sets de regalo para maquillaje, cuidado de la piel y productos de belleza." },
+        materials: [
+          { name: "Folding Box Board (FBB)", url: "/products/folding-box-board", desc: { en: "Clean printing surface with excellent folding for high-speed carton lines.", es: "Superficie de impresión limpia con excelente plegado para líneas de cajas de alta velocidad." } },
+          { name: "Soft Touch Paper", url: "/products/soft-touch-paper", desc: { en: "Matte, fingerprint-resistant surface for premium beauty brands.", es: "Superficie mate resistente a huellas para marcas de belleza premium." } },
+          { name: "Pearlescent Paper", url: "/products/pearlescent-paper", desc: { en: "Subtle shimmer that catches light — ideal for feminine beauty packaging.", es: "Brillo sutil que capta la luz — ideal para embalaje de belleza femenino." } },
+        ]
+      },
+      {
+        name: { en: "Jewelry Box", es: "Caja de Joyería" },
+        icon: "💍",
+        desc: { en: "Rigid boxes with luxurious feel — leather texture, velvet touch, deep colors.", es: "Cajas rígidas con sensación lujosa — textura de cuero, tacto aterciopelado, colores profundos." },
+        materials: [
+          { name: "Leather Paper", url: "/products/leather-paper", desc: { en: "Animal-free leather grain texture for classic luxury presentation.", es: "Textura de grano de cuero libre de animales para presentación de lujo clásico." } },
+          { name: "Black Paper", url: "/products/black-paper", desc: { en: "Deep black base for gold or silver foil-branded jewelry boxes.", es: "Base negra profunda para cajas de joyería con foil dorado o plateado." } },
+          { name: "Embossed Paper", url: "/products/embossed-paper", desc: { en: "3D texture patterns — linen, canvas, or custom — for distinctive tactile identity.", es: "Patrones de textura 3D — lino, lienzo o personalizado — para identidad táctil distintiva." } },
+        ]
+      },
+      {
+        name: { en: "Luxury Gift Set", es: "Set de Regalo de Lujo" },
+        icon: "🎀",
+        desc: { en: "Multi-piece coordinated packaging — outer box, inner tray, insert cards, and tissue.", es: "Embalaje coordinado de múltiples piezas — caja exterior, bandeja interior, tarjetas inserto y tissue." },
+        materials: [
+          { name: "Grey Board", url: "/products/grey-board", desc: { en: "Structural base for rigid gift boxes — wrapped with decorative paper.", es: "Base estructural para cajas rígidas de regalo — envuelta con papel decorativo." } },
+          { name: "Black Paper", url: "/products/black-paper", desc: { en: "Through-dyed color for consistent edges on all visible surfaces.", es: "Color teñido en masa para bordes consistentes en todas las superficies visibles." } },
+          { name: "Soft Touch Paper", url: "/products/soft-touch-paper", desc: { en: "Velvet-feel outer wrap that customers want to touch.", es: "Envoltura exterior aterciopelada que los clientes quieren tocar." } },
+        ]
+      },
+    ]
+  },
+  {
+    id: "publishing-stationery",
+    title: { en: "Publishing & Stationery", es: "Editorial y Papelería" },
+    icon: "📚",
+    heroImage: "/images/industries/industry-publishing.jpg",
+    tagline: {
+      en: "High-performance printing surfaces for books, notebooks, catalogs, and professional stationery.",
+      es: "Superficies de impresión de alto rendimiento para libros, cuadernos, catálogos y papelería profesional."
+    },
+    applications: [
+      {
+        name: { en: "Hardcover Book", es: "Libro de Tapa Dura" },
+        icon: "📖",
+        desc: { en: "Case-bound books — rigid cover structure with printed or cloth-wrapped surface.", es: "Libros encuadernados — estructura de cubierta rígida con superficie impresa o forrada en tela." },
+        materials: [
+          { name: "Grey Board", url: "/products/grey-board", desc: { en: "Structural board for hardcover cases — 1.5mm to 3.0mm thickness.", es: "Cartón estructural para tapas duras — espesor de 1.5mm a 3.0mm." } },
+          { name: "C2S Art Paper", url: "/products/art-paper", desc: { en: "Premium coated cover stock for dust jackets and case wraps.", es: "Papel estucado premium para sobrecubiertas y forros de tapa." } },
+          { name: "Embossed Paper", url: "/products/embossed-paper", desc: { en: "Textured cover material — linen, canvas, or custom patterns.", es: "Material de cubierta texturizado — lino, lienzo o patrones personalizados." } },
+        ]
+      },
+      {
+        name: { en: "Notebook", es: "Cuaderno" },
+        icon: "📓",
+        desc: { en: "Writing and sketching books — uncoated paper for pen, pencil, and creative use.", es: "Libros de escritura y dibujo — papel no estucado para bolígrafo, lápiz y uso creativo." },
+        materials: [
+          { name: "Woodfree Paper", url: "/products/woodfree-paper", desc: { en: "Uncoated, high-brightness — the standard for quality notebooks.", es: "No estucado, alta blancura — el estándar para cuadernos de calidad." } },
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Colored covers that differentiate notebook ranges by subject or brand.", es: "Cubiertas de colores que diferencian gamas de cuadernos por tema o marca." } },
+        ]
+      },
+      {
+        name: { en: "Catalogue", es: "Catálogo" },
+        icon: "📰",
+        desc: { en: "High-volume printed publications — product catalogs, lookbooks, and brand magazines.", es: "Publicaciones impresas de alto volumen — catálogos de productos, lookbooks y revistas de marca." },
+        materials: [
+          { name: "C2S Art Paper", url: "/products/art-paper", desc: { en: "Gloss or matt coated for premium image reproduction.", es: "Estucado brillo o mate para reproducción de imagen premium." } },
+          { name: "LWC Paper", url: "/products/lwc-paper", desc: { en: "Lightweight coated for high-page-count publications — reduces postal weight.", es: "Estucado ligero para publicaciones de alto número de páginas — reduce peso postal." } },
+        ]
+      },
+      {
+        name: { en: "Folder", es: "Carpeta" },
+        icon: "📁",
+        desc: { en: "Presentation folders, file folders, and document organization — durable and printable.", es: "Carpetas de presentación, carpetas de archivo y organización de documentos — duraderas e imprimibles." },
+        materials: [
+          { name: "Duplex Board", url: "/products/duplex-board", desc: { en: "Stiff, printable, and economical for high-volume folder production.", es: "Rígido, imprimible y económico para producción de carpetas de alto volumen." } },
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Pre-colored stock for color-coded filing systems.", es: "Material precoloreado para sistemas de archivo codificados por color." } },
+        ]
+      },
+    ]
+  },
+  {
+    id: "hang-tags-labels",
+    title: { en: "Hang Tags & Labels", es: "Etiquetas Colgantes y Adhesivas" },
+    icon: "🏷️",
+    heroImage: "/images/products/fancy-paper/hangtag-hero-main.jpg",
+    tagline: {
+      en: "The smallest piece of packaging with the biggest brand impact — premium hang tags and labels that tell your story.",
+      es: "La pieza más pequeña del embalaje con el mayor impacto de marca — etiquetas colgantes premium que cuentan tu historia."
+    },
+    isMosaic: true,
+    mosaicLink: "/fancy-paper-collection",
+    mosaicLabel: { en: "Explore 120+ Fancy Paper Textures →", es: "Explorar 120+ Texturas de Papel Fancy →" },
+    applications: [
+      {
+        name: { en: "Garment Tag", es: "Etiqueta de Ropa" },
+        icon: "👕",
+        desc: { en: "Swing tickets and brand tags for apparel — the first thing a customer touches.", es: "Tarjetas colgantes y etiquetas de marca para ropa — lo primero que toca el cliente." },
+        materials: [
+          { name: "Black Paper", url: "/products/black-paper", desc: { en: "Through-dyed, clean edges, perfect for foil-stamped brand logos.", es: "Teñido en masa, bordes limpios, perfecto para logotipos de marca estampados en foil." } },
+          { name: "Soft Touch Paper", url: "/products/soft-touch-paper", desc: { en: "Velvet feel that communicates premium quality through touch.", es: "Tacto aterciopelado que comunica calidad premium a través del tacto." } },
+          { name: "Label Paper", url: "/products/label-paper", desc: { en: "Premium face stock for pressure-sensitive garment labels.", es: "Papel frontal premium para etiquetas adhesivas de prendas." } },
+        ]
+      },
+      {
+        name: { en: "Jewelry Tag", es: "Etiqueta de Joyería" },
+        icon: "💎",
+        desc: { en: "Small-format premium tags that match the quality of the jewelry inside.", es: "Etiquetas premium de formato pequeño que igualan la calidad de la joyería interior." },
+        materials: [
+          { name: "Pearlescent Paper", url: "/products/pearlescent-paper", desc: { en: "Subtle shimmer that mirrors the brilliance of fine jewelry.", es: "Brillo sutil que refleja el brillo de la joyería fina." } },
+          { name: "Gold & Silver Card", url: "/products/gold-silver-card", desc: { en: "Metallic surface — gold for warm-toned jewelry, silver for cool-toned.", es: "Superficie metálica — dorado para joyería de tonos cálidos, plateado para tonos fríos." } },
+          { name: "Label Paper", url: "/products/label-paper", desc: { en: "Fine surface for intricate printing and foil detailing.", es: "Superficie fina para impresión intrincada y detalles en foil." } },
+        ]
+      },
+      {
+        name: { en: "Bottle Neck Tag", es: "Etiqueta de Botella" },
+        icon: "🍷",
+        desc: { en: "Hang tags for wine, spirits, and beverage bottles — designed to drape elegantly.", es: "Etiquetas colgantes para botellas de vino, licores y bebidas — diseñadas para colgar elegantemente." },
+        materials: [
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Deep colors that complement wine and spirit branding.", es: "Colores profundos que complementan el branding de vinos y licores." } },
+          { name: "Tracing Paper", url: "/products/tracing-paper", desc: { en: "Translucent overlay effect for layered bottle neck presentation.", es: "Efecto de superposición translúcida para presentación en capas en cuello de botella." } },
+          { name: "Embossed Paper", url: "/products/embossed-paper", desc: { en: "Textured surface that adds depth to wine label branding.", es: "Superficie texturizada que añade profundidad al branding de etiquetas de vino." } },
+        ]
+      },
+      {
+        name: { en: "Premium Brand Tag", es: "Etiqueta de Marca Premium" },
+        icon: "⭐",
+        desc: { en: "High-impact brand tags that combine multiple finishing techniques for maximum perceived value.", es: "Etiquetas de marca de alto impacto que combinan múltiples técnicas de acabado para máximo valor percibido." },
+        materials: [
+          { name: "Leather Paper", url: "/products/leather-paper", desc: { en: "Animal-free leather grain for luxury fashion and accessory tags.", es: "Grano de cuero libre de animales para etiquetas de moda y accesorios de lujo." } },
+          { name: "Soft Touch Paper", url: "/products/soft-touch-paper", desc: { en: "The contemporary luxury standard for premium brand tags.", es: "El estándar de lujo contemporáneo para etiquetas de marca premium." } },
+          { name: "Gold & Silver Card", url: "/products/gold-silver-card", desc: { en: "Metallic brilliance that cannot be achieved with ink alone.", es: "Brillo metálico que no se puede lograr solo con tinta." } },
+        ]
+      },
+    ]
+  },
+  {
+    id: "gift-wrapping-decoration",
+    title: { en: "Gift Wrapping & Decoration", es: "Envoltura de Regalo y Decoración" },
+    icon: "🎁",
+    heroImage: "/images/industries/industry-luxury.jpg",
+    tagline: {
+      en: "The finishing touch — wrapping papers, gift bags, greeting cards, and decorative liners that complete the unboxing experience.",
+      es: "El toque final — papeles de envolver, bolsas de regalo, tarjetas de felicitación y forros decorativos que completan la experiencia de unboxing."
+    },
+    applications: [
+      {
+        name: { en: "Gift Wrap", es: "Papel de Regalo" },
+        icon: "🎀",
+        desc: { en: "Decorative wrapping paper for retail and e-commerce gift presentation.", es: "Papel decorativo para envolver para presentación de regalos minoristas y e-commerce." },
+        materials: [
+          { name: "Color Tissue Paper", url: "/products/color-tissue-paper", desc: { en: "Lightweight, vibrant colors — the universal gift wrap material.", es: "Ligero, colores vibrantes — el material universal para envolver regalos." } },
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural look for eco-branded gift wrapping.", es: "Aspecto natural para envoltura de regalos de marca ecológica." } },
+        ]
+      },
+      {
+        name: { en: "Gift Bag", es: "Bolsa de Regalo" },
+        icon: "🛍️",
+        desc: { en: "Premium paper gift bags with handles — the ready-to-go gift packaging solution.", es: "Bolsas de regalo de papel premium con asas — la solución de embalaje de regalo lista para usar." },
+        materials: [
+          { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Strong, natural, and recyclable — the standard gift bag material.", es: "Fuerte, natural y reciclable — el material estándar para bolsas de regalo." } },
+          { name: "MG Paper", url: "/products/mg-paper", desc: { en: "Glossy surface for retail-quality printed gift bags.", es: "Superficie brillante para bolsas de regalo impresas de calidad minorista." } },
+          { name: "Color Tissue Paper", url: "/products/color-tissue-paper", desc: { en: "Tissue filler inside the bag adds color and protection.", es: "Relleno de tissue dentro de la bolsa añade color y protección." } },
+        ]
+      },
+      {
+        name: { en: "Greeting Card", es: "Tarjeta de Felicitación" },
+        icon: "💌",
+        desc: { en: "Cards for all occasions — birthdays, weddings, holidays, and corporate greetings.", es: "Tarjetas para todas las ocasiones — cumpleaños, bodas, fiestas y saludos corporativos." },
+        materials: [
+          { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Rich colors that make cards stand out on the shelf.", es: "Colores ricos que hacen que las tarjetas destaquen en la estantería." } },
+          { name: "Embossed Paper", url: "/products/embossed-paper", desc: { en: "Textured surface that adds hand-crafted quality to greeting cards.", es: "Superficie texturizada que añade calidad artesanal a las tarjetas de felicitación." } },
+        ]
+      },
+      {
+        name: { en: "Decorative Liner", es: "Forro Decorativo" },
+        icon: "✨",
+        desc: { en: "Tissue liners, box inserts, and decorative layers that elevate the unboxing moment.", es: "Forros de tissue, insertos de caja y capas decorativas que elevan el momento de unboxing." },
+        materials: [
+          { name: "Tracing Paper", url: "/products/tracing-paper", desc: { en: "Translucent overlay for layered packaging reveals.", es: "Superposición translúcida para revelaciones de embalaje en capas." } },
+          { name: "Pearlescent Paper", url: "/products/pearlescent-paper", desc: { en: "Shimmering liner paper that catches light when the box is opened.", es: "Papel de forro brillante que capta la luz cuando se abre la caja." } },
+          { name: "Color Tissue Paper", url: "/products/color-tissue-paper", desc: { en: "Soft, colorful tissue that protects and presents the product.", es: "Tissue suave y colorido que protege y presenta el producto." } },
+        ]
+      },
+    ]
+  },
+];
+
+export default industryChannels;

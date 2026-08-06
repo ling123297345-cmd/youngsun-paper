@@ -1,24 +1,28 @@
-import { useState, useEffect, useRef } from "react";
-import { Link, useSearchParams, useLocation } from "react-router-dom";
+import { useRef } from "react";
+import { Link, useLocation, useNavigate, Navigate } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { productEs } from "../productEs.js";
 import { productCategories, subProducts } from "../data.js";
-import { PageMeta } from "../SEO.jsx";
+import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
 
-export default function Products() {
+export default function Products({ initialCategory }) {
   const { t, lang } = useLang(); const isEs = lang === "es";
   const location = useLocation();
+  const navigate = useNavigate();
   const productsGridRef = useRef(null);
-  const catFromUrl = new URLSearchParams(location.search).get("cat");
-  const [activeCat, setActiveCat] = useState(catFromUrl || "package-board");
-  useEffect(() => {
-    const cat = new URLSearchParams(location.search).get("cat");
-    if (cat && productCategories.some((c) => c.id === cat)) setActiveCat(cat);
-  }, [location.search]);
+
+  // ── Redirect ?cat=xxx → /products/xxx (301-equivalent) ──
+  const catParam = new URLSearchParams(location.search).get("cat");
+  if (catParam && productCategories.some((c) => c.id === catParam)) {
+    return <Navigate to={`/products/${catParam}`} replace />;
+  }
+
+  // Derive active category from route prop (single source of truth)
+  const activeCat = initialCategory || "package-board";
 
   const handleCatChange = (catId) => {
-    setActiveCat(catId);
-    // Smooth scroll to product grid
+    navigate(`/products/${catId}`, { replace: true });
+    // Smooth scroll to product grid after navigation
     setTimeout(() => {
       productsGridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 100);
@@ -35,7 +39,10 @@ export default function Products() {
 
   return (
     <section className="section products-section" style={{ paddingTop: 0 }}>
-      <PageMeta title="Paper & Board Products" description="Explore 28 paper and board grades across 4 categories: Package Board, Culture Paper, Fancy Paper, and Food Packaging Paper. FSC & SGS certified. Request a quote." path="/products" />
+      <PageMeta title="Paper & Board Products" description="Explore 28 paper and board grades across 4 categories: Package Board, Culture Paper, Fancy Paper, and Food Packaging Paper. FSC & SGS certified. Request a quote." path={initialCategory ? `/products/${initialCategory}` : "/products"} />
+      <BreadcrumbSchema items={initialCategory
+        ? [{ name: "Home", url: "/" }, { name: "Products", url: "/products" }, { name: (productCategories.find(function(c) { return c.id === initialCategory; }) || {}).title || initialCategory, url: `/products/${initialCategory}` }]
+        : [{ name: "Home", url: "/" }, { name: "Products", url: "/products" }]} />
       <div style={{ background: "url(/images/products-bg.jpg) center/cover no-repeat", height: 260, position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,31,19,0.3) 0%, rgba(20,54,34,0.8) 100%)" }} />
       </div>

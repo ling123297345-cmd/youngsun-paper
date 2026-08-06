@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { productEs } from "../productEs.js";
 import { subProducts, contactInfo } from "../data.js";
-import { PageMeta, ProductSchema } from "../SEO.jsx";
+import { PageMeta, ProductSchema, BreadcrumbSchema } from "../SEO.jsx";
 
 export default function ProductDetail() {
   const { t, lang } = useLang(); const isEs = lang === "es";
@@ -29,13 +29,14 @@ export default function ProductDetail() {
   const gallery = p.gallery || [];
   const quoteReqs = p.quoteReqs || null;
 
-  const seoTitle = p.seoTitle || `${p.name} — Paper & Board`;
+  const seoTitle = p.seoTitle || `${p.name} Supplier in China`;
   const seoDesc = p.metaDescription || `YOUNGSUN PAPER supplies ${p.name.toLowerCase()} — ${p.tagline.toLowerCase().replace(/\.$/, "")}. FSC & SGS certified. Custom size, bulk export. Request quote.`;
 
   return (
     <section className="section product-detail-page" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
       <PageMeta title={seoTitle} description={seoDesc} path={`/products/${id}`} />
       <ProductSchema product={p} />
+      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Products", url: "/products" }, { name: p.name, url: `/products/${id}` }]} />
       <div className="container">
         {/* Breadcrumb */}
         <nav style={{ display: "flex", gap: 8, alignItems: "center", fontSize: 13, marginBottom: 8 }} aria-label="Breadcrumb">

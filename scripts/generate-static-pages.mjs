@@ -69,7 +69,7 @@ const staticPages = [
 
 const productPages = Object.entries(subProducts).map(([id, product]) => ({
   route: `/products/${id}`,
-  title: `${product.name} Supplier | YOUNGSUN PAPER`,
+  title: `${product.name} Supplier | YOUNGSUN`,
   description: truncate(
     `Source ${product.name.toLowerCase()} from YOUNGSUN PAPER in China. ${product.tagline} Custom sizes, bulk export supply, technical support, and product samples are available.`,
     158,
@@ -153,8 +153,8 @@ function createSitemap(items) {
 }
 
 function normalizeTitle(value) {
-  const clean = String(value).replace(/\s*\|\s*YOUNGSUN PAPER\s*$/i, "").trim();
-  return `${clean} | YOUNGSUN PAPER`;
+  const clean = String(value).replace(/\s*\|\s*YOUNGSUN(?:\s*PAPER)?\s*$/i, "").trim();
+  return `${clean} | YOUNGSUN`;
 }
 
 function truncate(value, maxLength) {

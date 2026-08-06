@@ -4,7 +4,7 @@
 import { Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { faqItems } from "../data.js";
-import { PageMeta } from "../SEO.jsx";
+import { PageMeta, FAQSchema } from "../SEO.jsx";
 
 export default function FAQ() {
   const { lang } = useLang();
@@ -50,6 +50,7 @@ export default function FAQ() {
   return (
     <>
       <PageMeta title="Frequently Asked Questions" description="Find answers to common questions about paper sourcing, minimum orders, shipping, certifications, samples, and payment from YOUNGSUN PAPER." path="/faq" />
+      <FAQSchema items={allFaqs.map(function(f) { return { q: f.q[lang] || f.q.en, a: f.a[lang] || f.a.en }; })} />
 
       <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 140, paddingBottom: 80, textAlign: "center" }}>
         <div className="container">

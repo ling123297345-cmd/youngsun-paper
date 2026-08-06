@@ -1,284 +1,301 @@
-// ============================================================
-// YOUNGSUN PAPER — Industries Page (Redesigned)
-// 5 channels: product → material mapping
-// 1 channel: Hang Tags full-width mosaic → Fancy Paper gallery
-// ============================================================
+import {
+  ArrowRight,
+  BookOpen,
+  Box,
+  Coffee,
+  Gem,
+  Gift,
+  PackageOpen,
+  Tags,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { industryChannels } from "../industryApplications.js";
 import { PageMeta } from "../SEO.jsx";
+import "../industries.css";
 
-// ── App-to-image mapping ────────────────────────────────────
-const appImages = {
-  // Packaging & Printing
-  "Folding Carton": "CANDY BOX 250g black paper.jpg",
-  "Rigid Box": "gift box 230g folding box board.jpg",
-  "Paper Bag": "album 1mm full black board -laminated board.jpg",
-  "Display Card": "20260803_152623_011.jpg",
-  // Food & Beverage
-  "Paper Cup": "20260801_100758_049.jpg",
-  "Burger Wrap": "20260801_100942_063.jpg",
-  "Bakery Bag": "20260801_101402_067.jpg",
-  "Takeaway Box": "20260801_102027_082.jpg",
-  // Luxury & Cosmetics
-  "Perfume Box": "20260803_185310_093.jpg",
-  "Cosmetic Box": "20260803_185439_103.jpg",
-  "Jewelry Box": "20260803_165638_236.jpg",
-  "Luxury Gift Set": "20260803_170740_270.jpg",
-  // Publishing & Stationery
-  "Hardcover Book": "20260801_104421_247.jpg",
-  "Notebook": "20260801_104623_267.jpg",
-  "Catalogue": "20260801_105109_273.jpg",
-  "Folder": "20260801_102835_128.jpg",
-  // Gift Wrapping
-  "Gift Wrap": "20260801_110021_372.jpg",
-  "Gift Bag": "20260801_110454_441.jpg",
-  "Greeting Card": "20260801_110538_450.jpg",
-  "Decorative Liner": "20260801_110941_468.jpg",
-  // Hang Tags
-  "Garment Tag": "20260801_103337_136.jpg",
-  "Jewelry Tag": "20260801_103356_142.jpg",
-  "Bottle Neck Tag": "20260801_103511_165.jpg",
-  "Premium Brand Tag": "20260801_103640_171.jpg",
+const applicationImageBase = "/images/industries/applications/";
+
+const industryCards = [
+  {
+    id: "packaging-printing",
+    icon: PackageOpen,
+    image: "/images/industries/cards/industry-packaging-printing-youngsun.webp",
+    href: "/industries/packaging-printing",
+  },
+  {
+    id: "food-beverage",
+    icon: Coffee,
+    image: "/images/industries/cards/industry-food-beverage-youngsun.webp",
+    href: "/industries/food-beverage",
+  },
+  {
+    id: "luxury-cosmetics",
+    icon: Gem,
+    image: "/images/industries/cards/industry-luxury-cosmetics-youngsun.webp",
+    href: "/industries/luxury-cosmetics",
+  },
+  {
+    id: "publishing-stationery",
+    icon: BookOpen,
+    image: "/images/industries/cards/industry-publishing-stationery-youngsun.webp",
+    href: "/industries/publishing-stationery",
+  },
+  {
+    id: "hang-tags-labels",
+    icon: Tags,
+    image: "/images/industries/cards/industry-hang-tags-labels-youngsun.webp",
+    href: "/fancy-paper-collection",
+  },
+  {
+    id: "gift-wrapping-decoration",
+    icon: Gift,
+    image: "/images/industries/cards/industry-gift-wrapping-decoration-youngsun.webp",
+    href: "/products",
+  },
+];
+
+const applicationGuides = [
+  {
+    title: { en: "Printed Takeaway Paper Bag", es: "Bolsa de papel impresa para llevar" },
+    description: {
+      en: "White kraft paper combines print clarity with the strength required for takeaway bags and retail carriers.",
+      es: "El papel kraft blanco combina claridad de impresion con la resistencia necesaria para bolsas de comida y comercio.",
+    },
+    paper: "White Kraft Paper",
+    rangeLabel: { en: "Typical range", es: "Rango habitual" },
+    range: "80 - 150 gsm",
+    image: "20260803_165638_236.jpg",
+    href: "/products/kraft-paper",
+  },
+  {
+    title: { en: "Perfume Folding Box", es: "Caja plegable para perfume" },
+    description: {
+      en: "FBB provides stiffness, clean creasing and a smooth print surface for premium fragrance and cosmetic packaging.",
+      es: "FBB aporta rigidez, hendido limpio y una superficie suave para envases premium de perfumeria y cosmetica.",
+    },
+    paper: "Folding Box Board (FBB)",
+    rangeLabel: { en: "Typical range", es: "Rango habitual" },
+    range: "250 - 350 gsm",
+    image: "/images/products/fancy-paper/gallery/Purple-Magenta-Perfume-Packaging.jpg",
+    href: "/products/folding-box-board",
+  },
+  {
+    title: { en: "Premium Garment Hang Tag", es: "Etiqueta premium para prendas" },
+    description: {
+      en: "Through-dyed black paper gives garment tags clean edges and a refined base for foil stamping and embossing.",
+      es: "El papel negro tenido en masa ofrece bordes limpios y una base refinada para foil y relieve.",
+    },
+    paper: "Black Paper",
+    rangeLabel: { en: "Typical range", es: "Rango habitual" },
+    range: "200 - 400 gsm",
+    image: "20260801_103337_136.jpg",
+    href: "/products/black-paper",
+  },
+  {
+    title: { en: "Hardcover Book Cover", es: "Cubierta de libro de tapa dura" },
+    description: {
+      en: "Grey board supplies the flatness, support and durability needed for case-bound books, albums and presentation folders.",
+      es: "El carton gris ofrece planitud, soporte y durabilidad para libros, albumes y carpetas de presentacion.",
+    },
+    paper: "Grey Board",
+    rangeLabel: { en: "Typical range", es: "Rango habitual" },
+    range: "1.0 - 3.0 mm",
+    image: "20260801_104421_247.jpg",
+    href: "/products/grey-board",
+  },
+  {
+    title: { en: "Greaseproof Food Wrap", es: "Envoltura antigrasa para alimentos" },
+    description: {
+      en: "Greaseproof paper resists oil migration while keeping bakery, burger and deli presentation clean and food-safe.",
+      es: "El papel antigrasa resiste la migracion de aceite y mantiene limpia la presentacion de alimentos.",
+    },
+    paper: "Greaseproof Paper",
+    rangeLabel: { en: "Typical range", es: "Rango habitual" },
+    range: "30 - 60 gsm",
+    image: "20260801_100942_063.jpg",
+    href: "/products/greaseproof-paper",
+  },
+];
+
+const copy = {
+  en: {
+    heroTitle: "Find the right paper for every application.",
+    heroBody: "From packaging and food service to luxury, publishing and retail, compare proven paper solutions by end use.",
+    explore: "Explore applications",
+    recommendation: "Get a recommendation",
+    industryLabel: "Explore by industry",
+    industryIntro: "Find paper and board solutions for the way your product is made, packed and presented.",
+    exploreLink: "Explore",
+    guidesLabel: "Featured application guides",
+    guidesIntro: "Real products. Practical paper recommendations.",
+    recommended: "Recommended paper",
+    viewDetails: "View details",
+    ctaTitle: "Not sure which paper is right for you?",
+    ctaBody: "Tell us about your product, printing process and target performance. Our team will recommend suitable grades and prepare samples for evaluation.",
+    ctaPrimary: "Get paper recommendation",
+    ctaSecondary: "Request free samples",
+  },
+  es: {
+    heroTitle: "Encuentre el papel adecuado para cada aplicacion.",
+    heroBody: "Desde embalaje y alimentos hasta lujo, edicion y comercio, compare soluciones probadas segun el uso final.",
+    explore: "Explorar aplicaciones",
+    recommendation: "Obtener recomendacion",
+    industryLabel: "Explorar por industria",
+    industryIntro: "Encuentre soluciones de papel y carton para fabricar, embalar y presentar su producto.",
+    exploreLink: "Explorar",
+    guidesLabel: "Guias de aplicacion destacadas",
+    guidesIntro: "Productos reales. Recomendaciones practicas.",
+    recommended: "Papel recomendado",
+    viewDetails: "Ver detalles",
+    ctaTitle: "No esta seguro de que papel necesita?",
+    ctaBody: "Cuentenos su producto, proceso de impresion y rendimiento esperado. Recomendaremos grados adecuados y prepararemos muestras.",
+    ctaPrimary: "Obtener recomendacion",
+    ctaSecondary: "Solicitar muestras gratis",
+  },
 };
+
+function getImageSrc(image) {
+  return image.startsWith("/") ? image : `${applicationImageBase}${image}`;
+}
 
 export default function Industries() {
   const { lang } = useLang();
-  const isEs = lang === "es";
-
-  // Separate Hang Tags from normal channels
-  const hangTags = industryChannels.find(c => c.id === "hang-tags-labels");
-  const normalChannels = industryChannels.filter(c => c.id !== "hang-tags-labels");
+  const activeLang = lang === "es" ? "es" : "en";
+  const text = copy[activeLang];
 
   return (
-    <>
+    <main className="industries-page">
       <PageMeta
-        title="Industries Served — Paper Solutions by Application"
-        description="Explore paper and board solutions organized by end-use application. Packaging, food, luxury, publishing, hang tags, and gift wrapping — with recommended materials for each product."
+        title="Paper Solutions by Industry and Application | Youngsun Paper"
+        description="Compare paper and paperboard for packaging, food service, luxury boxes, publishing, hang tags and gift wrapping. Get grade recommendations and free samples."
         path="/industries"
       />
 
-      {/* Hero */}
-      <section style={{ background: "var(--forest)", color: "#fff", padding: "140px 0 80px", textAlign: "center" }}>
-        <div className="container">
-          <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: 13, textTransform: "uppercase", letterSpacing: 2 }}>
-            {isEs ? "Soluciones por Aplicación" : "Solutions by Application"}
-          </span>
-          <h1 style={{ fontSize: "clamp(30px, 5vw, 48px)", marginTop: 12, marginBottom: 12 }}>
-            {isEs ? "Cada Producto Tiene Su Papel" : "Every Product Has Its Paper"}
-          </h1>
-          <p style={{ fontSize: 17, opacity: 0.8, maxWidth: 650, margin: "0 auto" }}>
-            {isEs
-              ? "Seleccione su aplicación para ver los grados de papel y cartón recomendados, con enlaces directos a especificaciones detalladas."
-              : "Select your application to see recommended paper and board grades, with direct links to detailed specifications."}
-          </p>
+      <section className="industries-hero" aria-labelledby="industries-hero-title">
+        <img
+          className="industries-hero-image"
+          src="/images/industries/youngsun-paper-applications-hero.png"
+          alt="Paper packaging, paper cup, rigid gift box, book cover and hang tag applications"
+        />
+        <div className="industries-hero-content">
+          <h1 id="industries-hero-title">{text.heroTitle}</h1>
+          <p>{text.heroBody}</p>
+          <div className="industries-hero-actions">
+            <a className="industries-button industries-button-primary" href="#industry-explorer">
+              {text.explore}
+              <ArrowRight aria-hidden="true" size={16} />
+            </a>
+            <Link className="industries-text-link" to="/contact">
+              {text.recommendation}
+              <ArrowRight aria-hidden="true" size={16} />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* ── 5 Normal Channels ──────────────────────────── */}
-      {normalChannels.map((channel, ci) => (
-        <section
-          key={channel.id}
-          id={channel.id}
-          className="section"
-          style={{ background: ci % 2 === 0 ? "#fff" : "var(--paper)" }}
-        >
-          <div className="container" style={{ maxWidth: 1200 }}>
-            {/* Channel Header */}
-            <div style={{ textAlign: "center", marginBottom: 40 }}>
-              <span style={{ fontSize: 48, display: "block", marginBottom: 8 }}>{channel.icon}</span>
-              <h2 style={{ fontSize: "clamp(24px, 4vw, 36px)", color: "var(--forest)", marginBottom: 10 }}>
-                {channel.title[lang]}
-              </h2>
-              <p style={{ fontSize: 16, color: "var(--muted)", maxWidth: 600, margin: "0 auto", lineHeight: 1.6 }}>
-                {channel.tagline[lang]}
-              </p>
+      <section className="industries-explorer" id="industry-explorer" aria-labelledby="industry-explorer-title">
+        <div className="industries-shell">
+          <div className="industries-section-heading">
+            <div>
+              <span className="industries-section-rule" aria-hidden="true" />
+              <h2 id="industry-explorer-title">{text.industryLabel}</h2>
             </div>
-
-            {/* Product Cards */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 20 }}>
-              {channel.applications.map((app) => (
-                <div
-                  key={app.name.en}
-                  style={{
-                    background: "#fff",
-                    borderRadius: 14,
-                    padding: "24px 24px 20px",
-                    boxShadow: "var(--shadow-sm)",
-                    border: "1px solid var(--line)",
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  {/* Product image */}
-                  {appImages[app.name.en] && (
-                    <div style={{ height: 180, overflow: "hidden", borderRadius: 10, marginBottom: 14, background: "var(--paper)" }}>
-                      <img
-                        src={`/images/industries/applications/${appImages[app.name.en]}`}
-                        alt={app.name[lang]}
-                        loading="lazy"
-                        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                      />
-                    </div>
-                  )}
-                  {/* App header */}
-                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
-                    <span style={{ fontSize: 28 }}>{app.icon}</span>
-                    <h3 style={{ fontSize: 17, fontWeight: 700, color: "var(--forest)" }}>{app.name[lang]}</h3>
-                  </div>
-                  <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6, marginBottom: 16, flex: 1 }}>
-                    {app.desc[lang]}
-                  </p>
-
-                  {/* Material links */}
-                  <div style={{ borderTop: "1px solid var(--line)", paddingTop: 14 }}>
-                    <span style={{ fontSize: 11, color: "var(--muted-light)", textTransform: "uppercase", letterSpacing: 1, display: "block", marginBottom: 8 }}>
-                      {isEs ? "Materiales Recomendados" : "Recommended Materials"}
-                    </span>
-                    <div style={{ display: "grid", gap: 8 }}>
-                      {app.materials.map((mat) => (
-                        <Link
-                          key={mat.url}
-                          to={mat.url}
-                          style={{
-                            display: "flex",
-                            alignItems: "flex-start",
-                            gap: 8,
-                            padding: "10px 12px",
-                            background: "var(--paper-green)",
-                            borderRadius: 8,
-                            textDecoration: "none",
-                            color: "inherit",
-                            transition: "background 0.15s var(--ease-out)",
-                          }}
-                          onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(15,43,26,0.08)"; }}
-                          onMouseLeave={(e) => { e.currentTarget.style.background = "var(--paper-green)"; }}
-                        >
-                          <span style={{ color: "var(--gold)", fontWeight: 700, fontSize: 13, whiteSpace: "nowrap" }}>
-                            {mat.name}
-                          </span>
-                          <span style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.5 }}>
-                            {mat.desc[lang]}
-                          </span>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p>{text.industryIntro}</p>
           </div>
-        </section>
-      ))}
 
-      {/* ── Hang Tags & Labels (Full-Width Mosaic) ──────── */}
-      {hangTags && (
-        <section id={hangTags.id} style={{ background: "var(--forest)", color: "#fff", padding: "80px 0", position: "relative", overflow: "hidden" }}>
-          {/* Background pattern: mosaic of tag images */}
-          <div style={{
-            position: "absolute", inset: 0, opacity: 0.08,
-            display: "grid", gridTemplateColumns: "repeat(8, 1fr)", gap: 0,
-          }}>
-            {[
-              "/images/products/fancy-paper/hangtag-black-card.jpg",
-              "/images/products/fancy-paper/hangtag-embossed.jpg",
-              "/images/products/fancy-paper/hangtag-hero-main.jpg",
-              "/images/products/fancy-paper/hangtag-white-pearl.jpg",
-              "/images/products/fancy-paper/banner-hangtag-paper.jpg",
-              "/images/products/fancy-paper/banner-tracing-paper.jpg",
-              "/images/products/fancy-paper/fancy-paper-01.jpg",
-              "/images/products/fancy-paper/fancy-paper-02.jpg",
-              "/images/products/fancy-paper/embossed-paper.jpg",
-              "/images/products/fancy-paper/fancy-paper.jpg",
-              "/images/products/fancy-paper/leather-paper-main.jpg",
-              "/images/products/fancy-paper/pearlescent-paper-main.jpg",
-              "/images/products/fancy-paper/soft-touch-paper-main.jpg",
-              "/images/products/fancy-paper/gold-silver-card-main.jpg",
-              "/images/products/fancy-paper/label-paper-main.jpg",
-              "/images/products/fancy-paper/color-tissue-paper-main.jpg",
-            ].map((src, i) => (
-              <div key={i} style={{ aspectRatio: "1/1", overflow: "hidden" }}>
-                <img src={src} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-              </div>
+          <div className="industries-card-grid">
+            {industryCards.map((card) => {
+              const channel = industryChannels.find((item) => item.id === card.id);
+              const Icon = card.icon;
+
+              if (!channel) return null;
+
+              return (
+                <Link className="industries-card" to={card.href} key={card.id}>
+                  <div className="industries-card-image-wrap">
+                    <img
+                      src={getImageSrc(card.image)}
+                      alt={`${channel.title[activeLang]} paper application`}
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="industries-card-body">
+                    <Icon className="industries-card-icon" aria-hidden="true" size={25} strokeWidth={1.5} />
+                    <h3>{channel.title[activeLang]}</h3>
+                    <p>{channel.tagline[activeLang]}</p>
+                    <span className="industries-card-link">
+                      {text.exploreLink}
+                      <ArrowRight aria-hidden="true" size={15} />
+                    </span>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="industries-guides" aria-labelledby="industries-guides-title">
+        <div className="industries-shell">
+          <div className="industries-section-heading industries-section-heading-guides">
+            <div>
+              <span className="industries-section-rule" aria-hidden="true" />
+              <h2 id="industries-guides-title">{text.guidesLabel}</h2>
+            </div>
+            <p>{text.guidesIntro}</p>
+          </div>
+
+          <div className="industries-guide-list">
+            {applicationGuides.map((guide) => (
+              <article className="industries-guide-row" key={guide.paper}>
+                <img
+                  className="industries-guide-image"
+                  src={getImageSrc(guide.image)}
+                  alt={guide.title[activeLang]}
+                  loading="lazy"
+                />
+                <div className="industries-guide-copy">
+                  <h3>{guide.title[activeLang]}</h3>
+                  <p>{guide.description[activeLang]}</p>
+                </div>
+                <div className="industries-guide-recommendation">
+                  <div>
+                    <span>{text.recommended}</span>
+                    <strong>{guide.paper}</strong>
+                    <small>{guide.rangeLabel[activeLang]}</small>
+                    <b>{guide.range}</b>
+                  </div>
+                  <Link to={guide.href} aria-label={`${text.viewDetails}: ${guide.paper}`}>
+                    {text.viewDetails}
+                    <ArrowRight aria-hidden="true" size={16} />
+                  </Link>
+                </div>
+              </article>
             ))}
           </div>
-
-          <div className="container" style={{ position: "relative", zIndex: 1, textAlign: "center", maxWidth: 800 }}>
-            <span style={{ fontSize: 56, display: "block", marginBottom: 12 }}>{hangTags.icon}</span>
-            <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: 13, textTransform: "uppercase", letterSpacing: 2, display: "block", marginBottom: 12 }}>
-              {isEs ? "SOLUCIÓN DESTACADA" : "FEATURED SOLUTION"}
-            </span>
-            <h2 style={{ fontSize: "clamp(28px, 5vw, 44px)", marginBottom: 16 }}>
-              {hangTags.title[lang]}
-            </h2>
-            <p style={{ fontSize: 17, opacity: 0.85, maxWidth: 600, margin: "0 auto 32px", lineHeight: 1.7 }}>
-              {hangTags.tagline[lang]}
-            </p>
-
-            {/* Product Applications */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 16, marginBottom: 36 }}>
-              {hangTags.applications.map((app) => (
-                <div key={app.name.en} style={{
-                  background: "rgba(255,255,255,0.08)", borderRadius: 12, padding: "20px 16px",
-                  backdropFilter: "blur(4px)", border: "1px solid rgba(255,255,255,0.1)",
-                }}>
-                  <span style={{ fontSize: 32, display: "block", marginBottom: 8 }}>{app.icon}</span>
-                  <h4 style={{ fontSize: 15, fontWeight: 700, marginBottom: 8 }}>{app.name[lang]}</h4>
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 4, justifyContent: "center" }}>
-                    {app.materials.slice(0, 3).map((m) => (
-                      <Link key={m.url} to={m.url}
-                        style={{ color: "var(--gold)", fontSize: 11, textDecoration: "none", background: "rgba(200,146,63,0.15)", padding: "3px 8px", borderRadius: 12, transition: "background 0.15s" }}
-                        onMouseEnter={(e) => { e.currentTarget.style.background = "rgba(200,146,63,0.3)"; }}
-                        onMouseLeave={(e) => { e.currentTarget.style.background = "rgba(200,146,63,0.15)"; }}
-                      >
-                        {m.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Mosaic Preview Grid */}
-            <div style={{
-              display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 8, maxWidth: 600, margin: "0 auto 32px",
-            }}>
-              {["20260801_103337_136.jpg","20260801_103356_142.jpg","20260801_103511_165.jpg","20260801_103640_171.jpg"].map((src, i) => (
-                <div key={i} style={{ aspectRatio: "3/4", borderRadius: 8, overflow: "hidden" }}>
-                  <img src={`/images/industries/applications/${src}`} alt="" loading="lazy" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-                </div>
-              ))}
-            </div>
-
-            {/* CTA */}
-            <Link
-              to={hangTags.mosaicLink}
-              style={{
-                background: "var(--gold)", color: "#fff", padding: "16px 40px", borderRadius: 12,
-                fontWeight: 700, fontSize: 16, textDecoration: "none", display: "inline-block",
-                boxShadow: "0 6px 24px rgba(200,146,63,0.3)",
-              }}
-            >
-              {hangTags.mosaicLabel[lang]}
-            </Link>
-          </div>
-        </section>
-      )}
-
-      {/* Bottom CTA */}
-      <section style={{ background: "#fff", textAlign: "center", padding: "80px 20px" }}>
-        <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", color: "var(--forest)", marginBottom: 12 }}>
-          {isEs ? "¿No encuentra su aplicación?" : "Don't See Your Application?"}
-        </h2>
-        <p style={{ fontSize: 15, color: "var(--muted)", marginBottom: 28, maxWidth: 500, margin: "0 auto 28px" }}>
-          {isEs
-            ? "Contamos con grados de papel personalizados para aplicaciones especializadas en todos los sectores."
-            : "We supply custom paper grades for specialized applications across all sectors."}
-        </p>
-        <Link to="/contact" style={{ background: "var(--gold)", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-          {isEs ? "Solicitar Cotización" : "Request a Quote"} →
-        </Link>
+        </div>
       </section>
-    </>
+
+      <section className="industries-cta" aria-labelledby="industries-cta-title">
+        <div className="industries-cta-visual" aria-hidden="true">
+          <Box size={48} strokeWidth={1.2} />
+        </div>
+        <div className="industries-cta-copy">
+          <h2 id="industries-cta-title">{text.ctaTitle}</h2>
+          <p>{text.ctaBody}</p>
+        </div>
+        <div className="industries-cta-actions">
+          <Link className="industries-button industries-button-primary" to="/contact">
+            {text.ctaPrimary}
+            <ArrowRight aria-hidden="true" size={16} />
+          </Link>
+          <Link className="industries-button industries-button-secondary" to="/contact">
+            {text.ctaSecondary}
+            <ArrowRight aria-hidden="true" size={16} />
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

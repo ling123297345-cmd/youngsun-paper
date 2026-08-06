@@ -46,7 +46,7 @@ export default function Home() {
       <section className="section category-overview-section">
         <div className="cat-overview-grid container">
           {productCategories.map((cat) => (
-            <Link key={cat.id} className="cat-overview-card" to={`/products?cat=${cat.id}`}>
+            <Link key={cat.id} className="cat-overview-card" to={`/products/${cat.id}`}>
               <div className="cat-overview-image"><img src={cat.image} alt={cat.title} loading="lazy" /><div className="cat-overview-overlay" /></div>
               <div className="cat-overview-body"><span className="cat-overview-icon">{cat.icon}</span><h3>{cat.title}</h3><p>{t(cat.tagline)}</p><span className="cat-overview-link">{t("View Products")} →</span></div>
             </Link>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { blogPosts, blogCategories } from "../blogData.js";
-import { PageMeta } from "../SEO.jsx";
+import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
 
 export default function Blog() {
   const [filter, setFilter] = useState("All");
@@ -10,6 +10,7 @@ export default function Blog() {
   return (
     <section className="section products-section" style={{ paddingTop: 0 }}>
       <PageMeta title="Blog — Paper Industry Insights" description="Expert guides on paper selection, sustainability, importing from China, and packaging design for buyers and procurement professionals." path="/blog" />
+      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }]} />
       <div style={{ background: "url(/images/blog-bg.jpg) center/cover no-repeat", height: 260, position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,31,19,0.3) 0%, rgba(20,54,34,0.8) 100%)" }} />
       </div>

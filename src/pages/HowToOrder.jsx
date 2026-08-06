@@ -3,7 +3,7 @@
 // ============================================================
 import { Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
-import { PageMeta } from "../SEO.jsx";
+import { PageMeta, HowToSchema } from "../SEO.jsx";
 
 export default function HowToOrder() {
   const { lang } = useLang();
@@ -65,6 +65,11 @@ export default function HowToOrder() {
   return (
     <>
       <PageMeta title="How to Order — Paper Sourcing Process" description="Your step-by-step guide to ordering paper and board from YOUNGSUN PAPER. Specification → Quotation → Samples → Production → Shipping → Delivery." path="/how-to-order" />
+      <HowToSchema
+        title={isEs ? "Cómo Solicitar Papel y Cartón" : "How to Order Paper & Board"}
+        description={isEs ? "Guía paso a paso para comprar papel y cartón de YOUNGSUN PAPER." : "Step-by-step guide to sourcing paper and board from YOUNGSUN PAPER."}
+        steps={steps.map(function(s) { return { name: s.title[lang].replace(/^\d+\.\s*/, ""), text: s.desc[lang], tip: s.tip ? s.tip[lang] : null }; })}
+      />
 
       {/* Hero */}
       <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 140, paddingBottom: 80, textAlign: "center" }}>

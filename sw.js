@@ -31,8 +31,8 @@ const PRECACHE_URLS = [
   "/apple-touch-icon.png",
   // Core images to show offline
   "/images/logo.png",
-  "/images/hero/youngsun-paper-hero-banner-hd.jpg",
-  "/images/products/fancy-paper/background-hangtag-section-clean.jpg",
+  "/images/hero/youngsun-paper-hero-banner-hd.png",
+  "/images/products/fancy-paper/background-hangtag-section-clean.png",
 ];
 
 // ── Install: precache core assets ─────────────────────────

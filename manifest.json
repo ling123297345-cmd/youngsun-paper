@@ -133,9 +133,9 @@
 
   "screenshots": [
     {
-      "src": "/images/hero/youngsun-paper-hero-banner-hd.jpg",
+      "src": "/images/hero/youngsun-paper-hero-banner-hd.png",
       "sizes": "1200x630",
-      "type": "image/jpeg",
+      "type": "image/png",
       "form_factor": "wide",
       "label": "YOUNGSUN PAPER home page — Premium paper supplier"
     }

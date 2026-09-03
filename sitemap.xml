@@ -1,560 +1,1148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://youngsunpaper.com/</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/about</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/about" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/about" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/about" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/contact</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/contact" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/contact" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/contact" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/fancy-paper-collection</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/fancy-paper-collection" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/fancy-paper-collection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/fancy-paper-collection" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/fancy-paper-collection</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/fancy-paper-collection" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/fancy-paper-collection" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/fancy-paper-collection" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/materials" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/materials" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/materials" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/materials</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/materials" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/materials" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/materials" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/processing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/processing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/processing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/processing" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/processing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/processing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/processing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/processing" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/quality</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/quality" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/quality" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/quality" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/quality</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/quality" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/quality" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/quality" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/faq</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/faq" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/faq" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/faq" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/how-to-order</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/how-to-order" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/how-to-order" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/how-to-order" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/how-to-order</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/how-to-order" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/how-to-order" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/how-to-order" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/resources</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/resources" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/resources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/resources" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/resources</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/resources" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/resources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/resources" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/package-board</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/package-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/package-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/package-board" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/package-board</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/package-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/package-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/package-board" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/culture-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/culture-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/culture-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/culture-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/culture-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/culture-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/culture-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/culture-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/fancy-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/fancy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/fancy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/fancy-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/fancy-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/fancy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/fancy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/fancy-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/food-packaging</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/food-packaging" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/food-packaging" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/food-packaging" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/food-packaging</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/food-packaging" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/food-packaging" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/food-packaging" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/packaging-printing</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/packaging-printing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/packaging-printing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/packaging-printing" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/packaging-printing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/packaging-printing" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/packaging-printing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/packaging-printing" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/food-beverage</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/food-beverage" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/food-beverage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/food-beverage" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/food-beverage</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/food-beverage" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/food-beverage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/food-beverage" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/luxury-cosmetics</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/luxury-cosmetics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/luxury-cosmetics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/luxury-cosmetics" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/luxury-cosmetics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/luxury-cosmetics" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/luxury-cosmetics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/luxury-cosmetics" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/publishing-stationery</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/publishing-stationery" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/publishing-stationery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/publishing-stationery" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/publishing-stationery</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/publishing-stationery" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/publishing-stationery" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/publishing-stationery" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/hang-tags-labels</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/hang-tags-labels" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/hang-tags-labels" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/hang-tags-labels" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/hang-tags-labels</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/hang-tags-labels" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/hang-tags-labels" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/hang-tags-labels" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/industries/gift-wrapping-decoration</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/gift-wrapping-decoration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/gift-wrapping-decoration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/gift-wrapping-decoration" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/industries/gift-wrapping-decoration</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/industries/gift-wrapping-decoration" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/industries/gift-wrapping-decoration" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/industries/gift-wrapping-decoration" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/softwood-pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/hardwood-pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/bamboo-pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/cotton-pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/mechanical-vs-chemical-pulp</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/materials/virgin-vs-recycled-fiber</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/grey-board</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/grey-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/grey-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/grey-board" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/grey-board</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/grey-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/grey-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/grey-board" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/black-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/black-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/black-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/black-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/black-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/black-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/black-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/black-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/color-card-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/color-card-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/color-card-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/color-card-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/color-card-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/color-card-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/color-card-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/color-card-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/folding-box-board</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/folding-box-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/folding-box-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/folding-box-board" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/folding-box-board</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/folding-box-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/folding-box-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/folding-box-board" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/c2s-art-board</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/c2s-art-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/c2s-art-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/c2s-art-board" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/c2s-art-board</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/c2s-art-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/c2s-art-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/c2s-art-board" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/kraft-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/kraft-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/kraft-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/kraft-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/kraft-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/kraft-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/kraft-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/kraft-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/duplex-board</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/duplex-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/duplex-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/duplex-board" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/duplex-board</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/duplex-board" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/duplex-board" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/duplex-board" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/pe-coated-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/pe-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/pe-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/pe-coated-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/pe-coated-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/pe-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/pe-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/pe-coated-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/ckb</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/woodfree-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/woodfree-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/woodfree-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/woodfree-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/woodfree-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/woodfree-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/woodfree-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/woodfree-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/color-offset-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/color-offset-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/color-offset-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/color-offset-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/color-offset-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/color-offset-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/color-offset-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/color-offset-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/lwc-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/lwc-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/lwc-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/lwc-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/lwc-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/lwc-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/lwc-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/lwc-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/ncr-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/ncr-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/ncr-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/ncr-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/ncr-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/ncr-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/ncr-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/ncr-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/copy-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/copy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/copy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/copy-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/copy-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/copy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/copy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/copy-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/newsprint</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/a4-copy-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/a4-copy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/a4-copy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/a4-copy-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/a4-copy-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/a4-copy-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/a4-copy-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/a4-copy-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/a4-thermal-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/a4-thermal-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/a4-thermal-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/a4-thermal-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/a4-thermal-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/a4-thermal-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/a4-thermal-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/a4-thermal-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/thermal-paper-roll</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/thermal-paper-roll" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/thermal-paper-roll" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/thermal-paper-roll" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/thermal-paper-roll</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/thermal-paper-roll" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/thermal-paper-roll" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/thermal-paper-roll" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/soft-touch-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/soft-touch-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/soft-touch-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/soft-touch-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/soft-touch-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/soft-touch-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/soft-touch-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/soft-touch-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/leather-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/leather-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/leather-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/leather-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/leather-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/leather-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/leather-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/leather-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/pearlescent-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/pearlescent-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/pearlescent-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/pearlescent-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/pearlescent-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/pearlescent-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/pearlescent-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/pearlescent-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/embossed-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/embossed-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/embossed-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/embossed-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/embossed-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/embossed-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/embossed-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/embossed-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/gold-silver-card</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/label-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/label-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/label-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/label-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/label-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/label-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/label-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/label-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/color-tissue-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/tracing-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/tracing-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/tracing-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/tracing-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/tracing-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/tracing-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/tracing-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/tracing-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/cup-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/cup-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/cup-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/cup-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/cup-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/cup-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/cup-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/cup-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/greaseproof-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/greaseproof-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/greaseproof-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/greaseproof-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/greaseproof-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/greaseproof-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/greaseproof-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/greaseproof-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/mg-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/mg-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/mg-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/mg-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/mg-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/mg-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/mg-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/mg-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/silicone-coated-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/silicone-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/silicone-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/silicone-coated-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/silicone-coated-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/silicone-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/silicone-coated-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/silicone-coated-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/products/absorbent-paper</loc>
-    <lastmod>2026-09-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/absorbent-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/absorbent-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/absorbent-paper" />
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://youngsunpaper.com/es/products/absorbent-paper</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/absorbent-paper" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/absorbent-paper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/absorbent-paper" />
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/grey-board-vs-duplex-board-comparison</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-gsm-thickness-conversion-chart</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/folding-box-board-fbb-buyer-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/how-to-calculate-paper-weight-container-shipping</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/fsc-paper-certification-guide-international-buyers</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/kraft-paper-vs-virgin-pulp-comparison</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/black-paper-color-card-packaging-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/cupstock-greaseproof-food-packaging-technical-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/how-to-choose-right-paperboard-packaging</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/specialty-paper-luxury-branding</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/food-packaging-paper-buyer-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/kraft-paper-packaging-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/why-grey-board-premium-rigid-packaging</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/how-to-source-paper-from-china</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/sustainable-paper-fsc-recycled-compliance-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-design-material-surface-texture-color-finish</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/grey-board-vs-duplex-vs-fbb-comparison</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-thickness-guide-gsm-caliper-points</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/ocean-freight-paper-logistics-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-moisture-content-control-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-glossary-terms-buyers-should-know</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/how-to-compare-paper-quotes-from-different-suppliers</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-surface-finishing-guide-gloss-matt-soft-touch-uv-foil</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/reduce-packaging-costs-without-sacrificing-quality</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/pe-coated-vs-greaseproof-vs-silicone-barrier-paper-comparison</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/paper-trade-shows-events-calendar-2026-2027</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/custom-paper-sizes-slitting-minimize-waste-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/food-grade-paper-certifications-guide-fda-eu-gb</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/gold-card-metallic-luxury-packaging-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/silver-card-modern-elegance-packaging-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/how-to-prepare-paper-trade-show-buyer-guide</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://youngsunpaper.com/blog/making-the-most-of-trade-show-paper-samples</loc>
-    <lastmod>2026-09-02</lastmod>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

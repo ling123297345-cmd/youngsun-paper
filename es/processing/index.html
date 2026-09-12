@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
     <title>Servicios de Procesamiento y Conversión de Papel | YOUNGSUN</title>
     <meta name="description" content="Corte, rebobinado, troquelado, laminado, impresión, gofrado y embalaje de exportación para papel y cartón a medida." />
     <link rel="canonical" href="https://youngsunpaper.com/es/processing/" />
@@ -97,9 +109,9 @@
       })(window, document);
     </script>
 
-    <script type="module" crossorigin src="/assets/index-Bje2uQQx.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/SEO-Bokhy9L8.js">
-    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-Qpf51eIC.js">
+    <script type="module" crossorigin src="/assets/index-SZA7V7kL.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/SEO-D43xQYwN.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-C_ZavHf1.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CYtSk84_.css">
       <meta property="og:locale:alternate" content="en_US" />
     <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/processing/" />
@@ -123,7 +135,7 @@
       <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
     </div>
 
-    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><h1>Servicios de Procesamiento y Conversión de Papel</h1><p>Corte, rebobinado, troquelado, laminado, impresión, gofrado y embalaje de exportación para papel y cartón a medida.</p></header><section><h2>Servicio para compradores internacionales</h2><p>YOUNGSUN PAPER ayuda a fabricantes, impresores, convertidores, distribuidores y marcas a seleccionar papel y carton de acuerdo con la aplicacion final. Revisamos estructura, superficie, GSM, espesor, medida, impresion, acabado, cantidad y requisitos de exportacion.</p><p>Nuestro equipo puede facilitar especificaciones, muestras, opciones de procesamiento, plazo de produccion, embalaje y coordinacion logistica. Las afirmaciones de certificacion y cumplimiento se confirman para el producto y el pedido concretos.</p></section><section><h2>Continuar la consulta</h2><ul><li><a href="/es/products">Productos de papel y carton</a></li><li><a href="/es/industries">Soluciones por industria</a></li><li><a href="/es/materials">Biblioteca de materiales</a></li><li><a href="/es/contact">Contactar con YOUNGSUN PAPER</a></li></ul></section></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a></p></footer></main></div></div>
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><h1>Servicios de Procesamiento y Conversión de Papel</h1><p>Corte, rebobinado, troquelado, laminado, impresión, gofrado y embalaje de exportación para papel y cartón a medida.</p></header><section><h2>Servicio para compradores internacionales</h2><p>YOUNGSUN PAPER ayuda a fabricantes, impresores, convertidores, distribuidores y marcas a seleccionar papel y carton de acuerdo con la aplicacion final. Revisamos estructura, superficie, GSM, espesor, medida, impresion, acabado, cantidad y requisitos de exportacion.</p><p>Nuestro equipo puede facilitar especificaciones, muestras, opciones de procesamiento, plazo de produccion, embalaje y coordinacion logistica. Las afirmaciones de certificacion y cumplimiento se confirman para el producto y el pedido concretos.</p></section><section><h2>Continuar la consulta</h2><ul><li><a href="/es/products">Productos de papel y carton</a></li><li><a href="/es/industries">Soluciones por industria</a></li><li><a href="/es/materials">Biblioteca de materiales</a></li><li><a href="/es/contact">Contactar con YOUNGSUN PAPER</a></li></ul></section></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
     <script>
       (function() {
         var p = sessionStorage.getItem("redirectPath");

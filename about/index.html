@@ -4,6 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
     <title>About YOUNGSUN PAPER | Paper Supplier Since 2002 | YOUNGSUN</title>
     <meta name="description" content="Learn about YOUNGSUN PAPER, a Dongguan paper manufacturer and exporter established in 2002, serving international packaging, printing, and converting buyers." />
     <link rel="canonical" href="https://youngsunpaper.com/about/" />
@@ -97,9 +109,9 @@
       })(window, document);
     </script>
 
-    <script type="module" crossorigin src="/assets/index-Bje2uQQx.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/SEO-Bokhy9L8.js">
-    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-Qpf51eIC.js">
+    <script type="module" crossorigin src="/assets/index-SZA7V7kL.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/SEO-D43xQYwN.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-C_ZavHf1.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CYtSk84_.css">
       <meta property="og:locale:alternate" content="es_ES" />
     <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/about/" />
@@ -123,7 +135,7 @@
       <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
     </div>
 
-    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><article><header><h1>About YOUNGSUN PAPER</h1><p>Learn about YOUNGSUN PAPER, a Dongguan paper manufacturer and exporter established in 2002, serving international packaging, printing, and converting buyers.</p></header><section><h2>Paper Supply from YOUNGSUN</h2><p>YOUNGSUN PAPER supports international packaging, printing and converting buyers with paper grade selection, specifications, samples, custom sizes, processing and export coordination.</p><p>Browse our packaging board, culture paper, fancy paper and food packaging paper ranges, or contact our team with your application, GSM, size, quantity and destination.</p></section><section><h2>Explore Related Resources</h2><ul><li><a href="/products">Paper and paperboard products</a></li><li><a href="/industries">Paper solutions by industry</a></li><li><a href="/materials">Materials and fiber guides</a></li><li><a href="/blog">Paper buying articles</a></li><li><a href="/contact">Contact YOUNGSUN PAPER</a></li></ul></section></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a></p></footer></main></div></div>
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><article><header><h1>About YOUNGSUN PAPER</h1><p>Learn about YOUNGSUN PAPER, a Dongguan paper manufacturer and exporter established in 2002, serving international packaging, printing, and converting buyers.</p></header><section><h2>Paper Supply from YOUNGSUN</h2><p>YOUNGSUN PAPER supports international packaging, printing and converting buyers with paper grade selection, specifications, samples, custom sizes, processing and export coordination.</p><p>Browse our packaging board, culture paper, fancy paper and food packaging paper ranges, or contact our team with your application, GSM, size, quantity and destination.</p></section><section><h2>Explore Related Resources</h2><ul><li><a href="/products">Paper and paperboard products</a></li><li><a href="/industries">Paper solutions by industry</a></li><li><a href="/materials">Materials and fiber guides</a></li><li><a href="/blog">Paper buying articles</a></li><li><a href="/contact">Contact YOUNGSUN PAPER</a></li></ul></section></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p></footer></main></div></div>
     <script>
       (function() {
         var p = sessionStorage.getItem("redirectPath");

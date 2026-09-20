@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- 背景渐变：深森林绿到更深 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#163825"/>
+      <stop offset="100%" stop-color="#0f2b1a"/>
+    </linearGradient>
+    <!-- 金色微光 -->
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.5">
+      <stop offset="0%" stop-color="rgba(200,146,63,0.12)"/>
+      <stop offset="100%" stop-color="rgba(200,146,63,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- 柔和光晕 -->
+  <rect width="512" height="512" rx="96" fill="url(#glow)"/>
+
+  <!-- 底部金色装饰线 -->
+  <rect x="156" y="380" width="200" height="4" rx="2" fill="#c8923f" opacity="0.7"/>
+
+  <!-- Y 字母 -->
+  <text x="256" y="215"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="200"
+        font-weight="bold"
+        fill="#ffffff"
+        letter-spacing="-2">Y</text>
+
+  <!-- P 字母 -->
+  <text x="256" y="365"
+        text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="170"
+        font-weight="bold"
+        fill="#c8923f"
+        letter-spacing="-2">P</text>
+</svg>

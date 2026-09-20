@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Frequently Asked Questions | YOUNGSUN</title>
+    <meta name="description" content="Find answers to common questions about paper sourcing, minimum orders, shipping, certifications, samples, and payment from YOUNGSUN PAPER." />
+    <link rel="canonical" href="https://youngsunpaper.com/faq/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Frequently Asked Questions | YOUNGSUN" />
+    <meta property="og:description" content="Find answers to common questions about paper sourcing, minimum orders, shipping, certifications, samples, and payment from YOUNGSUN PAPER." />
+    <meta property="og:url" content="https://youngsunpaper.com/faq/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/hero/youngsun-paper-manufacturer-hero-2026.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Frequently Asked Questions | YOUNGSUN" />
+    <meta name="twitter:description" content="Find answers to common questions about paper sourcing, minimum orders, shipping, certifications, samples, and payment from YOUNGSUN PAPER." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/hero/youngsun-paper-manufacturer-hero-2026.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        var clarityScript = d.createElement("script");
+        clarityScript.async = true;
+        clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+        d.head.appendChild(clarityScript);
+
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var gaScript = d.createElement("script");
+        gaScript.async = true;
+        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+        d.head.appendChild(gaScript);
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-BhKs4cKi.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/SEO-DH2WepXH.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-BDOXx7_e.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CYtSk84_.css">
+      <meta property="og:locale:alternate" content="es_ES" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/faq/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/faq/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/faq/" />
+  
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What paper products does YOUNGSUN PAPER supply?","acceptedAnswer":{"@type":"Answer","text":"YOUNGSUN PAPER supplies package board, culture paper, fancy paper and food packaging paper. The range includes grey board, black paper, folding box board, kraft paper, coated and uncoated printing paper, specialty surfaces, cup paper, greaseproof paper and other grades for packaging, printing and converting."}},{"@type":"Question","name":"Where is YOUNGSUN PAPER located?","acceptedAnswer":{"@type":"Answer","text":"YOUNGSUN PAPER is headquartered in Dalang Town, Dongguan City, Guangdong Province, China, with convenient access to Shenzhen export ports. Our team coordinates manufacturing, mill sourcing, processing, quality documents and export logistics from one point of contact."}},{"@type":"Question","name":"What certification and test documents are available?","acceptedAnswer":{"@type":"Answer","text":"Certification and test documents depend on the exact product grade and producing mill. FSC chain-of-custody documents, SGS test reports and food-contact compliance documents are available for applicable products and orders. Tell us the destination market and required standard so we can confirm the correct documents before you order."}},{"@type":"Question","name":"Can you customize paper size, weight or packaging?","acceptedAnswer":{"@type":"Answer","text":"Yes. Available options include custom sheet sizes, reel widths, grammage within the product range, slitting, sheeting, labeling and export packing. Embossing, printing, lamination and other converting services depend on the material and order. Final tolerances are confirmed in the quotation or approved specification."}},{"@type":"Question","name":"What is the minimum order quantity (MOQ)?","acceptedAnswer":{"@type":"Answer","text":"MOQ is not one fixed quantity for every product. It depends on the paper grade, GSM or thickness, size, producing mill, stock availability and packing requirements. Standard samples are separate from commercial order quantities. Send your specification and target quantity to receive the applicable MOQ before quotation."}},{"@type":"Question","name":"How do I request paper samples?","acceptedAnswer":{"@type":"Answer","text":"Send the product name, GSM or thickness, size and intended application to Alice@yspaper.com or WhatsApp +86 13713459656. YOUNGSUN covers the cost of standard samples; the customer pays the international courier charge. Availability and dispatch arrangements are confirmed before shipment."}},{"@type":"Question","name":"How are production and delivery times calculated?","acceptedAnswer":{"@type":"Answer","text":"Stock grades and made-to-order products follow different schedules. Each quotation separates product preparation or production time, loading arrangements and estimated ocean transit. The final schedule depends on the grade, specification, quantity, destination port and confirmed shipping space."}},{"@type":"Question","name":"Do you supply paper for food-contact applications?","acceptedAnswer":{"@type":"Answer","text":"Yes. The range includes cup paper, greaseproof paper, silicone coated paper and selected barrier-coated grades for food-service packaging. Suitability and compliance documents must be confirmed for the exact grade, food type, temperature, contact time and destination market before commercial use."}},{"@type":"Question","name":"Which international markets do you serve?","acceptedAnswer":{"@type":"Answer","text":"YOUNGSUN serves paper buyers across Asia, Europe, the Americas, Africa, the Middle East and Oceania. Export support can include commercial invoices, packing lists, bills of lading, certificates of origin and product-specific documents required by the agreed order and destination."}},{"@type":"Question","name":"Which paper mills are in your supply network?","acceptedAnswer":{"@type":"Answer","text":"Our mill supply network includes APP, Sun Paper, Nine Dragons, Liansheng and Huatai. Together with YOUNGSUN's manufacturing and processing capabilities, this network expands the available range of packaging board, printing paper and specialty paper for international sourcing projects."}},{"@type":"Question","name":"What payment methods are available?","acceptedAnswer":{"@type":"Answer","text":"T/T bank transfer is commonly used, and L/C may be available for qualifying orders. The deposit, balance schedule, beneficiary details and document requirements are stated on the official proforma invoice. Confirm the final terms with YOUNGSUN before making any payment."}},{"@type":"Question","name":"Can you quote FOB or CIF prices?","acceptedAnswer":{"@type":"Answer","text":"FOB and CIF quotations can be prepared according to the product and destination. Send the loading port preference, destination port, quantity and packing requirements. The quotation will clearly state the Incoterm, included charges, validity period and estimated schedule."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/faq/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://youngsunpaper.com/"},{"@type":"ListItem","position":2,"name":"Frequently Asked Questions","item":"https://youngsunpaper.com/faq/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><article><header><p>FAQ</p><h1>Frequently Asked Questions About Paper Sourcing</h1><p>Clear answers for buyers about paper products, MOQ, samples, documentation, lead times, payment and export sourcing.</p></header><section><h2>What paper products does YOUNGSUN PAPER supply?</h2><p>YOUNGSUN PAPER supplies package board, culture paper, fancy paper and food packaging paper. The range includes grey board, black paper, folding box board, kraft paper, coated and uncoated printing paper, specialty surfaces, cup paper, greaseproof paper and other grades for packaging, printing and converting.</p></section><section><h2>Where is YOUNGSUN PAPER located?</h2><p>YOUNGSUN PAPER is headquartered in Dalang Town, Dongguan City, Guangdong Province, China, with convenient access to Shenzhen export ports. Our team coordinates manufacturing, mill sourcing, processing, quality documents and export logistics from one point of contact.</p></section><section><h2>What certification and test documents are available?</h2><p>Certification and test documents depend on the exact product grade and producing mill. FSC chain-of-custody documents, SGS test reports and food-contact compliance documents are available for applicable products and orders. Tell us the destination market and required standard so we can confirm the correct documents before you order.</p></section><section><h2>Can you customize paper size, weight or packaging?</h2><p>Yes. Available options include custom sheet sizes, reel widths, grammage within the product range, slitting, sheeting, labeling and export packing. Embossing, printing, lamination and other converting services depend on the material and order. Final tolerances are confirmed in the quotation or approved specification.</p></section><section><h2>What is the minimum order quantity (MOQ)?</h2><p>MOQ is not one fixed quantity for every product. It depends on the paper grade, GSM or thickness, size, producing mill, stock availability and packing requirements. Standard samples are separate from commercial order quantities. Send your specification and target quantity to receive the applicable MOQ before quotation.</p></section><section><h2>How do I request paper samples?</h2><p>Send the product name, GSM or thickness, size and intended application to Alice@yspaper.com or WhatsApp +86 13713459656. YOUNGSUN covers the cost of standard samples; the customer pays the international courier charge. Availability and dispatch arrangements are confirmed before shipment.</p></section><section><h2>How are production and delivery times calculated?</h2><p>Stock grades and made-to-order products follow different schedules. Each quotation separates product preparation or production time, loading arrangements and estimated ocean transit. The final schedule depends on the grade, specification, quantity, destination port and confirmed shipping space.</p></section><section><h2>Do you supply paper for food-contact applications?</h2><p>Yes. The range includes cup paper, greaseproof paper, silicone coated paper and selected barrier-coated grades for food-service packaging. Suitability and compliance documents must be confirmed for the exact grade, food type, temperature, contact time and destination market before commercial use.</p></section><section><h2>Which international markets do you serve?</h2><p>YOUNGSUN serves paper buyers across Asia, Europe, the Americas, Africa, the Middle East and Oceania. Export support can include commercial invoices, packing lists, bills of lading, certificates of origin and product-specific documents required by the agreed order and destination.</p></section><section><h2>Which paper mills are in your supply network?</h2><p>Our mill supply network includes APP, Sun Paper, Nine Dragons, Liansheng and Huatai. Together with YOUNGSUN's manufacturing and processing capabilities, this network expands the available range of packaging board, printing paper and specialty paper for international sourcing projects.</p></section><section><h2>What payment methods are available?</h2><p>T/T bank transfer is commonly used, and L/C may be available for qualifying orders. The deposit, balance schedule, beneficiary details and document requirements are stated on the official proforma invoice. Confirm the final terms with YOUNGSUN before making any payment.</p></section><section><h2>Can you quote FOB or CIF prices?</h2><p>FOB and CIF quotations can be prepared according to the product and destination. Send the loading port preference, destination port, quantity and packing requirements. The quotation will clearly state the Incoterm, included charges, validity period and estimated schedule.</p></section><footer><h2>Need an Answer for Your Project?</h2><p><a href="/contact">Contact YOUNGSUN PAPER</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

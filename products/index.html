@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Paper &amp; Board Products | YOUNGSUN</title>
+    <meta name="description" content="Explore 31 paper and board grades across package board, culture paper, fancy paper and food packaging paper. Compare specifications and request samples." />
+    <link rel="canonical" href="https://youngsunpaper.com/products/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Paper &amp; Board Products | YOUNGSUN" />
+    <meta property="og:description" content="Explore 31 paper and board grades across package board, culture paper, fancy paper and food packaging paper. Compare specifications and request samples." />
+    <meta property="og:url" content="https://youngsunpaper.com/products/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/hero/youngsun-paper-manufacturer-hero-2026.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Paper &amp; Board Products | YOUNGSUN" />
+    <meta name="twitter:description" content="Explore 31 paper and board grades across package board, culture paper, fancy paper and food packaging paper. Compare specifications and request samples." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/hero/youngsun-paper-manufacturer-hero-2026.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        var clarityScript = d.createElement("script");
+        clarityScript.async = true;
+        clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+        d.head.appendChild(clarityScript);
+
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var gaScript = d.createElement("script");
+        gaScript.async = true;
+        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+        d.head.appendChild(gaScript);
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-BhKs4cKi.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/SEO-DH2WepXH.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-BDOXx7_e.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-CYtSk84_.css">
+      <meta property="og:locale:alternate" content="es_ES" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/products/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/products/" />
+  
+    <script id="collection-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://youngsunpaper.com/products/#collection","name":"Paper & Board Products","description":"Explore 31 paper and board grades across package board, culture paper, fancy paper and food packaging paper. Compare specifications and request samples.","url":"https://youngsunpaper.com/products/","inLanguage":"en","mainEntity":{"@type":"ItemList","numberOfItems":36,"itemListElement":[{"@type":"ListItem","position":1,"name":"Grey Board","url":"https://youngsunpaper.com/products/grey-board/","image":"https://youngsunpaper.com/images/products/package-board/grey-board-main.webp"},{"@type":"ListItem","position":2,"name":"Black Paper","url":"https://youngsunpaper.com/products/black-paper/","image":"https://youngsunpaper.com/images/products/package-board/black-paper-main.webp"},{"@type":"ListItem","position":3,"name":"Color Card Paper","url":"https://youngsunpaper.com/products/color-card-paper/","image":"https://youngsunpaper.com/images/products/package-board/color-card-paper-main.webp"},{"@type":"ListItem","position":4,"name":"Folding Box Board","url":"https://youngsunpaper.com/products/folding-box-board/","image":"https://youngsunpaper.com/images/products/package-board/folding-box-board-main.webp"},{"@type":"ListItem","position":5,"name":"C2S Art Board Card","url":"https://youngsunpaper.com/products/c2s-art-board/","image":"https://youngsunpaper.com/images/products/package-board/c2s-art-board-main.webp"},{"@type":"ListItem","position":6,"name":"Kraft Paper","url":"https://youngsunpaper.com/products/kraft-paper/","image":"https://youngsunpaper.com/images/products/package-board/kraft-paper-main.webp"},{"@type":"ListItem","position":7,"name":"Duplex Board","url":"https://youngsunpaper.com/products/duplex-board/","image":"https://youngsunpaper.com/images/products/package-board/duplex-board-main.webp"},{"@type":"ListItem","position":8,"name":"PE Coated Paper","url":"https://youngsunpaper.com/products/pe-coated-paper/","image":"https://youngsunpaper.com/images/products/package-board/pe-coated-paper-main.webp"},{"@type":"ListItem","position":9,"name":"CKB (Coated Kraft Back)","url":"https://youngsunpaper.com/products/ckb/","image":"https://youngsunpaper.com/images/products/package-board/ckb-main.webp"},{"@type":"ListItem","position":10,"name":"Woodfree Paper","url":"https://youngsunpaper.com/products/woodfree-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/woodfree-paper-main.webp"},{"@type":"ListItem","position":11,"name":"Color Offset Paper","url":"https://youngsunpaper.com/products/color-offset-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/color-offset-paper-main.webp"},{"@type":"ListItem","position":12,"name":"LWC Paper (Lightweight Coated)","url":"https://youngsunpaper.com/products/lwc-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/lwc-paper-main.webp"},{"@type":"ListItem","position":13,"name":"NCR Paper (Carbonless Paper)","url":"https://youngsunpaper.com/products/ncr-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/ncr-paper-main.webp"},{"@type":"ListItem","position":14,"name":"Multi-Format Copy Paper","url":"https://youngsunpaper.com/products/copy-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/copy-paper-main.webp"},{"@type":"ListItem","position":15,"name":"Newsprint","url":"https://youngsunpaper.com/products/newsprint/","image":"https://youngsunpaper.com/images/products/culture-paper/newsprint-main.webp"},{"@type":"ListItem","position":16,"name":"A4 Copy Paper","url":"https://youngsunpaper.com/products/a4-copy-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/a4-copy-paper-main.webp"},{"@type":"ListItem","position":17,"name":"A4 Thermal Paper","url":"https://youngsunpaper.com/products/a4-thermal-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/a4-thermal-paper-main.webp"},{"@type":"ListItem","position":18,"name":"Thermal Paper Roll","url":"https://youngsunpaper.com/products/thermal-paper-roll/","image":"https://youngsunpaper.com/images/products/culture-paper/thermal-paper-roll-main.webp"},{"@type":"ListItem","position":19,"name":"Soft Touch Paper","url":"https://youngsunpaper.com/products/soft-touch-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/soft-touch-paper-main.webp"},{"@type":"ListItem","position":20,"name":"Leather Paper","url":"https://youngsunpaper.com/products/leather-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/leather-paper-main.webp"},{"@type":"ListItem","position":21,"name":"Pearlescent Paper","url":"https://youngsunpaper.com/products/pearlescent-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/pearlescent-paper-main.webp"},{"@type":"ListItem","position":22,"name":"Embossed Paper","url":"https://youngsunpaper.com/products/embossed-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/embossed-paper-main.webp"},{"@type":"ListItem","position":23,"name":"Gold & Silver Card Paper","url":"https://youngsunpaper.com/products/gold-silver-card/","image":"https://youngsunpaper.com/images/products/fancy-paper/gold-silver-card-main.webp"},{"@type":"ListItem","position":24,"name":"Label Paper","url":"https://youngsunpaper.com/products/label-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/label-paper-main.webp"},{"@type":"ListItem","position":25,"name":"Color Tissue Paper","url":"https://youngsunpaper.com/products/color-tissue-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/color-tissue-paper-main.webp"},{"@type":"ListItem","position":26,"name":"Tracing Paper","url":"https://youngsunpaper.com/products/tracing-paper/","image":"https://youngsunpaper.com/images/products/culture-paper/tracing-paper-main.webp"},{"@type":"ListItem","position":27,"name":"Cup Paper","url":"https://youngsunpaper.com/products/cup-paper/","image":"https://youngsunpaper.com/images/products/food-packaging/cup-paper-main.webp"},{"@type":"ListItem","position":28,"name":"Greaseproof Paper","url":"https://youngsunpaper.com/products/greaseproof-paper/","image":"https://youngsunpaper.com/images/products/food-packaging/greaseproof-paper-main.webp"},{"@type":"ListItem","position":29,"name":"MG White Kraft Paper","url":"https://youngsunpaper.com/products/mg-paper/","image":"https://youngsunpaper.com/images/products/food-packaging/mg-paper-main.webp"},{"@type":"ListItem","position":30,"name":"Silicone Coated Paper","url":"https://youngsunpaper.com/products/silicone-coated-paper/","image":"https://youngsunpaper.com/images/products/food-packaging/silicone-coated-paper-main.webp"},{"@type":"ListItem","position":31,"name":"Absorbent Paper","url":"https://youngsunpaper.com/products/absorbent-paper/","image":"https://youngsunpaper.com/images/products/fancy-paper/absorbent-paper-main.webp"},{"@type":"ListItem","position":32,"name":"Color Laminated Grey Board","url":"https://youngsunpaper.com/products/color-laminated-grey-board/","image":"https://youngsunpaper.com/images/products/package-board/laminated-detail/color-laminated-grey-board-main.webp"},{"@type":"ListItem","position":33,"name":"Woodgrain Laminated Grey Board","url":"https://youngsunpaper.com/products/woodgrain-laminated-grey-board/","image":"https://youngsunpaper.com/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-main.webp"},{"@type":"ListItem","position":34,"name":"Blue Core Puzzle Board","url":"https://youngsunpaper.com/products/blue-core-puzzle-board/","image":"https://youngsunpaper.com/images/products/package-board/laminated-detail/blue-core-puzzle-board-main.webp"},{"@type":"ListItem","position":35,"name":"Food-Grade Metallized Board","url":"https://youngsunpaper.com/products/metallized-laminated-grey-board/","image":"https://youngsunpaper.com/images/products/food-packaging/metallized-board/metallized-laminated-grey-board-main.webp"},{"@type":"ListItem","position":36,"name":"Foam Laminated Grey Board","url":"https://youngsunpaper.com/products/foam-laminated-grey-board/","image":"https://youngsunpaper.com/images/products/package-board/laminated-detail/foam-laminated-grey-board-main.webp"}]}}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/products/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://youngsunpaper.com/"},{"@type":"ListItem","position":2,"name":"Products","item":"https://youngsunpaper.com/products/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><header><h1>Paper &amp; Board Products</h1><p>Compare 36 paper and paperboard grades for packaging, printing, luxury presentation, food service and industrial converting.</p></header><section><h2><a href="/products/package-board">Package Board</a></h2><p>Your comprehensive source for durable structural packaging. Our extensive range covers Grey Board, Black Cardboard, Folding Box Board (FBB), C2S Art Board, Kraft Paper, and Duplex Board to meet all your rigid box and container needs.</p><ul><li><a href="/products/grey-board">Grey Board</a> - FSC-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging.</li><li><a href="/products/black-paper">Black Paper</a> - Deep-black paper and cardboard for luxury packaging, hang tags, stationery, printing and creative converting.</li><li><a href="/products/color-card-paper">Color Card Paper</a> - Colored card paper for packaging, hang tags, stationery, invitations and creative printing.</li><li><a href="/products/folding-box-board">Folding Box Board</a> - C1S ivory board with a smooth coated surface, high brightness and reliable folding performance for printed cartons.</li><li><a href="/products/c2s-art-board">C2S Art Board Card</a> - Coated-two-sides art board with bright white surface and smooth finish — for premium print and high-end card applications.</li><li><a href="/products/kraft-paper">Kraft Paper</a> - Natural kraft paper for sacks, bags, wrapping, industrial packaging and paper converting.</li><li><a href="/products/duplex-board">Duplex Board</a> - Coated white-top duplex board with grey back for economical folding cartons and printed packaging.</li><li><a href="/products/pe-coated-paper">PE Coated Paper</a> - Polyethylene-laminated paper and board for moisture barrier, heat-seal, and liquid-resistant packaging.</li><li><a href="/products/ckb">CKB (Coated Kraft Back)</a> - High-strength coated kraft back board for beverage, food, frozen, retail and industrial folding cartons.</li><li><a href="/products/color-laminated-grey-board">Color Laminated Grey Board</a> - Paper-faced grey board for gift boxes, book covers and stationery.</li><li><a href="/products/woodgrain-laminated-grey-board">Woodgrain Laminated Grey Board</a> - Wood-effect paper facing laminated to grey board for boxes and decorative applications.</li><li><a href="/products/blue-core-puzzle-board">Blue Core Puzzle Board</a> - Blue core paperboard for jigsaw puzzle production.</li><li><a href="/products/foam-laminated-grey-board">Foam Laminated Grey Board</a> - Cushioned grey board for certificate folders and padded hardcover book covers.</li></ul></section><section><h2><a href="/products/culture-paper">Culture Paper</a></h2><p>We supply Woodfree Paper, Color Offset Paper, LWC Paper, and NCR Paper, ensuring crisp, consistent results for your brochures, books, and professional stationery.</p><ul><li><a href="/products/woodfree-paper">Woodfree Paper</a> - Uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing.</li><li><a href="/products/color-offset-paper">Color Offset Paper</a> - Lightweight colored offset paper for office forms, inserts, publishing, stationery and promotional printing.</li><li><a href="/products/lwc-paper">LWC Paper (Lightweight Coated)</a> - Lightweight coated paper for magazines, catalogs, inserts, manuals and high-volume commercial printing.</li><li><a href="/products/ncr-paper">NCR Paper (Carbonless Paper)</a> - Self-copying carbonless paper for forms, invoices, and receipts — no carbon sheet needed, clean and smudge-free.</li><li><a href="/products/copy-paper">Multi-Format Copy Paper</a> - A multi-format office paper program covering A3, A4, A5, B-series and selected US sizes for distributors, institutions and private-label buyers.</li><li><a href="/products/newsprint">Newsprint</a> - Cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications.</li><li><a href="/products/a4-copy-paper">A4 Copy Paper</a> - A dedicated 210×297 mm A4 office copy paper range for buyers who need consistent bulk and export-ready packing.</li><li><a href="/products/a4-thermal-paper">A4 Thermal Paper</a> - A4-sized thermal paper for portable and mobile printing — no ink, no toner, just heat. Ideal for on-the-go professionals.</li><li><a href="/products/thermal-paper-roll">Thermal Paper Roll</a> - Small-format thermal paper rolls for POS terminals, receipt printers, and instant photo printers — crisp images, reliable performance.</li><li><a href="/products/tracing-paper">Tracing Paper</a> - Translucent tracing paper for luxury packaging, printing, drawing, invitations and decorative applications.</li></ul></section><section><h2><a href="/products/fancy-paper">Fancy Paper</a></h2><p>Explore our specialized collection, including Soft Touch, Leather, Pearlescent, and Embossed papers, as well as dedicated Label papers for distinctive, premium design projects.</p><ul><li><a href="/products/soft-touch-paper">Soft Touch Paper</a> - Velvet-smooth tactile coated paper — the sensation of luxury that makes people stop and touch.</li><li><a href="/products/leather-paper">Leather Paper</a> - Paper that looks and feels like genuine leather — animal-free, durable, premium.</li><li><a href="/products/pearlescent-paper">Pearlescent Paper</a> - Light-reflecting iridescent paper with a pearl-like shimmer — elegance that moves with the light.</li><li><a href="/products/embossed-paper">Embossed Paper</a> - Three-dimensional textured paper — raised patterns that turn packaging into a tactile brand experience.</li><li><a href="/products/gold-silver-card">Gold &amp; Silver Card Paper</a> - Brilliant metallic gold and silver card paper with mirror-like reflective surface — for luxury packaging, gift boxes, greeting cards, and high-end brand presentation.</li><li><a href="/products/label-paper">Label Paper</a> - Premium label and tag face stock — smooth, printable, and engineered for high-speed converting and adhesive coating.</li><li><a href="/products/color-tissue-paper">Color Tissue Paper</a> - Vibrant translucent tissue in a rainbow palette — the finishing touch that transforms packaging into an experience.</li><li><a href="/products/absorbent-paper">Absorbent Paper</a> - High-performance absorbent cotton paper for perfume test strips, beverage coasters, and creative packaging — fast absorption, natural texture.</li></ul></section><section><h2><a href="/products/food-packaging">Food Packaging Paper</a></h2><p>Our selection features Cup Paper, Greaseproof Paper, MG White Kraft Paper, and Silicone Coated Paper for food wrapping, bags, beverage packaging, moisture resistance, and reliable food safety.</p><ul><li><a href="/products/cup-paper">Cup Paper</a> - Food-grade cupstock base board for paper cups, food containers and PE-coated packaging.</li><li><a href="/products/greaseproof-paper">Greaseproof Paper</a> - White and natural greaseproof paper for bakery, fast food, takeaway and food wrapping applications.</li><li><a href="/products/mg-paper">MG White Kraft Paper</a> - Premium machine-glazed white kraft paper with a glossy printable face and glue-ready reverse for food wrapping, bags and flexible packaging.</li><li><a href="/products/silicone-coated-paper">Silicone Coated Paper</a> - Premium release liner and non-stick baking paper — silicone-coated for clean release every time.</li><li><a href="/products/metallized-laminated-grey-board">Food-Grade Metallized Board</a> - Gold, silver and white laminated board for cake bases, desserts and salmon packaging.</li></ul></section><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

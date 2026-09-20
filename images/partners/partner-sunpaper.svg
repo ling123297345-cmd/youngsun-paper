@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 200 80">
+  <rect width="200" height="80" rx="8" fill="#E67E22"/>
+  <text x="100" y="36" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18px" font-weight="700" fill="#FFFFFF">SUN PAPER</text>
+  <text x="100" y="60" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13px" font-weight="600" fill="#FDEBD0" letter-spacing="1">太阳纸业</text>
+</svg>

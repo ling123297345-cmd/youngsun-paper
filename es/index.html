@@ -77,9 +77,6 @@
 
     <!-- ===== Favicon (standard) ===== -->
     <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
 
     <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
 
@@ -92,27 +89,48 @@
         w.clarity = w.clarity || function () {
           (w.clarity.q = w.clarity.q || []).push(arguments);
         };
-        var clarityScript = d.createElement("script");
-        clarityScript.async = true;
-        clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
-        d.head.appendChild(clarityScript);
-
         w.dataLayer = w.dataLayer || [];
         w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
         w.gtag("js", new Date());
         w.gtag("config", "G-ZE8FN6W0MQ");
 
-        var gaScript = d.createElement("script");
-        gaScript.async = true;
-        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
-        d.head.appendChild(gaScript);
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
       })(window, document);
     </script>
 
-    <script type="module" crossorigin src="/assets/index-BhKs4cKi.js"></script>
+    <script type="module" crossorigin src="/assets/index-D15Xcnkm.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/SEO-DH2WepXH.js">
     <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-BDOXx7_e.js">
     <link rel="stylesheet" crossorigin href="/assets/index-CYtSk84_.css">
+    <link rel="preload" as="image" href="/images/hero/youngsun-paper-manufacturer-hero-2026.webp" imagesrcset="/images/hero/youngsun-paper-manufacturer-hero-2026-960.webp 960w, /images/hero/youngsun-paper-manufacturer-hero-2026-1440.webp 1440w, /images/hero/youngsun-paper-manufacturer-hero-2026.webp 1920w" imagesizes="100vw" type="image/webp" fetchpriority="high" />
       <meta property="og:locale:alternate" content="en_US" />
     <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/" />
     <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/" />

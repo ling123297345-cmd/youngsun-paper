@@ -22,7 +22,7 @@ export const industryChannels = [
         materials: [
           { name: "Duplex Board", url: "/products/duplex-board", desc: { en: "Coated white-top, grey back — the economical choice for retail cartons.", es: "Superficie blanca estucada, reverso gris — la opción económica para cajas minoristas." } },
           { name: "Folding Box Board (FBB)", url: "/products/folding-box-board", desc: { en: "Virgin-fibre, excellent print surface and fold performance for premium cartons.", es: "Fibra virgen, excelente superficie de impresión y rendimiento de plegado para cajas premium." } },
-          { name: "C2S Art Board", url: "/products/art-paper", desc: { en: "Double-side coated for high-resolution printing on both sides.", es: "Estucado doble cara para impresión de alta resolución en ambos lados." } },
+          { name: "C2S Art Board", url: "/products/c2s-art-board", desc: { en: "Double-side coated for high-resolution printing on both sides.", es: "Estucado doble cara para impresión de alta resolución en ambos lados." } },
         ]
       },
       {
@@ -52,7 +52,7 @@ export const industryChannels = [
         image: "20260803_152623_011.jpg",
         desc: { en: "Point-of-sale displays, shelf talkers, and promotional cards that need to catch the eye.", es: "Exhibidores de punto de venta, tarjetas de estantería y tarjetas promocionales que necesitan llamar la atención." },
         materials: [
-          { name: "C2S Art Board", url: "/products/art-paper", desc: { en: "Premium print surface with high color saturation for retail displays.", es: "Superficie de impresión premium con alta saturación de color para exhibidores minoristas." } },
+          { name: "C2S Art Board", url: "/products/c2s-art-board", desc: { en: "Premium print surface with high color saturation for retail displays.", es: "Superficie de impresión premium con alta saturación de color para exhibidores minoristas." } },
           { name: "Color Card Paper", url: "/products/color-card-paper", desc: { en: "Colored base eliminates need for full-surface ink coverage.", es: "Base coloreada elimina la necesidad de cobertura total de tinta." } },
           { name: "Gold & Silver Card", url: "/products/gold-silver-card", desc: { en: "Metallic brilliance for maximum shelf impact.", es: "Brillo metálico para máximo impacto en estantería." } },
         ]
@@ -65,8 +65,8 @@ export const industryChannels = [
     icon: "🍽️",
     heroImage: "/images/industries/industry-food.jpg",
     tagline: {
-      en: "Food-safe papers for cups, wraps, bags, and takeaway — certified, compliant, and PFAS-free.",
-      es: "Papeles seguros para alimentos para vasos, envolturas, bolsas y comida para llevar — certificados y libres de PFAS."
+      en: "Food-packaging papers for cups, wraps, bags, and takeaway, with food-contact documentation confirmed by grade and destination market.",
+      es: "Papeles para envases alimentarios, vasos, envolturas y bolsas, con documentación de contacto alimentario confirmada según el grado y el mercado de destino."
     },
     applications: [
       {
@@ -83,7 +83,7 @@ export const industryChannels = [
         icon: "🍔",
         desc: { en: "Grease-resistant wraps for burgers, sandwiches, and fried foods.", es: "Envolturas resistentes a la grasa para hamburguesas, sándwiches y frituras." },
         materials: [
-          { name: "Greaseproof Paper", url: "/products/greaseproof-paper", desc: { en: "PFAS-free, KIT 6+, oil barrier through mechanical fiber densification.", es: "Libre de PFAS, KIT 6+, barrera de aceite por densificación mecánica de fibra." } },
+          { name: "Greaseproof Paper", url: "/products/greaseproof-paper", desc: { en: "Oil-resistant grades are available; PFAS status and KIT performance are confirmed against the selected specification.", es: "Hay grados resistentes al aceite; el estado de PFAS y el rendimiento KIT se confirman según la especificación seleccionada." } },
           { name: "Kraft Paper", url: "/products/kraft-paper", desc: { en: "Natural look with good strength — popular for eco-branded QSR wraps.", es: "Aspecto natural con buena resistencia — popular para envolturas QSR de marca ecológica." } },
         ]
       },
@@ -175,7 +175,7 @@ export const industryChannels = [
         desc: { en: "Case-bound books — rigid cover structure with printed or cloth-wrapped surface.", es: "Libros encuadernados — estructura de cubierta rígida con superficie impresa o forrada en tela." },
         materials: [
           { name: "Grey Board", url: "/products/grey-board", desc: { en: "Structural board for hardcover cases — 1.5mm to 3.0mm thickness.", es: "Cartón estructural para tapas duras — espesor de 1.5mm a 3.0mm." } },
-          { name: "C2S Art Paper", url: "/products/art-paper", desc: { en: "Premium coated cover stock for dust jackets and case wraps.", es: "Papel estucado premium para sobrecubiertas y forros de tapa." } },
+          { name: "C2S Art Paper", url: "/products/c2s-art-board", desc: { en: "Premium coated cover stock for dust jackets and case wraps.", es: "Papel estucado premium para sobrecubiertas y forros de tapa." } },
           { name: "Embossed Paper", url: "/products/embossed-paper", desc: { en: "Textured cover material — linen, canvas, or custom patterns.", es: "Material de cubierta texturizado — lino, lienzo o patrones personalizados." } },
         ]
       },
@@ -193,7 +193,7 @@ export const industryChannels = [
         icon: "📰",
         desc: { en: "High-volume printed publications — product catalogs, lookbooks, and brand magazines.", es: "Publicaciones impresas de alto volumen — catálogos de productos, lookbooks y revistas de marca." },
         materials: [
-          { name: "C2S Art Paper", url: "/products/art-paper", desc: { en: "Gloss or matt coated for premium image reproduction.", es: "Estucado brillo o mate para reproducción de imagen premium." } },
+          { name: "C2S Art Paper", url: "/products/c2s-art-board", desc: { en: "Gloss or matt coated for premium image reproduction.", es: "Estucado brillo o mate para reproducción de imagen premium." } },
           { name: "LWC Paper", url: "/products/lwc-paper", desc: { en: "Lightweight coated for high-page-count publications — reduces postal weight.", es: "Estucado ligero para publicaciones de alto número de páginas — reduce peso postal." } },
         ]
       },
@@ -270,7 +270,7 @@ export const industryChannels = [
     heroImage: "/images/industries/industry-luxury.jpg",
     tagline: {
       en: "The finishing touch — wrapping papers, gift bags, greeting cards, and decorative liners that complete the unboxing experience.",
-      es: "El toque final — papeles de envolver, bolsas de regalo, tarjetas de felicitación y forros decorativos que completan la experiencia de unboxing."
+      es: "El toque final: papeles de envolver, bolsas de regalo, tarjetas de felicitación y forros decorativos que completan la experiencia de apertura del paquete."
     },
     applications: [
       {
@@ -304,7 +304,7 @@ export const industryChannels = [
       {
         name: { en: "Decorative Liner", es: "Forro Decorativo" },
         icon: "✨",
-        desc: { en: "Tissue liners, box inserts, and decorative layers that elevate the unboxing moment.", es: "Forros de tissue, insertos de caja y capas decorativas que elevan el momento de unboxing." },
+        desc: { en: "Tissue liners, box inserts, and decorative layers that elevate the unboxing moment.", es: "Forros de papel seda, insertos de caja y capas decorativas que realzan el momento de apertura del paquete." },
         materials: [
           { name: "Tracing Paper", url: "/products/tracing-paper", desc: { en: "Translucent overlay for layered packaging reveals.", es: "Superposición translúcida para revelaciones de embalaje en capas." } },
           { name: "Pearlescent Paper", url: "/products/pearlescent-paper", desc: { en: "Shimmering liner paper that catches light when the box is opened.", es: "Papel de forro brillante que capta la luz cuando se abre la caja." } },

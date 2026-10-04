@@ -2,8 +2,8 @@
 // YOUNGSUN PAPER — Quality Assurance Page
 // ============================================================
 import { Link } from "react-router-dom";
+import { FileCheck2, FlaskConical, TreePine, UtensilsCrossed } from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { siteConfig } from "../data.js";
 import { PageMeta } from "../SEO.jsx";
 
 export default function Quality() {
@@ -11,10 +11,10 @@ export default function Quality() {
   const isEs = lang === "es";
 
   const certifications = [
-    { name: "FSC®", desc: { en: "Forest Stewardship Council — chain of custody certification for responsible forestry.", es: "Forest Stewardship Council — certificación de cadena de custodia para silvicultura responsable." }, icon: "🌳" },
-    { name: "SGS", desc: { en: "Independent testing, inspection, and certification — product quality and safety verified.", es: "Pruebas, inspección y certificación independientes — calidad y seguridad del producto verificadas." }, icon: "🔬" },
-    { name: "ISO 14001", desc: { en: "Environmental management system — minimizing environmental impact across operations.", es: "Sistema de gestión ambiental — minimizando el impacto ambiental en todas las operaciones." }, icon: "🌍" },
-    { name: "FDA", desc: { en: "US Food and Drug Administration compliance for food-contact paper and board products.", es: "Cumplimiento de la Administración de Alimentos y Medicamentos de EE.UU. para productos de papel en contacto con alimentos." }, icon: "🍽️" },
+    { name: { en: "FSC® Documentation", es: "Documentación FSC®" }, desc: { en: "FSC chain-of-custody claims and supporting documents are confirmed for the selected grade, mill, and order before purchase.", es: "Las declaraciones FSC y sus documentos se confirman para el grado, molino y pedido seleccionados antes de la compra." }, icon: TreePine },
+    { name: { en: "Independent Testing", es: "Ensayos Independientes" }, desc: { en: "Available third-party reports and inspection options are matched to the product specification and destination-market requirements.", es: "Los informes de terceros y opciones de inspección se adaptan a la especificación y al mercado de destino." }, icon: FlaskConical },
+    { name: { en: "Mill & Supplier Records", es: "Documentos de Fábrica y Proveedor" }, desc: { en: "Management-system certificates and mill documents are supplied where applicable, with the issuing entity and validity checked.", es: "Los certificados de gestión y documentos del molino se entregan cuando aplican, verificando emisor y vigencia." }, icon: FileCheck2 },
+    { name: { en: "Food-Contact Support", es: "Soporte para Contacto Alimentario" }, desc: { en: "For food packaging grades, we confirm the available declaration or test report against the intended use and destination market.", es: "Para grados alimentarios, confirmamos la declaración o informe disponible según el uso y mercado de destino." }, icon: UtensilsCrossed },
   ];
 
   const inspectionPoints = [
@@ -22,7 +22,7 @@ export default function Quality() {
     { title: { en: "In-Process Quality Checks", es: "Controles de Calidad en Proceso" }, desc: { en: "Continuous monitoring during slitting, sheeting, and converting — width tolerance, cut quality, roll tension, and surface integrity.", es: "Monitoreo continuo durante corte y conversión — tolerancia de ancho, calidad de corte, tensión de bobina e integridad superficial." } },
     { title: { en: "Final Inspection", es: "Inspección Final" }, desc: { en: "100% visual inspection of finished sheets and reels. Random sampling for laboratory testing against agreed specifications.", es: "Inspección visual 100% de hojas y bobinas terminadas. Muestreo aleatorio para pruebas de laboratorio contra especificaciones acordadas." } },
     { title: { en: "Pre-Shipment Inspection", es: "Inspección Pre-Embarque" }, desc: { en: "Final quality gate before container loading. Quantity verification, packing integrity, moisture protection, and documentation completeness.", es: "Control de calidad final antes de carga del contenedor. Verificación de cantidad, integridad de embalaje, protección contra humedad y documentación completa." } },
-    { title: { en: "Third-Party Testing", es: "Pruebas de Terceros" }, desc: { en: "Independent laboratory testing available upon request for FSC chain of custody, SGS product certification, and food-contact compliance.", es: "Pruebas de laboratorio independientes disponibles bajo solicitud para cadena de custodia FSC, certificación de producto SGS y cumplimiento de contacto alimentario." } },
+    { title: { en: "Third-Party Testing", es: "Pruebas de Terceros" }, desc: { en: "Independent inspection or laboratory testing can be discussed when the buyer's specification or destination market requires additional verification.", es: "Se puede acordar inspección o ensayo independiente cuando la especificación o el mercado de destino requieran verificación adicional." } },
   ];
 
   const equipment = [
@@ -40,7 +40,7 @@ export default function Quality() {
 
   return (
     <>
-      <PageMeta title="Quality Assurance — Certified Paper & Board Supply" description="FSC, SGS, ISO 14001, and FDA certified quality management. 5-stage inspection process from raw material to pre-shipment. Serving 60+ countries." path="/quality" />
+      <PageMeta title="Paper Quality Assurance & Certifications" description="Review YOUNGSUN PAPER quality controls, inspection procedures, certifications, testing support, and export documentation for paper orders." path="/quality" />
 
       {/* Hero */}
       <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 140, paddingBottom: 80, textAlign: "center" }}>
@@ -63,16 +63,19 @@ export default function Quality() {
       <section className="section" style={{ background: "#fff" }}>
         <div className="container" style={{ maxWidth: 1000 }}>
           <h2 style={{ fontSize: 24, color: "var(--forest)", marginBottom: 24, textAlign: "center" }}>
-            {isEs ? "Certificaciones" : "Certifications"}
+            {isEs ? "Documentos y Verificación" : "Documents & Verification"}
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 20 }}>
-            {certifications.map((cert) => (
-              <div key={cert.name} style={{ background: "var(--paper)", borderRadius: 14, padding: "28px 24px", textAlign: "center" }}>
-                <div style={{ fontSize: 40, marginBottom: 12 }}>{cert.icon}</div>
-                <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--forest)", marginBottom: 8 }}>{cert.name}</h3>
+            {certifications.map((cert) => {
+              const Icon = cert.icon;
+              return (
+              <div key={cert.name.en} style={{ background: "var(--paper)", borderRadius: 8, padding: "28px 24px", textAlign: "center", border: "1px solid rgba(20,54,34,0.08)" }}>
+                <Icon size={34} strokeWidth={1.5} color="var(--forest)" aria-hidden="true" style={{ margin: "0 auto 14px" }} />
+                <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--forest)", marginBottom: 8 }}>{cert.name[lang]}</h3>
                 <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6 }}>{cert.desc[lang]}</p>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -115,14 +118,14 @@ export default function Quality() {
         </div>
       </section>
 
-      {/* Stats */}
+      {/* Quality checkpoints */}
       <section className="section" style={{ background: "var(--forest)", color: "#fff" }}>
         <div className="container" style={{ maxWidth: 800, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 24, textAlign: "center" }}>
           {[
-            { num: siteConfig.stats.countries + "+", label: isEs ? "Países Exportación" : "Export Countries" },
-            { num: (siteConfig.stats.annualExport / 1000).toFixed(0) + "K", label: isEs ? "Toneladas/Año" : "Tons/Year" },
-            { num: "99%+", label: isEs ? "Tasa de Aceptación" : "Acceptance Rate" },
-            { num: "24/7", label: isEs ? "Control de Calidad" : "Quality Monitoring" },
+            { num: "5", label: isEs ? "Etapas de Inspección" : "Inspection Stages" },
+            { num: "GSM", label: isEs ? "Control de Gramaje" : "Basis Weight Check" },
+            { num: "mm", label: isEs ? "Control de Calibre" : "Caliper Check" },
+            { num: "LOT", label: isEs ? "Registros por Lote" : "Batch Records" },
           ].map((s, i) => (
             <div key={i}>
               <div style={{ fontSize: 36, fontWeight: 800, color: "var(--gold)" }}>{s.num}</div>
@@ -138,7 +141,7 @@ export default function Quality() {
           {isEs ? "¿Necesita documentación de calidad?" : "Need Quality Documentation?"}
         </h2>
         <p style={{ fontSize: 15, color: "var(--muted)", marginBottom: 28 }}>
-          {isEs ? "Solicite nuestros certificados FSC, SGS, FDA e ISO para su debida diligencia de proveedores." : "Request our FSC, SGS, FDA, and ISO certificates for your supplier due diligence."}
+          {isEs ? "Indique el producto y el mercado de destino. Confirmaremos los certificados, informes y documentos disponibles para ese pedido." : "Tell us the product and destination market. We will confirm the certificates, reports, and supporting documents available for that order."}
         </p>
         <Link to="/contact" style={{ background: "var(--gold)", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: "none", display: "inline-block" }}>
           {isEs ? "Solicitar Certificados" : "Request Certificates"} →

@@ -5,6 +5,16 @@ import { useParams, Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { pillarArticles, buyerGuides } from "../pulpMaterialsData.js";
 import { PageMeta } from "../SEO.jsx";
+import "../materials-page.css";
+
+const articleImages = {
+  "softwood-pulp": "/images/materials/library/03-softwood-pulp-long-fiber.webp",
+  "hardwood-pulp": "/images/materials/library/04-hardwood-pulp-short-fiber.webp",
+  "bamboo-pulp": "/images/materials/library/05-bamboo-pulp-material.webp",
+  "cotton-pulp": "/images/materials/library/06-cotton-pulp-material.webp",
+  "mechanical-vs-chemical-pulp": "/images/materials/library/07-mechanical-vs-chemical-pulp.webp",
+  "virgin-vs-recycled-fiber": "/images/materials/library/08-virgin-pulp-vs-recycled-fiber.webp",
+};
 
 export default function PulpArticle() {
   const { id } = useParams();
@@ -29,11 +39,14 @@ export default function PulpArticle() {
       <PageMeta title={article.seoTitle} description={article.metaDescription} path={`/materials/${id}`} />
 
       {/* Hero */}
-      <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 140, paddingBottom: 80 }}>
-        <div className="container" style={{ maxWidth: 800 }}>
+      <section
+        className="section material-article-banner"
+        style={{ backgroundImage: `linear-gradient(90deg, rgba(6, 52, 38, 0.96) 0%, rgba(6, 52, 38, 0.86) 47%, rgba(6, 52, 38, 0.16) 100%), url(${articleImages[id]})` }}
+      >
+        <div className="container" style={{ maxWidth: 1280 }}>
           <Link to="/materials/pulp" style={{ color: "var(--gold)", fontSize: 14 }}>← {isEs ? "Materiales de Fibra" : "Fiber Materials"}</Link>
           <h1 style={{ fontSize: "clamp(26px, 4vw, 38px)", marginTop: 12, marginBottom: 12, lineHeight: 1.3 }}>{article.title}</h1>
-          <p style={{ fontSize: 16, opacity: 0.85, lineHeight: 1.7 }}>{article.oneSentence}</p>
+          <p style={{ fontSize: 16, opacity: 0.9, lineHeight: 1.7, maxWidth: 680 }}>{article.oneSentence || article.metaDescription}</p>
         </div>
       </section>
 

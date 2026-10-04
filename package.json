@@ -7,13 +7,15 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "postbuild": "node scripts/generate-static-pages.mjs",
+    "cms:sync": "node scripts/fetch-cms-content.mjs",
+    "postbuild": "node scripts/generate-static-pages.mjs && node scripts/validate-static-pages.mjs && node scripts/generate-admin-page.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "deploy": "npm run build && gh-pages -d dist",
     "deploy:build": "vite build"
   },
   "homepage": "https://www.youngsunpaper.com",
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
     "@vitejs/plugin-react": "latest",
     "esbuild": "^0.28.1",
     "lucide-react": "^1.27.0",

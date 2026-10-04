@@ -1,3 +1,5 @@
+import { cmsHiddenProductSlugs, cmsProducts } from "./generated/cmsProducts.js";
+
 // ============================================================
 // YOUNGSUN PAPER — Structured Data Layer
 // Purpose: AI-readable, SEO-optimized, human-clear.
@@ -28,7 +30,7 @@ export const siteConfig = {
     salesSpecialists: 50,
     years: 24,                   // 2002 → 2026
   },
-  millPartners: ["IPSUN", "CHENMING", "NINEDRAGON", "APP", "BOHUI", "GOLDENEAST"],
+  millPartners: ["APP", "Sun Paper", "Nine Dragons", "Liansheng", "Huatai"],
 };
 
 // ============================================================
@@ -72,7 +74,7 @@ export const productCategories = [
     icon: "🍽️",
     tagline: "Safe, food-grade solutions for culinary and beverage applications.",
     summary:
-      "Our selection features Cup Paper, Greaseproof Paper, and Silicone Coated Paper, specifically engineered for hygiene, moisture resistance, and reliable food safety.",
+      "Our selection features Cup Paper, Greaseproof Paper, MG White Kraft Paper, and Silicone Coated Paper for food wrapping, bags, beverage packaging, moisture resistance, and reliable food safety.",
     image: "/images/products/food-packaging/food-packaging-paper-01.jpg",
     background: "images/products/food-packaging/food-packaging-paper-detail.jpg",
   },
@@ -142,7 +144,64 @@ export const subProducts = {
     seoTitle: "Grey Board Manufacturer for Rigid Boxes",
     metaDescription: "FSC-certified recycled grey board in sheets, reels and custom-cut panels for rigid boxes, bookbinding, files and packaging.",
     keywords: ["grey board", "grey chipboard", "recycled greyboard", "rigid box board", "bookbinding board", "puzzle board"],
-    image: "/images/products/package-board/grey-board-main.jpg",
+    image: "/images/products/package-board/grey-board-main.webp",
+    optionGallery: [
+      {
+        title: "Color Laminated Grey Board",
+        titleEs: "Cartón Gris Laminado en Color",
+        description: "Decorative colored paper bonded to a rigid grey board base for gift boxes, book covers, files and presentation packaging.",
+        descriptionEs: "Papel decorativo de color laminado sobre una base rígida de cartón gris para cajas de regalo, tapas de libros, carpetas y embalajes de presentación.",
+        application: "Premium packaging and stationery",
+        applicationEs: "Embalaje premium y papelería",
+        href: "/products/color-laminated-grey-board",
+        src: "/images/products/package-board/laminated-options/color-laminated-grey-board.webp",
+        alt: "Color laminated grey board sheets for rigid boxes and book covers",
+      },
+      {
+        title: "Foam Laminated Board",
+        titleEs: "Cartón Laminado con Espuma",
+        description: "A cushioned multi-layer board structure for padded book covers, protective presentation packs and premium packaging components.",
+        descriptionEs: "Estructura multicapa acolchada para tapas de libros, presentaciones protectoras y componentes de embalaje premium.",
+        application: "Padded covers and protective packs",
+        applicationEs: "Tapas acolchadas y embalaje protector",
+        href: "/products/foam-laminated-grey-board",
+        src: "/images/products/package-board/laminated-options/foam-laminated-board.webp",
+        alt: "Foam laminated board cross section for padded book covers",
+      },
+      {
+        title: "Metallized Laminated Grey Board",
+        titleEs: "Cartón Gris Laminado Metalizado",
+        description: "Gold, silver and colored metallized facing bonded to grey board for luxury rigid boxes, cosmetics packaging and display products.",
+        descriptionEs: "Superficie metalizada en oro, plata y colores laminada sobre cartón gris para cajas rígidas de lujo, cosméticos y expositores.",
+        application: "Luxury boxes and cosmetics",
+        applicationEs: "Cajas de lujo y cosméticos",
+        href: "/products/metallized-laminated-grey-board",
+        src: "/images/products/package-board/laminated-options/metallized-laminated-grey-board.webp",
+        alt: "Metallized laminated grey board in gold silver and custom colors",
+      },
+      {
+        title: "Woodgrain Laminated Grey Board",
+        titleEs: "Cartón Gris Laminado Efecto Madera",
+        description: "Natural woodgrain facing over structural grey board for wine boxes, gift packaging, book covers and refined presentation products.",
+        descriptionEs: "Acabado de veta de madera sobre cartón gris estructural para cajas de vino, regalos, tapas de libros y presentaciones refinadas.",
+        application: "Wine, gift and presentation boxes",
+        applicationEs: "Cajas de vino, regalo y presentación",
+        href: "/products/woodgrain-laminated-grey-board",
+        src: "/images/products/package-board/laminated-options/woodgrain-laminated-grey-board.webp",
+        alt: "Woodgrain laminated grey board for wine and gift boxes",
+      },
+      {
+        title: "Puzzle Board Application",
+        titleEs: "Aplicación para Rompecabezas",
+        description: "Dense, flat grey board prepared for printing, mounting and precision die-cutting in jigsaw puzzles, game boards and educational products.",
+        descriptionEs: "Cartón gris denso y plano para impresión, montaje y troquelado de precisión en rompecabezas, tableros y productos educativos.",
+        application: "Puzzles and game boards",
+        applicationEs: "Rompecabezas y tableros de juego",
+        href: "/products/blue-core-puzzle-board",
+        src: "/images/products/package-board/laminated-options/puzzle-board-application.webp",
+        alt: "Grey board die cut into jigsaw puzzle pieces",
+      },
+    ],
     gallery: [
       
       {
@@ -247,7 +306,7 @@ export const subProducts = {
     seoTitle: "Black Paper and Black Cardboard Supplier",
     metaDescription: "Virgin and recycled black paper from 80 to 1500 gsm for luxury packaging, hang tags, stationery and premium printing.",
     keywords: ["black paper", "black card stock", "through-dyed paper", "black cardboard", "luxury black paper", "core-dyed black board"],
-    image: "/images/products/package-board/black-paper-main.jpg",
+    image: "/images/products/package-board/black-paper-main.webp",
     gallery: [
       
       {
@@ -349,10 +408,10 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Color reference or code", "Grammage", "Sheet or reel size", "Quantity", "Application", "Destination port"],
-    seoTitle: "Color Card Paper Supplier for Packaging and Hang Tags",
+    seoTitle: "Color Card Paper Supplier for Packaging",
     metaDescription: "Colored card paper from 110 to 400 gsm in standard and embossed finishes for packaging, hang tags, stationery and printing.",
     keywords: ["color card paper", "colored cardboard", "solid color cardstock", "colored paper board", "Pantone paper", "craft cardstock"],
-    image: "/images/products/package-board/color-card-paper-main.jpg",
+    image: "/images/products/package-board/color-card-paper-main.webp",
     gallery: [
       
       {
@@ -456,7 +515,7 @@ export const subProducts = {
     seoTitle: "Folding Box Board and C1S Ivory Board Supplier",
     metaDescription: "Regular and high bulk C1S ivory board from 170 to 400 gsm for cosmetics, pharmaceuticals, retail and folding cartons.",
     keywords: ["folding box board", "FBB", "GC1 board", "carton board", "pharma packaging board", "cosmetic box board"],
-    image: "/images/products/package-board/folding-box-board-main.jpg",
+    image: "/images/products/package-board/folding-box-board-main.webp",
     gallery: [
       
       {
@@ -558,7 +617,7 @@ export const subProducts = {
     seoTitle: "C2S High Bulk Bristol Board Supplier",
     metaDescription: "Two-side coated high bulk bristol board from 210 to 320 gsm for premium printing, covers, cards and packaging.",
     keywords: ["C2S art board", "coated art card", "SBS board", "art card paper", "premium card stock", "double-coated board"],
-    image: "/images/products/package-board/c2s-art-board-main.jpg",
+    image: "/images/products/package-board/c2s-art-board-main.webp",
     gallery: [
       
       {
@@ -660,10 +719,10 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grade (natural/bleached/recycled)","Grammage","Roll or sheet size","Quantity","End use","Destination port"],
-    seoTitle: "Kraft Paper Supplier for Packaging and Industrial Use",
+    seoTitle: "Kraft Paper Supplier for Packaging",
     metaDescription: "Natural, bleached and recycled kraft paper from 35 to 200 gsm for sacks, bags, wrapping and industrial converting.",
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
-    image: "/images/products/package-board/kraft-paper-main.jpg",
+    image: "/images/products/package-board/kraft-paper-main.webp",
     gallery: [
       
       {
@@ -767,7 +826,7 @@ export const subProducts = {
     seoTitle: "Duplex Board Grey Back Supplier",
     metaDescription: "Coated white-top duplex board from 200 to 400 gsm for economical folding cartons, retail packaging and printed boxes.",
     keywords: ["duplex board", "white-lined chipboard", "WLC", "coated duplex board", "grey back board", "FMCG carton board"],
-    image: "/images/products/package-board/duplex-board-main.jpg",
+    image: "/images/products/package-board/duplex-board-main.webp",
     gallery: [
       
       {
@@ -870,7 +929,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["PE coated paper", "polyethylene coated paper", "paper cup stock", "PE coated board", "heat seal paper", "food-grade coated paper"],
-    image: "/images/products/package-board/pe-coated-paper-main.jpg",
+    image: "/images/products/package-board/pe-coated-paper-main.webp",
     gallery: [
       
       {
@@ -973,7 +1032,7 @@ export const subProducts = {
     seoTitle: "Coated Kraft Back Board Supplier",
     metaDescription: "CKB coated kraft back board from 200 to 350 gsm for beverage, frozen food, retail and industrial folding cartons.",
     keywords: ["coated kraft back board", "CKB paperboard supplier", "kraft back folding carton", "beverage packaging board", "frozen food paperboard"],
-    image: "/images/products/package-board/ckb-main.jpg",
+    image: "/images/products/package-board/ckb-main.webp",
     gallery: [
       { src: "/images/products/package-board/gallery/01-CBK-Raw-Material-Jumbo-Roll.jpg", alt: "CKB raw material jumbo roll" },
       { src: "/images/products/package-board/gallery/02-CBK-Spiral-Paper-Tube-Line.jpg", alt: "CKB spiral paper tube line" },
@@ -1035,7 +1094,7 @@ export const subProducts = {
     seoTitle: "Woodfree Offset Paper Supplier",
     metaDescription: "Woodfree offset paper for premium commercial printing, books, brochures and business stationery.",
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
-    image: "/images/products/culture-paper/woodfree-paper-main.jpg",
+    image: "/images/products/culture-paper/woodfree-paper-main.webp",
     gallery: [
       
       {
@@ -1140,7 +1199,7 @@ export const subProducts = {
     seoTitle: "Color Offset Paper Supplier",
     metaDescription: "Color offset paper in a wide range of shades for commercial printing, stationery and specialty applications.",
     keywords: ["color offset paper", "colored uncoated paper", "tinted offset", "colored printing paper", "dyed paper", "offset color paper"],
-    image: "/images/products/culture-paper/color-offset-paper-main.jpg",
+    image: "/images/products/culture-paper/color-offset-paper-main.webp",
     gallery: [
       
       {
@@ -1242,7 +1301,7 @@ export const subProducts = {
     seoTitle: "LWC Paper Supplier for Magazines and Catalogs",
     metaDescription: "Lightweight coated paper with high opacity for magazines, catalogs, inserts and high-volume commercial printing.",
     keywords: ["LWC paper", "lightweight coated paper", "magazine paper", "catalog paper", "low grammage coated", "heatset web paper"],
-    image: "/images/products/culture-paper/lwc-paper-main.jpg",
+    image: "/images/products/culture-paper/lwc-paper-main.webp",
     gallery: [
       
       {
@@ -1348,7 +1407,7 @@ export const subProducts = {
     seoTitle: "NCR Carbonless Paper Supplier",
     metaDescription: "NCR carbonless copy paper in multi-ply configurations for forms, invoices, receipts and business documents.",
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
-    image: "/images/products/culture-paper/ncr-paper-main.jpg",
+    image: "/images/products/culture-paper/ncr-paper-main.webp",
     gallery: [
       
       {
@@ -1408,11 +1467,11 @@ export const subProducts = {
   },
   "copy-paper": {
     id: "copy-paper",
-    name: "Copy Paper",
+    name: "Multi-Format Copy Paper",
     category: "culture-paper",
-    tagline: "Office copy paper in multiple grammages, sheet formats and packing options for distributors, institutions and private-label buyers.",
+    tagline: "A multi-format office paper program covering A3, A4, A5, B-series and selected US sizes for distributors, institutions and private-label buyers.",
     description:
-      "YOUNGSUN supplies copy paper for photocopying, laser printing, inkjet printing, and general office use in both 70 gsm and 80 gsm grades. Standard sheet formats cover A-series (A3, A4, A5), B-series (B4, B5), K-series (8K, 16K), and US formats. Ream configurations are flexible: standard 400 or 500 sheets per ream, with customized counts from 240 to 500 sheets available. Carton packing options include 5, 6, 8, or 10 reams per carton according to target market requirements. For wholesale distribution and institutional buyers, private-label packaging can be developed — custom ream wrapper and carton designs are available for qualified container-volume orders (MOQ approximately 2×40HQ, around 20,000 cartons). Standard packing MOQ is 500 cartons. Key applications span office printing, photocopying, schools and universities, government and institutional procurement, corporate stationery, and wholesale/retail distribution.",
+      "This page covers YOUNGSUN's multi-format copy paper program rather than a single A4 product. It includes 70, 75 and 80 gsm office paper in A-series (A3, A4 and A5), B-series (B4 and B5), K-series (8K and 16K), and selected US formats. Ream and carton configurations can be adapted for wholesale distribution, institutional procurement and qualified private-label programs. Buyers sourcing only the standard 210×297 mm format should use the dedicated A4 Copy Paper page.",
     specs: [
       "Grammage: 70 / 75 / 80 gsm",
       "Brightness: ISO 92–100%",
@@ -1452,10 +1511,10 @@ export const subProducts = {
     ],
     commercial: { moq: "500 cartons (standard) / 2×40HQ ~20,000 cartons (private label)", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage (70/75 gsm)","Sheet size (A4/A3/Letter)","Quantity (reams/pallets)","Brightness requirement","Destination port"],
-    seoTitle: "Copy Paper Supplier for Office and Commercial Use",
-    metaDescription: "High-brightness copy paper in A4/A3/Letter formats for office, commercial printing and stationery use.",
-    keywords: ["copy paper", "A4 copy paper", "office paper", "printer paper", "multi-purpose paper", "copy paper wholesale"],
-    image: "/images/products/culture-paper/copy-paper-main.jpg",
+    seoTitle: "Multi-Format Copy Paper Supplier | A3, A4, A5 & Custom",
+    metaDescription: "Multi-format copy paper program in A3, A4, A5, B-series and selected US sizes for wholesale, institutional and private-label supply.",
+    keywords: ["multi-format copy paper", "A3 copy paper", "A5 copy paper", "office paper wholesale", "private label copy paper", "copy paper supplier"],
+    image: "/images/products/culture-paper/copy-paper-main.webp",
     gallery: [
     ],
   },
@@ -1501,7 +1560,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
-    image: "/images/products/culture-paper/newsprint-main.jpg",
+    image: "/images/products/culture-paper/newsprint-main.webp",
     gallery: [
       { src: "/images/products/culture-paper/gallery/01-Newsprint-Printing-Press.jpg", alt: "Newsprint printing press" },
       { src: "/images/products/culture-paper/gallery/02-Newsprint-Cafe-Reader.jpg", alt: "Newsprint cafe reader" },
@@ -1518,7 +1577,7 @@ export const subProducts = {
     id: "a4-copy-paper",
     name: "A4 Copy Paper",
     category: "culture-paper",
-    tagline: "Standard A4 office copy paper — bright white, jam-free, and laser/inkjet compatible in bulk packaging for export.",
+    tagline: "A dedicated 210×297 mm A4 office copy paper range for buyers who need consistent bulk and export-ready packing.",
     description:
       "A4 Copy Paper is the universal office paper standard — 210×297mm, 70–80 gsm, high brightness (ISO 92%+). Designed for reliable performance across laser printers, inkjet printers, copiers, and fax machines. Smooth, dust-free surface ensures sharp text, clean graphics, and minimal paper jams. Packaged 500 sheets per ream, 5 or 10 reams per carton. Supplied in container loads to distributors, office supply chains, and government procurement programs worldwide. This is the highest-volume paper grade in global trade.",
     specs: [
@@ -1556,8 +1615,10 @@ export const subProducts = {
       "Export pallet packing",
     ],
     commercial: { moq: "500 cartons", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "A4 Copy Paper Supplier | 70, 75 & 80 gsm",
+    metaDescription: "A4 copy paper in 210×297 mm sheets and 70, 75 or 80 gsm for office supply distributors, institutions and export procurement.",
     keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
-    image: "/images/products/culture-paper/a4-copy-paper-main.jpg",
+    image: "/images/products/culture-paper/a4-copy-paper-main.webp",
     gallery: [
     ],
   },
@@ -1603,7 +1664,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
-    image: "/images/products/culture-paper/a4-thermal-paper-main.jpg",
+    image: "/images/products/culture-paper/a4-thermal-paper-main.webp",
     gallery: [
     ],
   },
@@ -1652,7 +1713,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
-    image: "/images/products/culture-paper/thermal-paper-roll-main.jpg",
+    image: "/images/products/culture-paper/thermal-paper-roll-main.webp",
     gallery: [
       { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-01.jpg", alt: "Thermal paper roll POS receipt" },
       { src: "/images/products/culture-paper/gallery/thermal-paper-roll-scene-02.jpg", alt: "Thermal paper roll credit card terminal" },
@@ -1713,7 +1774,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
-    image: "/images/products/fancy-paper/soft-touch-paper-main.jpg",
+    image: "/images/products/fancy-paper/soft-touch-paper-main.webp",
     gallery: [
       
       {
@@ -1816,7 +1877,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
-    image: "/images/products/fancy-paper/leather-paper-main.jpg",
+    image: "/images/products/fancy-paper/leather-paper-main.webp",
     gallery: [
       
       {
@@ -1920,7 +1981,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
-    image: "/images/products/fancy-paper/pearlescent-paper-main.jpg",
+    image: "/images/products/fancy-paper/pearlescent-paper-main.webp",
     gallery: [
       
       {
@@ -2024,7 +2085,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
-    image: "/images/products/fancy-paper/embossed-paper-main.jpg",
+    image: "/images/products/fancy-paper/embossed-paper-main.webp",
     gallery: [
       
       {
@@ -2131,7 +2192,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["gold silver card paper", "metallic card paper", "gold foil paper", "silver cardstock", "metallic board", "luxury metallic paper"],
-    image: "/images/products/fancy-paper/gold-silver-card-main.jpg",
+    image: "/images/products/fancy-paper/gold-silver-card-main.webp",
     gallery: [
       { src: "/images/products/fancy-paper/gallery/GOLD-Chocolate-Packaging.jpg", alt: "Gold chocolate packaging" },
       { src: "/images/products/fancy-paper/gallery/GOLD-Cosmetic-Packaging.jpg", alt: "Gold cosmetic packaging" },
@@ -2205,7 +2266,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
-    image: "/images/products/fancy-paper/label-paper-main.jpg",
+    image: "/images/products/fancy-paper/label-paper-main.webp",
     gallery: [
       
       {
@@ -2308,7 +2369,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["color tissue paper", "colored tissue paper", "gift tissue paper", "luxury tissue paper", "acid-free tissue", "packaging tissue paper"],
-    image: "/images/products/fancy-paper/color-tissue-paper-main.jpg",
+    image: "/images/products/fancy-paper/color-tissue-paper-main.webp",
     gallery: [
       { src: "/images/products/fancy-paper/gallery/01-Color-Tissue-Apparel-Gift-Box.jpg", alt: "Color tissue apparel gift box" },
       { src: "/images/products/fancy-paper/gallery/02-Color-Tissue-Florist-Bouquet.jpg", alt: "Color tissue florist bouquet" },
@@ -2367,7 +2428,7 @@ export const subProducts = {
     seoTitle: "Tracing Paper Supplier for Drawing and Design",
     metaDescription: "Tracing paper in various grammages for sketching, drafting, overlays and creative projects.",
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
-    image: "/images/products/culture-paper/tracing-paper-main.jpg",
+    image: "/images/products/culture-paper/tracing-paper-main.webp",
     gallery: [
       
       {
@@ -2475,7 +2536,7 @@ export const subProducts = {
     seoTitle: "Cupstock Board Supplier for Paper Cups",
     metaDescription: "Food-grade cupstock board with PE coating for paper cups, food containers and hot/cold beverage packaging.",
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
-    image: "/images/products/food-packaging/cup-paper-main.jpg",
+    image: "/images/products/food-packaging/cup-paper-main.webp",
     gallery: [
       
       {
@@ -2580,7 +2641,7 @@ export const subProducts = {
     seoTitle: "Greaseproof Paper Supplier for Food Packaging",
     metaDescription: "Greaseproof paper for food wrapping, bakery packaging and grease-resistant applications.",
     keywords: ["greaseproof paper", "grease resistant paper", "baking paper", "food wrap paper", "oil proof paper", "PFAS-free food paper"],
-    image: "/images/products/food-packaging/greaseproof-paper-main.jpg",
+    image: "/images/products/food-packaging/greaseproof-paper-main.webp",
     gallery: [
       
       {
@@ -2641,47 +2702,78 @@ export const subProducts = {
 
   "mg-paper": {
     id: "mg-paper",
-    name: "MG Paper",
+    name: "MG White Kraft Paper",
     category: "food-packaging",
-    tagline: "Machine-glazed paper with a smooth glossy side and a more absorbent reverse for wrapping, bags and converting.",
+    tagline: "Premium machine-glazed white kraft paper with a glossy printable face and glue-ready reverse for food wrapping, bags and flexible packaging.",
     description:
-      "YOUNGSUN MG Paper provides a smooth machine-glazed face for printing and presentation, with a more open reverse for converting and adhesion. The lightweight range is suitable for food wrapping, bags, liners and general packaging.",
+      "YOUNGSUN MG White Kraft Paper is made from 100% virgin wood pulp and finished on a Yankee drying cylinder to create two functional surfaces: a high-gloss, ultra-smooth face for sharp flexographic and offset printing, and a slightly textured reverse for dependable glue adhesion, coating and lamination. Available from 23 to 80 gsm in sheets, reams and jumbo rolls, it is engineered for high-speed bag making, wrapping and flexible-packaging conversion. Stable moisture control helps the paper remain flat during printing and laminating, while the strong fiber structure supports demanding automated production. The paper is recyclable, biodegradable, suitable for direct food-contact applications and available with FSC certification on request.",
     specs: [
-      "Grammage: 23 – 80 gsm",
-      "Surface: Machine-glazed front and natural reverse",
-      "Brightness: Available in white grades",
-      "Supply forms: Sheets, reels, custom sizes",
+      "Grammage: 23–80 gsm (standard weights from 23 to 80 gsm)",
+      "Fiber: 100% virgin wood pulp",
+      "Brightness: D65 87% ± 4%",
+      "Surface: High-gloss machine-glazed face; matte, glue-ready reverse",
+      "Bekk smoothness: ≥80s to ≥120s depending on grammage",
+      "Moisture: 4.5% ± 1.0%",
+      "MD tensile index: ≥35 to ≥45 N·m/g depending on grammage",
+      "Standard sheets: 787 × 1092 mm and 889 × 1194 mm",
+      "Supply forms: Sheets, 500-sheet reams, custom sizes and jumbo rolls",
     ],
     applications: [
-      "Food wrapping",
-      "Paper bags",
-      "Bakery liners",
-      "Interleaving paper",
-      "General wrapping",
-      "Flexible packaging",
-      "Printed inserts",
+      "Burger and sandwich wrappers",
+      "Bakery bags and fast-food tray liners",
+      "Sugar, flour and dry-food sachets",
+      "Base paper for PE/PLA coating and wax coating",
+      "Aluminum foil lamination composites",
+      "Lightweight retail bags, gift wrap and envelopes",
+      "Metal and glass interleaving or masking paper",
+      "Medical sterilization pouch substrates",
     ],
-    certifications: ["FSC certified"],
+    certifications: ["FSC available on request", "Direct food-contact grade"],
     variants: [
-      "White MG Paper",
-      "Natural MG Paper",
-      "Bleached MG Paper",
+      "MG Bleached White Kraft Paper",
+      "Custom GSM Sheets",
+      "Jumbo Roll Format",
+      "Coating and Lamination Base Paper",
     ],
     features: [
-      "Smooth Glazed Side — Machine-glazed front surface provides a smooth, printable face for branding.",
-      "Absorbent Reverse — Open-fiber back side designed for adhesion, lamination and converting.",
-      "Lightweight Efficiency — Available from 23 gsm for economical food wrapping and bag applications.",
-      "Flexible Converting — Suitable for bag making, wrapping, interleaving and liner applications.",
+      "Superior One-Side Smoothness — The high-gloss MG face delivers strong ink holdout and clean dot reproduction for flexographic and offset printing.",
+      "High Tensile Strength — Refined virgin fibers help prevent tearing during high-speed bag making, wrapping and automated converting.",
+      "Stable Moisture and Flatness — Moisture is controlled at 4.5% ± 1.0% to reduce curling and feeding problems during printing or laminating.",
+      "Reliable Adhesion — The matte reverse provides a strong bonding surface for glues, PE/PLA coatings, wax coatings and aluminum foil lamination.",
+      "Responsible Fiber Choice — Recyclable and biodegradable paper made with 100% virgin wood pulp; FSC certification is available on request.",
     ],
     customization: [
-      "Custom grammage",
-      "Sheet or reel supply",
-      "Custom size",
-      "Custom packing",
+      "Custom grammage from 23 to 80 gsm",
+      "Standard or custom-cut sheet sizes",
+      "Jumbo roll width and diameter",
+      "Ream, export pallet or waterproof roll packing",
+      "Base paper prepared for coating or lamination",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
-    keywords: ["MG paper supplier", "machine glazed paper", "food wrapping paper", "paper bag material", "glazed packaging paper"],
-    image: "/images/products/food-packaging/mg-paper-main.jpg",
+    quoteReqs: [
+      "Required grammage (gsm)",
+      "Sheet size or roll width and diameter",
+      "End use and converting process",
+      "Printing method: flexographic or offset",
+      "Coating or lamination requirement",
+      "Food-contact and FSC requirements",
+      "Order quantity and destination port",
+    ],
+    commercial: { moq: "Flexible; confirm by grammage and format", leadTime: "2–3 weeks after order confirmation", samples: "Free standard samples; courier paid by customer", certification: "FSC available on request", containerLoading: "40HQ full load: approximately 25 metric tons" },
+    seoTitle: "MG White Kraft Paper Manufacturer | Food Wrapping & Bags",
+    metaDescription: "Buy 23–80 gsm MG white kraft paper made from 100% virgin wood pulp. Glossy printable face, glue-ready reverse, sheets or jumbo rolls for food wrapping, bags and lamination. Request free samples.",
+    keywords: ["MG white kraft paper manufacturer", "machine glazed kraft paper supplier", "MG bleached kraft paper", "food wrapping paper", "paper bag material", "flexible packaging base paper", "aluminum foil lamination paper"],
+    image: "/images/products/food-packaging/mg-paper-main.webp",
+    galleryTitle: "Flexible Packaging and Lamination Applications",
+    galleryTitleEs: "Aplicaciones de Embalaje Flexible y Laminación",
+    galleryIntro: "MG white kraft paper can serve as the printable paper layer or base substrate in aluminum foil composites for food wraps that require presentation, grease control and heat retention.",
+    galleryIntroEs: "El papel kraft blanco MG puede utilizarse como capa exterior imprimible o sustrato base en complejos con papel de aluminio para envolturas alimentarias con presentación, control de grasa y retención de calor.",
+    gallery: [
+      {
+        src: "/images/products/food-packaging/gallery/mg-white-kraft-foil-lamination.webp",
+        alt: "MG white kraft paper laminated with aluminum foil for food wrapping",
+        fit: "contain",
+      },
+    ],
   },
 
   "silicone-coated-paper": {
@@ -2729,7 +2821,7 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
-    image: "/images/products/food-packaging/silicone-coated-paper-main.jpg",
+    image: "/images/products/food-packaging/silicone-coated-paper-main.webp",
     gallery: [
       
       {
@@ -2816,10 +2908,213 @@ export const subProducts = {
       "Tea and coffee packaging inserts",
     ],
     certifications: ["FSC", "SGS"],
-    image: "/images/products/fancy-paper/absorbent-paper-main.jpg",
+    image: "/images/products/fancy-paper/absorbent-paper-main.webp",
     images: [],
     processingNote:
       "Customized converting services available: sheet cutting, strip die-cutting (any shape), coaster die-cutting (round/square/custom), embossing and debossing, logo printing (single/multi-color). Pre-cut and pre-printed components supplied according to customer drawings.",
+  },
+  "color-laminated-grey-board": {
+    id: "color-laminated-grey-board",
+    name: "Color Laminated Grey Board",
+    category: "package-board",
+    tagline: "Paper-faced grey board for gift boxes, book covers and stationery.",
+    description:
+      "Color Laminated Grey Board combines a rigid grey board base with colored woodfree paper or kraft paper facing, typically around 200 gsm. Buyers can specify black, white, kraft or another selected color, with colored/colored, colored/grey or colored/white front-and-back constructions. The board is supplied in custom sheet sizes and cut-to-size formats for rigid gift boxes, book covers, folders and presentation stationery. Color approval is based on a physical sample, so purchasing teams can confirm the facing shade and finished construction before production.",
+    specs: [
+      "Facing paper: Typically 200 gsm colored woodfree paper or kraft paper",
+      "Facing colors: Black, white, kraft and selected custom colors",
+      "Constructions: Colored/Colored, Colored/Grey or Colored/White",
+      "One-side white or black reference: 1.0–4.0 mm / 650–2650 gsm",
+      "One-side kraft reference: 1.2–4.0 mm / 800–2650 gsm",
+      "Format: Custom sheet sizes and cut-to-size panels",
+    ],
+    applications: [
+      "Rigid gift boxes and presentation boxes",
+      "Hardcover books and albums",
+      "Folders, binders and stationery",
+      "Decorative packaging inserts",
+    ],
+    certifications: [],
+    variants: ["Black paper facing", "White paper facing", "Kraft paper facing", "Selected custom color facing"],
+    features: [
+      "Flexible Surface Structure — Choose the facing and reverse combination required for the finished product.",
+      "Physical Color Approval — Final color is confirmed against an approved physical sample.",
+      "Custom Conversion — Full sheets and cut-to-size panels can be specified for production use.",
+      "Rigid Grey Board Base — Provides the structural foundation required for boxes, covers and stationery.",
+    ],
+    customization: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet or cut-panel dimensions"],
+    commercial: { moq: "5 metric tons per color" },
+    quoteReqs: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet size", "Quantity per color", "Destination port"],
+    seoTitle: "Color Laminated Grey Board for Gift Boxes & Stationery",
+    metaDescription: "Color laminated grey board for gift boxes and stationery. Black, white, kraft and other colors. Custom sizes. MOQ: 5 metric tons per color.",
+    keywords: ["color laminated grey board", "colored grey board", "paper faced grey board", "gift box board", "book cover board"],
+    image: "/images/products/package-board/laminated-detail/color-laminated-grey-board-main.webp",
+    galleryTitle: "Color, Construction and Finished Applications",
+    galleryIntro: "Compare facing choices and see how the board is used in rigid packaging and stationery products.",
+    gallery: [
+      { src: "/images/products/package-board/laminated-detail/color-laminated-grey-board-color-options.webp", alt: "Color laminated grey board facing paper options" },
+      { src: "/images/products/package-board/laminated-detail/color-laminated-grey-board-drawer-boxes.webp", alt: "Color laminated grey board used for printed and solid color drawer boxes" },
+      { src: "/images/products/package-board/laminated-detail/color-laminated-grey-board-applications.webp", alt: "Color laminated grey board gift box and stationery applications" },
+    ],
+  },
+  "woodgrain-laminated-grey-board": {
+    id: "woodgrain-laminated-grey-board",
+    name: "Woodgrain Laminated Grey Board",
+    category: "package-board",
+    tagline: "Wood-effect paper facing laminated to grey board for boxes and decorative applications.",
+    description:
+      "Woodgrain Laminated Grey Board uses a grey board base faced with approximately 120 gsm decorative woodgrain paper. It provides the visual character of selected wood patterns without using real wood veneer. Available in 1.0–4.0 mm thicknesses, the material is intended for jewelry and watch boxes, gift packaging, desktop organizers and decorative facings. Pattern, shade and grain direction should be confirmed with a physical sample or design reference before production.",
+    specs: [
+      "Facing paper: Typically 120 gsm woodgrain paper",
+      "Base material: Grey board",
+      "Thickness: 1.0–4.0 mm",
+      "Appearance: Selected wood-effect patterns and shades",
+      "Material note: Decorative paper facing, not real wood veneer",
+    ],
+    applications: [
+      "Jewelry boxes and watch boxes",
+      "Gift and presentation packaging",
+      "Desktop organizers and document holders",
+      "Decorative facing components",
+    ],
+    certifications: [],
+    variants: ["Selected light, medium and dark woodgrain designs", "Customer-approved grain direction"],
+    features: [
+      "Wood-Effect Appearance — Decorative paper creates a consistent woodgrain presentation.",
+      "Physical Sample Selection — Pattern and shade are confirmed using an approved reference.",
+      "Specified Grain Direction — Orientation can be included in the order specification.",
+      "Grey Board Foundation — Adds thickness and structure for box and organizer production.",
+    ],
+    customization: ["Woodgrain design reference", "Board thickness", "Sheet size", "Grain direction"],
+    commercial: { moq: "1,000 sheets per design" },
+    quoteReqs: ["Woodgrain design reference", "Thickness", "Sheet size", "Grain direction", "Quantity", "Application and destination"],
+    seoTitle: "Woodgrain Laminated Grey Board for Boxes & Decor",
+    metaDescription: "120 gsm woodgrain paper laminated to grey board, 1.0–4.0 mm thick. Designs for jewelry boxes, watch boxes and decorative uses. MOQ: 1,000 sheets per design.",
+    keywords: ["woodgrain laminated grey board", "wood effect paper board", "jewelry box board", "watch box board", "decorative grey board"],
+    image: "/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-main.webp",
+    galleryTitle: "Woodgrain Designs and Application Ideas",
+    galleryIntro: "Review representative patterns and finished-use scenes before selecting a physical sample.",
+    gallery: [
+      { src: "/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-jewelry-boxes.webp", alt: "Woodgrain laminated grey board jewelry and watch box applications" },
+      { src: "/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-decorative-applications.webp", alt: "Woodgrain laminated grey board desktop organizer and decorative facing applications" },
+    ],
+  },
+  "blue-core-puzzle-board": {
+    id: "blue-core-puzzle-board",
+    name: "Blue Core Puzzle Board",
+    category: "package-board",
+    tagline: "Blue core paperboard for jigsaw puzzle production.",
+    description:
+      "Blue Core Puzzle Board is produced for jigsaw puzzle and game-puzzle manufacturing where a clearly identifiable blue core and controlled board specification are required. The available range covers 600–1800 gsm and approximately 0.85–2.73 mm, in 50 gsm increments. Grammage tolerance is ±5% and moisture is controlled at 8.0 ± 2.0%. Buyers can specify the required grammage or thickness, sheet dimensions and quantity for each size.",
+    specs: [
+      "Grammage: 600–1800 gsm",
+      "Thickness: Approximately 0.85–2.73 mm",
+      "Grammage increments: 50 gsm",
+      "Grammage tolerance: ±5%",
+      "Moisture: 8.0 ± 2.0%",
+      "Core color: Blue",
+    ],
+    applications: ["Printed jigsaw puzzles", "Game and educational puzzles", "Puzzle board components", "Matching puzzle presentation boxes"],
+    certifications: [],
+    variants: ["600–1800 gsm range in 50 gsm increments"],
+    features: [
+      "Distinct Blue Core — Gives cut puzzle pieces a clearly identifiable blue edge.",
+      "Broad Specification Range — Match grammage and approximate thickness to the puzzle format.",
+      "Controlled Moisture — Supplied to an 8.0 ± 2.0% moisture specification.",
+      "Export Pallet Packing — Board can be prepared for bulk transport in wrapped pallets.",
+    ],
+    customization: ["Grammage or thickness", "Sheet dimensions", "Quantity per size", "Pallet packing requirements"],
+    commercial: { moq: "1 metric ton per size" },
+    quoteReqs: ["Grammage or thickness", "Sheet size", "Quantity per size", "Destination port"],
+    seoTitle: "Blue Core Puzzle Board for Jigsaw Puzzles",
+    metaDescription: "Blue core puzzle board, 600–1800 gsm and 0.85–2.73 mm. View thickness specifications and pallet packing. MOQ: 1 metric ton per sheet size.",
+    keywords: ["blue core puzzle board", "jigsaw puzzle board", "puzzle paperboard", "blue core cardboard", "game board material"],
+    image: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-main.webp",
+    galleryTitle: "Blue Core, Packing and Puzzle Application",
+    galleryIntro: "See the board structure, warehouse pallet packing and representative finished puzzle use.",
+    gallery: [
+      { src: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-packing.webp", alt: "Blue core puzzle board wrapped on warehouse pallets", fit: "contain" },
+      { src: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-application.webp", alt: "Blue core puzzle board used for a jigsaw puzzle and presentation box" },
+    ],
+  },
+  "metallized-laminated-grey-board": {
+    id: "metallized-laminated-grey-board",
+    name: "Food-Grade Metallized Board",
+    category: "food-packaging",
+    tagline: "Gold, silver and white laminated board for cake bases, desserts and salmon packaging.",
+    description:
+      "Food-Grade Metallized Board is supplied in gold, silver and white finishes for cake bases, dessert presentation and salmon packaging. Typical thickness is 1.0–3.0 mm, with different gold gloss levels available for selection. Buyers can order full sheets, including the standard 70 × 100 cm format, or request round, square, rectangular and custom-cut shapes with straight or scalloped edges. Food-contact suitability and required documents should be confirmed for the selected grade and destination market before commercial use.",
+    specs: [
+      "Typical thickness: 1.0–3.0 mm",
+      "Colors: Gold, silver, white and selected custom colors",
+      "Gold finish: Different gloss levels available",
+      "Shapes: Round, square, rectangular and custom",
+      "Edges: Straight or scalloped",
+      "Full sheet size: 70 × 100 cm or custom",
+      "Supply format: Full sheets or cut shapes",
+    ],
+    applications: ["Cake bases and cake drums", "Dessert presentation boards", "Salmon packaging boards", "Food presentation inserts"],
+    certifications: [],
+    variants: ["Gold finish", "Silver finish", "White finish", "Full sheets or cut components"],
+    features: [
+      "Multiple Surface Choices — Select gold, silver, white or an agreed custom finish.",
+      "Flexible Supply Format — Order full sheets or finished shapes according to production needs.",
+      "Custom Shape Options — Round, square, rectangular and drawing-based formats are available.",
+      "Presentation-Focused Surface — Designed for visible cake, dessert and salmon packaging applications.",
+    ],
+    customization: ["Color and gloss level", "Thickness", "Sheet dimensions", "Shape and edge profile"],
+    commercial: { moq: "5 metric tons for full sheets; 1,000 pcs per cut size" },
+    quoteReqs: ["Full sheet or cut-shape supply", "Thickness", "Color and finish", "Dimensions or drawing", "Quantity", "Destination port"],
+    seoTitle: "Food-Grade Metallized Board for Cakes & Salmon",
+    metaDescription: "Gold, silver and white food-grade boards for cakes and salmon packaging. Custom shapes and 70 × 100 cm sheets. MOQ: 5 tons or 1,000 pcs per cut size.",
+    keywords: ["food grade metallized board", "gold cake board", "silver cake board", "salmon packaging board", "laminated cake base"],
+    image: "/images/products/food-packaging/metallized-board/metallized-laminated-grey-board-main.webp",
+    galleryTitle: "Food Presentation Applications and Packing",
+    galleryIntro: "Compare finish and shape choices with representative cake, dessert and salmon packaging uses.",
+    gallery: [
+      { src: "/images/products/food-packaging/metallized-board/metallized-laminated-grey-board-salmon.webp", alt: "Gold metallized board used for salmon packaging" },
+      { src: "/images/products/food-packaging/metallized-board/metallized-laminated-grey-board-dessert.webp", alt: "Gold and silver food-grade boards used for cakes and desserts" },
+      { src: "/images/products/food-packaging/metallized-board/metallized-laminated-grey-board-packing.webp", alt: "Packed gold cake boards prepared for shipment", fit: "contain" },
+    ],
+  },
+  "foam-laminated-grey-board": {
+    id: "foam-laminated-grey-board",
+    name: "Foam Laminated Grey Board",
+    category: "package-board",
+    tagline: "Cushioned grey board for certificate folders and padded hardcover book covers.",
+    description:
+      "Foam Laminated Grey Board combines a 1.5–3.0 mm grey board base with 3 mm foam to create cushioned components for certificate folders and padded hardcover book covers. Three confirmed constructions are available: a two-layer board with exposed foam, a three-layer structure with 250 gsm grey top paper, and a three-layer structure with 180 gsm kraft top paper. The quoted base thickness refers to the grey board only, not the total finished laminate thickness.",
+    specs: [
+      "Grey board base thickness: 1.5–3.0 mm",
+      "Foam thickness: 3 mm",
+      "2-layer structure: Grey board + exposed foam",
+      "3-layer grey structure: Grey board + foam + 250 gsm grey top paper",
+      "3-layer kraft structure: Grey board + foam + 180 gsm kraft top paper",
+      "Thickness note: Base thickness excludes the foam and top facing",
+    ],
+    applications: ["Padded certificate folders", "Hardcover book covers", "Presentation covers", "Cushioned stationery components"],
+    certifications: [],
+    variants: ["2-layer exposed foam", "3-layer with 250 gsm grey top paper", "3-layer with 180 gsm kraft top paper"],
+    features: [
+      "Defined Layer Structures — Select from one two-layer and two three-layer constructions.",
+      "3 mm Foam Layer — Adds cushioning for padded cover applications.",
+      "Grey or Kraft Top Paper — Choose the top-facing structure required for further conversion.",
+      "Clear Thickness Reference — Grey board base thickness is specified separately from the laminate.",
+    ],
+    customization: ["Layer construction", "Grey board base thickness", "Top paper option", "Sheet size"],
+    commercial: { moq: "500 sheets per variant" },
+    quoteReqs: ["Layer construction", "Grey board base thickness", "Top layer", "Sheet size", "Quantity", "Destination port"],
+    seoTitle: "Foam Laminated Grey Board for Padded Covers",
+    metaDescription: "Foam laminated grey board for certificate folders and hardcover covers. 2 or 3 layers, 3 mm foam, grey or kraft top paper. MOQ: 500 sheets per variant.",
+    keywords: ["foam laminated grey board", "padded cover board", "certificate folder board", "hardcover foam board", "cushioned grey board"],
+    image: "/images/products/package-board/laminated-detail/foam-laminated-grey-board-main.webp",
+    galleryTitle: "Layer Construction, Applications and Packing",
+    galleryIntro: "Review the visible layer structure, padded cover uses and representative pallet packing.",
+    gallery: [
+      { src: "/images/products/package-board/laminated-detail/foam-laminated-grey-board-close-up.webp", alt: "Foam laminated grey board layer structure close-up", fit: "contain" },
+      { src: "/images/products/package-board/laminated-detail/foam-laminated-grey-board-applications.webp", alt: "Foam laminated grey board certificate folder and hardcover book applications" },
+      { src: "/images/products/package-board/laminated-detail/foam-laminated-grey-board-packing.webp", alt: "Foam laminated grey board packed on a pallet", fit: "contain" },
+    ],
   },
 };
 
@@ -2917,7 +3212,7 @@ export const aboutCompany = {
   title: "Your Paper Supply Partner Since 2002",
   paragraphs: [
     "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) is headquartered in Dongguan City, Guangdong Province — just 50km from Shenzhen port. Our 20,000m² workshop houses 2 grey board machines and 2 black paper machines, operated by a team of 220+ skilled workers. With a monthly production capacity of 20,000 tons and 50,000 tons of warehouse stock, we ensure fast and reliable delivery to clients worldwide.",
-    "We partner with China's premier paper mills — including APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, and IPSUN — to source the full spectrum of printing, packaging, and specialty paper grades. Our five sales teams (50+ specialists) serve customers across 60+ countries, exporting 36,000+ tons annually. Every product is FSC and SGS certified. Custom size, weight, and labeling available with free samples.",
+    "We work with major Chinese paper mills — including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai — to source printing, packaging, and specialty paper grades. Our team supports custom sizes, weight ranges, labeling, samples, product-specific documentation, and export coordination.",
   ],
   vision: "To be the most reliable, transparent, and sustainability-driven paper supply partner for businesses worldwide — delivering quality from Dongguan to the world.",
 };
@@ -2943,7 +3238,7 @@ export const whyChooseUs = [
     title: "Strong Production Capacity",
     icon: "🏭",
     description:
-      "Our 20,000m² workshop runs 2 grey board machines and 2 black paper machines, delivering 20,000 tons monthly. Partner mills — APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, IPSUN — provide additional capacity and grade coverage.",
+      "Our manufacturing and processing capabilities are supported by a mill supply network that includes APP, Sun Paper, Nine Dragons, Liansheng, and Huatai, providing broader grade coverage for international buyers.",
   },
   {
     title: "Fast & Timely Delivery",
@@ -3048,46 +3343,113 @@ export const contactInfo = {
 
 export const faqItems = [
   {
-    question: "What paper products does YOUNGSUN PAPER supply?",
-    answer:
-      "YOUNGSUN PAPER supplies four categories of paper and board: Package Board (grey board, black paper, kraft paper, C1S ivory board, duplex board, C2S art board, PE coated paper, color card, folding box board), Culture Paper (woodfree paper, offset paper, copy paper, color offset paper, LWC paper, NCR paper), Fancy Paper (soft touch paper, leather paper, pearlescent paper, embossed paper, label paper, tracing paper), and Food Packaging Paper (cup paper, greaseproof paper, silicone coated paper). All products are FSC and SGS certified.",
+    id: "product-range",
+    question: {
+      en: "What paper products does YOUNGSUN PAPER supply?",
+      es: "¿Qué productos de papel suministra YOUNGSUN PAPER?",
+    },
+    answer: {
+      en: "YOUNGSUN PAPER supplies package board, culture paper, fancy paper and food packaging paper. The range includes grey board, black paper, folding box board, kraft paper, coated and uncoated printing paper, specialty surfaces, cup paper, greaseproof paper and other grades for packaging, printing and converting.",
+      es: "YOUNGSUN PAPER suministra cartón para embalaje, papel cultural, papel especial y papel para envases alimentarios. La gama incluye cartón gris, papel negro, cartón plegable, papel kraft, papeles de impresión estucados y no estucados, superficies especiales, papel para vasos y papel antigrasa.",
+    },
   },
   {
-    question: "Where is YOUNGSUN PAPER located and how fast can you deliver?",
-    answer:
-      "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) is headquartered in Dalang Town, Dongguan City, Guangdong Province, China — approximately 50 km from Shenzhen port. We maintain 50,000 tons of permanent warehouse stock for rapid dispatch. Container loading is typically completed within 7–14 days of order confirmation, depending on product specifications and volume.",
+    id: "location",
+    question: { en: "Where is YOUNGSUN PAPER located?", es: "¿Dónde se encuentra YOUNGSUN PAPER?" },
+    answer: {
+      en: "YOUNGSUN PAPER is headquartered in Dalang Town, Dongguan City, Guangdong Province, China, with convenient access to Shenzhen export ports. Our team coordinates manufacturing, mill sourcing, processing, quality documents and export logistics from one point of contact.",
+      es: "YOUNGSUN PAPER tiene su sede en Dalang, Dongguan, provincia de Guangdong, China, con acceso conveniente a los puertos de exportación de Shenzhen. Nuestro equipo coordina fabricación, suministro de fábricas, procesamiento, documentación de calidad y logística de exportación.",
+    },
   },
   {
-    question: "What certifications do your paper products have?",
-    answer:
-      "All YOUNGSUN PAPER products are FSC (Forest Stewardship Council) certified for responsible forestry and SGS certified for quality assurance. Food-contact grades are FDA and EU 1935/2004 compliant. PFAS-free certification is available for all food packaging papers. Chain-of-custody documentation, certificates of origin, and mill test certificates are provided with every shipment.",
+    id: "certification-documents",
+    question: { en: "What certification and test documents are available?", es: "¿Qué certificados e informes de ensayo están disponibles?" },
+    answer: {
+      en: "Certification and test documents depend on the exact product grade and producing mill. FSC chain-of-custody documents, SGS test reports and food-contact compliance documents are available for applicable products and orders. Tell us the destination market and required standard so we can confirm the correct documents before you order.",
+      es: "Los certificados e informes dependen del producto y de la fábrica de origen. Para productos y pedidos aplicables pueden proporcionarse documentos de cadena de custodia FSC, informes SGS y documentación de contacto alimentario. Indique el mercado de destino y la norma requerida para confirmar los documentos antes del pedido.",
+    },
   },
   {
-    question: "Can you customize paper size, weight, or packaging?",
-    answer:
-      "Yes. YOUNGSUN PAPER provides custom size (slitting and sheeting to exact dimensions), custom weight (grammage within available range), and custom labeling and packaging solutions. Free samples are provided before bulk order confirmation. Our converting partners offer embossing, die-cutting, printing, lamination, and export-grade packing as value-added services.",
+    id: "customization",
+    question: { en: "Can you customize paper size, weight or packaging?", es: "¿Se pueden personalizar el tamaño, el gramaje o el embalaje?" },
+    answer: {
+      en: "Yes. Available options include custom sheet sizes, reel widths, grammage within the product range, slitting, sheeting, labeling and export packing. Embossing, printing, lamination and other converting services depend on the material and order. Final tolerances are confirmed in the quotation or approved specification.",
+      es: "Sí. Las opciones incluyen medidas de hoja, anchos de bobina, gramajes dentro de la gama disponible, corte, etiquetado y embalaje de exportación. El gofrado, la impresión, la laminación y otros procesos dependen del material y del pedido. Las tolerancias finales se confirman en la cotización o especificación aprobada.",
+    },
   },
   {
-    question: "What is your minimum order quantity (MOQ) and how do I get a quote?",
-    answer:
-      "Minimum order quantities vary by product grade — typically one 20-foot container (approximately 20–25 tons depending on paper grammage) for export orders. Domestic and sample orders can be smaller. For a quotation, contact us at Alice@yspaper.com or WhatsApp +86 13713459656 with your product specifications, grammage, size, quantity, and delivery port. We respond within 24 hours.",
+    id: "moq",
+    question: { en: "What is the minimum order quantity (MOQ)?", es: "¿Cuál es la cantidad mínima de pedido (MOQ)?" },
+    answer: {
+      en: "MOQ is not one fixed quantity for every product. It depends on the paper grade, GSM or thickness, size, producing mill, stock availability and packing requirements. Standard samples are separate from commercial order quantities. Send your specification and target quantity to receive the applicable MOQ before quotation.",
+      es: "El MOQ no es una cantidad única para todos los productos. Depende del tipo de papel, gramaje o espesor, medida, fábrica de origen, disponibilidad y embalaje. Las muestras estándar no forman parte del MOQ comercial. Envíe la especificación y cantidad prevista para confirmar el mínimo aplicable antes de cotizar.",
+    },
   },
   {
-    question: "Do you supply food-grade paper for direct food contact?",
-    answer:
-      "Yes. Our Food Packaging Paper category includes cup paper (PE-coated for hot and cold cups), greaseproof paper (PFAS-free, Kit rating 8–12), and silicone coated paper (heat-resistant to 230°C). All food-contact grades are FDA 21 CFR 176.170 and EU 1935/2004 compliant. Certification documentation is provided with every food-grade shipment.",
+    id: "samples",
+    question: { en: "How do I request paper samples?", es: "¿Cómo solicito muestras de papel?" },
+    answer: {
+      en: "Send the product name, GSM or thickness, size and intended application to Alice@yspaper.com or WhatsApp +86 13713459656. YOUNGSUN covers the cost of standard samples; the customer pays the international courier charge. Availability and dispatch arrangements are confirmed before shipment.",
+      es: "Envíe el nombre del producto, gramaje o espesor, medida y aplicación a Alice@yspaper.com o WhatsApp +86 13713459656. YOUNGSUN cubre el costo de las muestras estándar y el cliente paga el envío internacional. La disponibilidad y el despacho se confirman antes del envío.",
+    },
   },
   {
-    question: "Which countries do you export to?",
-    answer:
-      "YOUNGSUN PAPER exports to 60+ countries across six continents. Our largest markets are in Asia (25+ countries), Europe (18+ countries), and the Americas (12+ countries). We also serve growing markets in Africa, the Middle East, and Oceania. We handle all export documentation — certificates of origin, fumigation certificates, FSC chain-of-custody, packing lists, and bills of lading.",
+    id: "lead-time",
+    question: { en: "How are production and delivery times calculated?", es: "¿Cómo se calculan los plazos de producción y entrega?" },
+    answer: {
+      en: "Stock grades and made-to-order products follow different schedules. Each quotation separates product preparation or production time, loading arrangements and estimated ocean transit. The final schedule depends on the grade, specification, quantity, destination port and confirmed shipping space.",
+      es: "Los productos en stock y los fabricados bajo pedido tienen plazos diferentes. Cada cotización separa el tiempo de preparación o producción, la carga y el tránsito marítimo estimado. El plazo final depende del producto, especificación, cantidad, puerto de destino y espacio naviero confirmado.",
+    },
   },
   {
-    question: "What paper mills do you partner with?",
-    answer:
-      "We maintain strategic sourcing partnerships with China's leading paper mills including APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, and IPSUN. Our own facility houses 2 grey board machines and 2 black paper machines with a monthly production capacity of 20,000 tons. This dual-model (in-house production + mill partnerships) ensures competitive pricing and supply chain resilience.",
+    id: "food-contact",
+    question: { en: "Do you supply paper for food-contact applications?", es: "¿Suministran papel para aplicaciones de contacto alimentario?" },
+    answer: {
+      en: "Yes. The range includes cup paper, greaseproof paper, silicone coated paper and selected barrier-coated grades for food-service packaging. Suitability and compliance documents must be confirmed for the exact grade, food type, temperature, contact time and destination market before commercial use.",
+      es: "Sí. La gama incluye papel para vasos, papel antigrasa, papel siliconado y determinados papeles con barrera para envases alimentarios. La idoneidad y la documentación deben confirmarse según el producto, alimento, temperatura, tiempo de contacto y mercado de destino antes del uso comercial.",
+    },
+  },
+  {
+    id: "export-markets",
+    question: { en: "Which international markets do you serve?", es: "¿Qué mercados internacionales atienden?" },
+    answer: {
+      en: "YOUNGSUN serves paper buyers across Asia, Europe, the Americas, Africa, the Middle East and Oceania. Export support can include commercial invoices, packing lists, bills of lading, certificates of origin and product-specific documents required by the agreed order and destination.",
+      es: "YOUNGSUN atiende a compradores de Asia, Europa, América, África, Oriente Medio y Oceanía. El apoyo de exportación puede incluir factura comercial, lista de empaque, conocimiento de embarque, certificado de origen y documentos específicos acordados para el pedido y destino.",
+    },
+  },
+  {
+    id: "mill-partners",
+    question: { en: "Which paper mills are in your supply network?", es: "¿Qué fábricas de papel forman parte de su red de suministro?" },
+    answer: {
+      en: "Our mill supply network includes APP, Sun Paper, Nine Dragons, Liansheng and Huatai. Together with YOUNGSUN's manufacturing and processing capabilities, this network expands the available range of packaging board, printing paper and specialty paper for international sourcing projects.",
+      es: "Nuestra red de suministro incluye APP, Sun Paper, Nine Dragons, Liansheng y Huatai. Junto con las capacidades de fabricación y procesamiento de YOUNGSUN, esta red amplía la gama de cartones, papeles de impresión y papeles especiales para proyectos internacionales.",
+    },
+  },
+  {
+    id: "payment",
+    question: { en: "What payment methods are available?", es: "¿Qué métodos de pago están disponibles?" },
+    answer: {
+      en: "T/T bank transfer is commonly used, and L/C may be available for qualifying orders. The deposit, balance schedule, beneficiary details and document requirements are stated on the official proforma invoice. Confirm the final terms with YOUNGSUN before making any payment.",
+      es: "La transferencia bancaria T/T es habitual y la carta de crédito puede estar disponible para pedidos que cumplan los requisitos. El depósito, saldo, beneficiario y documentos se indican en la factura proforma oficial. Confirme las condiciones finales con YOUNGSUN antes de pagar.",
+    },
+  },
+  {
+    id: "trade-terms",
+    question: { en: "Can you quote FOB or CIF prices?", es: "¿Pueden cotizar precios FOB o CIF?" },
+    answer: {
+      en: "FOB and CIF quotations can be prepared according to the product and destination. Send the loading port preference, destination port, quantity and packing requirements. The quotation will clearly state the Incoterm, included charges, validity period and estimated schedule.",
+      es: "Se pueden preparar cotizaciones FOB y CIF según el producto y destino. Indique el puerto de carga preferido, puerto de destino, cantidad y embalaje. La cotización indicará claramente el Incoterm, cargos incluidos, validez y plazo estimado.",
+    },
   },
 ];
+
+export function localizeFaqItems(lang = "en") {
+  return faqItems.map((item) => ({
+    id: item.id,
+    q: item.question[lang] || item.question.en,
+    a: item.answer[lang] || item.answer.en,
+  }));
+}
 
 // ============================================================
 // FOOTER
@@ -3125,3 +3487,21 @@ export const footerColumns = [
     ],
   },
 ];
+
+// Supabase is the editorial layer. Existing source content remains the fallback
+// for galleries and specialized modules that are not managed in CMS v1.
+for (const cmsProduct of cmsProducts) {
+  const existing = subProducts[cmsProduct.id] || {};
+  subProducts[cmsProduct.id] = {
+    ...existing,
+    ...cmsProduct,
+    gallery: existing.gallery || [],
+    images: existing.images || [],
+    optionGallery: existing.optionGallery || [],
+    customization: existing.customization || cmsProduct.commercial?.customization || [],
+    quoteReqs: existing.quoteReqs || cmsProduct.commercial?.quoteReqs || [],
+    keywords: existing.keywords || cmsProduct.commercial?.keywords || [],
+  };
+}
+
+for (const slug of cmsHiddenProductSlugs) delete subProducts[slug];

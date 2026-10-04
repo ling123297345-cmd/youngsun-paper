@@ -124,7 +124,7 @@ export const materials = [
       { en: "High-end packaging inserts", es: "Insertos de embalaje de alta gama" },
     ],
     description: { en: "Two-side coated paper with exceptional print quality. Available in gloss and matt finishes. The industry standard for premium printing where image reproduction and color fidelity are critical.", es: "Papel estucado de dos caras con calidad de impresión excepcional. Disponible en acabados brillo y mate. El estándar de la industria para impresión premium donde la reproducción de imagen y fidelidad de color son críticas." },
-    productPage: "/products/art-paper"
+    productPage: "/products/c2s-art-board"
   },
 
   // ── Printing & Culture Paper ─────────────────────────────

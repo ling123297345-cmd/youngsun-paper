@@ -159,7 +159,7 @@ export const industries = [
       }
     ],
     solutions: {
-      en: "YOUNGSUN supplies a full range of culture papers: woodfree offset paper for books and notebooks, C2S art paper (gloss and matt) for premium catalogs and magazines, LWC paper for high-volume publishing, color offset paper for forms and inserts, and NCR paper for business forms. All grades are available in sheets or reels with consistent quality from major mill partners including APP, CHENMING, and NINEDRAGON.",
+      en: "YOUNGSUN supplies a full range of culture papers: woodfree offset paper for books and notebooks, C2S art paper (gloss and matt) for premium catalogs and magazines, LWC paper for high-volume publishing, color offset paper for forms and inserts, and NCR paper for business forms. Grades are available in sheets or reels through a supply network that includes APP, Sun Paper, Nine Dragons, Liansheng, and Huatai.",
       es: "YOUNGSUN suministra una gama completa de papeles culturales: papel offset woodfree para libros y cuadernos, papel arte C2S (brillo y mate) para catálogos y revistas premium, papel LWC para publicaciones de alto volumen, papel offset color para formularios e insertos, y papel NCR para formularios comerciales. Todos los grados disponibles en hojas o bobinas."
     },
     recommendedProducts: ["woodfree-paper", "art-paper", "lwc-paper", "color-offset-paper", "ncr-paper", "copy-paper", "newsprint"],

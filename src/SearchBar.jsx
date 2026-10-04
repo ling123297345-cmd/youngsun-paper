@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { subProducts } from "./data.js";
-import { blogPosts } from "./blogData.js";
 import { useLang } from "./i18n.jsx";
 
 export default function SearchBar() {
@@ -9,6 +8,8 @@ export default function SearchBar() {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
+  const [blogIndex, setBlogIndex] = useState([]);
+  const [blogIndexRequested, setBlogIndexRequested] = useState(false);
   const inputRef = useRef(null);
   const containerRef = useRef(null);
   const navigate = useNavigate();
@@ -27,19 +28,23 @@ export default function SearchBar() {
         });
       }
     });
-    blogPosts.forEach((b) => {
-      if (b.id && b.title) {
-        items.push({
-          type: "blog",
-          id: b.id,
-          name: b.title,
-          text: [b.title, b.summary || "", b.category || ""].join(" ").toLowerCase(),
-          href: `/blog/${b.id}`,
-        });
-      }
-    });
-    return items;
-  }, []);
+    return [...items, ...blogIndex];
+  }, [blogIndex]);
+
+  const loadBlogIndex = async () => {
+    if (blogIndexRequested) return;
+    setBlogIndexRequested(true);
+    const { blogPosts } = await import("./blogData.js");
+    setBlogIndex(blogPosts
+      .filter((post) => post.id && post.title)
+      .map((post) => ({
+        type: "blog",
+        id: post.id,
+        name: post.title,
+        text: [post.title, post.summary || post.excerpt || "", post.category || ""].join(" ").toLowerCase(),
+        href: `/blog/${post.id}`,
+      })));
+  };
 
   const results = useMemo(() => {
     if (query.trim().length < 2) return [];
@@ -86,14 +91,15 @@ export default function SearchBar() {
           ref={inputRef}
           className="search-input"
           type="text"
+          aria-label={lang === "es" ? "Buscar productos y artículos" : "Search products and articles"}
           placeholder={lang === "es" ? "Buscar productos..." : "Search products..."}
           value={query}
           onChange={(e) => { setQuery(e.target.value); setOpen(true); }}
-          onFocus={() => { if (results.length > 0) setOpen(true); }}
+          onFocus={() => { loadBlogIndex(); if (results.length > 0) setOpen(true); }}
           onKeyDown={onKeyDown}
         />
         {query && (
-          <button className="search-clear" onClick={() => { setQuery(""); inputRef.current?.focus(); }}>✕</button>
+          <button type="button" className="search-clear" aria-label={lang === "es" ? "Borrar búsqueda" : "Clear search"} onClick={() => { setQuery(""); inputRef.current?.focus(); }}>✕</button>
         )}
       </div>
 

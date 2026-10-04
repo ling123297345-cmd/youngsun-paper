@@ -2,6 +2,7 @@
 // YOUNGSUN PAPER — How to Order Page
 // ============================================================
 import { Link } from "react-router-dom";
+import { BadgeDollarSign, Check, ClipboardList, Factory, FlaskConical, Lightbulb, RefreshCw, Ship } from "lucide-react";
 import { useLang } from "../i18n.jsx";
 import { PageMeta, HowToSchema } from "../SEO.jsx";
 
@@ -11,7 +12,7 @@ export default function HowToOrder() {
 
   const steps = [
     {
-      icon: "📋",
+      icon: ClipboardList,
       title: { en: "1. Define Your Specification", es: "1. Defina Su Especificación" },
       desc: {
         en: "Tell us your product type, GSM or thickness, sheet size or reel width, quantity, application, and target market. The more detail you provide, the faster and more accurate our quotation will be.",
@@ -20,7 +21,7 @@ export default function HowToOrder() {
       tip: { en: "Pro tip: Include your destination port for accurate freight pricing.", es: "Consejo: Incluya su puerto de destino para precios de flete precisos." }
     },
     {
-      icon: "💰",
+      icon: BadgeDollarSign,
       title: { en: "2. Receive Quotation", es: "2. Reciba Cotización" },
       desc: {
         en: "We respond within 24 hours with a detailed proforma invoice including: product specification, unit price, total amount, payment terms, delivery terms (FOB or CIF), estimated shipment date, and packing details.",
@@ -28,16 +29,16 @@ export default function HowToOrder() {
       }
     },
     {
-      icon: "🔬",
+      icon: FlaskConical,
       title: { en: "3. Approve Samples", es: "3. Apruebe Muestras" },
       desc: {
-        en: "We ship free samples of standard products within 3–5 business days. Test the paper on your production line — printing, cutting, folding, gluing, or forming. We only proceed to production after you confirm the sample meets your requirements.",
-        es: "Enviamos muestras gratuitas de productos estándar en 3–5 días hábiles. Pruebe el papel en su línea de producción — impresión, corte, plegado, encolado o formado. Solo procedemos a producción después de que confirme que la muestra cumple sus requisitos."
+        en: "YOUNGSUN covers the material cost of standard samples; the customer pays the international courier charge. Test the paper on your production line — printing, cutting, folding, gluing, or forming. We only proceed to production after you confirm the sample meets your requirements.",
+        es: "YOUNGSUN cubre el costo del material de las muestras estándar; el cliente paga el transporte internacional. Pruebe el papel en su línea de producción — impresión, corte, plegado, encolado o formado. Solo procedemos después de confirmar que la muestra cumple sus requisitos."
       },
       tip: { en: "Pro tip: Test with your actual production conditions, not just visual inspection.", es: "Consejo: Pruebe con sus condiciones de producción reales, no solo inspección visual." }
     },
     {
-      icon: "🏭",
+      icon: Factory,
       title: { en: "4. Production & Quality Control", es: "4. Producción y Control de Calidad" },
       desc: {
         en: "Production begins after order confirmation and deposit. Our 5-stage quality control process monitors every batch: incoming material inspection, in-process checks, final inspection, pre-shipment verification, and optional third-party testing.",
@@ -45,21 +46,31 @@ export default function HowToOrder() {
       }
     },
     {
-      icon: "🚢",
+      icon: Ship,
       title: { en: "5. Shipping & Delivery", es: "5. Envío y Entrega" },
       desc: {
-        en: "Professional export packing with moisture-barrier wrapping and palletized loading. We provide complete documentation: Bill of Lading, Commercial Invoice, Packing List, Certificate of Origin, and any required certificates (FSC, SGS, FDA). Track your shipment from Shenzhen port to your destination.",
-        es: "Embalaje profesional de exportación con envoltura de barrera de humedad y carga paletizada. Proporcionamos documentación completa: Conocimiento de Embarque, Factura Comercial, Lista de Empaque, Certificado de Origen y cualquier certificado requerido (FSC, SGS, FDA)."
+        en: "Professional export packing with moisture-barrier wrapping and palletized loading. Standard shipping documents include the Bill of Lading, Commercial Invoice, Packing List, and Certificate of Origin. Product-specific supporting documents are confirmed before order placement.",
+        es: "Embalaje profesional de exportación con protección contra humedad y carga paletizada. Los documentos habituales incluyen conocimiento de embarque, factura comercial, lista de empaque y certificado de origen. Los documentos específicos del producto se confirman antes del pedido."
       }
     },
     {
-      icon: "🤝",
+      icon: RefreshCw,
       title: { en: "6. Receive & Reorder", es: "6. Reciba y Reordene" },
       desc: {
         en: "Your dedicated account manager remains available for technical support, quality feedback, and reordering. Consistent quality from batch to batch means your production line stays stable — and reordering is as simple as sending an email.",
         es: "Su gerente de cuenta dedicado permanece disponible para soporte técnico, retroalimentación de calidad y nuevos pedidos. La calidad consistente lote a lote significa que su línea de producción se mantiene estable — y reordenar es tan simple como enviar un correo electrónico."
       }
     },
+  ];
+
+  const quoteChecklist = [
+    { en: "Paper or board grade", es: "Tipo de papel o cartón" },
+    { en: "GSM or thickness", es: "Gramaje o espesor" },
+    { en: "Sheet size or reel width", es: "Tamaño de hoja o ancho de bobina" },
+    { en: "Estimated order quantity", es: "Cantidad estimada del pedido" },
+    { en: "End use and converting process", es: "Uso final y proceso de conversión" },
+    { en: "Destination port or delivery city", es: "Puerto de destino o ciudad de entrega" },
+    { en: "Required testing or documentation", es: "Ensayos o documentación requeridos" },
   ];
 
   return (
@@ -92,18 +103,39 @@ export default function HowToOrder() {
       <section className="section" style={{ background: "#fff" }}>
         <div className="container" style={{ maxWidth: 800 }}>
           <div style={{ display: "grid", gap: 24 }}>
-            {steps.map((step, i) => (
+            {steps.map((step, i) => {
+              const StepIcon = step.icon;
+              return (
               <div key={i} style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
                 <div style={{ width: 56, height: 56, borderRadius: "50%", background: "var(--forest)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, flexShrink: 0 }}>
-                  {step.icon}
+                  <StepIcon size={25} strokeWidth={1.7} color="#fff" aria-hidden="true" />
                 </div>
                 <div style={{ flex: 1, paddingTop: 6 }}>
                   <h3 style={{ fontSize: 18, fontWeight: 700, color: "var(--forest)", marginBottom: 8 }}>{step.title[lang]}</h3>
                   <p style={{ fontSize: 14, color: "var(--ink)", lineHeight: 1.7 }}>{step.desc[lang]}</p>
                   {step.tip && (
-                    <p style={{ marginTop: 8, fontSize: 13, color: "var(--gold)", fontStyle: "italic" }}>💡 {step.tip[lang]}</p>
+                    <p style={{ marginTop: 10, fontSize: 13, color: "var(--gold)", fontStyle: "italic", display: "flex", gap: 7, alignItems: "flex-start" }}><Lightbulb size={15} aria-hidden="true" style={{ marginTop: 2, flexShrink: 0 }} /> {step.tip[lang]}</p>
                   )}
                 </div>
+              </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "var(--paper)", paddingTop: 70, paddingBottom: 70 }}>
+        <div className="container" style={{ maxWidth: 900 }}>
+          <div style={{ textAlign: "center", maxWidth: 650, margin: "0 auto 30px" }}>
+            <span style={{ color: "var(--gold)", fontWeight: 700, fontSize: 12, textTransform: "uppercase" }}>{isEs ? "Antes de cotizar" : "Before requesting a quote"}</span>
+            <h2 style={{ fontSize: "clamp(24px, 4vw, 32px)", color: "var(--forest)", margin: "10px 0 10px" }}>{isEs ? "Prepare estos datos" : "Prepare These Details"}</h2>
+            <p style={{ fontSize: 15, color: "var(--muted)", lineHeight: 1.7 }}>{isEs ? "Una solicitud completa nos permite recomendar el grado correcto y calcular precio, plazo y transporte con mayor precisión." : "A complete request helps us recommend the right grade and calculate price, lead time, and freight more accurately."}</p>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
+            {quoteChecklist.map((item) => (
+              <div key={item.en} style={{ display: "flex", alignItems: "center", gap: 11, background: "#fff", border: "1px solid rgba(20,54,34,0.1)", padding: "15px 17px", borderRadius: 8, color: "var(--ink)", fontSize: 14 }}>
+                <Check size={18} color="var(--forest)" strokeWidth={2.2} aria-hidden="true" />
+                <span>{item[lang]}</span>
               </div>
             ))}
           </div>

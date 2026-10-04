@@ -45,13 +45,13 @@ const industryCards = [
     id: "hang-tags-labels",
     icon: Tags,
     image: "/images/industries/cards/industry-hang-tags-labels-youngsun.webp",
-    href: "/fancy-paper-collection",
+    href: "/industries/hang-tags-labels",
   },
   {
     id: "gift-wrapping-decoration",
     icon: Gift,
     image: "/images/industries/cards/industry-gift-wrapping-decoration-youngsun.webp",
-    href: "/products",
+    href: "/industries/gift-wrapping-decoration",
   },
 ];
 
@@ -60,21 +60,21 @@ const applicationGuides = [
     title: { en: "Printed Takeaway Paper Bag", es: "Bolsa de papel impresa para llevar" },
     description: {
       en: "White kraft paper combines print clarity with the strength required for takeaway bags and retail carriers.",
-      es: "El papel kraft blanco combina claridad de impresion con la resistencia necesaria para bolsas de comida y comercio.",
+      es: "El papel kraft blanco combina claridad de impresión con la resistencia necesaria para bolsas de comida y comercio.",
     },
-    paper: "White Kraft Paper",
+    paper: { en: "White Kraft Paper", es: "Papel Kraft Blanco" },
     rangeLabel: { en: "Typical range", es: "Rango habitual" },
     range: "80 - 150 gsm",
-    image: "20260803_165638_236.jpg",
+    image: "/images/industries/applications/white-kraft-takeaway-paper-bag-youngsun.webp",
     href: "/products/kraft-paper",
   },
   {
     title: { en: "Perfume Folding Box", es: "Caja plegable para perfume" },
     description: {
       en: "FBB provides stiffness, clean creasing and a smooth print surface for premium fragrance and cosmetic packaging.",
-      es: "FBB aporta rigidez, hendido limpio y una superficie suave para envases premium de perfumeria y cosmetica.",
+      es: "FBB aporta rigidez, hendido limpio y una superficie suave para envases prémium de perfumería y cosmética.",
     },
-    paper: "Folding Box Board (FBB)",
+    paper: { en: "Folding Box Board (FBB)", es: "Cartón Plegable (FBB)" },
     rangeLabel: { en: "Typical range", es: "Rango habitual" },
     range: "250 - 350 gsm",
     image: "/images/products/fancy-paper/gallery/Purple-Magenta-Perfume-Packaging.jpg",
@@ -84,9 +84,9 @@ const applicationGuides = [
     title: { en: "Premium Garment Hang Tag", es: "Etiqueta premium para prendas" },
     description: {
       en: "Through-dyed black paper gives garment tags clean edges and a refined base for foil stamping and embossing.",
-      es: "El papel negro tenido en masa ofrece bordes limpios y una base refinada para foil y relieve.",
+      es: "El papel negro teñido en masa ofrece bordes limpios y una base refinada para estampado y relieve.",
     },
-    paper: "Black Paper",
+    paper: { en: "Black Paper", es: "Papel Negro" },
     rangeLabel: { en: "Typical range", es: "Rango habitual" },
     range: "200 - 400 gsm",
     image: "20260801_103337_136.jpg",
@@ -96,24 +96,24 @@ const applicationGuides = [
     title: { en: "Hardcover Book Cover", es: "Cubierta de libro de tapa dura" },
     description: {
       en: "Grey board supplies the flatness, support and durability needed for case-bound books, albums and presentation folders.",
-      es: "El carton gris ofrece planitud, soporte y durabilidad para libros, albumes y carpetas de presentacion.",
+      es: "El cartón gris ofrece planitud, soporte y durabilidad para libros, álbumes y carpetas de presentación.",
     },
-    paper: "Grey Board",
+    paper: { en: "Grey Board", es: "Cartón Gris" },
     rangeLabel: { en: "Typical range", es: "Rango habitual" },
     range: "1.0 - 3.0 mm",
-    image: "20260801_104421_247.jpg",
+    image: "/images/products/package-board/gallery/grey-board-scene-05.jpg",
     href: "/products/grey-board",
   },
   {
     title: { en: "Greaseproof Food Wrap", es: "Envoltura antigrasa para alimentos" },
     description: {
       en: "Greaseproof paper resists oil migration while keeping bakery, burger and deli presentation clean and food-safe.",
-      es: "El papel antigrasa resiste la migracion de aceite y mantiene limpia la presentacion de alimentos.",
+      es: "El papel antigrasa resiste la migración de aceite y mantiene limpia la presentación de alimentos.",
     },
-    paper: "Greaseproof Paper",
+    paper: { en: "Greaseproof Paper", es: "Papel Antigrasa" },
     rangeLabel: { en: "Typical range", es: "Rango habitual" },
     range: "30 - 60 gsm",
-    image: "20260801_100942_063.jpg",
+    image: "/images/products/food-packaging/gallery/greaseproof-paper-scene-02.jpg",
     href: "/products/greaseproof-paper",
   },
 ];
@@ -132,26 +132,26 @@ const copy = {
     recommended: "Recommended paper",
     viewDetails: "View details",
     ctaTitle: "Not sure which paper is right for you?",
-    ctaBody: "Tell us about your product, printing process and target performance. Our team will recommend suitable grades and prepare samples for evaluation.",
+    ctaBody: "Tell us about your product, printing process and target performance. Our team will recommend suitable grades and prepare samples for evaluation. Standard sample material is covered by YOUNGSUN; international courier charges are paid by the customer.",
     ctaPrimary: "Get paper recommendation",
-    ctaSecondary: "Request free samples",
+    ctaSecondary: "Request samples",
   },
   es: {
-    heroTitle: "Encuentre el papel adecuado para cada aplicacion.",
-    heroBody: "Desde embalaje y alimentos hasta lujo, edicion y comercio, compare soluciones probadas segun el uso final.",
+    heroTitle: "Encuentre el papel adecuado para cada aplicación.",
+    heroBody: "Desde embalaje y alimentos hasta lujo, edición y comercio, compare soluciones probadas según el uso final.",
     explore: "Explorar aplicaciones",
-    recommendation: "Obtener recomendacion",
+    recommendation: "Obtener recomendación",
     industryLabel: "Explorar por industria",
-    industryIntro: "Encuentre soluciones de papel y carton para fabricar, embalar y presentar su producto.",
+    industryIntro: "Encuentre soluciones de papel y cartón para fabricar, embalar y presentar su producto.",
     exploreLink: "Explorar",
-    guidesLabel: "Guias de aplicacion destacadas",
-    guidesIntro: "Productos reales. Recomendaciones practicas.",
+    guidesLabel: "Guías de aplicación destacadas",
+    guidesIntro: "Productos reales. Recomendaciones prácticas.",
     recommended: "Papel recomendado",
     viewDetails: "Ver detalles",
-    ctaTitle: "No esta seguro de que papel necesita?",
-    ctaBody: "Cuentenos su producto, proceso de impresion y rendimiento esperado. Recomendaremos grados adecuados y prepararemos muestras.",
-    ctaPrimary: "Obtener recomendacion",
-    ctaSecondary: "Solicitar muestras gratis",
+    ctaTitle: "¿No está seguro de qué papel necesita?",
+    ctaBody: "Cuéntenos su producto, proceso de impresión y rendimiento esperado. Recomendaremos grados adecuados y prepararemos muestras. YOUNGSUN cubre el material de la muestra estándar; el cliente paga el transporte internacional.",
+    ctaPrimary: "Obtener recomendación",
+    ctaSecondary: "Solicitar muestras",
   },
 };
 
@@ -167,8 +167,8 @@ export default function Industries() {
   return (
     <main className="industries-page">
       <PageMeta
-        title="Paper Solutions by Industry and Application | Youngsun Paper"
-        description="Compare paper and paperboard for packaging, food service, luxury boxes, publishing, hang tags and gift wrapping. Get grade recommendations and free samples."
+        title={activeLang === "es" ? "Soluciones de Papel por Industria y Aplicación | Youngsun Paper" : "Paper Solutions by Industry and Application | Youngsun Paper"}
+        description={activeLang === "es" ? "Compare papeles y cartones para embalaje, alimentos, cajas de lujo, edición, etiquetas y regalos. Solicite una recomendación técnica y muestras." : "Compare paper and paperboard for packaging, food service, luxury boxes, publishing, hang tags and gift wrapping. Get grade recommendations and request samples."}
         path="/industries"
       />
 
@@ -176,7 +176,7 @@ export default function Industries() {
         <img
           className="industries-hero-image"
           src="/images/industries/youngsun-paper-applications-hero.png"
-          alt="Paper packaging, paper cup, rigid gift box, book cover and hang tag applications"
+          alt={activeLang === "es" ? "Aplicaciones de papel para embalaje, vasos, cajas rígidas, libros y etiquetas" : "Paper packaging, paper cup, rigid gift box, book cover and hang tag applications"}
         />
         <div className="industries-hero-content">
           <h1 id="industries-hero-title">{text.heroTitle}</h1>
@@ -216,7 +216,7 @@ export default function Industries() {
                   <div className="industries-card-image-wrap">
                     <img
                       src={getImageSrc(card.image)}
-                      alt={`${channel.title[activeLang]} paper application`}
+                      alt={activeLang === "es" ? `Aplicación de papel para ${channel.title[activeLang]}` : `${channel.title[activeLang]} paper application`}
                       loading="lazy"
                     />
                   </div>
@@ -248,7 +248,7 @@ export default function Industries() {
 
           <div className="industries-guide-list">
             {applicationGuides.map((guide) => (
-              <article className="industries-guide-row" key={guide.paper}>
+              <article className="industries-guide-row" key={guide.href}>
                 <img
                   className="industries-guide-image"
                   src={getImageSrc(guide.image)}
@@ -262,11 +262,11 @@ export default function Industries() {
                 <div className="industries-guide-recommendation">
                   <div>
                     <span>{text.recommended}</span>
-                    <strong>{guide.paper}</strong>
+                    <strong>{guide.paper[activeLang]}</strong>
                     <small>{guide.rangeLabel[activeLang]}</small>
                     <b>{guide.range}</b>
                   </div>
-                  <Link to={guide.href} aria-label={`${text.viewDetails}: ${guide.paper}`}>
+                  <Link to={guide.href} aria-label={`${text.viewDetails}: ${guide.paper[activeLang]}`}>
                     {text.viewDetails}
                     <ArrowRight aria-hidden="true" size={16} />
                   </Link>

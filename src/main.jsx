@@ -1,7 +1,37 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
+import { initConversionTracking } from "./analytics.js";
 import "./styles.css";
+
+// Preserve old shared links while moving the Spanish site to crawlable /es/ URLs.
+// A full navigation ensures crawlers and browsers load the Spanish pre-rendered HTML.
+const initialUrl = new URL(window.location.href);
+if (initialUrl.searchParams.get("lang") === "es" && !/^\/es(?:\/|$)/.test(initialUrl.pathname)) {
+  initialUrl.searchParams.delete("lang");
+  const query = initialUrl.searchParams.toString();
+  const spanishPath = initialUrl.pathname === "/" ? "/es/" : `/es${initialUrl.pathname}`;
+  window.location.replace(`${spanishPath}${query ? `?${query}` : ""}${initialUrl.hash}`);
+}
+
+// Static pages carry complete SEO tags for crawlers. Remove that server copy
+// before React Helmet mounts so the browser DOM keeps one authoritative set.
+[
+  'meta[name="description"]',
+  'link[rel="canonical"]',
+  'link[rel="alternate"][hreflang]',
+  'meta[property="og:title"]',
+  'meta[property="og:description"]',
+  'meta[property="og:url"]',
+  'meta[property="og:image"]',
+  'meta[property="og:locale"]',
+  'meta[property="og:locale:alternate"]',
+  'meta[name="twitter:title"]',
+  'meta[name="twitter:description"]',
+  'meta[name="twitter:image"]',
+].forEach((selector) => document.querySelectorAll(selector).forEach((element) => element.remove()));
+
+initConversionTracking();
 
 // ── Render the application ──────────────────────────────────
 const root = document.getElementById("root");

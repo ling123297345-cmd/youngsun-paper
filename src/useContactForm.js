@@ -11,6 +11,7 @@
 // ============================================================
 
 import { useState, useRef, useCallback } from "react";
+import { trackConversion } from "./analytics.js";
 
 // ── Config ──────────────────────────────────────────────────
 // Replace with your Web3Forms access key after signing up at:
@@ -34,10 +35,15 @@ export function useContactForm(initialValues) {
 
   // ── Honeypot: hidden field that bots fill out ────────────
   const honeypotRef = useRef(null);
-  const submitTimeRef = useRef(0);
+  const submitTimeRef = useRef(Date.now());
+  const formStartedRef = useRef(false);
 
   const handleChange = useCallback((e) => {
     setForm((p) => ({ ...p, [e.target.name]: e.target.value }));
+  }, []);
+
+  const setField = useCallback((name, value) => {
+    setForm((previousForm) => ({ ...previousForm, [name]: value }));
   }, []);
 
   const handleSubmit = useCallback(async (e) => {
@@ -63,7 +69,10 @@ export function useContactForm(initialValues) {
 
     try {
       // ── Build request body ────────────────────────────────
+      const isSampleRequest = form.inquiryType === "samples";
+      const inquiryLabel = isSampleRequest ? "Sample Request" : "Quotation Request";
       const body = {
+        inquiry_type: inquiryLabel,
         name: form.name,
         email: form.email,
         company: form.company || "(not provided)",
@@ -74,7 +83,10 @@ export function useContactForm(initialValues) {
         quantity: form.quantity || "",
         destination: form.destination || "",
         message: form.message,
-        _subject: `New Inquiry from ${form.name || "Website Visitor"}: ${form.product || "Paper Products"}`,
+        sample_policy: isSampleRequest
+          ? "YOUNGSUN covers standard sample costs; the customer pays courier charges."
+          : "Not applicable",
+        _subject: `${inquiryLabel} from ${form.name || "Website Visitor"}: ${form.product || "Paper Products"}`,
         _captcha: "false",
         page_url: window.location.href,
       };
@@ -96,24 +108,28 @@ export function useContactForm(initialValues) {
 
         // ── Google Analytics / Ads conversion tracking ──────
         if (typeof window !== "undefined") {
-          // GA4 event
-          if (window.gtag) {
-            window.gtag("event", "generate_lead", {
-              event_category: "contact_form",
-              event_label: form.product || "inquiry",
+          trackConversion(
+            "generate_lead",
+            {
+              lead_type: isSampleRequest ? "sample_request_form" : "quote_request_form",
+              form_location: window.location.pathname === "/" ? "homepage" : "contact_page",
+              product_interest: form.product || "not_specified",
               value: 1,
-            });
-          }
+            },
+            {
+              clarityEvent: "contact_form_submit",
+              dedupeKey: `contact-form:${window.location.pathname}`,
+              dedupeWindow: 5000,
+            }
+          );
           // Google Ads conversion (if configured)
           if (window.gtag_report_conversion) {
             window.gtag_report_conversion();
           }
-          // Microsoft Clarity (already installed)
-          if (window.clarity) {
-            window.clarity("event", "contact_form_submit");
-          }
         }
 
+        submitTimeRef.current = Date.now();
+        formStartedRef.current = false;
         setTimeout(() => setSubmitted(false), 6000);
       } else {
         const data = await res.json().catch(() => ({}));
@@ -129,7 +145,20 @@ export function useContactForm(initialValues) {
   }, [form, initialValues]);
 
   const startTimer = useCallback(() => {
-    submitTimeRef.current = Date.now();
+    if (formStartedRef.current) return;
+    formStartedRef.current = true;
+    trackConversion(
+      "inquiry_form_start",
+      {
+        form_name: "contact_inquiry",
+        form_location: window.location.pathname === "/" ? "homepage" : "contact_page",
+      },
+      {
+        clarityEvent: "contact_form_start",
+        dedupeKey: `form-start:${window.location.pathname}`,
+        dedupeWindow: 30000,
+      }
+    );
   }, []);
 
   return {
@@ -140,6 +169,7 @@ export function useContactForm(initialValues) {
     honeypotRef,
     submitTimeRef: startTimer,
     handleChange,
+    setField,
     handleSubmit,
   };
 }

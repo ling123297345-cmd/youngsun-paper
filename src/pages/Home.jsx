@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight, BookOpen, Building2, Cpu, Gem, PackageOpen, UtensilsCrossed } from "lucide-react";
+import { ArrowRight, ArrowUpRight, BookOpen, Building2, ClipboardCheck, Coffee, Cpu, FileCheck2, Gem, Gift, Globe2, PackageCheck, PackageOpen, Recycle, Tags, Truck, UtensilsCrossed } from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { siteConfig, productCategories, subProducts, whyChooseUs, contactInfo, faqItems } from "../data.js";
+import { siteConfig, productCategories, subProducts, whyChooseUs, localizeFaqItems } from "../data.js";
 import { productEs } from "../productEs.js";
 import { industries } from "../industriesData.js";
-import { blogPosts } from "../blogData.js";
-import { useContactForm } from "../useContactForm.js";
-import { PageMeta, OrganizationSchema } from "../SEO.jsx";
+import { PageMeta, OrganizationSchema, WebsiteSchema } from "../SEO.jsx";
+import InquiryCTA from "../InquiryCTA.jsx";
 
 function ArrowIcon() {
   return <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h13" /><path d="m13 6 6 6-6 6" /></svg>;
@@ -19,40 +18,60 @@ export default function Home() {
 
   return (
     <>
-      <PageMeta title="Premium Paper Trading & Manufacturing" description="YOUNGSUN PAPER — premium paper and board supplier since 2002. Grey board, kraft paper, specialty paper, and food packaging for global brands. FSC & SGS certified." path="/" />
+      <PageMeta
+        title={isEs ? "Fabricante de Papel y Cartón en China" : "Paper & Paperboard Manufacturer in China"}
+        description={isEs
+          ? "Fabricante chino de papel y cartón: cartón gris, papel negro, cartón plegable, kraft y papeles especiales para embalaje e impresión."
+          : "China paper and paperboard manufacturer supplying grey board, black paper, folding box board, kraft and specialty paper for packaging and printing."}
+        path="/"
+      />
       <OrganizationSchema />
+      <WebsiteSchema />
       {/* ===== HERO ===== */}
       <section className="hero" id="home">
-        <div className="hero-bg"><img src="images/products/fancy-paper/background-hangtag-section-clean.jpg" alt="" aria-hidden="true" fetchpriority="high" /></div>
+        <div className="hero-bg">
+          <img
+            src="/images/hero/youngsun-paper-manufacturer-hero-2026.webp"
+            srcSet="/images/hero/youngsun-paper-manufacturer-hero-2026-960.webp 960w, /images/hero/youngsun-paper-manufacturer-hero-2026-1440.webp 1440w, /images/hero/youngsun-paper-manufacturer-hero-2026.webp 1920w"
+            sizes="100vw"
+            alt={isEs
+              ? "Cartón gris, papel negro y papeles especiales suministrados por YOUNGSUN PAPER"
+              : "Grey board, black paper and specialty paper products supplied by YOUNGSUN PAPER"}
+            width="1920"
+            height="900"
+            fetchPriority="high"
+          />
+        </div>
         <div className="hero-content">
-          <p className="hero-eyebrow">{t("Sustainable Paper, Global Reach")}</p>
-          <div className="hero-title"><h1>Premium Paper &amp; Paperboard<br /><span className="gold-text">Supplier in China</span></h1></div>
-          <p className="hero-subtitle">{t("hero_subtitle")}</p>
+          <p className="hero-eyebrow">{isEs ? "YOUNGSUN PAPER · DONGGUAN, CHINA" : "YOUNGSUN PAPER · DONGGUAN, CHINA"}</p>
+          <div className="hero-title">
+            <h1>
+              {isEs ? "Fabricante de papel y cartón" : "Paper & Paperboard"}
+              <br />
+              <span className="gold-text">{isEs ? "en China" : "Manufacturer in China"}</span>
+            </h1>
+          </div>
+          <p className="hero-subtitle">
+            {isEs
+              ? "Cartón gris, papel negro, cartón plegable, papel kraft y papeles especiales para embalaje, impresión y conversión en mercados internacionales."
+              : "Grey board, black paper, folding box board, kraft paper and specialty paper for global packaging, printing and converting."}
+          </p>
           <div className="hero-actions">
-            <Link to="/products" className="btn btn-primary">{t("Explore Products")}<span className="btn-arrow"><ArrowIcon /></span></Link>
-            <Link to="/contact" className="btn btn-outline">{t("Get a Quote")}</Link>
+            <Link to="/products" className="btn btn-primary">{isEs ? "Explorar productos de papel" : "Explore Paper Products"}<span className="btn-arrow"><ArrowIcon /></span></Link>
+            <Link to="/contact?intent=samples" className="btn btn-outline">{isEs ? "Solicitar muestras" : "Request Paper Samples"}</Link>
           </div>
           <div className="hero-eco-badges">
             <span className="hero-eco-badge"><span className="badge-dot" /> {t("FSC® Certified")}</span>
             <span className="hero-eco-badge"><span className="badge-dot" /> {t("SGS Certified")}</span>
-            <span className="hero-eco-badge"><span className="badge-dot" /> ISO 14001</span>
             <span className="hero-eco-badge"><span className="badge-dot" /> {t("20+ Years Experience")}</span>
-            <span className="hero-eco-badge"><span className="badge-dot" /> {t("60+ Export Countries")}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "GSM y tamaños personalizados" : "Custom GSM & Sizes"}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "60+ mercados de exportación" : "60+ Export Markets"}</span>
           </div>
         </div>
       </section>
 
-      {/* ===== CATEGORY OVERVIEW ===== */}
-      <section className="section category-overview-section">
-        <div className="cat-overview-grid container">
-          {productCategories.map((cat) => (
-            <Link key={cat.id} className="cat-overview-card" to={`/products/${cat.id}`}>
-              <div className="cat-overview-image"><img src={cat.image} alt={cat.title} loading="lazy" /><div className="cat-overview-overlay" /></div>
-              <div className="cat-overview-body"><span className="cat-overview-icon">{cat.icon}</span><h3>{cat.title}</h3><p>{t(cat.tagline)}</p><span className="cat-overview-link">{t("View Products")} →</span></div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* ===== PRODUCT CATEGORY BROWSER ===== */}
+      <ProductCategoryBrowser />
 
       {/* ===== ABOUT ===== */}
       <AboutHome />
@@ -64,31 +83,25 @@ export default function Home() {
       <FancyPaperBanner />
 
       {/* ===== EXHIBITION GALLERY ===== */}
-      <HomeExhibitionGallery />
+      <HomeExhibitionFeature />
 
       {/* ===== INDUSTRIES OVERVIEW ===== */}
-      <IndustriesOverview />
+      <IndustryMaterialsOverview />
 
       {/* ===== VERIFIED SUPPLY NETWORK ===== */}
       <TrustBar />
 
-      {/* ===== COMMON BUYER APPLICATIONS ===== */}
-      <BuyerApplications />
+      {/* ===== SOURCING RISK CONTROL ===== */}
+      <SourcingRiskHome />
 
       {/* ===== BLOG HIGHLIGHTS ===== */}
       <BlogHighlights />
 
-      {/* ===== WHY US ===== */}
-      <WhyUsHome />
-
-      {/* ===== BUYER VERIFICATION PROCESS ===== */}
-      <BuyerVerification />
-
-      {/* ===== CONTACT ===== */}
-      <ContactHome />
-
       {/* ===== FAQ ===== */}
       <FAQHome />
+
+      {/* ===== CONTACT ===== */}
+      <InquiryCTA />
     </>
   );
 }
@@ -108,10 +121,69 @@ function AboutHome() {
           <Link to="/about" style={{ color: "var(--gold)", fontWeight: 700, fontSize: 14, marginTop: 16, display: "inline-block" }}>Read Full Story →</Link>
         </div>
         <div className="about-stats">
-          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="images/factory/about-youngsun-factory-photo.jpg" alt="Factory" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>20,000m² Workshop</span></div>
-          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="images/factory/news-paperboard-supply.jpg" alt="Supply" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Paperboard Supply</span></div>
-          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="images/factory/process-lamination-coating-line-01.jpg" alt="Lamination" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Coating & Lamination</span></div>
-          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="images/factory/processing-slitting-cutting.jpg" alt="Converting" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Slitting & Converting</span></div>
+          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/about-youngsun-factory-photo-card.webp" alt="YOUNGSUN paper workshop" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>20,000m² Workshop</span></div>
+          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/news-paperboard-supply-card.webp" alt="Paperboard supply stock" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Paperboard Supply</span></div>
+          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/process-lamination-coating-line-01-card.webp" alt="Paper coating and lamination line" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Coating & Lamination</span></div>
+          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/processing-slitting-cutting-card.webp" alt="Paper slitting and converting equipment" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Slitting & Converting</span></div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProductCategoryBrowser() {
+  const { lang, t } = useLang();
+  const isEs = lang === "es";
+  const collectionOrder = ["package-board", "fancy-paper", "culture-paper", "food-packaging"];
+  const collectionCopy = {
+    "package-board": {
+      title: isEs ? "Cartón para Embalaje" : "Packaging Board",
+      description: isEs ? "Papeles y cartones estructurales para cajas rígidas, encuadernación y procesos de conversión." : "Structural papers and boards for rigid packaging, bookbinding and converting applications.",
+    },
+    "fancy-paper": {
+      title: isEs ? "Papel Especial" : "Specialty Paper",
+      description: isEs ? "Texturas, colores y acabados distintivos para envases premium y aplicaciones creativas." : "Distinctive textures, colors and finishes for premium packaging and creative applications.",
+    },
+    "culture-paper": {
+      title: isEs ? "Papel Cultural" : "Culture Paper",
+      description: isEs ? "Papeles confiables para edición, impresión comercial y comunicación cotidiana." : "Reliable printing papers for publishing, commercial printing and everyday communication.",
+    },
+    "food-packaging": {
+      title: isEs ? "Papel para Alimentos" : "Food Packaging Paper",
+      description: isEs ? "Papeles de grado alimentario para envases seguros, envolturas y servicio de comidas." : "Food-grade papers for safe packaging, wrapping and food-service applications.",
+    },
+  };
+  const collectionCategories = collectionOrder.map((id) => productCategories.find((cat) => cat.id === id)).filter(Boolean);
+
+  return (
+    <section className="section category-overview-section" aria-labelledby="category-browser-heading">
+      <div className="paper-collection container">
+        <header className="paper-collection-heading">
+          <h2 id="category-browser-heading">{isEs ? "Nuestra Colección de Papel" : "Our Paper Collection"}</h2>
+          <p>{isEs ? "Cuatro categorías principales que cubren cartón estructural, papeles de impresión, acabados especiales y aplicaciones alimentarias." : "Four core paper categories, covering structural board, printing papers, specialty finishes and food-grade applications."}</p>
+        </header>
+
+        <div className="paper-collection-grid">
+          {collectionCategories.map((cat) => {
+            const copy = collectionCopy[cat.id];
+            return (
+              <Link key={cat.id} className={`paper-collection-panel paper-collection-${cat.id}`} to={`/products/${cat.id}`} aria-label={`${isEs ? "Explorar" : "Explore"} ${copy.title}`}>
+                <img src={cat.image} alt={copy.title} loading="lazy" />
+                <span className="paper-collection-shade" aria-hidden="true" />
+                <span className="paper-collection-content">
+                  <strong>{copy.title}</strong>
+                  <i aria-hidden="true" />
+                  <span className="paper-collection-description">{copy.description}</span>
+                  <span className="paper-collection-link">{isEs ? "Explorar" : "Explore"}<ArrowRight size={20} strokeWidth={1.7} aria-hidden="true" /></span>
+                </span>
+              </Link>
+            );
+          })}
+        </div>
+
+        <div className="paper-collection-footer">
+          <Recycle size={18} strokeWidth={1.5} aria-hidden="true" />
+          <span>{isEs ? "Soluciones de papel sostenibles para un futuro mejor" : "Sustainable paper solutions for a better future"}</span>
         </div>
       </div>
     </section>
@@ -119,30 +191,34 @@ function AboutHome() {
 }
 
 function ProductsPreview() {
-  const { t, lang } = useLang(); const isEs = lang === "es";
-  const allProducts = Object.values(subProducts).slice(0, 4);
+  const { lang, t } = useLang();
+  const isEs = lang === "es";
+  const featuredIds = ["grey-board", "black-paper", "folding-box-board", "woodfree-paper", "soft-touch-paper", "cup-paper"];
+  const featuredProducts = featuredIds.map((id) => subProducts[id]).filter(Boolean);
   return (
-    <section className="section products-section" id="products-preview">
-      <div className="section-header">
-        <span className="section-label">{t("What We Supply")}</span>
-        <h2 id="products-heading">{t("Paper & Board That Performs")}</h2>
-        <p>{t("four_cat_desc")}</p>
+    <section className="section products-section home-popular-products" id="products-preview" aria-labelledby="products-heading">
+      <div className="home-popular-heading container">
+        <div>
+          <span className="section-label">{isEs ? "Grados más solicitados" : "Popular paper grades"}</span>
+          <h2 id="products-heading">{isEs ? "Productos que los compradores consultan primero" : "Products buyers ask for first"}</h2>
+        </div>
+        <p>{isEs ? "Una selección rápida de nuestros grados más solicitados para embalaje, impresión y contacto alimentario." : "A quick selection of our most requested grades for packaging, printing and food-contact applications."}</p>
       </div>
-      <div className="subproduct-grid container">
-        {allProducts.map((product) => (
+      <div className="subproduct-grid home-popular-grid container">
+        {featuredProducts.map((product) => (
           <Link key={product.id} to={`/products/${product.id}`} className="subproduct-card" style={{ color: "inherit" }}>
             <div className="subproduct-image-wrap"><img src={product.image} alt={product.name} className="subproduct-image" loading="lazy" /></div>
             <div className="subproduct-info">
+              <span className="popular-product-category">{t(productCategories.find((cat) => cat.id === product.category)?.title || product.category)}</span>
               <h3>{product.name}</h3>
               <p className="subproduct-tagline">{isEs && productEs[product.id]?.tagline ? productEs[product.id].tagline : product.tagline}</p>
-              <div className="subproduct-certs">{product.certifications.slice(0, 2).map((c, i) => <span key={i} className="subproduct-cert-tag">{c}</span>)}</div>
-              <span style={{ color: "var(--gold)", fontSize: 12, fontWeight: 700, marginTop: 8, display: "inline-block" }}>View Details →</span>
+              <span className="popular-product-link">{isEs ? "Ver detalles" : "View details"}<ArrowRight size={15} aria-hidden="true" /></span>
             </div>
           </Link>
         ))}
       </div>
-      <div style={{ textAlign: "center", marginTop: 36 }}>
-        <Link to="/products" className="btn btn-primary">View All Products <span className="btn-arrow">→</span></Link>
+      <div className="home-popular-footer">
+        <Link to="/products" className="btn btn-primary">{isEs ? "Ver todos los productos" : "Browse all products"}<span className="btn-arrow"><ArrowRight size={17} aria-hidden="true" /></span></Link>
       </div>
     </section>
   );
@@ -159,6 +235,155 @@ function FancyPaperBanner() {
           Texture. Shimmer. Luxury. Papers that make people stop and touch.
         </p>
         <Link to="/fancy-paper-collection" className="btn btn-primary" style={{ background: "var(--lime)", color: "var(--forest)", border: "none", fontWeight: 800 }}>Explore Collection →</Link>
+      </div>
+    </section>
+  );
+}
+
+function IndustryMaterialsOverview() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const performancePaths = [
+    {
+      icon: PackageCheck,
+      title: isEs ? "Mayor resistencia" : "Higher strength",
+      detail: isEs ? "Fibra larga y refuerzo" : "Long-fiber reinforcement",
+      href: "/materials/softwood-pulp",
+    },
+    {
+      icon: BookOpen,
+      title: isEs ? "Impresion mas limpia" : "Smoother printing",
+      detail: isEs ? "Formacion y superficie" : "Formation and surface quality",
+      href: "/materials/hardwood-pulp",
+    },
+    {
+      icon: UtensilsCrossed,
+      title: isEs ? "Barrera alimentaria" : "Food-safe barrier",
+      detail: isEs ? "Grasa, humedad y sellado" : "Grease, moisture and sealing",
+      href: "/industries/food-beverage",
+    },
+    {
+      icon: Gem,
+      title: isEs ? "Tacto premium" : "Premium tactility",
+      detail: isEs ? "Textura, color y acabado" : "Texture, color and finish",
+      href: "/industries/luxury-cosmetics",
+    },
+    {
+      icon: Recycle,
+      title: isEs ? "Contenido reciclado" : "Recycled content",
+      detail: isEs ? "Rendimiento y circularidad" : "Performance and circularity",
+      href: "/materials/virgin-vs-recycled-fiber",
+    },
+  ];
+
+  const industryProfiles = [
+    {
+      id: "packaging-printing",
+      icon: PackageOpen,
+      image: "/images/industries/cards/industry-packaging-printing-youngsun.webp",
+      title: isEs ? "Embalaje e impresion" : "Packaging & Printing",
+      need: isEs ? "Rigidez estructural, hendido limpio y una superficie de impresion consistente." : "Structural stiffness, clean creasing and a consistent print surface.",
+      products: ["Grey Board", "FBB", "Duplex Board"],
+    },
+    {
+      id: "food-beverage",
+      icon: Coffee,
+      image: "/images/industries/cards/industry-food-beverage-youngsun.webp",
+      title: isEs ? "Alimentos y bebidas" : "Food & Beverage",
+      need: isEs ? "Seguridad alimentaria, resistencia a grasa y barrera contra humedad." : "Food-contact safety, grease resistance and reliable moisture barriers.",
+      products: ["Cup Paper", "Greaseproof", "PE Coated"],
+    },
+    {
+      id: "luxury-cosmetics",
+      icon: Gem,
+      image: "/images/industries/cards/industry-luxury-cosmetics-youngsun.webp",
+      title: isEs ? "Lujo y cosmetica" : "Luxury & Cosmetics",
+      need: isEs ? "Tacto distintivo, color preciso y compatibilidad con foil y relieve." : "Distinctive tactility, precise color and clean foil or embossing performance.",
+      products: ["Fancy Paper", "Black Paper", "Pearlescent"],
+    },
+    {
+      id: "publishing-stationery",
+      icon: BookOpen,
+      image: "/images/industries/cards/industry-publishing-stationery-youngsun.webp",
+      title: isEs ? "Editorial y papeleria" : "Publishing & Stationery",
+      need: isEs ? "Buena opacidad, superficie uniforme y rendimiento estable en prensa." : "Balanced opacity, an even surface and dependable press runnability.",
+      products: ["Woodfree", "Art Paper", "LWC Paper"],
+    },
+    {
+      id: "hang-tags-labels",
+      icon: Tags,
+      image: "/images/industries/cards/industry-hang-tags-labels-youngsun.webp",
+      title: isEs ? "Etiquetas y marbetes" : "Hang Tags & Labels",
+      need: isEs ? "Bordes limpios, color profundo y resistencia al troquelado y plegado." : "Clean edges, rich color and strength through die-cutting and folding.",
+      products: ["Black Paper", "Label Paper", "Color Card"],
+    },
+    {
+      id: "gift-wrapping-decoration",
+      icon: Gift,
+      image: "/images/industries/cards/industry-gift-wrapping-decoration-youngsun.webp",
+      title: isEs ? "Regalo y decoracion" : "Gift Wrapping & Decoration",
+      need: isEs ? "Color atractivo, pliegues suaves y una experiencia tactil refinada." : "Expressive color, smooth folding and a refined tactile experience.",
+      products: ["Pearlescent", "Embossed", "Color Tissue"],
+    },
+  ];
+
+  return (
+    <section className="section industry-solutions-home">
+      <div className="container industry-home-heading">
+        <div>
+          <span className="section-label">{isEs ? "Soluciones por industria" : "Solutions by Industry"}</span>
+          <h2>{isEs ? "Empiece por el uso. Elija por rendimiento." : "Start with the end use. Choose by performance."}</h2>
+        </div>
+        <p>{isEs ? "La fibra, la superficie y la estructura determinan como funciona el papel. Compare las necesidades de su aplicacion y encuentre grados adecuados para evaluar." : "Fiber, surface and sheet structure determine how paper performs. Match your application requirements with suitable grades for evaluation."}</p>
+      </div>
+
+      <div className="container industry-performance-wrap">
+        <div className="industry-performance-heading">
+          <span>{isEs ? "Empiece con el rendimiento requerido" : "Start with the performance you need"}</span>
+          <Link to="/materials">{isEs ? "Explorar biblioteca de materiales" : "Explore materials library"}<ArrowRight size={15} aria-hidden="true" /></Link>
+        </div>
+        <div className="industry-performance-grid">
+          {performancePaths.map((path) => {
+            const PerformanceIcon = path.icon;
+            return (
+              <Link to={path.href} key={path.title} className="industry-performance-item">
+                <PerformanceIcon size={27} strokeWidth={1.55} aria-hidden="true" />
+                <span><strong>{path.title}</strong><small>{path.detail}</small></span>
+                <ArrowRight size={15} aria-hidden="true" />
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="container industry-solution-grid">
+        {industryProfiles.map((ind) => {
+          const IndustryIcon = ind.icon;
+          return (
+            <article key={ind.id} className="industry-solution-card">
+              <Link className="industry-solution-media" to={`/industries/${ind.id}`} aria-label={ind.title}>
+                <img src={ind.image} alt={`${ind.title} paper applications`} loading="lazy" />
+              </Link>
+              <div className="industry-solution-copy">
+                <div className="industry-solution-card-top">
+                  <span className="industry-solution-icon"><IndustryIcon size={23} strokeWidth={1.6} aria-hidden="true" /></span>
+                  <Link to={`/industries/${ind.id}`} aria-label={`${isEs ? "Explorar" : "Explore"} ${ind.title}`}><ArrowUpRight size={19} strokeWidth={1.7} aria-hidden="true" /></Link>
+                </div>
+                <h3><Link to={`/industries/${ind.id}`}>{ind.title}</Link></h3>
+                <p>{ind.need}</p>
+                <div className="industry-recommended-papers">
+                  <span>{isEs ? "Papeles recomendados" : "Recommended papers"}</span>
+                  <strong>{ind.products.join("  /  ")}</strong>
+                </div>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      <div className="container industry-home-footer">
+        <p>{isEs ? "No esta seguro? Envie su uso, GSM, tamano y proceso de impresion." : "Not sure where to begin? Send us your end use, GSM, size and printing process."}</p>
+        <Link to="/industries" className="industry-home-all-link">{isEs ? "Ver todas las industrias" : "View all industries"}<ArrowRight size={16} aria-hidden="true" /></Link>
       </div>
     </section>
   );
@@ -230,14 +455,14 @@ function TrustBar() {
     {
       name: "Liansheng Paper",
       detail: isEs ? "Papel para embalaje" : "Packaging paper",
-      monogram: "LS",
-      tone: "blue",
+      logo: "/images/partners/liansheng-official.png",
+      showName: true,
     },
     {
       name: "Huatai Paper",
       detail: isEs ? "Papel cultural y especial" : "Culture & specialty paper",
-      monogram: "HT",
-      tone: "green",
+      logo: "/images/partners/huatai-paper-logo.jpg",
+      showName: true,
     },
   ];
   return (
@@ -265,7 +490,7 @@ function TrustBar() {
                         <span className={`mill-monogram ${partner.tone || ""}`} aria-hidden="true">{partner.monogram}</span>
                       )}
                     </div>
-                    {!partner.logo && <strong>{partner.name}</strong>}
+                    {(!partner.logo || partner.showName) && <strong>{partner.name}</strong>}
                     <span className="mill-logo-detail">{partner.detail}</span>
                   </div>
                 ))}
@@ -343,9 +568,124 @@ function BuyerApplications() {
   );
 }
 
+function SourcingRiskHome() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+  const controls = [
+    {
+      number: "01",
+      icon: ClipboardCheck,
+      title: isEs ? "Aprobacion de muestras" : "Sample approval",
+      description: isEs
+        ? "Revise color, superficie, espesor y comportamiento de conversion antes de la produccion."
+        : "Review color, surface, thickness and converting behavior before production.",
+    },
+    {
+      number: "02",
+      icon: FileCheck2,
+      title: isEs ? "Documentos del grado" : "Grade-specific documents",
+      description: isEs
+        ? "Confirme fichas tecnicas, certificados disponibles e informes aplicables al producto cotizado."
+        : "Confirm technical data, available certificates and reports for the exact quoted grade.",
+    },
+    {
+      number: "03",
+      icon: PackageCheck,
+      title: isEs ? "Control antes del envio" : "Pre-shipment checks",
+      description: isEs
+        ? "Compruebe gramaje, tamano, cantidad, embalaje y marcas de envio contra el pedido."
+        : "Check grammage, size, quantity, packing and shipping marks against the order.",
+    },
+    {
+      number: "04",
+      icon: Truck,
+      title: isEs ? "Coordinacion de exportacion" : "Export coordination",
+      description: isEs
+        ? "Alinee proteccion contra humedad, documentos y plan de carga con el destino."
+        : "Align moisture protection, documents and loading plans with the destination.",
+    },
+  ];
+
+  return (
+    <section className="sourcing-risk-home" aria-labelledby="sourcing-risk-title">
+      <div className="container sourcing-risk-layout">
+        <figure className="sourcing-risk-media">
+          <img src="/images/factory/factory-quality-control.jpg" alt="Paperboard samples and measuring instruments prepared for quality checks" loading="lazy" />
+          <figcaption>
+            <span>{isEs ? "CONTROL DE ESPECIFICACIONES" : "SPECIFICATION CONTROL"}</span>
+            <strong>{isEs ? "Mida primero. Produzca despues." : "Measure first. Produce second."}</strong>
+          </figcaption>
+        </figure>
+
+        <div className="sourcing-risk-content">
+          <span className="section-label">{isEs ? "Control del riesgo de compra" : "Sourcing Risk Control"}</span>
+          <h2 id="sourcing-risk-title">{isEs ? "Compruebe el papel antes de comprometer la produccion." : "Check the paper before you commit to production."}</h2>
+          <p className="sourcing-risk-lead">
+            {isEs
+              ? "Un pedido fiable empieza con especificaciones acordadas, muestras fisicas, documentos del grado y requisitos claros de embalaje."
+              : "A reliable order starts with agreed specifications, physical samples, grade-specific documents and clear packing requirements."}
+          </p>
+
+          <div className="sourcing-risk-steps">
+            {controls.map((item) => {
+              const ControlIcon = item.icon;
+              return (
+                <article key={item.number} className="sourcing-risk-step">
+                  <span className="sourcing-risk-number">{item.number}</span>
+                  <ControlIcon size={24} strokeWidth={1.55} aria-hidden="true" />
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+
+          <p className="sourcing-risk-note">
+            {isEs
+              ? "La documentacion y los informes dependen del grado y del mercado de destino. Confirme su disponibilidad con la cotizacion."
+              : "Documents and test reports depend on the product grade and destination market. Confirm availability with your quotation."}
+          </p>
+          <div className="sourcing-risk-actions">
+            <Link to="/quality" className="sourcing-risk-primary">{isEs ? "Ver control de calidad" : "View quality control"}<ArrowRight size={16} aria-hidden="true" /></Link>
+            <Link to="/contact?intent=samples" className="sourcing-risk-secondary">{isEs ? "Solicitar muestras" : "Request samples"}<ArrowRight size={16} aria-hidden="true" /></Link>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const featuredBlogPosts = [
+  {
+    id: "grey-board-vs-duplex-board-comparison",
+    title: "Grey Board vs Duplex Board: The Complete Comparison for Packaging Buyers",
+    excerpt: "Grey board and duplex board serve different purposes in packaging production. Compare structure, surface, applications, and sourcing considerations.",
+    image: "/images/products/package-board/duplex-board-main.webp",
+    category: "Packaging",
+    date: "2026-08-05",
+  },
+  {
+    id: "paper-gsm-thickness-conversion-chart",
+    title: "Paper GSM to Thickness Conversion: Understanding Paper Weight for International Buyers",
+    excerpt: "Understand GSM, caliper, basis weight, and points, with practical guidance for specifying paper correctly and avoiding costly ordering mistakes.",
+    image: "/images/products/culture-paper/woodfree-paper-main.webp",
+    category: "Guides",
+    date: "2026-08-05",
+  },
+  {
+    id: "how-to-source-paper-from-china",
+    title: "How to Source Paper from China: A Complete Guide for International Packaging Buyers",
+    excerpt: "Learn how to specify, qualify, and manage paper orders from product selection and sample approval through production and container loading.",
+    image: "/images/blog-articles/importing-paper-from-china-complete-guide.jpg",
+    category: "Guides",
+    date: "2026-07-18",
+  },
+];
+
 function BlogHighlights() {
   const { lang } = useLang();
-  const recent = blogPosts.slice(0, 3);
   return (
     <section className="section" style={{ background: "var(--paper)" }}>
       <div className="section-header">
@@ -354,7 +694,7 @@ function BlogHighlights() {
         <p>{lang === "es" ? "Conocimiento de la industria papelera, guías de compra y consejos de diseño." : "Paper industry knowledge, sourcing guides, and design insights."}</p>
       </div>
       <div className="container" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 24, maxWidth: 1100 }}>
-        {recent.map((post) => (
+        {featuredBlogPosts.map((post) => (
           <Link key={post.id} to={`/blog/${post.id}`} style={{ background: "#fff", borderRadius: 14, overflow: "hidden", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-sm)", transition: "transform 0.2s var(--ease-out)" }}
             onMouseEnter={(e) => { e.currentTarget.style.transform = "translateY(-3px)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.transform = ""; }}
@@ -433,54 +773,69 @@ function BuyerVerification() {
   );
 }
 
-function ContactHome() {
-  const { t } = useLang();
-  const FORM_INITIAL = { name:"", email:"", company:"", phone:"", product:"", gsm:"", size:"", quantity:"", destination:"", message:"" };
-  const { form, submitted, sending, error, honeypotRef, submitTimeRef, handleChange, handleSubmit } = useContactForm(FORM_INITIAL);
+function HomeExhibitionFeature() {
+  const { lang } = useLang();
+  const isEs = lang === "es";
+
   return (
-    <section className="section contact-section" id="contact">
-      <div className="section-header"><span className="section-label">{t("Get In Touch")}</span><h2>{t("Let's Talk Paper")}</h2><p>{t("contact_subtitle")}</p></div>
-      <div className="contact-grid container">
-        <div className="contact-info">
-          <div className="contact-methods">
-            <a href={`mailto:${contactInfo.email}`} className="contact-method"><span className="method-icon">✉️</span><div><span className="method-label">Email</span><span className="method-value">{contactInfo.email}</span></div></a>
-            <a href={`tel:${contactInfo.phone}`} className="contact-method"><span className="method-icon">📞</span><div><span className="method-label">Phone</span><span className="method-value">{contactInfo.phone}</span></div></a>
-            <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}`} className="contact-method" target="_blank" rel="noopener noreferrer"><span className="method-icon">💬</span><div><span className="method-label">WhatsApp</span><span className="method-value">{contactInfo.whatsapp}</span></div></a>
-            <div className="contact-method"><span className="method-icon">💬</span><div><span className="method-label">WeChat</span><span className="method-value">{contactInfo.wechat}</span></div></div>
+    <section className="home-exhibition-section" aria-labelledby="home-exhibition-title">
+      <div className="container">
+        <header className="home-exhibition-heading">
+          <div>
+            <span>{isEs ? "RED GLOBAL DE FERIAS" : "GLOBAL EXHIBITION NETWORK"}</span>
+            <h2 id="home-exhibition-title">
+              {isEs ? "Conozca a las personas detras de su suministro de papel." : "Meet the people behind your paper supply."}
+            </h2>
+          </div>
+          <p>
+            {isEs
+              ? "Las ferias permiten inspeccionar el papel, comparar muestras y hablar directamente con nuestro equipo de exportacion antes de realizar un pedido."
+              : "Trade shows let buyers inspect paper, compare samples and speak directly with our export team before placing an order."}
+          </p>
+        </header>
+
+        <div className="home-exhibition-stage">
+          <figure className="home-exhibition-main-photo">
+            <img src="/images/about/exhibitions/mexico-2026/photo-1.webp" alt="YOUNGSUN team and visitors at EXPOGRAFICA Guadalajara 2026" loading="lazy" />
+            <figcaption><b>EXPOGRAFICA Guadalajara 2026</b><span>Guadalajara, Mexico</span></figcaption>
+          </figure>
+
+          <div className="home-exhibition-story">
+            <div className="home-exhibition-proof"><PackageCheck aria-hidden="true" /><span>{isEs ? "Archivo verificado 2023-2026" : "Verified archive 2023-2026"}</span></div>
+            <h3>{isEs ? "Conversaciones reales. Muestras reales. Relaciones duraderas." : "Real conversations. Real samples. Long-term relationships."}</h3>
+            <p>
+              {isEs
+                ? "Desde Dusseldorf y Yakarta hasta Ciudad de Mexico y Daca, YOUNGSUN se reune con impresores, convertidores, distribuidores y marcas de todo el mundo."
+                : "From Dusseldorf and Jakarta to Mexico City and Dhaka, YOUNGSUN meets printers, converters, distributors and brands from around the world."}
+            </p>
+            <div className="home-exhibition-metrics" aria-label="YOUNGSUN global exhibition figures">
+              <span><b>12</b>{isEs ? "Ferias" : "Trade shows"}</span>
+              <span><b>9</b>{isEs ? "Mercados" : "International markets"}</span>
+            </div>
+            <div className="home-exhibition-actions">
+              <Link to="/about#exhibition-record" className="home-exhibition-button primary">
+                <Globe2 aria-hidden="true" />
+                {isEs ? "Ver archivo de ferias" : "Explore exhibition archive"}
+                <ArrowRight aria-hidden="true" />
+              </Link>
+              <Link to="/contact" className="home-exhibition-button secondary">
+                {isEs ? "Hablar con el equipo" : "Talk to our team"}
+                <ArrowRight aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="home-exhibition-secondary-photos" aria-label="More YOUNGSUN exhibitions">
+            <figure>
+              <img src="/images/about/exhibitions/drupa-2024/photo-2.webp" alt="YOUNGSUN meeting international visitors at drupa 2024" loading="lazy" />
+              <figcaption><b>drupa 2024</b><span>Dusseldorf, Germany</span></figcaption>
+            </figure>
+            <figure>
+              <img src="/images/about/exhibitions/indonesia-2024/photo-1.webp" alt="YOUNGSUN team at ALLPRINT Indonesia 2024" loading="lazy" />
+              <figcaption><b>ALLPRINT Indonesia 2024</b><span>Jakarta, Indonesia</span></figcaption>
+            </figure>
           </div>
         </div>
-        <form className="contact-form" onSubmit={handleSubmit} onFocus={submitTimeRef}>
-          <h3>{t("Send Us a Message")}</h3>
-
-          {submitted && (
-            <div style={{ background: "#F0FDF4", border: "1px solid #86EFAC", color: "#166534", padding: "20px", borderRadius: 12, marginBottom: 16, textAlign: "center" }}>
-              <div style={{ fontSize: 36, marginBottom: 4 }}>✅</div><div style={{ fontWeight: 700 }}>Message Sent! We'll reply within 24h.</div>
-            </div>
-          )}
-          {error && <div style={{ background: "#FEF2F2", color: "#DC2626", padding: "12px 16px", borderRadius: 8, marginBottom: 16, fontSize: 13 }}>⚠️ {error}</div>}
-
-          <div style={{ position: "absolute", left: "-9999px", opacity: 0 }} aria-hidden="true">
-            <input ref={honeypotRef} type="text" name="hp_field" tabIndex={-1} autoComplete="off" />
-          </div>
-
-          <div className="form-group"><label htmlFor="hname">{t("Your Name *")}</label><input type="text" id="hname" name="name" value={form.name} onChange={handleChange} required /></div>
-          <div className="form-group"><label>Company</label><input type="text" name="company" value={form.company} onChange={handleChange} /></div>
-          <div className="form-group"><label htmlFor="hemail">{t("Email Address *")}</label><input type="email" id="hemail" name="email" value={form.email} onChange={handleChange} required /></div>
-          <div className="form-group"><label>Phone / WhatsApp</label><input type="text" name="phone" value={form.phone} onChange={handleChange} /></div>
-          <div className="form-group"><label htmlFor="hproduct">{t("Product Interest")}</label><select id="hproduct" name="product" value={form.product} onChange={handleChange}><option value="">{t("Select a product category")}</option>{productCategories.map((p) => <option key={p.id} value={p.id}>{p.title}</option>)}<option value="other">{t("Other / Not Sure")}</option></select></div>
-          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12 }}>
-            <div className="form-group"><label>GSM / Thickness</label><input type="text" name="gsm" value={form.gsm} onChange={handleChange} placeholder="e.g. 200-400 gsm" /></div>
-            <div className="form-group"><label>Size</label><input type="text" name="size" value={form.size} onChange={handleChange} placeholder="e.g. A4, custom" /></div>
-          </div>
-          <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:12 }}>
-            <div className="form-group"><label>Quantity</label><input type="text" name="quantity" value={form.quantity} onChange={handleChange} placeholder="e.g. 1x20ft container" /></div>
-            <div className="form-group"><label>Destination Country / Port</label><input type="text" name="destination" value={form.destination} onChange={handleChange} placeholder="e.g. Hamburg, Germany" /></div>
-          </div>
-          <div className="form-group"><label htmlFor="hmessage">{t("Your Message *")}</label><textarea id="hmessage" name="message" value={form.message} onChange={handleChange} required /></div>
-          <button type="submit" className="form-submit" disabled={sending}>
-            {sending ? "⏳ Sending..." : t("Send Inquiry")}
-          </button>
-        </form>
       </div>
     </section>
   );
@@ -519,11 +874,12 @@ function HomeExhibitionGallery() {
 }
 
 function FAQHome() {
-  const { t } = useLang(); const qk = ["faq_q1","faq_q2","faq_q3","faq_q4","faq_q5"]; const ak = ["faq_a1","faq_a2","faq_a3","faq_a4","faq_a5"];
+  const { t, lang } = useLang();
+  const items = localizeFaqItems(lang).slice(0, 5);
   return (
     <section className="section faq-section" id="faq">
       <div className="section-header"><span className="section-label">{t("Frequently Asked Questions")}</span><h2>{t("Questions About Our Paper Products and Services")}</h2></div>
-      <div className="faq-grid container">{faqItems.slice(0, 5).map((_, i) => (<details className="faq-item" key={i}><summary className="faq-question">{t(qk[i])}</summary><div className="faq-answer"><p>{t(ak[i])}</p></div></details>))}</div>
+      <div className="faq-grid container">{items.map((item) => (<details className="faq-item" key={item.id}><summary className="faq-question">{item.q}</summary><div className="faq-answer"><p>{item.a}</p></div></details>))}</div>
       <div style={{ textAlign: "center", marginTop: 28 }}><Link to="/faq" className="btn btn-outline">View All FAQs →</Link></div>
     </section>
   );

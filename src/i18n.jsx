@@ -1,4 +1,10 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import {
+  isSpanishPath,
+  localizedPath,
+  stripLocalePrefix,
+  supportsSpanishSeoPath,
+} from "./localeSeo.js";
 
 const LangContext = createContext();
 
@@ -8,7 +14,8 @@ export function useLang() {
 
 export function LangProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    try { return localStorage.getItem("ys-lang") || "en"; } catch { return "en"; }
+    if (typeof window === "undefined") return "en";
+    return isSpanishPath(window.location.pathname) ? "es" : "en";
   });
 
   useEffect(() => {
@@ -18,7 +25,20 @@ export function LangProvider({ children }) {
 
   const nextLang = { en: "es", es: "en" };
   const langLabel = { en: "ES", es: "EN" };
-  const toggleLang = () => setLang((l) => nextLang[l] || "en");
+  const toggleLang = () => {
+    const targetLang = nextLang[lang] || "en";
+    const currentPath = stripLocalePrefix(window.location.pathname);
+
+    if (supportsSpanishSeoPath(currentPath)) {
+      const params = new URLSearchParams(window.location.search);
+      params.delete("lang");
+      const query = params.toString();
+      window.location.assign(`${localizedPath(currentPath, targetLang)}${query ? `?${query}` : ""}${window.location.hash}`);
+      return;
+    }
+
+    setLang(targetLang);
+  };
 
   return (
     <LangContext.Provider value={{ lang, toggleLang, langLabel, t: (key) => { const entry = translations[key]; if (!entry) return key; return entry[lang] || entry.en || key; } }}>
@@ -31,7 +51,11 @@ const translations = {
   // Nav
   "Home": { en: "Home", es: "Inicio"},
   "Products": { en: "Products", es: "Productos"},
-  "Processing": { en: "Processing"},
+  "Industries": { en: "Industries", es: "Industrias"},
+  "Materials": { en: "Materials", es: "Materiales"},
+  "Processing": { en: "Processing", es: "Procesamiento"},
+  "Blog": { en: "Blog", es: "Blog"},
+  "About": { en: "About", es: "Nosotros"},
   "Why Us": { en: "Why Us", es: "Por Qué Nosotros"},
   "Contact": { en: "Contact", es: "Contacto"},
   // Hero
@@ -76,7 +100,7 @@ const translations = {
   "about_desc": {
     en: "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) is headquartered in Dongguan City, Guangdong Province — just 50km from Shenzhen port. Our 20,000m² workshop houses 2 grey board machines and 2 black paper machines, operated by a team of 220+ skilled workers. With a monthly production capacity of 20,000 tons and 50,000 tons of warehouse stock, we ensure fast and reliable delivery to clients worldwide.", es: "YOUNGSUN PAPER tiene su sede en Dongguan, provincia de Guangdong, a solo 50 km del puerto de Shenzhen. Nuestro taller de 20.000 m² alberga 2 máquinas de cartón gris y 2 de cartulina negra, operadas por más de 220 trabajadores. Con capacidad mensual de 20.000 toneladas y 50.000 toneladas de stock, garantizamos entregas rápidas a clientes en todo el mundo."},
   "about_desc2": {
-    en: "We partner with China's premier paper mills — including APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, and IPSUN — to source the full spectrum of printing, packaging, and specialty paper grades. Our five sales teams (50+ specialists) serve customers across 60+ countries, exporting 36,000+ tons annually. Every product is FSC and SGS certified. Custom size, weight, and labeling available with free samples.", es: "Colaboramos con las principales fábricas de China — APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST e IPSUN — para ofrecer la gama completa de papeles. Cinco equipos de ventas con más de 50 especialistas atienden a clientes en más de 60 países, exportando más de 36.000 toneladas al año. Todos los productos cuentan con certificación FSC y SGS."},
+    en: "We work with major Chinese paper mills — including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai — to source printing, packaging, and specialty paper grades. Our team supports custom sizes, weight ranges, labeling, samples, product-specific documentation, and export coordination.", es: "Trabajamos con importantes fábricas de papel de China — APP, Sun Paper, Nine Dragons, Liansheng y Huatai — para suministrar papeles de impresión, embalaje y especialidad. Nuestro equipo ofrece medidas personalizadas, diferentes gramajes, etiquetado, muestras, documentación específica y coordinación de exportación."},
   "whyus_desc": {
     en: "It's not just about paper — it's about reliability, expertise, and a partnership that makes your supply chain stronger.", es: "No se trata solo de papel — se trata de fiabilidad, experiencia y una asociación que fortalece su cadena de suministro."},
   "sustainability_subtitle": {
@@ -113,6 +137,7 @@ const translations = {
   "Product Categories": { en: "Product Categories", es: "Categorías de Productos"},
   "Company": { en: "Company", es: "Empresa"},
   "Resources": { en: "Resources", es: "Recursos"},
+  "Buyer Guides": { en: "Buyer Guides", es: "Guías para Compradores"},
   "About Us": { en: "About Us", es: "Sobre Nosotros"},
   "Sustainability": { en: "Sustainability", es: "Sostenibilidad"},
   "Global Reach": { en: "Global Reach", es: "Alcance Global"},
@@ -129,11 +154,11 @@ const translations = {
   "Customized Solutions": { en: "Customized Solutions"},
   "Global Export Expertise": { en: "Global Export Expertise"},
   // Eco badges
-  "FSC® Certified": { en: "FSC® Certified"},
-  "SGS Certified": { en: "SGS Certified"},
+  "FSC® Certified": { en: "FSC® Certified", es: "Certificado FSC®"},
+  "SGS Certified": { en: "SGS Certified", es: "Certificado SGS"},
   "ISO 14001": { en: "ISO 14001"},
-  "20+ Years Experience": { en: "20+ Years Experience"},
-  "60+ Export Countries": { en: "60+ Export Countries"},
+  "20+ Years Experience": { en: "20+ Years Experience", es: "Más de 20 años de experiencia"},
+  "60+ Export Countries": { en: "60+ Export Countries", es: "Exportación a más de 60 países"},
   "PFAS-Free": { en: "PFAS-Free"},
   "Carbon-Conscious": { en: "Carbon-Conscious"},
 
@@ -142,7 +167,7 @@ const translations = {
     en: "It's not just about paper — it's about reliability, expertise, and a partnership that makes your supply chain stronger.", es: "No se trata solo de papel — se trata de fiabilidad, experiencia y una asociación que fortalece su cadena de suministro."},
   "whyus_1_desc": { en: "We supply a comprehensive range of premium printing and packaging paper and paperboard — covering all four categories: Package Board, Culture Paper, Fancy Paper, and Food Packaging Paper. One supplier, multiple grades, simplified procurement.", es: "Suministramos una gama completa de papel y cartón premium para impresión y embalaje — cubriendo las cuatro categorías: Package Board, Culture Paper, Fancy Paper y Food Packaging Paper. Un solo proveedor, múltiples grados, adquisición simplificada."},
   "whyus_2_desc": { en: "All products are FSC and SGS certified. Every shipment is inspected for grammage, brightness, moisture, caliper, and surface quality against agreed specifications. Consistent quality, batch after batch.", es: "Todos los productos cuentan con certificación FSC y SGS. Cada envío se inspecciona en gramaje, blancura, humedad, calibre y calidad superficial según las especificaciones acordadas. Calidad consistente, lote tras lote."},
-  "whyus_3_desc": { en: "Our 20,000m² workshop runs 2 grey board machines and 2 black paper machines, delivering 20,000 tons monthly. Partner mills — APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, IPSUN — provide additional capacity and grade coverage.", es: "Nuestro taller de 20.000 m² opera 2 máquinas de cartón gris y 2 de cartulina negra, produciendo 20.000 toneladas mensuales. Las fábricas asociadas — APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, IPSUN — proporcionan capacidad adicional y cobertura de grados."},
+  "whyus_3_desc": { en: "Our manufacturing and processing capabilities are supported by a mill supply network that includes APP, Sun Paper, Nine Dragons, Liansheng, and Huatai, providing broader grade coverage for international buyers.", es: "Nuestras capacidades de fabricación y procesamiento están respaldadas por una red que incluye APP, Sun Paper, Nine Dragons, Liansheng y Huatai, ampliando la gama disponible para compradores internacionales."},
   "whyus_4_desc": { en: "50,000 tons of permanent warehouse stock enables rapid dispatch. Located 50km from Shenzhen port, we load containers efficiently. Five sales teams (50+ specialists) provide proactive delivery tracking and after-sales support.", es: "50.000 toneladas de stock permanente en almacén permiten un despacho rápido. Ubicados a 50 km del puerto de Shenzhen, cargamos contenedores eficientemente. Cinco equipos de ventas (más de 50 especialistas) brindan seguimiento proactivo de entregas y soporte postventa."},
   "whyus_5_desc": { en: "We provide custom size, weight, and labeling solutions with free samples before bulk order. Need specific slitting, sheeting, embossing, or packaging? Our converting partners deliver finished product to your exact specifications.", es: "Ofrecemos soluciones personalizadas de tamaño, gramaje y etiquetado con muestras gratuitas antes del pedido. ¿Necesita corte, laminado, gofrado o embalaje específico? Nuestros socios transformadores entregan el producto terminado según sus especificaciones exactas."},
   "whyus_6_desc": { en: "36,000+ tons exported annually to 60+ countries. We handle FSC chain-of-custody, certificates of origin, fumigation, packing lists, and bills of lading — full documentation for seamless customs clearance at any destination port.", es: "Más de 36.000 toneladas exportadas anualmente a más de 60 países. Gestionamos la cadena de custodia FSC, certificados de origen, fumigación, listas de empaque y conocimientos de embarque — documentación completa para un despacho aduanero sin problemas en cualquier puerto de destino."},
@@ -203,22 +228,6 @@ const translations = {
 
   // FAQ
   "faq_desc": { en: "Quick answers to the most common questions from international buyers, converters, and procurement teams."},
-  "faq_q1": { en: "What paper products does YOUNGSUN PAPER supply?"},
-  "faq_a1": { en: "YOUNGSUN PAPER supplies four categories of paper and board: Package Board, Culture Paper, Fancy Paper, and Food Packaging Paper — covering grey board, black paper, kraft paper, coated paper, specialty paper, and more. All FSC and SGS certified."},
-  "faq_q2": { en: "Where is YOUNGSUN PAPER located and how fast can you deliver?"},
-  "faq_a2": { en: "Headquartered in Dongguan, Guangdong — 50km from Shenzhen port. 50,000 tons warehouse stock. Container loading typically within 7-14 days of order confirmation."},
-  "faq_q3": { en: "What certifications do your paper products have?"},
-  "faq_a3": { en: "All products are FSC and SGS certified. Food-contact grades are FDA and EU 1935/2004 compliant. PFAS-free certification available. Full documentation provided with every shipment."},
-  "faq_q4": { en: "Can you customize paper size, weight, or packaging?"},
-  "faq_a4": { en: "Yes. Custom slitting, sheeting, weight within range, labeling, and packaging. Free samples before bulk order. Converting partners offer embossing, die-cutting, printing, and lamination."},
-  "faq_q5": { en: "What is your minimum order quantity and how do I get a quote?"},
-  "faq_a5": { en: "Typically one 20-foot container (20-25 tons). Send specifications to Alice@yspaper.com or WhatsApp +86 13713459656. We respond within 24 hours."},
-  "faq_q6": { en: "Do you supply food-grade paper for direct food contact?"},
-  "faq_a6": { en: "Yes. Cup paper, greaseproof paper (PFAS-free), and silicone coated paper — all FDA and EU compliant. Certification provided with every shipment."},
-  "faq_q7": { en: "Which countries do you export to?"},
-  "faq_a7": { en: "60+ countries across Asia (25+), Europe (18+), Americas (12+), Africa, Middle East, and Oceania. Full export documentation handled."},
-  "faq_q8": { en: "What paper mills do you partner with?"},
-  "faq_a8": { en: "APP, CHENMING, NINEDRAGON, BOHUI, GOLDENEAST, and IPSUN. Our own facility has 2 grey board and 2 black paper machines with 20,000 tons monthly capacity."},
 
   // Footer
   "Product Categories": { en: "Product Categories", es: "Categorías de Productos"},
@@ -228,7 +237,15 @@ const translations = {
   "Culture Paper": { en: "Culture Paper", es: "Papel Cultural"},
   "Fancy Paper": { en: "Fancy Paper", es: "Papel de Fantasía"},
   "Food Packaging Paper": { en: "Food Packaging Paper", es: "Papel para Envases Alimentarios"},
-  "Processing Services": { en: "Processing Services"},
+  "Materials Library": { en: "Materials Library", es: "Biblioteca de Materiales"},
+  "Quality Assurance": { en: "Quality Assurance", es: "Garantía de Calidad"},
+  "Paper Grade Guide": { en: "Paper Grade Guide", es: "Guía de Grados de Papel"},
+  "Processing Services": { en: "Processing Services", es: "Servicios de Conversión"},
+  "How to Order": { en: "How to Order", es: "Cómo Comprar"},
+  "Back to top": { en: "Back to top", es: "Volver arriba"},
+  "Chat on WhatsApp": { en: "Chat on WhatsApp", es: "Hablar por WhatsApp"},
+  "footer_intro": { en: "Premium paper and board supply since 2002.", es: "Suministro de papel y cartón de calidad desde 2002."},
+  "footer_support": { en: "Request specifications, samples, and export quotations from our paper team.", es: "Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo."},
   "About Us": { en: "About Us", es: "Sobre Nosotros"},
   "Why Choose Us": { en: "Why Choose Us", es: "Por Qué Elegirnos"},
   "Sustainability": { en: "Sustainability", es: "Sostenibilidad"},
@@ -249,7 +266,10 @@ const translations = {
   "vision": { en: "To be the most reliable, transparent, and sustainability-driven paper supply partner for businesses worldwide."},
 
   // Products section
-  "four_cat_desc": { en: "Four product categories. 20+ grades. One reliable supply partner. Select a category to explore specifications, applications, and certifications."},
+  "four_cat_desc": {
+    en: "Four product categories. 20+ grades. One reliable supply partner. Select a category to explore specifications, applications, and certifications.",
+    es: "Cuatro categorías de productos. Más de 20 grados. Un socio de suministro confiable. Seleccione una categoría para explorar especificaciones, aplicaciones y certificaciones."
+  },
   "Request Quote": { en: "Request Quote"},
   "Full Product Description": { en: "Full Product Description", es: "Descripción Completa"},
   "Complete Specifications": { en: "Complete Specifications", es: "Especificaciones Completas"},
@@ -264,5 +284,5 @@ const translations = {
   "cat_summary_fancy-paper": {
     en: "Explore our specialized collection, including Soft Touch, Leather, Pearlescent, and Embossed papers, as well as dedicated Label papers for distinctive, premium design projects.", es: "Explore nuestra colección especializada, que incluye papeles soft touch, cuero, perlados y gofrados, así como papeles para etiquetas para proyectos de diseño premium distintivos."},
   "cat_summary_food-packaging": {
-    en: "Our selection features Cup Paper, Greaseproof Paper, and Silicone Coated Paper, specifically engineered for hygiene, moisture resistance, and reliable food safety.", es: "Nuestra selección incluye papel para vasos, papel antigrasa y papel siliconado, diseñados específicamente para higiene, resistencia a la humedad y seguridad alimentaria confiable."},
+    en: "Our selection features Cup Paper, Greaseproof Paper, MG White Kraft Paper, and Silicone Coated Paper for food wrapping, bags, beverage packaging, moisture resistance, and reliable food safety.", es: "Nuestra selección incluye papel para vasos, papel antigrasa, papel kraft blanco MG y papel siliconado para envolturas de alimentos, bolsas, envases de bebidas, resistencia a la humedad y seguridad alimentaria confiable."},
   "All Products": { en: "All Products", es: "Todos los Productos" }};

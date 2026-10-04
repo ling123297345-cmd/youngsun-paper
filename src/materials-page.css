@@ -1,0 +1,371 @@
+.materials-library {
+  --materials-green: #0b563d;
+  --materials-green-dark: #123f30;
+  --materials-cream: #f5f3ee;
+  --materials-soft: #faf9f6;
+  --materials-line: rgba(11, 86, 61, 0.18);
+  background: #fff;
+  color: #24352e;
+}
+
+.materials-library h1,
+.materials-library h2,
+.materials-library h3 {
+  color: var(--materials-green-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.materials-shell {
+  margin: 0 auto;
+  max-width: 1360px;
+  padding-left: clamp(24px, 4.4vw, 68px);
+  padding-right: clamp(24px, 4.4vw, 68px);
+  width: 100%;
+}
+
+.materials-kicker {
+  color: var(--materials-green);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.materials-hero {
+  align-items: center;
+  display: flex;
+  min-height: clamp(520px, 39vw, 620px);
+  overflow: hidden;
+  padding-top: 72px;
+  position: relative;
+}
+
+.materials-hero__image,
+.materials-hero__wash {
+  height: 100%;
+  inset: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.materials-hero__image { object-fit: cover; object-position: center; }
+
+.materials-hero__wash {
+  background: linear-gradient(90deg, rgba(247,245,240,.99) 0%, rgba(247,245,240,.96) 34%, rgba(247,245,240,.62) 48%, rgba(247,245,240,.08) 70%, rgba(247,245,240,0) 100%);
+}
+
+.materials-hero__content { position: relative; z-index: 1; }
+
+.materials-hero__content h1 {
+  font-size: clamp(43px, 4.5vw, 65px);
+  line-height: 1.11;
+  max-width: 780px;
+}
+
+.materials-lead {
+  color: #344940;
+  font-size: 15px;
+  line-height: 1.65;
+  margin-top: 24px;
+  max-width: 505px;
+}
+
+.materials-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 26px; }
+
+.materials-button {
+  align-items: center;
+  border: 1px solid var(--materials-green);
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 800;
+  gap: 12px;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 25px;
+  text-transform: uppercase;
+  transition: background 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.materials-button:hover { transform: translateY(-2px); }
+.materials-button--solid { background: var(--materials-green); color: #fff; }
+.materials-button--solid:hover { background: var(--materials-green-dark); }
+.materials-button--outline { background: rgba(255,255,255,.34); color: var(--materials-green); }
+.materials-button--outline:hover { background: #fff; }
+
+.materials-intro { background: var(--materials-cream); }
+.materials-intro .materials-shell { max-width: none; padding: 0; }
+
+.materials-intro__grid {
+  align-items: stretch;
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  min-height: 405px;
+}
+
+.materials-intro__copy {
+  align-self: center;
+  justify-self: end;
+  max-width: 680px;
+  padding: 54px clamp(32px, 4vw, 60px);
+  width: 100%;
+}
+
+.materials-intro__copy h2 { font-size: clamp(32px, 2.8vw, 40px); line-height: 1.14; margin-bottom: 20px; }
+.materials-intro__copy > p:not(.materials-kicker) { color: #42554c; font-size: 14px; line-height: 1.68; margin-top: 13px; max-width: 520px; }
+.materials-intro__grid > img { height: 405px; object-fit: cover; width: 100%; }
+
+.materials-section { padding: 66px 0; }
+.materials-fiber-section { padding-bottom: 18px; padding-top: 42px; }
+.materials-guides-section { padding-bottom: 38px; padding-top: 18px; }
+.materials-fiber-section,
+.materials-guides-section,
+.materials-end-use,
+.materials-faq { scroll-margin-top: 72px; }
+
+.materials-section-title {
+  align-items: center;
+  display: flex;
+  gap: 19px;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.materials-section-title span { background: #8da99c; height: 1px; width: 38px; }
+.materials-section-title p { color: var(--materials-green); font-size: 12px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+
+.materials-fiber-list { display: grid; }
+
+.materials-fiber {
+  background: #fff;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  min-height: 248px;
+}
+
+.materials-fiber--reverse .materials-fiber__media { order: 2; }
+.materials-fiber__media { min-height: 248px; overflow: hidden; position: relative; }
+.materials-fiber__media img { height: 100%; inset: 0; object-fit: cover; position: absolute; transition: transform 550ms ease; width: 100%; }
+.materials-fiber__media:hover img { transform: scale(1.025); }
+
+.materials-fiber__copy {
+  align-items: flex-start;
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 58px minmax(0, 1fr);
+  padding: 30px 42px;
+}
+
+.materials-fiber__icon {
+  align-items: center;
+  background: var(--materials-soft);
+  border: 1px solid #e4e7e2;
+  border-radius: 50%;
+  color: var(--materials-green);
+  display: flex;
+  height: 58px;
+  justify-content: center;
+  width: 58px;
+}
+
+.materials-fiber__content { align-self: center; }
+.materials-fiber__copy h3 { font-size: clamp(27px, 2.4vw, 35px); line-height: 1.12; }
+.materials-fiber__copy p { color: #4e5e56; font-size: 13px; line-height: 1.62; margin-top: 11px; max-width: 470px; }
+.materials-fiber__copy .materials-fiber__summary { color: #243b31; font-size: 14px; font-weight: 600; margin-top: 5px; }
+
+.materials-text-link,
+.materials-guide span {
+  align-items: center;
+  color: var(--materials-green);
+  display: inline-flex;
+  font-size: 11px;
+  font-weight: 800;
+  gap: 8px;
+  text-transform: uppercase;
+}
+
+.materials-text-link { border-bottom: 1px solid #a9b9b1; margin-top: 18px; padding-bottom: 5px; }
+
+.materials-guide-grid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.materials-guide {
+  background: var(--materials-soft);
+  display: grid;
+  grid-template-columns: 48% 52%;
+  min-height: 228px;
+  overflow: hidden;
+}
+
+.materials-guide > img { height: 100%; object-fit: cover; transition: transform 500ms ease; width: 100%; }
+.materials-guide:hover > img { transform: scale(1.025); }
+
+.materials-guide__copy {
+  align-content: center;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  padding: 24px 28px;
+}
+
+.materials-guide__icon {
+  align-items: center;
+  background: var(--materials-green);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  grid-row: 1 / 5;
+  height: 43px;
+  justify-content: center;
+  margin-right: 14px;
+  width: 43px;
+}
+
+.materials-guide h3 { font-size: clamp(23px, 2vw, 30px); line-height: 1.13; }
+.materials-guide__copy > p { color: #4f5e57; font-size: 12px; line-height: 1.58; margin: 10px 0 16px; }
+.materials-guide span { justify-self: start; }
+
+.materials-end-use { background: #fff; padding-bottom: 42px; padding-top: 30px; }
+
+.materials-end-use__grid {
+  border: 1px solid #dfe5e1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.materials-end-use__grid > a {
+  align-items: center;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-height: 110px;
+  padding: 18px 20px;
+}
+
+.materials-end-use__grid > a + a { border-left: 1px solid #dfe5e1; }
+.materials-end-use__grid > a > svg:first-child { color: var(--materials-green); }
+.materials-end-use__grid strong { color: var(--materials-green-dark); display: block; font-size: 12px; font-weight: 800; }
+.materials-end-use__grid span { color: #7a8580; display: block; font-size: 10px; line-height: 1.45; margin-top: 7px; }
+.materials-end-use__grid span b { color: var(--materials-green); display: block; font-weight: 700; }
+.materials-end-use__arrow { color: var(--materials-green); grid-column: 2; margin-top: -8px; }
+
+.materials-faq { padding-bottom: 48px; padding-top: 28px; }
+.materials-faq__grid { border-left: 1px solid #dfe5e1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.materials-faq details { border-bottom: 1px solid #dfe5e1; border-right: 1px solid #dfe5e1; border-top: 1px solid #dfe5e1; padding: 0 20px; }
+.materials-faq summary { align-items: center; color: #2e3d36; cursor: pointer; display: flex; font-size: 12px; font-weight: 600; gap: 12px; justify-content: space-between; line-height: 1.45; list-style: none; min-height: 78px; }
+.materials-faq summary::-webkit-details-marker { display: none; }
+.materials-faq summary span { color: var(--materials-green); font-size: 20px; font-weight: 400; transition: transform 180ms ease; }
+.materials-faq details[open] summary span { transform: rotate(45deg); }
+.materials-faq details > p { color: #5d6963; font-size: 12px; line-height: 1.65; padding: 0 10px 20px 0; }
+
+.materials-cta { padding: 0 0 64px; }
+
+.materials-cta__inner {
+  align-items: center;
+  background-color: var(--materials-cream);
+  background-image: linear-gradient(90deg, rgba(245,243,238,.08) 0%, rgba(245,243,238,.94) 25%, var(--materials-cream) 46%), url("/images/materials/library/04-hardwood-pulp-short-fiber.webp");
+  background-position: center, left center;
+  background-repeat: no-repeat;
+  background-size: cover, 40% 100%;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  min-height: 156px;
+  padding-bottom: 30px;
+  padding-left: clamp(210px, 24vw, 365px);
+  padding-top: 30px;
+}
+
+.materials-cta h2 { font-size: clamp(26px, 2.6vw, 36px); line-height: 1.12; }
+.materials-cta p { color: #4c5b54; font-size: 12px; line-height: 1.62; margin-top: 8px; max-width: 590px; }
+.materials-cta__actions { display: grid; gap: 9px; }
+.materials-cta__actions .materials-button { min-height: 42px; width: 100%; }
+
+@media (max-width: 1100px) {
+  .materials-fiber__copy { gap: 16px; grid-template-columns: 50px minmax(0, 1fr); padding: 26px; }
+  .materials-fiber__icon { height: 50px; width: 50px; }
+  .materials-guide { grid-template-columns: 42% 58%; }
+  .materials-guide__copy { grid-template-columns: 42px 1fr; padding: 22px; }
+  .materials-guide__icon { height: 38px; width: 38px; }
+  .materials-end-use__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .materials-end-use__grid > a:nth-child(4), .materials-end-use__grid > a:nth-child(5) { border-top: 1px solid #dfe5e1; }
+  .materials-faq__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .materials-faq details:nth-child(n + 3) { border-top: 0; }
+  .materials-cta__inner { grid-template-columns: 1fr 280px; padding-left: clamp(150px, 20vw, 240px); }
+}
+
+@media (max-width: 760px) {
+  .materials-shell { padding-left: 20px; padding-right: 20px; }
+  .materials-hero { min-height: 650px; padding-top: 84px; }
+  .materials-hero__image { object-position: 66% center; }
+  .materials-hero__wash { background: linear-gradient(180deg, rgba(247,245,240,.98) 0%, rgba(247,245,240,.92) 55%, rgba(247,245,240,.22) 100%); }
+  .materials-hero__content { align-self: flex-start; padding-top: 54px; }
+  .materials-hero__content h1 { font-size: clamp(39px, 11vw, 54px); }
+  .materials-lead { max-width: 440px; }
+  .materials-intro__grid { grid-template-columns: 1fr; }
+  .materials-intro__copy { justify-self: stretch; max-width: none; padding: 54px 24px; }
+  .materials-intro__grid > img { height: 300px; }
+  .materials-section { padding-bottom: 54px; padding-top: 54px; }
+  .materials-fiber,
+  .materials-fiber--reverse { grid-template-columns: 1fr; }
+  .materials-fiber--reverse .materials-fiber__media { order: 0; }
+  .materials-fiber__media { aspect-ratio: 16 / 9; min-height: 0; }
+  .materials-fiber__copy { padding: 30px 24px 34px; }
+  .materials-guide-grid { grid-template-columns: 1fr; }
+  .materials-guide { min-height: 220px; }
+  .materials-end-use__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .materials-end-use__grid > a + a { border-left: 0; }
+  .materials-end-use__grid > a:nth-child(even) { border-left: 1px solid #dfe5e1; }
+  .materials-end-use__grid > a:nth-child(n + 3) { border-top: 1px solid #dfe5e1; }
+  .materials-faq__grid { grid-template-columns: 1fr; }
+  .materials-faq details:nth-child(n + 2) { border-top: 0; }
+  .materials-cta__inner { background-image: linear-gradient(180deg, rgba(245,243,238,.74), var(--materials-cream) 47%), url("/images/materials/library/04-hardwood-pulp-short-fiber.webp"); background-size: cover; grid-template-columns: 1fr; padding: 110px 24px 30px; }
+}
+
+@media (max-width: 520px) {
+  .materials-actions { align-items: stretch; flex-direction: column; }
+  .materials-button { width: 100%; }
+  .materials-fiber__copy { grid-template-columns: 46px minmax(0, 1fr); }
+  .materials-fiber__icon { height: 46px; width: 46px; }
+  .materials-fiber__content { padding-right: 42px; }
+  .materials-guide { grid-template-columns: 1fr; }
+  .materials-guide > img { aspect-ratio: 16 / 9; }
+  .materials-guide__copy { padding: 26px 22px 30px; }
+  .materials-end-use__grid { grid-template-columns: 1fr; }
+  .materials-end-use__grid > a:nth-child(even) { border-left: 0; }
+  .materials-end-use__grid > a:nth-child(n + 2) { border-top: 1px solid #dfe5e1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .materials-library *,
+  .materials-library *::before,
+  .materials-library *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
+
+.material-article-banner {
+  background-color: #063426;
+  background-position: center;
+  background-size: cover;
+  min-height: 570px;
+  padding-bottom: 86px !important;
+  padding-top: 178px !important;
+}
+
+.material-article-banner h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 5vw, 64px) !important;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.08 !important;
+  max-width: 760px;
+}
+
+@media (max-width: 700px) {
+  .material-article-banner {
+    background-position: 62% center;
+    min-height: 560px;
+    padding-bottom: 64px !important;
+    padding-top: 144px !important;
+  }
+}

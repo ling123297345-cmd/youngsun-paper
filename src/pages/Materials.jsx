@@ -1,196 +1,255 @@
-// ============================================================
-// YOUNGSUN PAPER — Materials Library / Paper Grade Guide
-// Searchable, filterable catalog of all paper & board grades
-// ============================================================
-import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+  Droplets,
+  Flower2,
+  Gem,
+  Leaf,
+  Recycle,
+  Settings2,
+  ShieldCheck,
+  Sprout,
+  Trees,
+} from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { materials, materialCategories, searchMaterials } from "../materialsData.js";
 import { PageMeta } from "../SEO.jsx";
+import { buyerGuides, pillarArticles, pulpHub } from "../pulpMaterialsData.js";
+import "../materials-page.css";
+
+const imageBase = "/images/materials/library";
+
+const pageCopy = {
+  en: {
+    library: "Materials Library",
+    title: <>Paper Pulp Materials:<br />How Fiber Choice<br />Shapes Paper Performance</>,
+    lead: "Understand how fiber source, pulping method and recycled content influence strength, smoothness, bulk and printability.",
+    explore: "Explore materials",
+    compare: "Compare fiber options",
+    why: "Why materials matter",
+    introTitle: <>The Performance of Paper<br />Starts With Its Fiber Furnish</>,
+    introOne: "Different fibers contribute different properties to paper. Some improve strength and runnability, while others support smoothness, opacity, bulk or a premium tactile character.",
+    introTwo: "Most commercial papers use a carefully balanced fiber blend. The right question is not which pulp is best, but which combination best supports your product and converting process.",
+    fibers: "Explore paper fibers",
+    article: "Read the article",
+    guides: "Buyer guides",
+    guideLink: "Read the guide",
+    endUse: "Start with the end use",
+    readAbout: "Read about",
+    faq: "Frequently asked questions",
+    ctaTitle: <>Need Help Matching Materials<br />to Your Paper Requirements?</>,
+    ctaBody: "Tell us your application, GSM or thickness, size, printing and converting process. We will help shortlist suitable grades for sample evaluation.",
+    recommendation: "Get material recommendation",
+    samples: "Request samples",
+  },
+  es: {
+    library: "Biblioteca de materiales",
+    title: <>Materiales de pulpa:<br />Como la fibra define<br />el rendimiento del papel</>,
+    lead: "Comprenda como la fibra, el proceso de pulpa y el contenido reciclado influyen en la resistencia, lisura, volumen e impresion.",
+    explore: "Explorar materiales",
+    compare: "Comparar fibras",
+    why: "Por que importan los materiales",
+    introTitle: <>El rendimiento del papel<br />empieza con sus fibras</>,
+    introOne: "Cada fibra aporta propiedades diferentes. Algunas mejoran la resistencia y otras favorecen la lisura, opacidad, volumen o tacto premium.",
+    introTwo: "La mayoria de los papeles combinan varias fibras. La mejor opcion es la mezcla que responde al producto y al proceso de conversion.",
+    fibers: "Explorar fibras de papel",
+    article: "Leer el articulo",
+    guides: "Guias de compra",
+    guideLink: "Leer la guia",
+    endUse: "Empiece por el uso final",
+    readAbout: "Leer sobre",
+    faq: "Preguntas frecuentes",
+    ctaTitle: <>Necesita ayuda para elegir<br />el material adecuado?</>,
+    ctaBody: "Indique la aplicacion, GSM o espesor, tamano, impresion y conversion. Le ayudaremos a seleccionar grados para evaluar muestras.",
+    recommendation: "Obtener recomendacion",
+    samples: "Solicitar muestras",
+  },
+};
+
+const fiberDetails = {
+  "softwood-pulp": {
+    icon: Trees,
+    subtitle: "Long Fibers for Stronger Paper and Packaging",
+    description: "Softwood pulp is commonly used as a reinforcing fiber. Its longer fibers support tensile strength, tear resistance, burst performance and machine runnability.",
+    image: `${imageBase}/03-softwood-pulp-long-fiber.webp`,
+  },
+  "hardwood-pulp": {
+    icon: Leaf,
+    subtitle: "Short Fibers for Smoothness and Print Quality",
+    description: "Hardwood pulp delivers excellent formation, opacity and a smooth surface for sharp printing and vivid color reproduction.",
+    image: `${imageBase}/04-hardwood-pulp-short-fiber.webp`,
+  },
+  "bamboo-pulp": {
+    icon: Sprout,
+    subtitle: "A Renewable Non-Wood Fiber Option",
+    description: "Bamboo pulp offers balanced strength and stiffness with good bulk. A fast-growing, renewable resource for a distinctive natural fiber story.",
+    image: `${imageBase}/05-bamboo-pulp-material.webp`,
+  },
+  "cotton-pulp": {
+    icon: Flower2,
+    subtitle: "Purity and Performance for Premium Applications",
+    description: "Cotton pulp provides high cellulose purity, excellent permanence and superior performance in specialized paper grades.",
+    image: `${imageBase}/06-cotton-pulp-material.webp`,
+  },
+};
+
+const guideDetails = {
+  "mechanical-vs-chemical-pulp": {
+    icon: Settings2,
+    image: `${imageBase}/07-mechanical-vs-chemical-pulp.webp`,
+    description: "Understand how pulping methods affect strength, bulk, opacity, brightness stability and paper life.",
+  },
+  "virgin-vs-recycled-fiber": {
+    icon: Recycle,
+    image: `${imageBase}/08-virgin-pulp-vs-recycled-fiber.webp`,
+    description: "Compare strength, appearance, cleanliness, recycled content and responsible sourcing.",
+  },
+};
+
+const endUses = [
+  { label: "Higher Strength", detail: "Softwood Pulp", href: "/materials/softwood-pulp", icon: ShieldCheck },
+  { label: "Smooth Printing", detail: "Hardwood Pulp", href: "/materials/hardwood-pulp", icon: Droplets },
+  { label: "Natural Fiber Story", detail: "Bamboo Pulp", href: "/materials/bamboo-pulp", icon: Trees },
+  { label: "Premium Permanence", detail: "Cotton Pulp", href: "/materials/cotton-pulp", icon: Gem },
+  { label: "Recycled Packaging", detail: "Virgin vs Recycled Fiber", href: "/materials/virgin-vs-recycled-fiber", icon: Recycle },
+];
+
+function SectionLabel({ children }) {
+  return <div className="materials-section-title"><span /><p>{children}</p><span /></div>;
+}
 
 export default function Materials() {
   const { lang } = useLang();
-  const isEs = lang === "es";
-  const [activeCat, setActiveCat] = useState("all");
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const filtered = useMemo(() => {
-    let result = searchQuery ? searchMaterials(searchQuery) : materials;
-    if (activeCat !== "all") {
-      result = result.filter((m) => m.category === activeCat);
-    }
-    return result;
-  }, [activeCat, searchQuery]);
+  const activeLang = lang === "es" ? "es" : "en";
+  const text = pageCopy[activeLang];
 
   return (
     <>
       <PageMeta
-        title="Paper & Board Materials Library — Complete Grade Guide"
-        description="Browse our complete paper and board materials library. Compare 25+ grades across 5 categories with specifications, properties, and applications. FSC certified."
+        title="Paper Pulp Materials Library | YOUNGSUN PAPER"
+        description="Compare softwood, hardwood, bamboo and cotton pulp. Learn how fiber choice, pulping method and recycled content affect paper strength, smoothness, bulk and printability."
         path="/materials"
       />
 
-      {/* Pulp Materials Banner */}
-      <section style={{ background: "var(--forest)", padding: "16px 0", textAlign: "center", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-        <Link to="/materials/pulp" style={{ color: "var(--gold)", fontSize: 14, fontWeight: 600, textDecoration: "none" }}>
-          🧬 {isEs ? "Biblioteca de Pulpa de Papel" : "Paper Pulp Library"} — {isEs ? "Cómo la fibra determina el rendimiento del papel" : "How fiber shapes paper performance"} →
-        </Link>
-      </section>
-      {/* Hero */}
-      <section className="section" style={{ background: "var(--forest)", color: "#fff", paddingTop: 100, paddingBottom: 80, textAlign: "center" }}>
-        <div className="container">
-          <span style={{ color: "var(--gold)", fontWeight: 600, fontSize: 13, textTransform: "uppercase", letterSpacing: 2 }}>
-            {isEs ? "Biblioteca de Materiales" : "Materials Library"}
-          </span>
-          <h1 style={{ fontSize: "clamp(30px, 5vw, 48px)", marginTop: 12, marginBottom: 12 }}>
-            {isEs ? "Guía Completa de Papel y Cartón" : "Complete Paper & Board Guide"}
-          </h1>
-          <p style={{ fontSize: 17, opacity: 0.8, maxWidth: 600, margin: "0 auto 28px" }}>
-            {isEs
-              ? "Explore más de 25 grados de papel y cartón en 5 categorías. Compare especificaciones, propiedades y aplicaciones."
-              : "Explore 25+ paper and board grades across 5 categories. Compare specifications, properties, and applications."}
-          </p>
-          {/* Search */}
-          <div style={{ maxWidth: 480, margin: "0 auto" }}>
-            <input
-              type="text"
-              placeholder={isEs ? "Buscar por nombre, aplicación…" : "Search by name, application…"}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              style={{
-                width: "100%", padding: "14px 20px", borderRadius: 10, border: "none",
-                fontSize: 15, background: "rgba(255,255,255,0.12)", color: "#fff",
-                outline: "none", textAlign: "center",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Category Tabs */}
-      <section style={{ background: "#fff", borderBottom: "1px solid var(--line)", position: "sticky", top: 60, zIndex: 50 }}>
-        <div className="container" style={{ display: "flex", gap: 4, overflow: "auto", padding: "12px 0", maxWidth: 1280 }}>
-          <button
-            onClick={() => setActiveCat("all")}
-            style={{
-              padding: "10px 20px", borderRadius: 8, fontSize: 13, fontWeight: 600, whiteSpace: "nowrap",
-              border: "none", cursor: "pointer",
-              background: activeCat === "all" ? "var(--forest)" : "transparent",
-              color: activeCat === "all" ? "#fff" : "var(--muted)",
-            }}
-          >
-            {isEs ? "Todos" : "All"} ({materials.length})
-          </button>
-          {materialCategories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCat(cat.id)}
-              style={{
-                padding: "10px 20px", borderRadius: 8, fontSize: 13, fontWeight: 600, whiteSpace: "nowrap",
-                border: "none", cursor: "pointer",
-                background: activeCat === cat.id ? "var(--forest)" : "transparent",
-                color: activeCat === cat.id ? "#fff" : "var(--muted)",
-              }}
-            >
-              {cat.icon} {cat.title[lang]}
-            </button>
-          ))}
-        </div>
-      </section>
-
-      {/* Materials Grid */}
-      <section className="section" style={{ background: "var(--paper)" }}>
-        <div className="container" style={{ maxWidth: 1280 }}>
-          {searchQuery && (
-            <p style={{ marginBottom: 24, color: "var(--muted)", fontSize: 14 }}>
-              {filtered.length} {isEs ? "resultados para" : "results for"} "{searchQuery}"
-            </p>
-          )}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: 20 }}>
-            {filtered.map((mat) => (
-              <div
-                key={mat.id}
-                style={{
-                  background: "#fff", borderRadius: 14, overflow: "hidden",
-                  boxShadow: "var(--shadow-sm)", transition: "box-shadow 0.2s var(--ease-out)",
-                  display: "flex", flexDirection: "column",
-                }}
-              >
-                {/* Image */}
-                <div style={{ height: 180, overflow: "hidden", background: "var(--forest-light)", position: "relative" }}>
-                  <img src={mat.image} alt={mat.name[lang]} style={{ width: "100%", height: "100%", objectFit: "cover" }} loading="lazy" />
-                </div>
-                {/* Content */}
-                <div style={{ padding: "20px 22px", flex: 1, display: "flex", flexDirection: "column" }}>
-                  <h3 style={{ fontSize: 17, fontWeight: 700, color: "var(--forest)", marginBottom: 8 }}>{mat.name[lang]}</h3>
-                  <p style={{ fontSize: 13, color: "var(--muted)", lineHeight: 1.6, marginBottom: 14, flex: 1 }}>
-                    {mat.description[lang]}
-                  </p>
-                  {/* Properties */}
-                  <div style={{ display: "grid", gap: 6, marginBottom: 14 }}>
-                    {mat.properties.map((prop, i) => (
-                      <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 12 }}>
-                        <span style={{ color: "var(--muted)" }}>{prop.label[lang]}</span>
-                        <span style={{ color: "var(--gold)", fontWeight: 600, letterSpacing: 1 }}>{prop.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                  {/* Specs */}
-                  <div style={{ borderTop: "1px solid var(--line)", paddingTop: 12, marginBottom: 14 }}>
-                    <div style={{ display: "grid", gap: 4, fontSize: 12 }}>
-                      {Object.entries(mat.specs).slice(0, 4).map(([key, val]) => (
-                        <div key={key} style={{ display: "flex", justifyContent: "space-between" }}>
-                          <span style={{ color: "var(--muted-light)", textTransform: "capitalize" }}>{key.replace(/([A-Z])/g, " $1")}</span>
-                          <span style={{ color: "var(--ink)", fontWeight: 500, textAlign: "right", maxWidth: "60%" }}>
-                            {Array.isArray(val) ? val.join(", ") : val}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  {/* Applications */}
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 14 }}>
-                    {mat.applications.slice(0, 3).map((app, i) => (
-                      <span key={i} style={{ background: "var(--paper-green)", padding: "3px 10px", borderRadius: 20, fontSize: 11, color: "var(--forest)" }}>
-                        {app[lang]}
-                      </span>
-                    ))}
-                  </div>
-                  {/* Link */}
-                  {mat.productPage && (
-                    <Link
-                      to={mat.productPage}
-                      style={{ color: "var(--gold)", fontWeight: 600, fontSize: 13, textDecoration: "none" }}
-                    >
-                      {isEs ? "Ver detalle del producto" : "View product details"} →
-                    </Link>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-          {filtered.length === 0 && (
-            <div style={{ textAlign: "center", padding: 60 }}>
-              <p style={{ fontSize: 18, color: "var(--muted)" }}>
-                {isEs ? "No se encontraron materiales." : "No materials found."}
-              </p>
+      <main className="materials-library">
+        <section className="materials-hero">
+          <img className="materials-hero__image" src={`${imageBase}/01-youngsun-materials-library-hero.webp`} alt="Paper pulp fibers and finished paper sheets" />
+          <div className="materials-hero__wash" />
+          <div className="materials-shell materials-hero__content">
+            <p className="materials-kicker">{text.library}</p>
+            <h1>{text.title}</h1>
+            <p className="materials-lead">{text.lead}</p>
+            <div className="materials-actions">
+              <a className="materials-button materials-button--solid" href="#paper-fibers">{text.explore}<ArrowRight size={16} /></a>
+              <Link className="materials-button materials-button--outline" to="/materials/pulp">{text.compare}</Link>
             </div>
-          )}
-        </div>
-      </section>
+          </div>
+        </section>
 
-      {/* CTA */}
-      <section className="section" style={{ background: "var(--forest)", color: "#fff", textAlign: "center", padding: "80px 20px" }}>
-        <h2 style={{ fontSize: "clamp(24px, 4vw, 32px)", marginBottom: 12 }}>
-          {isEs ? "¿Necesita ayuda para elegir?" : "Need Help Choosing?"}
-        </h2>
-        <p style={{ fontSize: 16, opacity: 0.8, marginBottom: 28 }}>
-          {isEs ? "Nuestro equipo técnico puede recomendarle el mejor grado para su aplicación." : "Our technical team can recommend the best grade for your application."}
-        </p>
-        <Link to="/contact" style={{ background: "var(--gold)", color: "#fff", padding: "14px 36px", borderRadius: 10, fontWeight: 700, fontSize: 15, textDecoration: "none", display: "inline-block" }}>
-          {isEs ? "Solicitar Recomendación" : "Get a Recommendation"} →
-        </Link>
-      </section>
+        <section className="materials-intro">
+          <div className="materials-shell materials-intro__grid">
+            <div className="materials-intro__copy">
+              <p className="materials-kicker">{text.why}</p>
+              <h2>{text.introTitle}</h2>
+              <p>{text.introOne}</p>
+              <p>{text.introTwo}</p>
+            </div>
+            <img src={`${imageBase}/02-paper-fiber-furnish-close-up.webp`} alt="Close-up of clean paper fibers" loading="lazy" />
+          </div>
+        </section>
+
+        <section className="materials-section materials-fiber-section" id="paper-fibers">
+          <div className="materials-shell">
+            <SectionLabel>{text.fibers}</SectionLabel>
+            <div className="materials-fiber-list">
+              {pillarArticles.map((article, index) => {
+                const detail = fiberDetails[article.id];
+                const Icon = detail.icon;
+                return (
+                  <article className={`materials-fiber ${index % 2 ? "materials-fiber--reverse" : ""}`} key={article.id}>
+                    <Link className="materials-fiber__media" to={`/materials/${article.id}`}>
+                      <img src={detail.image} alt={article.shortTitle} loading="lazy" />
+                    </Link>
+                    <div className="materials-fiber__copy">
+                      <div className="materials-fiber__icon"><Icon size={29} aria-hidden="true" /></div>
+                      <div className="materials-fiber__content">
+                        <h3>{article.shortTitle}</h3>
+                        <p className="materials-fiber__summary">{detail.subtitle}</p>
+                        <p>{detail.description}</p>
+                        <Link className="materials-text-link" to={`/materials/${article.id}`}>{text.article}<ArrowRight size={15} /></Link>
+                      </div>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="materials-section materials-guides-section" id="buyer-guides">
+          <div className="materials-shell">
+            <SectionLabel>{text.guides}</SectionLabel>
+            <div className="materials-guide-grid">
+              {buyerGuides.map((guide) => {
+                const detail = guideDetails[guide.id];
+                const Icon = detail.icon;
+                return (
+                  <Link className="materials-guide" to={`/materials/${guide.id}`} key={guide.id}>
+                    <img src={detail.image} alt={guide.shortTitle} loading="lazy" />
+                    <div className="materials-guide__copy">
+                      <div className="materials-guide__icon"><Icon size={24} aria-hidden="true" /></div>
+                      <h3>{guide.shortTitle}</h3>
+                      <p>{detail.description}</p>
+                      <span>{text.guideLink}<ArrowRight size={14} /></span>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="materials-section materials-end-use" id="end-use">
+          <div className="materials-shell">
+            <SectionLabel>{text.endUse}</SectionLabel>
+            <div className="materials-end-use__grid">
+              {endUses.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link to={item.href} key={item.label}>
+                    <Icon size={31} aria-hidden="true" />
+                    <div><strong>{item.label}</strong><span>{text.readAbout}<b>{item.detail}</b></span></div>
+                    <ArrowRight className="materials-end-use__arrow" size={14} aria-hidden="true" />
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="materials-section materials-faq" id="materials-faq">
+          <div className="materials-shell">
+            <SectionLabel>{text.faq}</SectionLabel>
+            <div className="materials-faq__grid">
+              {pulpHub.faqs.map((item) => (
+                <details key={item.q}>
+                  <summary>{item.q}<span>+</span></summary>
+                  <p>{item.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="materials-cta">
+          <div className="materials-shell materials-cta__inner">
+            <div className="materials-cta__copy"><h2>{text.ctaTitle}</h2><p>{text.ctaBody}</p></div>
+            <div className="materials-cta__actions">
+              <Link className="materials-button materials-button--solid" to="/contact">{text.recommendation}<ArrowRight size={16} /></Link>
+              <Link className="materials-button materials-button--outline" to="/contact">{text.samples}<ArrowRight size={16} /></Link>
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 }

@@ -1,3 +1,5 @@
+import { cmsProductEs } from "./generated/cmsProducts.js";
+
 // Spanish translations for all product fields
 // Key = product ID, Value = { tagline, specs, applications }
 
@@ -48,6 +50,11 @@ export const productEs = {
     specs: ["Sustrato: Kraft/Board, 80–350 gsm", "Recubrimiento PE: 12–30 gsm", "Termosellable: 110–150°C", "Barrera: WVTR ≤ 10 g/m²/24h", "Grado alimentario: FDA y EU"],
     applications: ["Vasos de papel fríos/calientes", "Tarrinas de helado", "Envases para llevar", "Alimentos congelados", "Envoltura antigrasa"],
   },
+  "ckb": {
+    tagline: "Cartón estucado con reverso kraft de alta resistencia para bebidas, alimentos, congelados y estuches plegables exigentes.",
+    specs: ["Gramaje: 200–350 gsm", "Superficie: Cara blanca con triple estucado y reverso kraft sin blanquear", "Formato: Hojas, bobinas y medidas personalizadas", "Grado: CKB"],
+    applications: ["Embalaje para bebidas", "Estuches para alimentos secos", "Envases para productos congelados", "Embalaje para almacenamiento en frío", "Cajas de juguetes", "Cajas de zapatos", "Embalaje de herramientas"],
+  },
   // CULTURE PAPER
   "woodfree-paper": {
     tagline: "Papel sin pasta mecánica, blanco brillante y libre de ácido para oficina, libros e impresión comercial.",
@@ -75,12 +82,12 @@ export const productEs = {
     applications: ["Archivo por colores", "Volantes y anuncios", "Manualidades escolares", "Menús de restaurante", "Boletines comunitarios"],
   },
   "copy-paper": {
-    tagline: "Papel de oficina multiusos de alta blancura — sin atascos, compatible láser/inyección.",
+    tagline: "Programa de papel de oficina en formatos A3, A4, A5, series B y medidas seleccionadas de EE. UU. para distribución y marca privada.",
     specs: ["Gramaje: 70/75/80 gsm", "Blancura: ISO 92–100%", "Formato: A4, A3, Carta, Legal", "Opacidad: ≥ 92% a 80 gsm", "Embalaje: 500 hojas/resma"],
     applications: ["Impresión de oficina", "Uso escolar", "Adquisiciones gubernamentales", "Oficina en casa", "Distribución mayorista"],
   },
   "a4-copy-paper": {
-    tagline: "Papel estándar A4 para oficina — blanco brillante, sin atascos, en embalaje de exportación.",
+    tagline: "Gama específica de papel A4 de 210×297 mm para compradores que necesitan embalaje uniforme y listo para exportación.",
     specs: ["Gramaje: 70/75/80 gsm", "Blancura: ISO 92–100%", "Formato: A4 (210×297mm)", "Opacidad: ≥ 92%", "Embalaje: 500 hojas/resma, 5–10 resmas/caja"],
     applications: ["Impresión de oficina", "Adquisiciones escolares", "Suministro gubernamental", "Oficina en casa", "Distribución mayorista"],
   },
@@ -98,6 +105,11 @@ export const productEs = {
     tagline: "Papel translúcido, liso y dimensionalmente estable — revela lo que hay debajo.",
     specs: ["Gramaje: 45–200 gsm", "Translucidez: 50–70% transmisión", "Superficie: Lisa, encolada", "Alta resistencia a la tracción", "Formato: Hojas y bobinas"],
     applications: ["Superposiciones de arquitectura", "Diseño de moda", "Papelería creativa", "Ventanas decorativas", "Arte e ilustración"],
+  },
+  "newsprint": {
+    tagline: "Papel prensa ligero y rentable para impresión rápida de periódicos, encartes publicitarios y publicaciones de gran tirada.",
+    specs: ["Gramaje: 40/42/45/48.8/52/57 gsm", "Blancura: ISO 56–68%", "Opacidad: ≥92% a 48.8 gsm", "Formato: Bobinas de 600–1800 mm; hojas bajo pedido", "Composición: 80–90% pulpa mecánica y 10–20% pulpa química"],
+    applications: ["Periódicos diarios y semanales", "Encartes y folletos publicitarios", "Publicaciones comunitarias de gran tirada", "Boletines comerciales e industriales", "Materiales para campañas", "Directorios y catálogos económicos"],
   },
   // FANCY PAPER
   "soft-touch-paper": {
@@ -125,6 +137,16 @@ export const productEs = {
     specs: ["Gramaje: 60–250 gsm", "Tipos: C1S/C2S/Metalizado", "Acabado: Brillo/Mate/Semimate", "Alta resistencia a la tracción", "Formato: Bobinas y hojas"],
     applications: ["Etiquetas para botellas", "Etiquetas colgantes de moda", "Etiquetas de bebidas", "Etiquetas de precio", "Etiquetas de seguridad"],
   },
+  "gold-silver-card": {
+    tagline: "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
+    specs: ["Gramaje: 200–400 gsm", "Acabados: Oro/Plata/Oro rosa/Oro champagne/Metálico personalizado", "Superficie: Metálica reflectante y lisa", "Formato: Hojas y bobinas", "Procesos: Offset, serigrafía, estampado, relieve y bajorrelieve", "Metalización: Al vacío o laminada con película metálica"],
+    applications: ["Cajas rígidas y embalajes de lujo", "Tarjetas e invitaciones", "Envases de cosmética y perfume", "Cajas para joyería y relojes", "Embalajes de vino y bebidas espirituosas", "Carpetas y tarjetas premium", "Embalaje festivo"],
+  },
+  "color-tissue-paper": {
+    tagline: "Papel seda de color ligero y translúcido para envolver regalos, proteger prendas y crear experiencias de desempaque de marca.",
+    specs: ["Gramaje: 17/20/24/28 gsm", "Colores: Más de 30 tonos y ajuste PMS disponible", "Composición: Pulpa virgen o fibra reciclada, libre de ácido", "Propiedades: Color estable, no destiñe y plegado suave", "Formato: Hojas estándar de 500×750 mm y 750×1000 mm; medidas personalizadas"],
+    applications: ["Envoltura de regalos y forro de cajas", "Presentación de zapatos y bolsos", "Embalaje de prendas y moda", "Envoltura floral", "Manualidades y decoración", "Papel seda impreso para experiencias de marca"],
+  },
   // FOOD PACKAGING
   "cup-paper": {
     tagline: "Cartón para vasos con recubrimiento PE — apto para alimentos, rígido, optimizado para conversión.",
@@ -136,6 +158,29 @@ export const productEs = {
     specs: ["Gramaje: 28–80 gsm", "Resistencia a grasa: Kit 8–12", "Mecanismo: Densificación de fibra", "Libre de PFAS", "Resistente al horno hasta 220°C"],
     applications: ["Papel de hornear", "Envoltura de sándwiches", "Envoltura de mantequilla", "Forros de bandejas", "Papel para fish and chips"],
   },
+  "mg-paper": {
+    tagline: "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
+    specs: [
+      "Gramaje: 23–80 gsm",
+      "Fibra: 100% pulpa de madera virgen",
+      "Blancura D65: 87% ± 4%",
+      "Superficie: Cara MG brillante y reverso mate para adhesión",
+      "Suavidad Bekk: ≥80s a ≥120s según el gramaje",
+      "Humedad: 4.5% ± 1.0%",
+      "Tamaños estándar: 787 × 1092 mm y 889 × 1194 mm",
+      "Formato: Hojas, resmas, medidas personalizadas y bobinas jumbo",
+    ],
+    applications: [
+      "Envolturas para hamburguesas y sándwiches",
+      "Bolsas de panadería y forros para bandejas",
+      "Sobres de azúcar, harina y alimentos secos",
+      "Papel base para recubrimiento PE/PLA o cera",
+      "Complejos laminados con papel de aluminio",
+      "Bolsas ligeras, papel de regalo y sobres",
+      "Papel intercalador para metal o vidrio",
+      "Sustratos para bolsas de esterilización médica",
+    ],
+  },
   "silicone-coated-paper": {
     tagline: "Papel antiadherente con silicona — liberación limpia en cada uso.",
     specs: ["Sustrato: Kraft, 40–120 gsm", "Silicona: Una o dos caras", "Resistencia al calor: 230°C", "Fuerza de liberación: Ajustable", "Grado alimentario: FDA, EU"],
@@ -146,4 +191,68 @@ export const productEs = {
     specs: ["Material: 100% fibra de algodón", "Espesor: 0.4–1.6 mm", "Gramaje: 380–1500 gsm", "Color: Blanco / Natural", "Certificado: FSC, contacto alimentario"],
     applications: ["Tiras para perfume", "Posavasos", "Tarjetas desecantes", "Tarjetas de frescura", "Etiquetas colgantes", "Forros de cajas de regalo"],
   },
+  "color-laminated-grey-board": {
+    tagline: "Cartón gris revestido con papel de color para cajas de regalo, tapas y papelería.",
+    specs: [
+      "Papel de revestimiento: Normalmente papel woodfree de color o kraft de 200 gsm",
+      "Colores: Negro, blanco, kraft y colores personalizados seleccionados",
+      "Estructuras: Color/Color, Color/Gris o Color/Blanco",
+      "Referencia con blanco o negro a una cara: 1.0–4.0 mm / 650–2650 gsm",
+      "Referencia con kraft a una cara: 1.2–4.0 mm / 800–2650 gsm",
+      "Formato: Hojas personalizadas y paneles cortados a medida",
+    ],
+    applications: ["Cajas rígidas de regalo y presentación", "Libros de tapa dura y álbumes", "Carpetas y papelería", "Insertos decorativos de embalaje"],
+  },
+  "woodgrain-laminated-grey-board": {
+    tagline: "Papel efecto madera laminado sobre cartón gris para cajas y aplicaciones decorativas.",
+    specs: [
+      "Revestimiento: Normalmente papel decorativo efecto madera de 120 gsm",
+      "Base: Cartón gris",
+      "Espesor: 1.0–4.0 mm",
+      "Aspecto: Diseños y tonos efecto madera seleccionados",
+      "Nota: Revestimiento de papel decorativo, no chapa de madera real",
+    ],
+    applications: ["Cajas para joyería y relojes", "Embalajes de regalo y presentación", "Organizadores de escritorio", "Componentes decorativos de revestimiento"],
+  },
+  "blue-core-puzzle-board": {
+    tagline: "Cartón con núcleo azul para la producción de rompecabezas.",
+    specs: [
+      "Gramaje: 600–1800 gsm",
+      "Espesor: Aproximadamente 0.85–2.73 mm",
+      "Incrementos de gramaje: 50 gsm",
+      "Tolerancia de gramaje: ±5%",
+      "Humedad: 8.0 ± 2.0%",
+      "Color del núcleo: Azul",
+    ],
+    applications: ["Rompecabezas impresos", "Juegos y rompecabezas educativos", "Componentes de cartón para puzzles", "Cajas de presentación para rompecabezas"],
+  },
+  "metallized-laminated-grey-board": {
+    tagline: "Cartón laminado dorado, plateado y blanco para bases de pastel, postres y embalaje de salmón.",
+    specs: [
+      "Espesor típico: 1.0–3.0 mm",
+      "Colores: Dorado, plateado, blanco y colores personalizados seleccionados",
+      "Acabado dorado: Diferentes niveles de brillo",
+      "Formas: Redonda, cuadrada, rectangular y personalizada",
+      "Bordes: Rectos o festoneados",
+      "Hoja completa: 70 × 100 cm o personalizada",
+      "Formato: Hojas completas o piezas cortadas",
+    ],
+    applications: ["Bases y discos para pasteles", "Tableros de presentación para postres", "Embalaje de salmón", "Insertos para presentación de alimentos"],
+  },
+  "foam-laminated-grey-board": {
+    tagline: "Cartón gris acolchado para carpetas de certificados y cubiertas de libros de tapa dura.",
+    specs: [
+      "Espesor de la base de cartón gris: 1.5–3.0 mm",
+      "Espesor de espuma: 3 mm",
+      "Estructura de 2 capas: Cartón gris + espuma expuesta",
+      "Estructura gris de 3 capas: Cartón gris + espuma + papel gris de 250 gsm",
+      "Estructura kraft de 3 capas: Cartón gris + espuma + papel kraft de 180 gsm",
+      "Nota: El espesor base no incluye espuma ni revestimiento superior",
+    ],
+    applications: ["Carpetas acolchadas para certificados", "Cubiertas de libros de tapa dura", "Cubiertas de presentación", "Componentes de papelería acolchados"],
+  },
 };
+
+for (const [slug, translation] of Object.entries(cmsProductEs)) {
+  productEs[slug] = { ...(productEs[slug] || {}), ...translation };
+}

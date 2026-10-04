@@ -31,7 +31,6 @@ Deno.serve(async (request) => {
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const anonKey = Deno.env.get("SUPABASE_ANON_KEY")!;
   const githubToken = Deno.env.get("YOUNGSUN_GITHUB_TOKEN");
-  if (!githubToken) return new Response(JSON.stringify({ error: "GitHub publishing is not configured" }), { status: 503, headers });
 
   const supabase = createClient(supabaseUrl, anonKey, {
     global: { headers: { Authorization: authorization } },
@@ -50,6 +49,16 @@ Deno.serve(async (request) => {
   const body = await request.json().catch(() => ({}));
   const contentType = body?.contentType === "blog" ? "blog" : "product";
   const slug = String(body?.slug || "").slice(0, 100);
+
+  // The scheduled GitHub workflow is the secure fallback while a narrowly
+  // scoped repository token has not yet been configured.
+  if (!githubToken) {
+    return new Response(
+      JSON.stringify({ ok: true, scheduled: true, message: "Content will be included in the next scheduled build" }),
+      { status: 202, headers },
+    );
+  }
+
   const githubResponse = await fetch(
     "https://api.github.com/repos/ling123297345-cmd/youngsun-paper/dispatches",
     {

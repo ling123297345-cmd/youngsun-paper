@@ -4,6 +4,8 @@ on:
   repository_dispatch:
     types: [cms-publish]
   workflow_dispatch:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write

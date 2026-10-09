@@ -115,7 +115,8 @@ export function WebsiteSchema() {
 
 // ── Article Schema for blog posts ───────────────────────────
 export function ArticleSchema({ post }) {
-  return <JsonLd id="article-schema" data={createArticleSchema(post)} />;
+  const { lang } = useLang();
+  return <JsonLd id="article-schema" data={createArticleSchema(post, { lang })} />;
 }
 
 // ── Breadcrumb Schema ────────────────────────────────────────

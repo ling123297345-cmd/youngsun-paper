@@ -128,7 +128,7 @@ export function extractBlogFaqs(blocksOrMarkdown) {
     ? blocksOrMarkdown
     : parseBlogContent(blocksOrMarkdown);
   const faqStart = blocks.findIndex(
-    (block) => block.type === "heading" && block.level === 2 && /\bfaq\b|frequently asked questions/i.test(stripInlineMarkdown(block.text)),
+    (block) => block.type === "heading" && block.level === 2 && /\bfaq\b|frequently asked questions|preguntas frecuentes/i.test(stripInlineMarkdown(block.text)),
   );
   if (faqStart < 0) return [];
 

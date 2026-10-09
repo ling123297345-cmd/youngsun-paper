@@ -50,6 +50,10 @@ const spanishStaticMeta = {
     title: "Recursos para Compradores de Papel",
     description: "Consulte información de productos, especificaciones, cumplimiento y recursos prácticos para comprar papel y cartón.",
   },
+  "/blog": {
+    title: "Blog de la Industria del Papel",
+    description: "Análisis prácticos para compradores de papel sobre materiales, sostenibilidad, envases, importación, cumplimiento y conversión.",
+  },
   "/fancy-paper-collection": {
     title: "Colección de Texturas de Papel Especial",
     description: "Explore papeles gofrados, perlados, efecto cuero y otras texturas para embalaje de lujo, portadas, etiquetas y aplicaciones de marca.",
@@ -72,6 +76,13 @@ const categoryMeta = {
   "food-packaging": {
     title: "Papeles para Envases Alimentarios",
     description: "Papel para vasos, papel antigrasa, papel siliconado, MG kraft y papeles con barrera para alimentos y bebidas.",
+  },
+};
+
+const spanishBlogMeta = {
+  "is-85-percent-paper-packaging-recyclable": {
+    title: "¿Un envase con 85 % de papel es reciclable? Guía",
+    description: "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas.",
   },
 };
 
@@ -115,6 +126,10 @@ export function supportsSpanishSeoPath(pathname = "/") {
     const id = path.split("/").pop();
     return Boolean(industryDetailContent[id]?.overview?.es);
   }
+  if (/^\/blog\/[^/]+$/.test(path)) {
+    const id = path.split("/").pop();
+    return Boolean(spanishBlogMeta[id]);
+  }
   return false;
 }
 
@@ -146,6 +161,11 @@ export function getSpanishSeoMeta(pathname, fallback = {}) {
         description: detail.overview.es,
       };
     }
+  }
+
+  if (/^\/blog\/[^/]+$/.test(path)) {
+    const id = path.split("/").pop();
+    if (spanishBlogMeta[id]) return spanishBlogMeta[id];
   }
 
   return {

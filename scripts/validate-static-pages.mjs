@@ -8,6 +8,7 @@ import {
   supportsSpanishSeoPath,
 } from '../src/localeSeo.js';
 import { blogPosts } from '../src/blogData.js';
+import { hasSpanishBlogPost, localizeBlogPost } from '../src/blogLocale.js';
 import { extractBlogFaqs, getBlogToc, parseBlogContent } from '../src/blogContent.js';
 import { getProductIndustryLinks } from '../src/productIndustryLinks.js';
 import { subProducts } from '../src/data.js';
@@ -115,6 +116,7 @@ const categoryRoutes = new Set([
 let productPageCount = 0;
 let spanishProductPageCount = 0;
 let blogPostCount = 0;
+let spanishBlogPostCount = 0;
 let collectionPageCount = 0;
 let productMoqCoverage = 0;
 let productCertificationCoverage = 0;
@@ -240,7 +242,8 @@ for (const pagePath of pages) {
   }
 
   if (isBlogPost) {
-    blogPostCount += 1;
+    if (spanishPage) spanishBlogPostCount += 1;
+    else blogPostCount += 1;
     const article = articles[0];
     checks.oneBlogPostingSchema = articles.length === 1;
     checks.articleCoreFields = hasFields(article, [
@@ -255,13 +258,14 @@ for (const pagePath of pages) {
       'mainEntityOfPage',
     ]);
     checks.articleDateFormat = /^\d{4}-\d{2}-\d{2}/.test(article?.datePublished || '');
-    const parsedBlocks = parseBlogContent(blogPost?.content || '');
+    const localizedBlogPost = localizeBlogPost(blogPost, spanishPage ? 'es' : 'en');
+    const parsedBlocks = parseBlogContent(localizedBlogPost?.content || '');
     const expectedFaqs = extractBlogFaqs(parsedBlocks);
     const expectedToc = getBlogToc(parsedBlocks);
     const expectsTable = parsedBlocks.some((block) => block.type === 'table');
-    checks.relatedArticles = countMatches(html, /<a\s+[^>]*href=["']\/blog\/[^"']+["']/gi) >= 3;
+    checks.relatedArticles = spanishPage || countMatches(html, /<a\s+[^>]*href=["']\/blog\/[^"']+["']/gi) >= 3;
     checks.semanticTable = !expectsTable || /<table>/.test(html);
-    checks.tableOfContents = expectedToc.length <= 2 || /aria-label=["']Table of contents["']/.test(html);
+    checks.tableOfContents = expectedToc.length <= 2 || /aria-label=["'](?:Table of contents|Contenido)["']/.test(html);
     checks.blogFaqSchema = expectedFaqs.length
       ? faqPages.length === 1 && faqPages[0].mainEntity?.length === expectedFaqs.length
       : faqPages.length === 0;
@@ -321,6 +325,11 @@ if (collectionPageCount !== categoryRoutes.size + 1) {
 
 if (blogPostCount !== blogPosts.length) {
   failures.unshift(`Expected ${blogPosts.length} blog posts, found ${blogPostCount}.`);
+}
+
+const expectedSpanishBlogPostCount = blogPosts.filter(hasSpanishBlogPost).length;
+if (spanishBlogPostCount !== expectedSpanishBlogPostCount) {
+  failures.unshift(`Expected ${expectedSpanishBlogPostCount} Spanish blog posts, found ${spanishBlogPostCount}.`);
 }
 
 if (pages.length < 50) {

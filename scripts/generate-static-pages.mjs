@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { localizeFaqItems, productCategories, subProducts } from "../src/data.js";
 import { productEs } from "../src/productEs.js";
 import { blogPosts } from "../src/blogData.js";
+import { hasSpanishBlogPost, localizeBlogPost } from "../src/blogLocale.js";
 import {
   extractBlogFaqs,
   getBlogToc,
@@ -452,9 +453,10 @@ function renderRouteSchemas(page, lang) {
   }
 
   const post = blogPosts.find((item) => page.route === `/blog/${item.id}`);
-  if (post && lang === "en") {
-    schemas.push(["article-schema", createArticleSchema(post)]);
-    const faqItems = extractBlogFaqs(post.content);
+  if (post && (lang === "en" || hasSpanishBlogPost(post))) {
+    const localizedPost = localizeBlogPost(post, lang);
+    schemas.push(["article-schema", createArticleSchema(localizedPost, { lang })]);
+    const faqItems = extractBlogFaqs(localizedPost.content);
     if (faqItems.length) schemas.push(["faq-schema", createFaqSchema(faqItems)]);
   }
 
@@ -478,7 +480,11 @@ function renderRouteSchemas(page, lang) {
 
   const breadcrumbItems = createBreadcrumbItems(page).map((item) => ({
     ...item,
-    name: lang === "es" && item.url === "/" ? "Inicio" : item.name,
+    name: lang === "es" && item.url === "/"
+      ? "Inicio"
+      : lang === "es" && post && item.url === page.route
+        ? post.titleEs
+        : item.name,
     url: localizedPath(item.url, lang),
   }));
   const breadcrumb = createBreadcrumbSchema(breadcrumbItems);
@@ -615,13 +621,13 @@ function truncate(value, maxLength) {
 function renderStaticContent(page, lang) {
   const body = renderRouteContent(page, lang);
   const navItems = lang === "es"
-    ? [["Inicio", "/"], ["Productos", "/products"], ["Industrias", "/industries"], ["Materiales", "/materials"], ["Procesamiento", "/processing"], ["Nosotros", "/about"], ["Contacto", "/contact"]]
+    ? [["Inicio", "/"], ["Productos", "/products"], ["Industrias", "/industries"], ["Materiales", "/materials"], ["Procesamiento", "/processing"], ["Blog", "/blog"], ["Nosotros", "/about"], ["Contacto", "/contact"]]
     : [["Home", "/"], ["Products", "/products"], ["Industries", "/industries"], ["Materials", "/materials"], ["Processing", "/processing"], ["Blog", "/blog"], ["About", "/about"], ["Contact", "/contact"]];
   const nav = navItems
     .map(([label, href]) => `<a href="${localizedPath(href, lang)}">${label}</a>`)
     .join(" ");
   const footer = lang === "es"
-    ? `<p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="${localizedPath("/contact", lang)}">Solicitar cotización</a> · <a href="${localizedPath("/products", lang)}">Ver todos los productos</a> · <a href="${localizedPath("/quality", lang)}">Control de calidad</a> · <a href="${localizedPath("/resources", lang)}">Recursos para compradores</a> · <a href="${localizedPath("/faq", lang)}">Preguntas frecuentes</a> · <a href="${localizedPath("/how-to-order", lang)}">Cómo comprar</a></p>`
+    ? `<p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="${localizedPath("/contact", lang)}">Solicitar cotización</a> · <a href="${localizedPath("/products", lang)}">Ver todos los productos</a> · <a href="${localizedPath("/blog", lang)}">Blog</a> · <a href="${localizedPath("/quality", lang)}">Control de calidad</a> · <a href="${localizedPath("/resources", lang)}">Recursos para compradores</a> · <a href="${localizedPath("/faq", lang)}">Preguntas frecuentes</a> · <a href="${localizedPath("/how-to-order", lang)}">Cómo comprar</a></p>`
     : `<p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p>`;
 
   return `<div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="${lang === "es" ? "Navegacion principal" : "Primary navigation"}" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px">${nav}</nav>${body}<footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8">${footer}</footer></main></div>`;
@@ -661,6 +667,7 @@ function renderRouteContent(page, lang) {
 function renderSpanishRouteContent(page) {
   if (page.route === "/") return renderSpanishHomeStatic();
   if (page.route === "/products") return renderSpanishProductCollectionStatic();
+  if (page.route === "/blog") return renderBlogIndexStatic("es");
   if (page.route === "/industries") return renderIndustriesIndexStatic("es");
   if (page.route === "/faq") return renderFaqStatic("es");
   if (page.route === "/resources") return renderResourcesStatic("es");
@@ -672,6 +679,9 @@ function renderSpanishRouteContent(page) {
 
   const productEntry = Object.entries(subProducts).find(([id]) => page.route === `/products/${id}`);
   if (productEntry) return renderSpanishProductStatic(productEntry[1]);
+
+  const post = blogPosts.find((item) => page.route === `/blog/${item.id}`);
+  if (post && hasSpanishBlogPost(post)) return renderBlogPostStatic(post, "es");
 
   const industry = industryChannels.find((item) => page.route === `/industries/${item.id}`);
   if (industry) return renderSpanishIndustryStatic(industry);
@@ -874,24 +884,42 @@ function renderProductCatalogStatic(activeProductId) {
   return `<nav aria-label="All paper products by category"><h2>Browse All Paper Products</h2><p>Compare ${Object.keys(subProducts).length} paper and paperboard grades across four product categories.</p>${groups}</nav>`;
 }
 
-function renderBlogIndexStatic() {
-  const posts = blogPosts.map((post) => `<article><h2><a href="/blog/${post.id}">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.excerpt)}</p><p>${escapeHtml(post.category)} · ${escapeHtml(post.date)}</p></article>`).join("");
-  return `<header><p>Insights &amp; Guides</p><h1>Paper Industry Blog</h1><p>Practical guides for paper buyers covering paper selection, packaging performance, sustainability, importing, logistics and converting.</p></header><section><h2>Latest Paper Buying Guides</h2>${posts}</section>`;
+function renderBlogIndexStatic(lang = "en") {
+  const isSpanish = lang === "es";
+  const sourcePosts = isSpanish ? blogPosts.filter(hasSpanishBlogPost) : blogPosts;
+  const posts = sourcePosts.map((sourcePost) => {
+    const post = localizeBlogPost(sourcePost, lang);
+    return `<article><h2><a href="${localizedPath(`/blog/${post.id}`, lang)}">${escapeHtml(post.title)}</a></h2><p>${escapeHtml(post.excerpt)}</p><p>${escapeHtml(post.category)} · ${escapeHtml(post.date)}</p></article>`;
+  }).join("");
+  return isSpanish
+    ? `<header><p>Análisis y guías</p><h1>Blog de la Industria del Papel</h1><p>Artículos prácticos para compradores sobre selección de materiales, envases, sostenibilidad, cumplimiento y conversión.</p></header><section><h2>Últimos análisis para compradores</h2>${posts}</section>`
+    : `<header><p>Insights &amp; Guides</p><h1>Paper Industry Blog</h1><p>Practical guides for paper buyers covering paper selection, packaging performance, sustainability, importing, logistics and converting.</p></header><section><h2>Latest Paper Buying Guides</h2>${posts}</section>`;
 }
 
-function renderBlogPostStatic(post) {
+function renderBlogPostStatic(sourcePost, lang = "en") {
+  const isSpanish = lang === "es";
+  const post = localizeBlogPost(sourcePost, lang);
   const blocks = parseBlogContent(post.content);
   const toc = getBlogToc(blocks);
-  const related = getRelatedBlogPosts(post, blogPosts)
-    .map((item) => `<li><a href="/blog/${item.id}">${escapeHtml(item.title)}</a> - ${escapeHtml(item.excerpt)}</li>`)
+  const relatedSourcePosts = isSpanish ? blogPosts.filter(hasSpanishBlogPost) : blogPosts;
+  const related = getRelatedBlogPosts(sourcePost, relatedSourcePosts)
+    .map((item) => localizeBlogPost(item, lang))
+    .map((item) => `<li><a href="${localizedPath(`/blog/${item.id}`, lang)}">${escapeHtml(item.title)}</a> - ${escapeHtml(item.excerpt)}</li>`)
     .join("");
   const tocHtml = toc.length > 2
-    ? `<nav aria-label="Table of contents"><h2>In This Guide</h2><ol>${toc.map((item) => `<li><a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a></li>`).join("")}</ol></nav>`
+    ? `<nav aria-label="${isSpanish ? "Contenido" : "Table of contents"}"><h2>${isSpanish ? "En esta guía" : "In This Guide"}</h2><ol>${toc.map((item) => `<li><a href="#${escapeHtml(item.id)}">${escapeHtml(item.text)}</a></li>`).join("")}</ol></nav>`
     : "";
   const hero = post.image
     ? `<figure><img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.imageAlt || post.title)}" width="1280" height="800" loading="eager">${post.imageCaption ? `<figcaption>${escapeHtml(post.imageCaption)}</figcaption>` : ""}</figure>`
     : "";
-  return `<article><header><p>${escapeHtml(post.category)} · ${escapeHtml(post.date)}</p><h1>${escapeHtml(post.title)}</h1><p>${escapeHtml(post.excerpt)}</p>${hero}</header>${tocHtml}${markdownToHtml(blocks, post.title)}<aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Related Articles</h2><ul>${related}</ul></aside><footer><p>Written by ${escapeHtml(post.author)}.</p><p><a href="/blog">Browse more paper industry articles</a> · <a href="/contact">Discuss your paper requirements</a></p></footer></article>`;
+  const articleBody = markdownToHtml(blocks, post.title);
+  const localizedBody = isSpanish
+    ? articleBody.replace(/href="\/(?!es\/|#)/g, 'href="/es/')
+    : articleBody;
+  const relatedSection = related
+    ? `<aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">${isSpanish ? "Artículos relacionados" : "Related Articles"}</h2><ul>${related}</ul></aside>`
+    : "";
+  return `<article><header><p>${escapeHtml(post.category)} · ${escapeHtml(post.date)}</p><h1>${escapeHtml(post.title)}</h1><p>${escapeHtml(post.excerpt)}</p>${hero}</header>${tocHtml}${localizedBody}${relatedSection}<footer><p>${isSpanish ? "Escrito por" : "Written by"} ${escapeHtml(post.author)}.</p><p><a href="${localizedPath("/blog", lang)}">${isSpanish ? "Ver más artículos" : "Browse more paper industry articles"}</a> · <a href="${localizedPath("/contact", lang)}">${isSpanish ? "Consultar sus requisitos de papel" : "Discuss your paper requirements"}</a></p></footer></article>`;
 }
 
 function renderIndustryStatic(industry) {

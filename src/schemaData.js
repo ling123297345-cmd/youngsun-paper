@@ -197,9 +197,10 @@ export function createCollectionPageSchema({ name, description, url, items = [],
   };
 }
 
-export function createArticleSchema(post) {
+export function createArticleSchema(post, { lang = "en" } = {}) {
   if (!post) return null;
-  const articleUrl = `${SITE_URL}/blog/${post.id}/`;
+  const languagePrefix = lang === "es" ? "/es" : "";
+  const articleUrl = `${SITE_URL}${languagePrefix}/blog/${post.id}/`;
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -230,12 +231,12 @@ export function createArticleSchema(post) {
     },
     isPartOf: {
       "@type": "Blog",
-      "@id": `${SITE_URL}/blog#blog`,
-      name: "YOUNGSUN PAPER Blog",
+      "@id": `${SITE_URL}${languagePrefix}/blog#blog`,
+      name: lang === "es" ? "Blog de YOUNGSUN PAPER" : "YOUNGSUN PAPER Blog",
     },
     articleSection: post.category,
     keywords: post.tags || [],
-    inLanguage: "en",
+    inLanguage: lang === "es" ? "es" : "en",
     about: (post.tags || []).map((tag) => ({ "@type": "Thing", name: tag })),
   };
 }

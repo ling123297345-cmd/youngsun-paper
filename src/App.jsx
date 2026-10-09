@@ -188,9 +188,7 @@ function Header() {
       <Link className="site-logo" to="/"><img className="logo-image" src="/images/logo-header.webp" alt="YOUNGSUN PAPER" width="121" height="40" decoding="async" /></Link>
       <nav className="desktop-nav">
         {links.map((item) => (
-          lang === "es" && item.label === "Blog"
-            ? <a key={item.label} href="/blog/">Blog (EN)</a>
-            : <NavLink key={item.label} to={item.href} end={item.href === "/"}>{t(item.label)}</NavLink>
+          <NavLink key={item.label} to={item.href} end={item.href === "/"}>{t(item.label)}</NavLink>
         ))}
       </nav>
       <SearchBar />
@@ -200,9 +198,7 @@ function Header() {
       </div>
       <nav className={`mobile-menu${mobileOpen ? " open" : ""}`}>
         {links.map((item) => (
-          lang === "es" && item.label === "Blog"
-            ? <a key={item.label} href="/blog/" onClick={() => setMobileOpen(false)}>Blog (EN)</a>
-            : <Link key={item.label} to={item.href} onClick={() => setMobileOpen(false)}>{t(item.label)}</Link>
+          <Link key={item.label} to={item.href} onClick={() => setMobileOpen(false)}>{t(item.label)}</Link>
         ))}
       </nav>
     </header>
@@ -224,7 +220,7 @@ function Footer() {
         </div>
         <div className="footer-column"><h4>{t("Product Categories")}</h4><Link to="/products/package-board">{t("Package Board")}</Link><Link to="/products/culture-paper">{t("Culture Paper")}</Link><Link to="/products/fancy-paper">{t("Fancy Paper")}</Link><Link to="/products/food-packaging">{t("Food Packaging Paper")}</Link><Link to="/materials">{t("Materials Library")}</Link></div>
         <div className="footer-column"><h4>{t("Company")}</h4><Link to="/about">{t("About Us")}</Link><Link to="/industries">{t("Industries") || "Industries"}</Link>{lang === "es" ? <a href="/es/quality/">{t("Quality Assurance") || "Quality Assurance"}</a> : <Link to="/quality">{t("Quality Assurance") || "Quality Assurance"}</Link>}<Link to="/contact">{t("Contact")}</Link></div>
-        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide")}</Link>{lang === "es" ? <a href="/materials/pulp/">Guía de Fibras (EN)</a> : <Link to="/materials/pulp">Fiber &amp; Pulp Guide</Link>}<Link to="/resources">{t("Buyer Guides")}</Link><Link to="/processing">{t("Processing Services")}</Link><Link to="/how-to-order">{t("How to Order")}</Link><Link to="/faq">FAQ</Link>{lang === "es" ? <a href="/blog/">Blog (EN)</a> : <Link to="/blog">Blog</Link>}<Link to="/contact">{t("Request a Quote")}</Link></div>
+        <div className="footer-column"><h4>{t("Resources")}</h4><Link to="/products">{t("Product Catalog")}</Link><Link to="/materials">{t("Paper Grade Guide")}</Link>{lang === "es" ? <a href="/materials/pulp/">Guía de Fibras (EN)</a> : <Link to="/materials/pulp">Fiber &amp; Pulp Guide</Link>}<Link to="/resources">{t("Buyer Guides")}</Link><Link to="/processing">{t("Processing Services")}</Link><Link to="/how-to-order">{t("How to Order")}</Link><Link to="/faq">FAQ</Link><Link to="/blog">Blog</Link><Link to="/contact">{t("Request a Quote")}</Link></div>
       </div>
       <div className="footer-bottom" style={{ flexDirection: "column", gap: 12 }}>
         <div style={{ display: "flex", gap: 18, alignItems: "center", flexWrap: "wrap", justifyContent: "center" }}>

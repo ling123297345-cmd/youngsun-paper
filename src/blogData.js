@@ -2,6 +2,280 @@ import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.j
 
 export const blogPosts = [
   {
+    id: "is-85-percent-paper-packaging-recyclable",
+    title: "85% Paper Sounds Sustainable—But Is It Recyclable? 7 Questions Buyers Should Ask",
+    titleEs: "85 % de papel suena sostenible, pero ¿es reciclable? 7 preguntas para compradores",
+    seoTitle: "Is 85% Paper Packaging Recyclable? Buyer Checklist",
+    seoTitleEs: "¿Un envase con 85 % de papel es reciclable? Guía",
+    metaDescription: "Does high paper content make packaging recyclable? Use this 7-question buyer checklist to assess barriers, collection, repulpability, testing and claims.",
+    metaDescriptionEs: "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas.",
+    date: "2026-10-09",
+    author: "YOUNGSUN PAPER Editorial",
+    category: "Sustainability",
+    categoryEs: "Sostenibilidad",
+    excerpt: "A new frozen-dessert wrapper made with up to 85% paper has put material percentages back in the spotlight. Here is how packaging buyers can separate a promising composition figure from a verified recyclability claim.",
+    excerptEs: "Un nuevo envoltorio para postres congelados con hasta un 85 % de papel ha vuelto a poner el porcentaje de material en el centro del debate. Así puede un comprador distinguir una composición prometedora de una reciclabilidad verificada.",
+    content: `# 85% Paper Sounds Sustainable—But Is It Recyclable? 7 Questions Buyers Should Ask
+
+On 6 October 2026, Tetra Pak announced an ice cream wrapper made with **up to 85% paper**. The company states that the remaining materials include polymer, ink and lacquer, and plans a phased European rollout from the fourth quarter of 2026. The announcement is a useful sign of where flexible food packaging is moving: more fibre, thinner functional layers and closer attention to cold-chain performance. Read the [official announcement from Tetra Pak](https://www.tetrapak.com/about-tetra-pak/news-and-events/newsarchive/tetra-pak-advances-ice-cream-packaging-with-new-wrapping-solution).
+
+For a packaging buyer, however, one important question remains: **does a high paper percentage automatically make the finished pack recyclable?**
+
+The short answer is no. Paper content describes composition. Recyclability depends on the complete packaging structure, the way it is collected and sorted, whether its fibres can be recovered in a suitable mill, and the rules of the destination market. This article does not assess the recyclability of the newly announced product. Instead, it uses the news as a practical starting point for evaluating any paper-based barrier package.
+
+## Why Paper Percentage and Recyclability Are Different Claims
+
+A percentage such as 85% tells a buyer how much of the package is paper by weight under the supplier's stated method. It does not by itself explain whether the package will enter a paper collection stream, whether its barrier layers separate during pulping, how much usable fibre is recovered, or how the residual material is handled.
+
+This distinction matters because food packaging needs performance. Moisture, grease, oxygen, aroma, heat sealing and cold-chain handling may require coatings, laminates, inks or adhesives. The [Confederation of European Paper Industries (Cepi)](https://www.cepi.org/paper-based-packaging-recyclability-guidelines/) notes that these functional treatments can make recycling more challenging and recommends considering the intended use and end-of-life together.
+
+The buyer's job is therefore not to reject every non-paper layer. It is to confirm that each layer is necessary, controlled and compatible with the intended recovery route.
+
+## 1. What Makes Up the Remaining Percentage?
+
+Ask for a layer-by-layer description of the finished package, not just the base paper. The answer should identify the paper substrate, barrier coating or film, sealing layer, adhesive, ink and lacquer where applicable.
+
+Request the weight or proportion of each constituent and ask what function it performs. A useful specification connects every non-paper component to a requirement such as grease resistance, moisture protection, heat sealing or print protection.
+
+If the supplier cannot explain the remaining percentage, the headline paper figure is not enough for a purchasing decision.
+
+## 2. Will the Pack Be Collected as Paper in the Target Market?
+
+Technical repulpability is only one part of the route. The used pack must first be accepted by a local collection system and recognised at sorting facilities.
+
+Ask which disposal instruction applies in each sales market. A structure accepted in one country may receive different guidance in another because collection and sorting systems differ. Cepi's guidance specifically recommends checking national extended producer responsibility schemes and local assessment protocols.
+
+For exports, record the intended country before approving a recyclability statement. Do not use one global disposal claim unless the evidence supports every target market.
+
+## 3. Can a Paper Mill Recover the Fibres?
+
+The key technical question is whether the paper fraction breaks down into usable fibres during pulping and whether non-paper components can be removed through screening and cleaning.
+
+Ask whether the finished structure has been tested using a recognised method. Cepi's [Recyclability Laboratory Test Method Version 3](https://www.cepi.org/cepi-recyclability-test-method-version-3/) simulates important stages of a conventional paper recycling mill, including pulping, screening and sheet formation.
+
+A general statement that “paper is recyclable” is not equivalent to a result for the complete printed, coated and sealed package.
+
+## 4. How Do Coatings, Inks and Adhesives Behave During Recycling?
+
+Small material quantities can still affect a recycling process. Ask whether barrier coatings disperse, remain as screenable particles or create sticky contaminants. Ask how inks, varnishes and adhesives behave in the selected test method.
+
+The most useful answer is supported by a test report that identifies the exact construction. A report for uncoated base paper does not prove the recyclability of a converted wrapper.
+
+When comparing materials such as [greaseproof paper](/products/greaseproof-paper), [PE coated paper](/products/pe-coated-paper) and [silicone coated paper](/products/silicone-coated-paper), compare both the required barrier performance and the end-of-life evidence available for the finished application.
+
+## 5. What Performance Is Actually Necessary?
+
+Reducing a barrier too far can create product loss, leakage or food waste. Start with the real application: product fat content, moisture, storage temperature, shelf life, filling process, sealing method and transport conditions.
+
+Then ask for the lightest structure that meets those verified requirements. For a dry bakery item, an uncoated or grease-resistant fibre solution may be suitable. A frozen product or liquid-contact application can require a different structure. Review [food and beverage paper solutions](/industries/food-beverage) and test the proposed material in the real converting and packing process.
+
+The correct comparison is not “paper versus plastic” in the abstract. It is one complete packaging system versus another, including product protection and end-of-life.
+
+## 6. Which Claim Can Be Used in the Destination Market?
+
+Ask for the exact wording the supplier believes the evidence supports: paper content, fibre source, technically recyclable, recyclable in a particular collection stream, or certified under a named protocol. These are different claims.
+
+The EU Packaging and Packaging Waste Regulation began applying in phases on 12 August 2026. The [European Commission's PPWR update](https://environment.ec.europa.eu/news/new-eu-rules-packaging-enter-application-2026-08-11_en) explains that requirements for all packaging to be recyclable apply from 2030, alongside further technical rules and implementation work.
+
+Buyers selling into the EU should follow the regulation and subsequent delegated rules, but the same discipline is useful everywhere: keep the claim, test method, tested sample and target market in one approval file.
+
+## 7. Was the Finished Pack Tested, or Only the Base Material?
+
+This is the most important verification question. Printing, coating, lamination, heat sealing and adhesive application can change recycling behaviour. Ask for evidence on the commercial structure or a representative converted sample.
+
+Match these five details before accepting a test report:
+
+| Evidence item | What should match your order |
+|---|---|
+| Material structure | Paper grade, coating, film and adhesive |
+| Conversion | Printing, lacquer, lamination and sealing process |
+| Basis weight | GSM and coating or film weight |
+| Test method | Named method, laboratory and report date |
+| Market scope | Country or collection stream covered by the claim |
+
+If one item is different, ask whether additional testing is needed.
+
+## A Practical RFQ Checklist for Paper-Based Barrier Packaging
+
+Before requesting a quotation, prepare the application and destination first. Then ask suppliers to complete the same information table so that proposals can be compared fairly.
+
+- Packed product and direct-food-contact status
+- Required grease, moisture, oxygen or aroma barrier
+- Filling, wrapping and sealing method
+- Storage temperature, shelf life and transport conditions
+- Paper GSM, finished size and expected order volume
+- Full layer structure and non-paper percentage
+- Printing, ink, varnish and adhesive system
+- Available food-contact and recyclability documentation
+- Destination country and intended disposal instruction
+- Converted sample or production trial requirement
+
+For cups and takeaway formats, compare the barrier structure on the [cup paper page](/products/cup-paper). For fibre-led outer packaging, review [kraft paper](/products/kraft-paper). Always approve the finished construction rather than selecting only by the paper name.
+
+## The Buying Decision in One Sentence
+
+**A high paper percentage is a useful design signal, but recyclability is a system result that needs market-specific evidence on the finished pack.**
+
+This is why a strong RFQ asks two separate questions: “What is the package made from?” and “What evidence shows what happens after use?” When both answers are clear, buyers can compare performance, compliance and end-of-life without relying on a single headline number.
+
+To compare paper-based barrier options for a specific product, [send YOUNGSUN PAPER your application, target market and converting requirements](/contact?intent=samples). Our team can help organise suitable material samples and the documents available for evaluation; final compliance and recyclability claims should be confirmed for the selected construction and destination.
+
+## Frequently Asked Questions
+
+### Does 85% Paper Mean a Package Is Recyclable?
+
+No. It describes material composition, not the complete collection, sorting and fibre-recovery route. Recyclability should be supported by evidence for the finished package and the target market.
+
+### Is a Coated Paper Package Recyclable?
+
+It may be, depending on the coating, its quantity, the complete converted structure and the recycling process available. Ask for a recognised test result and local collection guidance.
+
+### Should Buyers Avoid All Plastic Barriers?
+
+Not automatically. A barrier may be necessary to protect food or enable sealing. Buyers should minimise unnecessary material while verifying product performance and compatibility with the intended end-of-life route.
+
+### What Documents Should a Supplier Provide?
+
+Ask for the material structure, technical data sheet, relevant food-contact documents, the named recyclability test method and report, the tested sample description, and the market scope of any claim.
+
+### Can a Base-Paper Test Cover the Finished Wrapper?
+
+Not necessarily. Printing, coatings, adhesives, laminates and sealing can change the result. The tested construction should match the commercial finished pack as closely as possible.`,
+    contentEs: `# 85 % de papel suena sostenible, pero ¿es reciclable? 7 preguntas para compradores
+
+El 6 de octubre de 2026, Tetra Pak anunció un envoltorio para helados fabricado con **hasta un 85 % de papel**. La empresa indica que los materiales restantes incluyen polímero, tinta y laca, y prevé un lanzamiento gradual en Europa a partir del cuarto trimestre de 2026. El anuncio muestra hacia dónde avanza el envase flexible para alimentos: más fibra, capas funcionales más finas y mayor atención al rendimiento en la cadena de frío. Consulte el [anuncio oficial de Tetra Pak](https://www.tetrapak.com/about-tetra-pak/news-and-events/newsarchive/tetra-pak-advances-ice-cream-packaging-with-new-wrapping-solution).
+
+Sin embargo, para un comprador de envases queda una pregunta importante: **¿un porcentaje alto de papel convierte automáticamente el envase terminado en reciclable?**
+
+La respuesta corta es no. El contenido de papel describe la composición. La reciclabilidad depende de la estructura completa, de la recogida y clasificación, de la posibilidad de recuperar las fibras en una fábrica adecuada y de las normas del mercado de destino. Este artículo no evalúa la reciclabilidad del producto anunciado. Utiliza la noticia como punto de partida para analizar cualquier envase de papel con barrera.
+
+## Por qué el porcentaje de papel y la reciclabilidad son afirmaciones diferentes
+
+Un dato como 85 % indica cuánto papel contiene el envase en peso según el método declarado por el proveedor. Por sí solo, no explica si el envase entrará en la recogida de papel, si las capas de barrera se separarán durante el repulpado, cuánta fibra útil se recuperará ni cómo se gestionarán los residuos restantes.
+
+La diferencia importa porque el envase alimentario necesita rendimiento. La humedad, la grasa, el oxígeno, los aromas, el termosellado y la cadena de frío pueden requerir recubrimientos, laminados, tintas o adhesivos. La [Confederación Europea de Industrias del Papel (Cepi)](https://www.cepi.org/paper-based-packaging-recyclability-guidelines/) señala que estos tratamientos funcionales pueden dificultar el reciclaje y recomienda estudiar conjuntamente el uso previsto y el final de vida.
+
+La tarea del comprador no es rechazar cualquier capa que no sea papel. Debe confirmar que cada capa sea necesaria, esté controlada y sea compatible con la vía de recuperación prevista.
+
+## 1. ¿De qué está compuesto el porcentaje restante?
+
+Solicite una descripción capa por capa del envase terminado, no solo del papel base. La respuesta debe identificar el sustrato de papel, el recubrimiento o película de barrera, la capa de sellado, el adhesivo, la tinta y la laca cuando correspondan.
+
+Pida el peso o proporción de cada componente y la función que cumple. Una especificación útil relaciona cada material no papel con una necesidad concreta: resistencia a la grasa, protección contra la humedad, termosellado o protección de la impresión.
+
+Si el proveedor no puede explicar el porcentaje restante, la cifra principal de papel no basta para decidir una compra.
+
+## 2. ¿El mercado de destino lo recogerá como papel?
+
+La repulpabilidad técnica es solo una parte del recorrido. Primero, el envase usado debe ser aceptado por el sistema local de recogida y reconocido en las instalaciones de clasificación.
+
+Pregunte qué instrucción de eliminación corresponde a cada mercado. Una estructura aceptada en un país puede recibir otra indicación en otro porque los sistemas de recogida y clasificación son distintos. Cepi recomienda consultar los sistemas nacionales de responsabilidad ampliada del productor y los protocolos locales de evaluación.
+
+En exportación, registre el país de destino antes de aprobar una declaración de reciclabilidad. No utilice una afirmación global si la evidencia no cubre todos los mercados.
+
+## 3. ¿Puede una fábrica de papel recuperar las fibras?
+
+La pregunta técnica principal es si la fracción de papel se desintegra en fibras utilizables durante el repulpado y si los componentes no papeleros se eliminan mediante cribado y limpieza.
+
+Pregunte si la estructura terminada se ha ensayado con un método reconocido. El [Método de Ensayo de Reciclabilidad de Cepi, versión 3](https://www.cepi.org/cepi-recyclability-test-method-version-3/) simula etapas importantes de una fábrica de reciclaje convencional, como repulpado, cribado y formación de hoja.
+
+Una afirmación general de que “el papel es reciclable” no equivale a un resultado para un envase impreso, recubierto y sellado.
+
+## 4. ¿Cómo se comportan recubrimientos, tintas y adhesivos durante el reciclaje?
+
+Incluso pequeñas cantidades pueden afectar al proceso. Pregunte si las barreras se dispersan, permanecen como partículas separables o generan contaminantes pegajosos. Confirme cómo se comportan las tintas, barnices y adhesivos en el método de ensayo seleccionado.
+
+La respuesta más útil está respaldada por un informe que identifique la construcción exacta. Un ensayo del papel base sin recubrimiento no demuestra la reciclabilidad del envoltorio convertido.
+
+Al comparar [papel antigrasa](/products/greaseproof-paper), [papel recubierto de PE](/products/pe-coated-paper) y [papel siliconado](/products/silicone-coated-paper), compare tanto el rendimiento de barrera necesario como la evidencia de final de vida disponible para la aplicación terminada.
+
+## 5. ¿Qué rendimiento necesita realmente el producto?
+
+Reducir demasiado una barrera puede provocar pérdida de producto, fugas o desperdicio alimentario. Empiece por la aplicación real: contenido de grasa y humedad, temperatura de almacenamiento, vida útil, proceso de llenado, método de sellado y transporte.
+
+Después, solicite la estructura más ligera que cumpla esos requisitos verificados. Un producto de panadería seco puede funcionar con una solución de fibra sin recubrimiento o resistente a la grasa. Un alimento congelado o en contacto con líquidos puede necesitar otra estructura. Revise las [soluciones de papel para alimentos y bebidas](/industries/food-beverage) y pruebe el material propuesto en el proceso real de conversión y envasado.
+
+La comparación correcta no es “papel contra plástico” de forma abstracta. Es un sistema completo de envase frente a otro, incluida la protección del producto y su final de vida.
+
+## 6. ¿Qué declaración puede utilizarse en el mercado de destino?
+
+Solicite la redacción exacta que respalda la evidencia: contenido de papel, origen de la fibra, reciclabilidad técnica, reciclabilidad en una corriente concreta o certificación bajo un protocolo determinado. No significan lo mismo.
+
+El Reglamento de Envases y Residuos de Envases de la UE comenzó a aplicarse por fases el 12 de agosto de 2026. La [actualización de la Comisión Europea sobre el PPWR](https://environment.ec.europa.eu/news/new-eu-rules-packaging-enter-application-2026-08-11_en) explica que la obligación de que todos los envases sean reciclables se aplicará desde 2030, junto con normas técnicas y trabajos de implementación posteriores.
+
+Los compradores que venden en la UE deben seguir el reglamento y sus normas posteriores. La misma disciplina resulta útil en cualquier mercado: guarde la declaración, el método, la muestra ensayada y el país de destino en un único expediente de aprobación.
+
+## 7. ¿Se ensayó el envase terminado o solo el material base?
+
+Es la pregunta de verificación más importante. La impresión, el recubrimiento, el laminado, el termosellado y el adhesivo pueden modificar el comportamiento en el reciclaje. Pida evidencia sobre la estructura comercial o sobre una muestra convertida representativa.
+
+Compruebe estos cinco elementos antes de aceptar un informe:
+
+| Evidencia | Qué debe coincidir con su pedido |
+|---|---|
+| Estructura | Papel, recubrimiento, película y adhesivo |
+| Conversión | Impresión, laca, laminado y sellado |
+| Gramaje | GSM y peso del recubrimiento o película |
+| Método | Método identificado, laboratorio y fecha |
+| Alcance | País o corriente de recogida cubierta |
+
+Si algún elemento es diferente, pregunte si se necesita un ensayo adicional.
+
+## Lista práctica para solicitar una cotización
+
+Antes de pedir precio, defina la aplicación y el destino. Después, pida a todos los proveedores la misma información para comparar propuestas de forma justa.
+
+- Producto envasado y condición de contacto directo con alimentos
+- Barrera necesaria contra grasa, humedad, oxígeno o aromas
+- Método de llenado, envoltura y sellado
+- Temperatura, vida útil y condiciones de transporte
+- GSM, tamaño terminado y volumen estimado
+- Estructura completa y porcentaje no papel
+- Sistema de impresión, tinta, barniz y adhesivo
+- Documentos disponibles de contacto alimentario y reciclabilidad
+- País de destino e instrucción de eliminación prevista
+- Necesidad de muestra convertida o prueba de producción
+
+Para vasos y envases para llevar, compare la barrera en la página de [papel para vasos](/products/cup-paper). Para envases exteriores basados en fibra, revise el [papel kraft](/products/kraft-paper). Apruebe siempre la estructura terminada, no solo el nombre del papel.
+
+## La decisión de compra en una frase
+
+**Un porcentaje alto de papel es una señal de diseño útil, pero la reciclabilidad es el resultado de un sistema y necesita evidencia específica del envase terminado y del mercado.**
+
+Por eso, una buena solicitud plantea dos preguntas separadas: “¿De qué está hecho el envase?” y “¿Qué evidencia demuestra qué ocurre después de usarlo?”. Cuando ambas respuestas son claras, el comprador puede comparar rendimiento, cumplimiento y final de vida sin depender de una sola cifra llamativa.
+
+Para comparar opciones de barrera basadas en papel, [envíe a YOUNGSUN PAPER su aplicación, mercado y requisitos de conversión](/contact?intent=samples). Nuestro equipo puede ayudar a organizar muestras adecuadas y la documentación disponible; las declaraciones finales de cumplimiento y reciclabilidad deben confirmarse para la estructura y el destino seleccionados.
+
+## Preguntas frecuentes
+
+### ¿Un 85 % de papel significa que el envase es reciclable?
+
+No. Describe la composición, no la ruta completa de recogida, clasificación y recuperación de fibra. La reciclabilidad debe apoyarse en evidencia del envase terminado y del mercado de destino.
+
+### ¿Es reciclable un envase de papel recubierto?
+
+Puede serlo, según el recubrimiento, su cantidad, la estructura convertida y el proceso de reciclaje disponible. Solicite un ensayo reconocido y la orientación local de recogida.
+
+### ¿Debe evitarse cualquier barrera plástica?
+
+No automáticamente. Una barrera puede ser necesaria para proteger alimentos o permitir el sellado. El objetivo es reducir material innecesario y verificar el rendimiento y la compatibilidad con el final de vida previsto.
+
+### ¿Qué documentos debe facilitar un proveedor?
+
+Solicite la estructura del material, ficha técnica, documentos pertinentes de contacto alimentario, método e informe de reciclabilidad, descripción de la muestra ensayada y alcance de mercado de cualquier declaración.
+
+### ¿Un ensayo del papel base cubre el envoltorio terminado?
+
+No necesariamente. La impresión, los recubrimientos, adhesivos, laminados y sellado pueden cambiar el resultado. La construcción ensayada debe coincidir lo máximo posible con el envase comercial terminado.`,
+    image: "/images/blog-articles/is-85-percent-paper-packaging-recyclable.webp",
+    imageAlt: "Paper-based frozen-dessert wrappers, fibre samples and thin barrier layers arranged for a packaging recyclability evaluation.",
+    imageAltEs: "Envoltorios de papel para postres congelados, muestras de fibra y capas finas de barrera preparados para evaluar su reciclabilidad.",
+    imageCaption: "Illustrative material evaluation scene. Recyclability must be verified for the finished packaging structure and target market.",
+    imageCaptionEs: "Escena ilustrativa de evaluación de materiales. La reciclabilidad debe verificarse para la estructura terminada y el mercado de destino.",
+    tags: ["paper-based packaging", "recyclability", "barrier paper", "food packaging", "PPWR", "packaging buyer checklist"],
+    tagsEs: ["envases de papel", "reciclabilidad", "papel barrera", "envases alimentarios", "PPWR", "guía para compradores"],
+  },
+  {
     id: "tracing-paper-overlays-invitations-presentation-packs",
     title: "Tracing Paper Overlays for Invitations and Presentation Packs",
     seoTitle: "Tracing Paper Overlays for Invitations | YOUNGSUN",

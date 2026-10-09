@@ -1,26 +1,37 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { blogPosts, blogCategories } from "../blogData.js";
+import { blogPosts } from "../blogData.js";
+import { hasSpanishBlogPost, localizeBlogPost } from "../blogLocale.js";
 import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
+import { useLang } from "../i18n.jsx";
 
 export default function Blog() {
-  const [filter, setFilter] = useState("All");
-  const posts = filter === "All" ? blogPosts : blogPosts.filter((p) => p.category === filter);
+  const { lang } = useLang();
+  const allLabel = lang === "es" ? "Todos" : "All";
+  const [filter, setFilter] = useState(allLabel);
+  const visiblePosts = (lang === "es" ? blogPosts.filter(hasSpanishBlogPost) : blogPosts)
+    .map((post) => localizeBlogPost(post, lang));
+  const categories = [allLabel, ...new Set(visiblePosts.map((post) => post.category))];
+  const posts = filter === allLabel ? visiblePosts : visiblePosts.filter((post) => post.category === filter);
+  const pageTitle = lang === "es" ? "Blog de la Industria del Papel" : "Paper Industry Blog";
+  const pageDescription = lang === "es"
+    ? "Análisis prácticos para compradores de papel sobre selección de materiales, sostenibilidad, envases, importación y conversión."
+    : "Expert guides on paper selection, sustainability, importing from China, and packaging design for buyers and procurement professionals.";
 
   return (
     <section className="section products-section" style={{ paddingTop: 0 }}>
-      <PageMeta title="Blog — Paper Industry Insights" description="Expert guides on paper selection, sustainability, importing from China, and packaging design for buyers and procurement professionals." path="/blog" />
-      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }]} />
+      <PageMeta title={pageTitle} description={pageDescription} path="/blog" />
+      <BreadcrumbSchema items={[{ name: lang === "es" ? "Inicio" : "Home", url: lang === "es" ? "/es/" : "/" }, { name: "Blog", url: lang === "es" ? "/es/blog" : "/blog" }]} />
       <div style={{ background: "url(/images/blog-bg.jpg) center/cover no-repeat", height: 260, position: "relative" }}>
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(10,31,19,0.3) 0%, rgba(20,54,34,0.8) 100%)" }} />
       </div>
       <div className="section-header">
-        <span className="section-label">Insights & Guides</span>
-        <h1>Paper Industry Blog</h1>
-        <p>Expert articles on paper selection, sustainability, importing, and packaging design.</p>
+        <span className="section-label">{lang === "es" ? "Análisis y guías" : "Insights & Guides"}</span>
+        <h1>{pageTitle}</h1>
+        <p>{lang === "es" ? "Artículos para seleccionar papel, evaluar sostenibilidad y tomar mejores decisiones de compra." : "Expert articles on paper selection, sustainability, importing, and packaging design."}</p>
       </div>
       <div style={{ display: "flex", gap: 8, justifyContent: "center", marginBottom: 40, flexWrap: "wrap" }}>
-        {blogCategories.map((cat) => (
+        {categories.map((cat) => (
           <button key={cat} className={`filter-btn${filter === cat ? " active" : ""}`} onClick={() => setFilter(cat)}>{cat}</button>
         ))}
       </div>
@@ -30,7 +41,7 @@ export default function Blog() {
             <div className="subproduct-image-wrap" style={{ aspectRatio: "16/10", background: "#e8ece6" }}>
               <img
                 src={post.image.startsWith('/') ? post.image : '/' + post.image}
-                alt={post.title}
+                alt={post.imageAlt || post.title}
                 className="subproduct-image"
                 width="1280"
                 height="800"

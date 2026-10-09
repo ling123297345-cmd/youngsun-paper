@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../blogData.js";
+import { hasSpanishBlogPost, localizeBlogPost } from "../blogLocale.js";
 import {
   extractBlogFaqs,
   getBlogToc,
@@ -7,6 +8,7 @@ import {
   parseBlogContent,
 } from "../blogContent.js";
 import { PageMeta, ArticleSchema, BreadcrumbSchema, FAQSchema } from "../SEO.jsx";
+import { useLang } from "../i18n.jsx";
 
 function renderText(text) {
   const parts = String(text || "").split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
@@ -51,24 +53,27 @@ function BlogBody({ blocks }) {
 
 export default function BlogPost() {
   const { id } = useParams();
-  const post = blogPosts.find((item) => item.id === id);
-  if (!post) {
-    return <section className="section" style={{ paddingTop: 120 }}><div className="container" style={{ textAlign: "center" }}><h1>Article Not Found</h1><Link to="/blog" className="btn btn-primary" style={{ marginTop: 24 }}>Back to Blog</Link></div></section>;
+  const { lang } = useLang();
+  const sourcePost = blogPosts.find((item) => item.id === id);
+  const post = localizeBlogPost(sourcePost, lang);
+  if (!post || (lang === "es" && !hasSpanishBlogPost(sourcePost))) {
+    return <section className="section" style={{ paddingTop: 120 }}><div className="container" style={{ textAlign: "center" }}><h1>{lang === "es" ? "Artículo no encontrado" : "Article Not Found"}</h1><Link to="/blog" className="btn btn-primary" style={{ marginTop: 24 }}>{lang === "es" ? "Volver al blog" : "Back to Blog"}</Link></div></section>;
   }
 
   const blocks = parseBlogContent(post.content);
   const toc = getBlogToc(blocks);
   const faqItems = extractBlogFaqs(blocks);
-  const relatedPosts = getRelatedBlogPosts(post, blogPosts);
+  const relatedSourcePosts = lang === "es" ? blogPosts.filter(hasSpanishBlogPost) : blogPosts;
+  const relatedPosts = getRelatedBlogPosts(sourcePost, relatedSourcePosts).map((item) => localizeBlogPost(item, lang));
 
   return (
     <section className="section blog-post-page">
       <PageMeta title={post.seoTitle || post.title} description={post.metaDescription || post.excerpt.slice(0, 155)} path={`/blog/${id}`} />
       <ArticleSchema post={post} />
       {faqItems.length > 0 ? <FAQSchema items={faqItems} /> : null}
-      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Blog", url: "/blog" }, { name: post.title, url: `/blog/${id}` }]} />
+      <BreadcrumbSchema items={[{ name: lang === "es" ? "Inicio" : "Home", url: lang === "es" ? "/es/" : "/" }, { name: "Blog", url: lang === "es" ? "/es/blog" : "/blog" }, { name: post.title, url: lang === "es" ? `/es/blog/${id}` : `/blog/${id}` }]} />
       <div className="container blog-post-shell">
-        <Link to="/blog" className="blog-back-link">Back to Blog</Link>
+        <Link to="/blog" className="blog-back-link">{lang === "es" ? "Volver al blog" : "Back to Blog"}</Link>
         <header className="blog-post-header">
           <span>{post.category}</span>
           <h1>{post.title}</h1>
@@ -84,8 +89,8 @@ export default function BlogPost() {
           </figure>
         ) : null}
         {toc.length > 2 ? (
-          <nav className="blog-toc" aria-label="Table of contents">
-            <span>In this guide</span>
+          <nav className="blog-toc" aria-label={lang === "es" ? "Contenido" : "Table of contents"}>
+            <span>{lang === "es" ? "En esta guía" : "In this guide"}</span>
             <ol>{toc.map((item) => <li key={item.id}><a href={`#${item.id}`}>{item.text}</a></li>)}</ol>
           </nav>
         ) : null}
@@ -95,19 +100,19 @@ export default function BlogPost() {
         <div className="blog-tags">{post.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
         <section className="blog-inline-cta" aria-labelledby="blog-help-heading">
           <div>
-            <span>Technical sourcing support</span>
-            <h2 id="blog-help-heading">Need help applying this guide to your paper order?</h2>
-            <p>Share your application, GSM or thickness, size, quantity, and destination. Our team will help narrow down suitable grades and available documents.</p>
+            <span>{lang === "es" ? "Apoyo técnico para compras" : "Technical sourcing support"}</span>
+            <h2 id="blog-help-heading">{lang === "es" ? "¿Necesita aplicar esta guía a su pedido de papel?" : "Need help applying this guide to your paper order?"}</h2>
+            <p>{lang === "es" ? "Indique la aplicación, GSM o espesor, medida, cantidad y destino. Nuestro equipo le ayudará a comparar grados adecuados y la documentación disponible." : "Share your application, GSM or thickness, size, quantity, and destination. Our team will help narrow down suitable grades and available documents."}</p>
           </div>
           <div className="blog-inline-cta-actions">
-            <Link to="/contact?intent=quote">Ask Our Paper Team</Link>
-            <Link to="/products">Browse Paper Grades</Link>
+            <Link to="/contact?intent=quote">{lang === "es" ? "Consultar al equipo" : "Ask Our Paper Team"}</Link>
+            <Link to="/products">{lang === "es" ? "Ver grados de papel" : "Browse Paper Grades"}</Link>
           </div>
         </section>
-        <aside className="blog-related" aria-labelledby="related-articles-heading">
+        {relatedPosts.length > 0 ? <aside className="blog-related" aria-labelledby="related-articles-heading">
           <div className="blog-related-heading">
-            <span>Continue researching</span>
-            <h2 id="related-articles-heading">Related Articles</h2>
+            <span>{lang === "es" ? "Siga investigando" : "Continue researching"}</span>
+            <h2 id="related-articles-heading">{lang === "es" ? "Artículos relacionados" : "Related Articles"}</h2>
           </div>
           <div className="blog-related-grid">
             {relatedPosts.map((item) => (
@@ -117,7 +122,7 @@ export default function BlogPost() {
               </Link>
             ))}
           </div>
-        </aside>
+        </aside> : null}
       </div>
     </section>
   );

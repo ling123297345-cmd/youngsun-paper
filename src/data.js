@@ -409,7 +409,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Color reference or code", "Grammage", "Sheet or reel size", "Quantity", "Application", "Destination port"],
     seoTitle: "Color Card Paper Supplier for Packaging",
-    metaDescription: "Colored card paper from 110 to 400 gsm in standard and embossed finishes for packaging, hang tags, stationery and printing.",
+    metaDescription: "Colored card paper from 110 to 400 gsm in standard and embossed finishes for packaging, hang tags, stationery and printing. Request custom colors and samples.",
     keywords: ["color card paper", "colored cardboard", "solid color cardstock", "colored paper board", "Pantone paper", "craft cardstock"],
     image: "/images/products/package-board/color-card-paper-main.webp",
     gallery: [
@@ -615,7 +615,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
     seoTitle: "C2S High Bulk Bristol Board Supplier",
-    metaDescription: "Two-side coated high bulk bristol board from 210 to 320 gsm for premium printing, covers, cards and packaging.",
+    metaDescription: "Two-side coated high bulk bristol board from 210 to 320 gsm for premium printing, covers, cards, hang tags and packaging. Request sheets or samples.",
     keywords: ["C2S art board", "coated art card", "SBS board", "art card paper", "premium card stock", "double-coated board"],
     image: "/images/products/package-board/c2s-art-board-main.webp",
     gallery: [
@@ -720,7 +720,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grade (natural/bleached/recycled)","Grammage","Roll or sheet size","Quantity","End use","Destination port"],
     seoTitle: "Kraft Paper Supplier for Packaging",
-    metaDescription: "Natural, bleached and recycled kraft paper from 35 to 200 gsm for sacks, bags, wrapping and industrial converting.",
+    metaDescription: "Natural, bleached and recycled kraft paper from 35 to 200 gsm for sacks, bags, wrapping and industrial converting. Request rolls, sheets or samples.",
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
     image: "/images/products/package-board/kraft-paper-main.webp",
     gallery: [
@@ -824,7 +824,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grey back or white back","Grammage","Size","Quantity","Application","Destination port"],
     seoTitle: "Duplex Board Grey Back Supplier",
-    metaDescription: "Coated white-top duplex board from 200 to 400 gsm for economical folding cartons, retail packaging and printed boxes.",
+    metaDescription: "Coated white-top duplex board from 200 to 450 gsm for economical folding cartons, retail packaging and printed boxes. Request sheets, reels or samples.",
     keywords: ["duplex board", "white-lined chipboard", "WLC", "coated duplex board", "grey back board", "FMCG carton board"],
     image: "/images/products/package-board/duplex-board-main.webp",
     gallery: [
@@ -1092,7 +1092,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
     seoTitle: "Woodfree Offset Paper Supplier",
-    metaDescription: "Woodfree offset paper for premium commercial printing, books, brochures and business stationery.",
+    metaDescription: "Woodfree offset paper from 60 to 120 gsm for books, notebooks, manuals, envelopes and commercial printing. Request sheets, reels or samples.",
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
     image: "/images/products/culture-paper/woodfree-paper-main.webp",
     gallery: [
@@ -2639,7 +2639,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or roll size","Quantity","Food-contact requirement","Application","Destination port"],
     seoTitle: "Greaseproof Paper Supplier for Food Packaging",
-    metaDescription: "Greaseproof paper for food wrapping, bakery packaging and grease-resistant applications.",
+    metaDescription: "White and natural greaseproof paper for bakery wraps, burger and sandwich packaging, tray liners and food bags. Request sheets, reels or printed formats.",
     keywords: ["greaseproof paper", "grease resistant paper", "baking paper", "food wrap paper", "oil proof paper", "PFAS-free food paper"],
     image: "/images/products/food-packaging/greaseproof-paper-main.webp",
     gallery: [

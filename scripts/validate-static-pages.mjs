@@ -148,6 +148,7 @@ for (const pagePath of pages) {
   const scriptIds = scripts.map((script) => script.id).filter(Boolean);
   const isProductPage = baseRoute.startsWith('/products/') && !categoryRoutes.has(baseRoute);
   const isProductCollection = baseRoute === '/products' || categoryRoutes.has(baseRoute);
+  const isExpectedCollection = isProductCollection || baseRoute === '/industries' || baseRoute === '/materials';
   const isBlogPost = baseRoute.startsWith('/blog/');
   const blogPost = isBlogPost ? blogPosts.find((post) => baseRoute === `/blog/${post.id}`) : null;
   const checks = {
@@ -221,8 +222,8 @@ for (const pagePath of pages) {
     checks.noUnexpectedProductSchema = products.length === 0;
   }
 
-  if (isProductCollection) {
-    if (!spanishPage) collectionPageCount += 1;
+  if (isExpectedCollection) {
+    if (isProductCollection && !spanishPage) collectionPageCount += 1;
     const collection = collections[0];
     checks.oneCollectionPageSchema = collections.length === 1;
     checks.collectionCoreFields = hasFields(collection, ['@id', 'name', 'description', 'url', 'mainEntity']);

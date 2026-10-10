@@ -11,7 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
 import { industryChannels } from "../industryApplications.js";
-import { PageMeta } from "../SEO.jsx";
+import { CollectionPageSchema, PageMeta } from "../SEO.jsx";
 import "../industries.css";
 
 const applicationImageBase = "/images/industries/applications/";
@@ -163,6 +163,17 @@ export default function Industries() {
   const { lang } = useLang();
   const activeLang = lang === "es" ? "es" : "en";
   const text = copy[activeLang];
+  const schemaItems = industryCards
+    .map((card) => {
+      const channel = industryChannels.find((item) => item.id === card.id);
+      if (!channel) return null;
+      return {
+        name: channel.title[activeLang],
+        url: `${activeLang === "es" ? "/es" : ""}${card.href}`,
+        image: card.image,
+      };
+    })
+    .filter(Boolean);
 
   return (
     <main className="industries-page">
@@ -170,6 +181,12 @@ export default function Industries() {
         title={activeLang === "es" ? "Soluciones de Papel por Industria y Aplicación | Youngsun Paper" : "Paper Solutions by Industry and Application | Youngsun Paper"}
         description={activeLang === "es" ? "Compare papeles y cartones para embalaje, alimentos, cajas de lujo, edición, etiquetas y regalos. Solicite una recomendación técnica y muestras." : "Compare paper and paperboard for packaging, food service, luxury boxes, publishing, hang tags and gift wrapping. Get grade recommendations and request samples."}
         path="/industries"
+      />
+      <CollectionPageSchema
+        name={activeLang === "es" ? "Soluciones de papel por industria" : "Paper solutions by industry"}
+        description={activeLang === "es" ? "Seis áreas de aplicación con recomendaciones de papel y cartón para compradores industriales." : "Six application areas with paper and paperboard recommendations for industrial buyers."}
+        path="/industries"
+        items={schemaItems}
       />
 
       <section className="industries-hero" aria-labelledby="industries-hero-title">

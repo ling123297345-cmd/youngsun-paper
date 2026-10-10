@@ -129,6 +129,14 @@ export default function ProductDetail() {
                   </span>
                 ))}
               </div>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 18px", marginTop: 12 }}>
+                <Link to={isEs ? "/es/quality" : "/quality"} style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
+                  {isEs ? "Ver control de calidad y documentación" : "Review quality control & documentation"} →
+                </Link>
+                <Link to={isEs ? "/es/how-to-order" : "/how-to-order"} style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
+                  {isEs ? "Cómo solicitar y comprar" : "How to order"} →
+                </Link>
+              </div>
             </div>
 
             {/* CTA Buttons */}

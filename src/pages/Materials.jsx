@@ -12,7 +12,7 @@ import {
   Trees,
 } from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { PageMeta } from "../SEO.jsx";
+import { CollectionPageSchema, PageMeta } from "../SEO.jsx";
 import { buyerGuides, pillarArticles, pulpHub } from "../pulpMaterialsData.js";
 import "../materials-page.css";
 
@@ -121,6 +121,18 @@ export default function Materials() {
   const { lang } = useLang();
   const activeLang = lang === "es" ? "es" : "en";
   const text = pageCopy[activeLang];
+  const schemaItems = [
+    ...pillarArticles.map((article) => ({
+      name: article.shortTitle,
+      url: `/materials/${article.id}`,
+      image: fiberDetails[article.id]?.image,
+    })),
+    ...buyerGuides.map((guide) => ({
+      name: guide.shortTitle,
+      url: `/materials/${guide.id}`,
+      image: guideDetails[guide.id]?.image,
+    })),
+  ];
 
   return (
     <>
@@ -128,6 +140,12 @@ export default function Materials() {
         title="Paper Pulp Materials Library | YOUNGSUN PAPER"
         description="Compare softwood, hardwood, bamboo and cotton pulp. Learn how fiber choice, pulping method and recycled content affect paper strength, smoothness, bulk and printability."
         path="/materials"
+      />
+      <CollectionPageSchema
+        name={activeLang === "es" ? "Biblioteca de materiales de papel" : "Paper materials library"}
+        description={activeLang === "es" ? "Artículos sobre fibras de pulpa, métodos de fabricación y contenido reciclado para seleccionar materiales de papel." : "Articles about pulp fibers, manufacturing methods and recycled content for selecting paper materials."}
+        path="/materials"
+        items={schemaItems}
       />
 
       <main className="materials-library">

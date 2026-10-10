@@ -453,6 +453,35 @@ function renderRouteSchemas(page, lang) {
     })]);
   }
 
+  if (page.route === "/industries") {
+    const collectionMeta = lang === "es" ? getSpanishSeoMeta(page.route, page) : page;
+    schemas.push(["collection-schema", createCollectionPageSchema({
+      name: lang === "es" ? "Soluciones de papel por industria" : "Paper solutions by industry",
+      description: collectionMeta.description,
+      url: localizedPath(page.route, lang),
+      lang,
+      items: industryChannels.map((industry) => ({
+        name: industry.title[lang],
+        url: localizedPath(`/industries/${industry.id}`, lang),
+        image: industryHeroImages[industry.id],
+      })),
+    })]);
+  }
+
+  if (page.route === "/materials") {
+    const collectionMeta = lang === "es" ? getSpanishSeoMeta(page.route, page) : page;
+    schemas.push(["collection-schema", createCollectionPageSchema({
+      name: lang === "es" ? "Biblioteca de materiales de papel" : "Paper materials library",
+      description: collectionMeta.description,
+      url: localizedPath(page.route, lang),
+      lang,
+      items: [...pillarArticles, ...buyerGuides].map((article) => ({
+        name: article.shortTitle,
+        url: `/materials/${article.id}`,
+      })),
+    })]);
+  }
+
   const post = blogPosts.find((item) => page.route === `/blog/${item.id}`);
   if (post && (lang === "en" || hasSpanishBlogPost(post))) {
     const localizedPost = localizeBlogPost(post, lang);
@@ -633,7 +662,7 @@ function renderStaticContent(page, lang) {
     .join(" ");
   const footer = lang === "es"
     ? `<p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="${localizedPath("/contact", lang)}">Solicitar cotización</a> · <a href="${localizedPath("/products", lang)}">Ver todos los productos</a> · <a href="${localizedPath("/blog", lang)}">Blog</a> · <a href="${localizedPath("/quality", lang)}">Control de calidad</a> · <a href="${localizedPath("/resources", lang)}">Recursos para compradores</a> · <a href="${localizedPath("/faq", lang)}">Preguntas frecuentes</a> · <a href="${localizedPath("/how-to-order", lang)}">Cómo comprar</a></p>`
-    : `<p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p>`;
+    : `<p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/blog">Paper industry blog</a> · <a href="/quality">Quality assurance</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p>`;
 
   return `<div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="${lang === "es" ? "Navegacion principal" : "Primary navigation"}" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px">${nav}</nav>${body}<footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8">${footer}</footer></main></div>`;
 }
@@ -731,7 +760,7 @@ function renderSpanishProductStatic(product) {
   const translation = productEs[product.id];
   const specs = translation?.specs || [];
   const applications = translation?.applications || [];
-  return `<article><header><p>${escapeHtml(getSpanishCategoryTitle(product.category))}</p><h1>${escapeHtml(product.name)}</h1><p>${escapeHtml(translation.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)} suministrado por YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header><section><h2>Descripción del producto</h2><p>${escapeHtml(translation.tagline)} YOUNGSUN suministra este producto a fabricantes, impresores, convertidores y distribuidores internacionales, con formatos y embalaje adaptados al proyecto.</p></section>${renderListSection("Especificaciones", specs)}${renderListSection("Aplicaciones", applications)}${renderProductIndustryStatic(product, "es")}<section><h2>Información para cotizar</h2><p>Envíe el GSM o espesor requerido, medida de hoja o bobina, cantidad, aplicación, proceso de impresión y puerto de destino. Nuestro equipo comprobará disponibilidad, pedido mínimo, plazo de entrega y documentación aplicable.</p><p><a href="${localizedPath(`/contact?product=${product.id}`, "es")}">Solicitar precio de ${escapeHtml(product.name)}</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p></section><p><a href="${localizedPath(`/products/${product.category}`, "es")}">Ver productos relacionados</a></p></article>`;
+  return `<article><header><p>${escapeHtml(getSpanishCategoryTitle(product.category))}</p><h1>${escapeHtml(product.name)}</h1><p>${escapeHtml(translation.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)} suministrado por YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header><section><h2>Descripción del producto</h2><p>${escapeHtml(translation.tagline)} YOUNGSUN suministra este producto a fabricantes, impresores, convertidores y distribuidores internacionales, con formatos y embalaje adaptados al proyecto.</p></section>${renderListSection("Especificaciones", specs)}${renderListSection("Aplicaciones", applications)}${renderProductIndustryStatic(product, "es")}<section><h2>Información para cotizar</h2><p>Envíe el GSM o espesor requerido, medida de hoja o bobina, cantidad, aplicación, proceso de impresión y puerto de destino. Nuestro equipo comprobará disponibilidad, pedido mínimo, plazo de entrega y documentación aplicable.</p><p><a href="${localizedPath(`/contact?product=${product.id}`, "es")}">Solicitar precio de ${escapeHtml(product.name)}</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p><p><a href="${localizedPath("/quality", "es")}">Control de calidad y documentación</a> · <a href="${localizedPath("/how-to-order", "es")}">Cómo comprar</a></p></section><p><a href="${localizedPath(`/products/${product.category}`, "es")}">Ver productos relacionados</a></p></article>`;
 }
 
 function renderIndustriesIndexStatic(lang) {
@@ -851,7 +880,7 @@ function renderProductStatic(product) {
   const textureLibrary = ["soft-touch-paper", "leather-paper", "pearlescent-paper", "embossed-paper"].includes(product.id)
     ? `<section><h2>Choose a Texture for Your Application</h2><p>Compare 120+ available fancy paper patterns and request physical swatches suitable for ${escapeHtml(product.name)}.</p><p><a href="/fancy-paper-collection">View available textures</a> · <a href="/contact?intent=samples&amp;product=${product.id}">Request texture samples</a></p></section>`
     : "";
-  return `<article><header><p>${escapeHtml(categoryName(product.category))}</p><h1>${escapeHtml(product.name)}</h1><p>${escapeHtml(product.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)} supplied by YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header>${renderProductCatalogStatic(product.id)}<section><h2>${escapeHtml(product.name)} Overview</h2><p>${escapeHtml(product.description)}</p></section>${renderListSection("Specifications", product.specs)}${renderListSection("Applications", product.applications)}${renderProductIndustryStatic(product, "en")}${textureLibrary}${renderListSection("Product Features", product.features)}${renderListSection("Available Variants", product.variants)}${commercial ? `<section><h2>Commercial Information</h2><ul>${commercial}</ul></section>` : ""}<section><h2>Request a Quote</h2><p>Send your required GSM or thickness, sheet or reel size, quantity, application and destination port for a product recommendation and export quotation.</p><p><a href="/contact?product=${product.id}">Request ${escapeHtml(product.name)} pricing</a> · <a href="/contact?intent=samples&amp;product=${product.id}">Request samples</a></p></section><p><a href="/products/${product.category}">View related ${escapeHtml(categoryName(product.category))} products</a></p></article>`;
+  return `<article><header><p>${escapeHtml(categoryName(product.category))}</p><h1>${escapeHtml(product.name)}</h1><p>${escapeHtml(product.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)} supplied by YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header>${renderProductCatalogStatic(product.id)}<section><h2>${escapeHtml(product.name)} Overview</h2><p>${escapeHtml(product.description)}</p></section>${renderListSection("Specifications", product.specs)}${renderListSection("Applications", product.applications)}${renderProductIndustryStatic(product, "en")}${textureLibrary}${renderListSection("Product Features", product.features)}${renderListSection("Available Variants", product.variants)}${commercial ? `<section><h2>Commercial Information</h2><ul>${commercial}</ul></section>` : ""}<section><h2>Request a Quote</h2><p>Send your required GSM or thickness, sheet or reel size, quantity, application and destination port for a product recommendation and export quotation.</p><p><a href="/contact?product=${product.id}">Request ${escapeHtml(product.name)} pricing</a> · <a href="/contact?intent=samples&amp;product=${product.id}">Request samples</a></p><p><a href="/quality">Review quality control and documentation</a> · <a href="/how-to-order">See the ordering process</a></p></section><p><a href="/products/${product.category}">View related ${escapeHtml(categoryName(product.category))} products</a></p></article>`;
 }
 
 function renderProductIndustryStatic(product, lang) {

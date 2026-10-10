@@ -55,7 +55,10 @@ export default function ProductDetail() {
   const relatedIndustries = getProductIndustryLinks(id);
 
   const seoTitle = p.seoTitle || `${p.name} Supplier in China`;
-  const seoDesc = p.metaDescription || `YOUNGSUN PAPER supplies ${p.name.toLowerCase()} — ${p.tagline.toLowerCase().replace(/\.$/, "")}. FSC & SGS certified. Custom size, bulk export. Request quote.`;
+  const seoDesc = p.metaDescription || `Compare ${p.name.toLowerCase()} specifications, applications, available formats and export options from YOUNGSUN PAPER. Request samples or a quotation.`;
+  const mainImageAlt = isEs
+    ? `${p.name} suministrado por YOUNGSUN PAPER para aplicaciones de embalaje, impresión y conversión`
+    : `${p.name} supplied by YOUNGSUN PAPER for packaging, printing and converting applications`;
 
   return (
     <section className="section product-detail-page" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
@@ -85,7 +88,7 @@ export default function ProductDetail() {
         {/* Hero Section */}
         <div className="product-detail-hero" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, marginTop: 24, alignItems: "start" }}>
           <div className="product-detail-image-wrap" style={{ borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.02)", position: "sticky", top: 100 }}>
-            <img src={p.image} alt={p.name} style={{ width: "100%", height: "auto", display: "block" }} />
+            <img src={p.image} alt={mainImageAlt} style={{ width: "100%", height: "auto", display: "block" }} />
           </div>
           <div className="product-detail-info">
             <span className="section-label" style={{ color: "var(--lime)" }}>{p.category.replace(/-/g, " ").toUpperCase()}</span>
@@ -130,10 +133,10 @@ export default function ProductDetail() {
                 ))}
               </div>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 18px", marginTop: 12 }}>
-                <Link to={isEs ? "/es/quality" : "/quality"} style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
+                <Link to="/quality" style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
                   {isEs ? "Ver control de calidad y documentación" : "Review quality control & documentation"} →
                 </Link>
-                <Link to={isEs ? "/es/how-to-order" : "/how-to-order"} style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
+                <Link to="/how-to-order" style={{ color: "var(--lime)", fontSize: 12, fontWeight: 700 }}>
                   {isEs ? "Cómo solicitar y comprar" : "How to order"} →
                 </Link>
               </div>
@@ -142,10 +145,10 @@ export default function ProductDetail() {
             {/* CTA Buttons */}
             <div className="product-detail-actions" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a href={`mailto:${contactInfo.email}?subject=Inquiry: ${p.name}`} className="btn btn-primary" style={{ fontSize: 14, padding: "12px 28px" }}>
-                Inquire About This Product
+                {isEs ? "Consultar este producto" : "Inquire About This Product"}
               </a>
               <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}?text=Hi, I'm interested in ${p.name}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: 14, padding: "12px 28px", color: "var(--lime)", borderColor: "var(--lime)" }}>
-                WhatsApp Inquiry
+                {isEs ? "Consulta por WhatsApp" : "WhatsApp Inquiry"}
               </a>
             </div>
           </div>

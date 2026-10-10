@@ -1030,7 +1030,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or reel size","Quantity","End use","Food-contact requirement","Destination port"],
     seoTitle: "Coated Kraft Back Board Supplier",
-    metaDescription: "CKB coated kraft back board from 200 to 350 gsm for beverage, frozen food, retail and industrial folding cartons.",
+    metaDescription: "CKB coated kraft back board from 200 to 350 gsm for beverage carriers, frozen food, retail and industrial cartons. Request sheets, reels or samples.",
     keywords: ["coated kraft back board", "CKB paperboard supplier", "kraft back folding carton", "beverage packaging board", "frozen food paperboard"],
     image: "/images/products/package-board/ckb-main.webp",
     gallery: [
@@ -1197,7 +1197,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Color reference","Grammage","Sheet or reel size","Quantity","Printing method","Destination port"],
     seoTitle: "Color Offset Paper Supplier",
-    metaDescription: "Color offset paper in a wide range of shades for commercial printing, stationery and specialty applications.",
+    metaDescription: "Color offset paper in standard, deep and fluorescent shades for stationery, inserts, books and commercial printing. Request sheets, reels or samples.",
     keywords: ["color offset paper", "colored uncoated paper", "tinted offset", "colored printing paper", "dyed paper", "offset color paper"],
     image: "/images/products/culture-paper/color-offset-paper-main.webp",
     gallery: [
@@ -1299,7 +1299,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
     seoTitle: "LWC Paper Supplier for Magazines and Catalogs",
-    metaDescription: "Lightweight coated paper with high opacity for magazines, catalogs, inserts and high-volume commercial printing.",
+    metaDescription: "Lightweight coated paper with good opacity for magazines, catalogs, inserts and high-volume heatset web printing. Request reels, sheets or samples.",
     keywords: ["LWC paper", "lightweight coated paper", "magazine paper", "catalog paper", "low grammage coated", "heatset web paper"],
     image: "/images/products/culture-paper/lwc-paper-main.webp",
     gallery: [
@@ -1405,7 +1405,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Number of plies","Grammage","Sheet or roll size","Quantity","Printing method","Destination port"],
     seoTitle: "NCR Carbonless Paper Supplier",
-    metaDescription: "NCR carbonless copy paper in multi-ply configurations for forms, invoices, receipts and business documents.",
+    metaDescription: "NCR carbonless paper in CB, CFB and CF sheets or reels for invoices, receipts, delivery notes and multipart business forms. Request colors, sizes or samples.",
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
     image: "/images/products/culture-paper/ncr-paper-main.webp",
     gallery: [
@@ -1511,8 +1511,8 @@ export const subProducts = {
     ],
     commercial: { moq: "500 cartons (standard) / 2×40HQ ~20,000 cartons (private label)", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage (70/75 gsm)","Sheet size (A4/A3/Letter)","Quantity (reams/pallets)","Brightness requirement","Destination port"],
-    seoTitle: "Multi-Format Copy Paper Supplier | A3, A4, A5 & Custom",
-    metaDescription: "Multi-format copy paper program in A3, A4, A5, B-series and selected US sizes for wholesale, institutional and private-label supply.",
+    seoTitle: "Copy Paper Supplier | A3, A4 and A5 Sizes",
+    metaDescription: "Multi-format copy paper in A3, A4, A5, B-series and selected US sizes for wholesale, institutional and private-label supply. Request export pricing.",
     keywords: ["multi-format copy paper", "A3 copy paper", "A5 copy paper", "office paper wholesale", "private label copy paper", "copy paper supplier"],
     image: "/images/products/culture-paper/copy-paper-main.webp",
     gallery: [
@@ -1559,6 +1559,8 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Newsprint Paper Supplier for Newspaper Printing",
+    metaDescription: "Newsprint paper in 40–57 gsm reels for coldset newspaper printing, advertising inserts and mass-circulation publications. Request reel widths or samples.",
     keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
     image: "/images/products/culture-paper/newsprint-main.webp",
     gallery: [
@@ -1616,7 +1618,7 @@ export const subProducts = {
     ],
     commercial: { moq: "500 cartons", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     seoTitle: "A4 Copy Paper Supplier | 70, 75 & 80 gsm",
-    metaDescription: "A4 copy paper in 210×297 mm sheets and 70, 75 or 80 gsm for office supply distributors, institutions and export procurement.",
+    metaDescription: "A4 copy paper in 210×297 mm sheets and 70, 75 or 80 gsm for office distributors and institutional buyers. Request cartons, private-label packing or pricing.",
     keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
     image: "/images/products/culture-paper/a4-copy-paper-main.webp",
     gallery: [
@@ -1663,6 +1665,8 @@ export const subProducts = {
       "Branded packaging",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "A4 Thermal Paper Supplier for Portable Printers",
+    metaDescription: "A4 direct thermal paper for portable printers, field documents, invoices and logistics records. BPA-free options and export packing available. Request samples.",
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
     image: "/images/products/culture-paper/a4-thermal-paper-main.webp",
     gallery: [
@@ -1712,6 +1716,8 @@ export const subProducts = {
       "Shrink-wrapped or bulk-packed",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Thermal Paper Roll Supplier for POS and Receipts",
+    metaDescription: "57 mm and 80 mm thermal paper rolls for POS terminals, receipt printers, payment devices and logistics labels. BPA-free options and custom packing available.",
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
     image: "/images/products/culture-paper/thermal-paper-roll-main.webp",
     gallery: [
@@ -1773,6 +1779,8 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Soft Touch Paper Supplier for Luxury Packaging",
+    metaDescription: "Velvet soft touch paper and board in 120–400 gsm for luxury boxes, book covers, cards and premium print. Request sizes, sheets, reels or samples.",
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
     image: "/images/products/fancy-paper/soft-touch-paper-main.webp",
     gallery: [
@@ -1876,6 +1884,8 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Leather Paper Supplier for Book Covers and Boxes",
+    metaDescription: "Leather-grain paper in 120–400 gsm for book covers, diaries, gift boxes and luxury packaging. Compare textures, colors, sheets and reels; request samples.",
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
     image: "/images/products/fancy-paper/leather-paper-main.webp",
     gallery: [
@@ -1980,6 +1990,8 @@ export const subProducts = {
       "Foil and embossing coordination",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Pearlescent Paper Supplier for Luxury Packaging",
+    metaDescription: "Pearlescent paper in 120–350 gsm with white, gold, silver and tinted shimmer finishes for invitations, cosmetics and luxury boxes. Request samples.",
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
     image: "/images/products/fancy-paper/pearlescent-paper-main.webp",
     gallery: [
@@ -2191,6 +2203,8 @@ export const subProducts = {
       "Embossing and foil coordination",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Gold and Silver Card Paper Supplier",
+    metaDescription: "Metallic gold and silver card paper for luxury boxes, invitations, cosmetics and premium printing. Request available finishes, sheets or samples.",
     keywords: ["gold silver card paper", "metallic card paper", "gold foil paper", "silver cardstock", "metallic board", "luxury metallic paper"],
     image: "/images/products/fancy-paper/gold-silver-card-main.webp",
     gallery: [
@@ -2368,6 +2382,8 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Color Tissue Paper Supplier for Gift Packaging",
+    metaDescription: "Color tissue paper in 17–28 gsm with 30+ standard shades for gift wrapping, garments, footwear and retail packaging. Request custom colors and sizes.",
     keywords: ["color tissue paper", "colored tissue paper", "gift tissue paper", "luxury tissue paper", "acid-free tissue", "packaging tissue paper"],
     image: "/images/products/fancy-paper/color-tissue-paper-main.webp",
     gallery: [
@@ -2426,7 +2442,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","Sheet or roll size","Quantity","Transparency requirement","Application","Destination port"],
     seoTitle: "Tracing Paper Supplier for Drawing and Design",
-    metaDescription: "Tracing paper in various grammages for sketching, drafting, overlays and creative projects.",
+    metaDescription: "Translucent tracing paper for drawing, overlays, invitations, envelopes and creative printing, available in multiple grammages, sheets and reels. Request samples.",
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
     image: "/images/products/culture-paper/tracing-paper-main.webp",
     gallery: [
@@ -2534,7 +2550,7 @@ export const subProducts = {
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Grammage","PE coating (single/double side)","Roll width","Quantity","Food safety certification needed","Destination port"],
     seoTitle: "Cupstock Board Supplier for Paper Cups",
-    metaDescription: "Food-grade cupstock board with PE coating for paper cups, food containers and hot/cold beverage packaging.",
+    metaDescription: "Food-grade cupstock board with PE coating for hot and cold paper cups, takeaway containers and beverage packaging. Request GSM, roll widths, samples or pricing.",
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
     image: "/images/products/food-packaging/cup-paper-main.webp",
     gallery: [
@@ -2759,8 +2775,8 @@ export const subProducts = {
       "Order quantity and destination port",
     ],
     commercial: { moq: "Flexible; confirm by grammage and format", leadTime: "2–3 weeks after order confirmation", samples: "Free standard samples; courier paid by customer", certification: "FSC available on request", containerLoading: "40HQ full load: approximately 25 metric tons" },
-    seoTitle: "MG White Kraft Paper Manufacturer | Food Wrapping & Bags",
-    metaDescription: "Buy 23–80 gsm MG white kraft paper made from 100% virgin wood pulp. Glossy printable face, glue-ready reverse, sheets or jumbo rolls for food wrapping, bags and lamination. Request free samples.",
+    seoTitle: "MG White Kraft Paper Supplier for Food Wrapping",
+    metaDescription: "MG white kraft paper in 23–80 gsm with a glossy printable face for food wrapping, bags and lamination. Available in sheets and jumbo rolls; request samples.",
     keywords: ["MG white kraft paper manufacturer", "machine glazed kraft paper supplier", "MG bleached kraft paper", "food wrapping paper", "paper bag material", "flexible packaging base paper", "aluminum foil lamination paper"],
     image: "/images/products/food-packaging/mg-paper-main.webp",
     galleryTitle: "Flexible Packaging and Lamination Applications",
@@ -2820,6 +2836,8 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    seoTitle: "Silicone Coated Paper Supplier",
+    metaDescription: "Silicone coated paper in 40–120 gsm for baking, food interleaving, labels and release liners. Choose one- or two-side coating, sheets or reels; request samples.",
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
     image: "/images/products/food-packaging/silicone-coated-paper-main.webp",
     gallery: [
@@ -2945,7 +2963,7 @@ export const subProducts = {
     customization: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet or cut-panel dimensions"],
     commercial: { moq: "5 metric tons per color" },
     quoteReqs: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet size", "Quantity per color", "Destination port"],
-    seoTitle: "Color Laminated Grey Board for Gift Boxes & Stationery",
+    seoTitle: "Color Laminated Grey Board Supplier",
     metaDescription: "Color laminated grey board for gift boxes and stationery. Black, white, kraft and other colors. Custom sizes. MOQ: 5 metric tons per color.",
     keywords: ["color laminated grey board", "colored grey board", "paper faced grey board", "gift box board", "book cover board"],
     image: "/images/products/package-board/laminated-detail/color-laminated-grey-board-main.webp",

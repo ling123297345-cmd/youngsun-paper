@@ -311,6 +311,7 @@ const blogPages = blogPosts.map((post) => ({
   title: normalizeTitle(post.seoTitle || post.title),
   description: truncate(post.metaDescription || post.excerpt, 158),
   image: post.image ? `${siteUrl}/${String(post.image).replace(/^\//, "")}` : socialImage,
+  lastmod: post.dateModified || post.date,
   priority: "0.6",
   changefreq: "monthly",
 }));
@@ -590,17 +591,21 @@ function replaceOrInsert(html, pattern, replacement) {
 }
 
 function createSitemap(items) {
-  const lastmod = new Date().toISOString().slice(0, 10);
+  const defaultLastmod = new Date().toISOString().slice(0, 10);
   const sitemapPages = items.flatMap((page) => supportsSpanishSeoPath(page.route)
     ? [{ page, lang: "en" }, { page, lang: "es" }]
     : [{ page, lang: "en" }]);
   const urls = sitemapPages
     .map(({ page, lang }) => {
       const url = `${siteUrl}${canonicalPath(page.route, lang)}`;
+      const lastmod = page.lastmod || defaultLastmod;
+      const lastmodTag = /^\d{4}-\d{2}-\d{2}$/.test(String(lastmod))
+        ? `\n    <lastmod>${lastmod}</lastmod>`
+        : "";
       const alternates = supportsSpanishSeoPath(page.route)
         ? `\n    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(`${siteUrl}${canonicalPath(page.route, "en")}`)}" />\n    <xhtml:link rel="alternate" hreflang="es" href="${escapeXml(`${siteUrl}${canonicalPath(page.route, "es")}`)}" />\n    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(`${siteUrl}${canonicalPath(page.route, "en")}`)}" />`
         : "";
-      return `  <url>\n    <loc>${escapeXml(url)}</loc>${alternates}\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>`;
+      return `  <url>\n    <loc>${escapeXml(url)}</loc>${alternates}${lastmodTag}\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>`;
     })
     .join("\n");
 

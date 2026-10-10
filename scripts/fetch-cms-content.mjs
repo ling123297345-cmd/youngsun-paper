@@ -98,6 +98,7 @@ const posts = postOverrideRows.map((row) => ({
   seoTitle: row.seo_title || row.title,
   metaDescription: row.seo_description || row.excerpt || "",
   date: (row.published_at || row.created_at || "").slice(0, 10),
+  dateModified: (row.updated_at || row.published_at || row.created_at || "").slice(0, 10),
   author: row.author_name || "YOUNGSUN PAPER Editorial",
   category: row.category || "Guides",
   excerpt: row.excerpt || "",

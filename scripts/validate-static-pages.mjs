@@ -345,6 +345,22 @@ if (!sitemap.includes('<loc>https://youngsunpaper.com/es/</loc>')) {
   failures.unshift('Sitemap is missing the Spanish homepage.');
 }
 
+for (const post of blogPosts) {
+  const expectedLastmod = post.dateModified || post.date;
+  const languages = hasSpanishBlogPost(post) ? ['en', 'es'] : ['en'];
+
+  for (const lang of languages) {
+    const url = `${siteUrl}${canonicalPath(`/blog/${post.id}`, lang)}`;
+    const entryStart = sitemap.indexOf(`<loc>${url}</loc>`);
+    const entryEnd = entryStart === -1 ? -1 : sitemap.indexOf('</url>', entryStart);
+    const entry = entryEnd === -1 ? '' : sitemap.slice(entryStart, entryEnd);
+
+    if (!entry.includes(`<lastmod>${expectedLastmod}</lastmod>`)) {
+      failures.unshift(`Sitemap lastmod mismatch for ${url}; expected ${expectedLastmod}.`);
+    }
+  }
+}
+
 failures.push(...linkFailures);
 
 if (failures.length) {
@@ -360,6 +376,7 @@ console.log(`Product collection schema coverage: ${collectionPageCount}/${collec
 console.log(`Product MOQ coverage from verified source data: ${productMoqCoverage}/${productPageCount}.`);
 console.log(`Product certification field coverage: ${productCertificationCoverage}/${productPageCount}.`);
 console.log(`BlogPosting schema coverage: ${blogPostCount}/${blogPostCount}.`);
+console.log('Blog sitemap lastmod values match each article publication or modification date.');
 console.log('FAQPage schema coverage: site FAQ pages and matching blog FAQ sections validated.');
 console.log('Blog tables, contents navigation and related article links validated.');
 console.log('HowTo schema and English/Spanish industry hub links validated.');

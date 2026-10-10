@@ -79,6 +79,11 @@ const categoryMeta = {
   },
 };
 
+const spanishIndustryMeta = {
+  "hang-tags-labels": "Papel para Etiquetas y Tags Colgantes",
+  "gift-wrapping-decoration": "Papel para Envoltura y Decoración",
+};
+
 const spanishBlogMeta = {
   "digital-printing-brown-kraft-paper-buyers-guide": {
     title: "Impresión digital en papel kraft: guía de compra",
@@ -161,7 +166,7 @@ export function getSpanishSeoMeta(pathname, fallback = {}) {
     const detail = industryDetailContent[id];
     if (industry && detail?.overview?.es) {
       return {
-        title: `${industry.title.es} | Soluciones de Papel`,
+        title: spanishIndustryMeta[id] || `${industry.title.es} | Soluciones de Papel`,
         description: detail.overview.es,
       };
     }

@@ -80,6 +80,10 @@ const categoryMeta = {
 };
 
 const spanishBlogMeta = {
+  "digital-printing-brown-kraft-paper-buyers-guide": {
+    title: "Impresión digital en papel kraft: guía de compra",
+    description: "¿Puede el kraft marrón ofrecer colores vivos y precisos? Revise seis especificaciones antes de aprobar impresión digital, tinta blanca y muestras.",
+  },
   "is-85-percent-paper-packaging-recyclable": {
     title: "¿Un envase con 85 % de papel es reciclable? Guía",
     description: "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas.",

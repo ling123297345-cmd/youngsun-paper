@@ -346,16 +346,16 @@ export const productNameById = {
 export const spanishProductTaglineById = {
   "grey-board": "Cartón gris reciclado de alta densidad para embalaje rígido, encuadernación y papelería — resistencia estructural rentable.",
   "black-paper": "Papel negro teñido en masa con color uniforme — sin blanqueamiento en bordes, sin transferencia de color.",
-  "color-card-paper": "Cartulina de color vibrante y uniforme — desde bolsas hasta cajas exclusivas.",
+  "color-card-paper": "Cartulina de color uniforme para packaging, etiquetas, papelería e impresión creativa.",
   "folding-box-board": "Cartón multicapa con liner blanco brillante — para estuches farmacéuticos, cosméticos y alimentarios.",
   "c2s-art-board": "Cartón estucado dos caras con acabado liso — para impresión premium y tarjetas de alta gama.",
   "kraft-paper": "Papel kraft virgen de alta resistencia para embalaje industrial y bolsas — resistente y reciclable.",
-  "duplex-board": "Cartón de dos capas con cara blanca y reverso gris — rentable para embalaje minorista.",
+  "duplex-board": "Cartón estucado con cara blanca y reverso gris para estuches impresos rentables.",
   "pe-coated-paper": "Papel laminado PE para barrera contra humedad y termosellado.",
   "ckb": "Cartón estucado con reverso kraft de alta resistencia para bebidas, alimentos, congelados y estuches plegables exigentes.",
-  "woodfree-paper": "Papel sin pasta mecánica, blanco brillante y libre de ácido para oficina, libros e impresión comercial.",
-  "color-offset-paper": "Papel offset de color sin estucar — tono consistente, excelente imprimibilidad.",
-  "lwc-paper": "Papel estucado ligero para revistas, catálogos y papel de regalo impreso.",
+  "woodfree-paper": "Papel offset sin estucar con buena opacidad para libros, cuadernos e impresión comercial.",
+  "color-offset-paper": "Papel offset de color para formularios, inserciones, papelería y material promocional.",
+  "lwc-paper": "Papel estucado ligero para revistas, catálogos, inserciones e impresión comercial de volumen.",
   "ncr-paper": "Papel autocopiativo sin carbón para formularios y facturas — copia limpia sin manchas.",
   "copy-paper": "Programa de papel de oficina en formatos A3, A4, A5, series B y medidas seleccionadas de EE. UU. para distribución y marca privada.",
   "newsprint": "Papel prensa ligero y rentable para impresión rápida de periódicos, encartes publicitarios y publicaciones de gran tirada.",
@@ -391,6 +391,10 @@ export const spanishProductSeoById = {
     "title": "Papel negro para embalaje de lujo y etiquetas",
     "description": "Papel y cartulina negra con certificación FSC para cajas de lujo, etiquetas, bolsas, tarjetas y acabados con foil, serigrafía, UV o gofrado."
   },
+  "color-card-paper": {
+    "title": "Cartulina de color para packaging y etiquetas",
+    "description": "Cartulina de color de 120–400 gsm para cajas, etiquetas, tarjetas y papelería. Disponible en hojas, bobinas, tonos estándar y acabados texturizados."
+  },
   "folding-box-board": {
     "title": "Cartón FBB para cajas plegables impresas",
     "description": "Cartón FBB e ivory board C1S con certificación FSC para cajas de cosmética, farmacia, alimentos y productos minoristas. Solicite hojas, bobinas o muestras."
@@ -403,9 +407,25 @@ export const spanishProductSeoById = {
     "title": "Papel kraft para bolsas, sacos y embalaje",
     "description": "Papel kraft natural, blanco y reciclado con certificación FSC para bolsas, sacos, envoltura y conversión industrial. Disponible en bobinas y hojas."
   },
+  "duplex-board": {
+    "title": "Cartón dúplex reverso gris para cajas impresas",
+    "description": "Cartón dúplex de 200–450 gsm con cara blanca estucada y reverso gris para estuches, cajas de calzado, juguetes y packaging minorista."
+  },
   "pe-coated-paper": {
     "title": "Papel PE para vasos y envases alimentarios",
     "description": "Papel y cartón con recubrimiento PE de 12–30 gsm, a una o dos caras, para vasos, tarrinas y envases para llevar. Solicite bobinas o muestras."
+  },
+  "woodfree-paper": {
+    "title": "Papel woodfree offset para libros e impresión",
+    "description": "Papel woodfree offset de 60–120 gsm para libros, cuadernos, manuales, formularios y sobres. Disponible en hojas, bobinas y medidas personalizadas."
+  },
+  "color-offset-paper": {
+    "title": "Papel offset de color para impresión y papelería",
+    "description": "Papel offset de color de 60–200 gsm en tonos estándar, intensos y fluorescentes para formularios, folletos, sobres, libros y papelería."
+  },
+  "lwc-paper": {
+    "title": "Papel LWC para revistas, catálogos e inserciones",
+    "description": "Papel LWC estucado ligero de 35–70 gsm para revistas, catálogos, suplementos e impresión comercial. Solicite bobinas, medidas o muestras."
   },
   "embossed-paper": {
     "title": "Papel gofrado para embalaje de lujo",
@@ -497,7 +517,7 @@ export const homeFeaturedProducts = [
     "name": "Woodfree Paper",
     "category": "culture-paper",
     "tagline": "Uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing.",
-    "taglineEs": "Papel sin pasta mecánica, blanco brillante y libre de ácido para oficina, libros e impresión comercial.",
+    "taglineEs": "Papel offset sin estucar con buena opacidad para libros, cuadernos e impresión comercial.",
     "image": "/images/products/culture-paper/woodfree-paper-main.webp"
   },
   {

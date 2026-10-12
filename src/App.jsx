@@ -4,7 +4,7 @@ import { HelmetProvider } from "react-helmet-async";
 import { ArrowUp, MessageCircle } from "lucide-react";
 import { LangProvider, useLang } from "./i18n.jsx";
 import SearchBar from "./SearchBar.jsx";
-import { contactInfo, subProducts } from "./data.js";
+import { contactInfo, productNameById } from "./generated/siteIndex.js";
 import { BreadcrumbSchema } from "./SEO.jsx";
 import { isSpanishPath } from "./localeSeo.js";
 
@@ -242,7 +242,7 @@ function Floating() {
   const [show, setShow] = useState(false);
   const location = useLocation();
   const productSlug = location.pathname.match(/^\/products\/([^/]+)/)?.[1];
-  const productName = productSlug ? subProducts[productSlug]?.name : "";
+  const productName = productSlug ? productNameById[productSlug] || "" : "";
   const isSampleRequest = new URLSearchParams(location.search).get("intent") === "samples";
   const whatsappMessage = lang === "es"
     ? isSampleRequest

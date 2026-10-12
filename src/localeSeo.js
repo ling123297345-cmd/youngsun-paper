@@ -1,7 +1,10 @@
-import { productCategories, subProducts } from "./data.js";
-import { productEs } from "./productEs.js";
-import { industryChannels } from "./industryApplications.js";
-import { industryDetailContent } from "./industryDetailContent.js";
+import {
+  productCategories,
+  productNameById,
+  spanishBlogSeoById,
+  spanishIndustryMetaById,
+  spanishProductTaglineById,
+} from "./generated/siteIndex.js";
 
 export const SPANISH_PREFIX = "/es";
 
@@ -84,16 +87,7 @@ const spanishIndustryMeta = {
   "gift-wrapping-decoration": "Papel para Envoltura y Decoración",
 };
 
-const spanishBlogMeta = {
-  "digital-printing-brown-kraft-paper-buyers-guide": {
-    title: "Impresión digital en papel kraft: guía de compra",
-    description: "¿Puede el kraft marrón ofrecer colores vivos y precisos? Revise seis especificaciones antes de aprobar impresión digital, tinta blanca y muestras.",
-  },
-  "is-85-percent-paper-packaging-recyclable": {
-    title: "¿Un envase con 85 % de papel es reciclable? Guía",
-    description: "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas.",
-  },
-};
+const spanishBlogMeta = spanishBlogSeoById;
 
 export function stripLocalePrefix(pathname = "/") {
   if (pathname === SPANISH_PREFIX) return "/";
@@ -129,11 +123,11 @@ export function supportsSpanishSeoPath(pathname = "/") {
   if (spanishStaticMeta[path]) return true;
   if (/^\/products\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
-    return Boolean(categoryMeta[id] || (subProducts[id] && productEs[id]));
+    return Boolean(categoryMeta[id] || (productNameById[id] && spanishProductTaglineById[id]));
   }
   if (/^\/industries\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
-    return Boolean(industryDetailContent[id]?.overview?.es);
+    return Boolean(spanishIndustryMetaById[id]);
   }
   if (/^\/blog\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
@@ -149,25 +143,24 @@ export function getSpanishSeoMeta(pathname, fallback = {}) {
   if (/^\/products\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
     if (categoryMeta[id]) return categoryMeta[id];
-    const product = subProducts[id];
-    const translation = productEs[id];
-    if (product && translation) {
-      const seoName = product.name.replace(/\s*\([^)]*\)/g, "").trim();
+    const productName = productNameById[id];
+    const translatedTagline = spanishProductTaglineById[id];
+    if (productName && translatedTagline) {
+      const seoName = productName.replace(/\s*\([^)]*\)/g, "").trim();
       return {
         title: `${seoName} | Fabricante China`,
-        description: `${translation.tagline} Consulte GSM, medidas, MOQ, muestras y precio de exportación.`,
+        description: `${translatedTagline} Consulte GSM, medidas, MOQ, muestras y precio de exportación.`,
       };
     }
   }
 
   if (/^\/industries\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
-    const industry = industryChannels.find((item) => item.id === id);
-    const detail = industryDetailContent[id];
-    if (industry && detail?.overview?.es) {
+    const industry = spanishIndustryMetaById[id];
+    if (industry) {
       return {
-        title: spanishIndustryMeta[id] || `${industry.title.es} | Soluciones de Papel`,
-        description: detail.overview.es,
+        title: spanishIndustryMeta[id] || `${industry.title} | Soluciones de Papel`,
+        description: industry.overview,
       };
     }
   }

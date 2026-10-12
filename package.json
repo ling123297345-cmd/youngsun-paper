@@ -6,6 +6,7 @@
   "description": "YOUNGSUN PAPER — Premium Paper Trading & Manufacturing. Global B2B paper solutions with excellence in quality, sustainability, and service.",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "prebuild": "node scripts/generate-site-index.mjs",
     "build": "vite build",
     "cms:sync": "node scripts/fetch-cms-content.mjs",
     "postbuild": "node scripts/generate-static-pages.mjs && node scripts/validate-static-pages.mjs && node scripts/generate-admin-page.mjs",

@@ -2,6 +2,360 @@ import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.j
 
 export const blogPosts = [
   {
+    id: "transparent-paper-packaging-buyer-tests",
+    title: "Transparent Paper Looks Ready to Replace Plastic—Until Buyers Ask These 7 Questions",
+    titleEs: "El papel transparente parece listo para sustituir al plástico… hasta que el comprador hace estas 7 preguntas",
+    seoTitle: "Transparent Paper Packaging: 7 Buyer Tests",
+    seoTitleEs: "Papel transparente: 7 pruebas para compradores",
+    metaDescription: "Considering transparent paper packaging? Check clarity, barrier, sealing, print, line performance, food contact and recyclability before approving a switch.",
+    metaDescriptionEs: "¿Evalúa papel transparente para envases? Compruebe claridad, barrera, sellado, impresión, maquinaria, contacto alimentario y reciclabilidad.",
+    date: "2026-10-11",
+    author: "YOUNGSUN PAPER Editorial",
+    category: "Materials & Packaging",
+    categoryEs: "Materiales y embalaje",
+    excerpt: "Transparent paper can give customers a view of the product while reducing reliance on a plastic window. But optical appeal is only the first approval step. Buyers should validate seven linked performance questions before changing the commercial pack.",
+    excerptEs: "El papel transparente permite mostrar el producto y puede reducir la dependencia de una ventana plástica. Sin embargo, la apariencia óptica es solo el primer paso: antes de cambiar el envase comercial conviene validar siete aspectos de rendimiento relacionados entre sí.",
+    content: `# Transparent Paper Looks Ready to Replace Plastic—Until Buyers Ask These 7 Questions
+
+Packaging buyers have a familiar design problem: consumers want to see the product, but a conventional plastic window can complicate a paper-based packaging story. Transparent and translucent fibre materials are creating another option for windows, bags and wraps—especially for dry food, bakery, premium stationery and selected non-food applications.
+
+The subject moved back into the industry spotlight on 8 October 2026, when Packaging Europe announced a technical webinar on [transparent paper for visible packaging](https://www.packagingeurope.com/transparent-paper-advancing-paper-based-alternatives-for-visible-packaging/). Its agenda focuses on transparency, haze, clarity, strength, printability, converting and recyclability. That list is useful because it shows why material selection cannot be reduced to one question: “Can I see through it?”
+
+A transparent paper may look convincing in a hand sample and still fail on the packing line, lose strength in humid storage, provide the wrong barrier or require different end-of-life instructions. Before approving a switch from film, buyers should evaluate the **finished packaging system**, not only the base sheet.
+
+Here are seven questions to put into the RFQ, sample trial and approval record.
+
+## 1. How Much Product Visibility Is Actually Required?
+
+Transparency, haze and clarity are related but different optical properties.
+
+- **Light transmission** describes how much light passes through the material.
+- **Haze** describes how strongly that light is scattered, creating a frosted appearance.
+- **Clarity** affects how sharply an object can be seen through the sheet.
+
+A bakery window may only need to show colour and shape. A premium gift box may need a cleaner, more defined view. A translucent wrap may intentionally soften the product image to create a tactile, high-end presentation.
+
+Do not approve the material from an empty sheet held against a lamp. Place it over the real product, at the real viewing distance, inside the intended carton or bag. Dark products, fine details and printed backgrounds can change the result dramatically.
+
+Ask the supplier to retain an agreed physical sample that defines acceptable visibility. If the application is decorative rather than protective, compare [tracing paper](/products/tracing-paper) options by translucency, surface and folding behaviour instead of treating every translucent sheet as interchangeable.
+
+## 2. Which Barrier Does the Product Need?
+
+Visibility does not protect the packed product. The required barrier depends on what can damage it: grease, water vapour, liquid water, oxygen, aroma, light or mineral oil migration.
+
+For example, glassine-like dense paper can provide useful grease resistance, but it does not automatically deliver the moisture or oxygen barrier needed for every food. Sappi's technical guidance on [switching to paper-based packaging](https://www.sappi.com/en-gb/insights/articles/switching-paper-based-packaging-your-questions-answered) explains that dry products still need application-specific protection and that normal paper, glassine and coated barrier paper serve different functions.
+
+Build the specification from the product outward:
+
+| Packed product condition | Property to confirm |
+|---|---|
+| Oily bakery or confectionery | Grease resistance and stain control |
+| Hygroscopic powder or dry food | Water-vapour barrier and seal integrity |
+| Aroma-sensitive product | Aroma and oxygen barrier |
+| Refrigerated or frozen product | Condensation, low-temperature flex and wet strength |
+| Non-food presentation window | Tear, scuff, light and visual performance |
+
+Request measured values and test conditions where barrier performance is critical. A generic description such as “food paper” or “moisture resistant” is not a production specification.
+
+## 3. Can It Be Sealed, Glued and Converted on the Intended Equipment?
+
+A paper window can be inserted into a carton, glued into a bag, folded as a wrap or heat-sealed as part of a flexible structure. Each route creates different stresses.
+
+Before mass production, confirm:
+
+- minimum bend radius and fold-crack behaviour;
+- machine-direction and cross-direction strength;
+- glue compatibility and required application weight;
+- heat-seal temperature, dwell time and seal strength where applicable;
+- dimensional stability under heat and humidity;
+- die-cutting cleanliness and dust generation;
+- line speed and web-tension range.
+
+The packaging line trial matters because paper and film do not handle identically. Paper can have higher stiffness, a different coefficient of friction and a narrower sealing window. A small successful hand seal does not prove stable high-speed production.
+
+Run the trial with the final roll width, coating side, printing, adhesive and package geometry. Record the settings and acceptable operating window so repeat orders are not restarted from zero.
+
+## 4. Will Printing Improve the Pack—or Reduce Visibility?
+
+Transparent fibre materials can support branding, instructions and decorative effects, but ink coverage changes both appearance and converting behaviour. Dense colours reduce product visibility. Heavy ink, varnish or white layers can alter stiffness, sealability and recyclability.
+
+Define three artwork zones:
+
+1. **Clear viewing area:** no print or only a controlled light tint.
+2. **Information area:** barcodes, legal text and instructions with verified contrast.
+3. **Brand area:** colours and graphics tested on the actual translucent substrate.
+
+Ask the printer to confirm ink adhesion, rub resistance, minimum text size, barcode contrast and whether corona or other surface treatment is required. Approve the printed and converted pack under retail lighting—not only a flat digital proof.
+
+For projects where opacity and photographic colour are more important than visibility, a window may not be the best route. A smooth [C2S art board card](/products/c2s-art-board) or [folding box board](/products/folding-box-board) can provide a more predictable print surface while product information is carried by imagery.
+
+## 5. Does the Finished Structure Meet Food-Contact Requirements?
+
+Food-contact suitability applies to the complete intended use, not to the word “paper.” The substrate, coating, ink, adhesive and converting process may all need supporting documentation. Conditions also matter: direct or indirect contact, dry or fatty food, contact time, temperature and market of sale.
+
+Request declarations and test reports that match:
+
+- the exact material grade and coating;
+- the intended food type;
+- direct or indirect contact;
+- expected temperature and contact duration;
+- the destination market;
+- printing and adhesive position.
+
+Do not transfer a certificate from one structure to another without written confirmation. A decorative tracing sheet intended for stationery is not automatically suitable as a food-contact window.
+
+For oily or fatty foods, compare the required transparency with the performance of [greaseproof paper](/products/greaseproof-paper). The correct material is the one that protects the product throughout its shelf life and distribution—not simply the clearest sheet.
+
+## 6. Is the Complete Pack Recyclable in the Destination Market?
+
+Paper appearance and fibre content are not enough to prove recyclability. The complete structure must be compatible with collection, sorting and recycling systems, and those systems vary by market.
+
+Cepi's [Paper and Board Recyclability Laboratory Test Method Version 3](https://www.cepi.org/cepi-recyclability-test-method-version-3/) simulates key stages of a conventional paper recycling mill, including pulping, screening and sheet formation. For a meaningful result, the tested specimen should represent the printed, coated, glued and sealed commercial pack.
+
+In the European Union, Regulation (EU) 2025/40 requires packaging to be designed for material recycling and sets phased recyclability requirements. The [official PPWR text](https://eur-lex.europa.eu/eli/reg/2025/40/oj) also makes clear that integrated components must not hinder recycling of the main packaging body. Buyers should follow the detailed criteria and later implementing rules that apply to their packaging category and date; this article is not legal advice.
+
+Ask these four evidence questions:
+
+1. Which test method was used?
+2. Was the final converted structure tested?
+3. Which collection and recycling route does the result cover?
+4. What disposal instruction is valid in each destination market?
+
+A useful example is Mondi's [bread packaging with window options](https://www.mondigroup.com/news-and-insight/2024/mondi-bakes-sustainability-into-new-premium-bread-packaging2/): one design used a glassine window intended to be recycled with the paper bag, while another used a detachable film window for separate disposal. The right architecture depends on verified local handling, not appearance alone.
+
+## 7. Has the Pack Passed a Real Distribution Trial?
+
+Laboratory data narrows the risk, but commercial packaging also experiences filling pressure, vibration, stacking, temperature changes and consumer handling. Transparent zones can be more visually unforgiving: creases, scuffs, trapped dust and adhesive marks remain visible.
+
+Use a staged approval:
+
+1. **Material screening:** optical properties, basis weight and surface.
+2. **Converted prototype:** window position, glue line, print and folds.
+3. **Packing-line trial:** speed, tension, sealing and reject rate.
+4. **Distribution trial:** compression, vibration, humidity and temperature.
+5. **Shelf review:** appearance, product protection and consumer opening.
+6. **End-of-life review:** disposal instruction and supporting evidence.
+
+Keep one signed reference pack and record the paper grade, lot, coating side, printer, adhesive and machine settings. That file becomes the control point for repeat orders and supplier changes.
+
+## Transparent Paper Packaging RFQ Checklist
+
+Send suppliers the same complete brief so proposals can be compared fairly:
+
+- package format, dimensions and visible-window area;
+- packed product, contact type and shelf-life target;
+- required clarity, haze or approved visual reference;
+- grease, moisture, oxygen, aroma and light requirements;
+- paper GSM, thickness and roll or sheet format;
+- printing coverage, ink and varnish system;
+- glue or heat-seal method and target line speed;
+- storage and distribution conditions;
+- food-contact documents required for the destination market;
+- recyclability test evidence and intended disposal instruction;
+- prototype, line trial and signed-master-sample requirements.
+
+Our [food and beverage paper solutions](/industries/food-beverage) can help buyers map product protection, converting and documentation before selecting a paper grade.
+
+## What This Week's Transparent-Paper Discussion Really Means
+
+Transparent paper is not simply a cosmetic substitute for film. It is a packaging material with its own balance of visibility, fibre character, strength, barrier, sealing and recovery behaviour. That balance can create a distinctive pack, but only when the buyer defines the application before choosing the sheet.
+
+The practical question is not “Is transparent paper sustainable?” It is: **which finished structure gives the required view, protects the product, runs reliably and has evidence for the intended end-of-life route?**
+
+To evaluate a visible paper window, wrap or bag, [send YOUNGSUN PAPER the product, package format, barrier need, printing method, quantity and destination market](/contact?intent=quote&product=tracing-paper). We can help organise suitable material samples for print and converting trials; final compliance and recyclability claims should be confirmed for the completed pack and target market.
+
+## Frequently Asked Questions
+
+### Is Transparent Paper the Same as Tracing Paper?
+
+No. Tracing paper is a broad translucent paper category commonly used for design, overlays and specialty applications. Packaging-grade transparent paper may require different strength, barrier, sealing, food-contact and recyclability performance.
+
+### Can Transparent Paper Replace a Plastic Window?
+
+Sometimes. Suitability depends on required visibility, product protection, conversion method, packing-line performance and the end-of-life route. A real production and distribution trial is essential.
+
+### Is Glassine Moisture-Proof?
+
+Glassine is dense and can offer grease resistance, but it should not be assumed to provide the water-vapour or oxygen barrier required for every food. Confirm measured performance for the exact grade.
+
+### How Should Buyers Verify Recyclability?
+
+Request evidence for the finished printed and converted structure, identify the test method, and confirm that the result and disposal instruction apply in the destination market.` ,
+    contentEs: `# El papel transparente parece listo para sustituir al plástico… hasta que el comprador hace estas 7 preguntas
+
+Los compradores de envases conocen bien este reto: el consumidor quiere ver el producto, pero una ventana plástica convencional puede complicar el mensaje de un envase basado en papel. Los materiales fibrosos transparentes y translúcidos ofrecen otra posibilidad para ventanas, bolsas y envolturas, sobre todo en alimentos secos, panadería, papelería premium y determinadas aplicaciones no alimentarias.
+
+El tema volvió al centro de la conversación el 8 de octubre de 2026, cuando Packaging Europe anunció un seminario técnico sobre [papel transparente para envases con visibilidad](https://www.packagingeurope.com/transparent-paper-advancing-paper-based-alternatives-for-visible-packaging/). La agenda incluye transparencia, neblina, claridad, resistencia, impresión, conversión y reciclabilidad. Esa lista explica por qué la selección no puede reducirse a una sola pregunta: “¿Se ve el producto?”
+
+Un papel transparente puede resultar atractivo como muestra y aun así fallar en la línea, perder resistencia con humedad, ofrecer una barrera insuficiente o necesitar instrucciones de fin de vida distintas. Antes de sustituir una película, el comprador debe evaluar **el sistema de envase terminado**, no solo la hoja base.
+
+Estas son las siete preguntas que conviene incluir en la cotización, la prueba y el registro de aprobación.
+
+## 1. ¿Cuánta visibilidad necesita realmente el producto?
+
+Transparencia, neblina y claridad son propiedades relacionadas, pero no equivalentes.
+
+- **Transmisión de luz:** cuánta luz atraviesa el material.
+- **Neblina:** cuánto se dispersa la luz y produce un aspecto esmerilado.
+- **Claridad:** con qué nitidez se observa un objeto a través de la hoja.
+
+Una ventana para panadería quizá solo deba mostrar color y forma. Una caja de regalo premium puede exigir una vista más definida. Una envoltura translúcida puede buscar deliberadamente una imagen suave para crear una presentación táctil y elegante.
+
+No apruebe el material observando una hoja vacía frente a una lámpara. Colóquela sobre el producto real, a la distancia de compra y dentro de la caja o bolsa prevista. Los productos oscuros, los detalles finos y los fondos impresos cambian mucho el resultado.
+
+Solicite una muestra física acordada como estándar de visibilidad. Si la función es decorativa, compare las opciones de [papel vegetal](/products/tracing-paper) por translucidez, superficie y comportamiento al plegado, sin asumir que todas las hojas translúcidas son iguales.
+
+## 2. ¿Qué barrera necesita el producto?
+
+La visibilidad no protege el contenido. La barrera necesaria depende de lo que pueda dañarlo: grasa, vapor de agua, agua líquida, oxígeno, aromas, luz o migración de aceites minerales.
+
+Un papel denso tipo glassine puede ofrecer resistencia a la grasa, pero no garantiza automáticamente la barrera de humedad u oxígeno de todos los alimentos. La guía técnica de Sappi sobre [la transición hacia envases de papel](https://www.sappi.com/en-gb/insights/articles/switching-paper-based-packaging-your-questions-answered) explica que incluso los productos secos necesitan protección específica y que papel normal, glassine y papel barrera recubierto cumplen funciones diferentes.
+
+Construya la especificación desde el producto:
+
+| Condición del producto | Propiedad que debe confirmarse |
+|---|---|
+| Panadería o confitería grasa | Resistencia a grasa y control de manchas |
+| Polvo o alimento higroscópico | Barrera al vapor y hermeticidad del sello |
+| Producto sensible a aromas | Barrera a aromas y oxígeno |
+| Refrigerado o congelado | Condensación, flexibilidad en frío y resistencia húmeda |
+| Ventana no alimentaria | Desgarro, roce, luz y rendimiento visual |
+
+Cuando la barrera sea crítica, solicite valores medidos y condiciones de ensayo. “Papel alimentario” o “resistente a la humedad” no constituye una especificación de producción.
+
+## 3. ¿Puede sellarse, pegarse y convertirse en el equipo previsto?
+
+Una ventana de papel puede insertarse en una caja, pegarse en una bolsa, plegarse como envoltura o termosellarse dentro de una estructura flexible. Cada proceso genera tensiones distintas.
+
+Antes de producir, confirme:
+
+- radio mínimo de curvatura y riesgo de grieta;
+- resistencia en sentido máquina y transversal;
+- compatibilidad del adhesivo y cantidad necesaria;
+- temperatura, tiempo y fuerza de termosellado;
+- estabilidad dimensional con calor y humedad;
+- limpieza del troquelado y generación de polvo;
+- velocidad de línea y rango de tensión de bobina.
+
+La prueba en máquina es importante porque papel y película no se comportan igual. El papel puede ser más rígido, tener otra fricción y una ventana de sellado más estrecha. Un buen sello manual no demuestra estabilidad a alta velocidad.
+
+Pruebe el ancho de bobina, lado recubierto, impresión, adhesivo y geometría finales. Registre ajustes y rango operativo para que los pedidos repetidos no empiecen desde cero.
+
+## 4. ¿La impresión mejorará el envase o reducirá la visibilidad?
+
+Los materiales fibrosos transparentes admiten marca, instrucciones y decoración, pero la cobertura de tinta cambia la apariencia y la conversión. Los colores densos reducen la visibilidad. Una carga alta de tinta, barniz o blanco puede modificar rigidez, sellado y reciclabilidad.
+
+Divida el diseño en tres zonas:
+
+1. **Zona de visión:** sin impresión o con un tinte ligero controlado.
+2. **Zona informativa:** códigos, texto legal e instrucciones con contraste verificado.
+3. **Zona de marca:** colores y gráficos probados sobre el sustrato real.
+
+Pida confirmar adhesión, resistencia al roce, tamaño mínimo de texto, contraste de códigos y necesidad de tratamiento superficial. Apruebe el envase impreso y convertido bajo iluminación comercial, no solo una prueba digital plana.
+
+Si la opacidad y el color fotográfico importan más que la visibilidad, quizá una ventana no sea la mejor solución. Una [cartulina couché C2S](/products/c2s-art-board) o un [cartón FBB](/products/folding-box-board) ofrecen una superficie más predecible y el producto puede presentarse mediante fotografía.
+
+## 5. ¿La estructura terminada cumple los requisitos de contacto alimentario?
+
+La aptitud alimentaria se refiere al uso completo previsto, no a la palabra “papel”. Sustrato, recubrimiento, tinta, adhesivo y proceso pueden requerir documentación. También importan el contacto directo o indirecto, alimento seco o graso, tiempo, temperatura y mercado.
+
+Solicite declaraciones y ensayos que coincidan con:
+
+- grado exacto y recubrimiento;
+- tipo de alimento;
+- contacto directo o indirecto;
+- temperatura y duración;
+- mercado de destino;
+- posición de tinta y adhesivo.
+
+No transfiera un certificado de una estructura a otra sin confirmación escrita. Un papel vegetal para papelería no es automáticamente apto como ventana alimentaria.
+
+Para alimentos grasos, compare la transparencia deseada con el rendimiento del [papel antigrasa](/products/greaseproof-paper). El material correcto es el que protege durante vida útil y distribución, no solo el más transparente.
+
+## 6. ¿El envase completo es reciclable en el mercado de destino?
+
+La apariencia de papel y el porcentaje de fibra no prueban reciclabilidad. La estructura completa debe ser compatible con recogida, clasificación y reciclaje, y esos sistemas varían por mercado.
+
+El [método de laboratorio de Cepi, versión 3](https://www.cepi.org/cepi-recyclability-test-method-version-3/) simula etapas clave de una planta convencional: desfibrado, cribado y formación de hoja. Para que el resultado sea útil, la muestra debe representar el envase comercial impreso, recubierto, pegado y sellado.
+
+En la Unión Europea, el Reglamento (UE) 2025/40 exige diseñar envases para reciclaje y establece requisitos escalonados. El [texto oficial del PPWR](https://eur-lex.europa.eu/eli/reg/2025/40/oj) indica además que los componentes integrados no deben perjudicar el reciclaje del cuerpo principal. El comprador debe seguir los criterios y normas posteriores aplicables a su categoría y fecha; este artículo no constituye asesoría legal.
+
+Formule cuatro preguntas:
+
+1. ¿Qué método se utilizó?
+2. ¿Se ensayó la estructura convertida final?
+3. ¿Qué ruta de recogida y reciclaje cubre el resultado?
+4. ¿Qué instrucción de eliminación es válida en cada mercado?
+
+Un ejemplo útil es el envase de pan de Mondi con [distintas ventanas](https://www.mondigroup.com/news-and-insight/2024/mondi-bakes-sustainability-into-new-premium-bread-packaging2/): una versión empleó una ventana glassine destinada a reciclarse con la bolsa; otra, una película desprendible para eliminación separada. La arquitectura correcta depende del sistema local verificado, no solo del aspecto.
+
+## 7. ¿Superó el envase una distribución real?
+
+Los datos de laboratorio reducen riesgo, pero el envase comercial sufre presión de llenado, vibración, apilamiento, cambios de temperatura y manipulación. Las zonas transparentes revelan fácilmente arrugas, roces, polvo atrapado y marcas de adhesivo.
+
+Utilice una aprobación por etapas:
+
+1. **Selección de material:** óptica, gramaje y superficie.
+2. **Prototipo convertido:** ventana, adhesivo, impresión y pliegues.
+3. **Prueba en línea:** velocidad, tensión, sellado y rechazos.
+4. **Prueba de distribución:** compresión, vibración, humedad y temperatura.
+5. **Revisión en estantería:** aspecto, protección y apertura.
+6. **Revisión de fin de vida:** instrucción y evidencia disponible.
+
+Conserve un envase patrón firmado y registre grado, lote, cara recubierta, impresor, adhesivo y ajustes. Será el control para repeticiones y cambios de proveedor.
+
+## Lista de cotización para papel transparente
+
+Envíe el mismo brief completo a todos los proveedores:
+
+- formato, dimensiones y área visible;
+- producto, tipo de contacto y vida útil;
+- claridad, neblina o referencia visual aprobada;
+- barreras de grasa, humedad, oxígeno, aroma y luz;
+- GSM, espesor y formato de rollo u hoja;
+- cobertura de impresión, tinta y barniz;
+- método de adhesión o sellado y velocidad;
+- almacenamiento y distribución;
+- documentos alimentarios requeridos;
+- ensayo de reciclabilidad e instrucción prevista;
+- prototipo, prueba en línea y muestra maestra.
+
+Nuestras [soluciones de papel para alimentos y bebidas](/industries/food-beverage) ayudan a relacionar protección, conversión y documentos antes de elegir el grado.
+
+## Qué significa realmente el debate de esta semana
+
+El papel transparente no es solo un sustituto visual de la película. Tiene su propio equilibrio entre visibilidad, carácter fibroso, resistencia, barrera, sellado y recuperación. Puede crear un envase distintivo, pero únicamente cuando la aplicación se define antes de escoger la hoja.
+
+La pregunta práctica no es “¿el papel transparente es sostenible?”. Es: **¿qué estructura terminada muestra el producto, lo protege, funciona con estabilidad y cuenta con evidencia para la ruta de fin de vida prevista?**
+
+Para evaluar una ventana, envoltura o bolsa visible, [envíe a YOUNGSUN PAPER el producto, formato, barrera, impresión, cantidad y mercado de destino](/contact?intent=quote&product=tracing-paper). Podemos organizar muestras para impresión y conversión; las declaraciones finales deben confirmarse para el envase completo y su mercado.
+
+## Preguntas frecuentes
+
+### ¿El papel transparente es igual al papel vegetal?
+
+No. El papel vegetal es una categoría translúcida usada en diseño, superposiciones y aplicaciones especiales. Un papel transparente para envases puede exigir otras propiedades de resistencia, barrera, sellado, contacto alimentario y reciclabilidad.
+
+### ¿Puede sustituir una ventana plástica?
+
+En algunos casos. Depende de visibilidad, protección, conversión, línea de envasado y ruta de fin de vida. Es esencial realizar una prueba real de producción y distribución.
+
+### ¿El glassine es impermeable a la humedad?
+
+Puede ofrecer resistencia a la grasa, pero no debe asumirse que entrega la barrera de vapor u oxígeno de todos los alimentos. Confirme valores del grado exacto.
+
+### ¿Cómo debe verificarse la reciclabilidad?
+
+Solicite evidencia de la estructura final impresa y convertida, identifique el método y confirme que el resultado y la instrucción de eliminación aplican al mercado de destino.` ,
+    image: "/images/blog-articles/transparent-paper-packaging-buyer-tests.webp",
+    imageAlt: "Kraft pouch and white paperboard carton with translucent paper windows beside transparent fibre samples and a caliper.",
+    imageAltEs: "Bolsa kraft y caja de cartón blanco con ventanas de papel translúcido junto a muestras de fibra transparente y un calibre.",
+    imageCaption: "Illustrative transparent-paper packaging development scene. Optical, barrier, converting and recycling performance should be approved on the finished pack.",
+    imageCaptionEs: "Escena ilustrativa de desarrollo de envases con papel transparente. El rendimiento óptico, de barrera, conversión y reciclaje debe aprobarse sobre el envase final.",
+    tags: ["transparent paper packaging", "paper window packaging", "glassine paper", "tracing paper", "packaging recyclability", "food packaging buyer guide"],
+    tagsEs: ["papel transparente para envases", "ventana de papel", "papel glassine", "papel vegetal", "reciclabilidad de envases", "guía de compra de envases"],
+  },
+  {
     id: "digital-printing-brown-kraft-paper-buyers-guide",
     title: "Brown Kraft Can Print Bright—But Only If Buyers Specify These 6 Things",
     titleEs: "El kraft marrón puede lucir colores vivos, pero solo si especifica estas 6 cosas",

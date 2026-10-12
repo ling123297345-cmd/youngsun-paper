@@ -1,6 +1,6 @@
 import { ArrowRight, Mail, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import { contactInfo } from "./data.js";
+import { contactInfo } from "./generated/siteIndex.js";
 import { useLang } from "./i18n.jsx";
 
 const whatsappNumber = contactInfo.whatsapp.replace(/\D/g, "");

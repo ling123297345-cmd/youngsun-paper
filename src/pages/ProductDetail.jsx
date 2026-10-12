@@ -4,7 +4,8 @@ import { useLang } from "../i18n.jsx";
 import { productEs } from "../productEs.js";
 import { productCategories, subProducts, contactInfo } from "../data.js";
 import { getProductIndustryLinks } from "../productIndustryLinks.js";
-import { PageMeta, ProductSchema, BreadcrumbSchema } from "../SEO.jsx";
+import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
+import ProductSchema from "../ProductSchema.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
 import { ArrowLeft, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, PackageCheck } from "lucide-react";
 

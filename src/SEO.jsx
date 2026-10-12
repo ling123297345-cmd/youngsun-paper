@@ -7,11 +7,9 @@ import {
   createFaqSchema,
   createHowToSchema,
   createOrganizationSchema,
-  createProductSchema,
   createWebsiteSchema,
 } from "./schemaData.js";
 import { useLang } from "./i18n.jsx";
-import { productEs } from "./productEs.js";
 import {
   canonicalPath,
   getSpanishSeoMeta,
@@ -53,7 +51,7 @@ export function PageMeta({ title, description, path }) {
   );
 }
 
-function JsonLd({ id, data, removeOnUnmount = true }) {
+export function JsonLd({ id, data, removeOnUnmount = true }) {
   const json = useMemo(() => (data ? JSON.stringify(data) : ""), [data]);
 
   useEffect(() => {
@@ -73,16 +71,6 @@ function JsonLd({ id, data, removeOnUnmount = true }) {
   }, [data, id, json, removeOnUnmount]);
 
   return null;
-}
-
-export function ProductSchema({ product }) {
-  const { lang } = useLang();
-  return (
-    <JsonLd
-      id="product-schema"
-      data={createProductSchema(product, { lang, translation: productEs[product?.id] })}
-    />
-  );
 }
 
 export function CollectionPageSchema({ name, description, path, items }) {

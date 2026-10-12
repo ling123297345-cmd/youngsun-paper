@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { subProducts } from "./data.js";
+import { productSearchIndex } from "./generated/siteIndex.js";
 import { useLang } from "./i18n.jsx";
 
 export default function SearchBar() {
@@ -16,34 +16,14 @@ export default function SearchBar() {
 
   // Build search index from products + blogs
   const searchIndex = useMemo(() => {
-    const items = [];
-    Object.values(subProducts).forEach((p) => {
-      if (p.id && p.name && p.category) {
-        items.push({
-          type: "product",
-          id: p.id,
-          name: p.name,
-          text: [p.name, p.tagline || "", ...(p.keywords || [])].join(" ").toLowerCase(),
-          href: `/products/${p.id}`,
-        });
-      }
-    });
-    return [...items, ...blogIndex];
+    return [...productSearchIndex, ...blogIndex];
   }, [blogIndex]);
 
   const loadBlogIndex = async () => {
     if (blogIndexRequested) return;
     setBlogIndexRequested(true);
-    const { blogPosts } = await import("./blogData.js");
-    setBlogIndex(blogPosts
-      .filter((post) => post.id && post.title)
-      .map((post) => ({
-        type: "blog",
-        id: post.id,
-        name: post.title,
-        text: [post.title, post.summary || post.excerpt || "", post.category || ""].join(" ").toLowerCase(),
-        href: `/blog/${post.id}`,
-      })));
+    const { blogSearchIndex } = await import("./generated/blogSearchIndex.js");
+    setBlogIndex(blogSearchIndex);
   };
 
   const results = useMemo(() => {
@@ -113,7 +93,7 @@ export default function SearchBar() {
               onClick={() => navigateTo(item.href)}
             >
               <span className="search-result-type">{typeLabel(item.type)}</span>
-              <span className="search-result-name">{item.name}</span>
+              <span className="search-result-name">{lang === "es" && item.nameEs ? item.nameEs : item.name}</span>
             </button>
           ))}
         </div>

@@ -2,8 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight, BookOpen, Building2, ClipboardCheck, Coffee, Cpu, FileCheck2, Gem, Gift, Globe2, PackageCheck, PackageOpen, Recycle, Tags, Truck, UtensilsCrossed } from "lucide-react";
 import { useLang } from "../i18n.jsx";
-import { siteConfig, productCategories, subProducts, whyChooseUs, localizeFaqItems } from "../data.js";
-import { productEs } from "../productEs.js";
+import { homeFeaturedProducts, localizeFaqItems, productCategories } from "../generated/siteIndex.js";
 import { industries } from "../industriesData.js";
 import { PageMeta, OrganizationSchema, WebsiteSchema } from "../SEO.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
@@ -193,8 +192,6 @@ function ProductCategoryBrowser() {
 function ProductsPreview() {
   const { lang, t } = useLang();
   const isEs = lang === "es";
-  const featuredIds = ["grey-board", "black-paper", "folding-box-board", "woodfree-paper", "soft-touch-paper", "cup-paper"];
-  const featuredProducts = featuredIds.map((id) => subProducts[id]).filter(Boolean);
   return (
     <section className="section products-section home-popular-products" id="products-preview" aria-labelledby="products-heading">
       <div className="home-popular-heading container">
@@ -205,13 +202,13 @@ function ProductsPreview() {
         <p>{isEs ? "Una selección rápida de nuestros grados más solicitados para embalaje, impresión y contacto alimentario." : "A quick selection of our most requested grades for packaging, printing and food-contact applications."}</p>
       </div>
       <div className="subproduct-grid home-popular-grid container">
-        {featuredProducts.map((product) => (
+        {homeFeaturedProducts.map((product) => (
           <Link key={product.id} to={`/products/${product.id}`} className="subproduct-card" style={{ color: "inherit" }}>
             <div className="subproduct-image-wrap"><img src={product.image} alt={product.name} className="subproduct-image" loading="lazy" /></div>
             <div className="subproduct-info">
               <span className="popular-product-category">{t(productCategories.find((cat) => cat.id === product.category)?.title || product.category)}</span>
               <h3>{product.name}</h3>
-              <p className="subproduct-tagline">{isEs && productEs[product.id]?.tagline ? productEs[product.id].tagline : product.tagline}</p>
+              <p className="subproduct-tagline">{isEs && product.taglineEs ? product.taglineEs : product.tagline}</p>
               <span className="popular-product-link">{isEs ? "Ver detalles" : "View details"}<ArrowRight size={15} aria-hidden="true" /></span>
             </div>
           </Link>

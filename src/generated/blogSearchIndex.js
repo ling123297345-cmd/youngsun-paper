@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "paper-can-packaging-moisture-barrier-buyer-tests",
+    "name": "Paper Cans Can Handle Moisture-Sensitive Products—But Only After These 7 Buyer Tests",
+    "nameEs": "Los envases cilíndricos de papel pueden proteger productos sensibles a la humedad… después de estas 7 pruebas",
+    "text": "paper cans can handle moisture-sensitive products—but only after these 7 buyer tests los envases cilíndricos de papel pueden proteger productos sensibles a la humedad… después de estas 7 pruebas a recent fibre-based can trial for bath crystals shows that paper structures are moving into humidity-sensitive categories. for buyers, the opportunity is real—but approval must cover the complete pack, not only its paper percentage or shelf appearance. un reciente ensayo de envase cilíndrico de fibra para cristales de baño demuestra que las estructuras de papel avanzan hacia categorías sensibles a la humedad. la oportunidad existe, pero la aprobación debe abarcar el envase completo, no solo su porcentaje de papel o su aspecto en el estante. beauty & packaging",
+    "href": "/blog/paper-can-packaging-moisture-barrier-buyer-tests"
+  },
+  {
+    "type": "blog",
     "id": "transparent-paper-packaging-buyer-tests",
     "name": "Transparent Paper Looks Ready to Replace Plastic—Until Buyers Ask These 7 Questions",
     "nameEs": "El papel transparente parece listo para sustituir al plástico… hasta que el comprador hace estas 7 preguntas",

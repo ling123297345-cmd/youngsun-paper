@@ -2,6 +2,374 @@ import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.j
 
 export const blogPosts = [
   {
+    id: "paper-can-packaging-moisture-barrier-buyer-tests",
+    title: "Paper Cans Can Handle Moisture-Sensitive Products—But Only After These 7 Buyer Tests",
+    titleEs: "Los envases cilíndricos de papel pueden proteger productos sensibles a la humedad… después de estas 7 pruebas",
+    seoTitle: "Paper Can Packaging: 7 Buyer Tests",
+    seoTitleEs: "Envases cilíndricos de papel: 7 pruebas clave",
+    metaDescription: "Evaluating paper can packaging for powders or personal care? Test moisture barrier, seals, strength, print, filling lines and recyclability before approval.",
+    metaDescriptionEs: "¿Evalúa envases cilíndricos de papel para polvos o cosmética? Pruebe barrera, cierre, resistencia, impresión, línea y reciclabilidad.",
+    date: "2026-10-12",
+    author: "YOUNGSUN PAPER Editorial",
+    category: "Beauty & Packaging",
+    categoryEs: "Belleza y embalaje",
+    excerpt: "A recent fibre-based can trial for bath crystals shows that paper structures are moving into humidity-sensitive categories. For buyers, the opportunity is real—but approval must cover the complete pack, not only its paper percentage or shelf appearance.",
+    excerptEs: "Un reciente ensayo de envase cilíndrico de fibra para cristales de baño demuestra que las estructuras de papel avanzan hacia categorías sensibles a la humedad. La oportunidad existe, pero la aprobación debe abarcar el envase completo, no solo su porcentaje de papel o su aspecto en el estante.",
+    content: `# Paper Cans Can Handle Moisture-Sensitive Products—But Only After These 7 Buyer Tests
+
+Rigid paper cans are familiar in tea, snacks, powders and premium gifts. Their next challenge is more demanding: products that can clump, lose performance or deteriorate when exposed to humidity.
+
+That challenge returned to the industry spotlight on 9 October 2026, when Packaging Europe reported that Kneipp had introduced a limited-edition bath-crystal product in Sonoco's fibre-based GreenCan format. The article says the pack combines a predominantly paper structure with protection for a moisture-sensitive product and a premium paper-touch finish. [Read the Packaging Europe report](https://www.packagingeurope.com/kneipp-trials-sonocos-fibre-based-can-for-limited-edition-bath-crystals/).
+
+The development matters because beauty and wellness packaging must satisfy several requirements at once: product protection, shelf impact, opening experience, transport strength and a credible end-of-life instruction. Kneipp's own packaging information also makes an important broader point: recycling infrastructure is not equally developed in every market, and there is no single optimal material answer for every format. [See Kneipp's packaging approach](https://www.kneipp.com/de_de/nachhaltigkeit/verpackung/).
+
+For buyers, the lesson is not that every paper can is ready for every powder. It is that **a fibre-based format can only be approved as a complete packaging system**. The body, ends, lid, barrier, adhesive, ink, closure and filling process must work together.
+
+Use these seven tests before approving a paper can for bath salts, powdered cosmetics, dry food, nutraceuticals or another moisture-sensitive product.
+
+## 1. Define the Product's Moisture Risk Before Choosing the Paper
+
+“Moisture-sensitive” is not a specification. Two powders may react very differently under the same storage conditions. One may form small lumps but remain usable; another may lose flow, aroma, potency or appearance.
+
+Start the RFQ with the product, not the container:
+
+- target shelf life and markets;
+- expected storage temperature and relative humidity;
+- acceptable change in mass, flow or appearance;
+- whether the pack will be repeatedly opened in a humid room;
+- product fill temperature and residual moisture;
+- aroma, oxygen or light sensitivity in addition to water vapour.
+
+The required barrier should be expressed as a measurable target for the **finished pack**. A water-vapour transmission value for a flat material can help screen options, but it does not represent leakage around seams, ends or the closure.
+
+For initial material selection, compare structural [grey board](/products/grey-board), printable [folding box board](/products/folding-box-board) and coated papers by the role each layer must perform. Do not assume the thickest paper provides the best moisture protection.
+
+## 2. Request a Complete Layer and Component Map
+
+A paper can is usually a multi-component structure. The visible paper surface may provide print and tactile appeal, while another layer provides stiffness, sealing or barrier performance.
+
+Ask the supplier to identify every component:
+
+| Component | Buyer question |
+|---|---|
+| Body wall | Which paper or board grades provide stiffness and print surface? |
+| Barrier layer | What protects against water vapour, grease, aroma or oxygen? |
+| Side seam | How is the overlap sealed and how wide is it? |
+| Bottom end | Is it paper, metal or another material, and how is it joined? |
+| Lid or plug | Is it reclosable, and what creates the seal? |
+| Adhesives and inks | Are they compatible with the product, process and destination market? |
+
+Do not accept “paper-based” as the only construction description. Request material names, basis weights or thicknesses where relevant, and the function of each non-paper layer. This information supports quality control, regulatory review, recycling assessment and repeat-order consistency.
+
+If the pack uses a decorative wrap or label, review [label paper](/products/label-paper) and specialty surfaces separately from the structural wall. Appearance material and protective material are not necessarily the same layer.
+
+## 3. Test Seams, Ends and Reclosure—not Only the Flat Barrier
+
+Many barrier failures occur at interfaces rather than through the centre of the sheet. A strong wall cannot compensate for a poorly sealed bottom, an uneven side seam or a lid that admits humid air after each use.
+
+Evaluate three conditions:
+
+1. **Unopened pack:** Does the sealed container protect the product through production, warehousing and distribution?
+2. **First opening:** Does removal of a membrane or plug damage the rim or create loose fibres?
+3. **Repeated use:** Does the lid continue to close consistently after multiple opening cycles in a humid environment?
+
+Use dye penetration, vacuum or pressure-decay methods when appropriate, but connect the test to real product ageing. Store filled packs at normal and accelerated humidity conditions, then measure product change and inspect all seams.
+
+For products used in bathrooms or kitchens, include wet-hand handling, condensation and brief splash exposure. These are different from continuous immersion and should be specified separately.
+
+## 4. Prove Compression, Drop and Dimensional Stability
+
+A cylindrical format may look rigid on a sample table yet deform under pallet load, lose roundness in high humidity or dent during parcel delivery. Distortion can also weaken the lid fit and therefore the moisture seal.
+
+Your validation plan should cover:
+
+- top-load and stacking compression;
+- side-impact and edge-crush behaviour;
+- filled-pack drop testing in several orientations;
+- roundness and diameter after humidity conditioning;
+- lid retention after impact;
+- pallet vibration and transport simulation;
+- performance at the beginning and end of the declared shelf life.
+
+Approve the actual diameter, height, wall construction and fill weight. Results from a smaller or lighter demonstration pack may not transfer to the commercial size.
+
+For premium presentation, the structure may combine a rigid recycled-board core with a printed or textured outer wrap. Our [luxury and cosmetics packaging solutions](/industries/luxury-cosmetics) show how structural board, decorative paper and converting requirements should be considered together.
+
+## 5. Approve Print, Coating and Product Compatibility
+
+Beauty and wellness packs often need saturated colour, tactile coatings, foil, embossing or a soft paper feel. These finishes can change scuff resistance, glue adhesion, odour and the way moisture reaches the structure.
+
+Ask for a printed and converted prototype using the intended production materials. Check:
+
+- colour and shade on the actual paper;
+- rub and scratch resistance after filling and transport;
+- ink or coating cracking at rolled edges;
+- blocking when packed closely or exposed to heat;
+- odour transfer to the product;
+- compatibility between adhesives, barrier and decorative wrap;
+- required chemical, food-contact or cosmetics documentation for the destination market.
+
+Do not describe a whole package as compliant because one paper component has a certificate. Compliance applies to the finished structure, intended product and market. A supplier should provide available declarations and test reports without turning a material characteristic into a legal conclusion.
+
+## 6. Run the Pack on the Real Filling and Closing Line
+
+A hand-made prototype can hide problems that appear at production speed. Paper cans may behave differently from plastic jars or metal tins during denesting, filling, dust control, membrane sealing, lid placement, coding and case packing.
+
+Plan a line trial that records:
+
+- feeding and orientation stability;
+- dimensional tolerances and jam rate;
+- dust or loose fibres near the product zone;
+- seal temperature, pressure and dwell time;
+- closure force and lid consistency;
+- print scuffing through guides and conveyors;
+- reject rate and inspection method;
+- changeover time from the current pack.
+
+Retain filled samples from the beginning, middle and end of the trial. These samples should enter shelf-life, transport and consumer-use testing. A successful empty-container run is not enough.
+
+Before ordering production volumes, use our [paper materials library](/materials) to separate fibre choice, surface performance and converting requirements, then request samples for the intended process.
+
+## 7. Verify the Recycling Claim in the Destination Market
+
+High paper content can support a fibre-packaging strategy, but percentage alone does not prove recyclability everywhere. Collection rules, sorting equipment, mill acceptance, component separation and local labelling all matter.
+
+Ask five practical questions:
+
+1. Which waste stream should consumers use in each target market?
+2. Must the lid, membrane or bottom be removed first?
+3. Has the complete printed pack been tested for repulpability or sorting compatibility?
+4. Which test method, laboratory and pass criteria support the claim?
+5. Does the disposal instruction match local regulation and infrastructure?
+
+If different components need separation, test whether consumers can do it without tools and without ambiguous instructions. Record the final wording and artwork as part of packaging approval.
+
+The safest claim is specific and evidenced. “Predominantly paper, designed for the paper stream where accepted” may be more accurate than an unconditional global recyclability statement. Legal and environmental claims should be reviewed for each destination market.
+
+## Paper Can Packaging RFQ Checklist
+
+Send these details so suppliers evaluate the same commercial requirement:
+
+- product type, composition and moisture sensitivity;
+- net fill weight and fill process;
+- container diameter, height and target volume;
+- target shelf life and destination markets;
+- required moisture, oxygen, grease, aroma and light barriers;
+- body, end, lid and membrane preferences;
+- printing process, colours, finishes and artwork coverage;
+- opening, tamper-evidence and reclosure requirements;
+- annual quantity and order quantity by size;
+- line speed and sealing equipment;
+- transport route, pallet pattern and distribution tests;
+- required declarations, test reports and recycling evidence.
+
+## What This Week's Paper-Can News Really Changes
+
+The Kneipp trial is useful because it brings fibre-based rigid packaging into a category where humidity protection and premium presentation must coexist. It does not eliminate the need for barrier layers or testing. It shows that buyers can explore paper-rich structures beyond conventional secondary cartons—provided the package is engineered and validated as a system.
+
+The practical question is not “Can paper replace this plastic jar?” It is: **which paper structure, barrier, closure and approval evidence can protect this exact product through filling, transport, storage and repeated use?**
+
+For a new cylindrical pack, gift tube or rigid container, [send YOUNGSUN PAPER the product, size, board requirement, print finish, quantity and destination market](/contact?intent=quote&product=grey-board). We can help arrange structural and decorative paper samples for printing and converting trials. Barrier performance and final-pack compliance must be confirmed with the selected converter and test laboratory.
+
+## Frequently Asked Questions
+
+### Can a paper can protect moisture-sensitive powder?
+
+It can when the complete structure provides the required barrier and seal integrity. Approval should use filled-pack ageing, seam, closure, transport and repeated-opening tests—not only a flat paper sample.
+
+### Does thicker paper automatically improve moisture barrier?
+
+No. Thickness and stiffness mainly support structure. Moisture performance depends on the barrier layer, seams, ends, closure and exposure conditions.
+
+### Is a high paper percentage enough to call the pack recyclable?
+
+No. The complete printed package should be assessed against the collection, sorting and recycling conditions of each target market, including any component-separation instructions.
+
+### Which sample should buyers approve before mass production?
+
+Approve a printed, converted and filled production-line sample using the intended body, barrier, ends, lid, inks and adhesives. Retain a signed master sample and the supporting test record.` ,
+    contentEs: `# Los envases cilíndricos de papel pueden proteger productos sensibles a la humedad… después de estas 7 pruebas
+
+Los envases cilíndricos rígidos de papel son habituales en té, aperitivos, polvos y regalos premium. Su siguiente reto es más exigente: productos que pueden apelmazarse, perder rendimiento o deteriorarse cuando absorben humedad.
+
+El tema volvió al centro de la industria el 9 de octubre de 2026, cuando Packaging Europe informó que Kneipp había presentado una edición limitada de cristales de baño en el formato GreenCan de Sonoco. Según el artículo, el envase combina una estructura predominantemente de papel con protección para un producto sensible a la humedad y un acabado táctil premium. [Consulte el informe de Packaging Europe](https://www.packagingeurope.com/kneipp-trials-sonocos-fibre-based-can-for-limited-edition-bath-crystals/).
+
+El desarrollo es relevante porque los envases de belleza y bienestar deben cumplir varias funciones a la vez: proteger el producto, destacar en el estante, ofrecer una buena apertura, resistir el transporte y comunicar instrucciones de fin de vida creíbles. La propia información de Kneipp sobre sus envases añade un matiz importante: la infraestructura de reciclaje no funciona igual en todos los mercados y no existe una única respuesta de material óptima para cada formato. [Revise el enfoque de embalaje de Kneipp](https://www.kneipp.com/es_es/sustainable-packaging.html).
+
+La conclusión para compras no es que cualquier bote de papel sirva para cualquier polvo. Es que **un formato de fibra solo puede aprobarse como sistema de embalaje completo**. Cuerpo, tapas, fondo, barrera, adhesivo, tinta, cierre y proceso de llenado deben funcionar juntos.
+
+Estas siete pruebas ayudan a evaluar envases para sales de baño, cosmética en polvo, alimentos secos, nutracéuticos u otros productos sensibles a la humedad.
+
+## 1. Defina el riesgo de humedad del producto antes de elegir el papel
+
+“Sensible a la humedad” no es una especificación. Dos polvos pueden reaccionar de forma muy distinta bajo las mismas condiciones. Uno puede formar pequeños grumos y seguir siendo utilizable; otro puede perder fluidez, aroma, eficacia o apariencia.
+
+Empiece la solicitud de cotización por el producto, no por el envase:
+
+- vida útil y mercados de destino;
+- temperatura y humedad relativa previstas;
+- cambio aceptable de masa, fluidez o apariencia;
+- uso repetido en un baño o ambiente húmedo;
+- temperatura de llenado y humedad residual;
+- sensibilidad al aroma, oxígeno o luz además del vapor de agua.
+
+La barrera requerida debe expresarse como un objetivo medible para el **envase terminado**. Un valor de transmisión de vapor de agua del material plano puede servir para comparar opciones, pero no representa las fugas alrededor de uniones, fondos o cierres.
+
+Para seleccionar la estructura inicial, compare [cartón gris](/es/products/grey-board), [cartón folding box board](/es/products/folding-box-board) y papeles estucados según la función de cada capa. No suponga que el papel más grueso ofrece la mejor protección contra la humedad.
+
+## 2. Solicite un mapa completo de capas y componentes
+
+Un envase cilíndrico de papel suele tener varios componentes. La superficie visible aporta impresión y tacto, mientras otra capa puede proporcionar rigidez, sellado o barrera.
+
+Pida al proveedor que identifique cada elemento:
+
+| Componente | Pregunta para compras |
+|---|---|
+| Pared del cuerpo | ¿Qué papeles o cartones aportan rigidez y superficie imprimible? |
+| Capa barrera | ¿Qué protege frente a vapor, grasa, aroma u oxígeno? |
+| Unión lateral | ¿Cómo se sella y cuál es su ancho? |
+| Fondo | ¿Es de papel, metal u otro material y cómo se une? |
+| Tapa o inserto | ¿Se puede volver a cerrar y qué elemento crea el sello? |
+| Adhesivos y tintas | ¿Son compatibles con el producto, proceso y mercado? |
+
+No acepte “a base de papel” como única descripción. Solicite nombres de materiales, gramajes o espesores cuando correspondan y la función de cada capa no fibrosa. Esta información facilita control de calidad, revisión normativa, evaluación de reciclaje y consistencia en pedidos repetidos.
+
+Si el envase utiliza una envoltura decorativa o etiqueta, analice el [papel para etiquetas](/es/products/label-paper) y las superficies especiales por separado de la pared estructural. El material visual y el protector no siempre son la misma capa.
+
+## 3. Pruebe uniones, fondos y cierre repetido, no solo la barrera plana
+
+Muchas fallas aparecen en las interfaces y no en el centro de la hoja. Una pared resistente no compensa un fondo mal sellado, una unión lateral irregular o una tapa que permite la entrada de aire húmedo después de cada uso.
+
+Evalúe tres condiciones:
+
+1. **Envase sin abrir:** ¿Protege durante producción, almacén y distribución?
+2. **Primera apertura:** ¿Retirar la membrana o el inserto daña el borde o libera fibras?
+3. **Uso repetido:** ¿La tapa sigue cerrando de forma consistente después de varios ciclos en ambiente húmedo?
+
+Utilice penetración de colorante, vacío o caída de presión cuando sea adecuado, pero conecte el ensayo con envejecimiento real del producto. Almacene unidades llenas en condiciones normales y aceleradas de humedad, mida los cambios e inspeccione todas las uniones.
+
+Para productos usados en baños o cocinas, incluya manejo con manos húmedas, condensación y salpicaduras breves. Estas situaciones no equivalen a inmersión continua y deben especificarse por separado.
+
+## 4. Compruebe compresión, caída y estabilidad dimensional
+
+Un formato cilíndrico puede parecer rígido sobre una mesa y deformarse bajo carga, perder redondez con humedad elevada o abollarse durante paquetería. La deformación también puede alterar el ajuste de la tapa y, por tanto, el sello contra humedad.
+
+El plan de validación debería incluir:
+
+- compresión superior y apilamiento;
+- impacto lateral y resistencia del borde;
+- caída del envase lleno en varias orientaciones;
+- diámetro y redondez después del acondicionamiento;
+- retención de la tapa después del impacto;
+- vibración de pallet y simulación de transporte;
+- rendimiento al inicio y al final de la vida útil declarada.
+
+Apruebe diámetro, altura, estructura y peso de llenado reales. Un resultado obtenido con una muestra más pequeña o ligera no siempre se transfiere al tamaño comercial.
+
+Para presentación premium, la construcción puede combinar un núcleo rígido de cartón reciclado con una envoltura impresa o texturizada. Nuestras [soluciones para lujo y cosmética](/es/industries/luxury-cosmetics) muestran por qué estructura, papel decorativo y conversión deben evaluarse juntos.
+
+## 5. Apruebe impresión, recubrimiento y compatibilidad con el producto
+
+Los envases de belleza suelen necesitar colores intensos, recubrimientos táctiles, foil, relieve o una sensación natural. Estos acabados pueden modificar resistencia al roce, adhesión, olor y entrada de humedad.
+
+Solicite un prototipo impreso y convertido con los materiales previstos. Compruebe:
+
+- color sobre el papel real;
+- resistencia a rayado y roce después de llenado y transporte;
+- grietas de tinta o recubrimiento en bordes enrollados;
+- bloqueo entre unidades sometidas a presión o calor;
+- transferencia de olor al producto;
+- compatibilidad entre adhesivos, barrera y envoltura;
+- documentación química, de contacto o cosmética exigida en destino.
+
+No describa todo el envase como conforme porque un componente de papel tenga un certificado. La conformidad corresponde a la estructura terminada, al producto previsto y al mercado. El proveedor debe facilitar declaraciones y ensayos disponibles sin convertir una propiedad del material en una conclusión legal.
+
+## 6. Ejecute el envase en la línea real de llenado y cierre
+
+Un prototipo manual puede ocultar problemas que aparecen a velocidad industrial. Los botes de papel pueden comportarse de forma distinta a frascos plásticos o latas durante alimentación, llenado, control de polvo, sellado de membrana, colocación de tapa, codificación y encajado.
+
+El ensayo de línea debe registrar:
+
+- estabilidad de alimentación y orientación;
+- tolerancias dimensionales y atascos;
+- polvo o fibras sueltas en la zona de producto;
+- temperatura, presión y tiempo de sellado;
+- fuerza de cierre y consistencia de la tapa;
+- rozaduras a través de guías y transportadores;
+- tasa de rechazo y método de inspección;
+- tiempo de cambio desde el formato actual.
+
+Conserve muestras llenas del inicio, mitad y final del ensayo. Deben pasar a pruebas de vida útil, transporte y uso. Una ejecución exitosa con envases vacíos no es suficiente.
+
+Antes de ordenar volumen, consulte nuestra [biblioteca de materiales de papel](/es/materials) para separar elección de fibra, rendimiento superficial y conversión, y solicite muestras para el proceso previsto.
+
+## 7. Verifique la declaración de reciclaje en el mercado de destino
+
+Un alto contenido de papel puede apoyar una estrategia de fibra, pero el porcentaje por sí solo no demuestra reciclabilidad en todos los países. Influyen recogida, clasificación, aceptación de las plantas, separación de componentes y etiquetado local.
+
+Plantee cinco preguntas:
+
+1. ¿En qué flujo debe depositarse en cada mercado?
+2. ¿Debe retirarse primero la tapa, membrana o fondo?
+3. ¿Se ha ensayado el envase completo e impreso para repulpabilidad o clasificación?
+4. ¿Qué método, laboratorio y criterio respaldan la declaración?
+5. ¿La instrucción de eliminación coincide con regulación e infraestructura locales?
+
+Si es necesario separar piezas, compruebe si el consumidor puede hacerlo sin herramientas y sin instrucciones ambiguas. Registre el texto y arte finales como parte de la aprobación.
+
+La declaración más segura es específica y respaldada. “Predominantemente de papel, diseñado para el flujo de papel donde sea aceptado” puede ser más preciso que una afirmación mundial e incondicional. Las declaraciones legales y ambientales deben revisarse para cada mercado.
+
+## Lista para cotizar un envase cilíndrico de papel
+
+Envíe estos datos para que todos los proveedores evalúen el mismo requisito:
+
+- tipo de producto, composición y sensibilidad;
+- peso neto y proceso de llenado;
+- diámetro, altura y volumen objetivo;
+- vida útil y mercados de destino;
+- barreras de humedad, oxígeno, grasa, aroma y luz;
+- preferencias de cuerpo, fondos, tapa y membrana;
+- proceso de impresión, colores, acabados y cobertura;
+- apertura, evidencia de manipulación y recierre;
+- cantidad anual y cantidad por medida;
+- velocidad de línea y equipo de sellado;
+- ruta logística, patrón de pallet y ensayos;
+- declaraciones, informes y evidencia de reciclaje requeridos.
+
+## Qué cambia realmente con la noticia de esta semana
+
+El ensayo de Kneipp es relevante porque lleva el embalaje rígido de fibra a una categoría donde protección contra humedad y presentación premium deben coexistir. No elimina la necesidad de barreras ni de pruebas. Demuestra que los compradores pueden explorar estructuras con mayor contenido de papel más allá de la caja secundaria convencional, siempre que el sistema esté diseñado y validado en conjunto.
+
+La pregunta práctica no es “¿puede el papel sustituir este frasco plástico?”. Es: **¿qué estructura, barrera, cierre y evidencia pueden proteger este producto durante llenado, transporte, almacenamiento y uso repetido?**
+
+Para desarrollar un tubo, bote o envase rígido, [envíe a YOUNGSUN PAPER el producto, medida, cartón, acabado, cantidad y mercado](/es/contact?intent=quote&product=grey-board). Podemos organizar muestras estructurales y decorativas para impresión y conversión. La barrera y la conformidad final deben confirmarse con el convertidor y laboratorio seleccionados.
+
+## Preguntas frecuentes
+
+### ¿Puede un envase de papel proteger un polvo sensible a la humedad?
+
+Sí, cuando la estructura completa aporta barrera y sellado suficientes. La aprobación debe incluir envejecimiento con producto, uniones, cierre, transporte y aperturas repetidas, no solo una hoja plana.
+
+### ¿Un papel más grueso mejora automáticamente la barrera?
+
+No. Grosor y rigidez ayudan principalmente a la estructura. La protección depende de la capa barrera, uniones, fondos, cierre y condiciones de exposición.
+
+### ¿Un alto porcentaje de papel basta para decir que es reciclable?
+
+No. El envase completo e impreso debe evaluarse según recogida, clasificación y reciclaje de cada mercado, incluidas las instrucciones para separar componentes.
+
+### ¿Qué muestra debe aprobar el comprador antes de producir?
+
+Una muestra impresa, convertida y llenada en línea con cuerpo, barrera, fondos, tapa, tintas y adhesivos finales. Conviene conservar una muestra patrón firmada y el registro de ensayos.` ,
+    image: "/images/blog-articles/paper-can-packaging-moisture-barrier-buyer-tests.webp",
+    imageAlt: "Premium rigid paper cans for bath crystals with paper tube, lid, barrier-coated samples and a digital caliper on a packaging development table.",
+    imageAltEs: "Envases cilíndricos rígidos de papel para cristales de baño con tubo, tapa, muestras de barrera y calibre digital sobre una mesa de desarrollo.",
+    imageCaption: "Illustrative paper-can development scene. Barrier, seal, strength, line performance and recycling claims should be approved on the complete filled pack.",
+    imageCaptionEs: "Escena ilustrativa de desarrollo de envases cilíndricos. Barrera, cierre, resistencia, línea y declaraciones deben aprobarse sobre el envase lleno.",
+    tags: ["paper can packaging", "moisture barrier packaging", "rigid paper tube", "beauty packaging", "paperboard packaging", "buyer testing"],
+    tagsEs: ["envase cilíndrico de papel", "barrera contra humedad", "tubo rígido de papel", "embalaje cosmético", "cartón para envases", "pruebas de compra"],
+  },
+  {
     id: "transparent-paper-packaging-buyer-tests",
     title: "Transparent Paper Looks Ready to Replace Plastic—Until Buyers Ask These 7 Questions",
     titleEs: "El papel transparente parece listo para sustituir al plástico… hasta que el comprador hace estas 7 preguntas",

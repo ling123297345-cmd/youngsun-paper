@@ -449,6 +449,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "paper-can-packaging-moisture-barrier-buyer-tests": {
+    "title": "Envases cilíndricos de papel: 7 pruebas clave",
+    "description": "¿Evalúa envases cilíndricos de papel para polvos o cosmética? Pruebe barrera, cierre, resistencia, impresión, línea y reciclabilidad."
+  },
   "transparent-paper-packaging-buyer-tests": {
     "title": "Papel transparente: 7 pruebas para compradores",
     "description": "¿Evalúa papel transparente para envases? Compruebe claridad, barrera, sellado, impresión, maquinaria, contacto alimentario y reciclabilidad."

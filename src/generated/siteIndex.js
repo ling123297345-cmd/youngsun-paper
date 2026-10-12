@@ -352,14 +352,14 @@ export const spanishProductTaglineById = {
   "kraft-paper": "Papel kraft virgen de alta resistencia para embalaje industrial y bolsas — resistente y reciclable.",
   "duplex-board": "Cartón estucado con cara blanca y reverso gris para estuches impresos rentables.",
   "pe-coated-paper": "Papel laminado PE para barrera contra humedad y termosellado.",
-  "ckb": "Cartón estucado con reverso kraft de alta resistencia para bebidas, alimentos, congelados y estuches plegables exigentes.",
+  "ckb": "Cartón CKB con cara blanca estucada y reverso kraft resistente para estuches exigentes.",
   "woodfree-paper": "Papel offset sin estucar con buena opacidad para libros, cuadernos e impresión comercial.",
   "color-offset-paper": "Papel offset de color para formularios, inserciones, papelería y material promocional.",
   "lwc-paper": "Papel estucado ligero para revistas, catálogos, inserciones e impresión comercial de volumen.",
-  "ncr-paper": "Papel autocopiativo sin carbón para formularios y facturas — copia limpia sin manchas.",
-  "copy-paper": "Programa de papel de oficina en formatos A3, A4, A5, series B y medidas seleccionadas de EE. UU. para distribución y marca privada.",
-  "newsprint": "Papel prensa ligero y rentable para impresión rápida de periódicos, encartes publicitarios y publicaciones de gran tirada.",
-  "a4-copy-paper": "Gama específica de papel A4 de 210×297 mm para compradores que necesitan embalaje uniforme y listo para exportación.",
+  "ncr-paper": "Papel autocopiativo NCR para facturas, recibos y formularios de varias copias.",
+  "copy-paper": "Programa de papel para copiadora en múltiples formatos para distribución, instituciones y marca privada.",
+  "newsprint": "Papel prensa ligero y rentable para periódicos, encartes y publicaciones de gran tirada.",
+  "a4-copy-paper": "Papel A4 de 210×297 mm para distribuidores, oficinas e instituciones que compran por volumen.",
   "a4-thermal-paper": "Papel térmico tamaño A4 para impresión portátil — sin tinta ni tóner, solo calor.",
   "thermal-paper-roll": "Rollos de papel térmico para TPV, recibos e impresoras de fotos instantáneas.",
   "soft-touch-paper": "Papel con recubrimiento táctil aterciopelado — la sensación de lujo que invita a tocar.",
@@ -415,6 +415,10 @@ export const spanishProductSeoById = {
     "title": "Papel PE para vasos y envases alimentarios",
     "description": "Papel y cartón con recubrimiento PE de 12–30 gsm, a una o dos caras, para vasos, tarrinas y envases para llevar. Solicite bobinas o muestras."
   },
+  "ckb": {
+    "title": "Cartón CKB con reverso kraft para estuches",
+    "description": "Cartón CKB de 200–350 gsm con cara blanca estucada y reverso kraft para bebidas, congelados, calzado y cajas resistentes. Solicite muestras."
+  },
   "woodfree-paper": {
     "title": "Papel woodfree offset para libros e impresión",
     "description": "Papel woodfree offset de 60–120 gsm para libros, cuadernos, manuales, formularios y sobres. Disponible en hojas, bobinas y medidas personalizadas."
@@ -426,6 +430,22 @@ export const spanishProductSeoById = {
   "lwc-paper": {
     "title": "Papel LWC para revistas, catálogos e inserciones",
     "description": "Papel LWC estucado ligero de 35–70 gsm para revistas, catálogos, suplementos e impresión comercial. Solicite bobinas, medidas o muestras."
+  },
+  "ncr-paper": {
+    "title": "Papel NCR CB CFB y CF para formularios",
+    "description": "Papel NCR autocopiativo CB, CFB y CF de 50–60 gsm para facturas, recibos, contratos y formularios de 2 a 6 copias. Hojas y bobinas a medida."
+  },
+  "copy-paper": {
+    "title": "Papel para copiadora A3 A4 A5 y más formatos",
+    "description": "Papel para copiadora de 70, 75 y 80 gsm en A3, A4, A5, series B, K y tamaños seleccionados de EE. UU. para mayoristas y marca privada."
+  },
+  "newsprint": {
+    "title": "Papel prensa en bobinas para impresión coldset",
+    "description": "Papel prensa de 40–57 gsm en bobinas para periódicos, encartes, suplementos y publicaciones de gran tirada. Solicite ancho y formato personalizados."
+  },
+  "a4-copy-paper": {
+    "title": "Papel A4 para copiadora de 70 75 y 80 gsm",
+    "description": "Papel A4 de 210×297 mm en 70, 75 y 80 gsm para oficinas, escuelas, instituciones y distribuidores. Consulte cajas, marca privada y muestras."
   },
   "embossed-paper": {
     "title": "Papel gofrado para embalaje de lujo",

@@ -32,15 +32,16 @@ export default function ProductDetail() {
   );
 
   const tagline = isEs && productEs[id]?.tagline ? productEs[id].tagline : p.tagline;
+  const description = isEs && productEs[id]?.description ? productEs[id].description : p.description;
   const specs = isEs && productEs[id]?.specs ? productEs[id].specs : p.specs;
   const apps = isEs && productEs[id]?.applications ? productEs[id].applications : p.applications;
-  const variants = p.variants || [];
-  const features = p.features || [];
-  const customization = p.customization || [];
-  const commercial = p.commercial || null;
+  const variants = (isEs && productEs[id]?.variants ? productEs[id].variants : p.variants) || [];
+  const features = (isEs && productEs[id]?.features ? productEs[id].features : p.features) || [];
+  const customization = (isEs && productEs[id]?.customization ? productEs[id].customization : p.customization) || [];
+  const commercial = (isEs && productEs[id]?.commercial ? productEs[id].commercial : p.commercial) || null;
   const gallery = p.gallery || [];
   const optionGallery = p.optionGallery || [];
-  const quoteReqs = p.quoteReqs || null;
+  const quoteReqs = (isEs && productEs[id]?.quoteReqs ? productEs[id].quoteReqs : p.quoteReqs) || null;
   const category = productCategories.find((cat) => cat.id === p.category);
   const categoryPath = `/products/${p.category}`;
   const sourceCategory = location.state?.fromCategory;
@@ -73,7 +74,7 @@ export default function ProductDetail() {
 
         {/* Breadcrumb */}
         <nav className="product-breadcrumb" aria-label="Breadcrumb">
-          <Link to="/" style={{ color: "rgba(255,255,255,0.4)" }}>Home</Link>
+          <Link to="/" style={{ color: "rgba(255,255,255,0.4)" }}>{isEs ? "Inicio" : "Home"}</Link>
           <span style={{ color: "rgba(255,255,255,0.25)" }}>/</span>
           <Link to="/products" style={{ color: "rgba(255,255,255,0.4)" }}>{t("Products")}</Link>
           <span style={{ color: "rgba(255,255,255,0.25)" }}>/</span>
@@ -99,7 +100,7 @@ export default function ProductDetail() {
             {/* Quick Specs */}
             <div className="product-detail-specs" style={{ marginBottom: 24 }}>
               <h3 style={{ color: "var(--white)", fontSize: 17, marginBottom: 10, display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{ width: 4, height: 18, background: "var(--lime)", borderRadius: 2, display: "inline-block" }} /> Specifications
+                <span style={{ width: 4, height: 18, background: "var(--lime)", borderRadius: 2, display: "inline-block" }} /> {isEs ? "Especificaciones" : "Specifications"}
               </h3>
               <ul style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                 {specs.map((s, i) => (
@@ -113,7 +114,7 @@ export default function ProductDetail() {
             {/* Applications */}
             <div className="product-detail-applications" style={{ marginBottom: 24 }}>
               <h3 style={{ color: "var(--white)", fontSize: 17, marginBottom: 10, display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{ width: 4, height: 18, background: "var(--gold)", borderRadius: 2, display: "inline-block" }} /> Applications
+                <span style={{ width: 4, height: 18, background: "var(--gold)", borderRadius: 2, display: "inline-block" }} /> {isEs ? "Aplicaciones" : "Applications"}
               </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
                 {apps.map((a, i) => (
@@ -178,8 +179,8 @@ export default function ProductDetail() {
         {features.length > 0 && (
           <div style={{ marginTop: 56 }}>
             <div className="section-header" style={{ textAlign: "left", marginBottom: 24 }}>
-              <span className="section-label">Key Features</span>
-              <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>Why Choose {p.name}</h2>
+              <span className="section-label">{isEs ? "Características principales" : "Key Features"}</span>
+              <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Por qué elegir" : "Why Choose"} {p.name}</h2>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 14 }}>
               {features.map((f, i) => {
@@ -203,7 +204,7 @@ export default function ProductDetail() {
           {variants.length > 0 && (
             <div>
               <h3 style={{ color: "var(--white)", fontSize: 18, marginBottom: 14, display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{ width: 4, height: 18, background: "var(--lime)", borderRadius: 2, display: "inline-block" }} /> Available Variants
+                <span style={{ width: 4, height: 18, background: "var(--lime)", borderRadius: 2, display: "inline-block" }} /> {isEs ? "Variantes disponibles" : "Available Variants"}
               </h3>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                 {variants.map((v, i) => (
@@ -217,7 +218,7 @@ export default function ProductDetail() {
           {customization.length > 0 && (
             <div>
               <h3 style={{ color: "var(--white)", fontSize: 18, marginBottom: 14, display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{ width: 4, height: 18, background: "var(--gold)", borderRadius: 2, display: "inline-block" }} /> Customization Options
+                <span style={{ width: 4, height: 18, background: "var(--gold)", borderRadius: 2, display: "inline-block" }} /> {isEs ? "Opciones de personalización" : "Customization Options"}
               </h3>
               <ul style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                 {customization.map((c, i) => (
@@ -233,8 +234,8 @@ export default function ProductDetail() {
         {/* ===== QUOTATION REQUIREMENTS ===== */}
         {quoteReqs && quoteReqs.length > 0 && (
           <div style={{ marginTop: 28, background: "rgba(143,188,90,0.04)", border: "1px solid rgba(143,188,90,0.12)", borderRadius: 12, padding: "24px 28px" }}>
-            <h3 style={{ color: "var(--lime)", fontSize: 17, marginBottom: 6 }}>📋 What to Prepare for a Quote</h3>
-            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 12, marginBottom: 14 }}>Having these details ready helps us give you the most accurate pricing quickly.</p>
+            <h3 style={{ color: "var(--lime)", fontSize: 17, marginBottom: 6 }}>📋 {isEs ? "Qué preparar para una cotización" : "What to Prepare for a Quote"}</h3>
+            <p style={{ color: "rgba(255,255,255,0.4)", fontSize: 12, marginBottom: 14 }}>{isEs ? "Tener estos datos preparados nos ayuda a ofrecerle una cotización más precisa y rápida." : "Having these details ready helps us give you the most accurate pricing quickly."}</p>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 8 }}>
               {quoteReqs.map((req, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 14px", background: "rgba(255,255,255,0.03)", borderRadius: 8, border: "1px solid rgba(255,255,255,0.05)" }}>
@@ -249,14 +250,14 @@ export default function ProductDetail() {
         {/* ===== COMMERCIAL TERMS ===== */}
         {commercial && (
           <div style={{ marginTop: 28, background: "rgba(200,146,63,0.05)", border: "1px solid rgba(200,146,63,0.12)", borderRadius: 12, padding: "24px 28px" }}>
-            <h3 style={{ color: "var(--gold)", fontSize: 17, marginBottom: 16 }}>📦 Commercial Terms</h3>
+            <h3 style={{ color: "var(--gold)", fontSize: 17, marginBottom: 16 }}>📦 {isEs ? "Condiciones comerciales" : "Commercial Terms"}</h3>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 16 }}>
               {[
                 { label: "MOQ", value: commercial.moq, icon: "📦" },
-                { label: "Lead Time", value: commercial.leadTime, icon: "⏱️" },
-                { label: "Samples", value: commercial.samples, icon: "🧪" },
-                { label: "Certification", value: commercial.certification, icon: "✅" },
-                { label: "Container Loading", value: commercial.containerLoading, icon: "🚢" },
+                { label: isEs ? "Plazo de entrega" : "Lead Time", value: commercial.leadTime, icon: "⏱️" },
+                { label: isEs ? "Muestras" : "Samples", value: commercial.samples, icon: "🧪" },
+                { label: isEs ? "Certificación" : "Certification", value: commercial.certification, icon: "✅" },
+                { label: isEs ? "Carga de contenedor" : "Container Loading", value: commercial.containerLoading, icon: "🚢" },
               ].filter((item) => item.value).map((item, i) => (
                 <div key={i} style={{ textAlign: "center", padding: "14px 10px", background: "rgba(200,146,63,0.04)", borderRadius: 8, border: "1px solid rgba(200,146,63,0.08)" }}>
                   <span style={{ fontSize: 22, display: "block", marginBottom: 6 }}>{item.icon}</span>
@@ -271,10 +272,10 @@ export default function ProductDetail() {
         {/* ===== FULL DESCRIPTION ===== */}
         <div style={{ marginTop: 48 }}>
           <div className="section-header" style={{ textAlign: "left", marginBottom: 20 }}>
-            <span className="section-label">Product Overview</span>
-            <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>About {p.name}</h2>
+            <span className="section-label">{isEs ? "Descripción del producto" : "Product Overview"}</span>
+            <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Acerca de" : "About"} {p.name}</h2>
           </div>
-          <p style={{ color: "rgba(255,255,255,0.55)", lineHeight: 1.85, fontSize: 15 }}>{p.description}</p>
+          <p style={{ color: "rgba(255,255,255,0.55)", lineHeight: 1.85, fontSize: 15 }}>{description}</p>
         </div>
 
         <ProductIndustryLinks
@@ -291,6 +292,7 @@ export default function ProductDetail() {
           <Gallery
             images={gallery}
             productName={p.name}
+            isEs={isEs}
             title={isEs ? (p.galleryTitleEs || p.galleryTitle) : p.galleryTitle}
             intro={isEs ? (p.galleryIntroEs || p.galleryIntro) : p.galleryIntro}
           />
@@ -494,7 +496,7 @@ function OptionsGallery({ items, isEs }) {
   );
 }
 
-function Gallery({ images, productName, title, intro }) {
+function Gallery({ images, productName, title, intro, isEs }) {
   const [lightbox, setLightbox] = useState(null);
   const isSingleImage = images.length === 1;
 
@@ -507,7 +509,7 @@ function Gallery({ images, productName, title, intro }) {
 
   return (
     <div className={`product-gallery${isSingleImage ? " product-gallery--single" : ""}`}>
-      {!isSingleImage && <h3 className="product-gallery-title">{title || `Product Gallery — ${productName}`}</h3>}
+      {!isSingleImage && <h3 className="product-gallery-title">{title || `${isEs ? "Galería de productos" : "Product Gallery"} — ${productName}`}</h3>}
       {!isSingleImage && intro && <p className="product-gallery-intro">{intro}</p>}
       <div className="product-gallery-grid">
         {images.map((img, i) => (
@@ -526,10 +528,10 @@ function Gallery({ images, productName, title, intro }) {
         ))}
         {isSingleImage && (
           <div className="product-gallery-feature-copy">
-            <span>APPLICATION VIEW</span>
-            <h3>{title || `Product Gallery — ${productName}`}</h3>
+            <span>{isEs ? "VISTA DE APLICACIÓN" : "APPLICATION VIEW"}</span>
+            <h3>{title || `${isEs ? "Galería de productos" : "Product Gallery"} — ${productName}`}</h3>
             {intro && <p>{intro}</p>}
-            <button type="button" onClick={() => setLightbox(0)}>View full image <span aria-hidden="true">↗</span></button>
+            <button type="button" onClick={() => setLightbox(0)}>{isEs ? "Ver imagen completa" : "View full image"} <span aria-hidden="true">↗</span></button>
           </div>
         )}
       </div>

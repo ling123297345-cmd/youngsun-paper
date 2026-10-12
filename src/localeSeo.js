@@ -3,6 +3,7 @@ import {
   productNameById,
   spanishBlogSeoById,
   spanishIndustryMetaById,
+  spanishProductSeoById,
   spanishProductTaglineById,
 } from "./generated/siteIndex.js";
 
@@ -143,6 +144,7 @@ export function getSpanishSeoMeta(pathname, fallback = {}) {
   if (/^\/products\/[^/]+$/.test(path)) {
     const id = path.split("/").pop();
     if (categoryMeta[id]) return categoryMeta[id];
+    if (spanishProductSeoById[id]) return spanishProductSeoById[id];
     const productName = productNameById[id];
     const translatedTagline = spanishProductTaglineById[id];
     if (productName && translatedTagline) {

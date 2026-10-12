@@ -46,6 +46,15 @@ const spanishProductTaglineById = Object.fromEntries(
     .map((id) => [id, productEs[id].tagline]),
 );
 
+const spanishProductSeoById = Object.fromEntries(
+  Object.keys(productNameById)
+    .filter((id) => productEs[id]?.seoTitle && productEs[id]?.metaDescription)
+    .map((id) => [id, {
+      title: productEs[id].seoTitle,
+      description: productEs[id].metaDescription,
+    }]),
+);
+
 const spanishIndustryMetaById = Object.fromEntries(
   industryChannels
     .filter((industry) => industryDetailContent[industry.id]?.overview?.es)
@@ -105,6 +114,8 @@ export const productSearchIndex = ${JSON.stringify(productSearchIndex, null, 2)}
 export const productNameById = ${JSON.stringify(productNameById, null, 2)};
 
 export const spanishProductTaglineById = ${JSON.stringify(spanishProductTaglineById, null, 2)};
+
+export const spanishProductSeoById = ${JSON.stringify(spanishProductSeoById, null, 2)};
 
 export const spanishIndustryMetaById = ${JSON.stringify(spanishIndustryMetaById, null, 2)};
 

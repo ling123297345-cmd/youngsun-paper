@@ -928,6 +928,9 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Base paper or board grade", "Substrate and PE coating weight", "Single- or double-side coating", "Roll width or sheet size", "Quantity", "Application and destination port"],
+    seoTitle: "PE Coated Paper Supplier for Paper Cups",
+    metaDescription: "PE coated paper and board with 12–30 gsm single- or double-side coating for cups, tubs and takeaway packs. Request substrates, roll widths or samples.",
     keywords: ["PE coated paper", "polyethylene coated paper", "paper cup stock", "PE coated board", "heat seal paper", "food-grade coated paper"],
     image: "/images/products/package-board/pe-coated-paper-main.webp",
     gallery: [
@@ -2096,6 +2099,9 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Pattern or texture reference", "Paper or board grammage", "Embossing depth", "Sheet or reel size", "Printing and finishing process", "Quantity and destination port"],
+    seoTitle: "Embossed Paper Supplier for Luxury Packaging",
+    metaDescription: "Embossed paper in 80–400 gsm with linen, felt, canvas, woodgrain or custom textures for boxes, covers and hang tags. Request patterns and samples.",
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
     image: "/images/products/fancy-paper/embossed-paper-main.webp",
     gallery: [
@@ -2279,6 +2285,9 @@ export const subProducts = {
       "Adhesive compatibility consultation",
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    quoteReqs: ["Label or hang-tag application", "C1S, C2S or metallized grade", "Grammage and finish", "Printing and adhesive system", "Reel width or sheet size", "Quantity and destination port"],
+    seoTitle: "Label Paper Supplier for Labels and Hang Tags",
+    metaDescription: "C1S, C2S and metallized label paper in 60–250 gsm for pressure-sensitive labels, wet-glue labels and hang tags. Request reels, sheets or samples.",
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
     image: "/images/products/fancy-paper/label-paper-main.webp",
     gallery: [
@@ -2926,6 +2935,18 @@ export const subProducts = {
       "Tea and coffee packaging inserts",
     ],
     certifications: ["FSC", "SGS"],
+    variants: ["Super White Absorbent Paper", "Natural White Absorbent Paper", "Sheet and Reel Supply", "Die-Cut Strips and Coasters"],
+    features: [
+      "Fast Liquid Absorption — Porous cotton-fibre structure supports fragrance and beverage applications.",
+      "Multiple Thickness Options — Seven standard thicknesses from 0.4 to 1.6 mm for different rigidity and absorption needs.",
+      "Tactile Natural Surface — Felt-like texture supports premium presentation and embossing.",
+      "Conversion Ready — Suitable for die-cutting, embossing, debossing and logo printing.",
+    ],
+    customization: ["Thickness and color tone", "Sheet or reel format", "Custom die-cut shape", "Embossing or debossing", "Logo printing"],
+    quoteReqs: ["End use and liquid type", "Thickness or target grammage", "Color tone", "Sheet, reel or die-cut shape", "Printing or embossing requirement", "Quantity and destination port"],
+    seoTitle: "Absorbent Paper Supplier for Perfume Testers",
+    metaDescription: "Cotton-fibre absorbent paper in 0.4–1.6 mm for perfume test strips, beverage coasters, fragrance cards and inserts. Request sheets or die-cut samples.",
+    keywords: ["absorbent paper", "perfume blotter paper", "fragrance test strip paper", "cotton blotting paper", "beverage coaster paper", "absorbent card stock"],
     image: "/images/products/fancy-paper/absorbent-paper-main.webp",
     images: [],
     processingNote:

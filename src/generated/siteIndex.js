@@ -264,7 +264,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "absorbent-paper",
     "name": "Absorbent Paper",
-    "text": "absorbent paper high-performance absorbent cotton paper for perfume test strips, beverage coasters, and creative packaging — fast absorption, natural texture.",
+    "text": "absorbent paper high-performance absorbent cotton paper for perfume test strips, beverage coasters, and creative packaging — fast absorption, natural texture. absorbent paper perfume blotter paper fragrance test strip paper cotton blotting paper beverage coaster paper absorbent card stock",
     "href": "/products/absorbent-paper"
   },
   {
@@ -380,6 +380,25 @@ export const spanishProductTaglineById = {
   "blue-core-puzzle-board": "Cartón con núcleo azul para la producción de rompecabezas.",
   "metallized-laminated-grey-board": "Cartón laminado dorado, plateado y blanco para bases de pastel, postres y embalaje de salmón.",
   "foam-laminated-grey-board": "Cartón gris acolchado para carpetas de certificados y cubiertas de libros de tapa dura."
+};
+
+export const spanishProductSeoById = {
+  "pe-coated-paper": {
+    "title": "Papel PE para vasos y envases alimentarios",
+    "description": "Papel y cartón con recubrimiento PE de 12–30 gsm, a una o dos caras, para vasos, tarrinas y envases para llevar. Solicite bobinas o muestras."
+  },
+  "embossed-paper": {
+    "title": "Papel gofrado para embalaje de lujo",
+    "description": "Papel gofrado de 80–400 gsm con texturas de lino, fieltro, lienzo, madera o diseño personalizado para cajas, cubiertas y etiquetas. Solicite muestras."
+  },
+  "label-paper": {
+    "title": "Papel para etiquetas y tags colgantes",
+    "description": "Papel C1S, C2S y metalizado de 60–250 gsm para etiquetas autoadhesivas, etiquetas con cola y tags colgantes. Solicite bobinas, hojas o muestras."
+  },
+  "absorbent-paper": {
+    "title": "Papel absorbente para tiras de perfume",
+    "description": "Papel absorbente de fibra de algodón de 0.4–1.6 mm para tiras de perfume, posavasos, tarjetas aromáticas e insertos. Solicite hojas o muestras cortadas."
+  }
 };
 
 export const spanishIndustryMetaById = {

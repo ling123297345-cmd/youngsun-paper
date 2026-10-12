@@ -383,6 +383,26 @@ export const spanishProductTaglineById = {
 };
 
 export const spanishProductSeoById = {
+  "grey-board": {
+    "title": "Cartón gris para cajas rígidas y encuadernación",
+    "description": "Cartón gris reciclado con certificación FSC, disponible en hojas, bobinas y paneles a medida para cajas rígidas, libros, carpetas y rompecabezas."
+  },
+  "black-paper": {
+    "title": "Papel negro para embalaje de lujo y etiquetas",
+    "description": "Papel y cartulina negra con certificación FSC para cajas de lujo, etiquetas, bolsas, tarjetas y acabados con foil, serigrafía, UV o gofrado."
+  },
+  "folding-box-board": {
+    "title": "Cartón FBB para cajas plegables impresas",
+    "description": "Cartón FBB e ivory board C1S con certificación FSC para cajas de cosmética, farmacia, alimentos y productos minoristas. Solicite hojas, bobinas o muestras."
+  },
+  "c2s-art-board": {
+    "title": "Cartulina estucada C2S para impresión premium",
+    "description": "Cartulina C2S estucada por ambas caras y con certificación FSC para tarjetas, cubiertas, etiquetas, catálogos y embalaje impreso premium."
+  },
+  "kraft-paper": {
+    "title": "Papel kraft para bolsas, sacos y embalaje",
+    "description": "Papel kraft natural, blanco y reciclado con certificación FSC para bolsas, sacos, envoltura y conversión industrial. Disponible en bobinas y hojas."
+  },
   "pe-coated-paper": {
     "title": "Papel PE para vasos y envases alimentarios",
     "description": "Papel y cartón con recubrimiento PE de 12–30 gsm, a una o dos caras, para vasos, tarrinas y envases para llevar. Solicite bobinas o muestras."

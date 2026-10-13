@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "paperboard-coated-paper-price-increase-buyer-response",
+    "name": "Two Paper Price Hikes Just Landed—Should Packaging Buyers Order Early?",
+    "nameEs": "Acaban de llegar dos aumentos de papel… ¿conviene adelantar la compra?",
+    "text": "two paper price hikes just landed—should packaging buyers order early? acaban de llegar dos aumentos de papel… ¿conviene adelantar la compra? a european producer has announced new increases for paperboard and woodfree coated sheets. that is a useful sourcing signal, but not a reason to place a rushed order. buyers should first separate mill announcements from their own landed-cost exposure. un productor europeo anunció nuevos aumentos para cartón y papel estucado sin pasta mecánica. es una señal útil para compras, pero no justifica ordenar con prisa: primero hay que medir la exposición real del costo puesto en destino. market & sourcing",
+    "href": "/blog/paperboard-coated-paper-price-increase-buyer-response"
+  },
+  {
+    "type": "blog",
     "id": "paper-can-packaging-moisture-barrier-buyer-tests",
     "name": "Paper Cans Can Handle Moisture-Sensitive Products—But Only After These 7 Buyer Tests",
     "nameEs": "Los envases cilíndricos de papel pueden proteger productos sensibles a la humedad… después de estas 7 pruebas",

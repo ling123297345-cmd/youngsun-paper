@@ -37,13 +37,13 @@ export const industries = [
       }
     ],
     solutions: {
-      en: "YOUNGSUN supplies a complete range of packaging boards engineered for every packaging format. Our grey board provides rigid box structure at competitive pricing. Our duplex board and folding box board deliver the print surface and fold quality needed for retail cartons. Our kraft paper offers natural strength for bags and wraps. All products are available with FSC certification and can be supplied in custom sheet sizes or reel formats.",
-      es: "YOUNGSUN suministra una gama completa de cartones para embalaje diseñados para cada formato. Nuestro cartón gris proporciona estructura rígida a precios competitivos. Nuestro cartón dúplex y folding box board ofrecen la superficie de impresión y calidad de plegado necesarias para cajas minoristas. Nuestro papel kraft ofrece resistencia natural para bolsas y envolturas. Todos los productos están disponibles con certificación FSC."
+      en: "YOUNGSUN supplies packaging boards for rigid boxes, retail cartons, bags and wraps. Grey board provides structural support, while duplex board, folding box board and kraft grades address different printing, folding and strength requirements. Custom formats and FSC-certified supply are confirmed by the selected grade, mill and order documents.",
+      es: "YOUNGSUN suministra cartones para cajas rígidas, estuches, bolsas y envolturas. El cartón gris aporta estructura, mientras el cartón dúplex, el folding box board y los grados kraft responden a distintas necesidades de impresión, plegado y resistencia. Los formatos a medida y el suministro con declaración FSC se confirman según el grado, la fábrica y los documentos del pedido."
     },
     recommendedProducts: ["grey-board", "duplex-board", "folding-box-board", "c2s-art-board", "kraft-paper", "black-paper", "color-card-paper", "gold-silver-card"],
     faqs: [
       { q: { en: "What board is best for rigid luxury boxes?", es: "¿Qué cartón es mejor para cajas rígidas de lujo?" }, a: { en: "Grey board (1.5mm–3.0mm) is the industry standard for rigid boxes. It provides excellent stiffness and is typically wrapped with printed paper, fancy paper, or fabric for the finished look.", es: "El cartón gris (1.5mm–3.0mm) es el estándar para cajas rígidas. Proporciona excelente rigidez y generalmente se envuelve con papel impreso, papel fancy o tela para el acabado final." } },
-      { q: { en: "Do you supply FSC-certified packaging board?", es: "¿Suministran cartón con certificación FSC?" }, a: { en: "Yes. All YOUNGSUN packaging boards are available with FSC certification. FSC 100%, FSC Mix, and FSC Recycled labels are available depending on the product grade.", es: "Sí. Todos los cartones de embalaje YOUNGSUN están disponibles con certificación FSC. Las etiquetas FSC 100%, FSC Mix y FSC Reciclado están disponibles según el grado del producto." } },
+      { q: { en: "Do you supply FSC-certified packaging board?", es: "¿Suministran cartón con certificación FSC?" }, a: { en: "FSC-certified supply is available for qualifying grades and orders. We confirm the applicable FSC claim, producing mill and supporting sales or delivery documents before purchase.", es: "El suministro con declaración FSC está disponible para los grados y pedidos que correspondan. Confirmamos la declaración aplicable, la fábrica productora y los documentos de venta o entrega antes de la compra." } },
       { q: { en: "What is the minimum order quantity?", es: "¿Cuál es la cantidad mínima de pedido?" }, a: { en: "Standard MOQ is 1 metric ton. For custom sizes or colors, minimums may vary. Contact us for specific product MOQs.", es: "El MOQ estándar es de 1 tonelada métrica. Para tamaños o colores personalizados, los mínimos pueden variar. Contáctenos para MOQs específicos." } }
     ]
   },
@@ -79,8 +79,8 @@ export const industries = [
       }
     ],
     solutions: {
-      en: "Our food packaging portfolio includes cupstock board (160–330 gsm) for hot and cold drink cups, PFAS-free greaseproof paper (35–60 gsm, KIT 6+) for wraps and liners, PE coated paper for moisture barrier applications, and silicone coated paper for non-stick baking and release applications. All products are available with FSC certification and food-contact compliance documentation for your target market.",
-      es: "Nuestra cartera de embalaje alimentario incluye cartón para vasos (160–330 gsm), papel antigrasa libre de PFAS (35–60 gsm, KIT 6+), papel recubierto PE para barrera de humedad y papel siliconado para aplicaciones antiadherentes. Todos los productos están disponibles con certificación FSC y documentación de cumplimiento para contacto alimentario."
+      en: "Our food-packaging portfolio includes cupstock, greaseproof paper, PE-coated paper and silicone-coated grades for cups, wraps, liners, baking and release applications. Barrier performance, FSC claims and food-contact documents are confirmed for the exact material, intended use and destination market rather than applied to the whole category.",
+      es: "Nuestra cartera de embalaje alimentario incluye cartón para vasos, papel antigrasa, papel recubierto con PE y grados siliconados para vasos, envolturas, liners, horneado y aplicaciones de liberación. La barrera, las declaraciones FSC y los documentos de contacto alimentario se confirman para el material, el uso y el mercado exactos, no para toda la categoría."
     },
     recommendedProducts: ["cup-paper", "greaseproof-paper", "pe-coated-paper", "silicone-coated-paper", "kraft-paper", "mg-paper"],
     faqs: [
@@ -196,13 +196,13 @@ export const industries = [
       }
     ],
     solutions: {
-      en: "Our industrial portfolio includes kraft paper for protective packaging and interleaving, grey board for structural components, PE coated paper for moisture barriers, and specialty grades for electrical and thermal applications. With 50,000 tons of warehouse stock and partnerships with major Chinese mills, we provide reliable, large-volume supply with consistent quality.",
-      es: "Nuestra cartera industrial incluye papel kraft para embalaje protector e intercalado, cartón gris para componentes estructurales, papel recubierto PE para barreras de humedad y grados especiales para aplicaciones eléctricas y térmicas. Con 50,000 toneladas de stock en almacén y alianzas con los principales molinos chinos, proporcionamos suministro confiable a gran volumen con calidad consistente."
+      en: "Our industrial portfolio includes kraft paper for protective packaging and interleaving, grey board for structural components, PE-coated paper for moisture barriers, and specialty grades selected for the intended converting process. Supply format, production plan and lead time are confirmed by product and order rather than presented as one general stock figure.",
+      es: "Nuestra cartera industrial incluye papel kraft para protección e intercalado, cartón gris para componentes estructurales, papel recubierto con PE para barreras de humedad y grados especiales seleccionados según el proceso de conversión. El formato, el plan de producción y el plazo se confirman por producto y pedido, en lugar de presentarse como una sola cifra general de stock."
     },
     recommendedProducts: ["kraft-paper", "grey-board", "pe-coated-paper", "mg-paper", "silicone-coated-paper"],
     faqs: [
       { q: { en: "What is the maximum roll width available?", es: "¿Cuál es el ancho máximo de bobina disponible?" }, a: { en: "Roll widths vary by product grade. Standard widths range from 300mm to 2400mm. Custom slitting to your exact specification is available. Contact us with your requirements.", es: "Los anchos de bobina varían según el grado del producto. Los anchos estándar varían de 300mm a 2400mm. Corte personalizado a su especificación exacta está disponible. Contáctenos con sus requisitos." } },
-      { q: { en: "Do you offer just-in-time delivery?", es: "¿Ofrecen entrega just-in-time?" }, a: { en: "Yes. For qualified long-term contracts, we can arrange scheduled deliveries aligned with your production planning. Our warehouse stock of 50,000 tons enables flexible fulfillment.", es: "Sí. Para contratos calificados a largo plazo, podemos organizar entregas programadas alineadas con su planificación de producción. Nuestro stock de 50,000 toneladas permite cumplimiento flexible." } }
+      { q: { en: "Do you offer scheduled delivery?", es: "¿Ofrecen entregas programadas?" }, a: { en: "Scheduled deliveries can be discussed for qualified repeat orders. Availability, production timing and shipping plans are confirmed for the exact grade, quantity and destination.", es: "Las entregas programadas pueden acordarse para pedidos recurrentes calificados. La disponibilidad, producción y envío se confirman según el grado, la cantidad y el destino." } }
     ]
   },
   {

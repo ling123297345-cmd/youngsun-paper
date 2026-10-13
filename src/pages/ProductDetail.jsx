@@ -4,10 +4,11 @@ import { useLang } from "../i18n.jsx";
 import { productEs } from "../productEs.js";
 import { productCategories, subProducts, contactInfo } from "../data.js";
 import { getProductIndustryLinks } from "../productIndustryLinks.js";
+import { getProductGuideLinks } from "../productGuideLinks.js";
 import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
 import ProductSchema from "../ProductSchema.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
-import { ArrowLeft, ArrowRight, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, PackageCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, PackageCheck } from "lucide-react";
 
 export default function ProductDetail() {
   const { t, lang } = useLang(); const isEs = lang === "es";
@@ -39,6 +40,7 @@ export default function ProductDetail() {
   const features = (isEs && productEs[id]?.features ? productEs[id].features : p.features) || [];
   const customization = (isEs && productEs[id]?.customization ? productEs[id].customization : p.customization) || [];
   const commercial = (isEs && productEs[id]?.commercial ? productEs[id].commercial : p.commercial) || null;
+  const certifications = (isEs && productEs[id]?.certifications ? productEs[id].certifications : p.certifications) || [];
   const gallery = p.gallery || [];
   const optionGallery = p.optionGallery || [];
   const quoteReqs = (isEs && productEs[id]?.quoteReqs ? productEs[id].quoteReqs : p.quoteReqs) || null;
@@ -55,6 +57,7 @@ export default function ProductDetail() {
   const nextProduct = productIndex < categoryProducts.length - 1 ? categoryProducts[productIndex + 1] : null;
   const hasTextureLibrary = ["soft-touch-paper", "leather-paper", "pearlescent-paper", "embossed-paper"].includes(id);
   const relatedIndustries = getProductIndustryLinks(id);
+  const relatedGuides = getProductGuideLinks(id, isEs ? "es" : "en");
 
   const seoTitle = p.seoTitle || `${p.name} Supplier in China`;
   const seoDesc = p.metaDescription || `Compare ${p.name.toLowerCase()} specifications, applications, available formats and export options from YOUNGSUN PAPER. Request samples or a quotation.`;
@@ -128,7 +131,7 @@ export default function ProductDetail() {
             {/* Certifications */}
             <div className="product-detail-certifications" style={{ marginBottom: 28 }}>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-                {p.certifications.map((c, i) => (
+                {certifications.map((c, i) => (
                   <span key={i} style={{ background: "rgba(200,146,63,0.12)", color: "var(--gold)", padding: "5px 12px", fontSize: 11, fontWeight: 700, borderRadius: 4 }}>
                     ✓ {c}
                   </span>
@@ -284,6 +287,8 @@ export default function ProductDetail() {
           isEs={isEs}
         />
 
+        <ProductBuyerGuides guides={relatedGuides} isEs={isEs} />
+
         {/* ===== MATERIAL + SURFACE OPTIONS ===== */}
         {optionGallery.length > 0 && <OptionsGallery items={optionGallery} isEs={isEs} />}
 
@@ -363,6 +368,39 @@ function ProductIndustryLinks({ industries, productName, isEs }) {
               <h3>{industry.title[isEs ? "es" : "en"]}</h3>
               <p>{industry.summary[isEs ? "es" : "en"]}</p>
               <span>{isEs ? "Explorar esta industria" : "Explore this industry"}<ArrowRight size={16} aria-hidden="true" /></span>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ProductBuyerGuides({ guides, isEs }) {
+  if (!guides.length) return null;
+
+  return (
+    <section className="product-industry-links product-buyer-guides" aria-labelledby="product-buyer-guides-title">
+      <div className="product-industry-links-heading">
+        <div>
+          <span className="section-label">{isEs ? "GUÍA DE COMPRA RELACIONADA" : "RELATED BUYER GUIDE"}</span>
+          <h2 id="product-buyer-guides-title">{isEs ? "Evalúe antes de especificar" : "Evaluate Before You Specify"}</h2>
+        </div>
+        <p>{isEs
+          ? "Use esta guía para comparar los requisitos del material y preparar una consulta técnica más precisa."
+          : "Use this guide to compare material requirements and prepare a more precise technical inquiry."}</p>
+      </div>
+
+      <div className={`product-industry-links-grid product-industry-links-grid--${guides.length}`}>
+        {guides.map((guide) => (
+          <Link className="product-industry-link" to={guide.href} key={guide.id}>
+            <div className="product-industry-link-media">
+              <img src={guide.image} alt={guide.titleText} loading="lazy" />
+            </div>
+            <div className="product-industry-link-copy">
+              <h3>{guide.titleText}</h3>
+              <p>{guide.excerptText}</p>
+              <span><BookOpen size={15} aria-hidden="true" />{isEs ? "Leer la guía" : "Read buyer guide"}<ArrowRight size={16} aria-hidden="true" /></span>
             </div>
           </Link>
         ))}

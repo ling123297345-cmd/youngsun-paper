@@ -172,11 +172,11 @@ const exhibitions = [
 const copy = {
   en: {
     legacyLabel: "About YOUNGSUN",
-    legacyTitle: "Your Paper Supply Partner Since 2002",
-    legacyBody: "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) is headquartered in Dongguan, Guangdong Province, 50 km from Shenzhen port. Our 20,000 m2 workshop operates dedicated grey board and black paper production lines, supported by an experienced manufacturing and export team.",
-    legacyBody2: "We also work closely with established Chinese paper mills, including APP, Sun Paper, Nine Dragons, Liansheng and Huatai, to source printing, packaging and specialty paper grades. From samples and custom specifications to quality documentation and export coordination, buyers work with one responsive team.",
+    legacyTitle: "Paper manufacturing. Global supply.",
+    legacyBody: "YOUNGSUN PAPER brings together two clear operating roles. Dongguan Banyan Material Co., Ltd. supports paper manufacturing, cutting, customization and quality control from Dongguan, Guangdong. YOUNGSUN New Material Co., Ltd. coordinates international business and order management from Hong Kong.",
+    legacyBody2: "We also work closely with established Chinese paper mills, including APP, Sun Paper, Nine Dragons, Liansheng and Huatai, to source printing, packaging, specialty and food-paper grades. From samples and custom specifications to order documents and export coordination, buyers work with one connected team.",
     legacyVision: "To be the most reliable, transparent and sustainability-driven paper supply partner for businesses worldwide.",
-    legacyStats: ["Countries served", "Paper grades", "Warehouse stock", "Years experience"],
+    legacyStats: ["Core product categories", "FSC CoC entities", "Verified exhibitions", "Exhibition markets"],
     heroTitle: <>Paper expertise.<br /><em>Global relationships.</em></>,
     heroBody: "From Dongguan to the world's major paper and packaging markets, YOUNGSUN connects manufacturing capability, mill resources and export service in one dependable supply partnership.",
     explore: "Explore our exhibition record",
@@ -184,8 +184,8 @@ const copy = {
     heroCaption: "EXPOGRAFICA Guadalajara 2026",
     stats: ["Years in paper", "Export countries", "Trade shows", "International markets"],
     storyTitle: "One partner from paper source to finished order.",
-    storyBody: "YOUNGSUN Group has worked in the paper industry since 2002. We focus on grey board, black paper and specialty paper, while coordinating wider sourcing through long-term relationships with established Chinese mills.",
-    storyBody2: "For overseas buyers, that means fewer handoffs: product matching, sample preparation, custom specifications, quality documentation and export coordination are handled by one experienced team.",
+    storyBody: "YOUNGSUN Group combines a Dongguan manufacturing and converting base with international business coordination in Hong Kong. Dongguan Banyan Material Co., Ltd. supports production, cutting, customization and quality control, while YOUNGSUN New Material Co., Ltd. coordinates international sales and order management.",
+    storyBody2: "We focus on grey board, black paper and specialty paper, while sourcing wider printing, packaging and food-paper grades through established mill relationships. For overseas buyers, product matching, samples, specifications, documentation and export coordination are handled through one connected team.",
     storyLink: "Explore our materials",
     pillarsTitle: "Built around the way international buyers work",
     pillarsBody: "Clear specifications, real samples and responsive communication come before the order.",
@@ -215,11 +215,11 @@ const copy = {
   },
   es: {
     legacyLabel: "Sobre YOUNGSUN",
-    legacyTitle: "Su socio papelero desde 2002",
-    legacyBody: "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) tiene su sede en Dongguan, provincia de Guangdong, a 50 km del puerto de Shenzhen. Nuestro taller de 20.000 m2 opera lineas dedicadas de carton gris y papel negro con un equipo experimentado de produccion y exportacion.",
-    legacyBody2: "Tambien colaboramos con fabricantes chinos establecidos, entre ellos APP, Sun Paper, Nine Dragons, Liansheng y Huatai, para suministrar papeles de impresion, embalaje y especialidad. Desde muestras y especificaciones hasta documentacion de calidad y exportacion, el comprador trabaja con un solo equipo.",
+    legacyTitle: "Fabricación de papel. Suministro global.",
+    legacyBody: "YOUNGSUN PAPER integra dos funciones operativas claras. Dongguan Banyan Material Co., Ltd. apoya la fabricación, el corte, la personalización y el control de calidad desde Dongguan, Guangdong. YOUNGSUN New Material Co., Ltd. coordina el negocio internacional y la gestión de pedidos desde Hong Kong.",
+    legacyBody2: "También colaboramos con fabricantes chinos establecidos, entre ellos APP, Sun Paper, Nine Dragons, Liansheng y Huatai, para suministrar papeles de impresión, embalaje, especialidad y uso alimentario. Desde muestras y especificaciones hasta documentos y exportación, el comprador trabaja con un equipo conectado.",
     legacyVision: "Ser el socio de suministro de papel mas fiable, transparente y orientado a la sostenibilidad para empresas de todo el mundo.",
-    legacyStats: ["Paises atendidos", "Tipos de papel", "Stock en almacen", "Anos de experiencia"],
+    legacyStats: ["Categorías principales", "Entidades FSC CoC", "Ferias verificadas", "Mercados de exposición"],
     heroTitle: <>Experiencia en papel.<br /><em>Relaciones globales.</em></>,
     heroBody: "Desde Dongguan hasta los principales mercados mundiales de papel y embalaje, YOUNGSUN integra capacidad de suministro, recursos de fabricas y servicio de exportacion.",
     explore: "Ver nuestro historial de ferias",
@@ -227,8 +227,8 @@ const copy = {
     heroCaption: "EXPOGRAFICA Guadalajara 2026",
     stats: ["Anos en papel", "Paises de exportacion", "Ferias comerciales", "Mercados internacionales"],
     storyTitle: "Un solo socio desde el origen del papel hasta el pedido final.",
-    storyBody: "YOUNGSUN Group trabaja en la industria papelera desde 2002. Nos enfocamos en carton gris, papel negro y papeles especiales, junto con una amplia red de fabricas chinas establecidas.",
-    storyBody2: "Para compradores internacionales, esto significa menos intermediarios: seleccion de producto, muestras, especificaciones, documentos de calidad y coordinacion de exportacion con un solo equipo.",
+    storyBody: "YOUNGSUN Group integra una base de fabricación y conversión en Dongguan con coordinación comercial internacional en Hong Kong. Dongguan Banyan Material Co., Ltd. apoya la producción, el corte, la personalización y el control de calidad, mientras YOUNGSUN New Material Co., Ltd. coordina las ventas internacionales y la gestión de pedidos.",
+    storyBody2: "Nos enfocamos en cartón gris, papel negro y papeles especiales, y ampliamos la oferta de papeles de impresión, embalaje y uso alimentario mediante relaciones con fabricantes establecidos. El comprador internacional trabaja con un equipo conectado para producto, muestras, especificaciones, documentos y exportación.",
     storyLink: "Explorar materiales",
     pillarsTitle: "Pensado para la forma de trabajar de los compradores internacionales",
     pillarsBody: "Especificaciones claras, muestras reales y comunicacion rapida antes del pedido.",
@@ -376,10 +376,10 @@ export default function About() {
   const closeDialog = () => setDialog(null);
 
   const legacyMetrics = [
-    [60, "+", text.legacyStats[0], Globe2],
-    [20, "+", text.legacyStats[1], FileText],
-    [50000, "T", text.legacyStats[2], PackageCheck],
-    [24, "+", text.legacyStats[3], CalendarDays],
+    [4, "", text.legacyStats[0], PackageCheck],
+    [2, "", text.legacyStats[1], FileText],
+    [exhibitions.length, "", text.legacyStats[2], CalendarDays],
+    [9, "", text.legacyStats[3], Globe2],
   ];
 
   const pillarIcons = [Handshake, ShieldCheck, Ship];
@@ -388,7 +388,7 @@ export default function About() {
     <main className="about-page">
       <PageMeta
         title="About YOUNGSUN PAPER | Global Paper Supply & Trade Shows"
-        description="Meet YOUNGSUN PAPER, a Dongguan-based paper supplier serving international buyers since 2002. Explore our supply capabilities and verified exhibition archive from 2023 to 2026."
+        description="Meet YOUNGSUN PAPER, combining Dongguan manufacturing and converting support with Hong Kong international business coordination. Explore our supply capabilities and verified exhibition archive."
         path="/about"
       />
 
@@ -444,7 +444,7 @@ export default function About() {
         <div className="about-shell about-story-layout">
           <figure className="about-story-image">
             <img src="/images/factory/factory-photo-1.jpg" alt="YOUNGSUN paper production team and factory equipment" loading="lazy" />
-            <figcaption><span>Dongguan, China</span><b>Paper production and supply coordination since 2002</b></figcaption>
+            <figcaption><span>Dongguan, China</span><b>Paper manufacturing, converting and supply coordination</b></figcaption>
           </figure>
           <div className="about-story-copy">
             <h2>{text.storyTitle}</h2>

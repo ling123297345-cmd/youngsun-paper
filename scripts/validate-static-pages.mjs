@@ -11,6 +11,7 @@ import { blogPosts } from '../src/blogData.js';
 import { hasSpanishBlogPost, localizeBlogPost } from '../src/blogLocale.js';
 import { extractBlogFaqs, getBlogToc, parseBlogContent } from '../src/blogContent.js';
 import { getProductIndustryLinks } from '../src/productIndustryLinks.js';
+import { getProductGuideLinks } from '../src/productGuideLinks.js';
 import { subProducts } from '../src/data.js';
 
 const siteUrl = 'https://youngsunpaper.com';
@@ -240,6 +241,10 @@ for (const pagePath of pages) {
       .map((industry) => localizedPath(`/industries/${industry.id}`, spanishPage ? 'es' : 'en'));
     checks.productIndustryLinks = expectedIndustryLinks.length > 0
       && expectedIndustryLinks.every((href) => html.includes(`href="${href}"`));
+    const expectedGuideLinks = getProductGuideLinks(productId, spanishPage ? 'es' : 'en')
+      .map((guide) => localizedPath(guide.href, spanishPage ? 'es' : 'en'));
+    checks.productBuyerGuideLinks = expectedGuideLinks
+      .every((href) => html.includes(`href="${href}"`));
   }
 
   if (isBlogPost) {

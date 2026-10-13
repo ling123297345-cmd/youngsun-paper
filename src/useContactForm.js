@@ -77,11 +77,14 @@ export function useContactForm(initialValues) {
         email: form.email,
         company: form.company || "(not provided)",
         phone: form.phone || "(not provided)",
+        country: form.country || "(not provided)",
         product: form.product || "(not specified)",
+        application: form.application || "(not provided)",
         gsm: form.gsm || "",
         size: form.size || "",
         quantity: form.quantity || "",
         destination: form.destination || "",
+        certification_requirement: form.certification || "(not specified)",
         message: form.message,
         sample_policy: isSampleRequest
           ? "YOUNGSUN covers standard sample costs; the customer pays courier charges."

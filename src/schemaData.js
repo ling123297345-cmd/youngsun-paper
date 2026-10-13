@@ -60,7 +60,6 @@ export function createOrganizationSchema() {
       "Paper and paperboard manufacturing, converting and export supply for international packaging, printing and industrial buyers.",
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/images/logo.png`,
-    foundingDate: "2002",
     email: "Alice@yspaper.com",
     telephone: "+86 13713459656",
     address: {
@@ -72,6 +71,16 @@ export function createOrganizationSchema() {
       addressCountry: "CN",
     },
     areaServed: ["Asia", "Europe", "North America", "South America", "Africa", "Australia"],
+    department: {
+      "@type": "Organization",
+      name: "YOUNGSUN New Material Co., Ltd.",
+      description: "Hong Kong entity coordinating international sales and order management for YOUNGSUN PAPER.",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Hong Kong",
+        addressCountry: "HK",
+      },
+    },
     knowsAbout: [
       "Grey Board",
       "Black Paper",

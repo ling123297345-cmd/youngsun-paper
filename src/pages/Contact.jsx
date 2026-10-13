@@ -6,7 +6,7 @@ import { contactInfo, productCategories, subProducts, localizeFaqItems } from ".
 import { useContactForm } from "../useContactForm.js";
 import { PageMeta, FAQSchema } from "../SEO.jsx";
 
-const FORM_INITIAL = { inquiryType: "quote", name: "", email: "", company: "", phone: "", product: "", gsm: "", size: "", quantity: "", destination: "", message: "" };
+const FORM_INITIAL = { inquiryType: "quote", name: "", email: "", company: "", phone: "", country: "", product: "", application: "", gsm: "", size: "", quantity: "", destination: "", certification: "", message: "" };
 
 const PRODUCT_GROUPS = productCategories.map((category) => ({
   id: category.id,
@@ -18,6 +18,7 @@ const PRODUCT_GROUPS = productCategories.map((category) => ({
 
 export default function Contact() {
   const { t, lang } = useLang();
+  const isEs = lang === "es";
   const [searchParams] = useSearchParams();
   const requestedIntent = searchParams.get("intent") === "samples" ? "samples" : "quote";
   const requestedProduct = searchParams.get("product") || "";
@@ -114,14 +115,19 @@ export default function Contact() {
               <div className="form-group"><label htmlFor="email">{t("Email Address *")}</label><input type="email" id="email" name="email" value={form.email} onChange={handleChange} required autoComplete="email" /></div>
               <div className="form-group"><label htmlFor="phone">{t("Phone / WhatsApp")}</label><input type="text" id="phone" name="phone" value={form.phone} onChange={handleChange} autoComplete="tel" /></div>
             </div>
+            <div className="contact-form-row">
+              <div className="form-group"><label htmlFor="country">{isEs ? "País / Región *" : "Country / Region *"}</label><input type="text" id="country" name="country" value={form.country} onChange={handleChange} required autoComplete="country-name" placeholder={isEs ? "p. ej., México" : "e.g. Mexico"} /></div>
+              <div className="form-group"><label htmlFor="application">{isEs ? "Aplicación final *" : "Application / End Use *"}</label><input type="text" id="application" name="application" value={form.application} onChange={handleChange} required placeholder={isEs ? "p. ej., cajas rígidas" : "e.g. rigid gift boxes"} /></div>
+            </div>
             <div className="form-group"><label htmlFor="product">{t("Product Interest")} *</label><select id="product" name="product" value={form.product} onChange={handleChange} required><option value="">Select a paper product</option>{PRODUCT_GROUPS.map((group) => <optgroup key={group.id} label={group.title}>{group.products.map((product) => <option key={product.id} value={product.id}>{product.name}</option>)}</optgroup>)}<option value="other">Other / Not Sure</option></select></div>
-            <div className="form-group"><label htmlFor="quantity">Estimated Quantity</label><input type="text" id="quantity" name="quantity" value={form.quantity} onChange={handleChange} placeholder="e.g. 1 metric ton or 1 x 20ft container" /></div>
+            <div className="form-group"><label htmlFor="quantity">{isEs ? "Cantidad estimada *" : "Estimated Quantity *"}</label><input type="text" id="quantity" name="quantity" value={form.quantity} onChange={handleChange} required placeholder={isEs ? "p. ej., 1 tonelada o 1 contenedor de 20 pies" : "e.g. 1 metric ton or 1 x 20ft container"} /></div>
             <details className="contact-advanced">
               <summary>Additional specifications <span>Optional</span><ChevronDown aria-hidden="true" size={17} /></summary>
               <div className="contact-advanced-fields">
                 <div className="form-group"><label htmlFor="gsm">GSM / Thickness</label><input type="text" id="gsm" name="gsm" value={form.gsm} onChange={handleChange} placeholder="e.g. 300 gsm or 1.5 mm" /></div>
                 <div className="form-group"><label htmlFor="size">Sheet / Reel Size</label><input type="text" id="size" name="size" value={form.size} onChange={handleChange} placeholder="e.g. 787 x 1092 mm" /></div>
                 <div className="form-group contact-advanced-wide"><label htmlFor="destination">Destination Country / Port</label><input type="text" id="destination" name="destination" value={form.destination} onChange={handleChange} placeholder="e.g. Hamburg, Germany" /></div>
+                <div className="form-group contact-advanced-wide"><label htmlFor="certification">{isEs ? "Certificación o cumplimiento requerido" : "Required Certification / Compliance"}</label><input type="text" id="certification" name="certification" value={form.certification} onChange={handleChange} placeholder={isEs ? "p. ej., declaración FSC o documento de contacto alimentario" : "e.g. FSC claim or food-contact documentation"} /></div>
               </div>
             </details>
             <div className="form-group"><label htmlFor="message">{t("Your Message *")}</label><textarea id="message" name="message" value={form.message} onChange={handleChange} required placeholder={isSampleRequest ? "Tell us the application and what you need to evaluate." : "Tell us your requirements, application and target delivery date."} /></div>

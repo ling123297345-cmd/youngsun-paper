@@ -60,11 +60,11 @@ export default function Home() {
             <Link to="/contact?intent=samples" className="btn btn-outline">{isEs ? "Solicitar muestras" : "Request Paper Samples"}</Link>
           </div>
           <div className="hero-eco-badges">
-            <span className="hero-eco-badge"><span className="badge-dot" /> {t("FSC® Certified")}</span>
-            <span className="hero-eco-badge"><span className="badge-dot" /> {t("SGS Certified")}</span>
-            <span className="hero-eco-badge"><span className="badge-dot" /> {t("20+ Years Experience")}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "Entidades con FSC® CoC" : "FSC® CoC entities"}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "Documentos por grado" : "Grade-specific documents"}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "4 categorías de papel" : "4 paper categories"}</span>
             <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "GSM y tamaños personalizados" : "Custom GSM & Sizes"}</span>
-            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "60+ mercados de exportación" : "60+ Export Markets"}</span>
+            <span className="hero-eco-badge"><span className="badge-dot" /> {isEs ? "Coordinación global de pedidos" : "Global order coordination"}</span>
           </div>
         </div>
       </section>
@@ -108,19 +108,20 @@ export default function Home() {
 /* ===== HOME SECTION COMPONENTS ===== */
 
 function AboutHome() {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const isEs = lang === "es";
   return (
     <section className="section about-section" id="about">
       <div className="about-grid container">
         <div className="about-text">
           <span className="section-label">{t("About YOUNGSUN")}</span>
-          <h2>{t("Your Paper Supply Partner Since 2002")}</h2>
-          <p>Headquartered in Dongguan, China, Youngsun Group is a leading manufacturer and exporter with over 20 years of industry experience. We specialize in high-quality grey board, black cardboard, and specialty paper, offering extensive expertise in custom paper solutions tailored for luxury brands and high-end packaging needs.</p>
-          <p>Beyond our core manufacturing, we maintain close strategic partnerships with major domestic mills — including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai — allowing us to provide a comprehensive, one-stop sourcing experience for products such as FBB GC1, Art Paper, and Woodfree Paper.</p>
-          <Link to="/about" style={{ color: "var(--gold)", fontWeight: 700, fontSize: 14, marginTop: 16, display: "inline-block" }}>Read Full Story →</Link>
+          <h2>{isEs ? "Fabricación en Dongguan. Coordinación global." : "Manufacturing in Dongguan. Global coordination."}</h2>
+          <p>{isEs ? "YOUNGSUN Group integra fabricación, conversión y control de calidad en Dongguan con ventas internacionales y gestión de pedidos en Hong Kong. Nos especializamos en cartón gris, papel negro y papeles especiales para embalaje, impresión y conversión." : "YOUNGSUN Group combines manufacturing, converting and quality control in Dongguan with international sales and order management in Hong Kong. We specialize in grey board, black paper and specialty paper for packaging, printing and converting."}</p>
+          <p>{isEs ? "También trabajamos con fabricantes chinos establecidos — APP, Sun Paper, Nine Dragons, Liansheng y Huatai — para ampliar la oferta de FBB, papel estucado, woodfree y otros grados. Cada recomendación se basa en la aplicación, especificación y documentación que requiere el comprador." : "We also work with established Chinese mills — APP, Sun Paper, Nine Dragons, Liansheng and Huatai — to extend our supply across FBB, art paper, woodfree paper and other grades. Each recommendation is matched to the buyer's application, specification and document requirements."}</p>
+          <Link to="/about" style={{ color: "var(--gold)", fontWeight: 700, fontSize: 14, marginTop: 16, display: "inline-block" }}>{isEs ? "Conocer YOUNGSUN" : "Read our company profile"} →</Link>
         </div>
         <div className="about-stats">
-          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/about-youngsun-factory-photo-card.webp" alt="YOUNGSUN paper workshop" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>20,000m² Workshop</span></div>
+          <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/about-youngsun-factory-photo-card.webp" alt="YOUNGSUN paper workshop" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>{isEs ? "Base de fabricación en Dongguan" : "Dongguan Manufacturing Base"}</span></div>
           <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/news-paperboard-supply-card.webp" alt="Paperboard supply stock" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Paperboard Supply</span></div>
           <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/process-lamination-coating-line-01-card.webp" alt="Paper coating and lamination line" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Coating & Lamination</span></div>
           <div className="stat-card" style={{ overflow: "hidden", padding: 0, aspectRatio: "1/1" }}><img src="/images/factory/processing-slitting-cutting-card.webp" alt="Paper slitting and converting equipment" width="800" height="450" loading="lazy" decoding="async" style={{ width: "100%", height: "100%", objectFit: "cover" }} /><span style={{ position: "absolute", bottom: 0, left: 0, right: 0, background: "linear-gradient(transparent, rgba(0,0,0,0.7))", color: "#fff", padding: "20px 12px 10px", fontSize: 12, fontWeight: 700 }}>Slitting & Converting</span></div>

@@ -54,7 +54,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "grey-board",
     "name": "Grey Board",
-    "text": "grey board fsc-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging. grey board grey chipboard recycled greyboard rigid box board bookbinding board puzzle board",
+    "text": "grey board recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging, with fsc-certified supply available by order. grey board grey chipboard recycled greyboard rigid box board bookbinding board puzzle board",
     "href": "/products/grey-board"
   },
   {
@@ -344,7 +344,7 @@ export const productNameById = {
 };
 
 export const spanishProductTaglineById = {
-  "grey-board": "Cartón gris reciclado de alta densidad para embalaje rígido, encuadernación y papelería — resistencia estructural rentable.",
+  "grey-board": "Cartón gris reciclado para embalaje rígido, encuadernación y papelería, con suministro certificado FSC disponible según pedido.",
   "black-paper": "Papel negro teñido en masa con color uniforme — sin blanqueamiento en bordes, sin transferencia de color.",
   "color-card-paper": "Cartulina de color uniforme para packaging, etiquetas, papelería e impresión creativa.",
   "folding-box-board": "Cartón multicapa con liner blanco brillante — para estuches farmacéuticos, cosméticos y alimentarios.",
@@ -369,11 +369,11 @@ export const spanishProductTaglineById = {
   "gold-silver-card": "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
   "label-paper": "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
   "color-tissue-paper": "Papel seda de color ligero y translúcido para envolver regalos, proteger prendas y crear experiencias de desempaque de marca.",
-  "tracing-paper": "Papel translúcido, liso y dimensionalmente estable — revela lo que hay debajo.",
-  "cup-paper": "Cartón para vasos con recubrimiento PE — apto para alimentos, rígido, optimizado para conversión.",
-  "greaseproof-paper": "Papel antigrasa de alta densidad — sin recubrimiento, solo ingeniería de fibra pura.",
+  "tracing-paper": "Papel translúcido para dibujo técnico, capas gráficas, etiquetas y detalles de embalaje.",
+  "cup-paper": "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
+  "greaseproof-paper": "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
   "mg-paper": "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
-  "silicone-coated-paper": "Papel antiadherente con silicona — liberación limpia en cada uso.",
+  "silicone-coated-paper": "Papel siliconado de liberación para liners, procesos industriales y aplicaciones alimentarias debidamente especificadas.",
   "absorbent-paper": "Papel absorbente de algodón de alto rendimiento — absorción rápida, textura natural.",
   "color-laminated-grey-board": "Cartón gris revestido con papel de color para cajas de regalo, tapas y papelería.",
   "woodgrain-laminated-grey-board": "Papel efecto madera laminado sobre cartón gris para cajas y aplicaciones decorativas.",
@@ -385,7 +385,7 @@ export const spanishProductTaglineById = {
 export const spanishProductSeoById = {
   "grey-board": {
     "title": "Cartón gris para cajas rígidas y encuadernación",
-    "description": "Cartón gris reciclado con certificación FSC, disponible en hojas, bobinas y paneles a medida para cajas rígidas, libros, carpetas y rompecabezas."
+    "description": "Cartón gris reciclado de 0.5–4.0 mm y aproximadamente 300–2650 gsm para cajas rígidas, encuadernación y embalaje. MOQ desde 1 tonelada."
   },
   "black-paper": {
     "title": "Papel negro para embalaje de lujo y etiquetas",
@@ -455,6 +455,26 @@ export const spanishProductSeoById = {
     "title": "Papel para etiquetas y tags colgantes",
     "description": "Papel C1S, C2S y metalizado de 60–250 gsm para etiquetas autoadhesivas, etiquetas con cola y tags colgantes. Solicite bobinas, hojas o muestras."
   },
+  "tracing-paper": {
+    "title": "Papel vegetal translúcido de 50 a 230 gsm",
+    "description": "Papel vegetal translúcido de 50–230 gsm para dibujo, etiquetas, inserciones, invitaciones y packaging. Solicite hojas, medidas y muestras."
+  },
+  "cup-paper": {
+    "title": "Cartón cupstock para vasos y envases alimentarios",
+    "description": "Cartón cupstock de 160–330 gsm para vasos y envases alimentarios. Disponible como base sin recubrir o con coordinación de PE; solicite bobinas y muestras."
+  },
+  "greaseproof-paper": {
+    "title": "Papel antigrasa blanco y natural para alimentos",
+    "description": "Papel antigrasa blanco y natural de 35–60 gsm para bakery, hamburguesas, sándwiches, bolsas y forros. Solicite hojas, bobinas y muestras."
+  },
+  "mg-paper": {
+    "title": "Papel kraft blanco MG de 23 a 80 gsm",
+    "description": "Papel kraft blanco MG de 23–80 gsm con cara brillante para impresión y reverso apto para encolado. Hojas, resmas y bobinas jumbo disponibles."
+  },
+  "silicone-coated-paper": {
+    "title": "Papel siliconado para liners y liberación",
+    "description": "Papel siliconado de 40–120 gsm, a una o dos caras, para etiquetas, cintas, procesos industriales y grados alimentarios documentados. Solicite muestras."
+  },
   "absorbent-paper": {
     "title": "Papel absorbente para tiras de perfume",
     "description": "Papel absorbente de fibra de algodón de 0.4–1.6 mm para tiras de perfume, posavasos, tarjetas aromáticas e insertos. Solicite hojas o muestras cortadas."
@@ -489,6 +509,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "paperboard-coated-paper-price-increase-buyer-response": {
+    "title": "Aumentos del papel: ¿conviene comprar antes?",
+    "description": "Suben el cartón y el papel estucado. Use esta lista de 7 pasos para revisar cotizaciones, inventario, plazos y alternativas de grado."
+  },
   "paper-can-packaging-moisture-barrier-buyer-tests": {
     "title": "Envases cilíndricos de papel: 7 pruebas clave",
     "description": "¿Evalúa envases cilíndricos de papel para polvos o cosmética? Pruebe barrera, cierre, resistencia, impresión, línea y reciclabilidad."
@@ -512,8 +536,8 @@ export const homeFeaturedProducts = [
     "id": "grey-board",
     "name": "Grey Board",
     "category": "package-board",
-    "tagline": "FSC-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging.",
-    "taglineEs": "Cartón gris reciclado de alta densidad para embalaje rígido, encuadernación y papelería — resistencia estructural rentable.",
+    "tagline": "Recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging, with FSC-certified supply available by order.",
+    "taglineEs": "Cartón gris reciclado para embalaje rígido, encuadernación y papelería, con suministro certificado FSC disponible según pedido.",
     "image": "/images/products/package-board/grey-board-main.webp"
   },
   {
@@ -553,8 +577,8 @@ export const homeFeaturedProducts = [
     "name": "Cup Paper",
     "category": "food-packaging",
     "tagline": "Food-grade cupstock base board for paper cups, food containers and PE-coated packaging.",
-    "taglineEs": "Cartón para vasos con recubrimiento PE — apto para alimentos, rígido, optimizado para conversión.",
-    "image": "/images/products/food-packaging/cup-paper-main.webp"
+    "taglineEs": "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
+    "image": "/images/products/food-packaging/gallery/cup-paper-photo-02.jpg"
   }
 ];
 

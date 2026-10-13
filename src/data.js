@@ -12,7 +12,7 @@ export const siteConfig = {
   legalName: "Dongguan Banyan Material Co., Ltd.",
   tagline: "Sustainable Paper, Global Reach",
   description:
-    "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) supplies premium paper and board to manufacturers, printers, converters, and brands worldwide. Founded in 2002 in Dongguan, Guangdong — 50km from Shenzhen port — with a 20,000m² workshop, 220+ workers, and 50,000 tons of warehouse stock. All paper is FSC and SGS certified. We serve 60+ countries with 36,000+ tons exported annually.",
+    "YOUNGSUN PAPER combines paper and paperboard manufacturing, converting, mill sourcing and export coordination for packaging, printing, specialty and food-paper buyers. Dongguan Banyan Material Co., Ltd. supports manufacturing and converting in Dongguan, while YOUNGSUN New Material Co., Ltd. coordinates international business in Hong Kong. FSC claims and supporting documents are confirmed for the exact grade and order.",
   email: "Alice@yspaper.com",
   phone: "+86 13713459656",
   whatsapp: "+86 13713459656",
@@ -99,14 +99,16 @@ export const subProducts = {
     id: "grey-board",
     name: "Grey Board",
     category: "package-board",
-    tagline: "FSC-certified recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging.",
+    tagline: "Recycled grey board for rigid boxes, bookbinding, stationery, puzzles and industrial packaging, with FSC-certified supply available by order.",
     description:
-      "YOUNGSUN Grey Board is made from 100% post-consumer recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, reels, custom-cut panels and laminated structures for rigid box, bookbinding and stationery production. The board features a working thickness range of 0.5–4.0 mm (300–3000 gsm in sheet form, 250–600 gsm in reel form), with stock sizes of 787×1092 mm and 889×1194 mm and maximum sheet dimensions up to 1600×3000 mm. The natural grey uncoated surface provides excellent adhesion for laminating, wrapping, and gluing. For enhanced surface appearance, buyers can choose laminated variants with coated white, uncoated white, colored, kraft, black, gold, silver or specialty facing papers bonded to the grey board base according to the required look and converting process. Common applications include rigid gift boxes, magnetic closure boxes, hardcover books, lever arch files, puzzles, game boards, photo albums, and packaging inserts. Custom grammage, sheet dimensions, panel cutting, die-cutting, and export pallet packing are all supported.",
+      "YOUNGSUN Grey Board is made from recovered paper and designed for applications that require dependable thickness, rigidity and converting performance. It is available in sheets, custom-cut panels and laminated structures for rigid box, bookbinding and stationery production. The confirmed working range is 0.5–4.0 mm and approximately 300–2650 gsm, with common sheet sizes of 787×1092 mm and 889×1194 mm and large-sheet dimensions from 600×600 mm to 1600×3000 mm. The natural grey uncoated surface supports laminating, wrapping and gluing. For enhanced surface appearance, buyers can choose laminated variants with white, colored, kraft, black, gold, silver or specialty facing papers according to the required look and converting process. Common applications include rigid gift boxes, hardcover books, calendars, folders, storage boxes, photo albums and structural packaging panels. Custom sheet dimensions, cut-to-size panels, die-cutting, grooving, lamination and export packing can be confirmed against the order specification.",
     specs: [
-      "Thickness: 0.5 mm – 4.0 mm (500 – 4000 gsm equivalent)",
+      "Thickness: 0.5–4.0 mm",
+      "Basis weight: approximately 300–2650 gsm",
       "Color: Natural grey / Custom tint available",
       "Surface: Smooth both sides, uncoated",
-      "Format: Sheets (standard & custom sizes) or reels",
+      "Standard sheets: 787×1092 mm and 889×1194 mm",
+      "Large sheets: 600×600 mm to 1600×3000 mm",
       "Moisture: 8% ± 2%",
       "Fiber: 100% recycled post-consumer fiber",
     ],
@@ -118,7 +120,7 @@ export const subProducts = {
       "Screen-printed signage and display boards",
       "Archival and conservation mounting boards",
     ],
-    certifications: ["FSC Certified"],
+    certifications: ["FSC-certified supply available when the applicable FSC claim is confirmed on order documents"],
     variants: [
       "Single Layer Grey Board",
       "Laminated Grey Board",
@@ -139,10 +141,10 @@ export const subProducts = {
       "Single-side or laminated surface options",
       "Export pallet packing",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "1 metric ton", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC-certified supply available when the FSC claim is confirmed on the order documents" },
     quoteReqs: ["Grammage or thickness", "Sheet or reel size", "Quantity", "Application", "Destination port", "Cutting requirements"],
     seoTitle: "Grey Board Manufacturer for Rigid Boxes",
-    metaDescription: "FSC-certified recycled grey board in sheets, reels and custom-cut panels for rigid boxes, bookbinding, files and packaging.",
+    metaDescription: "Recycled grey board in 0.5–4.0 mm and approximately 300–2650 gsm for rigid boxes, bookbinding and packaging. MOQ from 1 metric ton.",
     keywords: ["grey board", "grey chipboard", "recycled greyboard", "rigid box board", "bookbinding board", "puzzle board"],
     image: "/images/products/package-board/grey-board-main.webp",
     optionGallery: [
@@ -2406,14 +2408,13 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Translucent tracing paper for luxury packaging, printing, drawing, invitations and decorative applications.",
     description:
-      "YOUNGSUN Tracing Paper combines controlled transparency (approximately 56%–73% depending on grammage) with a smooth, clean surface for printing, drawing, and premium packaging applications. Available from 50–180 gsm across eleven common weight points (50, 60, 70, 80, 90, 100, 110, 130, 150, 170, and 180 gsm), the paper is supplied in sheets, reels, and custom sizes in its natural translucent white color. The controlled transparency creates layered visual effects while maintaining readability and structural integrity. The smooth surface is suitable for printing, drawing, hot stamping, and decorative converting, adding a refined translucent effect to luxury packaging, book and brochure inserts, and invitations. Applications extend to envelopes, architectural drawing, garment patterns, hang tags, and decorative printing. Custom grammage, transparency specification, sheet or reel supply, size, and printing/hot stamping coordination are all supported.",
+      "YOUNGSUN Tracing Paper combines translucency, a smooth surface and dimensional stability for technical drawing, printed overlays, tags and premium packaging details. The confirmed brochure range includes 50, 60, 80, 90, 110, 150, 170, 220 and 230 gsm, allowing buyers to select lightweight overlay papers or heavier translucent cards. It is supplied mainly in sheets and custom sizes, while other colors and formats are confirmed by grade and quantity. Buyers should specify grammage, size, printing method, converting process and end use so the appropriate sample and production format can be checked before quotation.",
     specs: [
-      "Grammage: 45 – 200 gsm",
-      "Translucency: 50–70% light transmission",
-      "Surface: Smooth, sized for ink and pencil",
-      "Strength: High tensile, tear-resistant",
-      "Format: Sheets (standard & custom), rolls",
-      "Acid-free: pH neutral, archival grades available",
+      "Reference grammages: 50, 60, 80, 90, 110, 150, 170, 220 and 230 gsm",
+      "Surface: Smooth and translucent",
+      "Primary format: Sheets and custom-cut sizes",
+      "Additional colors: Subject to confirmation",
+      "Printing and converting: Confirm by grammage and process",
     ],
     applications: [
       "Architectural and engineering tracing overlays",
@@ -2423,7 +2424,7 @@ export const subProducts = {
       "Art and illustration — marker and ink drawing",
       "Wedding invitation overlays and belly bands",
     ],
-    certifications: ["FSC Mix", "ISO 9001"],
+    certifications: ["FSC status confirmed by the applicable claim on sales or delivery documents"],
     variants: [
       "Standard Tracing Paper",
       "Heavyweight Tracing Paper",
@@ -2441,7 +2442,7 @@ export const subProducts = {
       "Printing and hot stamping coordination",
       "Custom packing",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "Confirm by grammage, size and format", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed by the applicable claim on sales or delivery documents" },
     quoteReqs: ["Grammage","Sheet or roll size","Quantity","Transparency requirement","Application","Destination port"],
     seoTitle: "Tracing Paper Supplier for Drawing and Design",
     metaDescription: "Translucent tracing paper for drawing, overlays, invitations, envelopes and creative printing, available in multiple grammages, sheets and reels. Request samples.",
@@ -2516,12 +2517,11 @@ export const subProducts = {
     description:
       "YOUNGSUN Cupstock Board is a virgin-fibre paperboard developed specifically for cup making and food packaging conversion. Available from 160–330 gsm across twelve common weight points (160, 170, 190, 210, 230, 240, 250, 260, 280, 300, 310, and 330 gsm), the board offers a clean, uncoated printing surface with reliable forming performance for cup sidewalls and food container converting. It is compatible with both single-side and double-side PE coating for moisture and liquid barrier requirements. The virgin-fibre base is suitable for food packaging applications subject to required compliance documentation. Key applications include hot drink cups, cold drink cups, food containers, ice cream cups, and takeaway packaging. Custom grammage, sheet or reel supply, PE coating coordination, size, and packing are supported.",
     specs: [
-      "Substrate: Bleached kraft / White board, 180–350 gsm",
-      "PE coating: 1PE (cold cup) or 2PE (hot cup), 15–25 gsm per side",
-      "Heat-seal temperature: 120–150°C",
-      "Water resistance: ≥ 24 hours at 95°C (hot cup grade)",
-      "Format: Reels, slit to converting width",
-      "Food-grade: FDA 21 CFR 176.170, EU 1935/2004, GB 4806.8",
+      "Reference base-board grammage: 160–330 gsm",
+      "Fiber: Bleached virgin-fiber base",
+      "Options: Uncoated cupstock base or PE-coated specification by order",
+      "Format: Reels, sheets and custom converting widths",
+      "Food-contact documentation: Confirmed for the exact grade and order",
     ],
     applications: [
       "Hot drink cups — coffee, tea, hot chocolate",
@@ -2531,7 +2531,7 @@ export const subProducts = {
       "Portion cups for sauces and condiments",
       "Sampling cups for promotions and events",
     ],
-    certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
+    certifications: ["Food-contact and FSC documentation confirmed for the exact grade and order"],
     variants: [
       "Uncoated Cupstock Board",
       "PE-Coated Cupstock (subject to order)",
@@ -2549,12 +2549,12 @@ export const subProducts = {
       "Custom size",
       "Custom packing",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and food-contact documentation are confirmed for the exact grade and order" },
     quoteReqs: ["Grammage","PE coating (single/double side)","Roll width","Quantity","Food safety certification needed","Destination port"],
     seoTitle: "Cupstock Board Supplier for Paper Cups",
     metaDescription: "Food-grade cupstock board with PE coating for hot and cold paper cups, takeaway containers and beverage packaging. Request GSM, roll widths, samples or pricing.",
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
-    image: "/images/products/food-packaging/cup-paper-main.webp",
+    image: "/images/products/food-packaging/gallery/cup-paper-photo-02.jpg",
     gallery: [
       
       {
@@ -2620,12 +2620,11 @@ export const subProducts = {
     description:
       "YOUNGSUN Greaseproof Paper is engineered to resist oil and grease penetration while maintaining suitable strength and converting performance for food-service applications. Available in 35–60 gsm with common weights at 35, 40, 50, and 60 gsm, the paper achieves 3M KIT level 6 or higher grease resistance for the referenced grade. Both white and natural color options are available, supplied in sheets, reels, and custom-cut formats. The paper provides good strength for wrapping, folding, bag making, and food handling, with white and natural options supporting different brand and sustainability aesthetics. Custom printing can be applied for branded sheets, wraps, and bags. Typical applications include bakery wrapping, burger and sandwich wraps, fried food liners, takeaway bags, tray liners, confectionery wrapping, and food interleaving. Custom grammage, color, sheet or reel supply, printing, and cut-sheet formats are available.",
     specs: [
-      "Grammage: 28 – 80 gsm",
-      "Grease resistance: Kit rating 8–12 (TAPPI T559)",
-      "Barrier mechanism: Mechanical (fiber densification), no chemical coating",
-      "PFAS-free: Yes, no fluorochemicals added",
-      "Heat resistance: Oven-safe up to 220°C",
-      "Format: Sheets & reels",
+      "Reference commercial grammage: 35–60 gsm",
+      "Colors: White and natural",
+      "Format: Sheets, reels and custom-cut sizes",
+      "Grease resistance: Confirm by grade and technical data sheet",
+      "Printing and food-contact status: Subject to specification and supporting documents",
     ],
     applications: [
       "Baking paper — lining baking trays and cake tins",
@@ -2635,7 +2634,7 @@ export const subProducts = {
       "Interleaving for sliced meats and cheeses",
       "Fish and chip wrapping (traditional chippy paper)",
     ],
-    certifications: ["FDA 21 CFR 176.170", "EU 1935/2004", "PFAS-free certified", "FSC Mix"],
+    certifications: ["Food-contact and FSC documentation confirmed for the exact grade and order"],
     variants: [
       "White Greaseproof Paper",
       "Natural Greaseproof Paper",
@@ -2654,7 +2653,7 @@ export const subProducts = {
       "Custom printing",
       "Custom-cut sheets",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and food-contact documentation are confirmed for the exact grade and order" },
     quoteReqs: ["Grammage","Sheet or roll size","Quantity","Food-contact requirement","Application","Destination port"],
     seoTitle: "Greaseproof Paper Supplier for Food Packaging",
     metaDescription: "White and natural greaseproof paper for bakery wraps, burger and sandwich packaging, tray liners and food bags. Request sheets, reels or printed formats.",
@@ -2746,7 +2745,7 @@ export const subProducts = {
       "Metal and glass interleaving or masking paper",
       "Medical sterilization pouch substrates",
     ],
-    certifications: ["FSC available on request", "Direct food-contact grade"],
+    certifications: ["FSC and food-contact status confirmed for the exact grade and order"],
     variants: [
       "MG Bleached White Kraft Paper",
       "Custom GSM Sheets",
@@ -2776,7 +2775,7 @@ export const subProducts = {
       "Food-contact and FSC requirements",
       "Order quantity and destination port",
     ],
-    commercial: { moq: "Flexible; confirm by grammage and format", leadTime: "2–3 weeks after order confirmation", samples: "Free standard samples; courier paid by customer", certification: "FSC available on request", containerLoading: "40HQ full load: approximately 25 metric tons" },
+    commercial: { moq: "Confirm by grammage, format and width", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed by the applicable claim on sales or delivery documents" },
     seoTitle: "MG White Kraft Paper Supplier for Food Wrapping",
     metaDescription: "MG white kraft paper in 23–80 gsm with a glossy printable face for food wrapping, bags and lamination. Available in sheets and jumbo rolls; request samples.",
     keywords: ["MG white kraft paper manufacturer", "machine glazed kraft paper supplier", "MG bleached kraft paper", "food wrapping paper", "paper bag material", "flexible packaging base paper", "aluminum foil lamination paper"],
@@ -2800,14 +2799,13 @@ export const subProducts = {
     category: "food-packaging",
     tagline: "Premium release liner and non-stick baking paper — silicone-coated for clean release every time.",
     description:
-      "Silicone coated paper — also called silicone release paper, non-stick baking paper, or parchment paper — is a paper substrate coated with a thin layer of food-grade silicone on one or both sides. The silicone creates a non-stick, heat-resistant surface that food cannot adhere to, making it the essential material for baking, roasting, and cooking. In industrial applications, silicone coated paper serves as a release liner for self-adhesive labels, tapes, and hygiene products. Available in bleached (white) and unbleached (natural brown) variants. Heat-resistant to 230°C in continuous use and up to 250°C for short durations.",
+      "Silicone coated paper uses a release layer applied to one or both sides of a paper substrate. The base paper, grammage, coated side and release force must be selected for the adhesive, temperature, converting speed and end use. The reference range covers bleached or natural kraft substrates from 40–120 gsm in sheets and reels. It can be used as a liner for labels and tapes, an industrial release separator and, where the exact grade and supporting documents allow it, for baking or food-contact applications. Heat resistance and food-contact compliance are confirmed only for the ordered grade.",
     specs: [
       "Substrate: Bleached kraft / Unbleached kraft, 40–120 gsm",
       "Silicone coating: One side (1S) or two sides (2S)",
-      "Release force: Adjustable — easy, medium, or tight release",
-      "Heat resistance: 230°C continuous, 250°C short-term",
-      "Format: Sheets & reels",
-      "Food-grade: FDA 21 CFR 175.300, EU 1935/2004",
+      "Release force: Selected for the adhesive and converting process",
+      "Format: Sheets and reels",
+      "Heat resistance and food-contact status: Confirm by grade and supporting documents",
     ],
     applications: [
       "Baking paper — cookie sheets, cake pans, roasting trays",
@@ -2817,7 +2815,7 @@ export const subProducts = {
       "Industrial molding release liner",
       "Silicone-coated kraft for bakery and patisserie",
     ],
-    certifications: ["FDA-compliant", "EU 1935/2004", "FSC Mix", "ISO 9001"],
+    certifications: ["Food-contact and FSC documentation confirmed for the exact grade and order"],
     variants: [
       "Single-Side Silicone Coated (1S)",
       "Double-Side Silicone Coated (2S)",
@@ -2837,7 +2835,7 @@ export const subProducts = {
       "Sheet or reel supply",
       "Custom packing",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and any food-contact documentation are confirmed for the exact grade and order" },
     seoTitle: "Silicone Coated Paper Supplier",
     metaDescription: "Silicone coated paper in 40–120 gsm for baking, food interleaving, labels and release liners. Choose one- or two-side coating, sheets or reels; request samples.",
     keywords: ["silicone coated paper", "silicone release paper", "non-stick paper", "parchment paper", "baking parchment", "release liner paper"],
@@ -3231,7 +3229,7 @@ export const hero = {
   titleLine1: "Paper Without",
   titleLine2: "Boundaries",
   subtitle:
-    "Headquartered in Dongguan, China, Youngsun Group is a leading manufacturer and exporter with over 20 years of industry experience. We specialize in high-quality grey board, black cardboard, and specialty paper, offering extensive expertise in custom paper solutions tailored for luxury brands and high-end packaging needs. Beyond our core manufacturing, we maintain close strategic partnerships with major domestic mills—including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai—allowing us to provide a comprehensive, one-stop sourcing experience for products such as FBB GC1, Art Paper, and Woodfree Paper.",
+    "YOUNGSUN Group combines paper manufacturing and converting support in Dongguan with international sales and order coordination in Hong Kong. We focus on grey board, black paper and specialty paper, and work with established Chinese mills including APP, Sun Paper, Nine Dragons, Liansheng and Huatai to supply FBB, art paper, woodfree paper and other grades for overseas buyers.",
   ctaPrimary: { label: "Explore Products", href: "#products" },
   ctaSecondary: { label: "Get a Quote", href: "#contact" },
 };
@@ -3241,10 +3239,10 @@ export const hero = {
 // ============================================================
 
 export const aboutCompany = {
-  title: "Your Paper Supply Partner Since 2002",
+  title: "Paper Manufacturing and Global Supply",
   paragraphs: [
-    "YOUNGSUN PAPER (Dongguan Banyan Material Co., Ltd.) is headquartered in Dongguan City, Guangdong Province — just 50km from Shenzhen port. Our 20,000m² workshop houses 2 grey board machines and 2 black paper machines, operated by a team of 220+ skilled workers. With a monthly production capacity of 20,000 tons and 50,000 tons of warehouse stock, we ensure fast and reliable delivery to clients worldwide.",
-    "We work with major Chinese paper mills — including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai — to source printing, packaging, and specialty paper grades. Our team supports custom sizes, weight ranges, labeling, samples, product-specific documentation, and export coordination.",
+    "YOUNGSUN PAPER combines manufacturing and converting support in Dongguan with international business coordination in Hong Kong. Dongguan Banyan Material Co., Ltd. supports production, cutting, customization and quality control, while YOUNGSUN New Material Co., Ltd. coordinates international sales and order management.",
+    "We work with established Chinese paper mills — including APP, Sun Paper, Nine Dragons, Liansheng, and Huatai — to source printing, packaging, specialty and food-paper grades. Our team supports custom specifications, samples, product-specific documentation and export coordination.",
   ],
   vision: "To be the most reliable, transparent, and sustainability-driven paper supply partner for businesses worldwide — delivering quality from Dongguan to the world.",
 };
@@ -3261,10 +3259,10 @@ export const whyChooseUs = [
       "We supply a comprehensive range of premium printing and packaging paper and paperboard — covering all four categories: Package Board, Culture Paper, Fancy Paper, and Food Packaging Paper. One supplier, multiple grades, simplified procurement.",
   },
   {
-    title: "Certified Quality — FSC & SGS",
+    title: "Verified Documents by Grade",
     icon: "✅",
     description:
-      "All products are FSC (Forest Stewardship Council) and SGS certified. Every shipment is inspected for grammage, brightness, moisture, caliper, and surface quality against agreed specifications. Consistent quality, batch after batch.",
+      "YOUNGSUN entities hold FSC Chain-of-Custody certification. FSC claims, mill documents and available test reports are confirmed for the exact grade and order, while shipments are checked against agreed specifications.",
   },
   {
     title: "Strong Production Capacity",
@@ -3276,7 +3274,7 @@ export const whyChooseUs = [
     title: "Fast & Timely Delivery",
     icon: "🚢",
     description:
-      "50,000 tons of permanent warehouse stock enables rapid dispatch. Located 50km from Shenzhen port, we load containers efficiently. Five sales teams (50+ specialists) provide proactive delivery tracking and after-sales support.",
+      "Availability, production planning and lead time are confirmed by product and order. Our team coordinates packing, loading, shipping documents and delivery tracking for export customers.",
   },
   {
     title: "Customized Solutions",
@@ -3288,7 +3286,7 @@ export const whyChooseUs = [
     title: "Global Export Expertise",
     icon: "🌍",
     description:
-      "36,000+ tons exported annually to 60+ countries. We handle FSC chain-of-custody, certificates of origin, fumigation, packing lists, and bills of lading — full documentation for seamless customs clearance at any destination port.",
+      "We coordinate the documents applicable to each shipment, including the confirmed FSC claim, certificate of origin, packing list and bill of lading, according to product and destination requirements.",
   },
 ];
 
@@ -3301,10 +3299,10 @@ export const sustainability = {
   subtitle:
     "Every paper product we supply comes with a chain-of-custody story. We believe transparency — not marketing — is what earns trust. That means clear certification, honest sourcing, and measurable environmental accountability.",
   commitments: [
-    { icon: "🌳", title: "Certified Sources", description: "Primary supply chain is FSC or PEFC certified. Chain-of-custody documentation provided with every order." },
+    { icon: "🌳", title: "Verified FSC Claims", description: "YOUNGSUN entities hold FSC Chain-of-Custody certification. The applicable FSC claim is confirmed for each qualifying grade and order." },
     { icon: "♻️", title: "Recycled Content", description: "Post-consumer and post-industrial recycled fiber options available across all four product categories." },
-    { icon: "🧪", title: "PFAS-Free", description: "All food-contact papers are PFAS-free — grease resistance is achieved through fiber engineering, not chemical additives." },
-    { icon: "⚡", title: "Low-Carbon Mills", description: "Partnering with mills that use green energy, biogas recovery, and closed-loop water systems to minimize environmental footprint." },
+    { icon: "🧪", title: "Grade-Specific Compliance", description: "Food-contact declarations, barrier chemistry and available test reports are confirmed for the selected grade, intended use and destination market." },
+    { icon: "⚡", title: "Documented Mill Sourcing", description: "Mill origin, available environmental documentation and order requirements are reviewed by product instead of relying on broad, unsupported claims." },
     { icon: "📋", title: "Full Traceability", description: "From forest or recovery facility to final delivery — traceable chain of custody with auditable documentation." },
     { icon: "🌍", title: "Carbon-Conscious Logistics", description: "Route optimization, consolidated shipments, and sea freight preference to reduce transport-related emissions." },
   ],

@@ -160,7 +160,12 @@ export function getRelatedBlogPosts(post, posts, limit = 3) {
       const sameCategory = candidate.category === post?.category ? 1 : 0;
       return { candidate, index, score: sharedTags * 3 + sameCategory * 2 };
     })
-    .sort((left, right) => right.score - left.score || left.index - right.index)
+    .sort((left, right) => {
+      if (right.score !== left.score) return right.score - left.score;
+      const rightDate = Date.parse(right.candidate.date || right.candidate.datePublished || "") || 0;
+      const leftDate = Date.parse(left.candidate.date || left.candidate.datePublished || "") || 0;
+      return rightDate - leftDate || left.index - right.index;
+    })
     .slice(0, limit)
     .map(({ candidate }) => candidate);
 }

@@ -27,7 +27,7 @@ export function PageMeta({ title, description, path }) {
   const localizedDescription = spanishMeta?.description || description;
   const cleanTitle = localizedTitle ? localizedTitle.replace(/\s*\|\s*YOUNGSUN(?:\s*PAPER)?\s*$/i, "") : "";
   const fullTitle = cleanTitle ? `${cleanTitle} | YOUNGSUN` : "YOUNGSUN | China Paper & Paperboard Supplier";
-  const desc = localizedDescription || "YOUNGSUN PAPER — premium paper and board supplier since 2002.";
+  const desc = localizedDescription || "YOUNGSUN PAPER supplies paper and paperboard for packaging, printing, specialty and food-paper applications.";
   const urlPath = canonicalPath(cleanPath, lang);
   const url = `https://youngsunpaper.com${urlPath}`;
   const hasSpanishVersion = supportsSpanishSeoPath(cleanPath);

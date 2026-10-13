@@ -17,6 +17,29 @@ export default function Quality() {
     { name: { en: "Food-Contact Support", es: "Soporte para Contacto Alimentario" }, desc: { en: "For food packaging grades, we confirm the available declaration or test report against the intended use and destination market.", es: "Para grados alimentarios, confirmamos la declaración o informe disponible según el uso y mercado de destino." }, icon: UtensilsCrossed },
   ];
 
+  const fscCertificates = [
+    {
+      entity: "Dongguan Banyan Material Co., Ltd.",
+      location: { en: "Dongguan manufacturing and converting entity", es: "Entidad de fabricación y conversión en Dongguan" },
+      number: "SGSHK-COC-332278",
+      validity: "16 Dec 2024 – 15 Dec 2029",
+      scope: {
+        en: "Purchasing, optional cutting, and sales of FSC Mix and FSC Recycled paper and paperboard under the transfer system.",
+        es: "Compra, corte opcional y venta de papel y cartón FSC Mix y FSC Reciclado bajo el sistema de transferencia.",
+      },
+    },
+    {
+      entity: "YOUNGSUN New Material Co., Ltd.",
+      location: { en: "Hong Kong international business entity", es: "Entidad comercial internacional en Hong Kong" },
+      number: "SGSHK-COC-332201",
+      validity: "28 Sep 2024 – 23 Sep 2029",
+      scope: {
+        en: "Purchasing and sales of FSC Mix and FSC Recycled paper and paperboard under the transfer system.",
+        es: "Compra y venta de papel y cartón FSC Mix y FSC Reciclado bajo el sistema de transferencia.",
+      },
+    },
+  ];
+
   const inspectionPoints = [
     { title: { en: "Incoming Raw Material", es: "Materia Prima Entrante" }, desc: { en: "Every batch of base paper and board is inspected for GSM, moisture content, caliper, and visual defects before entering production.", es: "Cada lote de papel base es inspeccionado por GSM, humedad, calibre y defectos visuales antes de entrar en producción." } },
     { title: { en: "In-Process Quality Checks", es: "Controles de Calidad en Proceso" }, desc: { en: "Continuous monitoring during slitting, sheeting, and converting — width tolerance, cut quality, roll tension, and surface integrity.", es: "Monitoreo continuo durante corte y conversión — tolerancia de ancho, calidad de corte, tensión de bobina e integridad superficial." } },
@@ -76,6 +99,44 @@ export default function Quality() {
               </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="section" style={{ background: "#f4f2eb", paddingTop: 24 }}>
+        <div className="container" style={{ maxWidth: 1000 }}>
+          <div style={{ maxWidth: 760, margin: "0 auto 28px", textAlign: "center" }}>
+            <span style={{ color: "var(--gold)", fontSize: 12, fontWeight: 800, textTransform: "uppercase" }}>
+              {isEs ? "Cadena de custodia verificada" : "Verified chain of custody"}
+            </span>
+            <h2 style={{ color: "var(--forest)", fontSize: 26, margin: "8px 0 10px" }}>
+              {isEs ? "Certificados FSC® por entidad" : "FSC® certificates by legal entity"}
+            </h2>
+            <p style={{ color: "var(--muted)", fontSize: 14, lineHeight: 1.75, margin: 0 }}>
+              {isEs
+                ? "SGS Hong Kong Limited emitió ambos certificados. La condición FSC de un producto se confirma mediante la declaración aplicable en los documentos de venta o entrega del pedido; el certificado de la empresa no convierte automáticamente todos los productos en certificados FSC."
+                : "Both certificates were issued by SGS Hong Kong Limited. A product's FSC status is confirmed by the applicable claim on the order's sales or delivery documents; an entity certificate does not automatically make every product FSC-certified."}
+            </p>
+          </div>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 18 }}>
+            {fscCertificates.map((certificate) => (
+              <article key={certificate.number} style={{ background: "#fff", border: "1px solid rgba(20,54,34,0.12)", borderRadius: 8, padding: "26px 26px 24px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+                  <TreePine size={24} strokeWidth={1.7} color="var(--forest)" aria-hidden="true" />
+                  <span style={{ color: "var(--forest)", fontSize: 12, fontWeight: 800, textTransform: "uppercase" }}>FSC Chain of Custody</span>
+                </div>
+                <h3 style={{ color: "var(--forest)", fontSize: 19, lineHeight: 1.35, margin: "0 0 6px" }}>{certificate.entity}</h3>
+                <p style={{ color: "var(--muted)", fontSize: 13, margin: "0 0 18px" }}>{certificate.location[lang]}</p>
+                <dl style={{ display: "grid", gridTemplateColumns: "92px 1fr", gap: "9px 12px", margin: 0, fontSize: 13, lineHeight: 1.55 }}>
+                  <dt style={{ color: "var(--muted)", fontWeight: 700 }}>{isEs ? "Certificado" : "Certificate"}</dt>
+                  <dd style={{ margin: 0, color: "var(--ink)", fontWeight: 700 }}>{certificate.number}</dd>
+                  <dt style={{ color: "var(--muted)", fontWeight: 700 }}>{isEs ? "Vigencia" : "Valid"}</dt>
+                  <dd style={{ margin: 0, color: "var(--ink)" }}>{certificate.validity}</dd>
+                  <dt style={{ color: "var(--muted)", fontWeight: 700 }}>{isEs ? "Alcance" : "Scope"}</dt>
+                  <dd style={{ margin: 0, color: "var(--ink)" }}>{certificate.scope[lang]}</dd>
+                </dl>
+              </article>
+            ))}
           </div>
         </div>
       </section>

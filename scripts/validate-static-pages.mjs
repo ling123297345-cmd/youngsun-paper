@@ -13,6 +13,7 @@ import { extractBlogFaqs, getBlogToc, parseBlogContent } from '../src/blogConten
 import { getProductIndustryLinks } from '../src/productIndustryLinks.js';
 import { getProductGuideLinks } from '../src/productGuideLinks.js';
 import { subProducts } from '../src/data.js';
+import { productEs } from '../src/productEs.js';
 
 const siteUrl = 'https://youngsunpaper.com';
 
@@ -214,6 +215,30 @@ for (const pagePath of pages) {
     ]);
     checks.productLanguage = product?.inLanguage === (spanishPage ? 'es' : 'en');
     checks.productUrlMatchesRoute = product?.url === expectedCanonical;
+    if (spanishPage) {
+      const productId = /^\/products\/([^/]+)$/.exec(baseRoute)?.[1];
+      const translation = productId ? productEs[productId] : null;
+      const properties = new Map(
+        (product?.additionalProperty || []).map((item) => [item.name, item.value]),
+      );
+      if (translation?.commercial) {
+        checks.spanishCommercialSchema = [
+          ['Cantidad minima de pedido', translation.commercial.moq],
+          ['Plazo de entrega', translation.commercial.leadTime],
+          ['Politica de muestras', translation.commercial.samples],
+          ['Certificacion comercial', translation.commercial.certification],
+          ['Carga de contenedor', translation.commercial.containerLoading],
+        ].filter(([, value]) => value).every(([name, value]) => properties.get(name) === value);
+      }
+      if (translation?.certifications?.length) {
+        checks.spanishCertificationSchema = properties.get('Certificaciones y cumplimiento disponibles')
+          === translation.certifications.join(', ');
+      }
+      if (translation?.variants?.length) {
+        checks.spanishVariantSchema = properties.get('Variantes disponibles')
+          === translation.variants.join(', ');
+      }
+    }
     if (!spanishPage && propertyNames.includes('Minimum order quantity')) productMoqCoverage += 1;
     if (!spanishPage && propertyNames.includes('Certification and compliance availability')) {
       productCertificationCoverage += 1;

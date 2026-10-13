@@ -121,6 +121,15 @@ export function createWebsiteSchema() {
 export function createProductSchema(product, { lang = "en", translation = null } = {}) {
   if (!product) return null;
   const isSpanish = lang === "es";
+  const localizedCommercial = isSpanish && translation?.commercial
+    ? translation.commercial
+    : product.commercial;
+  const localizedCertifications = isSpanish && translation?.certifications
+    ? translation.certifications
+    : product.certifications;
+  const localizedVariants = isSpanish && translation?.variants
+    ? translation.variants
+    : product.variants;
   const productUrl = `${SITE_URL}${isSpanish ? "/es" : ""}/products/${product.id}/`;
   const images = [product.image, ...(product.gallery || []).map((item) => item.src || item)]
     .filter(Boolean)
@@ -129,22 +138,22 @@ export function createProductSchema(product, { lang = "en", translation = null }
   const applications = isSpanish && translation?.applications
     ? translation.applications
     : product.applications || [];
-  const commercialProperties = product.commercial
+  const commercialProperties = localizedCommercial
     ? [
-        [isSpanish ? "Cantidad minima de pedido" : "Minimum order quantity", product.commercial.moq],
-        [isSpanish ? "Plazo de entrega" : "Lead time", product.commercial.leadTime],
-        [isSpanish ? "Politica de muestras" : "Sample policy", product.commercial.samples],
-        [isSpanish ? "Certificacion comercial" : "Commercial certification", product.commercial.certification],
-        [isSpanish ? "Carga de contenedor" : "Container loading", product.commercial.containerLoading],
+        [isSpanish ? "Cantidad minima de pedido" : "Minimum order quantity", localizedCommercial.moq],
+        [isSpanish ? "Plazo de entrega" : "Lead time", localizedCommercial.leadTime],
+        [isSpanish ? "Politica de muestras" : "Sample policy", localizedCommercial.samples],
+        [isSpanish ? "Certificacion comercial" : "Commercial certification", localizedCommercial.certification],
+        [isSpanish ? "Carga de contenedor" : "Container loading", localizedCommercial.containerLoading],
       ].filter(([, value]) => value)
     : [];
   const additionalProperty = [
     ...specifications.map((item) => propertyValue(item.name, item.value)),
-    ...(product.certifications?.length
-      ? [propertyValue(isSpanish ? "Certificaciones y cumplimiento disponibles" : "Certification and compliance availability", product.certifications.join(", "))]
+    ...(localizedCertifications?.length
+      ? [propertyValue(isSpanish ? "Certificaciones y cumplimiento disponibles" : "Certification and compliance availability", localizedCertifications.join(", "))]
       : []),
-    ...(product.variants?.length
-      ? [propertyValue(isSpanish ? "Variantes disponibles" : "Available variants", product.variants.join(", "))]
+    ...(localizedVariants?.length
+      ? [propertyValue(isSpanish ? "Variantes disponibles" : "Available variants", localizedVariants.join(", "))]
       : []),
     ...(applications.length
       ? [propertyValue(isSpanish ? "Aplicaciones" : "Applications", applications.join(", "))]

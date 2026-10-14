@@ -679,9 +679,9 @@ export const subProducts = {
   },
   "kraft-paper": {
     id: "kraft-paper",
-    name: "Kraft Paper",
+    name: "Kraft Paper Rolls & Sheets",
     category: "package-board",
-    tagline: "Natural kraft paper for sacks, bags, wrapping, industrial packaging and paper converting.",
+    tagline: "Brown, white and recycled kraft paper rolls and sheets for sacks, bags, wrapping and industrial converting.",
     description:
       "YOUNGSUN supplies extensible sack kraft, high-strength sack kraft, and premium kraft paper for packaging and industrial converting, with grades selectable according to required tensile strength, tear resistance, extensibility, and printability. Commercial grades range from 50–120 gsm, with extensible sack kraft at 65–95 gsm. Tensile index is rated at ≥80 Nm/g (MD) with tear index ≥12 mNm²/g. Available in natural brown, bleached white, and recycled options, the paper features controlled porosity per application and is supplied in standard and jumbo rolls as well as sheets. The strong fibre structure supports demanding sack, bag, and wrapping applications, with extensible grades that absorb stress during filling, handling, and transport. Key applications span industrial sacks, shopping bags, food bags, wrapping paper, protective packaging, laminated packaging, and general paper converting. Custom grade selection, grammage, sheet or reel supply, size, and printing support are available.",
     specs: [
@@ -719,10 +719,10 @@ export const subProducts = {
       "Custom size",
       "Printing and converting support",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by grade, grammage, size and format", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grade (natural/bleached/recycled)","Grammage","Roll or sheet size","Quantity","End use","Destination port"],
-    seoTitle: "Kraft Paper Supplier for Packaging",
-    metaDescription: "Natural, bleached and recycled kraft paper from 35 to 200 gsm for sacks, bags, wrapping and industrial converting. Request rolls, sheets or samples.",
+    seoTitle: "Brown Kraft Paper Rolls & Sheets Supplier",
+    metaDescription: "Brown kraft paper rolls and sheets, plus white and recycled grades from 35 to 200 gsm for bags, wrapping and industrial converting. Request free samples.",
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "packaging kraft", "industrial kraft paper"],
     image: "/images/products/package-board/kraft-paper-main.webp",
     gallery: [
@@ -823,7 +823,7 @@ export const subProducts = {
       "Custom cutting",
       "Export packing",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by grammage, size and format", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grey back or white back","Grammage","Size","Quantity","Application","Destination port"],
     seoTitle: "Duplex Board Grey Back Supplier",
     metaDescription: "Coated white-top duplex board from 200 to 450 gsm for economical folding cartons, retail packaging and printed boxes. Request sheets, reels or samples.",
@@ -1046,11 +1046,11 @@ export const subProducts = {
   // ========================
   "woodfree-paper": {
     id: "woodfree-paper",
-    name: "Woodfree Paper",
+    name: "Woodfree Offset / Bond Paper",
     category: "culture-paper",
-    tagline: "Uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing.",
+    tagline: "Uncoated woodfree offset paper, also specified as bond paper in many markets, for books, forms, stationery and commercial printing.",
     description:
-      "YOUNGSUN Woodfree Offset Paper is an uncoated printing paper developed for clear text reproduction, balanced ink absorption, and reliable high-speed press performance. Available in 60–120 gsm with common weights at 60, 65, 70, 80, 100, and 120 gsm, the paper offers high white and natural white color options depending on the grade. It delivers good opacity for double-sided printing, making it suitable for books, notebooks, textbooks, manuals, forms, envelopes, and general commercial printing. The balanced ink absorption supports clean offset results without show-through, while reliable runnability ensures consistent feeding and printing on high-speed equipment. Available in sheets, reels, and custom-cut formats. Custom grammage, color selection, sheet or reel supply, size, and packing are all available to order.",
+      "YOUNGSUN Woodfree Offset Paper is an uncoated printing paper developed for clear text reproduction, balanced ink absorption, and reliable high-speed press performance. In markets where buyers use bond paper as a commercial term, it commonly refers to this type of uncoated woodfree paper; the exact grammage, whiteness, size, supply format and printing method should still be confirmed before quotation. Available in 60–120 gsm with common weights at 60, 65, 70, 80, 100, and 120 gsm, the paper offers high white and natural white color options depending on the grade. It delivers good opacity for double-sided printing, making it suitable for books, notebooks, textbooks, manuals, forms, envelopes, and general commercial printing. Available in sheets, reels, and custom-cut formats, with custom size and export packing available to order.",
     specs: [
       "Grammage: 60 – 120 gsm (custom up to 300 gsm)",
       "Brightness: ISO 90–100%",
@@ -1060,7 +1060,7 @@ export const subProducts = {
       "Acid-free: pH 7.0–9.0, alkaline reserve ≥ 2% CaCO₃",
     ],
     applications: [
-      "Office documents — A4 / A3 copy and printer paper",
+      "Bond paper sheets — forms, stationery and office documents",
       "Book publishing — text stock for novels and textbooks",
       "Business stationery — letterhead, envelopes, notepads",
       "Commercial print — flyers, leaflets, newsletters",
@@ -1071,6 +1071,7 @@ export const subProducts = {
     variants: [
       "High White Offset Paper",
       "Natural White Offset Paper (subject to order)",
+      "Bond paper sheets or reels to the confirmed specification",
     ],
     features: [
       "Balanced Ink Absorption — Supports clean text and stable offset printing.",
@@ -1085,10 +1086,10 @@ export const subProducts = {
       "Custom size",
       "Custom packing",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by grammage, size and format", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage","Sheet or reel size","Quantity","Printing method","Application","Destination port"],
-    seoTitle: "Woodfree Offset Paper Supplier",
-    metaDescription: "Woodfree offset paper from 60 to 120 gsm for books, notebooks, manuals, envelopes and commercial printing. Request sheets, reels or samples.",
+    seoTitle: "Woodfree Offset & Bond Paper Supplier",
+    metaDescription: "Woodfree offset and bond paper from 60 to 120 gsm for books, forms, stationery and commercial printing. Request sheets, reels or free samples.",
     keywords: ["woodfree paper", "uncoated woodfree", "UWF paper", "office paper", "bond paper", "book paper"],
     image: "/images/products/culture-paper/woodfree-paper-main.webp",
     gallery: [
@@ -1357,7 +1358,7 @@ export const subProducts = {
   },
   "ncr-paper": {
     id: "ncr-paper",
-    name: "NCR Paper (Carbonless Paper)",
+    name: "Carbonless Copy Paper (NCR)",
     category: "culture-paper",
     tagline: "Self-copying carbonless paper for forms, invoices, and receipts — no carbon sheet needed, clean and smudge-free.",
     description:
@@ -1398,10 +1399,10 @@ export const subProducts = {
       "Blue or black image color",
       "Reel or sheet supply",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by ply, grammage, size and format", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Number of plies","Grammage","Sheet or roll size","Quantity","Printing method","Destination port"],
-    seoTitle: "NCR Carbonless Paper Supplier",
-    metaDescription: "NCR carbonless paper in CB, CFB and CF sheets or reels for invoices, receipts, delivery notes and multipart business forms. Request colors, sizes or samples.",
+    seoTitle: "Carbonless Copy Paper (NCR) Supplier",
+    metaDescription: "Carbonless copy paper in CB, CFB and CF sheets or reels for invoices, receipts, delivery notes and multipart forms. Request colors, sizes or free samples.",
     keywords: ["NCR paper", "carbonless paper", "carbonless copy paper", "self-copy paper", "CB CFB CF paper", "multi-part forms paper"],
     image: "/images/products/culture-paper/ncr-paper-main.webp",
     gallery: [
@@ -1516,7 +1517,7 @@ export const subProducts = {
   },
   "newsprint": {
     id: "newsprint",
-    name: "Newsprint",
+    name: "Newsprint Paper Rolls & Sheets",
     category: "culture-paper",
     tagline: "Cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications.",
     description:
@@ -1554,10 +1555,10 @@ export const subProducts = {
       "Sheet supply on request",
       "Custom packing",
     ],
-    commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by grammage, reel width or sheet size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage","Reel width and diameter","Core size","Quantity per size","Press configuration","Destination port"],
-    seoTitle: "Newsprint Paper Supplier for Newspaper Printing",
-    metaDescription: "Newsprint paper in 40–57 gsm reels for coldset newspaper printing, advertising inserts and mass-circulation publications. Request reel widths or samples.",
+    seoTitle: "Newsprint Paper Rolls & Sheets Supplier",
+    metaDescription: "Newsprint paper rolls and newsprint paper sheets in 40–57 gsm for coldset printing, inserts and mass-circulation publications. Request widths or free samples.",
     keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
     image: "/images/products/culture-paper/newsprint-main.webp",
     gallery: [
@@ -2409,11 +2410,11 @@ export const subProducts = {
 
   "tracing-paper": {
     id: "tracing-paper",
-    name: "Tracing Paper",
+    name: "Tracing Paper / Vellum Paper",
     category: "culture-paper",
-    tagline: "Translucent tracing paper for luxury packaging, printing, drawing, invitations and decorative applications.",
+    tagline: "Translucent tracing or vellum paper for luxury packaging, printing, drawing, invitations and decorative applications.",
     description:
-      "YOUNGSUN Tracing Paper combines translucency, a smooth surface and dimensional stability for technical drawing, printed overlays, tags and premium packaging details. The confirmed brochure range includes 50, 60, 80, 90, 110, 150, 170, 220 and 230 gsm, allowing buyers to select lightweight overlay papers or heavier translucent cards. It is supplied mainly in sheets and custom sizes, while other colors and formats are confirmed by grade and quantity. Buyers should specify grammage, size, printing method, converting process and end use so the appropriate sample and production format can be checked before quotation.",
+      "YOUNGSUN Tracing Paper combines translucency, a smooth surface and dimensional stability for technical drawing, printed overlays, tags and premium packaging details. Vellum paper is a common trade and search term for translucent paper in some markets, so buyers should confirm the required transparency, grammage and printing process rather than relying on the name alone. The confirmed brochure range includes 50, 60, 80, 90, 110, 150, 170, 220 and 230 gsm, allowing buyers to select lightweight overlay papers or heavier translucent cards. It is supplied mainly in sheets and custom sizes, while other colors and formats are confirmed by grade and quantity.",
     specs: [
       "Reference grammages: 50, 60, 80, 90, 110, 150, 170, 220 and 230 gsm",
       "Surface: Smooth and translucent",
@@ -2429,7 +2430,7 @@ export const subProducts = {
       "Art and illustration — marker and ink drawing",
       "Wedding invitation overlays and belly bands",
     ],
-    certifications: ["FSC status confirmed by the applicable claim on sales or delivery documents"],
+    certifications: ["FSC Certified"],
     variants: [
       "Standard Tracing Paper",
       "Heavyweight Tracing Paper",
@@ -2447,10 +2448,10 @@ export const subProducts = {
       "Printing and hot stamping coordination",
       "Custom packing",
     ],
-    commercial: { moq: "Confirm by grammage, size and format", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed by the applicable claim on sales or delivery documents" },
+    commercial: { moq: "From 1 metric ton for regular specifications; confirm by grammage, size and format", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage","Sheet or roll size","Quantity","Transparency requirement","Application","Destination port"],
-    seoTitle: "Tracing Paper Supplier for Drawing and Design",
-    metaDescription: "Translucent tracing paper for drawing, overlays, invitations, envelopes and creative printing, available in multiple grammages, sheets and reels. Request samples.",
+    seoTitle: "Tracing & Vellum Paper Supplier | 50–230 gsm",
+    metaDescription: "Translucent tracing and vellum paper from 50 to 230 gsm for drawing, overlays, invitations, tags and premium packaging. Request sheets or free samples.",
     keywords: ["tracing paper", "translucent paper", "transparent paper", "vellum paper", "architectural tracing", "design tracing paper"],
     image: "/images/products/culture-paper/tracing-paper-main.webp",
     gallery: [
@@ -3037,7 +3038,7 @@ export const subProducts = {
   },
   "blue-core-puzzle-board": {
     id: "blue-core-puzzle-board",
-    name: "Blue Core Puzzle Board",
+    name: "Blue Core Jigsaw Puzzle Board",
     category: "package-board",
     tagline: "Blue core paperboard for jigsaw puzzle production.",
     description:
@@ -3051,7 +3052,7 @@ export const subProducts = {
       "Core color: Blue",
     ],
     applications: ["Printed jigsaw puzzles", "Game and educational puzzles", "Puzzle board components", "Matching puzzle presentation boxes"],
-    certifications: ["FSC status confirmed through the applicable sales or delivery documents"],
+    certifications: ["FSC Certified"],
     variants: ["600–1800 gsm range in 50 gsm increments"],
     features: [
       "Distinct Blue Core — Gives cut puzzle pieces a clearly identifiable blue edge.",
@@ -3060,10 +3061,10 @@ export const subProducts = {
       "Export Pallet Packing — Board can be prepared for bulk transport in wrapped pallets.",
     ],
     customization: ["Grammage or thickness", "Sheet dimensions", "Quantity per size", "Pallet packing requirements"],
-    commercial: { moq: "From 1 metric ton per size", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
+    commercial: { moq: "From 1 metric ton per size", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage or thickness", "Sheet size", "Quantity per size", "Destination port"],
-    seoTitle: "Blue Core Puzzle Board for Jigsaw Puzzles",
-    metaDescription: "Blue core puzzle board, 600–1800 gsm and 0.85–2.73 mm. View thickness specifications and pallet packing. MOQ: 1 metric ton per sheet size.",
+    seoTitle: "Blue Core Jigsaw Puzzle Board Supplier",
+    metaDescription: "Blue core jigsaw puzzle board from 600 to 1800 gsm and approximately 0.85–2.73 mm. Review sheet sizes, pallet packing and free sample options.",
     keywords: ["blue core puzzle board", "jigsaw puzzle board", "puzzle paperboard", "blue core cardboard", "game board material"],
     image: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-main.webp",
     galleryTitle: "Blue Core, Packing and Puzzle Application",

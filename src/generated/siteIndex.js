@@ -88,8 +88,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "kraft-paper",
-    "name": "Kraft Paper",
-    "text": "kraft paper natural kraft paper for sacks, bags, wrapping, industrial packaging and paper converting. kraft paper virgin kraft sack kraft paper brown kraft paper packaging kraft industrial kraft paper",
+    "name": "Kraft Paper Rolls & Sheets",
+    "text": "kraft paper rolls & sheets brown, white and recycled kraft paper rolls and sheets for sacks, bags, wrapping and industrial converting. kraft paper virgin kraft sack kraft paper brown kraft paper packaging kraft industrial kraft paper",
     "href": "/products/kraft-paper"
   },
   {
@@ -116,8 +116,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "woodfree-paper",
-    "name": "Woodfree Paper",
-    "text": "woodfree paper uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing. woodfree paper uncoated woodfree uwf paper office paper bond paper book paper",
+    "name": "Woodfree Offset / Bond Paper",
+    "text": "woodfree offset / bond paper uncoated woodfree offset paper, also specified as bond paper in many markets, for books, forms, stationery and commercial printing. woodfree paper uncoated woodfree uwf paper office paper bond paper book paper",
     "href": "/products/woodfree-paper"
   },
   {
@@ -137,8 +137,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "ncr-paper",
-    "name": "NCR Paper (Carbonless Paper)",
-    "text": "ncr paper (carbonless paper) self-copying carbonless paper for forms, invoices, and receipts — no carbon sheet needed, clean and smudge-free. ncr paper carbonless paper carbonless copy paper self-copy paper cb cfb cf paper multi-part forms paper",
+    "name": "Carbonless Copy Paper (NCR)",
+    "text": "carbonless copy paper (ncr) self-copying carbonless paper for forms, invoices, and receipts — no carbon sheet needed, clean and smudge-free. ncr paper carbonless paper carbonless copy paper self-copy paper cb cfb cf paper multi-part forms paper",
     "href": "/products/ncr-paper"
   },
   {
@@ -151,8 +151,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "newsprint",
-    "name": "Newsprint",
-    "text": "newsprint cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications. newsprint newsprint paper newspaper paper coldset paper standard newsprint web offset paper",
+    "name": "Newsprint Paper Rolls & Sheets",
+    "text": "newsprint paper rolls & sheets cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications. newsprint newsprint paper newspaper paper coldset paper standard newsprint web offset paper",
     "href": "/products/newsprint"
   },
   {
@@ -228,8 +228,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "tracing-paper",
-    "name": "Tracing Paper",
-    "text": "tracing paper translucent tracing paper for luxury packaging, printing, drawing, invitations and decorative applications. tracing paper translucent paper transparent paper vellum paper architectural tracing design tracing paper",
+    "name": "Tracing Paper / Vellum Paper",
+    "text": "tracing paper / vellum paper translucent tracing or vellum paper for luxury packaging, printing, drawing, invitations and decorative applications. tracing paper translucent paper transparent paper vellum paper architectural tracing design tracing paper",
     "href": "/products/tracing-paper"
   },
   {
@@ -284,8 +284,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "blue-core-puzzle-board",
-    "name": "Blue Core Puzzle Board",
-    "text": "blue core puzzle board blue core paperboard for jigsaw puzzle production. blue core puzzle board jigsaw puzzle board puzzle paperboard blue core cardboard game board material",
+    "name": "Blue Core Jigsaw Puzzle Board",
+    "text": "blue core jigsaw puzzle board blue core paperboard for jigsaw puzzle production. blue core puzzle board jigsaw puzzle board puzzle paperboard blue core cardboard game board material",
     "href": "/products/blue-core-puzzle-board"
   },
   {
@@ -310,16 +310,16 @@ export const productNameById = {
   "color-card-paper": "Color Card Paper",
   "folding-box-board": "Folding Box Board",
   "c2s-art-board": "C2S Art Board Card",
-  "kraft-paper": "Kraft Paper",
+  "kraft-paper": "Kraft Paper Rolls & Sheets",
   "duplex-board": "Duplex Board",
   "pe-coated-paper": "PE Coated Paper",
   "ckb": "CKB (Coated Kraft Back)",
-  "woodfree-paper": "Woodfree Paper",
+  "woodfree-paper": "Woodfree Offset / Bond Paper",
   "color-offset-paper": "Color Offset Paper",
   "lwc-paper": "LWC Paper (Lightweight Coated)",
-  "ncr-paper": "NCR Paper (Carbonless Paper)",
+  "ncr-paper": "Carbonless Copy Paper (NCR)",
   "copy-paper": "Multi-Format Copy Paper",
-  "newsprint": "Newsprint",
+  "newsprint": "Newsprint Paper Rolls & Sheets",
   "a4-copy-paper": "A4 Copy Paper",
   "a4-thermal-paper": "A4 Thermal Paper",
   "thermal-paper-roll": "Thermal Paper Roll",
@@ -330,7 +330,7 @@ export const productNameById = {
   "gold-silver-card": "Gold & Silver Card Paper",
   "label-paper": "Label Paper",
   "color-tissue-paper": "Color Tissue Paper",
-  "tracing-paper": "Tracing Paper",
+  "tracing-paper": "Tracing Paper / Vellum Paper",
   "cup-paper": "Cup Paper",
   "greaseproof-paper": "Greaseproof Paper",
   "mg-paper": "MG White Kraft Paper",
@@ -338,7 +338,7 @@ export const productNameById = {
   "absorbent-paper": "Absorbent Paper",
   "color-laminated-grey-board": "Color Laminated Grey Board",
   "woodgrain-laminated-grey-board": "Woodgrain Laminated Grey Board",
-  "blue-core-puzzle-board": "Blue Core Puzzle Board",
+  "blue-core-puzzle-board": "Blue Core Jigsaw Puzzle Board",
   "metallized-laminated-grey-board": "Metallized Laminated Grey Board",
   "foam-laminated-grey-board": "Foam Laminated Grey Board"
 };
@@ -349,11 +349,11 @@ export const spanishProductTaglineById = {
   "color-card-paper": "Cartulina de color uniforme para packaging, etiquetas, papelería e impresión creativa.",
   "folding-box-board": "Cartón multicapa con liner blanco brillante — para estuches farmacéuticos, cosméticos y alimentarios.",
   "c2s-art-board": "Cartón estucado dos caras con acabado liso — para impresión premium y tarjetas de alta gama.",
-  "kraft-paper": "Papel kraft virgen de alta resistencia para embalaje industrial y bolsas — resistente y reciclable.",
-  "duplex-board": "Cartón estucado con cara blanca y reverso gris para estuches impresos rentables.",
+  "kraft-paper": "Papel kraft natural, blanco y reciclado en bobinas, rollos, hojas y pliegos para bolsas, envoltura y conversión.",
+  "duplex-board": "Cartón dúplex estucado, conocido como cartulina caple en parte de Latinoamérica, para estuches impresos rentables.",
   "pe-coated-paper": "Papel laminado PE para barrera contra humedad y termosellado.",
   "ckb": "Cartón CKB con cara blanca estucada y reverso kraft resistente para estuches exigentes.",
-  "woodfree-paper": "Papel offset sin estucar con buena opacidad para libros, cuadernos e impresión comercial.",
+  "woodfree-paper": "Papel bond y offset sin estucar con buena opacidad para libros, formularios, papelería e impresión comercial.",
   "color-offset-paper": "Papel offset de color para formularios, inserciones, papelería y material promocional.",
   "lwc-paper": "Papel estucado ligero para revistas, catálogos, inserciones e impresión comercial de volumen.",
   "ncr-paper": "Papel autocopiativo NCR para facturas, recibos y formularios de varias copias.",
@@ -369,7 +369,7 @@ export const spanishProductTaglineById = {
   "gold-silver-card": "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
   "label-paper": "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
   "color-tissue-paper": "Papel seda de color ligero y translúcido para envolver regalos, proteger prendas y crear experiencias de desempaque de marca.",
-  "tracing-paper": "Papel translúcido para dibujo técnico, capas gráficas, etiquetas y detalles de embalaje.",
+  "tracing-paper": "Papel albanene, vegetal o vellum translúcido para dibujo, impresión, etiquetas y packaging premium.",
   "cup-paper": "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
   "greaseproof-paper": "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
   "mg-paper": "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
@@ -404,12 +404,12 @@ export const spanishProductSeoById = {
     "description": "Cartulina C2S estucada por ambas caras y con certificación FSC para tarjetas, cubiertas, etiquetas, catálogos y embalaje impreso premium."
   },
   "kraft-paper": {
-    "title": "Papel kraft para bolsas, sacos y embalaje",
-    "description": "Papel kraft natural, blanco y reciclado con certificación FSC para bolsas, sacos, envoltura y conversión industrial. Disponible en bobinas y hojas."
+    "title": "Papel kraft en bobinas, rollos, hojas y pliegos",
+    "description": "Bobinas de papel kraft de 35–200 gsm para bolsas y conversión. Consulte medidas de pliego de papel kraft natural, blanco o reciclado y solicite muestras."
   },
   "duplex-board": {
-    "title": "Cartón dúplex reverso gris para cajas impresas",
-    "description": "Cartón dúplex de 200–450 gsm con cara blanca estucada y reverso gris para estuches, cajas de calzado, juguetes y packaging minorista."
+    "title": "Cartulina caple y cartón dúplex reverso gris",
+    "description": "Cartulina caple y cartón dúplex de 200–450 gsm con cara blanca estucada y reverso gris para cajas impresas. Solicite hojas, bobinas o muestras."
   },
   "pe-coated-paper": {
     "title": "Papel PE para vasos y envases alimentarios",
@@ -420,8 +420,8 @@ export const spanishProductSeoById = {
     "description": "Cartón CKB de 200–350 gsm con cara blanca estucada y reverso kraft para bebidas, congelados, calzado y cajas resistentes. Solicite muestras."
   },
   "woodfree-paper": {
-    "title": "Papel woodfree offset para libros e impresión",
-    "description": "Papel woodfree offset de 60–120 gsm para libros, cuadernos, manuales, formularios y sobres. Disponible en hojas, bobinas y medidas personalizadas."
+    "title": "Papel bond y offset woodfree en hojas y bobinas",
+    "description": "Papel bond y woodfree offset de 60–120 gsm para libros, formularios y papelería. Disponible en hojas, pliegos, bobinas y medidas personalizadas."
   },
   "color-offset-paper": {
     "title": "Papel offset de color para impresión y papelería",
@@ -432,7 +432,7 @@ export const spanishProductSeoById = {
     "description": "Papel LWC estucado ligero de 35–70 gsm para revistas, catálogos, suplementos e impresión comercial. Solicite bobinas, medidas o muestras."
   },
   "ncr-paper": {
-    "title": "Papel NCR CB CFB y CF para formularios",
+    "title": "Papel autocopiativo NCR CB, CFB y CF",
     "description": "Papel NCR autocopiativo CB, CFB y CF de 50–60 gsm para facturas, recibos, contratos y formularios de 2 a 6 copias. Hojas y bobinas a medida."
   },
   "copy-paper": {
@@ -440,8 +440,8 @@ export const spanishProductSeoById = {
     "description": "Papel para copiadora de 70, 75 y 80 gsm en A3, A4, A5, series B, K y tamaños seleccionados de EE. UU. para mayoristas y marca privada."
   },
   "newsprint": {
-    "title": "Papel prensa en bobinas para impresión coldset",
-    "description": "Papel prensa de 40–57 gsm en bobinas para periódicos, encartes, suplementos y publicaciones de gran tirada. Solicite ancho y formato personalizados."
+    "title": "Papel prensa en bobinas, rollos y hojas",
+    "description": "Papel prensa de 40–57 gsm en bobinas, rollos o en hojas para periódicos, encartes y publicaciones de gran tirada. Solicite medidas y muestras."
   },
   "a4-copy-paper": {
     "title": "Papel A4 para copiadora de 70 75 y 80 gsm",
@@ -484,8 +484,8 @@ export const spanishProductSeoById = {
     "description": "Papel seda de color de 17–28 gsm para regalos, moda, calzado, flores y embalaje retail. Más de 30 tonos, medidas e impresión personalizadas."
   },
   "tracing-paper": {
-    "title": "Papel vegetal translúcido de 50 a 230 gsm",
-    "description": "Papel vegetal translúcido de 50–230 gsm para dibujo, etiquetas, inserciones, invitaciones y packaging. Solicite hojas, medidas y muestras."
+    "title": "Papel albanene y vegetal translúcido 50–230 gsm",
+    "description": "Papel albanene, vegetal o vellum de 50–230 gsm para dibujo, impresión, etiquetas, invitaciones y packaging. Solicite hojas, pliegos o muestras."
   },
   "cup-paper": {
     "title": "Cartón cupstock para vasos y envases alimentarios",
@@ -610,10 +610,10 @@ export const homeFeaturedProducts = [
   },
   {
     "id": "woodfree-paper",
-    "name": "Woodfree Paper",
+    "name": "Woodfree Offset / Bond Paper",
     "category": "culture-paper",
-    "tagline": "Uncoated woodfree paper with high brightness, good opacity and stable runnability for books, notebooks and commercial printing.",
-    "taglineEs": "Papel offset sin estucar con buena opacidad para libros, cuadernos e impresión comercial.",
+    "tagline": "Uncoated woodfree offset paper, also specified as bond paper in many markets, for books, forms, stationery and commercial printing.",
+    "taglineEs": "Papel bond y offset sin estucar con buena opacidad para libros, formularios, papelería e impresión comercial.",
     "image": "/images/products/culture-paper/woodfree-paper-main.webp"
   },
   {

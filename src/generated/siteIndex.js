@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "ppwr-epr-paper-packaging-buyer-checklist": {
+    "title": "EPR del PPWR para envases de papel: guía",
+    "description": "El PPWR plantea nuevas dudas sobre EPR. Use esta guía para definir roles, preparar la lista de materiales y pedir los datos correctos al proveedor."
+  },
   "paperboard-coated-paper-price-increase-buyer-response": {
     "title": "Aumentos del papel: ¿conviene comprar antes?",
     "description": "Suben el cartón y el papel estucado. Use esta lista de 7 pasos para revisar cotizaciones, inventario, plazos y alternativas de grado."

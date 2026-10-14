@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "ppwr-epr-paper-packaging-buyer-checklist",
+    "name": "Your Paper Pack Looks Compliant—But Who Actually Owes the EPR Fee?",
+    "nameEs": "Su envase de papel parece cumplir… ¿pero quién debe pagar realmente la EPR?",
+    "text": "your paper pack looks compliant—but who actually owes the epr fee? su envase de papel parece cumplir… ¿pero quién debe pagar realmente la epr? a paper pack can have an fsc claim and a clean specification while the commercial team still has not identified who must register, report and pay packaging epr fees in each eu market. this checklist helps buyers close that gap before shipment. un envase de papel puede llevar una declaración fsc y una especificación clara, pero el equipo comercial aún puede no saber quién debe registrarse, declarar y pagar la epr en cada mercado de la ue. esta guía ayuda a cerrar esa brecha antes del envío. regulation & compliance",
+    "href": "/blog/ppwr-epr-paper-packaging-buyer-checklist"
+  },
+  {
+    "type": "blog",
     "id": "paperboard-coated-paper-price-increase-buyer-response",
     "name": "Two Paper Price Hikes Just Landed—Should Packaging Buyers Order Early?",
     "nameEs": "Acaban de llegar dos aumentos de papel… ¿conviene adelantar la compra?",

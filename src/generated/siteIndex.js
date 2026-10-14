@@ -187,7 +187,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "leather-paper",
     "name": "Leather Paper",
-    "text": "leather paper paper that looks and feels like genuine leather — animal-free, durable, premium. leather paper leatherette paper faux leather paper leather embossed paper vegan leather paper leather-texture board",
+    "text": "leather paper decorative paper with a leather-effect grain for covers, rigid boxes and premium presentation. leather paper leatherette paper faux leather paper leather embossed paper leather-effect paper leather-texture board",
     "href": "/products/leather-paper"
   },
   {
@@ -360,11 +360,11 @@ export const spanishProductTaglineById = {
   "copy-paper": "Programa de papel para copiadora en múltiples formatos para distribución, instituciones y marca privada.",
   "newsprint": "Papel prensa ligero y rentable para periódicos, encartes y publicaciones de gran tirada.",
   "a4-copy-paper": "Papel A4 de 210×297 mm para distribuidores, oficinas e instituciones que compran por volumen.",
-  "a4-thermal-paper": "Papel térmico tamaño A4 para impresión portátil — sin tinta ni tóner, solo calor.",
-  "thermal-paper-roll": "Rollos de papel térmico para TPV, recibos e impresoras de fotos instantáneas.",
-  "soft-touch-paper": "Papel con recubrimiento táctil aterciopelado — la sensación de lujo que invita a tocar.",
-  "leather-paper": "Papel que se ve y se siente como cuero genuino — vegano, duradero, premium.",
-  "pearlescent-paper": "Papel iridiscente con brillo perlado — elegancia que se mueve con la luz.",
+  "a4-thermal-paper": "Papel térmico directo A4 para impresoras portátiles, documentos de campo y operaciones sin cartuchos de tinta.",
+  "thermal-paper-roll": "Rollos de papel térmico directo para TPV, terminales de pago, recibos y registros operativos.",
+  "soft-touch-paper": "Papel y cartón con tacto aterciopelado para cajas, cubiertas, tarjetas y piezas impresas premium.",
+  "leather-paper": "Papel decorativo con relieve efecto cuero para cubiertas, cajas rígidas y presentación premium.",
+  "pearlescent-paper": "Papel perlado de brillo controlado para invitaciones, cosmética, cajas y comunicación premium.",
   "embossed-paper": "Papel con textura tridimensional en relieve — convierte el embalaje en experiencia táctil.",
   "gold-silver-card": "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
   "label-paper": "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
@@ -446,6 +446,26 @@ export const spanishProductSeoById = {
   "a4-copy-paper": {
     "title": "Papel A4 para copiadora de 70 75 y 80 gsm",
     "description": "Papel A4 de 210×297 mm en 70, 75 y 80 gsm para oficinas, escuelas, instituciones y distribuidores. Consulte cajas, marca privada y muestras."
+  },
+  "a4-thermal-paper": {
+    "title": "Papel térmico A4 para impresoras portátiles",
+    "description": "Papel térmico directo A4 de 210×297 mm para impresoras portátiles, contratos, logística y documentos de campo. Consulte grado BPA-free y muestras."
+  },
+  "thermal-paper-roll": {
+    "title": "Rollos de papel térmico 57 y 80 mm para TPV",
+    "description": "Rollos térmicos de 57 y 80 mm para TPV, terminales de pago, recibos y logística. Personalice diámetro, mandril, longitud, embalaje y grado químico."
+  },
+  "soft-touch-paper": {
+    "title": "Papel soft touch para cajas y packaging de lujo",
+    "description": "Papel y cartón soft touch de 120–400 gsm para cajas, cubiertas, tarjetas y packaging premium. Compare tacto, impresión, hojas, bobinas y muestras."
+  },
+  "leather-paper": {
+    "title": "Papel efecto cuero para cubiertas y cajas",
+    "description": "Papel efecto cuero de 120–400 gsm con texturas tipo grano para libros, agendas, cajas y carpetas. Consulte colores, sustratos, hojas y muestras."
+  },
+  "pearlescent-paper": {
+    "title": "Papel perlado de 120 a 350 gsm para packaging",
+    "description": "Papel perlado de 120–350 gsm en blanco, champagne, oro, plata y tonos personalizados para invitaciones, cosmética y cajas. Solicite muestras."
   },
   "embossed-paper": {
     "title": "Papel gofrado para embalaje de lujo",
@@ -569,7 +589,7 @@ export const homeFeaturedProducts = [
     "name": "Soft Touch Paper",
     "category": "fancy-paper",
     "tagline": "Velvet-smooth tactile coated paper — the sensation of luxury that makes people stop and touch.",
-    "taglineEs": "Papel con recubrimiento táctil aterciopelado — la sensación de lujo que invita a tocar.",
+    "taglineEs": "Papel y cartón con tacto aterciopelado para cajas, cubiertas, tarjetas y piezas impresas premium.",
     "image": "/images/products/fancy-paper/soft-touch-paper-main.webp"
   },
   {

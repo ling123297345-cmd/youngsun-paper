@@ -1628,12 +1628,12 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "A4-sized thermal paper for portable and mobile printing — no ink, no toner, just heat. Ideal for on-the-go professionals.",
     description:
-      "A4 Thermal Paper is a heat-sensitive paper that produces images through direct thermal transfer — no ink cartridges, ribbons, or toner required. Compatible with compact portable thermal printers widely used by field sales teams, logistics coordinators, healthcare workers, and remote professionals. Each sheet is standard A4 size (210×297mm), pre-cut for immediate use. The thermal coating produces sharp black images with good contrast and reasonable archival stability. An innovative solution for printing contracts, invoices, reports, and documents anywhere.",
+      "A4 Thermal Paper is a heat-sensitive sheet for compatible direct thermal printers, allowing field teams to print contracts, invoices, logistics records and reports without ink cartridges, ribbons or toner. Each sheet is pre-cut to 210 × 297 mm. Thermal sensitivity, image density, storage life and any BPA-free declaration must be confirmed against the printer model, selected grade and end use.",
     specs: [
       "Size: A4 (210×297mm)",
       "Coating: Direct thermal (BPA-free options available)",
       "Image color: Black",
-      "Compatibility: Portable thermal printers",
+      "Compatibility: Confirm against the portable thermal printer model",
       "Packaging: Pre-cut sheets, boxed or bulk",
       "No ink/toner required",
     ],
@@ -1645,24 +1645,25 @@ export const subProducts = {
       "Remote work and co-working space printing",
       "Travel and hospitality documentation",
     ],
-    certifications: ["BPA-free grades available", "ISO 9001"],
+    certifications: ["FSC status and any BPA-free or chemical declaration are confirmed for the exact grade and order"],
     variants: [
       "Standard A4 Thermal Paper",
-      "BPA-Free A4 Thermal Paper",
+      "BPA-Free A4 Thermal Paper (subject to grade documentation)",
     ],
     features: [
       "No Ink Required — Direct thermal transfer produces sharp images without cartridges, ribbons or toner.",
       "Portable Printer Compatible — Pre-cut A4 sheets for compact mobile thermal printers used by field professionals.",
-      "Good Image Contrast — Produces clear black text and graphics for documents, contracts and invoices.",
+      "Selectable Imaging Performance — Sensitivity, contrast and storage life can be matched to the printer and application.",
       "Instant Printing — Heat-sensitive coating enables immediate output without warm-up time.",
     ],
     customization: [
-      "BPA-free option",
+      "BPA-free option subject to grade documentation",
       "Custom sheet count per box",
       "Custom packing",
       "Branded packaging",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular formats and packing; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and any BPA-free declaration are confirmed for the exact grade and order" },
+    quoteReqs: ["Printer model", "A4 feed configuration", "Thermal sensitivity or imaging requirement", "Sheets per pack", "Quantity and packing", "Destination port"],
     seoTitle: "A4 Thermal Paper Supplier for Portable Printers",
     metaDescription: "A4 direct thermal paper for portable printers, field documents, invoices and logistics records. BPA-free options and export packing available. Request samples.",
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
@@ -1676,7 +1677,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Small-format thermal paper rolls for POS terminals, receipt printers, and instant photo printers — crisp images, reliable performance.",
     description:
-      "Thermal Paper Rolls are heat-sensitive paper wound into compact rolls for use in point-of-sale (POS) terminals, credit card terminals, receipt printers, kitchen printers, and mini instant photo printers. Available in standard widths (57mm, 80mm) and various roll diameters. The thermal coating produces sharp, clear prints without ink or toner. BPA-free and phenol-free grades are available for food-service and healthcare applications. A high-volume consumable with consistent global demand from retail, hospitality, banking, and logistics sectors.",
+      "Thermal Paper Rolls are heat-sensitive rolls for compatible POS terminals, payment devices, receipt printers and operational records. Standard 57 mm and 80 mm widths can be combined with different outer diameters and core sizes. Roll length, thermal side, sensitivity and image retention should be matched to the printer and storage conditions. BPA-free or phenol-free options are supplied only when specified and documented for the order.",
     specs: [
       "Width: 57mm / 80mm (standard), custom widths available",
       "Roll diameter: 30–80mm",
@@ -1693,7 +1694,7 @@ export const subProducts = {
       "Mini instant photo printers",
       "ATM and banking transaction records",
     ],
-    certifications: ["BPA-free grades", "Phenol-free grades", "ISO 9001"],
+    certifications: ["FSC status and any BPA-free, phenol-free or chemical declaration are confirmed for the exact grade and order"],
     variants: [
       "57mm Width Thermal Roll",
       "80mm Width Thermal Roll",
@@ -1701,9 +1702,9 @@ export const subProducts = {
       "Phenol-Free Thermal Roll",
     ],
     features: [
-      "Universal POS Compatibility — Standard 57mm and 80mm widths fit all major POS and receipt printer brands.",
-      "Crisp Print Quality — High-contrast black imaging for barcode scanning and long-term record keeping.",
-      "BPA-Free & Phenol-Free Options — Safer chemistry for food-service, healthcare and retail environments.",
+      "Common POS Sizes — Standard 57 mm and 80 mm widths suit many POS and receipt printer configurations.",
+      "Selectable Image Performance — Contrast and image retention are matched to the grade, printer and storage conditions.",
+      "Documented Chemical Options — BPA-free and phenol-free grades are available subject to order documentation.",
       "Consistent Roll Winding — Uniform tension ensures smooth feeding without jams or misalignment.",
     ],
     customization: [
@@ -1713,7 +1714,8 @@ export const subProducts = {
       "Custom packing and labeling",
       "Shrink-wrapped or bulk-packed",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "ISO 9001", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular sizes and packing; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and chemical declarations are confirmed for the exact grade and order" },
+    quoteReqs: ["Printer model", "Roll width, outer diameter and length", "Core diameter", "Thermal side and sensitivity", "BPA-free or phenol-free requirement", "Quantity, packing and destination port"],
     seoTitle: "Thermal Paper Roll Supplier for POS and Receipts",
     metaDescription: "57 mm and 80 mm thermal paper rolls for POS terminals, receipt printers, payment devices and logistics labels. BPA-free options and custom packing available.",
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
@@ -1739,13 +1741,13 @@ export const subProducts = {
     category: "fancy-paper",
     tagline: "Velvet-smooth tactile coated paper — the sensation of luxury that makes people stop and touch.",
     description:
-      "Soft touch paper — also called velvet paper, suede-touch, or soft-feel coated paper — is a paper or board substrate coated with a water-based polyurethane or acrylic dispersion that creates a remarkably smooth, almost rubbery tactile surface. The coating transforms ordinary printed paper into a sensory experience — warm to the touch, fingerprint-resistant, and scuff-resistant. It is widely used by luxury brands for premium packaging, business cards, book covers, and high-end promotional materials where first impression is everything. Soft touch coating also deepens printed colors, giving blacks a richer, denser appearance.",
+      "Soft touch paper is a paper or board substrate finished with a matte, velvet-like tactile coating. It is used for luxury boxes, book covers, cards and premium print where touch is part of the brand experience. Coating chemistry, fingerprint resistance, scuff performance, print compatibility and adhesion vary by grade and should be validated with the selected sample and converting process.",
     specs: [
       "Substrate: Coated paper / Board, 120–400 gsm",
-      "Coating: Water-based PU or acrylic soft-feel",
+      "Coating system: Confirm by grade",
       "Touch feel: Velvet-smooth, warm, non-slip",
       "Print compatibility: Offset, UV offset, screen, foil stamping",
-      "Durability: Fingerprint-resistant, scuff-resistant",
+      "Fingerprint and scuff performance: Grade dependent",
       "Format: Sheets & reels",
     ],
     applications: [
@@ -1756,7 +1758,7 @@ export const subProducts = {
       "Gift boxes, rigid boxes, and presentation folders",
       "Hang tags and swing tickets for fashion brands",
     ],
-    certifications: ["FSC Mix", "ISO 9001"],
+    certifications: ["FSC status and coating composition are confirmed for the exact grade and order"],
     variants: [
       "Soft Touch Coated Paper (120–250 gsm)",
       "Soft Touch Coated Board (250–400 gsm)",
@@ -1765,9 +1767,9 @@ export const subProducts = {
     ],
     features: [
       "Velvet-Smooth Tactile Surface — Creates an irresistible touch sensation that signals luxury and quality.",
-      "Fingerprint Resistant — Maintains a clean, premium appearance even with repeated handling.",
+      "Selectable Handling Performance — Fingerprint and scuff resistance depend on the selected grade.",
       "Deepens Printed Colors — Blacks appear richer, colors more saturated for dramatic visual impact.",
-      "Scuff & Scratch Resistant — Durable coating withstands converting, handling and shipping.",
+      "Converting Validation — Printing, foil, folding and adhesion can be checked on the selected sample.",
     ],
     customization: [
       "Custom grammage",
@@ -1776,7 +1778,8 @@ export const subProducts = {
       "Printing coordination",
       "Custom packing",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
+    quoteReqs: ["End use", "Grammage and substrate", "Color and tactile finish", "Printing and finishing process", "Sheet or reel size", "Quantity and destination port"],
     seoTitle: "Soft Touch Paper Supplier for Luxury Packaging",
     metaDescription: "Velvet soft touch paper and board in 120–400 gsm for luxury boxes, book covers, cards and premium print. Request sizes, sheets, reels or samples.",
     keywords: ["soft touch paper", "velvet paper", "suede-touch paper", "soft-feel coated", "luxury paper", "tactile paper"],
@@ -1842,16 +1845,16 @@ export const subProducts = {
     id: "leather-paper",
     name: "Leather Paper",
     category: "fancy-paper",
-    tagline: "Paper that looks and feels like genuine leather — animal-free, durable, premium.",
+    tagline: "Decorative paper with a leather-effect grain for covers, rigid boxes and premium presentation.",
     description:
-      "Leather paper — also called leatherette paper, faux-leather paper, or leather-embossed paper — is a paper or board substrate embossed with a leather-grain texture and surface-finished to replicate the look and hand-feel of natural leather. It is 100% animal-free (vegan) while delivering genuine luxury aesthetics. Widely used for book covers, diaries, premium packaging, and gift boxes. Available in a range of leather patterns (crocodile, calf, ostrich, pebble grain) and classic leather colors (black, brown, tan, burgundy, navy, dark green).",
+      "Leather paper is a decorative paper or board embossed and finished to reproduce the visual texture of different leather grains. It provides a paper-based surface for book covers, diaries, gift boxes, cases and presentation folders without describing the substrate as genuine leather. Pattern, color, coating and composition vary by grade. Any animal-component-free claim must be requested and confirmed for the exact reference before it is used in marketing or labeling.",
     specs: [
       "Substrate: FBB / Grey board / Kraft board, 120–400 gsm",
       "Embossing: Leather-grain pattern (multiple textures available)",
       "Color: Classic leather tones — customizable",
       "Surface: Matte-laminated or PU-coated for durability",
       "Format: Sheets & reels",
-      "Vegan: 100% animal-free material",
+      "Composition declaration: Confirm by exact grade when required",
     ],
     applications: [
       "Book covers — diaries, journals, bibles, notebooks",
@@ -1861,7 +1864,7 @@ export const subProducts = {
       "Watch and accessory boxes",
       "Certificate and diploma holders",
     ],
-    certifications: ["FSC Mix", "Vegan certified", "ISO 9001"],
+    certifications: ["FSC status and any composition or animal-component declaration are confirmed for the exact grade and order"],
     variants: [
       "Crocodile Grain Leather Paper",
       "Calf Grain Leather Paper",
@@ -1869,8 +1872,8 @@ export const subProducts = {
       "Pebble Grain Leather Paper",
     ],
     features: [
-      "Authentic Leather Look & Feel — Embossed texture replicates genuine leather without animal materials.",
-      "100% Vegan — Animal-free alternative that delivers the same luxury aesthetic for ethical brands.",
+      "Leather-Effect Texture — Embossed patterns create a decorative surface inspired by different leather grains.",
+      "Paper-Based Substrate — Suitable for buyers seeking a decorative paper covering rather than genuine leather.",
       "Multiple Leather Patterns — Crocodile, calf, ostrich, pebble grain and custom textures available.",
       "Rich Color Palette — Classic leather tones: black, brown, tan, burgundy, navy, dark green.",
     ],
@@ -1881,10 +1884,11 @@ export const subProducts = {
       "Sheet or reel supply",
       "Custom packing",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and any composition declaration are confirmed for the exact grade and order" },
+    quoteReqs: ["End use", "Pattern or reference sample", "Color", "Grammage and substrate", "Converting and finishing process", "Quantity, format and destination port"],
     seoTitle: "Leather Paper Supplier for Book Covers and Boxes",
     metaDescription: "Leather-grain paper in 120–400 gsm for book covers, diaries, gift boxes and luxury packaging. Compare textures, colors, sheets and reels; request samples.",
-    keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "vegan leather paper", "leather-texture board"],
+    keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "leather-effect paper", "leather-texture board"],
     image: "/images/products/fancy-paper/leather-paper-main.webp",
     gallery: [
       
@@ -1949,13 +1953,13 @@ export const subProducts = {
     category: "fancy-paper",
     tagline: "Light-reflecting iridescent paper with a pearl-like shimmer — elegance that moves with the light.",
     description:
-      "Pearlescent paper — also called pearl paper, iridescent paper, or mica-coated paper — is coated with a layer containing mica-based pigments that create a luminous, light-reflecting finish. The paper shifts subtly in color and brightness as the viewing angle changes, producing a sophisticated shimmer effect. Available in white pearl, gold pearl, silver pearl, and tinted pearl variants. Grammages from 120 gsm to 350 gsm. Used for wedding invitations, luxury packaging, cosmetic branding, and high-end print collateral where visual impact differentiates the brand.",
+      "Pearlescent paper uses a reflective pigment layer to create a soft shimmer that changes with the viewing angle. Reference grammages range from 120 gsm to 350 gsm in white pearl, champagne, gold, silver and selected tinted finishes. It is used for invitations, cosmetic packaging, perfume inserts, cards and premium print. Ink reproduction, foil, embossing and adhesion should be validated on the selected color and grammage.",
     specs: [
       "Grammage: 120 – 350 gsm",
       "Finish: Pearl / Iridescent / Shimmer",
       "Colors: White pearl, champagne, gold, silver, custom tinted",
       "Print compatibility: Offset, screen, foil, embossing, debossing",
-      "Coating: Mica-based pigment layer",
+      "Finish composition: Confirm by grade",
       "Format: Sheets & reels",
     ],
     applications: [
@@ -1966,7 +1970,7 @@ export const subProducts = {
       "Certificate and award folders",
       "High-end brochure and menu covers",
     ],
-    certifications: ["FSC Mix", "ISO 9001"],
+    certifications: ["FSC status and finish composition are confirmed for the exact grade and order"],
     variants: [
       "White Pearl Paper",
       "Champagne Pearl Paper",
@@ -1975,10 +1979,10 @@ export const subProducts = {
       "Custom Tinted Pearl Paper",
     ],
     features: [
-      "Light-Reflecting Shimmer — Mica-based pigments create a luminous finish that shifts with viewing angle.",
+      "Light-Reflecting Shimmer — The pearlescent surface changes subtly with the viewing angle.",
       "Premium Visual Impact — Instantly communicates luxury for weddings, cosmetics and high-end brands.",
       "Multiple Pearl Tones — White, champagne, gold, silver and custom tinted pearl variants available.",
-      "Print & Finish Compatible — Works with offset, screen, foil stamping, embossing and debossing.",
+      "Finish Testing — Offset, screen, foil, embossing and debossing should be validated on the selected grade.",
     ],
     customization: [
       "Pearlescent tone selection",
@@ -1987,7 +1991,8 @@ export const subProducts = {
       "Custom size",
       "Foil and embossing coordination",
     ],
-    commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
+    commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
+    quoteReqs: ["End use", "Pearlescent color", "Grammage", "Sheet or reel size", "Printing and finishing process", "Quantity and destination port"],
     seoTitle: "Pearlescent Paper Supplier for Luxury Packaging",
     metaDescription: "Pearlescent paper in 120–350 gsm with white, gold, silver and tinted shimmer finishes for invitations, cosmetics and luxury boxes. Request samples.",
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],

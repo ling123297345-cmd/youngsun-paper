@@ -264,7 +264,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "absorbent-paper",
     "name": "Absorbent Paper",
-    "text": "absorbent paper high-performance absorbent cotton paper for perfume test strips, beverage coasters, and creative packaging — fast absorption, natural texture. absorbent paper perfume blotter paper fragrance test strip paper cotton blotting paper beverage coaster paper absorbent card stock",
+    "text": "absorbent paper porous blotting paper for perfume test strips, coasters and custom absorbent components. absorbent paper perfume blotter paper fragrance test strip paper cotton blotting paper beverage coaster paper absorbent card stock",
     "href": "/products/absorbent-paper"
   },
   {
@@ -291,8 +291,8 @@ export const productSearchIndex = [
   {
     "type": "product",
     "id": "metallized-laminated-grey-board",
-    "name": "Food-Grade Metallized Board",
-    "text": "food-grade metallized board gold, silver and white laminated board for cake bases, desserts and salmon packaging. food grade metallized board gold cake board silver cake board salmon packaging board laminated cake base",
+    "name": "Metallized Laminated Grey Board",
+    "text": "metallized laminated grey board gold, silver and white laminated board for cake bases, desserts and salmon packaging. food grade metallized board gold cake board silver cake board salmon packaging board laminated cake base",
     "href": "/products/metallized-laminated-grey-board"
   },
   {
@@ -339,7 +339,7 @@ export const productNameById = {
   "color-laminated-grey-board": "Color Laminated Grey Board",
   "woodgrain-laminated-grey-board": "Woodgrain Laminated Grey Board",
   "blue-core-puzzle-board": "Blue Core Puzzle Board",
-  "metallized-laminated-grey-board": "Food-Grade Metallized Board",
+  "metallized-laminated-grey-board": "Metallized Laminated Grey Board",
   "foam-laminated-grey-board": "Foam Laminated Grey Board"
 };
 
@@ -374,7 +374,7 @@ export const spanishProductTaglineById = {
   "greaseproof-paper": "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
   "mg-paper": "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
   "silicone-coated-paper": "Papel siliconado de liberación para liners, procesos industriales y aplicaciones alimentarias debidamente especificadas.",
-  "absorbent-paper": "Papel absorbente de algodón de alto rendimiento — absorción rápida, textura natural.",
+  "absorbent-paper": "Papel secante de estructura porosa para tiras de perfume, posavasos y componentes absorbentes personalizados.",
   "color-laminated-grey-board": "Cartón gris revestido con papel de color para cajas de regalo, tapas y papelería.",
   "woodgrain-laminated-grey-board": "Papel efecto madera laminado sobre cartón gris para cajas y aplicaciones decorativas.",
   "blue-core-puzzle-board": "Cartón con núcleo azul para la producción de rompecabezas.",
@@ -471,9 +471,17 @@ export const spanishProductSeoById = {
     "title": "Papel gofrado para embalaje de lujo",
     "description": "Papel gofrado de 80–400 gsm con texturas de lino, fieltro, lienzo, madera o diseño personalizado para cajas, cubiertas y etiquetas. Solicite muestras."
   },
+  "gold-silver-card": {
+    "title": "Cartulina dorada y plateada de 200 a 400 gsm",
+    "description": "Cartulina metálica dorada y plateada de 200–400 gsm para cajas, cosmética, invitaciones y packaging premium. Solicite acabados, hojas y muestras."
+  },
   "label-paper": {
     "title": "Papel para etiquetas y tags colgantes",
     "description": "Papel C1S, C2S y metalizado de 60–250 gsm para etiquetas autoadhesivas, etiquetas con cola y tags colgantes. Solicite bobinas, hojas o muestras."
+  },
+  "color-tissue-paper": {
+    "title": "Papel seda de color para regalos y retail",
+    "description": "Papel seda de color de 17–28 gsm para regalos, moda, calzado, flores y embalaje retail. Más de 30 tonos, medidas e impresión personalizadas."
   },
   "tracing-paper": {
     "title": "Papel vegetal translúcido de 50 a 230 gsm",
@@ -497,7 +505,27 @@ export const spanishProductSeoById = {
   },
   "absorbent-paper": {
     "title": "Papel absorbente para tiras de perfume",
-    "description": "Papel absorbente de fibra de algodón de 0.4–1.6 mm para tiras de perfume, posavasos, tarjetas aromáticas e insertos. Solicite hojas o muestras cortadas."
+    "description": "Papel absorbente de 0.4–1.6 mm para tiras de perfume, posavasos, tarjetas aromáticas e insertos. Solicite hojas, bobinas o piezas troqueladas."
+  },
+  "color-laminated-grey-board": {
+    "title": "Cartón gris laminado con papel de color",
+    "description": "Cartón gris laminado con papel negro, blanco, kraft o color para cajas rígidas, tapas y carpetas. Espesores de 1.0–4.0 mm y corte a medida."
+  },
+  "woodgrain-laminated-grey-board": {
+    "title": "Cartón gris efecto madera para cajas decorativas",
+    "description": "Papel efecto madera de unos 120 gsm laminado sobre cartón gris de 1.0–4.0 mm para cajas, organizadores y aplicaciones decorativas."
+  },
+  "blue-core-puzzle-board": {
+    "title": "Cartón con núcleo azul para rompecabezas",
+    "description": "Cartón con núcleo azul de 600–1800 gsm y aproximadamente 0.85–2.73 mm para rompecabezas y juegos. Solicite hojas, muestras y paletizado."
+  },
+  "metallized-laminated-grey-board": {
+    "title": "Cartón metalizado para bases de pastel y postres",
+    "description": "Cartón laminado dorado, plateado o blanco de 1.0–3.0 mm para pasteles, postres y salmón. Hojas de 70 × 100 cm y formas personalizadas."
+  },
+  "foam-laminated-grey-board": {
+    "title": "Cartón gris con espuma para cubiertas acolchadas",
+    "description": "Cartón gris laminado con espuma de 3 mm para carpetas y tapas duras. Estructuras de 2 o 3 capas con papel superior gris o kraft."
   }
 };
 

@@ -166,9 +166,9 @@ export function createProductSchema(product, { lang = "en", translation = null }
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${productUrl}#product`,
-    name: product.name,
+    name: isSpanish ? translation?.name || product.name : product.name,
     description: isSpanish
-      ? translation?.tagline || product.metaDescription || product.description || product.tagline
+      ? translation?.description || translation?.tagline || product.metaDescription || product.description || product.tagline
       : product.metaDescription || product.description || product.tagline,
     url: productUrl,
     image: [...new Set(images)],

@@ -447,7 +447,7 @@ function renderRouteSchemas(page, lang) {
       url: localizedPath(page.route, lang),
       lang,
       items: collectionProducts.map((product) => ({
-        name: product.name,
+        name: lang === "es" ? spanishProductName(product) : product.name,
         url: localizedPath(`/products/${product.id}`, lang),
         image: product.image,
       })),
@@ -509,15 +509,18 @@ function renderRouteSchemas(page, lang) {
     })]);
   }
 
-  const breadcrumbItems = createBreadcrumbItems(page).map((item) => ({
-    ...item,
-    name: lang === "es" && item.url === "/"
-      ? "Inicio"
-      : lang === "es" && post && item.url === page.route
-        ? post.titleEs
-        : item.name,
-    url: localizedPath(item.url, lang),
-  }));
+  const breadcrumbItems = createBreadcrumbItems(page).map((item) => {
+    let name = item.name;
+    if (lang === "es") {
+      const breadcrumbCategory = productCategories.find((category) => item.url === `/products/${category.id}`);
+      if (item.url === "/") name = "Inicio";
+      else if (item.url === "/products") name = "Productos";
+      else if (breadcrumbCategory) name = getSpanishCategoryTitle(breadcrumbCategory.id);
+      else if (productEntry && item.url === page.route) name = spanishProductName(productEntry[1]);
+      else if (post && item.url === page.route) name = post.titleEs;
+    }
+    return { ...item, name, url: localizedPath(item.url, lang) };
+  });
   const breadcrumb = createBreadcrumbSchema(breadcrumbItems);
   if (breadcrumb) schemas.push(["route-breadcrumb-schema", breadcrumb]);
 
@@ -734,7 +737,7 @@ function renderSpanishHomeStatic() {
   const featured = ["grey-board", "black-paper", "folding-box-board", "kraft-paper", "woodfree-paper", "soft-touch-paper", "cup-paper"]
     .map((id) => subProducts[id])
     .filter((product) => product && productEs[product.id])
-    .map((product) => `<li><a href="${localizedPath(`/products/${product.id}`, "es")}">${escapeHtml(product.name)}</a> - ${escapeHtml(productEs[product.id].tagline)}</li>`)
+    .map((product) => `<li><a href="${localizedPath(`/products/${product.id}`, "es")}">${escapeHtml(spanishProductName(product))}</a> - ${escapeHtml(productEs[product.id].tagline)}</li>`)
     .join("");
   return `<header><p>YOUNGSUN PAPER · DONGGUAN, CHINA</p><h1>Fabricante de Papel y Cartón en China</h1><p>YOUNGSUN PAPER fabrica y suministra cartón gris, papel negro, cartón plegable, papel kraft, papel de impresión, papel especial y papel para envases alimentarios a empresas internacionales.</p><p>Con más de 20 años de experiencia, ofrecemos GSM y medidas personalizadas, corte, procesamiento, muestras, documentación y cotizaciones de exportación.</p></header><section><h2>Nuestra colección de papel</h2>${categories}</section><section><h2>Productos destacados</h2><ul>${featured}</ul></section><section><h2>Soporte técnico y comercial</h2><p>Nuestro equipo ayuda a comparar estructura, superficie de impresión, espesor, rigidez, barrera y requisitos de conversión antes de confirmar el producto. Indique su aplicación, cantidad y puerto de destino para recibir una recomendación.</p></section>`;
 }
@@ -759,12 +762,13 @@ function renderSpanishCategoryStatic(category) {
 
 function renderSpanishProductStatic(product) {
   const translation = productEs[product.id];
+  const productName = spanishProductName(product);
   const specs = translation?.specs || [];
   const applications = translation?.applications || [];
   const textureLibrary = ["soft-touch-paper", "leather-paper", "pearlescent-paper", "embossed-paper"].includes(product.id)
-    ? `<section><h2>Elija una textura para su aplicación</h2><p>Compare más de 120 patrones disponibles y solicite muestras físicas adecuadas para ${escapeHtml(product.name)}.</p><p><a href="${localizedPath("/fancy-paper-collection", "es")}">Ver texturas disponibles</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p></section>`
+    ? `<section><h2>Elija una textura para su aplicación</h2><p>Compare más de 120 patrones disponibles y solicite muestras físicas adecuadas para ${escapeHtml(productName)}.</p><p><a href="${localizedPath("/fancy-paper-collection", "es")}">Ver texturas disponibles</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p></section>`
     : "";
-  return `<article><header><p>${escapeHtml(getSpanishCategoryTitle(product.category))}</p><h1>${escapeHtml(product.name)}</h1><p>${escapeHtml(translation.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)} suministrado por YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header><section><h2>Descripción del producto</h2><p>${escapeHtml(translation.tagline)} YOUNGSUN suministra este producto a fabricantes, impresores, convertidores y distribuidores internacionales, con formatos y embalaje adaptados al proyecto.</p></section>${renderListSection("Especificaciones", specs)}${renderListSection("Aplicaciones", applications)}${renderProductIndustryStatic(product, "es")}${renderProductGuidesStatic(product, "es")}${textureLibrary}<section><h2>Información para cotizar</h2><p>Envíe el GSM o espesor requerido, medida de hoja o bobina, cantidad, aplicación, proceso de impresión y puerto de destino. Nuestro equipo comprobará disponibilidad, pedido mínimo, plazo de entrega y documentación aplicable.</p><p><a href="${localizedPath(`/contact?product=${product.id}`, "es")}">Solicitar precio de ${escapeHtml(product.name)}</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p><p><a href="${localizedPath("/quality", "es")}">Control de calidad y documentación</a> · <a href="${localizedPath("/how-to-order", "es")}">Cómo comprar</a></p></section><p><a href="${localizedPath(`/products/${product.category}`, "es")}">Ver productos relacionados</a></p></article>`;
+  return `<article><header><p>${escapeHtml(getSpanishCategoryTitle(product.category))}</p><h1>${escapeHtml(productName)}</h1><p>${escapeHtml(translation.tagline)}</p>${product.image ? `<img src="${escapeHtml(product.image)}" alt="${escapeHtml(productName)} suministrado por YOUNGSUN PAPER" width="800" height="500" loading="eager">` : ""}</header><section><h2>Descripción del producto</h2><p>${escapeHtml(translation.description || translation.tagline)}</p></section>${renderListSection("Especificaciones", specs)}${renderListSection("Aplicaciones", applications)}${renderProductIndustryStatic(product, "es")}${renderProductGuidesStatic(product, "es")}${textureLibrary}<section><h2>Información para cotizar</h2><p>Envíe el GSM o espesor requerido, medida de hoja o bobina, cantidad, aplicación, proceso de impresión y puerto de destino. Nuestro equipo comprobará disponibilidad, pedido mínimo, plazo de entrega y documentación aplicable.</p><p><a href="${localizedPath(`/contact?product=${product.id}`, "es")}">Solicitar precio de ${escapeHtml(productName)}</a> · <a href="${localizedPath(`/contact?intent=samples&product=${product.id}`, "es")}">Solicitar muestras</a></p><p><a href="${localizedPath("/quality", "es")}">Control de calidad y documentación</a> · <a href="${localizedPath("/how-to-order", "es")}">Cómo comprar</a></p></section><p><a href="${localizedPath(`/products/${product.category}`, "es")}">Ver productos relacionados</a></p></article>`;
 }
 
 function renderIndustriesIndexStatic(lang) {
@@ -777,7 +781,8 @@ function renderIndustriesIndexStatic(lang) {
       .slice(0, 4)
       .map((product) => {
         const description = isSpanish ? productEs[product.id]?.tagline : product.tagline;
-        return `<li><a href="${localizedPath(`/products/${product.id}`, lang)}">${escapeHtml(product.name)}</a>${description ? ` - ${escapeHtml(description)}` : ""}</li>`;
+        const productName = isSpanish ? spanishProductName(product) : product.name;
+        return `<li><a href="${localizedPath(`/products/${product.id}`, lang)}">${escapeHtml(productName)}</a>${description ? ` - ${escapeHtml(description)}` : ""}</li>`;
       })
       .join("");
     return `<article><h2><a href="${localizedPath(`/industries/${industry.id}`, lang)}">${escapeHtml(industry.title[lang])}</a></h2><p>${escapeHtml(detail.overview[lang])}</p><h3>${isSpanish ? "Productos recomendados" : "Recommended paper grades"}</h3><ul>${products}</ul><p><a href="${localizedPath(`/industries/${industry.id}`, lang)}">${isSpanish ? "Explorar esta industria" : "Explore this industry"}</a></p></article>`;
@@ -850,7 +855,11 @@ function renderSpanishGenericStatic(page) {
 
 function spanishProductLink(product) {
   const translation = productEs[product.id];
-  return `<li><a href="${localizedPath(`/products/${product.id}`, "es")}">${escapeHtml(product.name)}</a> - ${escapeHtml(translation?.tagline || product.tagline)}</li>`;
+  return `<li><a href="${localizedPath(`/products/${product.id}`, "es")}">${escapeHtml(spanishProductName(product))}</a> - ${escapeHtml(translation?.tagline || product.tagline)}</li>`;
+}
+
+function spanishProductName(product) {
+  return productEs[product?.id]?.name || product?.name || "";
 }
 
 function renderHomeStatic() {
@@ -899,7 +908,7 @@ function renderProductIndustryStatic(product, lang) {
     return `<li><a href="${href}">${escapeHtml(title)}</a> - ${escapeHtml(summary)}</li>`;
   }).join("");
 
-  return `<section><h2>${isSpanish ? `Industrias que utilizan ${escapeHtml(product.name)}` : `Industries Using ${escapeHtml(product.name)}`}</h2><p>${isSpanish ? "Consulte requisitos de uso, grados recomendados y puntos de control para compradores en cada sector." : "Explore end-use requirements, recommended grades and buyer checkpoints for each industry."}</p><ul>${links}</ul></section>`;
+  return `<section><h2>${isSpanish ? `Industrias que utilizan ${escapeHtml(spanishProductName(product))}` : `Industries Using ${escapeHtml(product.name)}`}</h2><p>${isSpanish ? "Consulte requisitos de uso, grados recomendados y puntos de control para compradores en cada sector." : "Explore end-use requirements, recommended grades and buyer checkpoints for each industry."}</p><ul>${links}</ul></section>`;
 }
 
 function renderProductGuidesStatic(product, lang) {

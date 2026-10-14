@@ -32,6 +32,7 @@ export default function ProductDetail() {
     </section>
   );
 
+  const productName = isEs && productEs[id]?.name ? productEs[id].name : p.name;
   const tagline = isEs && productEs[id]?.tagline ? productEs[id].tagline : p.tagline;
   const description = isEs && productEs[id]?.description ? productEs[id].description : p.description;
   const specs = isEs && productEs[id]?.specs ? productEs[id].specs : p.specs;
@@ -46,6 +47,7 @@ export default function ProductDetail() {
   const quoteReqs = (isEs && productEs[id]?.quoteReqs ? productEs[id].quoteReqs : p.quoteReqs) || null;
   const category = productCategories.find((cat) => cat.id === p.category);
   const categoryPath = `/products/${p.category}`;
+  const localizedPath = (path) => (isEs ? `/es${path === "/" ? "/" : path}` : path);
   const sourceCategory = location.state?.fromCategory;
   const backPath = sourceCategory === "all" ? "/products" : categoryPath;
   const backLabel = sourceCategory === "all"
@@ -59,17 +61,17 @@ export default function ProductDetail() {
   const relatedIndustries = getProductIndustryLinks(id);
   const relatedGuides = getProductGuideLinks(id, isEs ? "es" : "en");
 
-  const seoTitle = p.seoTitle || `${p.name} Supplier in China`;
-  const seoDesc = p.metaDescription || `Compare ${p.name.toLowerCase()} specifications, applications, available formats and export options from YOUNGSUN PAPER. Request samples or a quotation.`;
+  const seoTitle = p.seoTitle || `${productName} Supplier in China`;
+  const seoDesc = p.metaDescription || `Compare ${productName.toLowerCase()} specifications, applications, available formats and export options from YOUNGSUN PAPER. Request samples or a quotation.`;
   const mainImageAlt = isEs
-    ? `${p.name} suministrado por YOUNGSUN PAPER para aplicaciones de embalaje, impresión y conversión`
-    : `${p.name} supplied by YOUNGSUN PAPER for packaging, printing and converting applications`;
+    ? `${productName} suministrado por YOUNGSUN PAPER para aplicaciones de embalaje, impresión y conversión`
+    : `${productName} supplied by YOUNGSUN PAPER for packaging, printing and converting applications`;
 
   return (
     <section className="section product-detail-page" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
       <PageMeta title={seoTitle} description={seoDesc} path={`/products/${id}`} />
       <ProductSchema product={p} />
-      <BreadcrumbSchema items={[{ name: "Home", url: "/" }, { name: "Products", url: "/products" }, { name: category?.title || p.category, url: categoryPath }, { name: p.name, url: `/products/${id}` }]} />
+      <BreadcrumbSchema items={[{ name: isEs ? "Inicio" : "Home", url: localizedPath("/") }, { name: isEs ? "Productos" : "Products", url: localizedPath("/products") }, { name: category?.title || p.category, url: localizedPath(categoryPath) }, { name: productName, url: localizedPath(`/products/${id}`) }]} />
       <div className="container">
         <Link className="product-back-link" to={backPath}>
           <ArrowLeft size={17} aria-hidden="true" />{backLabel}
@@ -83,7 +85,7 @@ export default function ProductDetail() {
           <span style={{ color: "rgba(255,255,255,0.25)" }}>/</span>
           <Link to={categoryPath} style={{ color: "rgba(255,255,255,0.4)" }}>{category ? t(category.title) : p.category}</Link>
           <span style={{ color: "rgba(255,255,255,0.25)" }}>/</span>
-          <span style={{ color: "var(--lime)", fontWeight: 700 }}>{p.name}</span>
+          <span style={{ color: "var(--lime)", fontWeight: 700 }}>{productName}</span>
         </nav>
 
         <div className="product-detail-shell">
@@ -97,7 +99,7 @@ export default function ProductDetail() {
           </div>
           <div className="product-detail-info">
             <span className="section-label" style={{ color: "var(--lime)" }}>{p.category.replace(/-/g, " ").toUpperCase()}</span>
-            <h1 style={{ color: "var(--white)", marginBottom: 12, fontSize: "clamp(28px, 4vw, 40px)", lineHeight: 1.15 }}>{p.name}</h1>
+            <h1 style={{ color: "var(--white)", marginBottom: 12, fontSize: "clamp(28px, 4vw, 40px)", lineHeight: 1.15 }}>{productName}</h1>
             <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 16, lineHeight: 1.7, marginBottom: 24 }}>{tagline}</p>
 
             {/* Quick Specs */}
@@ -149,10 +151,10 @@ export default function ProductDetail() {
 
             {/* CTA Buttons */}
             <div className="product-detail-actions" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={`mailto:${contactInfo.email}?subject=Inquiry: ${p.name}`} className="btn btn-primary" style={{ fontSize: 14, padding: "12px 28px" }}>
+              <a href={`mailto:${contactInfo.email}?subject=Inquiry: ${productName}`} className="btn btn-primary" style={{ fontSize: 14, padding: "12px 28px" }}>
                 {isEs ? "Consultar este producto" : "Inquire About This Product"}
               </a>
-              <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}?text=Hi, I'm interested in ${p.name}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: 14, padding: "12px 28px", color: "var(--lime)", borderColor: "var(--lime)" }}>
+              <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}?text=Hi, I'm interested in ${productName}`} target="_blank" rel="noopener noreferrer" className="btn btn-outline" style={{ fontSize: 14, padding: "12px 28px", color: "var(--lime)", borderColor: "var(--lime)" }}>
                 {isEs ? "Consulta por WhatsApp" : "WhatsApp Inquiry"}
               </a>
             </div>
@@ -168,8 +170,8 @@ export default function ProductDetail() {
               <span>{isEs ? "Opciones de superficie" : "Surface options"}</span>
               <h2 id="product-texture-bridge-title">{isEs ? "Elija una textura para su aplicación" : "Choose a Texture for Your Application"}</h2>
               <p>{isEs
-                ? `Compare nuestra biblioteca de más de 120 patrones y solicite muestras físicas adecuadas para ${p.name}.`
-                : `Compare 120+ available patterns and request physical swatches suitable for ${p.name}.`}</p>
+                ? `Compare nuestra biblioteca de más de 120 patrones y solicite muestras físicas adecuadas para ${productName}.`
+                : `Compare 120+ available patterns and request physical swatches suitable for ${productName}.`}</p>
               <div>
                 <Link to="/fancy-paper-collection" className="btn btn-primary">{isEs ? "Ver texturas disponibles" : "View Available Textures"} →</Link>
                 <Link to={`/contact?intent=samples&product=${id}`} className="product-texture-sample-link">{isEs ? "Solicitar muestras" : "Request Samples"} →</Link>
@@ -183,7 +185,7 @@ export default function ProductDetail() {
           <div style={{ marginTop: 56 }}>
             <div className="section-header" style={{ textAlign: "left", marginBottom: 24 }}>
               <span className="section-label">{isEs ? "Características principales" : "Key Features"}</span>
-              <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Por qué elegir" : "Why Choose"} {p.name}</h2>
+              <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Por qué elegir" : "Why Choose"} {productName}</h2>
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 14 }}>
               {features.map((f, i) => {
@@ -276,14 +278,14 @@ export default function ProductDetail() {
         <div style={{ marginTop: 48 }}>
           <div className="section-header" style={{ textAlign: "left", marginBottom: 20 }}>
             <span className="section-label">{isEs ? "Descripción del producto" : "Product Overview"}</span>
-            <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Acerca de" : "About"} {p.name}</h2>
+            <h2 style={{ color: "var(--white)", fontSize: "clamp(24px, 3vw, 32px)" }}>{isEs ? "Acerca de" : "About"} {productName}</h2>
           </div>
           <p style={{ color: "rgba(255,255,255,0.55)", lineHeight: 1.85, fontSize: 15 }}>{description}</p>
         </div>
 
         <ProductIndustryLinks
           industries={relatedIndustries}
-          productName={p.name}
+          productName={productName}
           isEs={isEs}
         />
 
@@ -296,7 +298,7 @@ export default function ProductDetail() {
         {gallery.length > 0 && (
           <Gallery
             images={gallery}
-            productName={p.name}
+            productName={productName}
             isEs={isEs}
             title={isEs ? (p.galleryTitleEs || p.galleryTitle) : p.galleryTitle}
             intro={isEs ? (p.galleryIntroEs || p.galleryIntro) : p.galleryIntro}
@@ -304,7 +306,7 @@ export default function ProductDetail() {
         )}
 
         {/* ===== GLOBAL EXHIBITION PROOF ===== */}
-        <ExhibitionGallery productName={p.name} productId={id} />
+        <ExhibitionGallery productName={productName} productId={id} />
 
         {/* ===== CATEGORY NAVIGATION ===== */}
         <nav className="product-sequence-nav" aria-label={isEs ? "Navegación de productos relacionados" : "Related product navigation"}>
@@ -426,7 +428,7 @@ function ProductCatalogSidebar({ activeProductId, activeCategoryId, isEs, t }) {
           <Grid2X2 size={18} aria-hidden="true" />
           <span>
             <small>{isEs ? "Producto actual" : "Current product"}</small>
-            <strong>{subProducts[activeProductId]?.name}</strong>
+            <strong>{isEs ? productEs[activeProductId]?.name || subProducts[activeProductId]?.name : subProducts[activeProductId]?.name}</strong>
           </span>
         </span>
         <span className="product-catalog-mobile-action">
@@ -476,7 +478,7 @@ function ProductCatalogSidebar({ activeProductId, activeCategoryId, isEs, t }) {
                         aria-current={isActive ? "page" : undefined}
                         onClick={() => setMobileOpen(false)}
                       >
-                        <span>{product.name}</span>
+                        <span>{isEs ? productEs[product.id]?.name || product.name : product.name}</span>
                         {isActive ? <span className="product-catalog-current-dot" aria-hidden="true" /> : null}
                       </Link>
                     );

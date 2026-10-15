@@ -45,6 +45,7 @@ export default function ProductDetail() {
   const gallery = p.gallery || [];
   const optionGallery = p.optionGallery || [];
   const quoteReqs = (isEs && productEs[id]?.quoteReqs ? productEs[id].quoteReqs : p.quoteReqs) || null;
+  const faqs = (isEs && productEs[id]?.faqs ? productEs[id].faqs : p.faqs) || [];
   const category = productCategories.find((cat) => cat.id === p.category);
   const categoryPath = `/products/${p.category}`;
   const localizedPath = (path) => (isEs ? `/es${path === "/" ? "/" : path}` : path);
@@ -282,6 +283,8 @@ export default function ProductDetail() {
           </div>
           <p style={{ color: "rgba(255,255,255,0.55)", lineHeight: 1.85, fontSize: 15 }}>{description}</p>
         </div>
+
+        {faqs.length > 0 && <ProductFaqs items={faqs} isEs={isEs} productName={productName} />}
 
         <ProductIndustryLinks
           industries={relatedIndustries}
@@ -592,6 +595,32 @@ function Gallery({ images, productName, title, intro, isEs }) {
         </div>
       )}
     </div>
+  );
+}
+
+function ProductFaqs({ items, isEs, productName }) {
+  return (
+    <section className="product-faq-section" aria-labelledby="product-faq-title">
+      <div className="product-faq-heading">
+        <span>{isEs ? "PREGUNTAS DE COMPRA" : "BUYER QUESTIONS"}</span>
+        <h2 id="product-faq-title">
+          {isEs ? `Preguntas frecuentes sobre ${productName}` : `${productName} Frequently Asked Questions`}
+        </h2>
+        <p>
+          {isEs
+            ? "Respuestas prácticas para comparar formatos, procesos y requisitos antes de solicitar una cotización."
+            : "Practical answers for comparing formats, processes and order requirements before requesting a quotation."}
+        </p>
+      </div>
+      <div className="product-faq-list">
+        {items.map((item, index) => (
+          <details key={item.q} open={index === 0}>
+            <summary>{item.q}<ChevronDown size={18} aria-hidden="true" /></summary>
+            <p>{item.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
   );
 }
 

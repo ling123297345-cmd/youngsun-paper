@@ -1,4 +1,5 @@
 import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.js";
+import { blogSpanishOverrides } from "./blogSpanishOverrides.js";
 
 export const blogPosts = [
   {
@@ -2519,6 +2520,11 @@ for (const cmsPost of cmsBlogPosts) {
   const existingIndex = blogPosts.findIndex((post) => post.id === cmsPost.id);
   if (existingIndex >= 0) blogPosts[existingIndex] = { ...blogPosts[existingIndex], ...cmsPost };
   else blogPosts.push(cmsPost);
+}
+
+for (const [id, localization] of Object.entries(blogSpanishOverrides)) {
+  const post = blogPosts.find((item) => item.id === id);
+  if (post) Object.assign(post, localization);
 }
 
 for (const post of cmsBlogPosts) {

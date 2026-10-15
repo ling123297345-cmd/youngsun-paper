@@ -89,7 +89,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "kraft-paper",
     "name": "Kraft Paper Rolls & Sheets",
-    "text": "kraft paper rolls & sheets brown, white and recycled kraft paper rolls and sheets for sacks, bags, wrapping and industrial converting. kraft paper virgin kraft sack kraft paper brown kraft paper packaging kraft industrial kraft paper",
+    "text": "kraft paper rolls & sheets brown, white and recycled kraft paper rolls and sheets for sacks, bags, wrapping and industrial converting. kraft paper virgin kraft sack kraft paper brown kraft paper brown kraft paper rolls brown kraft paper sheets packaging kraft industrial kraft paper",
     "href": "/products/kraft-paper"
   },
   {
@@ -369,11 +369,11 @@ export const spanishProductTaglineById = {
   "gold-silver-card": "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
   "label-paper": "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
   "color-tissue-paper": "Papel seda de color ligero y translúcido para envolver regalos, proteger prendas y crear experiencias de desempaque de marca.",
-  "tracing-paper": "Papel albanene, vegetal o vellum translúcido para dibujo, impresión, etiquetas y packaging premium.",
+  "tracing-paper": "Papel albanene, vegetal o vellum translúcido en hojas y rollos sujetos a grado para dibujo, impresión, etiquetas y packaging premium.",
   "cup-paper": "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
   "greaseproof-paper": "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
   "mg-paper": "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
-  "silicone-coated-paper": "Papel siliconado de liberación para liners, procesos industriales y aplicaciones alimentarias debidamente especificadas.",
+  "silicone-coated-paper": "Papel siliconado para liners y procesos industriales, con grados documentados de papel para hornear en hojas o bobinas.",
   "absorbent-paper": "Papel secante de estructura porosa para tiras de perfume, posavasos y componentes absorbentes personalizados.",
   "color-laminated-grey-board": "Cartón gris revestido con papel de color para cajas de regalo, tapas y papelería.",
   "woodgrain-laminated-grey-board": "Papel efecto madera laminado sobre cartón gris para cajas y aplicaciones decorativas.",
@@ -485,7 +485,7 @@ export const spanishProductSeoById = {
   },
   "tracing-paper": {
     "title": "Papel albanene y vegetal translúcido 50–230 gsm",
-    "description": "Papel albanene, vegetal o vellum de 50–230 gsm para dibujo, impresión, etiquetas, invitaciones y packaging. Solicite hojas, pliegos o muestras."
+    "description": "Papel albanene, vegetal o vellum de 50–230 gsm para dibujo, impresión, etiquetas y packaging. Consulte hojas, pliegos, rollos y muestras."
   },
   "cup-paper": {
     "title": "Cartón cupstock para vasos y envases alimentarios",
@@ -500,8 +500,8 @@ export const spanishProductSeoById = {
     "description": "Papel kraft blanco MG de 23–80 gsm con cara brillante para impresión y reverso apto para encolado. Hojas, resmas y bobinas jumbo disponibles."
   },
   "silicone-coated-paper": {
-    "title": "Papel siliconado para liners y liberación",
-    "description": "Papel siliconado de 40–120 gsm, a una o dos caras, para etiquetas, cintas, procesos industriales y grados alimentarios documentados. Solicite muestras."
+    "title": "Papel para hornear y siliconado en hojas y rollos",
+    "description": "Papel siliconado de 40–120 gsm para liners y grados documentados de papel para hornear. Consulte hojas, bobinas, recubrimiento y muestras."
   },
   "absorbent-paper": {
     "title": "Papel absorbente para tiras de perfume",
@@ -580,6 +580,10 @@ export const spanishBlogSeoById = {
   "is-85-percent-paper-packaging-recyclable": {
     "title": "¿Un envase con 85 % de papel es reciclable? Guía",
     "description": "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas."
+  },
+  "how-to-compare-paper-quotes-from-different-suppliers": {
+    "title": "Cómo comparar cotizaciones de papel: 10 puntos",
+    "description": "Compare cotizaciones de papel por especificación, Incoterm, muestras, documentos, embalaje y coste total, no solo por el precio por tonelada."
   }
 };
 

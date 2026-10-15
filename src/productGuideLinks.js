@@ -1,4 +1,17 @@
 const guides = {
+  "how-to-compare-paper-quotes-from-different-suppliers": {
+    id: "how-to-compare-paper-quotes-from-different-suppliers",
+    title: {
+      en: "How to Compare Paper Quotes: 10-Point Checklist",
+      es: "Cómo comparar cotizaciones de papel: 10 puntos",
+    },
+    excerpt: {
+      en: "Compare specifications, MOQ, samples, documentation, packing and landed cost before selecting a supplier.",
+      es: "Compare especificaciones, MOQ, muestras, documentos, embalaje y coste total antes de elegir proveedor.",
+    },
+    image: "/images/blog-articles/how-to-compare-paper-quotes-cover-v2.webp",
+    hasSpanish: true,
+  },
   "custom-paper-sizes-slitting-minimize-waste-guide": {
     id: "custom-paper-sizes-slitting-minimize-waste-guide",
     title: {
@@ -45,23 +58,37 @@ const guides = {
     image: "/images/blog-articles/transparent-paper-packaging-buyer-tests.webp",
     hasSpanish: true,
   },
+  "digital-printing-brown-kraft-paper-buyers-guide": {
+    id: "digital-printing-brown-kraft-paper-buyers-guide",
+    title: {
+      en: "Six Specifications for Brighter Digital Printing on Brown Kraft",
+      es: "Seis especificaciones para imprimir colores vivos sobre kraft marrón",
+    },
+    excerpt: {
+      en: "Control shade, surface, white ink, color data, finishing and production trials before approving printed kraft.",
+      es: "Controle tono, superficie, tinta blanca, datos de color, acabado y pruebas antes de aprobar kraft impreso.",
+    },
+    image: "/images/blog-articles/digital-printing-brown-kraft-paper-buyers-guide.webp",
+    hasSpanish: true,
+  },
 };
 
 const productGuideMap = {
-  "grey-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],
+  "grey-board": ["custom-paper-sizes-slitting-minimize-waste-guide", "how-to-compare-paper-quotes-from-different-suppliers"],
   "folding-box-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],
   "c2s-art-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],
   "duplex-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],
-  "kraft-paper": ["custom-paper-sizes-slitting-minimize-waste-guide"],
+  "kraft-paper": ["digital-printing-brown-kraft-paper-buyers-guide", "how-to-compare-paper-quotes-from-different-suppliers"],
   "cup-paper": ["food-packaging-paper-buyer-guide"],
   "greaseproof-paper": ["food-packaging-paper-buyer-guide"],
   "pe-coated-paper": ["food-packaging-paper-buyer-guide"],
-  "silicone-coated-paper": ["food-packaging-paper-buyer-guide"],
+  "silicone-coated-paper": ["food-packaging-paper-buyer-guide", "how-to-compare-paper-quotes-from-different-suppliers"],
   "mg-paper": ["food-packaging-paper-buyer-guide"],
   "gold-silver-card": ["silver-card-modern-elegance-packaging-guide"],
   "pearlescent-paper": ["silver-card-modern-elegance-packaging-guide"],
-  "black-paper": ["silver-card-modern-elegance-packaging-guide"],
-  "tracing-paper": ["transparent-paper-packaging-buyer-tests"],
+  "black-paper": ["silver-card-modern-elegance-packaging-guide", "how-to-compare-paper-quotes-from-different-suppliers"],
+  "woodfree-paper": ["how-to-compare-paper-quotes-from-different-suppliers"],
+  "tracing-paper": ["transparent-paper-packaging-buyer-tests", "how-to-compare-paper-quotes-from-different-suppliers"],
 };
 
 export function getProductGuideLinks(productId, lang = "en") {

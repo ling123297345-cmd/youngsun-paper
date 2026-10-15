@@ -228,8 +228,8 @@ export const blogSearchIndex = [
     "type": "blog",
     "id": "how-to-compare-paper-quotes-from-different-suppliers",
     "name": "How to Compare Paper Quotes from Different Suppliers: The 10-Point Checklist",
-    "nameEs": "",
-    "text": "how to compare paper quotes from different suppliers: the 10-point checklist  the cheapest quote is rarely the best value. this 10-point checklist helps international paper buyers compare supplier quotations like-for-like and avoid hidden costs that inflate the final landed price.  guides",
+    "nameEs": "La cotización más barata puede salir cara: 10 puntos para comparar proveedores de papel",
+    "text": "how to compare paper quotes from different suppliers: the 10-point checklist la cotización más barata puede salir cara: 10 puntos para comparar proveedores de papel the cheapest quote is rarely the best value. this 10-point checklist helps international paper buyers compare supplier quotations like-for-like and avoid hidden costs that inflate the final landed price. dos cotizaciones solo son comparables cuando cubren el mismo producto, formato, servicio y riesgo. esta lista ayuda a compradores internacionales a detectar diferencias antes de emitir el pedido. guides",
     "href": "/blog/how-to-compare-paper-quotes-from-different-suppliers"
   },
   {

@@ -7,7 +7,7 @@ export const productEs = {
   // PACKAGE BOARD
   "grey-board": {
     tagline: "Cartón gris reciclado para embalaje rígido, encuadernación y papelería, con suministro certificado FSC disponible según pedido.",
-    description: "El cartón gris YOUNGSUN se fabrica con papel recuperado y está diseñado para trabajos que requieren grosor estable, rigidez y conversión uniforme. El rango confirmado es de 0.5–4.0 mm y aproximadamente 300–2650 gsm. Los formatos habituales son 787×1092 mm y 889×1194 mm, con hojas grandes desde 600×600 mm hasta 1600×3000 mm. Su superficie gris natural sin estucar es adecuada para forrado, laminado y encolado. Puede suministrarse en hojas, paneles cortados y estructuras laminadas para cajas rígidas, encuadernación, calendarios, carpetas y componentes de embalaje. El comprador puede especificar dimensiones, corte, troquelado, ranurado, laminación y embalaje de exportación según el proceso final.",
+    description: "El cartón gris YOUNGSUN se fabrica con papel recuperado y está diseñado para trabajos que requieren grosor estable, rigidez y conversión uniforme. El rango confirmado es de 0.5–4.0 mm y aproximadamente 300–2650 gsm, por lo que incluye opciones habituales de cartón gris 2 mm y cartón gris 3 mm. Los formatos habituales son 787×1092 mm y 889×1194 mm, con hojas grandes desde 600×600 mm hasta 1600×3000 mm. Su superficie gris natural sin estucar es adecuada para forrado, laminado y encolado. Puede suministrarse en hojas, paneles cortados y estructuras laminadas para cajas rígidas, encuadernación, calendarios, carpetas y componentes de embalaje. El comprador debe confirmar espesor, tolerancia, dimensiones, cantidad por medida, corte, troquelado, ranurado, laminación y embalaje de exportación según el proceso final.",
     seoTitle: "Cartón gris para cajas rígidas y encuadernación",
     metaDescription: "Cartón gris reciclado de 0.5–4.0 mm y aproximadamente 300–2650 gsm para cajas rígidas, encuadernación y embalaje. MOQ desde 1 tonelada.",
     specs: ["Grosor: 0.5–4.0 mm", "Gramaje: aproximadamente 300–2650 gsm", "Color: gris natural", "Formatos estándar: 787×1092 mm y 889×1194 mm", "Hojas grandes: 600×600 mm a 1600×3000 mm", "Humedad: 8% ± 2%", "Fibra: papel recuperado"],
@@ -17,10 +17,15 @@ export const productEs = {
     customization: ["Gramaje y grosor personalizados", "Dimensiones de hoja a medida", "Corte de paneles y troquelado", "Opciones de superficie laminada o a una cara", "Embalaje en pallets para exportación"],
     commercial: { moq: "1 tonelada métrica", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Suministro con declaración FSC disponible cuando se confirme en los documentos del pedido" },
     quoteReqs: ["Gramaje o grosor", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Aplicación final", "Puerto de destino", "Requisitos de corte o troquelado"],
+    faqs: [
+      { q: "¿Hay cartón gris de 2 mm y 3 mm?", a: "Sí. Los espesores de 2 mm y 3 mm están dentro del rango confirmado de 0.5–4.0 mm. Para cotizar, indique la tolerancia, medida de hoja, cantidad por medida y aplicación final." },
+      { q: "¿Cómo elegir el espesor de cartón gris para una caja rígida?", a: "Depende del tamaño de la caja, peso del producto, papel de forro, diseño de ranura y rigidez final. Recomendamos validar una muestra física o prototipo antes de producir." },
+      { q: "¿Puede suministrarse cortado a medida?", a: "Sí. Hay hojas completas, hojas grandes y paneles cortados, además de troquelado, ranurado y laminación según plano y especificación del pedido." },
+    ],
   },
   "black-paper": {
     tagline: "Papel negro teñido en masa con color uniforme — sin blanqueamiento en bordes, sin transferencia de color.",
-    description: "YOUNGSUN suministra papel negro de fibra virgen y reciclada para embalaje premium, impresión y conversión creativa. Su apariencia negra uniforme y teñida en masa ayuda a mantener bordes oscuros después del corte o plegado. La superficie es adecuada para estampado en caliente, serigrafía, impresión UV, gofrado y laminación. Puede utilizarse para forros de cajas rígidas, etiquetas colgantes, bolsas, tarjetas, álbumes y carpetas, con opciones de gramaje, tamaño, tipo de fibra y construcción laminada.",
+    description: "YOUNGSUN suministra papel negro de fibra virgen y reciclada para embalaje premium, impresión y conversión creativa. Su apariencia negra uniforme y teñida en masa ayuda a mantener bordes oscuros después del corte o plegado. Para la impresión sobre papel negro suelen evaluarse procesos opacos como serigrafía, tinta UV, blanco cubriente, tinta metálica o estampado con foil; la adherencia y el color deben comprobarse sobre el grado elegido. Puede utilizarse para forros de cajas rígidas, etiquetas colgantes, bolsas, tarjetas, álbumes y carpetas, con opciones de gramaje, tamaño, tipo de fibra y construcción laminada.",
     seoTitle: "Papel negro para embalaje de lujo y etiquetas",
     metaDescription: "Papel y cartulina negra con certificación FSC para cajas de lujo, etiquetas, bolsas, tarjetas y acabados con foil, serigrafía, UV o gofrado.",
     specs: ["Gramaje: 80–400 gsm", "Color: Negro teñido en masa", "Acabados: Sin estucar / Mate / Brillo", "Formato: Hojas y bobinas", "Resistencia a la luz: ISO 105-B02"],
@@ -30,6 +35,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Tamaño de hoja a medida", "Fibra virgen o reciclada", "Cartón negro laminado", "Embalaje personalizado"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje requerido", "Tamaño de hoja o bobina", "Grado virgen o reciclado", "Cantidad por tamaño", "Aplicación y acabado", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cómo se imprime sobre papel negro?", a: "Normalmente se utilizan procesos opacos como serigrafía, tinta UV, blanco cubriente, tintas metálicas o foil. Conviene realizar una prueba sobre el grado seleccionado antes de producir." },
+      { q: "¿El borde cortado permanece negro?", a: "Los grados teñidos en masa están diseñados para conservar un borde oscuro. Si el aspecto del canto es crítico, confirme que el producto elegido sea teñido en masa y no un cartón laminado." },
+      { q: "¿Se suministra en hojas y bobinas?", a: "Sí, según el grado. Indique gramaje, medida, tipo de fibra, proceso de acabado y cantidad por tamaño para confirmar la presentación disponible." },
+    ],
   },
   "color-card-paper": {
     tagline: "Cartulina de color uniforme para packaging, etiquetas, papelería e impresión creativa.",
@@ -78,7 +88,7 @@ export const productEs = {
   "kraft-paper": {
     name: "Papel kraft en bobinas, rollos y hojas",
     tagline: "Papel kraft natural, blanco y reciclado en bobinas, rollos, hojas y pliegos para bolsas, envoltura y conversión.",
-    description: "YOUNGSUN suministra papel kraft extensible, kraft para sacos de alta resistencia y kraft premium para embalaje y conversión industrial. El grado se selecciona según la resistencia a la tracción, el desgarro, la extensibilidad, la porosidad y la impresión requeridas. Está disponible en kraft natural, blanqueado y reciclado, en bobinas estándar o jumbo y en hojas. Su estructura fibrosa es adecuada para sacos, bolsas, envolturas, embalaje protector, laminación y otros procesos de conversión.",
+    description: "YOUNGSUN suministra papel kraft extensible, kraft para sacos de alta resistencia y kraft premium para embalaje y conversión industrial. El grado se selecciona según la resistencia a la tracción, el desgarro, la extensibilidad, la porosidad y la impresión requeridas. Está disponible en kraft natural, blanqueado y reciclado, en bobinas estándar o jumbo, hojas de papel kraft y pliegos de papel kraft cortados a medida. Su estructura fibrosa es adecuada para sacos, bolsas, envolturas, embalaje protector, laminación y otros procesos de conversión.",
     seoTitle: "Papel kraft en bobinas, rollos, hojas y pliegos",
     metaDescription: "Bobinas de papel kraft de 35–200 gsm para bolsas y conversión. Consulte medidas de pliego de papel kraft natural, blanco o reciclado y solicite muestras.",
     specs: ["Gramaje: 35–200 gsm", "Grados: Natural/Blanqueado/Reciclado", "Índice de tracción: ≥ 80 Nm/g", "Índice de desgarro: ≥ 12 mNm²/g", "Formato: Bobinas y hojas"],
@@ -88,6 +98,11 @@ export const productEs = {
     customization: ["Selección de grado", "Gramaje personalizado", "Suministro en hojas o bobinas", "Medidas personalizadas", "Soporte para impresión y conversión"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por grado, gramaje, medida y formato", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Grado natural, blanqueado o reciclado", "Gramaje", "Tamaño de bobina o hoja", "Cantidad por tamaño", "Uso final", "Puerto de destino"],
+    faqs: [
+      { q: "¿Suministran papel kraft en bobinas, hojas y pliegos?", a: "Sí. El papel kraft natural, blanco o reciclado puede suministrarse en bobinas estándar o jumbo, hojas y pliegos, sujeto al grado, gramaje, medida y cantidad." },
+      { q: "¿Qué datos se necesitan para cotizar papel kraft?", a: "Indique grado natural, blanco o reciclado, gramaje, ancho de bobina o medida del pliego, cantidad por tamaño, impresión o conversión, uso final y puerto de destino." },
+      { q: "¿Puedo solicitar muestras antes del pedido?", a: "Sí. El material de las muestras estándar es gratuito y el cliente asume el transporte internacional. La especificación de producción se confirma después de evaluar la muestra." },
+    ],
   },
   "duplex-board": {
     name: "Cartón dúplex / cartulina caple",
@@ -133,7 +148,7 @@ export const productEs = {
   "woodfree-paper": {
     name: "Papel bond / papel offset woodfree",
     tagline: "Papel bond y offset sin estucar con buena opacidad para libros, formularios, papelería e impresión comercial.",
-    description: "El papel woodfree offset YOUNGSUN es un papel sin estucar desarrollado para reproducir texto con nitidez, absorber la tinta de forma equilibrada y mantener una alimentación estable en impresión de volumen. En México, Perú y otros mercados, papel bond suele utilizarse como nombre comercial para este tipo de papel blanco sin estucar; por eso deben confirmarse el gramaje, la blancura, la medida, el formato y el método de impresión antes de cotizar. Su opacidad favorece la impresión a doble cara en libros, manuales, formularios y material educativo. Está disponible en blanco alto o blanco natural según el grado, en hojas, pliegos, bobinas y formatos cortados.",
+    description: "El papel woodfree offset YOUNGSUN es un papel sin estucar desarrollado para reproducir texto con nitidez, absorber la tinta de forma equilibrada y mantener una alimentación estable en impresión de volumen. En México, Perú y otros mercados, papel bond suele utilizarse como nombre comercial para este tipo de papel blanco sin estucar; por eso deben confirmarse el gramaje, la blancura, la medida, el formato y el método de impresión antes de cotizar. Su opacidad favorece la impresión a doble cara en libros, manuales, formularios y material educativo. Está disponible como hojas de papel bond, pliego de papel bond, bobinas y formatos cortados, en blanco alto o blanco natural según el grado.",
     seoTitle: "Papel bond y offset woodfree en hojas y bobinas",
     metaDescription: "Papel bond y woodfree offset de 60–120 gsm para libros, formularios y papelería. Disponible en hojas, pliegos, bobinas y medidas personalizadas.",
     specs: ["Gramaje: 60–120 gsm", "Blancura: ISO 90–100%", "Opacidad: ≥ 90% a 80 gsm", "Valor Cobb: ≤ 30 g/m²", "Formato: Hojas A4, A3 y personalizadas; bobinas", "pH: 7.0–9.0"],
@@ -143,6 +158,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Blanco alto o blanco natural", "Suministro en hojas o bobinas", "Medidas personalizadas", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por gramaje, medida y formato", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Método de impresión", "Aplicación final", "Puerto de destino"],
+    faqs: [
+      { q: "¿El papel bond es lo mismo que el papel offset woodfree?", a: "Papel bond se utiliza con frecuencia como nombre comercial para papel woodfree sin estucar, pero las especificaciones varían. Confirme gramaje, blancura, opacidad, medida, formato y método de impresión." },
+      { q: "¿Suministran hojas y pliegos de papel bond?", a: "Sí. Puede solicitar hojas de papel bond, pliegos personalizados, formatos cortados o bobinas según el grado y la cantidad confirmados." },
+      { q: "¿Es adecuado para impresión a doble cara?", a: "Los grados disponibles se seleccionan por opacidad y absorción de tinta para libros, manuales y formularios. El resultado final debe validarse según gramaje, cobertura de tinta y condiciones de impresión." },
+    ],
   },
   "color-offset-paper": {
     tagline: "Papel offset de color para formularios, inserciones, papelería y material promocional.",
@@ -245,10 +265,10 @@ export const productEs = {
   },
   "tracing-paper": {
     name: "Papel albanene / papel vegetal / papel vellum",
-    tagline: "Papel albanene, vegetal o vellum translúcido para dibujo, impresión, etiquetas y packaging premium.",
-    description: "El papel vegetal YOUNGSUN, conocido como papel albanene en México y como vellum en algunos mercados, combina translucidez, superficie lisa y estabilidad dimensional. Estos nombres comerciales no siempre describen exactamente el mismo grado, por lo que el comprador debe confirmar transparencia, gramaje, medida, método de impresión y aplicación final. La gama de referencia incluye 50, 60, 80, 90, 110, 150, 170, 220 y 230 gsm, desde hojas ligeras para superposiciones hasta cartulinas translúcidas para etiquetas, inserciones y packaging creativo. Se suministra principalmente en hojas, pliegos y medidas personalizadas; otros colores y formatos deben confirmarse según el grado y la cantidad.",
+    tagline: "Papel albanene, vegetal o vellum translúcido en hojas y rollos sujetos a grado para dibujo, impresión, etiquetas y packaging premium.",
+    description: "El papel vegetal YOUNGSUN, conocido como papel albanene en México y como vellum en algunos mercados, combina translucidez, superficie lisa y estabilidad dimensional. Estos nombres comerciales no siempre describen exactamente el mismo grado, por lo que el comprador debe confirmar transparencia, gramaje, medida, método de impresión y aplicación final. La impresión sobre papel vegetal o albanene requiere seleccionar la tinta, secado y proceso adecuados y se recomienda una prueba previa. La gama de referencia incluye 50, 60, 80, 90, 110, 150, 170, 220 y 230 gsm. Se suministra principalmente en hojas, pliegos y medidas personalizadas; la disponibilidad en rollos depende del grado, ancho y cantidad.",
     seoTitle: "Papel albanene y vegetal translúcido 50–230 gsm",
-    metaDescription: "Papel albanene, vegetal o vellum de 50–230 gsm para dibujo, impresión, etiquetas, invitaciones y packaging. Solicite hojas, pliegos o muestras.",
+    metaDescription: "Papel albanene, vegetal o vellum de 50–230 gsm para dibujo, impresión, etiquetas y packaging. Consulte hojas, pliegos, rollos y muestras.",
     specs: ["Gramajes de referencia: 50, 60, 80, 90, 110, 150, 170, 220 y 230 gsm", "Superficie: lisa y translúcida", "Formato principal: hojas y medidas personalizadas", "Colores adicionales: sujetos a confirmación", "Impresión y conversión: confirmar según gramaje y proceso"],
     applications: ["Dibujo técnico y superposiciones", "Hojas y pliegos de papel albanene", "Etiquetas y tags translúcidos", "Inserciones para packaging", "Invitaciones y papelería creativa", "Diseño, ilustración y maquetas"],
     certifications: ["Certificación FSC"],
@@ -256,7 +276,12 @@ export const productEs = {
     features: ["Translucidez funcional — Permite mostrar capas, gráficos o productos situados detrás del papel.", "Amplio rango de gramajes — Cubre aplicaciones técnicas, gráficas y de embalaje.", "Superficie lisa — Adecuada para líneas finas y procesos de impresión seleccionados.", "Formato adaptable — Disponible en hojas y medidas cortadas según proyecto."],
     customization: ["Selección de gramaje", "Medidas de hoja personalizadas", "Color sujeto a disponibilidad", "Corte y embalaje para exportación"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por gramaje, medida y formato", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
-    quoteReqs: ["Gramaje", "Tamaño de hoja", "Cantidad por medida", "Método de impresión", "Aplicación y proceso de conversión", "Puerto de destino"],
+    quoteReqs: ["Gramaje", "Tamaño de hoja o ancho de rollo", "Cantidad por medida", "Método de impresión", "Aplicación y proceso de conversión", "Puerto de destino"],
+    faqs: [
+      { q: "¿Se puede imprimir sobre papel albanene o vegetal?", a: "Sí, con sistemas de impresión seleccionados, pero la adherencia y el secado dependen del papel y de la tinta. Recomendamos una prueba sobre el gramaje elegido antes de producir." },
+      { q: "¿Hay papel vegetal en rollo y en hojas?", a: "La gama confirmada se suministra principalmente en hojas, pliegos y medidas cortadas. Los rollos se confirman según grado, gramaje, ancho y cantidad." },
+      { q: "¿Papel albanene, vegetal y vellum son lo mismo?", a: "Son nombres comerciales relacionados con papeles translúcidos, pero no siempre identifican el mismo grado. Especifique gramaje, transparencia, medida, impresión y aplicación." },
+    ],
   },
   "newsprint": {
     name: "Papel prensa en bobinas y hojas",
@@ -433,18 +458,24 @@ export const productEs = {
     quoteReqs: ["Gramaje", "Tamaño de hoja o ancho y diámetro de bobina", "Uso final", "Método de impresión", "Requisito de recubrimiento o laminación", "Cantidad y puerto de destino"],
   },
   "silicone-coated-paper": {
-    tagline: "Papel siliconado de liberación para liners, procesos industriales y aplicaciones alimentarias debidamente especificadas.",
-    description: "El papel recubierto con silicona utiliza una capa de liberación aplicada sobre una o ambas caras del sustrato. La combinación de papel base, gramaje, lado recubierto y fuerza de liberación debe seleccionarse según el adhesivo, la temperatura, la velocidad de conversión y el uso final. La gama de referencia cubre sustratos kraft blanqueados o naturales de 40–120 gsm en hojas y bobinas. Puede utilizarse como liner para etiquetas y cintas, separador antiadherente y, cuando el grado y la documentación lo permiten, en aplicaciones de horneado o contacto alimentario. La resistencia térmica y la conformidad alimentaria se confirman únicamente para el grado exacto.",
-    seoTitle: "Papel siliconado para liners y liberación",
-    metaDescription: "Papel siliconado de 40–120 gsm, a una o dos caras, para etiquetas, cintas, procesos industriales y grados alimentarios documentados. Solicite muestras.",
+    name: "Papel siliconado y papel para hornear",
+    tagline: "Papel siliconado para liners y procesos industriales, con grados documentados de papel para hornear en hojas o bobinas.",
+    description: "El papel recubierto con silicona utiliza una capa de liberación aplicada sobre una o ambas caras del sustrato. La combinación de papel base, gramaje, lado recubierto y fuerza de liberación debe seleccionarse según el adhesivo, la temperatura, la velocidad de conversión y el uso final. La gama de referencia cubre sustratos kraft blanqueados o naturales de 40–120 gsm en hojas y bobinas. Puede utilizarse como liner para etiquetas y cintas, separador antiadherente y, únicamente cuando el grado y la documentación lo permiten, como papel para hornear o papel horno. La resistencia térmica, las condiciones de uso y la conformidad alimentaria se confirman para el grado exacto y el mercado de destino.",
+    seoTitle: "Papel para hornear y siliconado en hojas y rollos",
+    metaDescription: "Papel siliconado de 40–120 gsm para liners y grados documentados de papel para hornear. Consulte hojas, bobinas, recubrimiento y muestras.",
     specs: ["Sustrato de referencia: kraft blanqueado o natural, 40–120 gsm", "Recubrimiento: silicona a una o dos caras", "Fuerza de liberación: seleccionar según adhesivo y proceso", "Formato: hojas y bobinas", "Resistencia térmica y contacto alimentario: confirmar por grado y documentación"],
     applications: ["Liner para etiquetas autoadhesivas", "Liner para cintas y materiales adhesivos", "Separación y desmoldeo industrial", "Intercalado antiadherente", "Horneado y contacto alimentario solo para grados documentados"],
     certifications: ["La documentación FSC, térmica y de contacto alimentario se confirma para el grado y pedido exactos"],
     variants: ["Siliconado a una cara", "Siliconado a dos caras", "Base kraft blanca", "Base kraft natural"],
-    features: ["Liberación controlada — Se selecciona según el adhesivo y la velocidad de conversión.", "Configuración flexible — Disponible con recubrimiento a una o dos caras.", "Dos tipos de base — Opciones kraft blancas y naturales.", "Suministro para conversión — Disponible en hojas, bobinas y medidas personalizadas."],
+    features: ["Liberación controlada — Se selecciona según el adhesivo, proceso o uso final.", "Grados documentados para horneado — Solo se presentan como papel para hornear cuando se confirma la documentación del grado exacto.", "Configuración flexible — Disponible con recubrimiento de silicona a una o dos caras.", "Suministro para conversión — Disponible en hojas, bobinas y medidas personalizadas."],
     customization: ["Una o dos caras siliconadas", "Nivel de liberación", "Gramaje y tipo de sustrato", "Ancho de bobina o tamaño de hoja", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y cualquier documentación de contacto alimentario se confirman para el grado y pedido exactos" },
     quoteReqs: ["Uso final", "Tipo y gramaje del sustrato", "Silicona a una o dos caras", "Fuerza de liberación requerida", "Tamaño de hoja o bobina", "Cantidad, documentación y puerto de destino"],
+    faqs: [
+      { q: "¿El papel siliconado sirve como papel para hornear?", a: "Solo deben utilizarse los grados con resistencia térmica y documentación de contacto alimentario adecuadas. Confirme temperatura, tiempo, tipo de contacto y requisitos del mercado de destino." },
+      { q: "¿Suministran papel para hornear en hojas y bobinas?", a: "Los grados documentados pueden suministrarse en hojas o bobinas cuando se confirman gramaje, recubrimiento, dimensiones y cantidad." },
+      { q: "¿Conviene silicona a una cara o a dos caras?", a: "Una cara es adecuada cuando la liberación se necesita en una sola superficie. Dos caras se eligen cuando ambos lados requieren efecto antiadherente. La configuración depende del proceso final." },
+    ],
   },
   "absorbent-paper": {
     name: "Papel absorbente",

@@ -3,9 +3,9 @@ export const blogSearchIndex = [
   {
     "type": "blog",
     "id": "ai-print-automation-paper-substrate-data",
-    "name": "AI Can Route the Print Job—But Can It Choose the Paper? 8 Data Points Buyers Still Control",
-    "nameEs": "La IA puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador",
-    "text": "ai can route the print job—but can it choose the paper? 8 data points buyers still control la ia puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador ai-assisted print workflows are moving from demonstrations into real production planning. the hidden risk is feeding the workflow a generic material name instead of the paper data that determines color, ink behavior and converting performance. los flujos de impresión asistidos por ia ya están entrando en la planificación real. el riesgo aparece cuando el sistema recibe un nombre genérico del material y no los datos del papel que determinan color, tinta y conversión. printing technology",
+    "name": "AI Picked the Press. Why Did the Print Still Fail? The Paper Data Buyers Missed",
+    "nameEs": "La IA eligió la prensa. ¿Por qué falló la impresión? Faltaban datos del papel",
+    "text": "ai picked the press. why did the print still fail? the paper data buyers missed la ia eligió la prensa. ¿por qué falló la impresión? faltaban datos del papel ai can route a job to digital or offset, but it cannot repair a vague paper specification. this buyer guide shows which substrate inputs prevent avoidable color, drying and finishing failures. la ia puede enviar un trabajo a digital u offset, pero no corrige una especificación vaga. esta guía muestra qué datos del sustrato evitan fallos de color, secado y acabado. printing technology",
     "href": "/blog/ai-print-automation-paper-substrate-data"
   },
   {

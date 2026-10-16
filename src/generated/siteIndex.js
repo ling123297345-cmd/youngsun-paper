@@ -558,8 +558,8 @@ export const spanishIndustryMetaById = {
 
 export const spanishBlogSeoById = {
   "ai-print-automation-paper-substrate-data": {
-    "title": "IA en impresión: 8 datos clave del papel",
-    "description": "La IA automatiza la planificación, pero los datos del sustrato aún determinan color, secado y conversión. Revise estos 8 puntos antes de producir."
+    "title": "IA en impresión: checklist del sustrato",
+    "description": "La IA puede elegir la ruta de impresión, pero sin datos del papel fallan color, secado y plegado. Use este checklist antes de aprobar."
   },
   "ppwr-epr-paper-packaging-buyer-checklist": {
     "title": "EPR del PPWR para envases de papel: guía",

@@ -1,35 +1,33 @@
 export const dailyBlogPosts = [
   {
     id: "ai-print-automation-paper-substrate-data",
-    title: "AI Can Route the Print Job—But Can It Choose the Paper? 8 Data Points Buyers Still Control",
-    titleEs: "La IA puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador",
-    seoTitle: "AI Print Automation: 8 Paper Data Points",
-    seoTitleEs: "IA en impresión: 8 datos clave del papel",
-    metaDescription: "AI can automate print planning, but substrate data still controls color, drying and converting. Use this 8-point paper specification checklist before production.",
-    metaDescriptionEs: "La IA automatiza la planificación, pero los datos del sustrato aún determinan color, secado y conversión. Revise estos 8 puntos antes de producir.",
+    title: "AI Picked the Press. Why Did the Print Still Fail? The Paper Data Buyers Missed",
+    titleEs: "La IA eligió la prensa. ¿Por qué falló la impresión? Faltaban datos del papel",
+    seoTitle: "AI Printing: Paper Substrate Checklist",
+    seoTitleEs: "IA en impresión: checklist del sustrato",
+    metaDescription: "AI can select a print route, but missing paper data still causes color, drying and folding failures. Use this substrate checklist before approval.",
+    metaDescriptionEs: "La IA puede elegir la ruta de impresión, pero sin datos del papel fallan color, secado y plegado. Use este checklist antes de aprobar.",
     date: "2026-10-15",
     author: "YOUNGSUN PAPER Editorial",
     category: "Printing Technology",
     categoryEs: "Tecnología de impresión",
-    excerpt: "AI-assisted print workflows are moving from demonstrations into real production planning. The hidden risk is feeding the workflow a generic material name instead of the paper data that determines color, ink behavior and converting performance.",
-    excerptEs: "Los flujos de impresión asistidos por IA ya están entrando en la planificación real. El riesgo aparece cuando el sistema recibe un nombre genérico del material y no los datos del papel que determinan color, tinta y conversión.",
-    content: `# AI Can Route the Print Job—But Can It Choose the Paper? 8 Data Points Buyers Still Control
+    excerpt: "AI can route a job to digital or offset, but it cannot repair a vague paper specification. This buyer guide shows which substrate inputs prevent avoidable color, drying and finishing failures.",
+    excerptEs: "La IA puede enviar un trabajo a digital u offset, pero no corrige una especificación vaga. Esta guía muestra qué datos del sustrato evitan fallos de color, secado y acabado.",
+    content: `# AI Picked the Press. Why Did the Print Still Fail? The Paper Data Buyers Missed
 
-Artificial intelligence is moving deeper into print production. On 14 October 2026, HEIDELBERG reported that more than 300 participants from almost 30 countries attended SHIFT 2026, where the company demonstrated AI-supported planning, automated job grouping and hybrid routing between digital and offset production. The direction is clear: software can increasingly decide **how** a print job should move through a plant. [Read the official SHIFT 2026 report](https://www.heidelberg.com/es/es/company/company_1/notas_de_prensa/notas_prensa_44992.jsp).
+The workflow looked intelligent: the software compared run length, deadline and machine availability, then routed the job to the most economical press. The file passed preflight. The schedule tightened. Yet the first production sheets still showed weak color on kraft, slower drying on uncoated paper or cracking after a coated board was folded.
 
-But there is a procurement question behind every automated workflow: **what happens when the system receives incomplete paper data?**
+That is a composite buying scenario, not a report about one printer. Its lesson is simple: **automation can optimize the route, but it cannot repair an incomplete substrate specification.**
 
-“White board,” “kraft,” “art paper” or “uncoated stock” is not enough to predict color, drying, feeding, folding or lamination. Automation can make a bad input travel faster. Buyers, converters and printers still need to define the physical substrate before an algorithm can choose a reliable production route.
+The timing matters. On 14 October 2026, HEIDELBERG reported that more than 300 participants from almost 30 countries attended SHIFT 2026, where AI-supported planning, automated job grouping and hybrid digital-offset production were central topics. [Read the official SHIFT 2026 report](https://www.heidelberg.com/es/es/company/company_1/notas_de_prensa/notas_prensa_44992.jsp). As print workflows become more automated, clean paper data becomes more important—not less.
 
-This guide turns that requirement into eight practical data points for RFQs, print trials and repeat orders.
+## The Failure Usually Starts Before the Press
 
-## What AI-Assisted Print Planning Can—and Cannot—Do
+“300 gsm white board” may look sufficient on a purchase request, but it leaves critical questions unanswered. Is the surface mineral coated or uncoated? What is the caliper and stiffness? Which side is printable? What is the paper shade? Is the grain suitable for the fold? Will the job be laminated, foil stamped or glued?
 
-An integrated workflow can compare run length, press availability, finishing steps, deadlines and production cost. It may route a short job to digital printing and a longer run to offset, group compatible jobs or reduce manual scheduling work.
+The same artwork can produce visibly different results on smooth coated board, absorbent uncoated paper and natural kraft. Fogra's characterization resources link printing conditions to defined substrate categories, including coated, uncoated, LWC and newsprint papers. [Review Fogra's characterization data](https://fogra.org/en/downloads/work-tools/characterisation-data).
 
-It cannot infer an exact substrate from a marketing name. The same artwork can behave differently on smooth coated board, absorbent uncoated paper and natural kraft. Fogra's characterization resources explicitly connect printing conditions with substrate categories, including coated papers, uncoated papers, LWC and newsprint. [Review Fogra's characterization data](https://fogra.org/en/downloads/work-tools/characterisation-data).
-
-The buyer's job is therefore not to compete with the software. It is to provide the material data that makes automation trustworthy.
+Use the following eight fields as a procurement handoff between buyer, paper supplier, printer and converter.
 
 ## 1. Name the Paper Family and Intended Printing Process
 
@@ -109,6 +107,18 @@ Automation depends on stable inputs. Keep one approved blank sample, one approve
 
 For a new paper grade, run a representative trial that includes the hardest elements of the job: heavy solids, fine reversals, brand colors, barcodes, folds, glue areas and finishing. A small visual sample alone cannot predict high-speed production.
 
+## One Artwork, Three Papers, Three Production Decisions
+
+Imagine the same green-and-white carton design on three materials:
+
+| Substrate | Likely visual behavior | Buyer decision before approval |
+|---|---|---|
+| Coated folding carton board | Sharper detail and stronger ink holdout | Check crease and fold performance after full ink coverage |
+| Uncoated woodfree paper | Softer image and faster ink absorption | Approve color expectations and drying on the real stock |
+| Natural kraft paper | Brown fibre tone changes light colors and contrast | Decide whether artwork, spot colors or an opaque underlayer must change |
+
+None of these materials is automatically “better.” Each one creates a different printing condition and brand effect. The correct decision depends on the end use, artwork, process and finishing route. This is also why the cover image for this guide shows one design across three substrates rather than presenting a single generic sheet.
+
 ## The Minimum Substrate Data Handoff
 
 | Field | What the buyer should provide or confirm | Why it matters |
@@ -122,15 +132,16 @@ For a new paper grade, run a representative trial that includes the hardest elem
 | Finishing | Coating, foil, embossing, die-cutting, folding and gluing | Reveals compatibility risks early |
 | Approval | Blank sample, printed proof and change-control owner | Keeps repeat orders consistent |
 
-## A Practical Buyer Workflow
+## Four Approval Gates Before a Full Run
 
-1. **Choose the end use first.** Define the package, publication or printed item and its performance requirements.
-2. **Shortlist the paper family.** Compare structure and surface before discussing only price.
-3. **Send one complete specification.** Use the same fields for every supplier and printer.
-4. **Test on the proposed route.** Include printing and the critical finishing operation.
-5. **Freeze the approved combination.** Link artwork, output intent, substrate revision and production sample in the job record.
+| Gate | Owner | Evidence required |
+|---|---|---|
+| Material selection | Buyer and paper supplier | Exact grade, physical values, format and representative blank sample |
+| Print route | Printer | Qualified press route, ink system, output condition and printed proof |
+| Converting | Converter | Passed test for the critical fold, die-cut, laminate, foil or glue operation |
+| Repeat-order control | Buyer and supplier | Approved sample, specification revision and written substitution rule |
 
-This approach lets AI and automation do what they are good at—routing, grouping and optimizing—without asking software to guess the material.
+Only after these four gates should the workflow treat the job as repeatable. This lets AI do what it is good at—routing, grouping and optimizing—without asking it to guess the material.
 
 ## What This Means for Paper Buyers
 
@@ -156,29 +167,27 @@ Paper shade, roughness, absorption and gloss change ink holdout and perceived co
 
 Confirm shade, caliper, stiffness, surface behavior, ink drying, color, folding, gluing and other critical finishing results. Update the specification and retain the new approved sample before full production.
 `,
-    contentEs: `# La IA puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador
+    contentEs: `# La IA eligió la prensa. ¿Por qué falló la impresión? Faltaban datos del papel
 
-La inteligencia artificial está entrando de lleno en la producción gráfica. El 14 de octubre de 2026, HEIDELBERG informó que más de 300 participantes de casi 30 países asistieron a SHIFT 2026, donde se mostraron planificación asistida por IA, agrupación automática de trabajos y selección de rutas híbridas entre impresión digital y offset. La tendencia es clara: el software puede decidir cada vez mejor **cómo** recorrerá un trabajo la planta. [Consulte el informe oficial de SHIFT 2026](https://www.heidelberg.com/es/es/company/company_1/notas_de_prensa/notas_prensa_44992.jsp).
+El flujo parecía inteligente: el software comparó tiraje, plazo y disponibilidad de máquinas, y envió el trabajo a la prensa más económica. El archivo superó el preflight y el calendario se acortó. Sin embargo, las primeras hojas de producción todavía podían mostrar colores débiles sobre kraft, secado lento en papel obra o grietas al plegar una cartulina estucada.
 
-Sin embargo, detrás de toda automatización queda una pregunta de compras: **¿qué ocurre si el sistema recibe datos incompletos del papel?**
+Es un escenario compuesto para explicar el riesgo, no el caso de una imprenta concreta. La conclusión es directa: **la automatización optimiza la ruta, pero no corrige una especificación incompleta del sustrato.**
 
-“Cartulina blanca”, “kraft”, “papel estucado” o “papel obra” no bastan para prever color, secado, alimentación, plegado o laminación. Automatizar datos deficientes solo permite que el error avance con mayor rapidez. El comprador, el impresor y el convertidor todavía deben definir el sustrato físico antes de confiar en la ruta que propone un algoritmo.
+El tema está plenamente vigente. El 14 de octubre de 2026, HEIDELBERG informó que más de 300 participantes de casi 30 países asistieron a SHIFT 2026, donde la planificación asistida por IA, la agrupación automática de órdenes y la producción híbrida digital-offset ocuparon un lugar central. [Consulte el informe oficial de SHIFT 2026](https://www.heidelberg.com/es/es/company/company_1/notas_de_prensa/notas_prensa_44992.jsp). Cuanto más automático es el flujo, más importante resulta contar con datos limpios del papel.
 
-Esta guía reúne ocho datos prácticos que conviene incluir en la solicitud de cotización, la prueba de impresión y los pedidos repetidos.
+## El fallo suele comenzar antes de entrar en prensa
 
-## Lo que la planificación con IA puede hacer y lo que no puede adivinar
+“Cartulina blanca de 300 gsm” puede parecer suficiente en una orden de compra, pero deja preguntas críticas abiertas. ¿La superficie es estucada o sin estucar? ¿Cuál es el calibre y la rigidez? ¿Qué cara se imprime? ¿Cuál es el tono del papel? ¿La dirección de fibra funciona con el pliegue? ¿El trabajo llevará laminación, foil o pegado?
 
-Un flujo integrado puede comparar tiraje, disponibilidad de máquinas, acabados, fecha de entrega y costo de producción. También puede enviar un trabajo corto a digital, uno largo a offset o agrupar órdenes compatibles.
+La misma imagen se comporta de forma distinta sobre cartulina estucada lisa, papel no estucado absorbente y kraft natural. Los datos de caracterización de Fogra vinculan las condiciones de impresión con categorías concretas de sustrato, entre ellas papeles estucados, no estucados, LWC y papel prensa. [Revise los datos de caracterización de Fogra](https://fogra.org/en/downloads/work-tools/characterisation-data).
 
-Lo que no puede hacer es deducir un sustrato exacto a partir de un nombre comercial genérico. La misma imagen se comporta de forma distinta sobre cartulina estucada, papel sin estucar absorbente y kraft natural. Los datos de caracterización de Fogra vinculan las condiciones de impresión con categorías concretas de sustrato, entre ellas papeles estucados, no estucados, LWC y papel prensa. [Revise los datos de caracterización de Fogra](https://fogra.org/en/downloads/work-tools/characterisation-data).
-
-La función del comprador no es sustituir al software, sino entregarle los datos del material que necesita para tomar una decisión fiable.
+Use los siguientes ocho campos como ficha de traspaso entre comprador, proveedor de papel, imprenta y convertidor.
 
 ## 1. Defina la familia de papel y el proceso de impresión
 
 Indique el grado comercial y también el proceso previsto: offset de pliego, offset de bobina, flexografía, huecograbado, tóner o inkjet de producción. “Papel estucado” queda incompleto si la imprenta necesita saber si utilizará una condición offset o una prensa digital con una lista específica de materiales homologados.
 
-En packaging, especifique si se trata de [cartulina folding box board](/es/products/folding-box-board), [cartulina estucada C2S](/es/products/c2s-art-board), kraft, cartulina de color u otra estructura. Para libros, catálogos e insertos, distinga [papel woodfree](/es/products/woodfree-paper), papel estucado y LWC.
+En packaging, especifique si se trata de [cartulina folding box board](/products/folding-box-board), [cartulina estucada C2S](/products/c2s-art-board), kraft, cartulina de color u otra estructura. Para libros, catálogos e insertos, distinga [papel woodfree](/products/woodfree-paper), papel estucado y LWC.
 
 Si el trabajo puede pasar de digital a offset, pida a la imprenta que confirme si el mismo grado funciona en ambas rutas o si necesita dos equivalentes aprobados.
 
@@ -228,7 +237,7 @@ Registre:
 - función de barrera o desmoldeo;
 - compatibilidad que debe ensayarse con tinta, adhesivo y acabado.
 
-No dé por hecho que un papel barrera puede imprimirse por ambos lados. En [papel recubierto de PE](/es/products/pe-coated-paper) o [papel siliconado](/es/products/silicone-coated-paper), defina primero el proceso de conversión y las condiciones de uso.
+No dé por hecho que un papel barrera puede imprimirse por ambos lados. En [papel recubierto de PE](/products/pe-coated-paper) o [papel siliconado](/products/silicone-coated-paper), defina primero el proceso de conversión y las condiciones de uso.
 
 ## 6. Fije formato, dirección de fibra y tolerancia dimensional
 
@@ -252,6 +261,18 @@ La automatización necesita entradas estables. Conserve bajo el mismo código un
 
 Para un grado nuevo, pruebe los elementos más exigentes: masas de color, textos finos invertidos, colores corporativos, códigos, pliegues, zonas de pegado y acabados. Una muestra visual pequeña no predice por sí sola el comportamiento a velocidad industrial.
 
+## Un diseño, tres papeles y tres decisiones de producción
+
+Imagine el mismo diseño verde y blanco sobre tres materiales:
+
+| Sustrato | Comportamiento visual probable | Decisión antes de aprobar |
+|---|---|---|
+| Cartulina folding estucada | Mayor nitidez y mejor retención de tinta | Comprobar hendido y plegado después de imprimir masas |
+| Papel woodfree sin estucar | Imagen más suave y mayor absorción | Aprobar color y secado sobre el papel real |
+| Kraft natural | El tono marrón modifica colores claros y contraste | Decidir si cambian el arte, las tintas directas o una base opaca |
+
+Ningún material es automáticamente “mejor”. Cada uno crea una condición de impresión y un efecto de marca diferente. La elección correcta depende del uso, el arte, el proceso y el acabado. Por eso la portada de esta guía muestra el mismo diseño sobre tres sustratos en lugar de presentar una hoja genérica.
+
 ## Ficha mínima que debe acompañar al sustrato
 
 | Campo | Qué debe entregar o confirmar el comprador | Para qué sirve |
@@ -265,21 +286,22 @@ Para un grado nuevo, pruebe los elementos más exigentes: masas de color, textos
 | Acabado | Barniz, foil, relieve, troquel, plegado y pegado | Detecta incompatibilidades antes de producir |
 | Aprobación | Muestra, prueba impresa y responsable de cambios | Mantiene consistencia entre pedidos |
 
-## Flujo recomendado para compras
+## Cuatro puertas de aprobación antes del tiraje
 
-1. **Empiece por el uso final.** Defina envase, publicación o pieza y su desempeño.
-2. **Seleccione la familia de papel.** Compare estructura y superficie antes de hablar solo de precio.
-3. **Envíe una especificación única.** Use los mismos campos con todos los proveedores e impresores.
-4. **Pruebe la ruta propuesta.** Incluya impresión y el acabado más crítico.
-5. **Congele la combinación aprobada.** Vincule arte, output intent, revisión del sustrato y muestra física.
+| Puerta | Responsable | Evidencia necesaria |
+|---|---|---|
+| Selección del material | Comprador y proveedor | Grado exacto, valores físicos, formato y muestra en blanco |
+| Ruta de impresión | Imprenta | Prensa homologada, sistema de tinta, condición de salida y prueba impresa |
+| Conversión | Convertidor | Prueba aprobada de pliegue, troquel, laminación, foil o pegado crítico |
+| Control de repetición | Comprador y proveedor | Muestra aprobada, revisión de ficha y regla escrita de sustitución |
 
-Así, la IA hace lo que mejor sabe hacer —agrupar, enrutar y optimizar— sin verse obligada a adivinar el material.
+Solo después de superar estas cuatro puertas conviene tratar el trabajo como repetible. Así, la IA hace lo que mejor sabe hacer —agrupar, enrutar y optimizar— sin verse obligada a adivinar el material.
 
 ## Qué significa para el comprador de papel
 
 La ventaja competitiva no será “IA contra experiencia papelera”, sino experiencia convertida en datos estructurados que el software pueda utilizar. Una especificación precisa reduce ambigüedades entre comprador, proveedor, imprenta y convertidor.
 
-YOUNGSUN PAPER puede facilitar muestras representativas y especificaciones disponibles de cartulinas estucadas, woodfree, kraft, cartulinas de color y papeles especiales. Las muestras estándar son gratuitas; el cliente cubre el transporte internacional. [Envíe proceso de impresión, GSM, medida y acabado para revisar el material](/es/contact?intent=samples), o consulte nuestras [soluciones para packaging e impresión](/es/industries/packaging-printing).
+YOUNGSUN PAPER puede facilitar muestras representativas y especificaciones disponibles de cartulinas estucadas, woodfree, kraft, cartulinas de color y papeles especiales. Las muestras estándar son gratuitas; el cliente cubre el transporte internacional. [Envíe proceso de impresión, GSM, medida y acabado para revisar el material](/contact?intent=samples), o consulte nuestras [soluciones para packaging e impresión](/industries/packaging-printing).
 
 ## Preguntas frecuentes
 
@@ -300,10 +322,10 @@ El tono, la rugosidad, la absorción y el brillo modifican el anclaje de tinta y
 Revise tono, calibre, rigidez, superficie, secado, color, plegado, pegado y los acabados críticos. Actualice la especificación y conserve la nueva muestra aprobada antes de producir el tiraje completo.
 `,
     image: "/images/blog-articles/ai-print-automation-paper-substrate-data.webp",
-    imageAlt: "Coated board, uncoated paper and kraft print samples beside a spectrophotometer, caliper and automated production-planning screen.",
-    imageAltEs: "Muestras impresas de cartulina estucada, papel no estucado y kraft junto a un espectrofotómetro, calibre y pantalla de planificación automatizada.",
-    imageCaption: "AI-assisted production planning depends on accurate substrate data and an approved physical print sample.",
-    imageCaptionEs: "La planificación asistida por IA depende de datos correctos del sustrato y de una muestra física aprobada.",
+    imageAlt: "The same packaging artwork printed on coated board, uncoated paper and kraft beside color and thickness measurement tools.",
+    imageAltEs: "El mismo diseño de packaging impreso sobre cartulina estucada, papel no estucado y kraft junto a instrumentos de color y espesor.",
+    imageCaption: "One artwork can require three different production decisions when the paper surface, shade and structure change.",
+    imageCaptionEs: "Un mismo diseño puede exigir tres decisiones de producción distintas cuando cambian superficie, tono y estructura del papel.",
     tags: ["AI print automation", "paper substrate specification", "hybrid printing", "print production planning", "paper printability", "packaging printing"],
     tagsEs: ["IA en impresión", "especificación del sustrato", "impresión híbrida", "planificación de producción", "imprimibilidad del papel", "impresión de packaging"]
   }

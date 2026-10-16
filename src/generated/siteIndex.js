@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "2d-barcode-paper-packaging-print-quality-checklist": {
+    "title": "Calidad de códigos 2D en envases de papel",
+    "description": "Un código 2D puede funcionar en pantalla y fallar impreso. Revise contraste, zona muda, sustrato, prueba y verificación del envase."
+  },
   "ai-print-automation-paper-substrate-data": {
     "title": "IA en impresión: checklist del sustrato",
     "description": "La IA puede elegir la ruta de impresión, pero sin datos del papel fallan color, secado y plegado. Use este checklist antes de aprobar."

@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "2d-barcode-paper-packaging-print-quality-checklist",
+    "name": "The 2D Code Worked on Screen—Why Did It Fail on the Carton?",
+    "nameEs": "El código 2D funcionó en pantalla… ¿por qué falló sobre el envase?",
+    "text": "the 2d code worked on screen—why did it fail on the carton? el código 2d funcionó en pantalla… ¿por qué falló sobre el envase? pack expo 2026 is putting industrial 2d coding in the spotlight. for paper-packaging buyers, the real risk is not generating the code—it is preserving contrast, geometry and scan performance on the finished carton, kraft pack or label. pack expo 2026 pone el código 2d industrial en primer plano. para el comprador de envases de papel, el reto no es generar el código, sino conservar contraste, geometría y lectura en la caja, el kraft o la etiqueta terminada. printing & packaging technology",
+    "href": "/blog/2d-barcode-paper-packaging-print-quality-checklist"
+  },
+  {
+    "type": "blog",
     "id": "ai-print-automation-paper-substrate-data",
     "name": "AI Picked the Press. Why Did the Print Still Fail? The Paper Data Buyers Missed",
     "nameEs": "La IA eligió la prensa. ¿Por qué falló la impresión? Faltaban datos del papel",

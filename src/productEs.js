@@ -66,6 +66,11 @@ export const productEs = {
     customization: ["Volumen regular o alto", "Gramaje personalizado", "Suministro en hojas o bobinas", "Corte a medida", "Embalaje para exportación"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Volumen regular o alto", "Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Aplicación final", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cuál es la diferencia entre FBB de volumen regular y alto volumen?", a: "El FBB de alto volumen aporta mayor calibre con un gramaje controlado, mientras que el volumen regular ofrece una relación más convencional entre espesor y peso. La elección depende de las dimensiones del estuche, rigidez, hendido, llenado y rendimiento de material." },
+      { q: "¿El cartón FBB sirve para cosmética, farmacia y alimentos?", a: "Se utiliza en estuches de cosmética, farmacia, retail y embalaje secundario de alimentos. Si existe contacto directo o indirecto con alimentos, o se requiere documentación farmacéutica, indique el uso exacto y el mercado de destino para confirmar el grado y los documentos aplicables." },
+      { q: "¿Qué información necesitan para cotizar FBB?", a: "Indique volumen regular o alto, gramaje, medidas de hoja o bobina, cantidad por tamaño, impresión, acabados, aplicación y puerto de destino. El mínimo actual es de 5 toneladas métricas por producto y tamaño; las muestras estándar son gratuitas y el cliente paga el transporte internacional." },
+    ],
   },
   "art-paper": {
     tagline: "Papel arte estucado de doble cara con blancura, suavidad y brillo de impresión excepcionales — para publicaciones de gama alta, catálogos e impresión comercial.",
@@ -84,6 +89,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Tamaño de hoja a medida", "Suministro en hojas o bobinas", "Embalaje personalizado"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Método de impresión", "Aplicación final", "Puerto de destino"],
+    faqs: [
+      { q: "¿En qué se diferencia la cartulina C2S del folding box board?", a: "La cartulina C2S está estucada por ambas caras para impresión de calidad a dos lados. El folding box board suele tener una cara principal estucada y se selecciona principalmente por rigidez y plegado. La decisión depende de si ambas caras quedarán visibles, de la impresión y de la resistencia requerida." },
+      { q: "¿Qué métodos de impresión admite la cartulina C2S?", a: "La superficie lisa en ambas caras admite offset, offset UV y determinados procesos digitales. Antes del tiraje deben probarse tinta, barniz, foil, laminación y comportamiento en el plegado sobre el gramaje elegido." },
+      { q: "¿Qué debo indicar al solicitar cartulina C2S?", a: "Envíe el gramaje o la opción de alto volumen, medida de hoja o bobina, cantidad por tamaño, método de impresión, acabado, aplicación y puerto de destino. El mínimo actual es de 5 toneladas métricas por producto y tamaño; las muestras estándar son gratuitas y el cliente paga el transporte." },
+    ],
   },
   "kraft-paper": {
     name: "Papel kraft en bobinas, rollos y hojas",
@@ -117,6 +127,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Medidas a medida", "Suministro en hojas o bobinas", "Corte personalizado", "Embalaje para exportación"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por gramaje, medida y formato", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Reverso gris o blanco", "Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Aplicación final", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cuál es la diferencia entre cartón dúplex de reverso gris y reverso blanco?", a: "El reverso gris combina una cara blanca imprimible con una base reciclada económica. El reverso blanco ofrece una apariencia posterior más clara, pero depende del grado y la cantidad disponibles. Confirme qué cara quedará visible en el estuche terminado." },
+      { q: "¿Cómo se compara el cartón dúplex con el FBB?", a: "El dúplex utiliza una base reciclada económica y funciona bien en estuches impresos de gran volumen. El FBB tiene otra construcción multicapa y suele elegirse cuando la presentación premium, rigidez o plegado tienen mayor prioridad. Conviene validar la opción con la estructura de la caja y la línea de conversión." },
+      { q: "¿Qué datos se necesitan para cotizar cartón dúplex?", a: "Especifique reverso gris o blanco, gramaje, medida de hoja o bobina, cantidad por tamaño, impresión, acabado, uso final y puerto de destino. Las especificaciones regulares parten de 1 tonelada métrica, sujeto a confirmación por gramaje, medida y formato." },
+    ],
   },
   "pe-coated-paper": {
     tagline: "Papel laminado PE para barrera contra humedad y termosellado.",
@@ -130,6 +145,11 @@ export const productEs = {
     customization: ["Peso de recubrimiento PE de 12–30 gsm", "Recubrimiento a una o dos caras", "Gramaje personalizado del sustrato", "Bobinas cortadas al ancho requerido", "Embalaje personalizado"],
     commercial: { moq: "1 tonelada métrica", leadTime: "2–3 semanas", samples: "Muestras gratuitas disponibles", certification: "FSC disponible", containerLoading: "Carga completa 40HQ: 25 toneladas métricas" },
     quoteReqs: ["Tipo de papel o cartón base", "Gramaje del sustrato y del PE", "Recubrimiento a una o dos caras", "Ancho de bobina o tamaño de hoja", "Cantidad", "Aplicación y puerto de destino"],
+    faqs: [
+      { q: "¿Conviene recubrimiento PE a una cara o a dos caras?", a: "Una cara se utiliza cuando la barrera o el termosellado se necesita en una sola superficie. Dos caras se eligen cuando ambas deben protegerse, por ejemplo ante líquido o condensación por ambos lados. Confirme producto de llenado, temperatura y proceso de formado." },
+      { q: "¿Cómo se eligen el papel base y el peso del PE?", a: "El papel o cartón base determina rigidez, impresión y formado; el peso del PE influye en barrera y sellado. Indique uso final, gramaje del sustrato, cara recubierta, medidas de bobina o hoja y condiciones de conversión." },
+      { q: "¿Puede suministrarse papel PE para contacto alimentario?", a: "Hay grados para envases alimentarios, pero la conformidad debe confirmarse para el sustrato, estructura PE, condiciones de contacto y mercado de destino exactos. Solicite los documentos correspondientes antes de aprobar una aplicación de contacto directo." },
+    ],
   },
   "ckb": {
     tagline: "Cartón CKB con cara blanca estucada y reverso kraft resistente para estuches exigentes.",
@@ -410,6 +430,11 @@ export const productEs = {
     customization: ["Gramaje del cartón base", "Hoja o bobina", "Ancho y diámetro de bobina", "Coordinación de PE a una o dos caras", "Corte y embalaje personalizados"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y la documentación de contacto alimentario se confirman para el grado y pedido exactos" },
     quoteReqs: ["Cartón base sin recubrir o con PE", "Gramaje del cartón y peso del recubrimiento", "Ancho de bobina o tamaño de hoja", "Cantidad por medida", "Aplicación alimentaria", "Documentación requerida y puerto de destino"],
+    faqs: [
+      { q: "¿Debo comprar cupstock sin recubrir o papel para vasos con PE?", a: "Elija cupstock sin recubrir si su convertidor aplicará la barrera. Elija una estructura recubierta cuando el material deba llegar preparado para el proceso de formado acordado. Indique por separado el gramaje del cartón base y el peso del recubrimiento para comparar cotizaciones." },
+      { q: "¿El mismo papel sirve para vasos calientes y fríos?", a: "No necesariamente. La temperatura, tiempo de uso, condensación, estructura de barrera, tamaño del vaso y método de formado cambian la especificación. Confirme la bebida y si necesita PE a una o dos caras antes de producir." },
+      { q: "¿Qué información necesitan para cotizar papel para vasos?", a: "Indique gramaje del cartón base, estructura sin recubrir o con PE, cara y peso del recubrimiento, ancho de bobina o medida de hoja, cantidad por tamaño, aplicación, impresión, documentación alimentaria y puerto de destino. Los formatos regulares parten de 1 tonelada, sujeto a confirmación." },
+    ],
   },
   "greaseproof-paper": {
     tagline: "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
@@ -424,6 +449,11 @@ export const productEs = {
     customization: ["Selección de grado y nivel de barrera", "Gramaje", "Color blanco o natural", "Hoja o bobina", "Impresión y corte bajo pedido"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y la documentación de contacto alimentario se confirman para el grado y pedido exactos" },
     quoteReqs: ["Gramaje", "Nivel de resistencia a la grasa", "Color blanco o natural", "Tamaño de hoja o bobina", "Uso alimentario y método de impresión", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿El papel antigrasa es lo mismo que papel para hornear o papel siliconado?", a: "No. El papel antigrasa se selecciona por su resistencia al aceite, pero el nombre no confirma resistencia a temperatura de horno ni recubrimiento de silicona. Para hornear, confirme el grado exacto, temperatura y documentación de contacto alimentario." },
+      { q: "¿Puede imprimirse el papel antigrasa?", a: "Sí, determinados grados blancos y naturales pueden imprimirse y convertirse en envolturas, liners, hojas o bolsas. Indique cobertura del diseño, sistema de tinta, contacto alimentario, medidas y método de conversión para comprobar la imprimibilidad." },
+      { q: "¿Cómo se especifican la barrera antigrasa y los requisitos alimentarios?", a: "Indique tipo de alimento, exposición al aceite, tiempo y temperatura de contacto, nivel de resistencia requerido, gramaje, formato y mercado de destino. El estado PFAS y la conformidad alimentaria deben confirmarse mediante documentos del grado exacto, no deducirse del nombre del producto." },
+    ],
   },
   "mg-paper": {
     tagline: "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",

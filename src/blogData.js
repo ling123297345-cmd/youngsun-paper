@@ -1,7 +1,9 @@
 import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.js";
 import { blogSpanishOverrides } from "./blogSpanishOverrides.js";
+import { dailyBlogPosts } from "./blogDailyPosts.js";
 
 export const blogPosts = [
+  ...dailyBlogPosts,
   {
     id: "ppwr-epr-paper-packaging-buyer-checklist",
     title: "Your Paper Pack Looks Compliant—But Who Actually Owes the EPR Fee?",

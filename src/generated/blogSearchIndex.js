@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "ai-print-automation-paper-substrate-data",
+    "name": "AI Can Route the Print Job—But Can It Choose the Paper? 8 Data Points Buyers Still Control",
+    "nameEs": "La IA puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador",
+    "text": "ai can route the print job—but can it choose the paper? 8 data points buyers still control la ia puede dirigir la impresión… ¿pero puede elegir el papel? 8 datos que aún controla el comprador ai-assisted print workflows are moving from demonstrations into real production planning. the hidden risk is feeding the workflow a generic material name instead of the paper data that determines color, ink behavior and converting performance. los flujos de impresión asistidos por ia ya están entrando en la planificación real. el riesgo aparece cuando el sistema recibe un nombre genérico del material y no los datos del papel que determinan color, tinta y conversión. printing technology",
+    "href": "/blog/ai-print-automation-paper-substrate-data"
+  },
+  {
+    "type": "blog",
     "id": "ppwr-epr-paper-packaging-buyer-checklist",
     "name": "Your Paper Pack Looks Compliant—But Who Actually Owes the EPR Fee?",
     "nameEs": "Su envase de papel parece cumplir… ¿pero quién debe pagar realmente la EPR?",

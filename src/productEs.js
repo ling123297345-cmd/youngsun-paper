@@ -53,6 +53,11 @@ export const productEs = {
     customization: ["Selección o igualación de color sujeta a cantidad", "Gramaje personalizado", "Medidas de hoja o bobina", "Texturas gofradas", "Embalaje personalizado"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Referencia o código de color", "Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Aplicación y acabado", "Puerto de destino"],
+    faqs: [
+      { q: "¿La cartulina de color está teñida en masa o solo coloreada en la superficie?", a: "Cuando se necesita un canto del mismo color, debe confirmarse un grado teñido en masa. Las estructuras coloreadas en superficie o laminadas pueden parecer similares de frente, pero responden de forma distinta al troquelado, hendido y plegado. Apruebe la construcción y la muestra exactas." },
+      { q: "¿Qué impresión y acabados admite la cartulina de color?", a: "Se suelen evaluar foil, serigrafía, impresión UV, gofrado, troquelado y determinados procesos offset. La opacidad de tinta, adhesión del foil, plegado y contraste deben probarse sobre el tono, textura y gramaje elegidos antes de producir." },
+      { q: "¿Qué información necesitan para cotizar cartulina de color?", a: "Envíe una muestra física, referencia Pantone o código de color, gramaje, acabado liso o gofrado, medida de hoja o bobina, cantidad por tamaño, proceso de impresión y acabado, aplicación y puerto. El mínimo actual es de 5 toneladas métricas por producto y tamaño." },
+    ],
   },
   "folding-box-board": {
     tagline: "Cartón multicapa con liner blanco brillante — para estuches farmacéuticos, cosméticos y alimentarios.",
@@ -163,6 +168,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Suministro en hojas o bobinas", "Medidas personalizadas", "Corte a medida", "Embalaje para exportación"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Aplicación final", "Requisitos de contacto alimentario, si corresponden", "Puerto de destino"],
+    faqs: [
+      { q: "¿En qué se diferencia el CKB del FBB o cartón dúplex?", a: "El CKB combina una cara blanca estucada con reverso kraft sin blanquear para aportar resistencia y apariencia natural. El FBB y el dúplex usan construcciones de fibra y reverso distintas. Compare rigidez, desgarro, aspecto posterior, impresión y entorno final del estuche." },
+      { q: "¿El CKB sirve para envases refrigerados o congelados?", a: "Puede seleccionarse para bebidas y alimentos refrigerados o congelados cuando la estructura completa coincide con las condiciones de humedad, temperatura, llenado y almacenamiento. El contacto alimentario y la barrera deben confirmarse para el grado, recubrimiento o laminado y mercado exactos." },
+      { q: "¿Qué debo especificar al solicitar CKB?", a: "Indique gramaje, medidas de hoja o bobina, cantidad por tamaño, impresión y acabados, aplicación del estuche, condiciones de almacenamiento, requisito alimentario y puerto de destino. El mínimo actual es de 5 toneladas métricas por producto y tamaño; las muestras estándar son gratuitas y el cliente paga el transporte." },
+    ],
   },
   // CULTURE PAPER
   "woodfree-paper": {
@@ -196,6 +206,11 @@ export const productEs = {
     customization: ["Selección de color", "Gramaje personalizado", "Suministro en hojas o bobinas", "Medidas personalizadas", "Embalaje personalizado"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Referencia de color", "Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Método de impresión", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cuál es la diferencia entre papel offset de color y cartulina de color?", a: "El papel offset de color suele ser más ligero y se utiliza en formularios, inserciones, publicaciones y papelería; la cartulina de color es más pesada y se elige para etiquetas, tarjetas y packaging. Compare gramaje, rigidez, impresión y conversión, no solo el color." },
+      { q: "¿Puede utilizarse en impresión digital y fotocopiadoras?", a: "Determinados grados pueden funcionar en equipos digitales o de oficina compatibles, pero deben revisarse humedad, encolado superficial, dirección de fibra, formato y requisitos de la máquina. Pruebe el color y gramaje exactos en el equipo previsto antes del pedido." },
+      { q: "¿Qué datos se necesitan para cotizar papel offset de color?", a: "Indique referencia de color, gramaje, medida de hoja o bobina, cantidad por tamaño, método de impresión o copia, uso final y puerto. El mínimo actual es de 5 toneladas métricas por producto y tamaño; las muestras estándar son gratuitas y el cliente asume el transporte internacional." },
+    ],
   },
   "lwc-paper": {
     tagline: "Papel estucado ligero para revistas, catálogos, inserciones e impresión comercial de volumen.",
@@ -209,6 +224,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Ancho de bobina o tamaño de hoja", "Suministro en bobinas o hojas", "Embalaje personalizado"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje", "Ancho de bobina o tamaño de hoja", "Cantidad por tamaño", "Método de impresión", "Aplicación final", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cuándo conviene elegir LWC en lugar de papel estucado arte?", a: "El LWC se elige cuando importa reducir peso, franqueo o coste de distribución manteniendo una superficie estucada para imágenes. El papel arte suele ofrecer una sensación más pesada y premium. Compare opacidad, volumen, brillo, impresión y peso final de la publicación." },
+      { q: "¿Qué procesos de impresión son adecuados para papel LWC?", a: "El LWC se especifica habitualmente para offset rotativo heatset y huecograbado. Ancho, gramaje, humedad, estucado, tensión de bobina y velocidad deben corresponder al equipo, por lo que se recomienda una prueba representativa antes de una gran tirada." },
+      { q: "¿Qué información necesitan para cotizar papel LWC?", a: "Especifique gramaje, acabado brillo o mate, ancho de bobina o medida de hoja, diámetro y mandril cuando corresponda, cantidad por tamaño, proceso de impresión, publicación y puerto. El mínimo actual es de 5 toneladas métricas por producto y tamaño." },
+    ],
   },
   "ncr-paper": {
     name: "Papel autocopiativo NCR",
@@ -223,6 +243,11 @@ export const productEs = {
     customization: ["Tamaño de hoja personalizado", "Configuración y número de capas", "Secuencia de colores", "Imagen azul o negra", "Suministro en hojas o bobinas"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por capas, gramaje, medida y formato", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Número de capas", "Tipos CB, CFB y CF requeridos", "Gramaje", "Tamaño de hoja o bobina", "Cantidad por tamaño", "Método de impresión y puerto de destino"],
+    faqs: [
+      { q: "¿Qué significan CB, CFB y CF en papel NCR?", a: "CB es la hoja superior estucada por el reverso, CFB es la hoja intermedia estucada por ambas caras y CF es la hoja inferior estucada por el anverso. Un formulario completo combina estas capas en el orden correcto para transferir la imagen por presión." },
+      { q: "¿Cuántas copias puede producir el papel autocopiativo?", a: "Los juegos regulares suelen configurarse de dos a seis partes, pero la legibilidad depende de la secuencia, gramaje, presión de escritura o impacto, almacenamiento y diseño del formulario. Apruebe un juego completo con la impresora o método de uso previsto." },
+      { q: "¿Qué información debo enviar para cotizar papel NCR?", a: "Indique número de partes, secuencia CB, CFB y CF, orden de colores, imagen azul o negra, gramaje por hoja, medida de hoja o bobina, cantidad, impresión y puerto. Las especificaciones regulares parten de 1 tonelada métrica, sujeto a confirmación." },
+    ],
   },
   "multi-color-bond-paper": {
     tagline: "Papel bond en múltiples colores — superficie lisa, alimentación fiable en impresora.",
@@ -331,6 +356,11 @@ export const productEs = {
     customization: ["Selección de gramaje y sustrato", "Color y acabado", "Tamaño de hoja o ancho de bobina", "Coordinación de impresión y acabados", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Uso final", "Gramaje y tipo de sustrato", "Color y tacto requerido", "Método de impresión y acabados", "Tamaño de hoja o bobina", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿El papel soft touch es lo mismo que la laminación soft touch?", a: "No necesariamente. El papel soft touch puede llevar una superficie táctil aplicada en fábrica, mientras que la laminación añade una película durante la conversión. Pueden variar en tacto, impresión, reciclabilidad, plegado, resistencia al roce y adhesión, por lo que debe confirmarse la construcción exacta." },
+      { q: "¿Puede imprimirse, plegarse y estamparse con foil?", a: "Determinados grados admiten offset o UV, serigrafía, foil, gofrado, troquelado y plegado. La adhesión, huellas, roce y posible agrietamiento dependen del sustrato y recubrimiento, por lo que debe probarse la muestra real con el proceso previsto." },
+      { q: "¿Qué información necesitan para cotizar papel soft touch?", a: "Indique uso final, sustrato y gramaje, color y tacto, medida de hoja o bobina, cantidad, impresión, foil, gofrado, plegado, encolado y puerto de destino. Los grados y formatos regulares parten de 1 tonelada métrica, sujeto a confirmación." },
+    ],
   },
   "leather-paper": {
     tagline: "Papel decorativo con relieve efecto cuero para cubiertas, cajas rígidas y presentación premium.",

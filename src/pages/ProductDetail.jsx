@@ -5,7 +5,7 @@ import { productEs } from "../productEs.js";
 import { productCategories, subProducts, contactInfo } from "../data.js";
 import { getProductIndustryLinks } from "../productIndustryLinks.js";
 import { getProductGuideLinks } from "../productGuideLinks.js";
-import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
+import { PageMeta, BreadcrumbSchema, FAQSchema } from "../SEO.jsx";
 import ProductSchema from "../ProductSchema.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
 import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, PackageCheck } from "lucide-react";
@@ -72,6 +72,7 @@ export default function ProductDetail() {
     <section className="section product-detail-page" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
       <PageMeta title={seoTitle} description={seoDesc} path={`/products/${id}`} />
       <ProductSchema product={p} />
+      {faqs.length > 0 ? <FAQSchema items={faqs} /> : null}
       <BreadcrumbSchema items={[{ name: isEs ? "Inicio" : "Home", url: localizedPath("/") }, { name: isEs ? "Productos" : "Products", url: localizedPath("/products") }, { name: category?.title || p.category, url: localizedPath(categoryPath) }, { name: productName, url: localizedPath(`/products/${id}`) }]} />
       <div className="container">
         <Link className="product-back-link" to={backPath}>

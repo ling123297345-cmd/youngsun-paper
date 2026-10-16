@@ -262,6 +262,12 @@ for (const pagePath of pages) {
 
   const productId = /^\/products\/([^/]+)$/.exec(baseRoute)?.[1];
   if (productId && subProducts[productId]) {
+    const expectedProductFaqs = spanishPage
+      ? (productEs[productId]?.faqs || subProducts[productId].faqs || [])
+      : (subProducts[productId].faqs || []);
+    checks.productFaqSchema = expectedProductFaqs.length
+      ? faqPages.length === 1 && faqPages[0].mainEntity?.length === expectedProductFaqs.length
+      : faqPages.length === 0;
     const expectedIndustryLinks = getProductIndustryLinks(productId)
       .map((industry) => localizedPath(`/industries/${industry.id}`, spanishPage ? 'es' : 'en'));
     checks.productIndustryLinks = expectedIndustryLinks.length > 0
@@ -309,7 +315,7 @@ for (const pagePath of pages) {
     checks.oneFaqPageSchema = faqPages.length === 1;
     checks.faqSchemaCoverage = (faqPage?.mainEntity?.length || 0) >= 10;
     checks.visibleFaqCoverage = countMatches(html, /<section><h2>/gi) >= 10;
-  } else if (!isBlogPost) {
+  } else if (!isBlogPost && !isProductPage) {
     checks.noUnexpectedFaqPage = faqPages.length === 0;
   }
 
@@ -408,7 +414,7 @@ console.log(`Product MOQ coverage from verified source data: ${productMoqCoverag
 console.log(`Product certification field coverage: ${productCertificationCoverage}/${productPageCount}.`);
 console.log(`BlogPosting schema coverage: ${blogPostCount}/${blogPostCount}.`);
 console.log('Blog sitemap lastmod values match each article publication or modification date.');
-console.log('FAQPage schema coverage: site FAQ pages and matching blog FAQ sections validated.');
+console.log('FAQPage schema coverage: product, site FAQ and matching blog FAQ sections validated.');
 console.log('Blog tables, contents navigation and related article links validated.');
 console.log('HowTo schema and English/Spanish industry hub links validated.');
 console.log(`Internal route links validated: no broken or page-relative route links across ${pages.length} pages.`);

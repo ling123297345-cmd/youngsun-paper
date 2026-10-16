@@ -434,6 +434,10 @@ function renderRouteSchemas(page, lang) {
       lang,
       translation: productEs[productEntry[0]],
     })]);
+    const productFaqs = lang === "es"
+      ? (productEs[productEntry[0]]?.faqs || productEntry[1].faqs || [])
+      : (productEntry[1].faqs || []);
+    if (productFaqs.length) schemas.push(["faq-schema", createFaqSchema(productFaqs)]);
   }
 
   const productCategory = productCategories.find((item) => page.route === `/products/${item.id}`);

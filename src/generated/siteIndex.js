@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "pulp-price-vs-paper-price-buyer-guide": {
+    "title": "Precio de celulosa vs papel: guía de compra",
+    "description": "Un índice de celulosa puede bajar mientras el papel sigue firme. Revise grado, tiempos, energía, flete, divisa y condiciones antes de comparar."
+  },
   "paper-ice-cream-wrapper-cold-chain-buyer-tests": {
     "title": "Packaging de papel para helado: 8 pruebas",
     "description": "El porcentaje de papel no demuestra el rendimiento en congelación. Revise barrera, sellado, flexión, impresión, contacto alimentario y reciclabilidad."

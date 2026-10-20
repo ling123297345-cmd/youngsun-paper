@@ -1,5 +1,323 @@
 export const dailyBlogPosts = [
   {
+    id: "pulp-price-vs-paper-price-buyer-guide",
+    title: "A Pulp Benchmark Fell—Why Didn't Your Paper Quote?",
+    titleEs: "Bajó un índice de celulosa... ¿por qué no bajó su cotización de papel?",
+    seoTitle: "Pulp Price vs Paper Price: Buyer Guide",
+    seoTitleEs: "Precio de celulosa vs papel: guía de compra",
+    metaDescription: "A pulp benchmark can fall while finished paper quotes stay firm. Learn how grade, timing, energy, freight, currency and terms change the real buying price.",
+    metaDescriptionEs: "Un índice de celulosa puede bajar mientras el papel sigue firme. Revise grado, tiempos, energía, flete, divisa y condiciones antes de comparar.",
+    date: "2026-10-20",
+    author: "YOUNGSUN PAPER Editorial",
+    category: "Paper Market & Procurement",
+    categoryEs: "Mercado papelero y compras",
+    excerpt: "A lower pulp benchmark does not flow straight into every finished-paper quote. Buyers need to align the benchmark, fibre recipe, production timing and delivered terms before deciding whether a supplier's price is reasonable.",
+    excerptEs: "La baja de un índice de celulosa no se refleja de forma automática en toda cotización de papel terminado. Antes de decidir si el precio es razonable, hay que alinear índice, receta fibrosa, fecha de producción y condiciones de entrega.",
+    content: `# A Pulp Benchmark Fell—Why Didn't Your Paper Quote?
+
+A pulp index moves lower, but the supplier's paper quote barely changes. Is the quotation out of date, or is the buyer comparing two different things?
+
+Both situations are possible. [Fastmarkets' pulp market coverage](https://www.fastmarkets.com/forest-products/pulp/pulp-prices/) tracks several grades, regions and commercial bases, and its market commentary distinguishes spot indications from gross or contract-related prices. A movement in one series is therefore an important signal, but it is not a finished-paper invoice.
+
+The practical buying question is: **how much of that benchmark is relevant to the exact paper grade, production window and delivered terms in your RFQ?** This guide provides a repeatable way to find out without relying on a vague explanation from either side.
+
+## 1. Start With the Exact Benchmark
+
+"Pulp price" is not one universal number. Before comparing it with a paper quote, record:
+
+- fibre type: softwood, hardwood, recycled fibre or another furnish;
+- grade and quality definition;
+- market and delivery region;
+- spot, contract, list or assessed price basis;
+- currency and unit;
+- publication date and assessment period;
+- delivery basis included in the benchmark.
+
+Softwood and hardwood pulp perform different jobs in a furnish. Long softwood fibres are commonly used where strength matters, while hardwood fibres can support formation, smoothness and print surface. Read our introductions to [softwood pulp](/materials/softwood-pulp) and [hardwood pulp](/materials/hardwood-pulp) before choosing a reference.
+
+The assessment methodology matters as much as the headline. [Fastmarkets explains how its forest-product price assessments are formed](https://www.fastmarkets.com/methodology/forest-products/fastmarkets-risi-price-assessments/), including the market information and specifications behind an assessment. If the benchmark and the supplier's grade do not share a comparable basis, the apparent price gap may be meaningless.
+
+## 2. Map the Benchmark to the Actual Paper Furnish
+
+The pulp exposure of finished paper varies substantially by product.
+
+- [Woodfree paper](/products/woodfree-paper) relies heavily on virgin chemical pulp, but surface sizing, fillers, brightness and converting still influence its cost.
+- [Folding box board](/products/folding-box-board) combines several plies and may use different fibres in the surface, middle and back layers.
+- [Kraft paper](/products/kraft-paper) is purchased for strength as well as appearance, so fibre selection and machine performance cannot be reduced to a generic pulp number.
+- Recycled board is more directly exposed to recovered-paper availability and yield than to a virgin-pulp benchmark.
+
+Ask the supplier which input is commercially relevant to the grade. A hardwood benchmark may help explain part of an uncoated paper quote but say much less about a recycled grey board or a heavily coated packaging board.
+
+## 3. Allow for Inventory and Production Timing
+
+Paper is not always produced from pulp bought at today's market level. A mill may be consuming fibre contracted earlier, holding inventory acquired in another pricing period or scheduling production against an existing cost base.
+
+This creates a lag between a benchmark move and a finished-paper adjustment. The lag is not fixed: it changes with inventory, contract structure, grade, mill schedule, demand and shipment date.
+
+For a fair comparison, ask four dates:
+
+1. Which benchmark assessment date are you using?
+2. When will the paper be produced?
+3. How long is the quotation valid?
+4. When will the shipment leave the port or warehouse?
+
+A quote valid for a future production slot should not be compared casually with a single spot-market headline published today.
+
+## 4. Separate Mill Price From Delivered Cost
+
+Pulp is only one line in the cost stack. The price a buyer pays can also include:
+
+- fillers, coating pigments, binders, sizing agents and barrier chemistry;
+- energy, water treatment and machine efficiency;
+- coating, calendering, sheeting, rewinding and packing;
+- certification, inspection and documentation requirements;
+- inland transport, terminal handling and ocean freight;
+- exchange-rate movement and financing cost;
+- waste allowance for a custom size or specification.
+
+This is why a stable or lower mill price can coexist with a higher CIF total. Conversely, a favourable freight booking or exchange rate can improve the delivered price even when the pulp index is firm.
+
+Always compare the same Incoterm. FOB should be compared with FOB; CIF with CIF to the same destination and shipment period.
+
+## 5. Make Sure the Two Quotes Describe the Same Paper
+
+A lower number is not necessarily a lower price for the same product. Normalize every quotation before calculating the difference.
+
+| Quote line | What to normalize | Why it matters |
+| --- | --- | --- |
+| Product | grade, furnish and coating | Similar trade names can hide different constructions |
+| Basis weight | GSM and tolerance | A lighter sheet can reduce price and performance |
+| Thickness | caliper and bulk | Equal GSM does not guarantee equal stiffness or yield |
+| Format | roll/sheet, width, length, core | Converting and trim loss change cost |
+| Quantity | tonnes per grade and size | Mill allocation and setup cost depend on the exact mix |
+| Quality | brightness, moisture, smoothness, strength | Performance targets affect furnish and processing |
+| Compliance | FSC claim and required documents | Certification scope must match the shipment |
+| Commercial terms | Incoterm, payment, validity, destination | These can outweigh a small material-price change |
+
+Our broader guide on [comparing paper quotations from different suppliers](/blog/how-to-compare-paper-quotes-from-different-suppliers) explains how to normalize unit prices and technical specifications before selecting a supplier.
+
+## 6. Ask for an Adjustment Rule, Not a Market Story
+
+For repeat purchases, agree on a simple review mechanism before the market moves. It can include:
+
+- the named benchmark and grade;
+- the base month or assessment window;
+- the currency and unit conversion;
+- the review frequency;
+- the movement that triggers a review;
+- the portion of the paper price covered by the mechanism;
+- any agreed cap, floor or effective date.
+
+Not every supplier can disclose its full cost formula. That is reasonable. The goal is not to demand confidential data; it is to replace an untestable statement such as "raw materials changed" with a consistent commercial rule.
+
+## 7. Decide Whether to Buy, Split or Requote
+
+Use operational risk, not only the direction of an index, to choose the next step.
+
+**Buy or reserve capacity** when the specification is approved, inventory is low, delivery timing is critical or the quote remains competitive after normalization.
+
+**Request a refreshed quotation** when the validity period has expired, the benchmark basis has materially changed, freight or currency has moved, or a specification difference has been corrected.
+
+**Split the order** when demand is reasonably certain but the market direction is not. A staged purchase can reduce exposure while protecting production continuity, provided each shipment still meets the supplier's commercial and production conditions.
+
+Do not delay a critical order solely because one index line moved down. The cost of a missed production window can exceed a modest paper-price difference.
+
+## Information to Put in the RFQ
+
+Send the same information to every supplier:
+
+- exact paper grade and intended application;
+- GSM, thickness or bulk target and tolerances;
+- roll or sheet size, core and packing method;
+- quantity for each grade and each size;
+- print, coating, lamination or converting process;
+- required certification and market-specific documents;
+- destination port, Incoterm and requested shipment date;
+- benchmark date if you are asking for a market-based review.
+
+YOUNGSUN PAPER can review the specification and quote basis for [woodfree paper](/products/woodfree-paper), [folding box board](/products/folding-box-board), [kraft paper](/products/kraft-paper) and other grades. [Send the RFQ details](/contact?intent=quote) so the comparison is based on the same product and delivery terms.
+
+## Frequently Asked Questions
+
+### Does a lower pulp price mean finished paper must become cheaper immediately?
+
+No. The relevant pulp grade, fibre share, contracted inventory, production timing, energy, converting, freight and currency all affect the finished-paper price. A benchmark decline is a reason to review the quote, not proof of an automatic one-for-one reduction.
+
+### Which pulp benchmark should a paper buyer use?
+
+Use the benchmark closest to the fibre type, region, commercial basis and timing of the paper grade. Ask the supplier which reference is commercially relevant and verify the assessment methodology.
+
+### Why can kraft paper or recycled board react differently from woodfree paper?
+
+Their fibre recipes and performance drivers differ. Kraft grades may place more weight on strength and softwood fibre, while recycled board is influenced by recovered-paper supply, sorting yield and multi-ply construction.
+
+### How often should paper quotations be checked again?
+
+Recheck when quote validity expires, specifications change, a new production window is booked, or major movements occur in the agreed benchmark, freight or currency. Use the same RFQ fields each time so the comparison remains valid.
+
+## Sources and Reading
+
+- [Fastmarkets: Pulp prices and market coverage](https://www.fastmarkets.com/forest-products/pulp/pulp-prices/)
+- [Fastmarkets: Forest products price assessment methodology](https://www.fastmarkets.com/methodology/forest-products/fastmarkets-risi-price-assessments/)
+- [YOUNGSUN PAPER: How to compare paper quotes](/blog/how-to-compare-paper-quotes-from-different-suppliers)
+- [YOUNGSUN PAPER: What a paperboard price increase means for buyers](/blog/paperboard-coated-paper-price-increase-buyer-response)`,
+    contentEs: `# Bajó un índice de celulosa... ¿por qué no bajó su cotización de papel?
+
+Un índice de celulosa baja, pero la cotización del proveedor casi no cambia. ¿El precio quedó desactualizado o el comprador está comparando dos cosas distintas?
+
+Las dos situaciones son posibles. La [cobertura del mercado de celulosa de Fastmarkets](https://www.fastmarkets.com/forest-products/pulp/pulp-prices/) incluye distintos grados, regiones y bases comerciales, y diferencia las referencias spot de los precios brutos o vinculados a contratos. Por eso, el movimiento de una serie es una señal importante, pero no equivale a la factura de un papel terminado.
+
+La pregunta útil para compras es: **¿qué parte de ese índice corresponde realmente al grado, la fecha de producción y las condiciones de entrega de su solicitud?** Esta guía propone una forma repetible de comprobarlo sin depender de explicaciones vagas.
+
+## 1. Identifique el índice exacto
+
+"Precio de celulosa" no es un número universal. Antes de compararlo con una cotización de papel, registre:
+
+- tipo de fibra: coníferas, frondosas, fibra reciclada u otra composición;
+- grado y definición de calidad;
+- mercado y región de entrega;
+- base spot, contractual, de lista o precio evaluado;
+- moneda y unidad;
+- fecha de publicación y periodo evaluado;
+- condición de entrega incluida en el índice.
+
+La celulosa de fibra larga y la de fibra corta cumplen funciones diferentes. La primera suele apoyar la resistencia; la segunda puede favorecer formación, suavidad y superficie de impresión. Consulte nuestra [biblioteca de materiales](/es/materials/) antes de elegir una referencia.
+
+La metodología importa tanto como el titular. [Fastmarkets explica cómo forma sus evaluaciones de precios forestales](https://www.fastmarkets.com/methodology/forest-products/fastmarkets-risi-price-assessments/), incluidas las especificaciones y la información de mercado utilizadas. Si el índice y el papel cotizado no comparten una base comparable, la diferencia aparente puede no tener valor.
+
+## 2. Relacione el índice con la composición real del papel
+
+La exposición a la celulosa cambia mucho entre productos.
+
+- El [papel woodfree](/es/products/woodfree-paper) utiliza principalmente celulosa química virgen, pero las cargas, el encolado, la blancura y la conversión también influyen.
+- La [cartulina folding box board](/es/products/folding-box-board) combina varias capas que pueden utilizar fibras distintas en la cara, el centro y el reverso.
+- El [papel kraft](/es/products/kraft-paper) se compra por resistencia además de apariencia; no puede valorarse con un índice genérico.
+- El cartón reciclado depende más de la disponibilidad y el rendimiento del papel recuperado que de una referencia de celulosa virgen.
+
+Pregunte qué insumo es relevante para el grado cotizado. Un índice de fibra corta puede explicar parte del costo de un papel no estucado, pero mucho menos el de un cartón gris reciclado o un cartón para packaging con varias capas y recubrimientos.
+
+## 3. Considere el desfase de inventario y producción
+
+El papel no siempre se fabrica con celulosa comprada al precio de hoy. La fábrica puede consumir fibra contratada meses antes, mantener inventario de otro periodo o programar la producción con una estructura de costos ya fijada.
+
+Así aparece un desfase entre el movimiento del índice y el ajuste del papel terminado. No existe un plazo único: depende del inventario, el contrato, el grado, la programación de máquina, la demanda y la fecha de embarque.
+
+Para comparar con justicia, solicite cuatro fechas:
+
+1. ¿Qué fecha del índice se está utilizando?
+2. ¿Cuándo se fabricará el papel?
+3. ¿Hasta cuándo es válida la cotización?
+4. ¿Cuándo saldrá el embarque del puerto o almacén?
+
+Una cotización para una producción futura no debe compararse de forma directa con un solo titular spot publicado hoy.
+
+## 4. Separe el precio de fábrica del costo entregado
+
+La celulosa es solo una parte de la estructura. El precio final también puede incluir:
+
+- cargas minerales, pigmentos, ligantes, agentes de encolado y química de barrera;
+- energía, tratamiento de agua y eficiencia de máquina;
+- estucado, calandrado, corte, rebobinado y empaque;
+- certificación, inspección y documentación;
+- transporte terrestre, manejo portuario y flete marítimo;
+- tipo de cambio y costo financiero;
+- merma de un tamaño o especificación personalizada.
+
+Por eso, un precio de fábrica estable o más bajo puede coexistir con un CIF mayor. También puede ocurrir lo contrario: un buen flete o tipo de cambio mejora el costo entregado aunque el índice de celulosa permanezca firme.
+
+Compare siempre el mismo Incoterm: FOB contra FOB; CIF contra CIF al mismo destino y en el mismo periodo de embarque.
+
+## 5. Confirme que las dos ofertas describen el mismo papel
+
+Un número menor no siempre es un precio menor para el mismo producto. Normalice cada oferta antes de calcular la diferencia.
+
+| Línea de la oferta | Qué debe igualarse | Por qué importa |
+| --- | --- | --- |
+| Producto | grado, composición y recubrimiento | Nombres parecidos pueden ocultar estructuras distintas |
+| Gramaje | GSM y tolerancia | Una hoja más liviana puede reducir precio y desempeño |
+| Espesor | calibre y bulk | El mismo GSM no garantiza rigidez ni rendimiento iguales |
+| Formato | bobina/hoja, ancho, largo y núcleo | Conversión y merma cambian el costo |
+| Cantidad | toneladas por grado y medida | La preparación depende de la mezcla exacta |
+| Calidad | blancura, humedad, suavidad y resistencia | Los objetivos cambian fibra y proceso |
+| Cumplimiento | declaración FSC y documentos solicitados | El alcance debe corresponder al embarque |
+| Condiciones | Incoterm, pago, validez y destino | Pueden pesar más que un pequeño cambio de materia prima |
+
+Nuestra guía sobre [cómo comparar cotizaciones de distintos proveedores](/es/blog/how-to-compare-paper-quotes-from-different-suppliers) explica cómo normalizar precio unitario y especificaciones antes de elegir.
+
+## 6. Pida una regla de ajuste, no un relato del mercado
+
+En compras repetitivas, acuerde un mecanismo sencillo antes de que el mercado cambie. Puede incluir:
+
+- índice y grado de referencia;
+- mes base o ventana de evaluación;
+- moneda y conversión de unidad;
+- frecuencia de revisión;
+- movimiento que activa la revisión;
+- proporción del precio cubierta por el mecanismo;
+- límite, piso o fecha efectiva, si se acuerdan.
+
+No todos los proveedores pueden revelar su fórmula completa. Es comprensible. El objetivo no es exigir información confidencial, sino sustituir una frase imposible de comprobar, como "cambió la materia prima", por una regla comercial consistente.
+
+## 7. Decida si conviene comprar, dividir o recotizar
+
+Tome la decisión según el riesgo operativo, no solo por la dirección de un índice.
+
+**Compre o reserve capacidad** si la especificación está aprobada, el inventario es bajo, la entrega es crítica o la oferta sigue siendo competitiva después de normalizarla.
+
+**Solicite una nueva cotización** si venció la validez, cambió de forma material la base acordada, se movieron el flete o la divisa, o se corrigió una diferencia técnica.
+
+**Divida el pedido** si la demanda es razonablemente segura, pero la dirección del mercado no. Una compra escalonada puede reducir exposición y proteger continuidad, siempre que cada embarque cumpla las condiciones comerciales y productivas del proveedor.
+
+No retrase un pedido crítico solo porque bajó una línea de un índice. Perder una ventana de producción puede costar más que una diferencia moderada en el papel.
+
+## Datos que debe incluir en la solicitud de cotización
+
+Envíe la misma información a todos los proveedores:
+
+- grado exacto y aplicación final;
+- GSM, espesor o bulk y tolerancias;
+- medida de hoja o bobina, núcleo y empaque;
+- toneladas por cada grado y cada medida;
+- proceso de impresión, recubrimiento, laminación o conversión;
+- certificación y documentos del mercado de destino;
+- puerto, Incoterm y fecha de embarque requerida;
+- fecha del índice si solicita una revisión vinculada al mercado.
+
+YOUNGSUN PAPER puede revisar la especificación y la base comercial para [papel woodfree](/es/products/woodfree-paper), [folding box board](/es/products/folding-box-board), [papel kraft](/es/products/kraft-paper) y otros grados. [Envíe los datos de su solicitud](/es/contact?intent=quote) para comparar exactamente el mismo producto y las mismas condiciones.
+
+## Preguntas frecuentes
+
+### ¿La baja de la celulosa obliga a reducir de inmediato el papel terminado?
+
+No. El grado de celulosa pertinente, su proporción, el inventario contratado, la fecha de producción, la energía, la conversión, el flete y la divisa influyen. La baja del índice justifica revisar la oferta, pero no demuestra una reducción automática en la misma proporción.
+
+### ¿Qué índice debería usar un comprador de papel?
+
+El más cercano al tipo de fibra, región, base comercial y periodo del producto. Pregunte al proveedor qué referencia es relevante y revise su metodología.
+
+### ¿Por qué kraft o cartón reciclado reaccionan distinto al papel woodfree?
+
+Sus composiciones y factores de desempeño son diferentes. Kraft puede depender más de resistencia y fibra larga; el cartón reciclado depende de papel recuperado, rendimiento de clasificación y construcción multicapa.
+
+### ¿Cuándo conviene volver a pedir precio?
+
+Cuando vence la oferta, cambia la especificación, se reserva otra ventana de producción o hay movimientos importantes en el índice acordado, el flete o la divisa. Use siempre los mismos campos para mantener válida la comparación.
+
+## Fuentes y lecturas
+
+- [Fastmarkets: precios y cobertura del mercado de celulosa](https://www.fastmarkets.com/forest-products/pulp/pulp-prices/)
+- [Fastmarkets: metodología de evaluación de productos forestales](https://www.fastmarkets.com/methodology/forest-products/fastmarkets-risi-price-assessments/)
+- [YOUNGSUN PAPER: cómo comparar cotizaciones de papel](/es/blog/how-to-compare-paper-quotes-from-different-suppliers)
+- [YOUNGSUN PAPER: qué significa un aumento de precio de cartón para el comprador](/es/blog/paperboard-coated-paper-price-increase-buyer-response)`,
+    image: "/images/blog-articles/pulp-price-vs-paper-price-buyer-guide.webp",
+    imageAlt: "Bleached market pulp, finished paper grades, calculator and price trend chart on a paper procurement desk.",
+    imageAltEs: "Celulosa blanqueada, papeles terminados, calculadora y gráfico de precios sobre una mesa de compras.",
+    imageCaption: "Compare the benchmark, paper specification and delivered terms before expecting a pulp move to pass through to the finished-paper quote.",
+    imageCaptionEs: "Compare el índice, la especificación y las condiciones de entrega antes de esperar que la variación de celulosa pase a la cotización del papel.",
+    tags: ["pulp price vs paper price", "paper sourcing", "pulp benchmark", "paper quotation", "paper procurement", "woodfree paper", "packaging board"],
+    tagsEs: ["precio de celulosa vs papel", "compra de papel", "índice de celulosa", "cotización de papel", "papel woodfree", "cartón para packaging"]
+  },
+  {
     id: "paper-ice-cream-wrapper-cold-chain-buyer-tests",
     title: "85% Paper Sounds Freezer-Ready—What Must an Ice Cream Wrapper Prove?",
     titleEs: "85 % de papel suena listo para el congelador… ¿qué debe demostrar el envoltorio?",

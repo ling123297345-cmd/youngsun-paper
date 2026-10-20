@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "pulp-price-vs-paper-price-buyer-guide",
+    "name": "A Pulp Benchmark Fell—Why Didn't Your Paper Quote?",
+    "nameEs": "Bajó un índice de celulosa... ¿por qué no bajó su cotización de papel?",
+    "text": "a pulp benchmark fell—why didn't your paper quote? bajó un índice de celulosa... ¿por qué no bajó su cotización de papel? a lower pulp benchmark does not flow straight into every finished-paper quote. buyers need to align the benchmark, fibre recipe, production timing and delivered terms before deciding whether a supplier's price is reasonable. la baja de un índice de celulosa no se refleja de forma automática en toda cotización de papel terminado. antes de decidir si el precio es razonable, hay que alinear índice, receta fibrosa, fecha de producción y condiciones de entrega. paper market & procurement",
+    "href": "/blog/pulp-price-vs-paper-price-buyer-guide"
+  },
+  {
+    "type": "blog",
     "id": "paper-ice-cream-wrapper-cold-chain-buyer-tests",
     "name": "85% Paper Sounds Freezer-Ready—What Must an Ice Cream Wrapper Prove?",
     "nameEs": "85 % de papel suena listo para el congelador… ¿qué debe demostrar el envoltorio?",

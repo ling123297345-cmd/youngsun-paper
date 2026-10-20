@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "paper-ice-cream-wrapper-cold-chain-buyer-tests": {
+    "title": "Packaging de papel para helado: 8 pruebas",
+    "description": "El porcentaje de papel no demuestra el rendimiento en congelación. Revise barrera, sellado, flexión, impresión, contacto alimentario y reciclabilidad."
+  },
   "2d-barcode-paper-packaging-print-quality-checklist": {
     "title": "Calidad de códigos 2D en envases de papel",
     "description": "Un código 2D puede funcionar en pantalla y fallar impreso. Revise contraste, zona muda, sustrato, prueba y verificación del envase."

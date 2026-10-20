@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "paper-ice-cream-wrapper-cold-chain-buyer-tests",
+    "name": "85% Paper Sounds Freezer-Ready—What Must an Ice Cream Wrapper Prove?",
+    "nameEs": "85 % de papel suena listo para el congelador… ¿qué debe demostrar el envoltorio?",
+    "text": "85% paper sounds freezer-ready—what must an ice cream wrapper prove? 85 % de papel suena listo para el congelador… ¿qué debe demostrar el envoltorio? a new paper-dominant ice cream wrapper is drawing attention, but paper percentage is only the starting point. buyers still need to prove cold-chain barrier, seal integrity, machine performance and the exact end-of-life claim. un nuevo envoltorio para helado con alto contenido de papel llama la atención, pero el porcentaje es solo el inicio. el comprador aún debe validar barrera, sellado, rendimiento en máquina y fin de vida. food packaging & barrier paper",
+    "href": "/blog/paper-ice-cream-wrapper-cold-chain-buyer-tests"
+  },
+  {
+    "type": "blog",
     "id": "2d-barcode-paper-packaging-print-quality-checklist",
     "name": "The 2D Code Worked on Screen—Why Did It Fail on the Carton?",
     "nameEs": "El código 2D funcionó en pantalla… ¿por qué falló sobre el envase?",

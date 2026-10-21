@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "eu-ppwr-epr-one-tonne-authorised-representative-update": {
+    "title": "Propuesta EPR PPWR de 1 tonelada: guía",
+    "description": "El Consejo de la UE propone un alivio de 1 tonelada para una obligación EPR. Vea a quién cubre, qué sigue vigente y qué debe documentar."
+  },
   "starch-barrier-paper-food-packaging-buyer-tests": {
     "title": "Papel barrera de almidón: pruebas de compra",
     "description": "Una estructura con almidón superó la Parte 1 de reciclabilidad. Aún debe validar grasa, sellado, contacto alimentario, conversión y mercado."

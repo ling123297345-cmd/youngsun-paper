@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "eu-ppwr-epr-one-tonne-authorised-representative-update",
+    "name": "Under 1 Tonne of Packaging? The EU EPR Relief Many Exporters Cannot Use",
+    "nameEs": "¿Menos de 1 tonelada de envases? El alivio EPR que muchos exportadores no pueden usar",
+    "text": "under 1 tonne of packaging? the eu epr relief many exporters cannot use ¿menos de 1 tonelada de envases? el alivio epr que muchos exportadores no pueden usar a new council position mentions a one-tonne threshold, but it is not a general epr exemption and it does not give every non-eu exporter the same relief. this buyer guide separates the proposal from the obligations that remain. una nueva posición del consejo menciona un umbral de una tonelada, pero no es una exención general de epr ni ofrece el mismo alivio a todos los exportadores extracomunitarios. esta guía separa la propuesta de las obligaciones que continúan. regulation & compliance",
+    "href": "/blog/eu-ppwr-epr-one-tonne-authorised-representative-update"
+  },
+  {
+    "type": "blog",
     "id": "starch-barrier-paper-food-packaging-buyer-tests",
     "name": "A Starch Barrier Passed Part 1—What Still Has to Be Proven?",
     "nameEs": "Una barrera de almidón superó la Parte 1... ¿qué falta demostrar?",

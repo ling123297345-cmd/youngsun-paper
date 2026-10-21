@@ -4878,14 +4878,110 @@ p, li, blockquote {
   transition: all 0.25s var(--ease-out);
 }
 
-/* Commercial terms card hover */
-.commercial-term-card {
-  transition: transform 0.2s var(--ease-out), border-color 0.2s var(--ease-out), background 0.2s var(--ease-out);
+/* Product order guidance */
+.product-order-guidance {
+  align-items: center;
+  background: linear-gradient(110deg, rgba(143, 188, 90, 0.1), rgba(255, 255, 255, 0.035));
+  border: 1px solid rgba(143, 188, 90, 0.2);
+  border-radius: 8px;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 28px;
+  padding: 26px 28px;
 }
-.commercial-term-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(200,146,63,0.2) !important;
-  background: rgba(200,146,63,0.08) !important;
+
+.product-order-guidance__copy > span {
+  color: var(--lime);
+  display: block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+}
+
+.product-order-guidance__copy h3 {
+  color: var(--white) !important;
+  font-size: 20px;
+  line-height: 1.25;
+  margin: 0 0 8px;
+}
+
+.product-order-guidance__copy p {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 760px;
+}
+
+.product-order-guidance__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.product-order-guidance__actions a {
+  align-items: center;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: 800;
+  gap: 8px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 10px 18px;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
+}
+
+.product-order-guidance__whatsapp {
+  background: var(--lime);
+  border: 1px solid var(--lime);
+  color: #0a1f13;
+}
+
+.product-order-guidance__whatsapp:hover {
+  background: #a8d26d;
+  border-color: #a8d26d;
+}
+
+.product-order-guidance__email {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  color: var(--white);
+}
+
+.product-order-guidance__email:hover {
+  border-color: var(--white);
+}
+
+@media (max-width: 820px) {
+  .product-order-guidance {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .product-order-guidance__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .product-order-guidance {
+    padding: 22px 18px;
+  }
+
+  .product-order-guidance__actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .product-order-guidance__actions a {
+    width: 100%;
+  }
 }
 
 /* Product detail image zoom on hover */

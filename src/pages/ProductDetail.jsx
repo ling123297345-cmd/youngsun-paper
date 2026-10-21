@@ -8,7 +8,7 @@ import { getProductGuideLinks } from "../productGuideLinks.js";
 import { PageMeta, BreadcrumbSchema, FAQSchema } from "../SEO.jsx";
 import ProductSchema from "../ProductSchema.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
-import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, PackageCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, Mail, MessageCircle, PackageCheck } from "lucide-react";
 
 export default function ProductDetail() {
   const { t, lang } = useLang(); const isEs = lang === "es";
@@ -40,7 +40,6 @@ export default function ProductDetail() {
   const variants = (isEs && productEs[id]?.variants ? productEs[id].variants : p.variants) || [];
   const features = (isEs && productEs[id]?.features ? productEs[id].features : p.features) || [];
   const customization = (isEs && productEs[id]?.customization ? productEs[id].customization : p.customization) || [];
-  const commercial = (isEs && productEs[id]?.commercial ? productEs[id].commercial : p.commercial) || null;
   const certifications = (isEs && productEs[id]?.certifications ? productEs[id].certifications : p.certifications) || [];
   const gallery = p.gallery || [];
   const optionGallery = p.optionGallery || [];
@@ -254,27 +253,38 @@ export default function ProductDetail() {
           </div>
         )}
 
-        {/* ===== COMMERCIAL TERMS ===== */}
-        {commercial && (
-          <div style={{ marginTop: 28, background: "rgba(200,146,63,0.05)", border: "1px solid rgba(200,146,63,0.12)", borderRadius: 12, padding: "24px 28px" }}>
-            <h3 style={{ color: "var(--gold)", fontSize: 17, marginBottom: 16 }}>📦 {isEs ? "Condiciones comerciales" : "Commercial Terms"}</h3>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 16 }}>
-              {[
-                { label: "MOQ", value: commercial.moq, icon: "📦" },
-                { label: isEs ? "Plazo de entrega" : "Lead Time", value: commercial.leadTime, icon: "⏱️" },
-                { label: isEs ? "Muestras" : "Samples", value: commercial.samples, icon: "🧪" },
-                { label: isEs ? "Certificación" : "Certification", value: commercial.certification, icon: "✅" },
-                { label: isEs ? "Carga de contenedor" : "Container Loading", value: commercial.containerLoading, icon: "🚢" },
-              ].filter((item) => item.value).map((item, i) => (
-                <div key={i} style={{ textAlign: "center", padding: "14px 10px", background: "rgba(200,146,63,0.04)", borderRadius: 8, border: "1px solid rgba(200,146,63,0.08)" }}>
-                  <span style={{ fontSize: 22, display: "block", marginBottom: 6 }}>{item.icon}</span>
-                  <p style={{ color: "rgba(255,255,255,0.35)", fontSize: 10, fontWeight: 700, marginBottom: 2, textTransform: "uppercase", letterSpacing: "0.08em" }}>{item.label}</p>
-                  <p style={{ color: "var(--white)", fontSize: 13, fontWeight: 600 }}>{item.value}</p>
-                </div>
-              ))}
-            </div>
+        {/* ===== ORDER GUIDANCE ===== */}
+        <section className="product-order-guidance" aria-labelledby="product-order-guidance-title">
+          <div className="product-order-guidance__copy">
+            <span>{isEs ? "Detalles para su proyecto" : "Details for your project"}</span>
+            <h3 id="product-order-guidance-title">
+              {isEs ? "¿Le interesa este papel?" : "Interested in this paper?"}
+            </h3>
+            <p>
+              {isEs
+                ? `Cada pedido de ${productName} se organiza según el grado, la medida y el destino; escriba a Alice por WhatsApp o por correo para confirmar la cantidad adecuada, el plazo, las muestras y una cotización personalizada.`
+                : `Every ${productName} order is planned around the grade, size and destination; contact Alice on WhatsApp or by email to confirm the suitable quantity, lead time, samples and a tailored quotation.`}
+            </p>
           </div>
-        )}
+          <div className="product-order-guidance__actions">
+            <a
+              href={`https://wa.me/${contactInfo.whatsapp.replace(/\D/g, "")}?text=${encodeURIComponent(isEs ? `Hola Alice, me interesa ${productName}. ¿Podría enviarme los detalles y una cotización?` : `Hi Alice, I'm interested in ${productName}. Could you send me the details and a quotation?`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="product-order-guidance__whatsapp"
+            >
+              <MessageCircle size={18} aria-hidden="true" />
+              {isEs ? "Hablar con Alice" : "Chat with Alice"}
+            </a>
+            <a
+              href={`mailto:${contactInfo.email}?subject=${encodeURIComponent(isEs ? `Consulta sobre ${productName}` : `Inquiry about ${productName}`)}&body=${encodeURIComponent(isEs ? `Hola Alice,\n\nMe interesa ${productName}. Por favor, envíeme los detalles de pedido, plazo, muestras y cotización.\n` : `Hi Alice,\n\nI'm interested in ${productName}. Please send me the order details, lead time, sample arrangement and quotation.\n`)}`}
+              className="product-order-guidance__email"
+            >
+              <Mail size={18} aria-hidden="true" />
+              {isEs ? "Enviar consulta" : "Email an inquiry"}
+            </a>
+          </div>
+        </section>
 
         {/* ===== FULL DESCRIPTION ===== */}
         <div style={{ marginTop: 48 }}>

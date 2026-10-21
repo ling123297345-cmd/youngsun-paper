@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "starch-barrier-paper-food-packaging-buyer-tests",
+    "name": "A Starch Barrier Passed Part 1—What Still Has to Be Proven?",
+    "nameEs": "Una barrera de almidón superó la Parte 1... ¿qué falta demostrar?",
+    "text": "a starch barrier passed part 1—what still has to be proven? una barrera de almidón superó la parte 1... ¿qué falta demostrar? a new starch-based paper packaging structure has passed part 1 recyclability testing, but that result answers only one part of a commercial approval. this checklist shows what food-packaging buyers should verify next. una nueva estructura de papel con barrera de almidón superó la parte 1 de reciclabilidad, pero ese resultado cubre solo una parte de la aprobación comercial. esta guía explica qué validar después. barrier & food packaging",
+    "href": "/blog/starch-barrier-paper-food-packaging-buyer-tests"
+  },
+  {
+    "type": "blog",
     "id": "pulp-price-vs-paper-price-buyer-guide",
     "name": "A Pulp Benchmark Fell—Why Didn't Your Paper Quote?",
     "nameEs": "Bajó un índice de celulosa... ¿por qué no bajó su cotización de papel?",

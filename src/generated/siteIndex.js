@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "starch-barrier-paper-food-packaging-buyer-tests": {
+    "title": "Papel barrera de almidón: pruebas de compra",
+    "description": "Una estructura con almidón superó la Parte 1 de reciclabilidad. Aún debe validar grasa, sellado, contacto alimentario, conversión y mercado."
+  },
   "pulp-price-vs-paper-price-buyer-guide": {
     "title": "Precio de celulosa vs papel: guía de compra",
     "description": "Un índice de celulosa puede bajar mientras el papel sigue firme. Revise grado, tiempos, energía, flete, divisa y condiciones antes de comparar."

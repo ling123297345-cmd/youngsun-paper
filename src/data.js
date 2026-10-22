@@ -1537,7 +1537,7 @@ export const subProducts = {
     specs: [
       "Grammage: 70 / 75 / 80 gsm",
       "Brightness: ISO 92–100%",
-      "Format: A4 (210×297mm), A3 (297×420mm), Letter, Legal",
+      "Formats: A3, A4, A5, B4, B5, 8K, 16K and selected Letter / Legal sizes",
       "Opacity: ≥ 92% at 80 gsm",
       "Moisture: 4.5% ± 1%",
       "Packaging: 500 sheets/ream, 5–10 reams/carton",
@@ -1573,10 +1573,15 @@ export const subProducts = {
     ],
     commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage (70/75/80 gsm)","Sheet size","Quantity per size","Sheets per ream","Standard or private-label packing","Destination port"],
+    faqs: [
+      { q: "What is the difference between Multi-Format Copy Paper and A4 Copy Paper?", a: "Multi-Format Copy Paper covers A-, B- and K-series sheets plus selected US sizes. The dedicated A4 page is only for 210 × 297 mm sheets and is better for buyers purchasing a standard A4 program." },
+      { q: "Can the ream wrapper and export carton carry our brand?", a: "Private-label wrappers and cartons are available for qualified orders. Send the artwork, sheet count per ream, reams per carton, required languages and destination market so packing feasibility can be confirmed." },
+      { q: "What information is needed for a copy paper quotation?", a: "Please provide grammage, every sheet size, quantity per size, sheets per ream, reams per carton, standard or private-label packing, pallet requirements and destination port." },
+    ],
     seoTitle: "Copy Paper Supplier | A3, A4 and A5 Sizes",
     metaDescription: "Multi-format copy paper in A3, A4, A5, B-series and selected US sizes for wholesale, institutional and private-label supply. Request export pricing.",
     keywords: ["multi-format copy paper", "A3 copy paper", "A5 copy paper", "office paper wholesale", "private label copy paper", "copy paper supplier"],
-    image: "/images/products/culture-paper/copy-paper-main.webp",
+    image: "/images/products/culture-paper/copy-paper-main-v2.webp",
     gallery: [
     ],
   },
@@ -1586,7 +1591,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "Cost-efficient, high-speed printing paper for newspapers, advertising inserts, and mass-circulation publications.",
     description:
-      "Newsprint is a low-cost, lightweight paper grade designed primarily for high-speed web offset (coldset) printing of newspapers, advertising flyers, and mass-circulation periodicals. Made predominantly from mechanical wood pulp (groundwood or TMP) with a small percentage of chemical pulp for strength, newsprint is engineered for runnability, printability, and economy at scale.",
+      "Newsprint is a lightweight, uncoated paper grade used mainly for coldset web offset newspapers, advertising inserts and high-volume publications. Buyers should select the paper by grammage, brightness, opacity, reel width, outer diameter, core size and press configuration rather than by price alone. Reel supply is the normal production format, while sheets can be confirmed for suitable specifications. A representative sample or press trial is recommended before a large order.",
     specs: [
       "Grammage: 40 / 42 / 45 / 48.8 / 52 / 57 gsm",
       "Brightness: ISO 56–68%",
@@ -1599,7 +1604,7 @@ export const subProducts = {
       "Advertising inserts and flyers for retail distribution",
       "Mass-circulation community and free newspapers",
       "Trade and industry newsletters and bulletins",
-      "Election and political campaign materials",
+      "Protective wrapping and interleaving",
       "Directory and catalog printing (economy grade)",
     ],
     certifications: ["FSC Certified"],
@@ -1610,7 +1615,7 @@ export const subProducts = {
     ],
     features: [
       "Cost-Efficient — Low basis weight designed for high-volume, economical printing at scale.",
-      "High-Speed Runnability — Engineered for coldset web offset presses with minimal web breaks.",
+      "Press-Matched Runnability — Reel dimensions and paper specifications can be matched to the coldset press and production setup.",
       "Good Opacity — Maintains readability even at lightweight grammages for double-sided printing.",
       "Reel Supply — Standard and jumbo reels for high-speed newspaper and publication presses.",
     ],
@@ -1622,6 +1627,11 @@ export const subProducts = {
     ],
     commercial: { moq: "From 1 metric ton for regular specifications; confirm by grammage, reel width or sheet size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage","Reel width and diameter","Core size","Quantity per size","Press configuration","Destination port"],
+    faqs: [
+      { q: "Is newsprint supplied in reels or sheets?", a: "Reels are the normal format for coldset web offset production. Sheet supply can be checked against the required grammage, dimensions and order quantity." },
+      { q: "Can the same newsprint run on every coldset press?", a: "Not automatically. Reel width, outer diameter, core, tension, grammage and surface condition should match the press. We recommend approving a representative sample or production trial before a large run." },
+      { q: "What details should a newsprint buyer send for a quotation?", a: "Please send grammage, reel width and outer diameter, core size, quantity per size, press configuration, packing requirement and destination port. For sheets, include the exact sheet dimensions." },
+    ],
     seoTitle: "Newsprint Paper Rolls & Sheets Supplier",
     metaDescription: "Newsprint paper rolls and newsprint paper sheets in 40–57 gsm for coldset printing, inserts and mass-circulation publications. Request widths or free samples.",
     keywords: ["newsprint", "newsprint paper", "newspaper paper", "coldset paper", "standard newsprint", "web offset paper"],
@@ -1644,7 +1654,7 @@ export const subProducts = {
     category: "culture-paper",
     tagline: "A dedicated 210×297 mm A4 office copy paper range for buyers who need consistent bulk and export-ready packing.",
     description:
-      "A4 Copy Paper is the universal office paper standard — 210×297mm, 70–80 gsm, high brightness (ISO 92%+). Designed for reliable performance across laser printers, inkjet printers, copiers, and fax machines. Smooth, dust-free surface ensures sharp text, clean graphics, and minimal paper jams. Packaged 500 sheets per ream, 5 or 10 reams per carton. Supplied in container loads to distributors, office supply chains, and government procurement programs worldwide. This is the highest-volume paper grade in global trade.",
+      "YOUNGSUN A4 Copy Paper is a dedicated 210 × 297 mm office paper range in 70, 75 and 80 gsm. It is supplied for everyday laser, inkjet, copier and fax use, subject to the selected grade and equipment settings. The standard configuration is 500 sheets per ream with 5 to 10 reams per carton, plus private-label wrapper and carton options for qualified orders. Buyers requiring A3, A5, B-series, K-series or selected US sizes should use the Multi-Format Copy Paper page.",
     specs: [
       "Grammage: 70 / 75 / 80 gsm",
       "Brightness: ISO 92–100%",
@@ -1667,7 +1677,7 @@ export const subProducts = {
       "80 gsm A4 Copy Paper",
     ],
     features: [
-      "Universal Compatibility — Optimized for laser, inkjet, copier and fax machines with jam-free performance.",
+      "Everyday Equipment Compatibility — Suitable for common laser, inkjet, copier and fax applications when the grade and machine settings are matched.",
       "High Brightness — ISO 92–100% brightness for sharp text and clean document appearance.",
       "Smooth Surface — Dust-free finish ensures consistent toner/ink adhesion and crisp output.",
       "Export-Ready Packaging — Palletized with moisture-barrier wrapping for container shipping.",
@@ -1681,10 +1691,15 @@ export const subProducts = {
     ],
     commercial: { moq: "5 metric tons per product per size", leadTime: "Approximately 3 weeks after order specifications are confirmed", samples: "Standard samples are free; international courier charges are paid by the customer", certification: "FSC certified" },
     quoteReqs: ["Grammage (70/75/80 gsm)","Quantity in reams or metric tons","Reams per carton","Standard or private-label packing","Pallet requirements","Destination port"],
+    faqs: [
+      { q: "Should I choose 70, 75 or 80 gsm A4 copy paper?", a: "Choose by printer requirements, opacity, handling feel, duplex use and target price. A representative sample helps confirm feeding and print appearance before a volume order." },
+      { q: "Is this A4 paper suitable for laser and inkjet printers?", a: "The range is intended for common laser, inkjet, copier and fax applications, but feeding and image performance still depend on the selected grade, printer condition and settings. Test the intended paper in the actual equipment when compatibility is critical." },
+      { q: "What is needed for a private-label A4 quotation?", a: "Send the grammage, total quantity, sheets per ream, reams per carton, wrapper and carton artwork, pallet requirements, destination port and any market-specific labeling instructions." },
+    ],
     seoTitle: "A4 Copy Paper Supplier | 70, 75 & 80 gsm",
     metaDescription: "A4 copy paper in 210×297 mm sheets and 70, 75 or 80 gsm for office distributors and institutional buyers. Request cartons, private-label packing or pricing.",
     keywords: ["A4 copy paper", "copy paper", "office paper", "A4 printer paper", "bulk copy paper", "copy paper export"],
-    image: "/images/products/culture-paper/a4-copy-paper-main.webp",
+    image: "/images/products/culture-paper/a4-copy-paper-main-v2.webp",
     gallery: [
     ],
   },
@@ -1692,7 +1707,7 @@ export const subProducts = {
     id: "a4-thermal-paper",
     name: "A4 Thermal Paper",
     category: "culture-paper",
-    tagline: "A4-sized thermal paper for portable and mobile printing — no ink, no toner, just heat. Ideal for on-the-go professionals.",
+    tagline: "A4 direct thermal sheets for compatible portable printers used for field documents, invoices and logistics records.",
     description:
       "A4 Thermal Paper is a heat-sensitive sheet for compatible direct thermal printers, allowing field teams to print contracts, invoices, logistics records and reports without ink cartridges, ribbons or toner. Each sheet is pre-cut to 210 × 297 mm. Thermal sensitivity, image density, storage life and any BPA-free declaration must be confirmed against the printer model, selected grade and end use.",
     specs: [
@@ -1730,10 +1745,15 @@ export const subProducts = {
     ],
     commercial: { moq: "From 1 metric ton for regular formats and packing; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and any BPA-free declaration are confirmed for the exact grade and order" },
     quoteReqs: ["Printer model", "A4 feed configuration", "Thermal sensitivity or imaging requirement", "Sheets per pack", "Quantity and packing", "Destination port"],
+    faqs: [
+      { q: "Can A4 thermal paper run in any A4 printer?", a: "No. It is made for compatible direct thermal printers, not ordinary laser or inkjet printers. Please provide the printer brand, model and feed configuration before ordering." },
+      { q: "How is A4 thermal paper different from normal copy paper?", a: "Thermal paper has a heat-sensitive coating that forms an image without ink or toner. Copy paper is uncoated office paper that requires laser toner or inkjet ink." },
+      { q: "What should I provide for an A4 thermal paper sample or quote?", a: "Send the printer model, feed method, required sensitivity or image permanence, sheets per pack, quantity, packing, any BPA-free documentation requirement and destination port." },
+    ],
     seoTitle: "A4 Thermal Paper Supplier for Portable Printers",
     metaDescription: "A4 direct thermal paper for portable printers, field documents, invoices and logistics records. BPA-free options and export packing available. Request samples.",
     keywords: ["A4 thermal paper", "thermal printer paper", "portable printer paper", "no-ink printing paper", "mobile printing paper", "compact printer paper"],
-    image: "/images/products/culture-paper/a4-thermal-paper-main.webp",
+    image: "/images/products/culture-paper/a4-thermal-paper-main-v2.webp",
     gallery: [
     ],
   },
@@ -1741,7 +1761,7 @@ export const subProducts = {
     id: "thermal-paper-roll",
     name: "Thermal Paper Roll",
     category: "culture-paper",
-    tagline: "Small-format thermal paper rolls for POS terminals, receipt printers, and instant photo printers — crisp images, reliable performance.",
+    tagline: "Small-format thermal rolls for POS terminals, receipt printers and selected compatible compact printers.",
     description:
       "Thermal Paper Rolls are heat-sensitive rolls for compatible POS terminals, payment devices, receipt printers and operational records. Standard 57 mm and 80 mm widths can be combined with different outer diameters and core sizes. Roll length, thermal side, sensitivity and image retention should be matched to the printer and storage conditions. BPA-free or phenol-free options are supplied only when specified and documented for the order.",
     specs: [
@@ -1757,7 +1777,7 @@ export const subProducts = {
       "Credit card terminal receipts",
       "Kitchen order tickets",
       "Logistics label and barcode printing",
-      "Mini instant photo printers",
+      "Selected compatible compact printers",
       "ATM and banking transaction records",
     ],
     certifications: ["FSC status and any BPA-free, phenol-free or chemical declaration are confirmed for the exact grade and order"],
@@ -1782,6 +1802,11 @@ export const subProducts = {
     ],
     commercial: { moq: "From 1 metric ton for regular sizes and packing; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and chemical declarations are confirmed for the exact grade and order" },
     quoteReqs: ["Printer model", "Roll width, outer diameter and length", "Core diameter", "Thermal side and sensitivity", "BPA-free or phenol-free requirement", "Quantity, packing and destination port"],
+    faqs: [
+      { q: "Which dimensions are needed to match a thermal paper roll?", a: "Provide roll width, outer diameter or required length, core inner diameter, thermal side and printer model. Matching only the width is not enough to confirm compatibility." },
+      { q: "Are all thermal paper rolls BPA-free or phenol-free?", a: "No. These are grade-specific chemical declarations. Request the required option before ordering and confirm it in the documentation for the exact supplied grade." },
+      { q: "How should thermal rolls be stored and how long does the image last?", a: "Image life varies by grade and exposure. Store rolls away from heat, sunlight, moisture, plasticizers and aggressive chemicals, and request the relevant storage and image-retention data when long-term records are required." },
+    ],
     seoTitle: "Thermal Paper Roll Supplier for POS and Receipts",
     metaDescription: "57 mm and 80 mm thermal paper rolls for POS terminals, receipt printers, payment devices and logistics labels. BPA-free options and custom packing available.",
     keywords: ["thermal paper roll", "POS paper roll", "receipt paper roll", "thermal roll paper", "cash register paper", "thermal printer roll"],
@@ -1957,10 +1982,15 @@ export const subProducts = {
     ],
     commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status and any composition declaration are confirmed for the exact grade and order" },
     quoteReqs: ["End use", "Pattern or reference sample", "Color", "Grammage and substrate", "Converting and finishing process", "Quantity, format and destination port"],
+    faqs: [
+      { q: "Is leather paper made from genuine leather?", a: "No. This product is a paper- or board-based decorative covering embossed and finished to reproduce a leather-effect grain. It should not be described or labeled as genuine leather." },
+      { q: "Can leather-effect paper be printed, foil stamped or glued?", a: "Selected grades can support printing, foil, die-cutting, wrapping and gluing, but the grain, coating and substrate affect adhesion and detail. Test the actual sample with the intended process before production." },
+      { q: "Can you provide an animal-component-free declaration?", a: "Only when the composition of the exact grade has been checked and the required declaration is available. Send the intended market, claim wording, pattern, color, substrate, quantity and converting method for confirmation." },
+    ],
     seoTitle: "Leather Paper Supplier for Book Covers and Boxes",
     metaDescription: "Leather-grain paper in 120–400 gsm for book covers, diaries, gift boxes and luxury packaging. Compare textures, colors, sheets and reels; request samples.",
     keywords: ["leather paper", "leatherette paper", "faux leather paper", "leather embossed paper", "leather-effect paper", "leather-texture board"],
-    image: "/images/products/fancy-paper/leather-paper-main.webp",
+    image: "/images/products/fancy-paper/leather-paper-main-v2.webp",
     gallery: [
       
       {
@@ -2064,6 +2094,11 @@ export const subProducts = {
     ],
     commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
     quoteReqs: ["End use", "Pearlescent color", "Grammage", "Sheet or reel size", "Printing and finishing process", "Quantity and destination port"],
+    faqs: [
+      { q: "How does a pearlescent surface affect printed colors?", a: "The reflective base can change color density and appearance under different lighting. Light inks may need an opaque white underprint or a different artwork approach, so approve a printed sample on the chosen shade." },
+      { q: "Can pearlescent paper be folded, embossed or foil stamped?", a: "Selected grades support these processes, but cracking, foil adhesion and relief definition depend on grammage, surface coating, grain direction and tooling. A converting trial is recommended." },
+      { q: "How should a buyer approve a pearlescent color?", a: "Use a physical reference viewed under the intended lighting. Specify pearl tone, grammage, sheet or reel size, print and finishing process, quantity and destination port rather than relying only on a screen color." },
+    ],
     seoTitle: "Pearlescent Paper Supplier for Luxury Packaging",
     metaDescription: "Pearlescent paper in 120–350 gsm with white, gold, silver and tinted shimmer finishes for invitations, cosmetics and luxury boxes. Request samples.",
     keywords: ["pearlescent paper", "pearl paper", "iridescent paper", "mica coated paper", "shimmer paper", "pearl cardstock"],
@@ -2131,12 +2166,12 @@ export const subProducts = {
     category: "fancy-paper",
     tagline: "Three-dimensional textured paper — raised patterns that turn packaging into a tactile brand experience.",
     description:
-      "Embossed paper features a raised relief pattern mechanically pressed into the paper or board surface under heat and pressure. Unlike printed textures, embossing creates genuine three-dimensional topography that catches light, invites touch, and signals premium quality. Patterns range from classic (linen, felt, laid, canvas, woodgrain) to custom-designed brand-specific textures. Compatible with subsequent printing, foil stamping, and die-cutting processes. Used by luxury, fashion, and premium consumer brands to elevate packaging and print collateral above the ordinary.",
+      "Embossed paper features a raised relief pattern mechanically pressed into the paper or board surface. Standard textures include linen, felt, laid, canvas and woodgrain, while a custom pattern may require dedicated tooling and a separate production review. It is used for boxes, hang tags, cards, covers and stationery where a tactile surface is part of the design. Printing, foil stamping, folding and die-cutting should be tested on the selected substrate, grammage, pattern and embossing depth before production.",
     specs: [
       "Substrate: Wide range, 80–400 gsm",
       "Patterns: Linen / Felt / Canvas / Woodgrain / Custom",
       "Embossing depth: Fine to deep relief",
-      "Print compatibility: Post-emboss offset, screen, foil",
+      "Print and finishing: Post-emboss offset, screen and foil subject to sample testing",
       "Custom patterns: Available with dedicated embossing roller",
       "Format: Sheets & reels",
     ],
@@ -2160,7 +2195,7 @@ export const subProducts = {
       "Genuine 3D Texture — Mechanically pressed relief patterns create real topography, not printed imitation.",
       "Tactile Brand Experience — Invites touch and signals premium quality for luxury packaging and stationery.",
       "Wide Pattern Library — Standard patterns include linen, felt, canvas, woodgrain; custom patterns available.",
-      "Post-Emboss Compatible — Accepts subsequent printing, foil stamping and die-cutting without pattern loss.",
+      "Post-Emboss Processing — Printing, foil stamping and die-cutting can be coordinated after the texture is tested on the selected grade.",
     ],
     customization: [
       "Pattern selection (standard or custom)",
@@ -2171,6 +2206,11 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Pattern or texture reference", "Paper or board grammage", "Embossing depth", "Sheet or reel size", "Printing and finishing process", "Quantity and destination port"],
+    faqs: [
+      { q: "Can I choose a standard pattern or develop a custom embossing texture?", a: "Standard linen, felt, canvas and woodgrain patterns are the quickest starting point. A custom texture may require dedicated tooling, artwork review, a trial and separate minimum quantity and lead-time confirmation." },
+      { q: "Can embossed paper be printed or foil stamped after embossing?", a: "Yes for selected combinations, but the raised surface can change ink contact, foil transfer and fine-detail reproduction. Test the chosen substrate, pattern and embossing depth with the actual process." },
+      { q: "What details are needed for an embossed paper quotation?", a: "Send the pattern or physical reference, substrate and grammage, color, embossing depth, sheet or reel size, printing and finishing steps, quantity and destination port." },
+    ],
     seoTitle: "Embossed Paper Supplier for Luxury Packaging",
     metaDescription: "Embossed paper in 80–400 gsm with linen, felt, canvas, woodgrain or custom textures for boxes, covers and hang tags. Request patterns and samples.",
     keywords: ["embossed paper", "textured paper", "raised pattern paper", "linen embossed", "custom embossed paper", "3D paper texture"],
@@ -2237,15 +2277,15 @@ export const subProducts = {
     id: "gold-silver-card",
     name: "Gold & Silver Card Paper",
     category: "fancy-paper",
-    tagline: "Brilliant metallic gold and silver card paper with mirror-like reflective surface — for luxury packaging, gift boxes, greeting cards, and high-end brand presentation.",
+    tagline: "Reflective gold, silver and selected metallic card finishes for luxury packaging, cards and premium brand presentation.",
     description:
-      "Gold & Silver Card Paper features a brilliant metallic surface achieved through vacuum metallization, foil lamination, or metallic coating on a premium paper or board substrate. Available in classic gold, bright silver, rose gold, champagne gold, and custom metallic finishes. The mirror-like reflective surface offers exceptional visual impact and can accept offset printing, screen printing, embossing, debossing, and foil stamping. Grammages from 200 gsm to 400 gsm cover everything from lightweight inserts and greeting cards to structural luxury packaging boards.",
+      "Gold & Silver Card Paper combines a paper or board base with a vacuum-metallized, laminated or coated decorative surface, depending on the selected grade. Reference grammages of 200–400 gsm include gold, silver, rose gold and champagne finishes for cards, sleeves and premium packaging. Reflectivity, one- or two-sided construction, ink adhesion, scoring and folding performance vary by grade. Printing, embossing, debossing and foil should be validated on the exact finish before production.",
     specs: [
       "Grammage: 200 – 400 gsm",
       "Finishes: Gold / Silver / Rose Gold / Champagne Gold / Custom metallic",
-      "Surface: Mirror-reflective metallic, smooth both sides",
+      "Surface: Reflective metallic; gloss and one- or two-sided construction depend on grade",
       "Format: Sheets (standard & custom sizes) or reels",
-      "Print compatibility: Offset, screen, foil stamping, embossing, debossing",
+      "Print and finishing: Offset, screen, foil, embossing and debossing subject to trial",
       "Metallization: Vacuum metallized or foil-laminated options",
     ],
     applications: [
@@ -2267,9 +2307,9 @@ export const subProducts = {
       "Custom Metallic Finish",
     ],
     features: [
-      "Mirror-Like Reflective Surface — Vacuum metallization creates brilliant, light-catching metallic finish.",
+      "Reflective Metallic Appearance — Gloss and light reflection depend on the selected metallized, laminated or coated finish.",
       "Multiple Metallic Tones — Gold, silver, rose gold, champagne and custom metallic shades available.",
-      "Print-Compatible — Accepts offset, screen printing, embossing, debossing and foil stamping.",
+      "Finish Testing — Ink adhesion, foil transfer, embossing, scoring and folding should be tested on the exact construction.",
       "Luxury Brand Positioning — Instantly elevates gift boxes, cosmetics, jewelry and spirits packaging.",
     ],
     customization: [
@@ -2280,6 +2320,12 @@ export const subProducts = {
       "Embossing and foil coordination",
     ],
     commercial: { moq: "From 1 metric ton for regular finishes and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
+    quoteReqs: ["End use", "Metallic shade and gloss level", "Grammage", "Sheet or reel size", "Printing and finishing process", "Quantity and destination port"],
+    faqs: [
+      { q: "How is gold or silver card paper made?", a: "Depending on the grade, the metallic appearance may come from vacuum metallization, film or foil lamination, or a metallic coating. Ask for the exact construction because it affects printing, folding, recycling and end use." },
+      { q: "Can metallic card be printed and folded without cracking?", a: "Selected grades can be printed, scored, folded, embossed and die-cut, but performance depends on the surface, substrate, grammage, grain direction, ink and tooling. Approve a production-representative trial first." },
+      { q: "Is the metallic finish available on one side or two sides?", a: "Both constructions may be available, but they are grade-specific. Specify metallic shade, gloss level, coated sides, grammage, format, print and finishing process, quantity and destination port." },
+    ],
     seoTitle: "Gold and Silver Card Paper Supplier",
     metaDescription: "Metallic gold and silver card paper for luxury boxes, invitations, cosmetics and premium printing. Request available finishes, sheets or samples.",
     keywords: ["gold silver card paper", "metallic card paper", "gold foil paper", "silver cardstock", "metallic board", "luxury metallic paper"],
@@ -2316,16 +2362,16 @@ export const subProducts = {
     id: "label-paper",
     name: "Label Paper",
     category: "fancy-paper",
-    tagline: "Premium label and tag face stock — smooth, printable, and engineered for high-speed converting and adhesive coating.",
+    tagline: "Printable label and tag face stock selected for the intended adhesive construction and converting line.",
     description:
-      "Label paper — also called label face stock or tag paper — is a high-quality paper engineered as the printable surface layer for pressure-sensitive labels, wet-glue labels, and hang tags. The paper must be strong enough to withstand high-speed label converting (die-cutting, matrix stripping, rewinding), smooth enough for fine print reproduction, and dimensionally stable under adhesive coating. Available as C1S (coated one side) for wet-glue labels and C2S (coated two sides) for premium hang tags. Grammages from 60 gsm (lightweight labels) to 250 gsm (structural hang tags).",
+      "Label paper — also called label face stock or tag paper — is the printable paper layer used for pressure-sensitive labels, wet-glue labels and hang tags. C1S, C2S and metallized grades are selected according to the printing system, adhesive construction, die-cutting, matrix stripping, rewinding and end use. Reference grammages range from 60 gsm for lightweight label applications to 250 gsm for structural hang tags. Converting speed, curl and dimensional stability must be validated with the actual face stock, adhesive, liner and line settings.",
     specs: [
       "Grammage: 60 – 250 gsm",
       "Types: C1S (label face) / C2S (hang tag) / Metallized",
       "Finish: Gloss / Matt / Semi-gloss",
       "Strength: High tensile, low stretch for converting",
       "Format: Reels (standard widths), sheets",
-      "Adhesive compatibility: Hot-melt, water-based acrylic, solvent",
+      "Adhesive and liner compatibility: Confirm with the converter for the intended construction",
     ],
     applications: [
       "Pressure-sensitive labels for bottles and containers",
@@ -2343,9 +2389,9 @@ export const subProducts = {
       "Wet-Glue Label Paper",
     ],
     features: [
-      "High-Speed Converting — Engineered for die-cutting, matrix stripping and rewinding at production speeds.",
+      "Converting Performance — Strength, die-cutting, matrix stripping and rewinding should be matched to the grade and line setup.",
       "Smooth Print Surface — Delivers fine text, barcodes and brand graphics with sharp reproduction.",
-      "Dimensional Stability — Resists curling and stretching under adhesive coating for reliable label application.",
+      "Dimensional Control — Curl and stretch performance depend on the face stock, adhesive, liner, moisture and converting conditions.",
       "Multi-Purpose Grades — C1S for pressure-sensitive labels, C2S for premium hang tags and swing tickets.",
     ],
     customization: [
@@ -2357,10 +2403,15 @@ export const subProducts = {
     ],
     commercial: { moq: "1 metric ton", leadTime: "2–3 weeks", samples: "Free samples available", certification: "FSC certified", containerLoading: "40HQ full load: 25 metric tons" },
     quoteReqs: ["Label or hang-tag application", "C1S, C2S or metallized grade", "Grammage and finish", "Printing and adhesive system", "Reel width or sheet size", "Quantity and destination port"],
+    faqs: [
+      { q: "Is label paper the same as a finished self-adhesive label material?", a: "Not always. This page covers paper face stock and tag paper. A finished pressure-sensitive construction also includes an adhesive and release liner, which must be selected and confirmed with the converter." },
+      { q: "Should I choose C1S or C2S label paper?", a: "C1S is commonly selected when one coated printing face is sufficient, including many label applications. C2S is useful for hang tags or pieces printed on both sides. Confirm the print system, adhesive construction and finishing steps." },
+      { q: "What information is needed for a label paper quotation?", a: "Provide the label or tag application, C1S, C2S or metallized grade, grammage, gloss level, printing system, adhesive and liner if applicable, reel width or sheet size, quantity and destination port." },
+    ],
     seoTitle: "Label Paper Supplier for Labels and Hang Tags",
     metaDescription: "C1S, C2S and metallized label paper in 60–250 gsm for pressure-sensitive labels, wet-glue labels and hang tags. Request reels, sheets or samples.",
     keywords: ["label paper", "label face stock", "tag paper", "hang tag paper", "C1S label paper", "pressure sensitive label paper"],
-    image: "/images/products/fancy-paper/label-paper-main.webp",
+    image: "/images/products/fancy-paper/label-paper-main-v2.webp",
     gallery: [
       
       {
@@ -2462,6 +2513,12 @@ export const subProducts = {
       "Custom packing",
     ],
     commercial: { moq: "From 1 metric ton for regular colors and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
+    quoteReqs: ["End use", "Color or PMS reference", "Grammage", "Sheet size", "Printing requirement", "Quantity per color and destination port"],
+    faqs: [
+      { q: "Is every color tissue paper bleed-resistant and colorfast?", a: "No. Color transfer depends on the dye system, moisture, friction and end use. For garments, leather goods or delicate products, test the exact shade and request the relevant colorfastness information." },
+      { q: "Is color tissue automatically acid-free or made with recycled fiber?", a: "No. Acid-free status and recycled content are grade-specific. State the required claim before ordering and confirm it in the documents for the exact supplied grade." },
+      { q: "Can you match a custom color or print a logo?", a: "Custom shade matching and printing may be available subject to the color reference, ink coverage, artwork, sheet size and order quantity. Approve a physical color or print sample before production." },
+    ],
     seoTitle: "Color Tissue Paper Supplier for Gift Packaging",
     metaDescription: "Color tissue paper in 17–28 gsm with 30+ standard shades for gift wrapping, garments, footwear and retail packaging. Request custom colors and sizes.",
     keywords: ["color tissue paper", "colored tissue paper", "gift tissue paper", "luxury tissue paper", "acid-free tissue", "packaging tissue paper"],
@@ -2812,9 +2869,9 @@ export const subProducts = {
     id: "mg-paper",
     name: "MG White Kraft Paper",
     category: "food-packaging",
-    tagline: "Premium machine-glazed white kraft paper with a glossy printable face and glue-ready reverse for food wrapping, bags and flexible packaging.",
+    tagline: "Machine-glazed white kraft paper with a smooth printable face and glue-ready reverse for bags, wraps and flexible packaging.",
     description:
-      "YOUNGSUN MG White Kraft Paper is made from 100% virgin wood pulp and finished on a Yankee drying cylinder to create two functional surfaces: a high-gloss, ultra-smooth face for sharp flexographic and offset printing, and a slightly textured reverse for dependable glue adhesion, coating and lamination. Available from 23 to 80 gsm in sheets, reams and jumbo rolls, it is engineered for high-speed bag making, wrapping and flexible-packaging conversion. Stable moisture control helps the paper remain flat during printing and laminating, while the strong fiber structure supports demanding automated production. The paper is recyclable, biodegradable, suitable for direct food-contact applications and available with FSC certification on request.",
+      "YOUNGSUN MG White Kraft Paper is made from virgin wood pulp and finished on a Yankee drying cylinder to create two useful surfaces: a smooth machine-glazed face for printing and a more matte reverse for gluing, coating or lamination. The 23–80 gsm range can be supplied in standard sheets, reams, custom-cut sizes and jumbo rolls for wrappers, lightweight bags, envelopes, interleaving and flexible laminated structures. Buyers should specify the printing method, adhesive or lamination process, final application and required format. Food-contact and FSC status are confirmed only for the exact grade and order documentation.",
     specs: [
       "Grammage: 23–80 gsm (standard weights from 23 to 80 gsm)",
       "Fiber: 100% virgin wood pulp",
@@ -2848,7 +2905,7 @@ export const subProducts = {
       "High Tensile Strength — Refined virgin fibers help prevent tearing during high-speed bag making, wrapping and automated converting.",
       "Stable Moisture and Flatness — Moisture is controlled at 4.5% ± 1.0% to reduce curling and feeding problems during printing or laminating.",
       "Reliable Adhesion — The matte reverse provides a strong bonding surface for glues, PE/PLA coatings, wax coatings and aluminum foil lamination.",
-      "Responsible Fiber Choice — Recyclable and biodegradable paper made with 100% virgin wood pulp; FSC certification is available on request.",
+      "Order-Specific Documentation — FSC and any food-contact requirement are confirmed for the exact grade and supplied order.",
     ],
     customization: [
       "Custom grammage from 23 to 80 gsm",
@@ -2867,14 +2924,19 @@ export const subProducts = {
       "Order quantity and destination port",
     ],
     commercial: { moq: "Confirm by grammage, format and width", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed by the applicable claim on sales or delivery documents" },
-    seoTitle: "MG White Kraft Paper Supplier for Food Wrapping",
-    metaDescription: "MG white kraft paper in 23–80 gsm with a glossy printable face for food wrapping, bags and lamination. Available in sheets and jumbo rolls; request samples.",
+    faqs: [
+      { q: "What does MG mean in MG white kraft paper?", a: "MG means machine glazed. Contact with a heated Yankee cylinder creates a smoother, glossier face, while the reverse remains more matte and can support gluing, coating or lamination." },
+      { q: "Is MG white kraft paper automatically greaseproof or approved for food contact?", a: "No. MG describes the surface finish, not a guaranteed grease barrier or food-contact approval. Confirm the exact base grade, any coating or lamination structure and the required market documentation before use." },
+      { q: "Can MG white kraft paper be supplied in sheets and rolls?", a: "Yes, subject to the selected grade and production plan. Send grammage, sheet size or roll width and diameter, quantity, printing or converting method, final use and destination port for confirmation." },
+    ],
+    seoTitle: "MG White Kraft Paper Supplier | 23–80 gsm",
+    metaDescription: "MG white kraft paper in 23–80 gsm with a smooth printable face and matte reverse for bags, wraps and lamination. Request sheets, rolls or samples.",
     keywords: ["MG white kraft paper manufacturer", "machine glazed kraft paper supplier", "MG bleached kraft paper", "food wrapping paper", "paper bag material", "flexible packaging base paper", "aluminum foil lamination paper"],
     image: "/images/products/food-packaging/mg-paper-main.webp",
     galleryTitle: "Flexible Packaging and Lamination Applications",
     galleryTitleEs: "Aplicaciones de Embalaje Flexible y Laminación",
-    galleryIntro: "MG white kraft paper can serve as the printable paper layer or base substrate in aluminum foil composites for food wraps that require presentation, grease control and heat retention.",
-    galleryIntroEs: "El papel kraft blanco MG puede utilizarse como capa exterior imprimible o sustrato base en complejos con papel de aluminio para envolturas alimentarias con presentación, control de grasa y retención de calor.",
+    galleryIntro: "MG white kraft paper can serve as a printable layer or base substrate for bags, wraps and laminated structures. Barrier performance and food-contact suitability depend on the complete construction and order-specific documentation.",
+    galleryIntroEs: "El papel kraft blanco MG puede utilizarse como capa imprimible o sustrato base para bolsas, envolturas y estructuras laminadas. La barrera y la aptitud alimentaria dependen de la construcción completa y de la documentación específica del pedido.",
     gallery: [
       {
         src: "/images/products/food-packaging/gallery/mg-white-kraft-foil-lamination.webp",
@@ -3033,6 +3095,11 @@ export const subProducts = {
     customization: ["Thickness and color tone", "Sheet or reel format", "Custom die-cut shape", "Embossing or debossing", "Logo printing"],
     commercial: { moq: "From 1 metric ton for regular grades and formats; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC and food-contact status are confirmed for the exact grade and order" },
     quoteReqs: ["End use and liquid type", "Thickness or target grammage", "Color tone", "Sheet, reel or die-cut shape", "Printing or embossing requirement", "Required testing or documentation", "Quantity and destination port"],
+    faqs: [
+      { q: "How should absorbency be approved for a perfume blotter or coaster?", a: "Test the exact grade with the intended fragrance or liquid. Compare uptake speed, spread, retention, odor neutrality, surface marking and stiffness after contact rather than approving only by thickness or grammage." },
+      { q: "Is absorbent paper automatically cotton-based or suitable for food contact?", a: "No. Fiber composition and cotton content vary by grade, and food- or beverage-contact suitability requires documents for the exact material and destination market. State the required claim before sampling." },
+      { q: "Can absorbent paper be printed, embossed and die-cut?", a: "Selected grades can support these processes, but heavy ink coverage, coatings and deep embossing may change absorption or fragrance performance. Approve a converted sample using the final artwork, shape and liquid." },
+    ],
     seoTitle: "Absorbent Paper Supplier for Perfume Testers",
     metaDescription: "Absorbent paper in 0.4–1.6 mm for perfume test strips, beverage coasters, fragrance cards and inserts. Request sheets, reels or die-cut samples.",
     keywords: ["absorbent paper", "perfume blotter paper", "fragrance test strip paper", "cotton blotting paper", "beverage coaster paper", "absorbent card stock"],
@@ -3073,6 +3140,11 @@ export const subProducts = {
     customization: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet or cut-panel dimensions"],
     commercial: { moq: "5 metric tons per color for standard constructions; confirm by size and combination", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
     quoteReqs: ["Facing paper and color", "Reverse-side finish", "Finished thickness", "Sheet size", "Quantity per color", "Destination port"],
+    faqs: [
+      { q: "How do I choose the front and reverse construction?", a: "Specify which surfaces remain visible in the finished box, cover or folder. Colored/colored is useful when both faces are exposed, while colored/grey or colored/white may suit wrapped or lined structures. Confirm the construction with a physical sample." },
+      { q: "Does the stated thickness include the facing paper?", a: "The order should state the required finished laminated thickness. Base board, facing paper, adhesive and pressing can affect final caliper, so agree the measurement method and tolerance before production." },
+      { q: "How is a custom facing color approved?", a: "Use a physical paper sample or agreed color reference and define the acceptable batch tolerance. Screen colors are not sufficient. If the surface will be printed, wrapped, folded or glued, test the actual facing paper first." },
+    ],
     seoTitle: "Color Laminated Grey Board Supplier",
     metaDescription: "Color laminated grey board for gift boxes and stationery. Black, white, kraft and other colors. Custom sizes. MOQ: 5 metric tons per color.",
     keywords: ["color laminated grey board", "colored grey board", "paper faced grey board", "gift box board", "book cover board"],
@@ -3116,10 +3188,15 @@ export const subProducts = {
     customization: ["Woodgrain design reference", "Board thickness", "Sheet size", "Grain direction"],
     commercial: { moq: "1,000 sheets per design; confirm by thickness and size", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed through the applicable claim on sales or delivery documents" },
     quoteReqs: ["Woodgrain design reference", "Thickness", "Sheet size", "Grain direction", "Quantity", "Application and destination"],
+    faqs: [
+      { q: "Is woodgrain laminated grey board made with real wood veneer?", a: "No. It uses decorative wood-effect paper laminated to a grey board base. This should be described as paper-faced board, not natural wood or veneer." },
+      { q: "Why must the woodgrain direction be specified?", a: "Orientation affects how the pattern runs across box panels, covers and cut components. Provide the sheet layout or mark the required grain direction so cutting and assembly follow the approved design." },
+      { q: "Can the woodgrain surface be printed, foil stamped or glued?", a: "Possibly, depending on the ink, coating, adhesive and surface finish. Approve the exact design sample with the intended printing, wrapping, scoring and gluing process before production." },
+    ],
     seoTitle: "Woodgrain Grey Board for Boxes and Decor",
     metaDescription: "120 gsm woodgrain paper laminated to grey board, 1.0–4.0 mm thick. Designs for jewelry boxes, watch boxes and decorative uses. MOQ: 1,000 sheets per design.",
     keywords: ["woodgrain laminated grey board", "wood effect paper board", "jewelry box board", "watch box board", "decorative grey board"],
-    image: "/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-main.webp",
+    image: "/images/products/package-board/laminated-detail/woodgrain-laminated-grey-board-main-v2.webp",
     galleryTitle: "Woodgrain Designs and Application Ideas",
     galleryIntro: "Review representative patterns and finished-use scenes before selecting a physical sample.",
     gallery: [
@@ -3153,11 +3230,16 @@ export const subProducts = {
     ],
     customization: ["Grammage or thickness", "Sheet dimensions", "Quantity per size", "Pallet packing requirements"],
     commercial: { moq: "From 1 metric ton per size", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC certified" },
-    quoteReqs: ["Grammage or thickness", "Sheet size", "Quantity per size", "Destination port"],
+    quoteReqs: ["Grammage or thickness", "Sheet size", "Quantity per size", "Printed-sheet lamination and die-cutting process", "Pallet packing requirement", "Destination port"],
+    faqs: [
+      { q: "Should puzzle board be selected by grammage or thickness?", a: "Use both as reference, then approve a physical sample. Piece size, puzzle format, printed-sheet lamination, die design and the desired edge feel all influence the suitable board specification." },
+      { q: "What should be tested before mass-producing a jigsaw puzzle?", a: "Run a production-representative trial covering printed-sheet lamination, die-cut cleanliness, dust, layer separation, piece fit, edge appearance and finished puzzle flatness." },
+      { q: "How should blue core puzzle board be stored before converting?", a: "Keep wrapped pallets dry, level and away from direct heat. Allow the board and printed sheets to acclimatize to the converting room before lamination and die-cutting, especially after long-distance transport or a humidity change." },
+    ],
     seoTitle: "Blue Core Jigsaw Puzzle Board Supplier",
     metaDescription: "Blue core jigsaw puzzle board from 600 to 1800 gsm and approximately 0.85–2.73 mm. Review sheet sizes, pallet packing and free sample options.",
     keywords: ["blue core puzzle board", "jigsaw puzzle board", "puzzle paperboard", "blue core cardboard", "game board material"],
-    image: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-main.webp",
+    image: "/images/products/package-board/laminated-detail/blue-core-puzzle-board-main-v2.webp",
     galleryTitle: "Blue Core, Packing and Puzzle Application",
     galleryIntro: "See the board structure, warehouse pallet packing and representative finished puzzle use.",
     gallery: [
@@ -3193,6 +3275,11 @@ export const subProducts = {
     customization: ["Color and gloss level", "Thickness", "Sheet dimensions", "Shape and edge profile"],
     commercial: { moq: "5 metric tons for full sheets or 1,000 pieces per cut size; confirm by specification", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC and food-contact status are confirmed for the exact grade and order" },
     quoteReqs: ["Full sheet or cut-shape supply", "Thickness", "Color and finish", "Dimensions or drawing", "Quantity", "Destination port"],
+    faqs: [
+      { q: "Is every metallized laminated board approved for direct food contact?", a: "No. Food-contact suitability depends on the exact surface construction, intended contact, temperature, food type and destination market. Request and review the applicable documents before commercial use." },
+      { q: "Should I order full sheets or finished cut shapes?", a: "Full sheets suit buyers with their own die-cutting equipment. Finished rounds, squares, rectangles or drawing-based shapes reduce downstream conversion. Compare yield, edge profile, packing and quantity before choosing." },
+      { q: "What information helps prevent edge or surface problems?", a: "Provide thickness, finish, shape, dimensions, edge profile, load, moisture exposure and whether food touches the surface or cut edge. Approve a sample for stiffness, lamination, curl and edge quality." },
+    ],
     seoTitle: "Metallized Board for Cakes and Salmon",
     metaDescription: "Gold, silver and white metallized boards for cake, dessert and salmon packaging. Custom shapes and 70 × 100 cm sheets; confirm food-contact documents by grade.",
     keywords: ["food grade metallized board", "gold cake board", "silver cake board", "salmon packaging board", "laminated cake base"],
@@ -3232,6 +3319,11 @@ export const subProducts = {
     customization: ["Layer construction", "Grey board base thickness", "Top paper option", "Sheet size"],
     commercial: { moq: "500 sheets per variant; confirm by thickness and size", leadTime: "Approximately 3 weeks after specifications are confirmed", samples: "Free standard samples; international courier paid by the customer", certification: "FSC status is confirmed for the paper components through the applicable documents" },
     quoteReqs: ["Layer construction", "Grey board base thickness", "Top layer", "Sheet size", "Quantity", "Destination port"],
+    faqs: [
+      { q: "Does the listed grey board thickness equal the finished laminate thickness?", a: "No. The 1.5–3.0 mm value refers to the grey board base. The 3 mm foam and any top paper add to the finished structure, while pressing can compress the foam. Approve the assembled sample." },
+      { q: "When should I choose a two-layer or three-layer construction?", a: "Choose exposed foam when another covering material will be applied during conversion. Choose a grey or kraft top paper when a paper-facing layer is needed for handling, gluing or the next production step." },
+      { q: "What converting details should be tested?", a: "Test cutting, wrapping, adhesive compatibility, pressing pressure, edge build-up and recovery after compression with the intended cover material. Solvent, heat and storage conditions may affect the foam or adhesive." },
+    ],
     seoTitle: "Foam Laminated Grey Board for Padded Covers",
     metaDescription: "Foam laminated grey board for certificate folders and hardcover covers. 2 or 3 layers, 3 mm foam, grey or kraft top paper. MOQ: 500 sheets per variant.",
     keywords: ["foam laminated grey board", "padded cover board", "certificate folder board", "hardcover foam board", "cushioned grey board"],

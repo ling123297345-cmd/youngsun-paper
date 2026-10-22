@@ -255,6 +255,7 @@ export const productEs = {
     applications: ["Archivo por colores", "Volantes y anuncios", "Manualidades escolares", "Menús de restaurante", "Boletines comunitarios"],
   },
   "copy-paper": {
+    name: "Papel para copiadora multiformato",
     tagline: "Programa de papel para copiadora en múltiples formatos para distribución, instituciones y marca privada.",
     description: "Esta página reúne el programa multiformato de papel para copiadora de YOUNGSUN, no un único producto A4. Incluye gramajes de 70, 75 y 80 gsm en formatos A3, A4, A5, B4, B5, 8K, 16K y determinadas medidas de Estados Unidos. Las configuraciones de resma y caja pueden adaptarse para distribución mayorista, compras institucionales y programas de marca privada que cumplan el volumen requerido. El papel está destinado a impresoras láser, inkjet, fotocopiadoras y fax. Los compradores que solo necesiten hojas A4 de 210×297 mm deben utilizar la página específica A4 Copy Paper.",
     seoTitle: "Papel para copiadora A3 A4 A5 y más formatos",
@@ -266,8 +267,14 @@ export const productEs = {
     customization: ["Envoltorio de resma de marca privada", "Diseño personalizado de caja", "Cantidad de hojas por resma", "Configuración de resmas por caja", "Selección de formatos A, B, K y estadounidenses"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje de 70, 75 u 80 gsm", "Formato de hoja", "Cantidad por tamaño", "Número de hojas por resma", "Embalaje estándar o marca privada", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cuál es la diferencia entre papel multiformato y papel A4?", a: "La gama multiformato incluye series A, B y K, además de determinadas medidas estadounidenses. La página A4 está dedicada únicamente a hojas de 210 × 297 mm." },
+      { q: "¿Pueden fabricar envoltorios y cajas con nuestra marca?", a: "Sí, para pedidos que cumplan el volumen requerido. Envíe el diseño, hojas por resma, resmas por caja, idiomas y mercado de destino para confirmar la viabilidad del embalaje." },
+      { q: "¿Qué información necesitan para cotizar papel para copiadora?", a: "Indique gramaje, cada formato, cantidad por tamaño, hojas por resma, resmas por caja, embalaje estándar o de marca privada, requisitos de pallet y puerto de destino." },
+    ],
   },
   "a4-copy-paper": {
+    name: "Papel A4 para copiadora",
     tagline: "Papel A4 de 210×297 mm para distribuidores, oficinas e instituciones que compran por volumen.",
     description: "El papel A4 para copiadora de YOUNGSUN está dedicado exclusivamente al formato internacional de 210×297 mm. Se ofrece en 70, 75 y 80 gsm para impresión diaria con equipos láser, inkjet, fotocopiadoras y fax. La superficie lisa y el control de corte favorecen una alimentación uniforme y una reproducción limpia de texto y gráficos. El embalaje estándar incluye 500 hojas por resma, con distintas configuraciones de resmas por caja y opciones de marca privada para pedidos que cumplan el volumen requerido. Para A3, A5, series B, K o tamaños estadounidenses, consulte la página Multi-Format Copy Paper.",
     seoTitle: "Papel A4 para copiadora de 70 75 y 80 gsm",
@@ -279,8 +286,14 @@ export const productEs = {
     customization: ["Envoltorio de resma de marca privada", "Diseño personalizado de caja", "Selección de 70, 75 u 80 gsm", "Configuración de resmas por caja", "Embalaje sobre pallets para exportación"],
     commercial: { moq: "5 toneladas métricas por producto y por tamaño", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje de 70, 75 u 80 gsm", "Cantidad de resmas o toneladas", "Resmas por caja", "Embalaje estándar o marca privada", "Requisitos de pallet", "Puerto de destino"],
+    faqs: [
+      { q: "¿Conviene elegir papel A4 de 70, 75 u 80 gsm?", a: "Depende de la impresora, la opacidad, la sensación de manejo, la impresión dúplex y el precio objetivo. Una muestra representativa permite comprobar alimentación y apariencia antes de comprar volumen." },
+      { q: "¿Este papel A4 sirve para impresoras láser e inkjet?", a: "La gama está orientada a equipos láser, inkjet, copiadoras y fax habituales, pero el comportamiento depende del grado, mantenimiento y ajustes del equipo. Conviene probar el papel en la máquina real cuando la compatibilidad sea crítica." },
+      { q: "¿Qué se necesita para cotizar A4 con marca privada?", a: "Envíe gramaje, cantidad, hojas por resma, resmas por caja, diseños de envoltorio y caja, requisitos de pallet, puerto de destino e instrucciones de etiquetado del mercado." },
+    ],
   },
   "a4-thermal-paper": {
+    name: "Papel térmico A4",
     tagline: "Papel térmico directo A4 para impresoras portátiles, documentos de campo y operaciones sin cartuchos de tinta.",
     description: "El papel térmico A4 de YOUNGSUN está precortado a 210 × 297 mm y utiliza un recubrimiento sensible al calor para producir texto y gráficos en impresoras térmicas directas compatibles. Está orientado a equipos de ventas y servicio en campo, logística, asistencia sanitaria y profesionales que necesitan imprimir contratos, comprobantes o informes fuera de una oficina. La sensibilidad térmica, la densidad de imagen, la permanencia y cualquier declaración BPA-free deben confirmarse según el modelo de impresora, el grado y el uso final. Para cotizar correctamente, indique la impresora, el número de hojas por paquete, la cantidad total y el embalaje requerido.",
     seoTitle: "Papel térmico A4 para impresoras portátiles",
@@ -293,8 +306,14 @@ export const productEs = {
     customization: ["Número de hojas por paquete", "Embalaje estándar o de marca privada", "Configuración de cajas", "Grado BPA-free sujeto a disponibilidad y documentación"],
     commercial: { moq: "Desde 1 tonelada métrica para formatos y embalajes regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y cualquier declaración BPA-free se confirman para el grado y pedido exactos" },
     quoteReqs: ["Modelo de impresora", "Tamaño A4 y tipo de alimentación", "Sensibilidad o requisitos de imagen", "Número de hojas por paquete", "Cantidad y embalaje", "Puerto de destino"],
+    faqs: [
+      { q: "¿El papel térmico A4 funciona en cualquier impresora A4?", a: "No. Está fabricado para impresoras térmicas directas compatibles, no para impresoras láser o inkjet comunes. Indique marca, modelo y sistema de alimentación antes de comprar." },
+      { q: "¿En qué se diferencia del papel A4 para copiadora?", a: "El papel térmico lleva un recubrimiento sensible al calor que forma la imagen sin tinta ni tóner. El papel para copiadora es un papel de oficina que necesita tóner láser o tinta inkjet." },
+      { q: "¿Qué datos necesitan para una muestra o cotización?", a: "Envíe modelo de impresora, alimentación, sensibilidad o permanencia requerida, hojas por paquete, cantidad, embalaje, requisito documental BPA-free y puerto de destino." },
+    ],
   },
   "thermal-paper-roll": {
+    name: "Rollo de papel térmico",
     tagline: "Rollos de papel térmico directo para TPV, terminales de pago, recibos y registros operativos.",
     description: "Los rollos de papel térmico YOUNGSUN están diseñados para impresoras de recibos y terminales que forman la imagen mediante calor. Los anchos habituales de 57 y 80 mm, junto con diferentes diámetros y mandriles, permiten adaptar el rollo al equipo de cada cliente. La longitud, el diámetro exterior, el lado térmico, la sensibilidad y la permanencia deben verificarse con el modelo de impresora y las condiciones de almacenamiento. Los grados BPA-free o phenol-free están disponibles únicamente cuando se especifican y documentan para el pedido.",
     seoTitle: "Rollos de papel térmico 57 y 80 mm para TPV",
@@ -307,6 +326,11 @@ export const productEs = {
     customization: ["Ancho y diámetro exterior", "Longitud del rollo", "Mandril de 12, 17 o 25 mm", "Grado químico documentado", "Retractilado, etiquetado y caja personalizada"],
     commercial: { moq: "Desde 1 tonelada métrica para medidas y embalajes regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y las declaraciones químicas se confirman para el grado y pedido exactos" },
     quoteReqs: ["Modelo de impresora", "Ancho, diámetro exterior y longitud", "Diámetro del mandril", "Lado térmico y sensibilidad requerida", "Requisito BPA-free o phenol-free", "Cantidad, embalaje y puerto de destino"],
+    faqs: [
+      { q: "¿Qué medidas hacen falta para elegir un rollo térmico?", a: "Indique ancho, diámetro exterior o longitud, diámetro interior del mandril, lado térmico y modelo de impresora. Confirmar solamente el ancho no garantiza compatibilidad." },
+      { q: "¿Todos los rollos térmicos son BPA-free o phenol-free?", a: "No. Son declaraciones químicas específicas del grado. Solicite la opción requerida antes del pedido y confírmela en la documentación del material exacto." },
+      { q: "¿Cómo se almacenan los rollos y cuánto dura la imagen?", a: "La permanencia depende del grado y de la exposición. Almacene lejos de calor, luz solar, humedad, plastificantes y químicos agresivos, y solicite datos de conservación cuando necesite archivos duraderos." },
+    ],
   },
   "tracing-paper": {
     name: "Papel albanene / papel vegetal / papel vellum",
@@ -341,6 +365,11 @@ export const productEs = {
     customization: ["Gramaje personalizado", "Ancho y diámetro de bobina", "Tamaño del mandril", "Suministro en hojas bajo consulta", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para especificaciones regulares; confirmar por gramaje, ancho de bobina o tamaño de hoja", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje", "Ancho y diámetro de bobina", "Tamaño del mandril", "Cantidad por tamaño", "Modelo o configuración de la prensa", "Puerto de destino"],
+    faqs: [
+      { q: "¿El papel prensa se suministra en bobinas o en hojas?", a: "Las bobinas son el formato habitual para rotativas coldset. Las hojas pueden confirmarse según gramaje, dimensiones y cantidad requerida." },
+      { q: "¿El mismo papel prensa funciona en cualquier rotativa coldset?", a: "No automáticamente. El ancho, diámetro, mandril, tensión, gramaje y superficie deben corresponder a la prensa. Recomendamos aprobar una muestra o prueba de producción antes de una tirada grande." },
+      { q: "¿Qué datos necesita el proveedor para cotizar papel prensa?", a: "Envíe gramaje, ancho y diámetro exterior, mandril, cantidad por medida, configuración de prensa, embalaje y puerto de destino. Para hojas, añada las dimensiones exactas." },
+    ],
   },
   // FANCY PAPER
   "soft-touch-paper": {
@@ -363,6 +392,7 @@ export const productEs = {
     ],
   },
   "leather-paper": {
+    name: "Papel efecto cuero",
     tagline: "Papel decorativo con relieve efecto cuero para cubiertas, cajas rígidas y presentación premium.",
     description: "El leather paper es un papel decorativo gofrado y acabado para reproducir visualmente distintos granos de cuero. Ofrece una alternativa basada en papel para cubiertas de libros, agendas, cajas de regalo, estuches y carpetas, sin afirmar que el material sea cuero natural. Los patrones, colores, recubrimientos y sustratos varían según el grado. Si el proyecto exige una declaración de ausencia de componentes animales, debe solicitarse y confirmarse para la referencia exacta antes de utilizarla en marketing o etiquetado.",
     seoTitle: "Papel efecto cuero para cubiertas y cajas",
@@ -375,8 +405,14 @@ export const productEs = {
     customization: ["Selección de patrón", "Igualación de color sujeta a muestra", "Gramaje y sustrato", "Formato en hoja o bobina", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y cualquier declaración de composición se confirman para el grado y pedido exactos" },
     quoteReqs: ["Aplicación final", "Patrón o muestra de referencia", "Color", "Gramaje y sustrato", "Método de conversión y acabado", "Cantidad, formato y puerto de destino"],
+    faqs: [
+      { q: "¿El papel efecto cuero está fabricado con cuero auténtico?", a: "No. Es un recubrimiento decorativo basado en papel o cartón, gofrado y acabado para reproducir un grano efecto cuero. No debe describirse ni etiquetarse como cuero auténtico." },
+      { q: "¿Se puede imprimir, estampar con foil o encolar?", a: "Determinados grados admiten impresión, foil, troquelado, forrado y encolado, pero el patrón, recubrimiento y sustrato afectan la adhesión y el detalle. Pruebe la muestra real con el proceso previsto." },
+      { q: "¿Pueden emitir una declaración sin componentes animales?", a: "Solo cuando se haya verificado la composición del grado exacto y exista la declaración necesaria. Indique mercado, texto de la declaración, patrón, color, sustrato, cantidad y proceso." },
+    ],
   },
   "pearlescent-paper": {
+    name: "Papel perlado",
     tagline: "Papel perlado de brillo controlado para invitaciones, cosmética, cajas y comunicación premium.",
     description: "El papel perlado utiliza una capa de pigmento reflectante para producir un brillo suave que cambia con el ángulo de la luz. La gama de referencia de 120–350 gsm incluye tonos blancos, champagne, dorados, plateados y colores tintados. Se utiliza en invitaciones, packaging de cosmética y perfumería, tarjetas, carpetas y piezas gráficas donde el acabado superficial forma parte de la identidad del producto. La reproducción de tinta, el foil, el gofrado y la adhesión deben validarse con una muestra del tono y gramaje elegidos.",
     seoTitle: "Papel perlado de 120 a 350 gsm para packaging",
@@ -389,32 +425,49 @@ export const productEs = {
     customization: ["Selección de tono perlado", "Gramaje", "Tamaño de hoja o ancho de bobina", "Coordinación de impresión y acabados", "Embalaje personalizado"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Aplicación final", "Tono perlado", "Gramaje", "Tamaño de hoja o bobina", "Método de impresión y acabado", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Cómo afecta la superficie perlada a los colores impresos?", a: "La base reflectante puede cambiar la densidad y apariencia según la luz. Las tintas claras pueden necesitar blanco opaco o ajustes de diseño, por lo que debe aprobarse una muestra impresa sobre el tono elegido." },
+      { q: "¿Se puede plegar, gofrar o estampar con foil?", a: "Determinados grados admiten estos procesos, pero el agrietamiento, la adhesión del foil y el relieve dependen del gramaje, recubrimiento, dirección de fibra y herramienta. Se recomienda una prueba." },
+      { q: "¿Cómo debe aprobarse el color perlado?", a: "Utilice una referencia física bajo la iluminación de uso. Indique tono, gramaje, medida, impresión, acabados, cantidad y puerto, en lugar de aprobar únicamente un color visto en pantalla." },
+    ],
   },
   "embossed-paper": {
+    name: "Papel gofrado",
     tagline: "Papel con textura tridimensional en relieve — convierte el embalaje en experiencia táctil.",
-    description: "El papel gofrado incorpora un patrón en relieve prensado mecánicamente sobre la superficie con calor y presión. A diferencia de una textura impresa, crea una topografía real que refleja la luz y aporta una sensación táctil premium. Hay patrones clásicos como lino, fieltro, lienzo y veta de madera, además de diseños personalizados. Es compatible con impresión posterior, estampado en caliente y troquelado para cajas de lujo, etiquetas, cubiertas y papelería especial.",
+    description: "El papel gofrado incorpora un patrón en relieve prensado mecánicamente sobre la superficie. Hay texturas estándar como lino, fieltro, lienzo y veta de madera, mientras que un diseño personalizado puede requerir herramienta específica y revisión de producción. Se utiliza en cajas, etiquetas, tarjetas, cubiertas y papelería. La impresión, el foil, el plegado y el troquelado deben probarse sobre el sustrato, gramaje, patrón y profundidad seleccionados.",
     seoTitle: "Papel gofrado para embalaje de lujo",
     metaDescription: "Papel gofrado de 80–400 gsm con texturas de lino, fieltro, lienzo, madera o diseño personalizado para cajas, cubiertas y etiquetas. Solicite muestras.",
     specs: ["Sustrato: 80–400 gsm", "Patrones: Lino/Fieltro/Lienzo/Veta/Personalizado", "Profundidad: Fina a profunda", "Imprimible post-gofrado", "Formato: Hojas y bobinas"],
     applications: ["Envases de lujo", "Etiquetas colgantes de moda", "Tarjetas corporativas", "Cubiertas de libros", "Papelería de boda"],
     variants: ["Papel gofrado efecto lino", "Papel gofrado efecto fieltro", "Papel gofrado efecto lienzo", "Papel gofrado con veta de madera", "Papel gofrado con patrón personalizado"],
-    features: ["Textura 3D real — Los patrones prensados crean un relieve físico, no una imitación impresa.", "Experiencia táctil de marca — La textura comunica calidad premium en embalaje y papelería.", "Amplia biblioteca de patrones — Lino, fieltro, lienzo, veta de madera y diseños personalizados.", "Compatible con acabados — Admite impresión, estampado en caliente y troquelado posteriores."],
+    features: ["Textura 3D real — Los patrones prensados crean un relieve físico, no una imitación impresa.", "Experiencia táctil de marca — La textura comunica calidad premium en embalaje y papelería.", "Amplia biblioteca de patrones — Lino, fieltro, lienzo, veta de madera y diseños personalizados.", "Procesos posteriores — La impresión, el foil y el troquelado se coordinan después de probar la textura sobre el grado elegido."],
     customization: ["Selección de patrón estándar o personalizado", "Profundidad de gofrado", "Gramaje y sustrato", "Suministro en hojas o bobinas", "Embalaje personalizado"],
     commercial: { moq: "1 tonelada métrica", leadTime: "2–3 semanas", samples: "Muestras gratuitas disponibles", certification: "FSC disponible", containerLoading: "Carga completa 40HQ: 25 toneladas métricas" },
     quoteReqs: ["Referencia del patrón o textura", "Gramaje del papel o cartón", "Profundidad de gofrado", "Tamaño de hoja o bobina", "Proceso de impresión y acabado", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Puedo elegir un patrón estándar o desarrollar uno personalizado?", a: "Los patrones estándar de lino, fieltro, lienzo y madera son el punto de partida más rápido. Un diseño personalizado puede requerir herramienta dedicada, revisión, prueba y confirmación independiente de MOQ y plazo." },
+      { q: "¿Puede imprimirse o estamparse con foil después del gofrado?", a: "Sí en combinaciones seleccionadas, pero el relieve modifica el contacto de tinta, la transferencia de foil y el detalle. Pruebe el sustrato, patrón y profundidad con el proceso real." },
+      { q: "¿Qué información se necesita para cotizar papel gofrado?", a: "Envíe patrón o muestra física, sustrato y gramaje, color, profundidad, medida de hoja o bobina, impresión y acabados, cantidad y puerto de destino." },
+    ],
   },
   "label-paper": {
-    tagline: "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
-    description: "El papel para etiquetas se utiliza como cara imprimible de etiquetas autoadhesivas, etiquetas con cola húmeda y tags colgantes. Debe mantener suficiente resistencia para el troquelado, el desmallado y el rebobinado a alta velocidad, además de ofrecer una superficie lisa para textos, códigos y gráficos de marca. Está disponible en C1S para etiquetas y C2S para tags premium, con gramajes de 60 a 250 gsm.",
+    name: "Papel para etiquetas",
+    tagline: "Papel frontal imprimible para etiquetas y tags, seleccionado según el adhesivo y la línea de conversión.",
+    description: "El papel para etiquetas se utiliza como cara imprimible de materiales autoadhesivos, etiquetas con cola húmeda y tags colgantes. Los grados C1S, C2S y metalizados se seleccionan según el sistema de impresión, la construcción adhesiva, el troquelado, el desmallado, el rebobinado y el uso final. Los gramajes de referencia van de 60 gsm para aplicaciones ligeras a 250 gsm para tags estructurales. La velocidad, el curvado y la estabilidad dimensional deben validarse con el frontal, adhesivo, liner y ajustes reales de la línea.",
     seoTitle: "Papel para etiquetas y tags colgantes",
     metaDescription: "Papel C1S, C2S y metalizado de 60–250 gsm para etiquetas autoadhesivas, etiquetas con cola y tags colgantes. Solicite bobinas, hojas o muestras.",
     specs: ["Gramaje: 60–250 gsm", "Tipos: C1S/C2S/Metalizado", "Acabado: Brillo/Mate/Semimate", "Alta resistencia a la tracción", "Formato: Bobinas y hojas"],
     applications: ["Etiquetas para botellas", "Etiquetas colgantes de moda", "Etiquetas de bebidas", "Etiquetas de precio", "Etiquetas de seguridad"],
     variants: ["Papel facial C1S para etiquetas", "Papel C2S para tags colgantes", "Papel metalizado para etiquetas", "Papel para etiquetas con cola húmeda"],
-    features: ["Conversión a alta velocidad — Diseñado para troquelado, desmallado y rebobinado en producción.", "Superficie de impresión lisa — Reproduce textos finos, códigos de barras y gráficos con nitidez.", "Estabilidad dimensional — Ayuda a controlar el curvado y el estiramiento durante el adhesivado.", "Grados para distintos usos — C1S para etiquetas y C2S para tags colgantes premium."],
+    features: ["Conversión controlada — La resistencia, el troquelado, el desmallado y el rebobinado deben corresponder al grado y a la línea.", "Superficie de impresión lisa — Reproduce textos finos, códigos de barras y gráficos con nitidez.", "Control dimensional — El curvado y estiramiento dependen del frontal, adhesivo, liner, humedad y condiciones de conversión.", "Grados para distintos usos — C1S para etiquetas y C2S para tags colgantes premium."],
     customization: ["Grado C1S o C2S", "Acabado brillo, mate o semimate", "Gramaje personalizado", "Suministro en bobina o hoja", "Coordinación con el sistema adhesivo"],
     commercial: { moq: "1 tonelada métrica", leadTime: "2–3 semanas", samples: "Muestras gratuitas disponibles", certification: "FSC disponible", containerLoading: "Carga completa 40HQ: 25 toneladas métricas" },
     quoteReqs: ["Aplicación de etiqueta o tag", "Grado C1S, C2S o metalizado", "Gramaje y acabado", "Sistema de impresión y adhesivo", "Ancho de bobina o tamaño de hoja", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿El papel para etiquetas es un material autoadhesivo terminado?", a: "No siempre. Esta página cubre papel frontal y papel para tags. Un material autoadhesivo terminado también incluye adhesivo y liner, que deben seleccionarse y confirmarse con el convertidor." },
+      { q: "¿Conviene elegir C1S o C2S?", a: "C1S se utiliza cuando basta una cara estucada para imprimir, como en muchas etiquetas. C2S es útil para tags impresos por ambas caras. Confirme impresión, adhesivo y acabados." },
+      { q: "¿Qué información necesitan para cotizar?", a: "Indique aplicación, grado C1S, C2S o metalizado, gramaje, brillo, impresión, adhesivo y liner si aplica, ancho de bobina o medida de hoja, cantidad y puerto." },
+    ],
   },
   "gold-silver-card": {
     name: "Cartulina dorada y plateada",
@@ -430,6 +483,11 @@ export const productEs = {
     customization: ["Tono y nivel de brillo", "Gramaje", "Tamaño de hoja o ancho de bobina", "Una o dos caras según disponibilidad", "Embalaje y corte personalizados"],
     commercial: { moq: "Desde 1 tonelada métrica para acabados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Aplicación final", "Tono metálico y nivel de brillo", "Gramaje", "Tamaño de hoja o bobina", "Método de impresión y acabado", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Cómo se fabrica la cartulina dorada o plateada?", a: "Según la referencia, el efecto puede proceder de metalizado al vacío, laminación con película o foil, o recubrimiento metálico. La construcción afecta impresión, plegado, reciclaje y uso final." },
+      { q: "¿Puede imprimirse y plegarse sin agrietarse?", a: "Determinados grados admiten impresión, hendido, plegado, gofrado y troquelado, pero depende de superficie, base, gramaje, fibra, tinta y herramienta. Apruebe una prueba representativa." },
+      { q: "¿El acabado metálico está disponible a una o dos caras?", a: "Pueden existir ambas opciones, pero dependen del grado. Especifique tono, brillo, caras, gramaje, formato, impresión, acabados, cantidad y puerto." },
+    ],
   },
   "color-tissue-paper": {
     name: "Papel seda de color",
@@ -445,6 +503,11 @@ export const productEs = {
     customization: ["Color estándar o referencia personalizada", "Gramaje", "Tamaño de hoja", "Impresión de logotipo o patrón", "Embalaje por resmas o cajas"],
     commercial: { moq: "Desde 1 tonelada métrica para colores y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Aplicación final", "Color o referencia PMS", "Gramaje", "Tamaño de hoja", "Impresión requerida", "Cantidad por color y puerto de destino"],
+    faqs: [
+      { q: "¿Todos los colores resisten el sangrado y la transferencia?", a: "No. La transferencia depende del sistema de color, humedad, fricción y uso. Para prendas, cuero o productos delicados, pruebe el tono exacto y solicite información de solidez." },
+      { q: "¿El papel seda es automáticamente libre de ácido o reciclado?", a: "No. El estado libre de ácido y el contenido reciclado son específicos del grado. Indique la declaración requerida y confírmela en los documentos del material suministrado." },
+      { q: "¿Pueden igualar un color o imprimir un logotipo?", a: "Puede estar disponible según referencia, cobertura de tinta, diseño, medida y cantidad. Debe aprobarse una muestra física de color o impresión antes de producir." },
+    ],
   },
   // FOOD PACKAGING
   "cup-paper": {
@@ -486,7 +549,8 @@ export const productEs = {
     ],
   },
   "mg-paper": {
-    tagline: "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
+    name: "Papel kraft blanco MG",
+    tagline: "Papel kraft blanco MG con una cara lisa imprimible y un reverso preparado para encolado, bolsas, envolturas y embalaje flexible.",
     specs: [
       "Gramaje: 23–80 gsm",
       "Fibra: 100% pulpa de madera virgen",
@@ -516,6 +580,11 @@ export const productEs = {
     customization: ["Gramaje de 23–80 gsm", "Tamaño de hoja personalizado", "Ancho y diámetro de bobina jumbo", "Embalaje en resmas, pallets o bobinas protegidas", "Preparación para recubrimiento o laminación"],
     commercial: { moq: "Confirmar según gramaje, formato y ancho", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Gramaje", "Tamaño de hoja o ancho y diámetro de bobina", "Uso final", "Método de impresión", "Requisito de recubrimiento o laminación", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Qué significa MG en papel kraft blanco MG?", a: "MG significa machine glazed. El contacto con un cilindro Yankee caliente crea una cara más lisa y brillante, mientras el reverso queda más mate para encolado, recubrimiento o laminación." },
+      { q: "¿El papel MG es automáticamente antigrasa o apto para alimentos?", a: "No. MG describe el acabado superficial, no una barrera antigrasa ni una aprobación alimentaria. Deben confirmarse el grado base, la estructura recubierta o laminada y la documentación del mercado de destino." },
+      { q: "¿Puede suministrarse en hojas y bobinas?", a: "Sí, sujeto al grado y al plan de producción. Envíe gramaje, medida de hoja o ancho y diámetro de bobina, cantidad, impresión o conversión, uso final y puerto de destino." },
+    ],
   },
   "silicone-coated-paper": {
     name: "Papel siliconado y papel para hornear",
@@ -551,6 +620,11 @@ export const productEs = {
     customization: ["Espesor y tono de blanco", "Formato en hoja o bobina", "Forma troquelada personalizada", "Gofrado o bajorrelieve", "Impresión de logotipo"],
     commercial: { moq: "Desde 1 tonelada métrica para grados y formatos regulares; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y cualquier documentación de contacto alimentario se confirman para el grado y pedido exactos" },
     quoteReqs: ["Uso final y tipo de líquido", "Espesor o gramaje objetivo", "Tono de color", "Hoja, bobina o forma troquelada", "Requisito de impresión o gofrado", "Prueba o documentación requerida", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Cómo se aprueba la absorción para una tira de perfume o un posavasos?", a: "Pruebe el grado exacto con la fragancia o líquido previsto. Compare velocidad de absorción, expansión, retención, neutralidad de olor, marcas superficiales y rigidez después del contacto." },
+      { q: "¿El papel absorbente contiene siempre algodón o sirve automáticamente para contacto alimentario?", a: "No. La composición y el contenido de algodón dependen del grado. El contacto con alimentos o bebidas requiere documentación del material exacto y del mercado de destino." },
+      { q: "¿Puede imprimirse, gofrarse y troquelarse?", a: "Determinados grados admiten estos procesos, pero una cobertura intensa de tinta, los recubrimientos o un relieve profundo pueden cambiar la absorción. Apruebe una muestra convertida con el diseño, la forma y el líquido finales." },
+    ],
   },
   "color-laminated-grey-board": {
     name: "Cartón gris laminado con papel de color",
@@ -573,6 +647,11 @@ export const productEs = {
     customization: ["Tipo y color del revestimiento", "Acabado del reverso", "Espesor terminado", "Dimensiones de hoja o panel", "Embalaje por medida"],
     commercial: { moq: "5 toneladas métricas por color para construcciones estándar; confirmar por medida y combinación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Papel y color del revestimiento", "Acabado del reverso", "Espesor terminado", "Tamaño de hoja o panel", "Cantidad por color y medida", "Puerto de destino"],
+    faqs: [
+      { q: "¿Cómo elijo la combinación de cara y reverso?", a: "Defina qué superficies quedarán visibles en la caja, cubierta o carpeta. Color/color conviene cuando se ven ambas caras; color/gris o color/blanco puede servir para estructuras forradas. Confirme con una muestra física." },
+      { q: "¿El espesor indicado incluye el papel de revestimiento?", a: "El pedido debe indicar el espesor laminado terminado. La base, el papel, el adhesivo y el prensado afectan el calibre final, por lo que deben acordarse método de medición y tolerancia." },
+      { q: "¿Cómo se aprueba un color personalizado?", a: "Utilice una muestra física o referencia acordada y defina la tolerancia entre lotes. Un color en pantalla no es suficiente. Si habrá impresión, plegado, forrado o encolado, pruebe el papel real." },
+    ],
   },
   "woodgrain-laminated-grey-board": {
     name: "Cartón gris laminado efecto madera",
@@ -594,6 +673,11 @@ export const productEs = {
     customization: ["Referencia de diseño", "Espesor del cartón", "Tamaño de hoja", "Dirección de veta", "Embalaje y corte"],
     commercial: { moq: "1,000 hojas por diseño; confirmar por espesor y medida", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma mediante la declaración aplicable en los documentos de venta o entrega" },
     quoteReqs: ["Referencia de veta y tono", "Espesor", "Tamaño de hoja", "Dirección de veta", "Cantidad por diseño", "Aplicación y puerto de destino"],
+    faqs: [
+      { q: "¿Este cartón utiliza chapa de madera real?", a: "No. Emplea papel decorativo efecto madera laminado sobre una base de cartón gris. Debe describirse como cartón revestido con papel, no como madera natural o chapa." },
+      { q: "¿Por qué hay que especificar la dirección de la veta?", a: "La orientación determina cómo recorre el diseño los paneles de una caja, cubierta o pieza cortada. Envíe el plano o marque la dirección para que el corte y el montaje respeten la muestra aprobada." },
+      { q: "¿Puede imprimirse, estamparse con foil o encolarse?", a: "Depende de la tinta, el recubrimiento, el adhesivo y el acabado. Pruebe el diseño exacto con el proceso de impresión, forrado, hendido y encolado previsto." },
+    ],
   },
   "blue-core-puzzle-board": {
     name: "Cartón para rompecabezas con núcleo azul",
@@ -616,6 +700,11 @@ export const productEs = {
     customization: ["Gramaje o espesor", "Dimensiones de hoja", "Cantidad por medida", "Configuración de pallet", "Etiquetado exterior"],
     commercial: { moq: "Desde 1 tonelada métrica por medida", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "Certificación FSC" },
     quoteReqs: ["Gramaje o espesor", "Tamaño de hoja", "Cantidad por medida", "Proceso de laminación e impresión", "Requisito de pallet", "Puerto de destino"],
+    faqs: [
+      { q: "¿Conviene elegir el cartón por gramaje o por espesor?", a: "Use ambos como referencia y apruebe una muestra física. El tamaño de pieza, el formato, la laminación de la hoja impresa, el troquel y el tacto del borde influyen en la selección." },
+      { q: "¿Qué debe probarse antes de producir un rompecabezas?", a: "Realice una prueba representativa de laminación, limpieza de troquel, polvo, separación de capas, ajuste de piezas, aspecto del borde y planitud del rompecabezas terminado." },
+      { q: "¿Cómo debe almacenarse antes de convertir?", a: "Mantenga los pallets envueltos, secos y nivelados, lejos del calor directo. Aclimatice el cartón y las hojas impresas en la sala de producción antes de laminar y troquelar." },
+    ],
   },
   "metallized-laminated-grey-board": {
     name: "Cartón gris laminado metalizado",
@@ -639,6 +728,11 @@ export const productEs = {
     customization: ["Color y nivel de brillo", "Espesor", "Dimensiones de hoja", "Forma y perfil de borde", "Embalaje por piezas"],
     commercial: { moq: "5 toneladas métricas para hojas completas o 1,000 piezas por medida cortada; confirmar por especificación", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC y la documentación de contacto alimentario se confirman para el grado y pedido exactos" },
     quoteReqs: ["Hoja completa o pieza cortada", "Espesor", "Color y brillo", "Dimensiones o plano", "Uso alimentario y documentación requerida", "Cantidad y puerto de destino"],
+    faqs: [
+      { q: "¿Todo cartón metalizado sirve para contacto directo con alimentos?", a: "No. Depende de la construcción, tipo de contacto, temperatura, alimento y mercado de destino. Solicite y revise la documentación aplicable antes del uso comercial." },
+      { q: "¿Conviene comprar hojas completas o piezas terminadas?", a: "Las hojas sirven a clientes con troquelado propio. Las piezas redondas, cuadradas o según plano reducen conversión posterior. Compare rendimiento, borde, embalaje y cantidad." },
+      { q: "¿Qué información ayuda a evitar problemas de borde o superficie?", a: "Indique espesor, acabado, forma, medidas, perfil de borde, carga, humedad y si el alimento toca la cara o el canto. Apruebe rigidez, laminación, curvado y calidad del borde mediante muestra." },
+    ],
   },
   "foam-laminated-grey-board": {
     name: "Cartón gris laminado con espuma",
@@ -661,6 +755,11 @@ export const productEs = {
     customization: ["Estructura de capas", "Espesor de la base", "Papel superior", "Tamaño de hoja", "Embalaje por variante"],
     commercial: { moq: "500 hojas por variante; confirmar por espesor y medida", leadTime: "Aproximadamente 3 semanas después de confirmar las especificaciones", samples: "Muestras estándar gratuitas; el cliente asume el coste del envío internacional", certification: "El estado FSC se confirma para los componentes de papel mediante la documentación aplicable" },
     quoteReqs: ["Estructura de capas", "Espesor de la base", "Papel superior", "Tamaño de hoja", "Cantidad por variante", "Puerto de destino"],
+    faqs: [
+      { q: "¿El espesor de la base equivale al espesor final?", a: "No. Los 1.5–3.0 mm corresponden al cartón gris. La espuma de 3 mm y el papel superior aumentan el conjunto, mientras que el prensado puede comprimir la espuma. Apruebe una muestra montada." },
+      { q: "¿Cuándo elegir dos capas o tres capas?", a: "Elija espuma expuesta cuando se añadirá otro recubrimiento durante la conversión. Elija una cara superior gris o kraft cuando se necesite una capa de papel para manipulación, encolado o el siguiente proceso." },
+      { q: "¿Qué detalles de conversión deben probarse?", a: "Pruebe corte, forrado, adhesivo, presión, acumulación en los cantos y recuperación después de comprimir con el material final. El calor, los solventes y el almacenamiento pueden afectar la espuma o el adhesivo." },
+    ],
   },
 };
 

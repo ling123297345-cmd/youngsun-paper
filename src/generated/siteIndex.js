@@ -166,14 +166,14 @@ export const productSearchIndex = [
     "type": "product",
     "id": "a4-thermal-paper",
     "name": "A4 Thermal Paper",
-    "text": "a4 thermal paper a4-sized thermal paper for portable and mobile printing — no ink, no toner, just heat. ideal for on-the-go professionals. a4 thermal paper thermal printer paper portable printer paper no-ink printing paper mobile printing paper compact printer paper",
+    "text": "a4 thermal paper a4 direct thermal sheets for compatible portable printers used for field documents, invoices and logistics records. a4 thermal paper thermal printer paper portable printer paper no-ink printing paper mobile printing paper compact printer paper",
     "href": "/products/a4-thermal-paper"
   },
   {
     "type": "product",
     "id": "thermal-paper-roll",
     "name": "Thermal Paper Roll",
-    "text": "thermal paper roll small-format thermal paper rolls for pos terminals, receipt printers, and instant photo printers — crisp images, reliable performance. thermal paper roll pos paper roll receipt paper roll thermal roll paper cash register paper thermal printer roll",
+    "text": "thermal paper roll small-format thermal rolls for pos terminals, receipt printers and selected compatible compact printers. thermal paper roll pos paper roll receipt paper roll thermal roll paper cash register paper thermal printer roll",
     "href": "/products/thermal-paper-roll"
   },
   {
@@ -208,14 +208,14 @@ export const productSearchIndex = [
     "type": "product",
     "id": "gold-silver-card",
     "name": "Gold & Silver Card Paper",
-    "text": "gold & silver card paper brilliant metallic gold and silver card paper with mirror-like reflective surface — for luxury packaging, gift boxes, greeting cards, and high-end brand presentation. gold silver card paper metallic card paper gold foil paper silver cardstock metallic board luxury metallic paper",
+    "text": "gold & silver card paper reflective gold, silver and selected metallic card finishes for luxury packaging, cards and premium brand presentation. gold silver card paper metallic card paper gold foil paper silver cardstock metallic board luxury metallic paper",
     "href": "/products/gold-silver-card"
   },
   {
     "type": "product",
     "id": "label-paper",
     "name": "Label Paper",
-    "text": "label paper premium label and tag face stock — smooth, printable, and engineered for high-speed converting and adhesive coating. label paper label face stock tag paper hang tag paper c1s label paper pressure sensitive label paper",
+    "text": "label paper printable label and tag face stock selected for the intended adhesive construction and converting line. label paper label face stock tag paper hang tag paper c1s label paper pressure sensitive label paper",
     "href": "/products/label-paper"
   },
   {
@@ -250,7 +250,7 @@ export const productSearchIndex = [
     "type": "product",
     "id": "mg-paper",
     "name": "MG White Kraft Paper",
-    "text": "mg white kraft paper premium machine-glazed white kraft paper with a glossy printable face and glue-ready reverse for food wrapping, bags and flexible packaging. mg white kraft paper manufacturer machine glazed kraft paper supplier mg bleached kraft paper food wrapping paper paper bag material flexible packaging base paper aluminum foil lamination paper",
+    "text": "mg white kraft paper machine-glazed white kraft paper with a smooth printable face and glue-ready reverse for bags, wraps and flexible packaging. mg white kraft paper manufacturer machine glazed kraft paper supplier mg bleached kraft paper food wrapping paper paper bag material flexible packaging base paper aluminum foil lamination paper",
     "href": "/products/mg-paper"
   },
   {
@@ -367,12 +367,12 @@ export const spanishProductTaglineById = {
   "pearlescent-paper": "Papel perlado de brillo controlado para invitaciones, cosmética, cajas y comunicación premium.",
   "embossed-paper": "Papel con textura tridimensional en relieve — convierte el embalaje en experiencia táctil.",
   "gold-silver-card": "Cartulina metálica dorada y plateada con alto impacto visual para embalajes de lujo, tarjetas y presentación de marca.",
-  "label-paper": "Papel facial premium para etiquetas — liso, imprimible, para conversión de alta velocidad.",
+  "label-paper": "Papel frontal imprimible para etiquetas y tags, seleccionado según el adhesivo y la línea de conversión.",
   "color-tissue-paper": "Papel seda de color ligero y translúcido para envolver regalos, proteger prendas y crear experiencias de desempaque de marca.",
   "tracing-paper": "Papel albanene, vegetal o vellum translúcido en hojas y rollos sujetos a grado para dibujo, impresión, etiquetas y packaging premium.",
   "cup-paper": "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
   "greaseproof-paper": "Papel blanco o natural resistente a la grasa para envolver, intercalar y convertir envases alimentarios.",
-  "mg-paper": "Papel kraft blanco MG de alta calidad con una cara brillante imprimible y un reverso preparado para encolado, bolsas y embalaje flexible.",
+  "mg-paper": "Papel kraft blanco MG con una cara lisa imprimible y un reverso preparado para encolado, bolsas, envolturas y embalaje flexible.",
   "silicone-coated-paper": "Papel siliconado para liners y procesos industriales, con grados documentados de papel para hornear en hojas o bobinas.",
   "absorbent-paper": "Papel secante de estructura porosa para tiras de perfume, posavasos y componentes absorbentes personalizados.",
   "color-laminated-grey-board": "Cartón gris revestido con papel de color para cajas de regalo, tapas y papelería.",

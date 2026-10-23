@@ -50,6 +50,14 @@ export const blogSearchIndex = [
   },
   {
     "type": "blog",
+    "id": "small-snack-packaging-paperboard-specification",
+    "name": "Why Does a Smaller Snack Pack Need a Tighter Paperboard Specification?",
+    "nameEs": "¿Por qué un envase pequeño para snacks exige una especificación de cartón más precisa?",
+    "text": "why does a smaller snack pack need a tighter paperboard specification? ¿por qué un envase pequeño para snacks exige una especificación de cartón más precisa? the move toward smaller, portable snack formats creates a hidden material challenge: every fold, seal and printed millimetre matters more. here is what paper buyers should validate before production. el avance de los formatos pequeños y portátiles plantea un reto material poco visible: cada pliegue, cierre y milímetro impreso importa más. esto es lo que debe validar el comprador antes de producir. food packaging",
+    "href": "/blog/small-snack-packaging-paperboard-specification"
+  },
+  {
+    "type": "blog",
     "id": "ppwr-epr-paper-packaging-buyer-checklist",
     "name": "Your Paper Pack Looks Compliant—But Who Actually Owes the EPR Fee?",
     "nameEs": "Su envase de papel parece cumplir… ¿pero quién debe pagar realmente la EPR?",

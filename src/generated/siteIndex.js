@@ -581,6 +581,10 @@ export const spanishBlogSeoById = {
     "title": "IA en impresión: checklist del sustrato",
     "description": "La IA puede elegir la ruta de impresión, pero sin datos del papel fallan color, secado y plegado. Use este checklist antes de aprobar."
   },
+  "small-snack-packaging-paperboard-specification": {
+    "title": "Packaging pequeño para snacks: guía de cartón",
+    "description": "Los envases monodosis pueden revelar fallas de hendido, panel y barrera. Use esta guía para aprobar cartón y papel alimentario antes de producir."
+  },
   "ppwr-epr-paper-packaging-buyer-checklist": {
     "title": "EPR del PPWR para envases de papel: guía",
     "description": "El PPWR plantea nuevas dudas sobre EPR. Use esta guía para definir roles, preparar la lista de materiales y pedir los datos correctos al proveedor."

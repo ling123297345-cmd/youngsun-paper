@@ -2,6 +2,14 @@
 export const blogSearchIndex = [
   {
     "type": "blog",
+    "id": "right-sized-ecommerce-packaging-paper-specification",
+    "name": "A Smaller Shipping Box Saves Paper—What Happens to Product Protection?",
+    "nameEs": "Una caja de envío más ajustada ahorra papel: ¿qué pasa con la protección?",
+    "text": "a smaller shipping box saves paper—what happens to product protection? una caja de envío más ajustada ahorra papel: ¿qué pasa con la protección? right-sizing is gaining attention in e-commerce packaging. the useful purchasing question is whether the complete pack can use less material while still arriving intact—not simply whether a smaller carton is available. el ajuste de tamaño gana espacio en el packaging e-commerce. para compras, la pregunta es cómo reducir material conservando la protección durante la entrega, y no solo dónde conseguir una caja menor. packaging & procurement",
+    "href": "/blog/right-sized-ecommerce-packaging-paper-specification"
+  },
+  {
+    "type": "blog",
     "id": "eu-ppwr-epr-one-tonne-authorised-representative-update",
     "name": "Under 1 Tonne of Packaging? The EU EPR Relief Many Exporters Cannot Use",
     "nameEs": "¿Menos de 1 tonelada de envases? El alivio EPR que muchos exportadores no pueden usar",

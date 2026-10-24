@@ -1,4 +1,7 @@
+import { ecommerceArticle20261024 } from "./blogEcommerce20261024.js";
+
 export const dailyBlogPosts = [
+  ecommerceArticle20261024,
   {
     id: "eu-ppwr-epr-one-tonne-authorised-representative-update",
     title: "Under 1 Tonne of Packaging? The EU EPR Relief Many Exporters Cannot Use",

@@ -557,6 +557,10 @@ export const spanishIndustryMetaById = {
 };
 
 export const spanishBlogSeoById = {
+  "right-sized-ecommerce-packaging-paper-specification": {
+    "title": "Packaging e-commerce a medida: guía del papel",
+    "description": "Ajustar el packaging e-commerce requiere más que una caja pequeña. Revise papel, inmovilización, cierre y transporte antes de cambiar la especificación."
+  },
   "eu-ppwr-epr-one-tonne-authorised-representative-update": {
     "title": "Propuesta EPR PPWR de 1 tonelada: guía",
     "description": "El Consejo de la UE propone un alivio de 1 tonelada para una obligación EPR. Vea a quién cubre, qué sigue vigente y qué debe documentar."

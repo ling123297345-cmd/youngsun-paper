@@ -8,6 +8,8 @@ import { getProductGuideLinks } from "../productGuideLinks.js";
 import { PageMeta, BreadcrumbSchema, FAQSchema } from "../SEO.jsx";
 import ProductSchema from "../ProductSchema.jsx";
 import InquiryCTA from "../InquiryCTA.jsx";
+import PaperSelectionGuide from "../PaperSelectionGuide.jsx";
+import { productSelectionGuides } from "../paperSelectionGuides.js";
 import { ArrowLeft, ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, Globe2, Grid2X2, Mail, MessageCircle, PackageCheck } from "lucide-react";
 
 export default function ProductDetail() {
@@ -295,6 +297,7 @@ export default function ProductDetail() {
           <p style={{ color: "rgba(255,255,255,0.55)", lineHeight: 1.85, fontSize: 15 }}>{description}</p>
         </div>
 
+        <PaperSelectionGuide guide={productSelectionGuides[id]} />
         {faqs.length > 0 && <ProductFaqs items={faqs} isEs={isEs} productName={productName} />}
 
         <ProductIndustryLinks

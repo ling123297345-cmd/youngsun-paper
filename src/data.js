@@ -708,12 +708,12 @@ export const subProducts = {
     category: "package-board",
     tagline: "Brown, white and recycled kraft paper rolls and sheets for sacks, bags, wrapping and industrial converting.",
     description:
-      "YOUNGSUN supplies extensible sack kraft, high-strength sack kraft, and premium kraft paper for packaging and industrial converting, with grades selectable according to required tensile strength, tear resistance, extensibility, and printability. Commercial grades range from 50–120 gsm, with extensible sack kraft at 65–95 gsm. Tensile index is rated at ≥80 Nm/g (MD) with tear index ≥12 mNm²/g. Available in natural brown, bleached white, and recycled options, the paper features controlled porosity per application and is supplied in standard and jumbo rolls as well as sheets. The strong fibre structure supports demanding sack, bag, and wrapping applications, with extensible grades that absorb stress during filling, handling, and transport. Key applications span industrial sacks, shopping bags, food bags, wrapping paper, protective packaging, laminated packaging, and general paper converting. Custom grade selection, grammage, sheet or reel supply, size, and printing support are available.",
+      "YOUNGSUN supplies natural brown, bleached white and recycled kraft paper families in rolls and sheets for bags, wrapping and industrial converting. Sack kraft, extensible grades and printable bag papers should be selected for their intended load, filling route, surface and converting process. Grammage, fibre composition, tensile strength, tear resistance and extensibility belong to the exact quoted grade and its technical data sheet; one set of values does not describe the entire kraft range. Send the end use, required grammage, sheet dimensions or reel width, printing and converting process, quantity and destination for a grade recommendation and physical sample evaluation.",
     specs: [
-      "Grammage: 35 – 200 gsm",
+      "Grammage: Grade-specific; request the technical data sheet for the required weight",
       "Grades: Natural (brown) / Bleached (white) / Recycled",
-      "Tensile index: ≥ 80 Nm/g (MD)",
-      "Tear index: ≥ 12 mNm²/g",
+      "Tensile strength: Grade-specific MD/CD values and test method",
+      "Tear resistance and extensibility: Select for the intended bag, sack or wrapping use",
       "Porosity: Controlled per application",
       "Format: Rolls (standard & jumbo), sheets",
     ],
@@ -752,7 +752,7 @@ export const subProducts = {
       { q: "Can I request a kraft paper sample before ordering?", a: "Yes. Standard sample material is free. The customer pays the international courier charge, and the production specification is confirmed after sample evaluation." },
     ],
     seoTitle: "Brown Kraft Paper Rolls & Sheets Supplier",
-    metaDescription: "Brown kraft paper rolls and sheets, plus white and recycled grades from 35 to 200 gsm for bags, wrapping and industrial converting. Request free samples.",
+    metaDescription: "Brown, white and recycled kraft paper rolls and sheets for bags, sacks and wrapping. Compare grade-specific specifications and request samples.",
     keywords: ["kraft paper", "virgin kraft", "sack kraft paper", "brown kraft paper", "brown kraft paper rolls", "brown kraft paper sheets", "packaging kraft", "industrial kraft paper"],
     image: "/images/products/package-board/kraft-paper-main.webp",
     gallery: [
@@ -2694,8 +2694,8 @@ export const subProducts = {
       { q: "Is the same cup paper suitable for hot and cold drinks?", a: "Not automatically. Beverage temperature, holding time, condensation, barrier structure, cup size and forming method affect the required grade. Confirm the intended drink and whether one- or two-side coating is needed before production." },
       { q: "What information is needed for a cup paper quotation?", a: "Provide base-board grammage, uncoated or coated structure, coating side and weight, reel width or sheet size, quantity per size, cup application, printing method, required food-contact documents and destination port. Regular grades and formats start from 1 metric ton, subject to specification confirmation." },
     ],
-    seoTitle: "Cupstock Board Supplier for Paper Cups",
-    metaDescription: "Food-grade cupstock board with PE coating for hot and cold paper cups, takeaway containers and beverage packaging. Request GSM, roll widths, samples or pricing.",
+    seoTitle: "Cupstock Base Board & PE-Coated Paper Supplier",
+    metaDescription: "Cupstock base board in 160–330 gsm for paper cups and food containers. Compare uncoated and PE-coated specifications; request sheets, reels or samples.",
     keywords: ["cup paper", "cup stock", "paper cup paper", "PE coated cup board", "hot cup paper", "cold cup stock"],
     image: "/images/products/food-packaging/gallery/cup-paper-photo-02.jpg",
     gallery: [

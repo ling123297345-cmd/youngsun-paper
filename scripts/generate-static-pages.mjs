@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { localizeFaqItems, productCategories, subProducts } from "../src/data.js";
 import { productEs } from "../src/productEs.js";
 import { blogPosts } from "../src/blogData.js";
+import { homeSelectionGuide, fancySelectionGuide, productSelectionGuides } from "../src/paperSelectionGuides.js";
 import { hasSpanishBlogPost, localizeBlogPost } from "../src/blogLocale.js";
 import {
   extractBlogFaqs,
@@ -676,6 +677,16 @@ function renderStaticContent(page, lang) {
 }
 
 function renderRouteContent(page, lang) {
+  const id = page.route.split("/").filter(Boolean).at(-1);
+  const guide = page.route === "/" ? homeSelectionGuide
+    : page.route === "/products/fancy-paper" ? fancySelectionGuide
+      : page.route.startsWith("/products/") ? productSelectionGuides[id] : null;
+  const notes = guide?.[lang || "en"];
+  const selection = notes ? `<section><h2>${escapeHtml(notes.title)}</h2><p>${escapeHtml(notes.intro)}</p>${notes.items.map((item) => `<section><h3>${escapeHtml(item.title)}</h3><p>${escapeHtml(item.text)}</p><p><a href="${escapeHtml(localizedPath(item.href, lang || "en"))}">${escapeHtml(item.label)}</a></p></section>`).join("")}</section>` : "";
+  return renderRouteContentBase(page, lang) + selection;
+}
+
+function renderRouteContentBase(page, lang) {
   if (lang === "es") return renderSpanishRouteContent(page);
   if (page.route === "/") return renderHomeStatic();
   if (page.route === "/products") return renderProductCollectionStatic();

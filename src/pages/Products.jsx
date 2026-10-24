@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigate, Navigate } from "react-router-dom";
 import { useLang } from "../i18n.jsx";
+import PaperSelectionGuide from "../PaperSelectionGuide.jsx";
+import { fancySelectionGuide } from "../paperSelectionGuides.js";
 import { productEs } from "../productEs.js";
 import { productCategories, subProducts } from "../data.js";
 import { PageMeta, BreadcrumbSchema, CollectionPageSchema } from "../SEO.jsx";
@@ -39,7 +41,7 @@ export default function Products({ initialCategory }) {
     : "Paper & Board Products | YOUNGSUN PAPER";
   const pageDescription = initialCategory && category
     ? `${category.summary} Compare product specifications and request samples or an export quotation from YOUNGSUN PAPER.`
-    : "Explore 31 paper and board grades across Package Board, Culture Paper, Fancy Paper and Food Packaging Paper. Compare specifications and request samples.";
+    : `Compare ${allProducts.length} paper and board grades for packaging, printing and food service. Explore specifications and request samples.`;
 
   // Count products per category for the badges
   const productCounts = {};
@@ -83,8 +85,8 @@ export default function Products({ initialCategory }) {
       </div>
       <div className="section-header">
         <span className="section-label">{t("What We Supply")}</span>
-        <h1 id="products-heading">{t("Paper & Board That Performs")}</h1>
-        <p>{t("four_cat_desc")}</p>
+        <h1 id="products-heading">{category ? t(category.title) : t("Paper & Board That Performs")}</h1>
+        <p>{categorySummary || t("four_cat_desc")}</p>
       </div>
 
       {/* Category Filter Tabs */}
@@ -178,6 +180,7 @@ export default function Products({ initialCategory }) {
       </div>
 
       {/* Bottom CTA */}
+      {activeCat === "fancy-paper" && <div className="container"><PaperSelectionGuide guide={fancySelectionGuide} /></div>}
       <div className="container" style={{ textAlign: "center", marginTop: 48, padding: "36px 24px", background: "rgba(143,188,90,0.05)", borderRadius: 16, border: "1px solid rgba(143,188,90,0.1)" }}>
         <h3 style={{ color: "var(--white)", fontSize: 18, marginBottom: 8 }}>{isEs ? "¿No encuentra lo que necesita?" : "Don't see what you need?"}</h3>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14, marginBottom: 20 }}>{isEs ? "Buscamos grados personalizados y papeles especiales a través de nuestra red de fábricas asociadas. Cuéntenos qué necesita." : "We source custom grades and special papers through our mill partner network. Tell us what you're looking for."}</p>

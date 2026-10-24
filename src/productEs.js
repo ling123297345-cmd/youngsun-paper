@@ -105,8 +105,8 @@ export const productEs = {
     tagline: "Papel kraft natural, blanco y reciclado en bobinas, rollos, hojas y pliegos para bolsas, envoltura y conversión.",
     description: "YOUNGSUN suministra papel kraft extensible, kraft para sacos de alta resistencia y kraft premium para embalaje y conversión industrial. El grado se selecciona según la resistencia a la tracción, el desgarro, la extensibilidad, la porosidad y la impresión requeridas. Está disponible en kraft natural, blanqueado y reciclado, en bobinas estándar o jumbo, hojas de papel kraft y pliegos de papel kraft cortados a medida. Su estructura fibrosa es adecuada para sacos, bolsas, envolturas, embalaje protector, laminación y otros procesos de conversión.",
     seoTitle: "Papel kraft en bobinas, rollos, hojas y pliegos",
-    metaDescription: "Bobinas de papel kraft de 35–200 gsm para bolsas y conversión. Consulte medidas de pliego de papel kraft natural, blanco o reciclado y solicite muestras.",
-    specs: ["Gramaje: 35–200 gsm", "Grados: Natural/Blanqueado/Reciclado", "Índice de tracción: ≥ 80 Nm/g", "Índice de desgarro: ≥ 12 mNm²/g", "Formato: Bobinas y hojas"],
+    metaDescription: "Papel kraft natural, blanco y reciclado en bobinas y hojas para bolsas, sacos y envoltura. Compare especificaciones por grado y solicite muestras.",
+    specs: ["Gramaje: según el grado; solicitar la ficha técnica del peso requerido", "Grados: Natural/Blanqueado/Reciclado", "Tracción: valores MD/CD y método según el grado", "Desgarro y extensibilidad: seleccionar según bolsa, saco o envoltura", "Formato: Bobinas y hojas"],
     applications: ["Sacos multicapa", "Liner para corrugado", "Envoltura industrial", "Bolsas de compras", "Sobres y embalaje postal"],
     variants: ["Papel kraft extensible para sacos", "Papel kraft de alta resistencia", "Papel kraft premium"],
     features: ["Estructura fibrosa resistente — Adecuada para sacos, bolsas y envolturas exigentes.", "Grado extensible disponible — Ayuda a absorber esfuerzos durante llenado, manejo y transporte.", "Buen comportamiento de conversión — Compatible con fabricación de bolsas, impresión, laminación y envoltura.", "Distintos niveles de resistencia — Permite elegir según el peso del producto y la estructura del embalaje."],
@@ -511,6 +511,7 @@ export const productEs = {
   },
   // FOOD PACKAGING
   "cup-paper": {
+    name: "Cartón cupstock para vasos",
     tagline: "Cartón base para vasos y envases alimentarios, disponible sin recubrimiento o preparado para coordinación de PE.",
     description: "El cupstock YOUNGSUN es un cartón de fibra virgen desarrollado para formar paredes de vasos y otros envases de servicio alimentario. La gama de referencia cubre 160–330 gsm y puede suministrarse como cartón base sin recubrimiento en hojas o bobinas. Cuando el proyecto requiere barrera contra líquidos, se puede coordinar una especificación con PE a una o dos caras, manteniendo separados el gramaje del cartón base y el peso del recubrimiento. El comprador debe indicar si necesita base sin recubrir o producto recubierto, el tipo de bebida o alimento, el proceso de impresión, el ancho de bobina y la documentación de contacto alimentario requerida.",
     seoTitle: "Cartón cupstock para vasos y envases alimentarios",

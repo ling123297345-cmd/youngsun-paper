@@ -405,7 +405,7 @@ export const spanishProductSeoById = {
   },
   "kraft-paper": {
     "title": "Papel kraft en bobinas, rollos, hojas y pliegos",
-    "description": "Bobinas de papel kraft de 35–200 gsm para bolsas y conversión. Consulte medidas de pliego de papel kraft natural, blanco o reciclado y solicite muestras."
+    "description": "Papel kraft natural, blanco y reciclado en bobinas y hojas para bolsas, sacos y envoltura. Compare especificaciones por grado y solicite muestras."
   },
   "duplex-board": {
     "title": "Cartulina caple y cartón dúplex reverso gris",

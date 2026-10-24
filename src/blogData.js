@@ -2,6 +2,7 @@ import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.j
 import { blogSpanishOverrides } from "./blogSpanishOverrides.js";
 import { dailyBlogPosts } from "./blogDailyPosts.js";
 import { foodPaperEditorialUpdates } from "./blogFoodPaperReview.js";
+import { boardEditorialUpdates } from "./blogBoardReview.js";
 
 export const blogPosts = [
   ...dailyBlogPosts,
@@ -2517,7 +2518,7 @@ Provide the finished size, quantity, assembly style, proposed GSM, sheet format,
   },
 ];
 
-for (const [id, update] of Object.entries(foodPaperEditorialUpdates)) {
+for (const [id, update] of Object.entries({ ...foodPaperEditorialUpdates, ...boardEditorialUpdates })) {
   const post = blogPosts.find((item) => item.id === id);
   if (post) Object.assign(post, update);
 }

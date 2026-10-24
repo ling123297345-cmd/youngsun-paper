@@ -613,6 +613,14 @@ export const spanishBlogSeoById = {
     "title": "¿Un envase con 85 % de papel es reciclable? Guía",
     "description": "¿Un alto contenido de papel hace reciclable un envase? Revise barreras, recogida, repulpabilidad, ensayos y declaraciones con estas 7 preguntas."
   },
+  "grey-board-vs-duplex-board-comparison": {
+    "title": "Cartón gris vs dúplex: cómo elegir",
+    "description": "Compare cartón gris y dúplex por estructura, impresión, hendido y forrado. Prepare una solicitud por grado sin asumir el mismo rendimiento."
+  },
+  "grey-board-vs-duplex-vs-fbb-comparison": {
+    "title": "Cartón gris, dúplex y FBB: guía de compra",
+    "description": "Elija cartón gris, dúplex o FBB por construcción, impresión, conversión y costo del envase. Compare grados sin precios genéricos ni garantías supuestas."
+  },
   "how-to-compare-paper-quotes-from-different-suppliers": {
     "title": "Cómo comparar cotizaciones de papel: 10 puntos",
     "description": "Compare cotizaciones de papel por especificación, Incoterm, muestras, documentos, embalaje y coste total, no solo por el precio por tonelada."

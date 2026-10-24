@@ -123,9 +123,9 @@ export const blogSearchIndex = [
   {
     "type": "blog",
     "id": "grey-board-vs-duplex-board-comparison",
-    "name": "Grey Board vs Duplex Board: The Complete Comparison for Packaging Buyers",
-    "nameEs": "",
-    "text": "grey board vs duplex board: the complete comparison for packaging buyers  grey board and duplex board look similar on a specification sheet but serve completely different purposes in packaging production. this guide breaks down the differences — and helps you choose the right one for your project.  packaging",
+    "name": "Grey Board vs Duplex Board: Printed Carton or Wrapped Structure?",
+    "nameEs": "Cartón gris o dúplex: ¿caja impresa o estructura forrada?",
+    "text": "grey board vs duplex board: printed carton or wrapped structure? cartón gris o dúplex: ¿caja impresa o estructura forrada? the useful starting point is the construction: a wrapped rigid shell or a directly printed folding carton. then compare the exact board's thickness, stiffness, surface and converting behaviour. empiece por la construcción: estructura rígida forrada o caja plegadiza impresa directamente. después compare espesor, rigidez, superficie y conversión del grado exacto. packaging",
     "href": "/blog/grey-board-vs-duplex-board-comparison"
   },
   {
@@ -251,9 +251,9 @@ export const blogSearchIndex = [
   {
     "type": "blog",
     "id": "grey-board-vs-duplex-vs-fbb-comparison",
-    "name": "Grey Board vs Duplex Board vs FBB: Which Packaging Board Should You Choose?",
-    "nameEs": "",
-    "text": "grey board vs duplex board vs fbb: which packaging board should you choose?  grey board, duplex board, and fbb serve different packaging needs. this head-to-head comparison helps you choose the right board for your project — based on structure, printing, cost, and sustainability.  packaging",
+    "name": "Grey Board, Duplex or FBB: Compare the Finished Pack",
+    "nameEs": "Cartón gris, dúplex o FBB: compare el envase terminado",
+    "text": "grey board, duplex or fbb: compare the finished pack cartón gris, dúplex o fbb: compare el envase terminado compare the complete construction, not just the paper price. this guide separates rigid-core requirements from folding-carton needs and provides a repeatable approval and quotation checklist. compare la construcción completa y no solo el precio del papel. distinga núcleo rígido y caja plegadiza con una lista práctica de cotización y aprobación. packaging",
     "href": "/blog/grey-board-vs-duplex-vs-fbb-comparison"
   },
   {

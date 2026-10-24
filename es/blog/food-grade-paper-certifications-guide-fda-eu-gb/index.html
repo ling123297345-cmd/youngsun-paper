@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Papel alimentario: documentos FDA, UE y GB | YOUNGSUN</title>
+    <meta name="description" content="Verifique documentos del papel por grado, alimento, condiciones y mercado. Entienda referencias FDA, UE, China, PFAS y FSC sin confundir su alcance." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Papel alimentario: documentos FDA, UE y GB | YOUNGSUN" />
+    <meta property="og:description" content="Verifique documentos del papel por grado, alimento, condiciones y mercado. Entienda referencias FDA, UE, China, PFAS y FSC sin confundir su alcance." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/food-grade-paper-certifications-guide-fda-eu-gb-cover-v2.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Papel alimentario: documentos FDA, UE y GB | YOUNGSUN" />
+    <meta name="twitter:description" content="Verifique documentos del papel por grado, alimento, condiciones y mercado. Entienda referencias FDA, UE, China, PFAS y FSC sin confundir su alcance." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/food-grade-paper-certifications-guide-fda-eu-gb-cover-v2.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-DNDTf9HF.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Bh1tDfsg.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-CnQ8cts2.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-B2xxv0dJ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BWGypuQL.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/food-grade-paper-certifications-guide-fda-eu-gb/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/food-grade-paper-certifications-guide-fda-eu-gb/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/#article","headline":"Documentos de papel alimentario: qué debe verificar","description":"Verifique documentos del papel por grado, alimento, condiciones y mercado. Entienda referencias FDA, UE, China, PFAS y FSC sin confundir su alcance.","image":"https://youngsunpaper.com/images/blog-articles/food-grade-paper-certifications-guide-fda-eu-gb-cover-v2.webp","datePublished":"2026-07-24","dateModified":"2026-10-24","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Documentación y cumplimiento","keywords":["documentos de papel alimentario","papel FDA","contacto alimentario UE","GB 4806.8","documentación PFAS"],"inLanguage":"es","about":[{"@type":"Thing","name":"documentos de papel alimentario"},{"@type":"Thing","name":"papel FDA"},{"@type":"Thing","name":"contacto alimentario UE"},{"@type":"Thing","name":"GB 4806.8"},{"@type":"Thing","name":"documentación PFAS"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿FSC demuestra seguridad alimentaria?","acceptedAnswer":{"@type":"Answer","text":"No. El abastecimiento forestal y el contacto alimentario tienen alcances distintos. Solicite evidencia por separado."}},{"@type":"Question","name":"¿Todo ensayo caduca después de dos años?","acceptedAnswer":{"@type":"Answer","text":"No hay una regla universal de dos años para todo informe de papel alimentario. Revise el requisito real y si muestra, estructura y condiciones siguen siendo representativas."}},{"@type":"Question","name":"¿Un documento cubre todos los gramajes y recubrimientos?","acceptedAnswer":{"@type":"Answer","text":"Solo si el alcance y la evaluación justifican esas variantes. Pida al proveedor responsable el rango cubierto y sus límites."}},{"@type":"Question","name":"¿Cómo interpreto no detectado en un ensayo PFAS?","acceptedAnswer":{"@type":"Answer","text":"Revise analitos, método, unidades y límites. Compárelos con el mercado y cliente; no lo interprete como ausencia absoluta de todos los PFAS."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Documentos de papel alimentario: qué debe verificar","item":"https://youngsunpaper.com/es/blog/food-grade-paper-certifications-guide-fda-eu-gb/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Documentación y cumplimiento · 2026-07-24</p><h1>Documentos de papel alimentario: qué debe verificar</h1><p>Un ensayo, una declaración del proveedor y un certificado FSC responden preguntas diferentes. Relacione cada documento con el papel y el uso alimentario previsto.</p><figure><img src="/images/blog-articles/food-grade-paper-certifications-guide-fda-eu-gb-cover-v2.webp" alt="Documentos de papel alimentario: qué debe verificar" width="1280" height="800" loading="eager"></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#relacione-documento-y-pregunta">Relacione documento y pregunta</a></li><li><a href="#estados-unidos-revise-via-de-autorizacion-y-uso">Estados Unidos: revise vía de autorización y uso</a></li><li><a href="#union-europea-marco-medidas-especificas-y-reglas-nacionales">Unión Europea: marco, medidas específicas y reglas nacionales</a></li><li><a href="#china-identifique-norma-y-edicion-aplicables">China: identifique norma y edición aplicables</a></li><li><a href="#una-afirmacion-pfas-necesita-definicion">Una afirmación PFAS necesita definición</a></li><li><a href="#revise-pertinencia-y-cambios-no-una-caducidad-inventada">Revise pertinencia y cambios, no una caducidad inventada</a></li><li><a href="#prepare-un-expediente-de-seis-partes">Prepare un expediente de seis partes</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Documentos de papel alimentario: qué debe verificar article content"><p>La aptitud alimentaria corresponde a un material definido y unas condiciones de uso concretas. Un nombre comercial, logotipo de laboratorio o frase como “certificado FDA” no basta para demostrarla.</p><p>Empiece por grado, construcción completa, alimento, cara de contacto, tiempo, temperatura y país destino. Después revise qué demuestra cada documento. Esta es una guía de compras, no una opinión jurídica ni un certificado de productos YOUNGSUN. Las referencias se revisaron el 24 de octubre de 2026; confirme los requisitos vigentes del pedido.</p><h2 id="relacione-documento-y-pregunta">Relacione documento y pregunta</h2><table><thead><tr><th scope="col">Documento</th><th scope="col">Qué ayuda a demostrar</th><th scope="col">Qué no demuestra por sí solo</th></tr></thead><tbody><tr><td>Ficha técnica</td><td>Identidad y propiedades físicas declaradas</td><td>Cumplimiento alimentario completo</td></tr><tr><td>Declaración del proveedor</td><td>Responsabilidad, referencias legales y alcance de uso</td><td>Todos los usos fuera de ese alcance</td></tr><tr><td>Informe de laboratorio</td><td>Resultados para muestra, métodos y condiciones identificados</td><td>Aprobación automática de otros grados, fórmulas o usos</td></tr><tr><td>Certificado FSC y declaración de venta</td><td>Información aplicable de cadena de custodia forestal</td><td>Seguridad alimentaria, resistencia a grasa o uso térmico</td></tr></tbody></table><h2 id="estados-unidos-revise-via-de-autorizacion-y-uso">Estados Unidos: revise vía de autorización y uso</h2><p>El <a href="https://www.fda.gov/food/packaging-food-contact-substances-fcs/inventory-food-contact-substances-listed-21-cfr">inventario FDA de sustancias en contacto con alimentos</a> identifica vías regulatorias y remite a inventarios de notificaciones y exenciones. Para papel pueden resultar pertinentes 21 CFR 176.170 y 176.180, pero citar una sección no completa la evaluación de una estructura impresa o recubierta.</p><p>Solicite la base que utiliza el proveedor para composición y uso exactos. Cuando se invoque una notificación de contacto alimentario, confirme su aplicabilidad: el número no equivale a autorización general de todo fabricante o material.</p><p>Las <a href="https://www.fda.gov/food/packaging-food-contact-substances-fcs/food-types-conditions-use-food-contact-substances">tablas FDA de alimentos y condiciones de uso</a> distinguen exposición y alimento. No suponga que un documento para producto seco a temperatura ambiente cubre alimento graso, llenado caliente u horneado.</p><h2 id="union-europea-marco-medidas-especificas-y-reglas-nacionales">Unión Europea: marco, medidas específicas y reglas nacionales</h2><p>El <a href="https://food.ec.europa.eu/food-safety/chemical-safety/food-contact-materials/legislation_en">resumen legislativo de la Comisión Europea</a> explica marco general y medidas específicas. Para estructuras de papel revise construcción, buenas prácticas aplicables y reglas nacionales pertinentes. Una capa plástica puede requerir evaluación adicional.</p><p>No asuma que existe un formato idéntico de declaración obligatorio para todos los materiales en toda la UE. Las obligaciones escritas dependen de medidas específicas y disposiciones nacionales. Pregunte al proveedor responsable o asesor qué corresponde al país destino y solicite evidencia acorde.</p><h2 id="china-identifique-norma-y-edicion-aplicables">China: identifique norma y edición aplicables</h2><p>GB 4806.8 trata papel y cartón alimentario; GB 9685 trata uso de aditivos. Ninguna referencia debe usarse como un “certificado alimentario” universal. La <a href="https://sjj.ganzhou.gov.cn/c101840/202407/4e0dc6c1de154eb49ea63a09d96d9803.shtml">explicación del regulador de Ganzhou sobre GB 4806.8-2022</a> registra su entrada en aplicación el 30 de junio de 2023.</p><p>Para un pedido nuevo pida al proveedor o laboratorio competente las ediciones vigentes y requisitos adicionales de recubrimientos, adhesivos, tintas o artículo final. Un ensayo del papel base puede no cubrir la estructura suministrada.</p><h2 id="una-afirmacion-pfas-necesita-definicion">Una afirmación PFAS necesita definición</h2><p>Pregunte si se refiere a PFAS añadidos intencionalmente, una lista de sustancias, un indicador de cribado u otro alcance. “No detectado” significa por debajo del límite analítico para los analitos y muestra ensayados; no demuestra ausencia absoluta de todos los PFAS.</p><p>No existe un umbral universal de 10 ppb para copiar en toda solicitud. Registre requisito legal o del cliente, método, analitos, unidades y límites de detección o reporte. Resistencia a grasa, FSC o nombre de recubrimiento no prueban ausencia de PFAS.</p><h2 id="revise-pertinencia-y-cambios-no-una-caducidad-inventada">Revise pertinencia y cambios, no una caducidad inventada</h2><p>Un informe de dos años no queda automáticamente invalidado y uno reciente no es automáticamente pertinente. Compruebe código, fabricante, construcción, condiciones y cambios de formulación o proceso. Cumpla cualquier plazo real exigido por ley, certificación o cliente.</p><p>Si cambia grado, recubrimiento, tinta, adhesivo o uso, solicite confirmación del alcance de la evaluación existente y guárdela con la aprobación del pedido.</p><h2 id="prepare-un-expediente-de-seis-partes">Prepare un expediente de seis partes</h2><ol><li>Grado, proveedor/fabricante y referencia de muestra.</li><li>Construcción completa con recubrimiento, impresión y adhesivo relevantes.</li><li>Alimento, cara de contacto, duración, temperatura y destino.</li><li>Base legal aplicable y declaración del proveedor con alcance definido.</li><li>Informes pertinentes, métodos e identificación trazable de muestra.</li><li>Muestra aprobada, revisión y regla escrita de aviso de cambios.</li></ol><p><a href="/es/contact?intent=quote">Consulte qué documentación está disponible</a>, indicando grado y uso exactos. Compare <a href="/es/products/cup-paper">papel para vasos</a>, <a href="/es/products/greaseproof-paper">papel antigrasa</a> y <a href="/es/products/pe-coated-paper">papel con PE</a> según su función. Disponibilidad y alcance se revisan para el material cotizado; esta guía no promete certificaciones SGS, PFAS o alimentarias para toda la gama.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="fsc-demuestra-seguridad-alimentaria">¿FSC demuestra seguridad alimentaria?</h3><p>No. El abastecimiento forestal y el contacto alimentario tienen alcances distintos. Solicite evidencia por separado.</p><h3 id="todo-ensayo-caduca-despues-de-dos-anos">¿Todo ensayo caduca después de dos años?</h3><p>No hay una regla universal de dos años para todo informe de papel alimentario. Revise el requisito real y si muestra, estructura y condiciones siguen siendo representativas.</p><h3 id="un-documento-cubre-todos-los-gramajes-y-recubrimientos">¿Un documento cubre todos los gramajes y recubrimientos?</h3><p>Solo si el alcance y la evaluación justifican esas variantes. Pida al proveedor responsable el rango cubierto y sus límites.</p><h3 id="como-interpreto-no-detectado-en-un-ensayo-pfas">¿Cómo interpreto no detectado en un ensayo PFAS?</h3><p>Revise analitos, método, unidades y límites. Compárelos con el mercado y cliente; no lo interprete como ausencia absoluta de todos los PFAS.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/right-sized-ecommerce-packaging-paper-specification">Una caja de envío más ajustada ahorra papel: ¿qué pasa con la protección?</a> - El ajuste de tamaño gana espacio en el packaging e-commerce. Para compras, la pregunta es cómo reducir material conservando la protección durante la entrega, y no solo dónde conseguir una caja menor.</li><li><a href="/es/blog/small-snack-packaging-paperboard-specification">¿Por qué un envase pequeño para snacks exige una especificación de cartón más precisa?</a> - El avance de los formatos pequeños y portátiles plantea un reto material poco visible: cada pliegue, cierre y milímetro impreso importa más. Esto es lo que debe validar el comprador antes de producir.</li><li><a href="/es/blog/eu-ppwr-epr-one-tonne-authorised-representative-update">¿Menos de 1 tonelada de envases? El alivio EPR que muchos exportadores no pueden usar</a> - Una nueva posición del Consejo menciona un umbral de una tonelada, pero no es una exención general de EPR ni ofrece el mismo alivio a todos los exportadores extracomunitarios. Esta guía separa la propuesta de las obligaciones que continúan.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

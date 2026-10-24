@@ -1,0 +1,65 @@
+var e={id:`grey-board-vs-duplex-board-comparison`,title:`Grey Board vs Duplex Board: Printed Carton or Wrapped Structure?`,seoTitle:`Grey Board vs Duplex Board: How to Choose`,metaDescription:`Compare grey board and duplex board by structural role, print surface, creasing and wrapping. Build a grade-specific RFQ instead of assuming equal performance.`,date:`2026-08-05`,author:`YOUNGSUN PAPER Editorial`,category:`Packaging`,excerpt:`The useful starting point is the construction: a wrapped rigid shell or a directly printed folding carton. Then compare the exact board's thickness, stiffness, surface and converting behaviour.`,content:`# Grey Board vs Duplex Board: Printed Carton or Wrapped Structure?
+
+[Grey board](/products/grey-board) is commonly selected as a structural core for wrapped rigid boxes, book covers and mounted products. [Duplex board](/products/duplex-board) is commonly selected for a coated printing face in folding cartons and backing applications. The names are useful starting points, but they do not specify every fibre blend, reverse surface or performance requirement.
+
+Ask how the finished packaging will be made. Will a separate printed or decorative sheet cover a rigid shell, or will the board itself be printed, creased and folded? That question is more useful than asking which material is universally stronger or cheaper.
+
+## Compare the board's role
+
+| Decision | Grey-board structural route | Duplex carton route |
+| --- | --- | --- |
+| Visible surface | Often supplied by a separate wrap or mounted sheet | Often the coated printing face of the board |
+| Key converting steps | Cutting, grooving or assembly, wrapping and bonding as designed | Printing, die-cutting, creasing, folding and gluing |
+| Main sample checks | Caliper, flatness, dimensions, bonding and assembled rigidity | Print result, crease quality, fold geometry and glue bond |
+| Cost comparison | Include core, wrap, adhesive and assembly | Include print, tooling, converting and line losses |
+
+These are common routes, not restrictions on every application. Duplex products can have different backs and layer constructions; grey board can accept some direct printing processes when the desired result and equipment permit it.
+
+## Compare caliper and stiffness separately
+
+GSM measures mass per area; caliper measures thickness. Neither is a universal rating of a finished box's strength. Two boards at the same GSM or thickness may differ in density, fibre structure and directional properties.
+
+Request stiffness data in the relevant machine and cross directions when it matters, including the test method. Do not compare values obtained under different methods as though they were identical. The [Holmen paperboard manual](https://www.iggesund.com/insights/paperboard-know-how/paperboard-manual/paperboard-manual-publication/baseboard-physical-properties/complex-physical-properties/) explains why fibre direction and multiple physical properties matter to converting behaviour.
+
+The final result also depends on dimensions, insert geometry, joints, wrap and storage conditions. Validate the assembled pack rather than assigning a fixed stack height to a paper name.
+
+## Printing and wrapping need different approvals
+
+For direct printing, agree the side, ink process, colour expectation and finishing route. An uncoated grey surface may be appropriate for a deliberately utilitarian design, while detailed photographic printing may require a suitable coated surface or a separate printed wrap.
+
+For wrapping, test adhesive bonding, moisture response, corner coverage and surface marking using the intended wrap. Compare [black paper](/products/black-paper) and [specialty paper finishes](/products/fancy-paper) as separate visible layers; their properties are not determined by the structural core.
+
+For a duplex carton, test the real die line after printing and finishing. A clean flat sheet does not demonstrate that its folds will remain free from cracking. Tooling, grain direction and board construction all contribute.
+
+## Check fibre and FSC claims for the actual supply
+
+Do not describe all grey board as 100% post-consumer material, or assume every duplex grade carries the same FSC claim. Request the stated fibre composition and the applicable transaction claim for the quoted product.
+
+[FSC's label explanation](https://us.fsc.org/what-is-fsc/what-do-the-fsc-labels-mean) distinguishes FSC 100%, FSC Mix and FSC Recycled. They are not a ranking of carton strength, food-contact suitability or carbon footprint. Recycled content and recyclability are also separate questions.
+
+## Prepare the RFQ around the construction
+
+Send the drawing and finished dimensions, product weight, board role, required caliper or GSM and tolerances, print or wrap process, adhesive, quantity per size and destination. For recycled-content or certification requirements, specify the required evidence rather than relying on the board name.
+
+Request a blank sample followed by a converted prototype. Agree what counts as an unacceptable defect: distorted corners, cracking, delamination, surface marking, poor glue bond or insufficient assembled rigidity. Keep an approved reference and define which substitutions require another trial.
+
+To compare a third folding-carton option, use our [grey board, duplex and FBB selection guide](/blog/grey-board-vs-duplex-vs-fbb-comparison). For material samples, [send the construction and specification](/contact?intent=samples). Standard samples are free; international courier charges are paid by the customer.
+
+## Frequently asked questions
+
+### Is grey board always stiffer than duplex at equal thickness?
+
+No universal ranking should be assumed. Compare the exact grades, directional stiffness data and test methods, then evaluate the intended assembly.
+
+### Is duplex board always made of exactly two layers?
+
+No. Commercial terminology does not guarantee a two-ply construction. Obtain the supplier's structure and surface description for the selected grade.
+
+### Can the grey reverse of duplex board be printed?
+
+Some designs and processes may print it. Agree the expected appearance and test ink, contrast and finishing on the actual reverse instead of calling it universally unprintable.
+
+### Is chipboard the same thing as grey board?
+
+Terminology varies by region and trade. Use a sample, caliper, surface and fibre specification to confirm the intended paperboard, especially where chipboard can mean another material.
+`,image:`/images/products/package-board/duplex-board-main.webp`,tags:[`grey board`,`duplex board`,`paperboard comparison`,`packaging board`,`rigid box`],dateModified:`2026-10-24`};export{e as default};

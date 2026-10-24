@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Cartón gris, dúplex y FBB: guía de compra | YOUNGSUN</title>
+    <meta name="description" content="Elija cartón gris, dúplex o FBB por construcción, impresión, conversión y costo del envase. Compare grados sin precios genéricos ni garantías supuestas." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Cartón gris, dúplex y FBB: guía de compra | YOUNGSUN" />
+    <meta property="og:description" content="Elija cartón gris, dúplex o FBB por construcción, impresión, conversión y costo del envase. Compare grados sin precios genéricos ni garantías supuestas." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/grey-board-vs-duplex-vs-fbb-comparison-cover-v2.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cartón gris, dúplex y FBB: guía de compra | YOUNGSUN" />
+    <meta name="twitter:description" content="Elija cartón gris, dúplex o FBB por construcción, impresión, conversión y costo del envase. Compare grados sin precios genéricos ni garantías supuestas." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/grey-board-vs-duplex-vs-fbb-comparison-cover-v2.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-DNDTf9HF.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Bh1tDfsg.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-CnQ8cts2.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-B2xxv0dJ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BWGypuQL.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/grey-board-vs-duplex-vs-fbb-comparison/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/grey-board-vs-duplex-vs-fbb-comparison/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/#article","headline":"Cartón gris, dúplex o FBB: compare el envase terminado","description":"Elija cartón gris, dúplex o FBB por construcción, impresión, conversión y costo del envase. Compare grados sin precios genéricos ni garantías supuestas.","image":"https://youngsunpaper.com/images/blog-articles/grey-board-vs-duplex-vs-fbb-comparison-cover-v2.webp","datePublished":"2026-07-24","dateModified":"2026-10-24","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Selección de cartón","keywords":["cartón gris","cartón dúplex","FBB","costo del envase","selección de cartón"],"inLanguage":"es","about":[{"@type":"Thing","name":"cartón gris"},{"@type":"Thing","name":"cartón dúplex"},{"@type":"Thing","name":"FBB"},{"@type":"Thing","name":"costo del envase"},{"@type":"Thing","name":"selección de cartón"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿FBB siempre es lo mejor para un envase premium?","acceptedAnswer":{"@type":"Answer","text":"No. Importan construcción y efecto visual. Una caja rígida puede tener núcleo gris; una plegadiza puede utilizar FBB u otro grado adecuado. Apruebe el resultado, no la etiqueta."}},{"@type":"Question","name":"¿Puedo elegir la oferta más barata por tonelada?","acceptedAnswer":{"@type":"Answer","text":"Primero iguale especificación, formato, término y fecha. Incluya conversión y unidades aceptadas; menor precio del cartón no garantiza menor costo del envase."}},{"@type":"Question","name":"¿La fibra virgen garantiza seguridad alimentaria?","acceptedAnswer":{"@type":"Answer","text":"No. Relacione composición y estructura completas con alimento y condiciones, con documentación aplicable."}},{"@type":"Question","name":"¿Puedo confiar en la velocidad citada en un ejemplo?","acceptedAnswer":{"@type":"Answer","text":"Solo si es relevante, documentada y representativa del equipo. Un ejemplo genérico no demuestra velocidad, rendimiento ni rechazo de su línea."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Cartón gris, dúplex o FBB: compare el envase terminado","item":"https://youngsunpaper.com/es/blog/grey-board-vs-duplex-vs-fbb-comparison/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Selección de cartón · 2026-07-24</p><h1>Cartón gris, dúplex o FBB: compare el envase terminado</h1><p>Compare la construcción completa y no solo el precio del papel. Distinga núcleo rígido y caja plegadiza con una lista práctica de cotización y aprobación.</p><figure><img src="/images/blog-articles/grey-board-vs-duplex-vs-fbb-comparison-cover-v2.webp" alt="Cartón gris, dúplex o FBB: compare el envase terminado" width="1280" height="800" loading="eager"></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#matriz-de-tres-rutas">Matriz de tres rutas</a></li><li><a href="#fbb-no-significa-siempre-dos-caras-estucadas">FBB no significa siempre dos caras estucadas</a></li><li><a href="#gsm-calibre-y-rigidez-son-datos-distintos">GSM, calibre y rigidez son datos distintos</a></li><li><a href="#pruebe-la-conversion-en-el-equipo-previsto">Pruebe la conversión en el equipo previsto</a></li><li><a href="#compare-cotizaciones-sobre-la-misma-base">Compare cotizaciones sobre la misma base</a></li><li><a href="#verifique-sostenibilidad-por-separado">Verifique sostenibilidad por separado</a></li><li><a href="#secuencia-de-aprobacion">Secuencia de aprobación</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Cartón gris, dúplex o FBB: compare el envase terminado article content"><p>La elección entre <a href="/es/products/grey-board">cartón gris</a>, <a href="/es/products/duplex-board">dúplex</a> y <a href="/es/products/folding-box-board">FBB</a> parte del envase final. Defina estructura, superficies visibles, conversión y protección antes de comparar grados.</p><p>Una caja rígida forrada y una plegadiza impresa tienen materiales y procesos diferentes. Precio por tonelada, GSM o la palabra “premium” no comparan por sí solos ambos sistemas.</p><h2 id="matriz-de-tres-rutas">Matriz de tres rutas</h2><table><thead><tr><th scope="col">Ruta</th><th scope="col">Candidato inicial</th><th scope="col">Qué aprobar</th></tr></thead><tbody><tr><td>Estructura rígida forrada o cubierta montada</td><td>Cartón gris con superficie visible separada</td><td>Calibre, medidas, planitud, adhesión y rigidez del conjunto</td></tr><tr><td>Caja plegadiza impresa directamente</td><td>Grado dúplex o FBB adecuado</td><td>Cara y reverso, fibra, hendido, plegado y pegado</td></tr><tr><td>Caja con objetivos exigentes de apariencia o peso</td><td>Comparar FBB y otros grados apropiados</td><td>Impresión, calibre, rigidez, rendimiento de conversión y protección al peso elegido</td></tr></tbody></table><p>Utilice la matriz para seleccionar candidatos, no para asignar permanentemente un material a un sector ni garantizar que una estructura más ligera pase los mismos ensayos.</p><h2 id="fbb-no-significa-siempre-dos-caras-estucadas">FBB no significa siempre dos caras estucadas</h2><p>Confirme recubrimiento y reverso. La <a href="https://www.storaenso.com/en/products/paperboard-materials/folding-cartons/performa">gama Performa de Stora Enso</a>, por ejemplo, incluye GC2 estucado a una cara y GC1 con reverso blanco estucado. Demuestra variación entre grados; no afirma que YOUNGSUN suministre ese producto de marca concreto.</p><p>Si imprime ambas caras, envíe diseño interior y exterior. Apruebe color, secado, roce y acabado sobre cada superficie real. El término FBB no sustituye una especificación de impresión a dos caras.</p><h2 id="gsm-calibre-y-rigidez-son-datos-distintos">GSM, calibre y rigidez son datos distintos</h2><p>Solicite el grado exacto y sus datos disponibles. Una ficha puede informar GSM, calibre y rigidez direccional por separado, como muestra la <a href="https://www.holmen.com/en/board-and-paper/products/paperboard/incada/incada-exel/">ficha Incada Exel de Holmen</a>. Sus valores corresponden a ese producto, no a todo FBB ni a otro proveedor.</p><p>Evite clasificar universalmente rigidez entre gris, dúplex y FBB. Compare método, dirección y acondicionamiento equivalentes; después pruebe el prototipo convertido. Geometría y uniones cambian el resultado aunque las fichas se parezcan.</p><h2 id="pruebe-la-conversion-en-el-equipo-previsto">Pruebe la conversión en el equipo previsto</h2><p>La <a href="https://www.iggesund.com/it/insights/paperboard-know-how/paperboard-manual/paperboard-manual-publication/printing-and-converting-performance/creasability-and-foldability/">guía Holmen de hendido y plegado</a> explica la influencia de herramientas, estructura y dirección de fibra. Una familia de producto no garantiza pliegues sin grietas a cierta velocidad.</p><p>Registre troquel real, regla/canal, fibra, cobertura de tinta, recubrimiento y adhesivo. En una prueba representativa mida paradas, rechazo y defectos. Acuerde criterios con el convertidor en lugar de copiar velocidad o rechazo atribuidos a otra marca.</p><h2 id="compare-cotizaciones-sobre-la-misma-base">Compare cotizaciones sobre la misma base</h2><p>Elimine clasificaciones genéricas en dólares por tonelada. Compare grado, cantidad, formato, término comercial, destino y vigencia equivalentes. Precios CIF de puertos o fechas distintos no son directamente comparables.</p><p>En una ruta rígida incluya núcleo, forro, adhesivo, corte, armado y merma. En plegadiza incluya cartón, impresión, placas/herramientas, troquel, plegado, pegado y pérdidas de línea. Después compare unidades aceptadas y protección acordada.</p><p>Una medida interna es <strong>costo de producción acordado dividido por envases terminados aceptados</strong>. Defina conceptos incluidos y registre merma real. Es un método de compras, no una cotización YOUNGSUN ni una promesa de ahorro.</p><h2 id="verifique-sostenibilidad-por-separado">Verifique sostenibilidad por separado</h2><p>Solicite declaración de fibra, declaración FSC de la operación y datos ambientales específicos cuando existan. Color o familia no demuestran 100% posconsumo, menor huella de carbono ni reciclabilidad en todo destino.</p><p><a href="https://us.fsc.org/what-is-fsc/what-do-the-fsc-labels-mean">FSC distingue sus etiquetas por origen del material</a>, no por resistencia ni impacto ambiental completo. Compare carbono con una misma base de evaluación; el reciclaje depende de construcción y sistema destino. La aptitud alimentaria requiere su evaluación propia.</p><h2 id="secuencia-de-aprobacion">Secuencia de aprobación</h2><ol><li>Defina envase, superficies, carga y condiciones de uso.</li><li>Seleccione grados exactos y solicite fichas y muestras representativas.</li><li>Fabrique la estructura con forro, tinta, capa y adhesivo previstos.</li><li>Evalúe apariencia, medidas, rigidez, pliegue, unión y ensayos pertinentes de uso o transporte.</li><li>Compare ofertas para la estructura aceptada y registre referencia y sustituciones permitidas.</li></ol><p>Para una comparación más específica consulte <a href="/es/blog/grey-board-vs-duplex-board-comparison">cartón gris y dúplex para estructuras forradas e impresas</a>. <a href="/es/contact?intent=samples">Envíe plano y especificación</a> o revise <a href="/es/industries/packaging-printing">aplicaciones de packaging e impresión</a>. Las muestras estándar son gratuitas; el cliente paga el transporte internacional. Disponibilidad y despacho se acuerdan para cada solicitud, sin prometer un plazo universal.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="fbb-siempre-es-lo-mejor-para-un-envase-premium">¿FBB siempre es lo mejor para un envase premium?</h3><p>No. Importan construcción y efecto visual. Una caja rígida puede tener núcleo gris; una plegadiza puede utilizar FBB u otro grado adecuado. Apruebe el resultado, no la etiqueta.</p><h3 id="puedo-elegir-la-oferta-mas-barata-por-tonelada">¿Puedo elegir la oferta más barata por tonelada?</h3><p>Primero iguale especificación, formato, término y fecha. Incluya conversión y unidades aceptadas; menor precio del cartón no garantiza menor costo del envase.</p><h3 id="la-fibra-virgen-garantiza-seguridad-alimentaria">¿La fibra virgen garantiza seguridad alimentaria?</h3><p>No. Relacione composición y estructura completas con alimento y condiciones, con documentación aplicable.</p><h3 id="puedo-confiar-en-la-velocidad-citada-en-un-ejemplo">¿Puedo confiar en la velocidad citada en un ejemplo?</h3><p>Solo si es relevante, documentada y representativa del equipo. Un ejemplo genérico no demuestra velocidad, rendimiento ni rechazo de su línea.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/grey-board-vs-duplex-board-comparison">Cartón gris o dúplex: ¿caja impresa o estructura forrada?</a> - Empiece por la construcción: estructura rígida forrada o caja plegadiza impresa directamente. Después compare espesor, rigidez, superficie y conversión del grado exacto.</li><li><a href="/es/blog/pulp-price-vs-paper-price-buyer-guide">Bajó un índice de celulosa... ¿por qué no bajó su cotización de papel?</a> - La baja de un índice de celulosa no se refleja de forma automática en toda cotización de papel terminado. Antes de decidir si el precio es razonable, hay que alinear índice, receta fibrosa, fecha de producción y condiciones de entrega.</li><li><a href="/es/blog/right-sized-ecommerce-packaging-paper-specification">Una caja de envío más ajustada ahorra papel: ¿qué pasa con la protección?</a> - El ajuste de tamaño gana espacio en el packaging e-commerce. Para compras, la pregunta es cómo reducir material conservando la protección durante la entrega, y no solo dónde conseguir una caja menor.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

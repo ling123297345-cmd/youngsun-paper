@@ -1,6 +1,7 @@
 import { cmsBlogPosts, cmsHiddenBlogPostSlugs } from "./generated/cmsBlogPosts.js";
 import { blogSpanishOverrides } from "./blogSpanishOverrides.js";
 import { dailyBlogPosts } from "./blogDailyPosts.js";
+import { foodPaperEditorialUpdates } from "./blogFoodPaperReview.js";
 
 export const blogPosts = [
   ...dailyBlogPosts,
@@ -2516,6 +2517,11 @@ Provide the finished size, quantity, assembly style, proposed GSM, sheet format,
   },
 ];
 
+for (const [id, update] of Object.entries(foodPaperEditorialUpdates)) {
+  const post = blogPosts.find((item) => item.id === id);
+  if (post) Object.assign(post, update);
+}
+
 export var blogCategories = ["All", "Packaging", "Guides", "Design", "Compliance", "Products"];
 
 for (const cmsPost of cmsBlogPosts) {
@@ -2537,3 +2543,4 @@ for (const slug of cmsHiddenBlogPostSlugs) {
   const index = blogPosts.findIndex((post) => post.id === slug);
   if (index >= 0) blogPosts.splice(index, 1);
 }
+

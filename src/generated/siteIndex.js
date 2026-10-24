@@ -616,6 +616,14 @@ export const spanishBlogSeoById = {
   "how-to-compare-paper-quotes-from-different-suppliers": {
     "title": "Cómo comparar cotizaciones de papel: 10 puntos",
     "description": "Compare cotizaciones de papel por especificación, Incoterm, muestras, documentos, embalaje y coste total, no solo por el precio por tonelada."
+  },
+  "pe-coated-vs-greaseproof-vs-silicone-barrier-paper-comparison": {
+    "title": "Papel PE, antigrasa o siliconado: diferencias",
+    "description": "Compare barrera a líquidos, resistencia a grasa y desmoldeo. Sepa qué ensayos y documentos pedir para elegir papel con PE, antigrasa o siliconado."
+  },
+  "food-grade-paper-certifications-guide-fda-eu-gb": {
+    "title": "Papel alimentario: documentos FDA, UE y GB",
+    "description": "Verifique documentos del papel por grado, alimento, condiciones y mercado. Entienda referencias FDA, UE, China, PFAS y FSC sin confundir su alcance."
   }
 };
 

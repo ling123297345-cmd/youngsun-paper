@@ -315,9 +315,9 @@ export const blogSearchIndex = [
   {
     "type": "blog",
     "id": "pe-coated-vs-greaseproof-vs-silicone-barrier-paper-comparison",
-    "name": "PE Coated vs Greaseproof vs Silicone Paper: Which Barrier Paper Should You Choose?",
-    "nameEs": "",
-    "text": "pe coated vs greaseproof vs silicone paper: which barrier paper should you choose?  pe coated, greaseproof, and silicone coated paper each solve different barrier problems. this comparison guide explains the differences and helps you choose the right paper for your food packaging application.  products",
+    "name": "PE-Coated, Greaseproof or Silicone Paper: How to Choose",
+    "nameEs": "Papel con PE, antigrasa o siliconado: cómo elegir",
+    "text": "pe-coated, greaseproof or silicone paper: how to choose papel con pe, antigrasa o siliconado: cómo elegir these paper families solve different problems. compare their intended function, then verify the exact grade, coating and finished application instead of relying on universal temperature or compliance claims. estas familias resuelven necesidades distintas. compare su función y verifique grado, recubrimiento y aplicación final, sin asumir temperaturas ni cumplimiento universales. products",
     "href": "/blog/pe-coated-vs-greaseproof-vs-silicone-barrier-paper-comparison"
   },
   {
@@ -339,9 +339,9 @@ export const blogSearchIndex = [
   {
     "type": "blog",
     "id": "food-grade-paper-certifications-guide-fda-eu-gb",
-    "name": "Food-Grade Paper Certifications Explained: FDA, EU 1935/2004, GB 9685, and PFAS-Free Claims",
-    "nameEs": "",
-    "text": "food-grade paper certifications explained: fda, eu 1935/2004, gb 9685, and pfas-free claims  food-grade paper certifications are complex and market-specific. this guide explains fda, eu, chinese, and pfas-free requirements — and how to ensure your supplier's documentation is valid and complete.  compliance",
+    "name": "Food-Contact Paper Documents: What Buyers Must Verify",
+    "nameEs": "Documentos de papel alimentario: qué debe verificar",
+    "text": "food-contact paper documents: what buyers must verify documentos de papel alimentario: qué debe verificar a test report, a supplier declaration and an fsc certificate answer different questions. this guide explains how to match each document to the supplied paper and intended food-contact use. un ensayo, una declaración del proveedor y un certificado fsc responden preguntas diferentes. relacione cada documento con el papel y el uso alimentario previsto. compliance",
     "href": "/blog/food-grade-paper-certifications-guide-fda-eu-gb"
   },
   {

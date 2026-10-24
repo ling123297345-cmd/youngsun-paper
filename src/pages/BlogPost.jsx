@@ -95,7 +95,7 @@ function BlogArticle({ post }) {
           <span>{post.category}</span>
           <h1>{post.title}</h1>
           <p className="blog-post-deck">{post.excerpt}</p>
-          <p>{post.date} · {post.author}</p>
+          <p>{post.date}{post.dateModified && post.dateModified !== post.date ? ` · ${lang === "es" ? "Actualizado" : "Updated"}: ${post.dateModified}` : ""} · {post.author}</p>
         </header>
         {post.image ? (
           <figure className="blog-post-figure">

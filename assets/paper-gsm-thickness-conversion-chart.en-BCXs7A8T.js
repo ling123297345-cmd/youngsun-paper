@@ -1,0 +1,251 @@
+var e={id:`paper-gsm-thickness-conversion-chart`,title:`Paper GSM to Thickness Conversion: Understanding Paper Weight for International Buyers`,seoTitle:`Paper GSM to Thickness Conversion Chart | YOUNGSUN`,metaDescription:`Complete guide to paper GSM (grams per square meter), thickness (caliper/microns), and basis weight conversion. Includes reference charts for common paper grades from 35 to 600 GSM.`,date:`2026-08-05`,author:`YOUNGSUN PAPER Editorial`,category:`Guides`,excerpt:`GSM, caliper, basis weight, points — paper measurement systems confuse even experienced buyers. This guide explains every term, provides conversion charts, and shows you how to specify weight correctly to avoid costly ordering mistakes.`,content:`# Paper GSM to Thickness Conversion: Understanding Paper Weight for International Buyers
+
+One of the most common sources of confusion in international paper sourcing is weight measurement. A buyer in the United States asks for "80 lb cover." A mill in China quotes in GSM. A European printer specifies microns. And somewhere in between, an order comes out wrong — paper that is too thin, too thick, or outright unusable for the intended application.
+
+This guide covers every major paper weight and thickness measurement system, with practical conversion charts for the grades most commonly sourced internationally: [grey board](/products/grey-board), [duplex board](/products/duplex-board), [kraft paper](/products/kraft-paper), [woodfree paper](/products/woodfree-paper), [folding box board](/products/folding-box-board), and more.
+
+## What Is GSM?
+
+**GSM** stands for **grams per square meter**. It is the weight in grams of a single sheet of paper measuring 1 meter × 1 meter. A paper specified at 200 GSM means that one square meter of that paper weighs 200 grams.
+
+GSM is the most widely used paper weight measurement system internationally and is the standard in China, Europe, and most of Asia.
+
+**Key point:** GSM measures **weight per unit area**, not thickness. Two papers at 200 GSM can have slightly different thicknesses depending on fiber composition, density, and manufacturing process.
+
+## GSM vs Thickness (Caliper): They Are NOT the Same
+
+GSM (weight) and caliper (thickness) are related but not identical. A dense, highly refined paper can be thinner than a bulky, less-refined paper at the same GSM.
+
+**Example:**
+- A 200 GSM [C2S art board](/products/c2s-art-board) (dense, clay-coated) might be approximately 0.20 mm thick.
+- A 200 GSM [grey board](/products/grey-board) (recycled fiber, lower density) might be approximately 0.35 mm thick.
+
+Same weight. Different thickness. Different stiffness. Different performance in your packaging or printing application.
+
+This is why thickness (caliper) should always be confirmed alongside GSM when the physical dimension matters — for rigid boxes that must fit a specific cavity, for book covers that must match a spine width, or for paper that must run through a specific converting machine.
+
+## The Three Most Common Measurement Systems
+
+### 1. GSM (International Standard)
+- Used in: China, Europe, Asia, Middle East, Africa, Latin America
+- Measures: Weight (grams per square meter)
+- Example: "250 GSM grey board"
+
+### 2. Basis Weight (US System)
+- Used in: United States, Canada (partially)
+- Measures: Weight in pounds of a ream (500 sheets) cut to a standard basis size
+- Example: "80 lb cover"
+- **IMPORTANT:** The basis size changes with paper type. 80 lb bond paper is NOT the same weight as 80 lb cover paper, because the basis sheet sizes are different. This is the most confusing aspect for international buyers.
+
+### 3. Microns (μm) and Points (pt)
+- Used in: Europe (microns), US (points, mostly for board)
+- Measures: Actual physical thickness
+- 1 point = 0.001 inch = 25.4 microns
+- Example: "24 pt board" = 0.024 inches thick ≈ 610 microns
+
+## GSM to Thickness Reference Chart (Approximate)
+
+These values are **approximate averages** for common grades. Actual thickness varies by manufacturer, density, fiber composition, and production process. Always confirm exact caliper with your supplier.
+
+### Uncoated Paper & Kraft (Woodfree, Offset, Kraft)
+
+| GSM | Approx. Thickness (microns) | Approx. Thickness (mm) | Common Applications |
+|-----|---------------------------|----------------------|---------------------|
+| 35 | 45–50 | 0.045–0.050 | [Greaseproof paper](/products/greaseproof-paper) for food wrap |
+| 50 | 60–70 | 0.060–0.070 | Lightweight [kraft paper](/products/kraft-paper), wrapping |
+| 60 | 75–85 | 0.075–0.085 | Envelopes, light kraft bags |
+| 70 | 85–95 | 0.085–0.095 | [Woodfree paper](/products/woodfree-paper) for notebooks |
+| 80 | 95–105 | 0.095–0.105 | Standard office paper, [copy paper](/products/copy-paper) |
+| 100 | 115–125 | 0.115–0.125 | Letterhead, book paper, light kraft |
+| 120 | 135–150 | 0.135–0.150 | Book covers, heavier kraft bags |
+| 150 | 165–185 | 0.165–0.185 | Cardstock, folder paper, [color card](/products/color-card-paper) |
+| 200 | 215–240 | 0.215–0.240 | Heavy card, tags, light board |
+| 250 | 265–290 | 0.265–0.290 | Cover stock, heavy tags, [color card](/products/color-card-paper) |
+| 300 | 310–340 | 0.310–0.340 | Board for folders, light packaging |
+| 350 | 360–390 | 0.360–0.390 | Heavy card, [black paper](/products/black-paper) for rigid boxes |
+| 400 | 410–440 | 0.410–0.440 | Heavy board, structural card |
+
+### Coated Paper & Board (C2S, FBB, Duplex)
+
+| GSM | Approx. Thickness (microns) | Approx. Thickness (mm) | Common Applications |
+|-----|---------------------------|----------------------|---------------------|
+| 90 | 70–80 | 0.070–0.080 | [LWC paper](/products/lwc-paper) for magazines |
+| 105 | 80–90 | 0.080–0.090 | Magazine covers, brochures |
+| 128 | 95–105 | 0.095–0.105 | Catalog pages, [C2S art paper](/products/c2s-art-board) |
+| 157 | 115–130 | 0.115–0.130 | Premium brochures, [C2S art paper](/products/c2s-art-board) |
+| 200 | 145–165 | 0.145–0.165 | Light carton board, [duplex board](/products/duplex-board) |
+| 210 | 190–210 | 0.190–0.210 | [FBB](/products/folding-box-board) for retail cartons |
+| 230 | 210–230 | 0.210–0.230 | Standard FBB for cosmetics, pharma cartons |
+| 250 | 230–260 | 0.230–0.260 | Retail carton board, [duplex board](/products/duplex-board) |
+| 270 | 260–290 | 0.260–0.290 | Heavy FBB, [CKB](/products/ckb) for beverage cartons |
+| 300 | 280–320 | 0.280–0.320 | Premium carton board, [CKB](/products/ckb) |
+| 330 | 310–350 | 0.310–0.350 | [Cupstock board](/products/cup-paper) for paper cups |
+| 350 | 330–370 | 0.330–0.370 | Heavy-duty cartons, display board |
+| 400 | 370–410 | 0.370–0.410 | Display stands, heavy packaging |
+
+### Structural Board (Grey Board)
+
+For structural board, thickness in millimeters is the primary specification, and GSM is secondary. Grey board is typically ordered by thickness (mm), not by GSM.
+
+| Thickness (mm) | Approx. GSM | Common Applications |
+|---------------|-------------|---------------------|
+| 0.5 | 350–400 | Light backing board, calendar backs |
+| 1.0 | 700–800 | Standard rigid box board, folders |
+| 1.5 | 1050–1200 | Premium rigid boxes, book covers |
+| 2.0 | 1400–1600 | Heavy rigid boxes, puzzle boards |
+| 2.5 | 1750–2000 | Extra-heavy boxes, display stands |
+| 3.0 | 2100–2400 | Industrial board, structural panels |
+
+## US Basis Weight to GSM Conversion
+
+This chart helps US-based buyers communicate with international suppliers. **Always confirm the paper type** — 100 lb text and 100 lb cover are completely different weights.
+
+### Bond / Writing Paper (Basis: 17″ × 22″, 500 sheets)
+
+| US Basis Weight (lb) | Approx. GSM |
+|----------------------|-------------|
+| 20 lb bond | 75 GSM |
+| 24 lb bond | 90 GSM |
+| 28 lb bond | 105 GSM |
+| 32 lb bond | 120 GSM |
+
+### Text / Book Paper (Basis: 25″ × 38″, 500 sheets)
+
+| US Basis Weight (lb) | Approx. GSM |
+|----------------------|-------------|
+| 60 lb text | 89 GSM |
+| 70 lb text | 104 GSM |
+| 80 lb text | 118 GSM |
+| 100 lb text | 148 GSM |
+
+### Cover Paper (Basis: 20″ × 26″, 500 sheets)
+
+| US Basis Weight (lb) | Approx. GSM |
+|----------------------|-------------|
+| 50 lb cover | 135 GSM |
+| 65 lb cover | 176 GSM |
+| 80 lb cover | 216 GSM |
+| 100 lb cover | 270 GSM |
+| 120 lb cover | 325 GSM |
+
+## How to Specify Weight and Thickness Correctly
+
+When requesting a quotation from an international supplier, specify both weight (GSM) and thickness (mm or microns) when the physical dimension matters. A complete specification looks like:
+
+**Good specification:**
+> "200 GSM C2S art paper, approximate caliper 160–180 microns, sheets 787 × 1092 mm."
+
+This gives the supplier:
+1. The target GSM (weight)
+2. The expected thickness range (so the supplier can confirm their grade matches)
+3. The format (sheets, with dimensions)
+
+**Incomplete specification (risk of error):**
+> "Thick paper for brochure cover, around 200 gsm."
+
+This leaves too much room for interpretation. "Around 200 GSM" could mean 180 GSM or 230 GSM. No format is specified. No thickness expectation is given.
+
+## Common Measurement Mistakes That Lead to Costly Errors
+
+### Mistake 1: Assuming GSM = Thickness
+
+As explained above, different paper grades have different densities. A 250 GSM grey board is thicker than a 250 GSM C2S art board. If you ordered by GSM alone expecting a specific thickness, you may receive material that is too thin or too thick for your die-cutting, box-making, or printing equipment.
+
+**Fix:** Always specify and confirm caliper (mm or microns) alongside GSM when thickness matters.
+
+### Mistake 2: Confusing US Basis Weights Across Paper Types
+
+"80 lb paper" means completely different things depending on whether the paper type is bond, text, or cover. 80 lb bond ≈ 120 GSM. 80 lb text ≈ 118 GSM. 80 lb cover ≈ 216 GSM — nearly double.
+
+**Fix:** When communication with an international supplier, always convert to GSM. Don't use US basis weight terms unless the supplier confirms they understand the basis size.
+
+### Mistake 3: Not Accounting for Coating Weight
+
+A coated paper weighs more than the same base paper uncoated. The coating adds 5–20 GSM depending on coating type and thickness. If you specify a coated paper by GSM, you are specifying the total weight (base paper + coating).
+
+**Fix:** This is usually handled correctly because suppliers quote the total GSM. But it's worth being aware of if you're comparing coated and uncoated alternatives.
+
+### Mistake 4: Ignoring Moisture Content
+
+Paper absorbs moisture from the air. The same paper can vary in weight by 3–8% depending on ambient humidity — more for uncoated grades. This can affect both weight-based pricing and actual performance.
+
+**Fix:** Paper is typically quoted at standard conditioned weight (50% RH, 23°C). Confirm this with your supplier if exact weight is critical to your application.
+
+## How to Convert Between Systems (Quick Reference)
+
+### Formula: GSM → Approx. Microns
+
+\`\`\`
+Microns ≈ GSM / Density × 1000
+
+Where Density is in g/cm³:
+- Coated papers (C2S, FBB): ~1.1–1.3 g/cm³
+- Uncoated papers (woodfree, kraft): ~0.7–0.9 g/cm³
+- Recycled board (grey board, duplex): ~0.6–0.8 g/cm³
+\`\`\`
+
+**Example calculation for 250 GSM C2S art paper:**
+\`\`\`
+Microns ≈ 250 / 1.2 × 1000 ≈ 208 microns ≈ 0.21 mm
+\`\`\`
+
+### Formula: US Cover (lb) → GSM
+
+\`\`\`
+GSM ≈ US Cover Weight × 2.704
+
+Example: 80 lb cover × 2.704 ≈ 216 GSM
+\`\`\`
+
+### Formula: Microns → Points
+
+\`\`\`
+Points = Microns / 25.4
+
+Example: 500 microns / 25.4 ≈ 19.7 pt
+\`\`\`
+
+## Why Accurate Weight Specification Matters for Container Shipping
+
+Paper is heavy. A 40-foot high-cube container typically holds approximately 25 metric tons. If you order "200 GSM paper" and the supplier delivers 210 GSM (a 5% deviation that may be within tolerance for the grade), that's an extra 1.25 tons of paper — more than you ordered and more than you paid for in freight.
+
+Conversely, if the paper is 5% lighter than specified, you're paying for container space you're not fully utilizing.
+
+For buyers who ship in container volumes, confirming weight tolerance with the supplier is an important cost-control measure. See our [guide to calculating paper weight for container shipping](/blog/how-to-calculate-paper-weight-container-shipping) for detailed calculations.
+
+## FAQ
+
+### What does GSM stand for in paper?
+
+GSM stands for grams per square meter — the weight in grams of one square meter of paper.
+
+### Is 200 GSM paper thick?
+
+200 GSM is moderate thickness — approximately 0.15–0.25 mm depending on the paper type. It is suitable for brochure covers, light card, and tags.
+
+### How do I convert US paper weight to GSM?
+
+For cover paper: GSM ≈ US cover weight × 2.704. For bond paper: GSM ≈ US bond weight × 3.76. For text paper: GSM ≈ US text weight × 1.48. Always confirm the paper type before converting.
+
+### What GSM is best for business cards?
+
+250–350 GSM is the typical range for business cards. 300 GSM is the most common choice.
+
+### Does higher GSM mean thicker paper?
+
+Generally yes, but two papers at the same GSM from different grades (e.g., coated vs uncoated) can have different thicknesses. GSM measures weight, not thickness.
+
+### What is the thickest paper GSM?
+
+Standard paper grades go up to about 400 GSM. Board grades (grey board, etc.) are specified by thickness in mm rather than GSM and can reach 3.0 mm or more.
+
+## Suggested Internal Links
+
+- [Grey Board — structural board (1.0–3.0 mm)](/products/grey-board)
+- [Duplex Board — coated one-side carton board](/products/duplex-board)
+- [Folding Box Board — premium retail carton board](/products/folding-box-board)
+- [C2S Art Board — double-coated premium paperboard](/products/c2s-art-board)
+- [Woodfree Paper — uncoated offset printing paper](/products/woodfree-paper)
+- [Kraft Paper — natural & bleached packaging paper](/products/kraft-paper)
+- [All Products & Categories](/products)
+- [How to Calculate Paper Weight for Container Shipping](/blog/how-to-calculate-paper-weight-container-shipping)`,image:`/images/products/culture-paper/woodfree-paper-main.webp`,tags:[`GSM`,`paper weight`,`thickness chart`,`caliper`,`paper conversion`,`basis weight`]};export{e as default};

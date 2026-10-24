@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { blogPosts } from "../blogData.js";
+import { lazy } from "react";
+import { blogPosts, articleLoaders } from "../generated/blogCatalog.js";
 import { hasSpanishBlogPost, localizeBlogPost } from "../blogLocale.js";
 import {
   extractBlogFaqs,
@@ -51,11 +52,27 @@ function BlogBody({ blocks }) {
   });
 }
 
+const articleComponents = new Map();
+
 export default function BlogPost() {
   const { id } = useParams();
   const { lang } = useLang();
+  const key = `${id}:${lang}`;
+  const loader = articleLoaders[key];
+  if (!loader) return <BlogArticle post={null} />;
+  if (!articleComponents.has(key)) {
+    articleComponents.set(key, lazy(() => loader().then(({ default: post }) => ({
+      default: () => <BlogArticle post={post} />,
+    }))));
+  }
+  const Article = articleComponents.get(key);
+  return <Article />;
+}
+
+function BlogArticle({ post }) {
+  const { id } = useParams();
+  const { lang } = useLang();
   const sourcePost = blogPosts.find((item) => item.id === id);
-  const post = localizeBlogPost(sourcePost, lang);
   if (!post || (lang === "es" && !hasSpanishBlogPost(sourcePost))) {
     return <section className="section" style={{ paddingTop: 120 }}><div className="container" style={{ textAlign: "center" }}><h1>{lang === "es" ? "Artículo no encontrado" : "Article Not Found"}</h1><Link to="/blog" className="btn btn-primary" style={{ marginTop: 24 }}>{lang === "es" ? "Volver al blog" : "Back to Blog"}</Link></div></section>;
   }

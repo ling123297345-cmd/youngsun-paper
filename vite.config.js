@@ -9,9 +9,14 @@ export default defineConfig({
     assetsDir: "assets",
     sourcemap: false,
     minify: true,
-    rollupOptions: {
+    rolldownOptions: {
       output: {
-        manualChunks: undefined,
+        codeSplitting: {
+          groups: [{
+            name: "react-runtime",
+            test: /node_modules[\\/](react|react-dom|scheduler)[\\/]/,
+          }],
+        },
       },
     },
   },

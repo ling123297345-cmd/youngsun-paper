@@ -1,5 +1,5 @@
 export function hasSpanishBlogPost(post) {
-  return Boolean(post?.titleEs && post?.contentEs && post?.excerptEs);
+  return Boolean(post?.hasSpanish || (post?.titleEs && post?.contentEs && post?.excerptEs));
 }
 
 export function localizeBlogPost(post, lang = "en") {

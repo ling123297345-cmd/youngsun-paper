@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { blogPosts } from "../blogData.js";
+import { blogPosts } from "../generated/blogCatalog.js";
 import { hasSpanishBlogPost, localizeBlogPost } from "../blogLocale.js";
 import { PageMeta, BreadcrumbSchema } from "../SEO.jsx";
 import { useLang } from "../i18n.jsx";

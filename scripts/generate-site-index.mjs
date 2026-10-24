@@ -11,6 +11,7 @@ import { productEs } from "../src/productEs.js";
 import { industryChannels } from "../src/industryApplications.js";
 import { industryDetailContent } from "../src/industryDetailContent.js";
 import { blogPosts } from "../src/blogData.js";
+import { hasSpanishBlogPost, localizeBlogPost } from "../src/blogLocale.js";
 
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const outputPath = resolve(projectRoot, "src/generated/siteIndex.js");
@@ -142,3 +143,23 @@ await writeFile(
   "utf8",
 );
 console.log(`Generated lightweight site index with ${productSearchIndex.length} products.`);
+
+const articleDirectory = resolve(projectRoot, "src/generated/blogArticles");
+await mkdir(articleDirectory, { recursive: true });
+const catalog = blogPosts.map(({ content, contentEs, ...metadata }) => ({
+  ...metadata,
+  hasSpanish: Boolean(metadata.titleEs && contentEs && metadata.excerptEs),
+}));
+const articleLoaders = [];
+for (const post of blogPosts) {
+  if (!/^[a-z0-9-]+$/.test(post.id)) throw new Error(`Invalid blog slug: ${post.id}`);
+  for (const lang of ["en", "es"]) {
+    if (lang === "es" && !hasSpanishBlogPost(post)) continue;
+    const localized = localizeBlogPost(post, lang);
+    const article = Object.fromEntries(Object.entries(localized).filter(([key]) => !key.endsWith("Es")));
+    const filename = `${post.id}.${lang}.js`;
+    await writeFile(resolve(articleDirectory, filename), `export default ${JSON.stringify(article)};\n`, "utf8");
+    articleLoaders.push(`${JSON.stringify(`${post.id}:${lang}`)}: () => import(${JSON.stringify(`./blogArticles/${filename}`)})`);
+  }
+}
+await writeFile(resolve(projectRoot, "src/generated/blogCatalog.js"), `// Generated blog summaries; full text is loaded per article and language.\nexport const blogPosts = ${JSON.stringify(catalog)};\nexport const articleLoaders = {${articleLoaders.join(",\n")}};\n`, "utf8");

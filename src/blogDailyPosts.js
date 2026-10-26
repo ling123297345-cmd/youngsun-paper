@@ -1,6 +1,8 @@
 import { ecommerceArticle20261024 } from "./blogEcommerce20261024.js";
+import { secondaryPackagingArticle20261025 } from "./blogSecondaryPackaging20261025.js";
 
 export const dailyBlogPosts = [
+  secondaryPackagingArticle20261025,
   ecommerceArticle20261024,
   {
     id: "eu-ppwr-epr-one-tonne-authorised-representative-update",

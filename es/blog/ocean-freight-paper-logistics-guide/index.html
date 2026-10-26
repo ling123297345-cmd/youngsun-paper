@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Flete marítimo de papel: lista para compradores | YOUNGSUN</title>
+    <meta name="description" content="Compare fletes de papel por peso, plan de carga, gastos en destino, fechas y documentos. Evite decidir solo por la tarifa marítima anunciada." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Flete marítimo de papel: lista para compradores | YOUNGSUN" />
+    <meta property="og:description" content="Compare fletes de papel por peso, plan de carga, gastos en destino, fechas y documentos. Evite decidir solo por la tarifa marítima anunciada." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/ocean-freight-paper-logistics-guide-cover-v2.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Flete marítimo de papel: lista para compradores | YOUNGSUN" />
+    <meta name="twitter:description" content="Compare fletes de papel por peso, plan de carga, gastos en destino, fechas y documentos. Evite decidir solo por la tarifa marítima anunciada." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/ocean-freight-paper-logistics-guide-cover-v2.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-BlE7fK9A.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Bh1tDfsg.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-CnQ8cts2.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-B2xxv0dJ.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/ocean-freight-paper-logistics-guide/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/ocean-freight-paper-logistics-guide/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/#article","headline":"Flete marítimo de papel: ¿qué debe incluir su cotización?","description":"Compare fletes de papel por peso, plan de carga, gastos en destino, fechas y documentos. Evite decidir solo por la tarifa marítima anunciada.","image":"https://youngsunpaper.com/images/blog-articles/ocean-freight-paper-logistics-guide-cover-v2.webp","datePublished":"2026-07-24","dateModified":"2026-10-25","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Guías de compra","keywords":["ocean freight","shipping guide","logistics","container loading","FOB","CIF","import guide"],"inLanguage":"es","about":[{"@type":"Thing","name":"ocean freight"},{"@type":"Thing","name":"shipping guide"},{"@type":"Thing","name":"logistics"},{"@type":"Thing","name":"container loading"},{"@type":"Thing","name":"FOB"},{"@type":"Thing","name":"CIF"},{"@type":"Thing","name":"import guide"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Conviene siempre un contenedor high-cube?","acceptedAnswer":{"@type":"Answer","text":"No. Depende del peso permitido, volumen útil, formato de bultos y gastos de la ruta."}},{"@type":"Question","name":"¿El plazo de un envío anterior garantiza el siguiente?","acceptedAnswer":{"@type":"Answer","text":"No. Solicite el itinerario vigente y contemple despacho y entrega interior."}},{"@type":"Question","name":"¿Qué envío para cotizar correctamente?","acceptedAnswer":{"@type":"Answer","text":"Grado, cantidad, dimensiones, embalaje, destino, alcance y fecha requerida. Contacte al equipo para definir primero el papel. Consulte también la guía de reducción de costos de empaque."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Flete marítimo de papel: ¿qué debe incluir su cotización?","item":"https://youngsunpaper.com/es/blog/ocean-freight-paper-logistics-guide/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Guías de compra · 2026-07-24</p><h1>Flete marítimo de papel: ¿qué debe incluir su cotización?</h1><p>Una tarifa baja puede ocultar gastos en destino o un plan de carga inadecuado. Revise el embarque completo antes de reservar.</p><figure><img src="/images/blog-articles/ocean-freight-paper-logistics-guide-cover-v2.webp" alt="Flete marítimo de papel: ¿qué debe incluir su cotización?" width="1280" height="800" loading="eager"></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#prepare-los-datos-de-la-carga">Prepare los datos de la carga</a></li><li><a href="#solicite-una-comparacion-completa">Solicite una comparación completa</a></li><li><a href="#planifique-la-recepcion-no-solo-la-llegada-al-puerto">Planifique la recepción, no solo la llegada al puerto</a></li><li><a href="#aclare-el-incoterm-y-la-documentacion">Aclare el Incoterm y la documentación</a></li><li><a href="#proteja-y-documente-la-mercancia">Proteja y documente la mercancía</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Flete marítimo de papel: ¿qué debe incluir su cotización? article content"><p>Para importar <a href="/es/products/kraft-paper">papel kraft</a> o <a href="/es/products/grey-board">cartón gris</a>, no compare únicamente el precio del contenedor. Compare la misma mercancía, alcance de entrega y condiciones de carga. Esta guía no sustituye una cotización vigente.</p><h2 id="prepare-los-datos-de-la-carga">Prepare los datos de la carga</h2><p>Indique medidas de hojas o bobinas, peso neto, dimensiones y peso bruto de cada bulto, restricciones de apilado y equipos disponibles para descargar. Solicite confirmar los límites del contenedor y del transporte terrestre. Un high-cube no siempre es la opción más eficiente para papel denso.</p><p>Distinga peso neto del papel, embalaje y tara del contenedor. La <a href="https://www.imo.org/en/OurWork/Safety/Pages/Verification-of-the-gross-mass.aspx">OMI explica la responsabilidad del cargador sobre la masa bruta verificada</a> bajo los requisitos SOLAS aplicables.</p><h2 id="solicite-una-comparacion-completa">Solicite una comparación completa</h2><table><thead><tr><th scope="col">Concepto</th><th scope="col">Confirmación necesaria</th></tr></thead><tbody><tr><td>Ruta</td><td>Puertos, transbordos y tramos terrestres</td></tr><tr><td>Carga</td><td>Equipo, distribución y límites de peso</td></tr><tr><td>Gastos</td><td>Origen, flete, destino, despacho y entrega incluidos o excluidos</td></tr><tr><td>Vigencia</td><td>Fecha límite, moneda y recargos posibles</td></tr><tr><td>Plazos libres</td><td>Condiciones de almacenaje y uso del equipo</td></tr><tr><td>Seguro</td><td>Cobertura, exclusiones, deducible y reclamación</td></tr></tbody></table><p>Para compradores latinoamericanos, los gastos locales y la entrega interior pueden cambiar sustancialmente la comparación. Pida a su agente aduanal revisar el alcance. Compare FCL y LCL incluyendo manipulación, inventario y capital inmovilizado, sin asumir un ahorro universal.</p><h2 id="planifique-la-recepcion-no-solo-la-llegada-al-puerto">Planifique la recepción, no solo la llegada al puerto</h2><p>Separe disponibilidad de mercancía, reserva, cierres de terminal, salida estimada, llegada estimada y entrega al almacén. Los transbordos, aduana y transporte interior pueden modificar la fecha final. Confirme el servicio real al reservar.</p><h2 id="aclare-el-incoterm-y-la-documentacion">Aclare el Incoterm y la documentación</h2><p>Escriba regla, puerto o lugar y versión acordada. En CIF, pagar el transporte al destino no equivale a conservar el riesgo hasta la llegada: la <a href="https://academy.iccwbo.org/incoterms/article/incoterms-2020-cip-or-cif/">CCI explica ambos puntos en Incoterms 2020</a>. Revise la regla elegida con su operador logístico.</p><p>Coordine factura, lista de empaque y documento de transporte con el importador. Los documentos de origen, certificación y ensayos dependen del pedido y mercado; no todos son obligatorios para cualquier embarque. Confirme también el procedimiento de liberación documental.</p><h2 id="proteja-y-documente-la-mercancia">Proteja y documente la mercancía</h2><p>Acuerde inspección del contenedor, embalaje, protección frente a humedad y sujeción según la carga. No aplique una cantidad fija de desecante a todos los envíos. Fotografíe la carga y el estado de recepción; ante daños, siga el procedimiento de reclamación acordado.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="conviene-siempre-un-contenedor-high-cube">¿Conviene siempre un contenedor high-cube?</h3><p>No. Depende del peso permitido, volumen útil, formato de bultos y gastos de la ruta.</p><h3 id="el-plazo-de-un-envio-anterior-garantiza-el-siguiente">¿El plazo de un envío anterior garantiza el siguiente?</h3><p>No. Solicite el itinerario vigente y contemple despacho y entrega interior.</p><h3 id="que-envio-para-cotizar-correctamente">¿Qué envío para cotizar correctamente?</h3><p>Grado, cantidad, dimensiones, embalaje, destino, alcance y fecha requerida. <a href="/es/contact">Contacte al equipo</a> para definir primero el papel.</p><p>Consulte también la <a href="/es/blog/reduce-packaging-costs-without-sacrificing-quality">guía de reducción de costos de empaque</a>.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/how-to-compare-paper-quotes-from-different-suppliers">La cotización más barata puede salir cara: 10 puntos para comparar proveedores de papel</a> - Dos cotizaciones solo son comparables cuando cubren el mismo producto, formato, servicio y riesgo. Esta lista ayuda a compradores internacionales a detectar diferencias antes de emitir el pedido.</li><li><a href="/es/blog/secondary-paper-packaging-base-paper-finished-wrap-specification">¿Cambiar la envoltura exterior por papel? No mezcle estas dos especificaciones</a> - La envoltura exterior y el envase sellado que contiene cumplen funciones distintas. Una novedad del sector pone de relieve un error de compra: pedir papel base suponiendo que ya ofrece todas las prestaciones del embalaje terminado.</li><li><a href="/es/blog/right-sized-ecommerce-packaging-paper-specification">Una caja de envío más ajustada ahorra papel: ¿qué pasa con la protección?</a> - El ajuste de tamaño gana espacio en el packaging e-commerce. Para compras, la pregunta es cómo reducir material conservando la protección durante la entrega, y no solo dónde conseguir una caja menor.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

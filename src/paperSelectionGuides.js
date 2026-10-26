@@ -41,6 +41,18 @@ export const fancySelectionGuide = {
 };
 
 export const productSelectionGuides = {
+  "ckb": {
+    en: { title: "Choose CKB by print face, reverse and carton conditions", intro: "The white coated face and kraft reverse are visible material features; cold-chain and food-contact performance must be confirmed for the finished specification.", items: [
+      { title: "Print on the white face", text: "Approve the exact grade with your inks, varnish and artwork. Compare color, rub and drying after the planned finishing process.", label: "Compare FBB for printed cartons", href: "/products/folding-box-board" },
+      { title: "Convert the kraft-backed sheet", text: "Trial crease direction, folding, glue bond and carton rigidity on the intended equipment. Specify whether the reverse remains visible.", label: "Compare duplex board", href: "/products/duplex-board" },
+      { title: "Match the destination environment", text: "For chilled or frozen distribution, define humidity, temperature, food-contact route and any barrier layer. Request documents and a finished-pack test for the exact grade.", label: "Request a CKB sample", href: "/contact?intent=samples&product=ckb" },
+    ] },
+    es: { title: "Elija CKB por impresión, reverso y condiciones de uso", intro: "La cara blanca estucada y el reverso kraft son características visibles. La cadena de frío y el contacto alimentario se verifican para la especificación final.", items: [
+      { title: "Imprima sobre la cara blanca", text: "Apruebe tinta, barniz y arte final en el grado exacto. Compare color, roce y secado después del acabado previsto.", label: "Comparar FBB para estuches impresos", href: "/products/folding-box-board" },
+      { title: "Convierta el cartón con reverso kraft", text: "Pruebe dirección de hendido, plegado, pegado y rigidez en el equipo previsto. Indique si el reverso quedará visible.", label: "Comparar cartón dúplex", href: "/products/duplex-board" },
+      { title: "Valide el entorno de distribución", text: "Para refrigeración o congelación, defina humedad, temperatura, tipo de contacto alimentario y barrera necesaria. Solicite documentos y una prueba del envase terminado.", label: "Solicitar muestra de CKB", href: "/contact?intent=samples&product=ckb" },
+    ] },
+  },
   "mg-paper": {
     en: { title: "Specify the MG surface and the packaging function separately", intro: "MG describes the machine-glazed finish. It does not by itself establish grease resistance, heat sealing or food-contact suitability.", items: [
       { title: "Print and bonding surfaces", text: "Identify the printable face and the side used for gluing, coating or lamination. Trial ink drying, surface rub and adhesive bonding on the exact grade.", label: "Printing and packaging applications", href: "/industries/packaging-printing" },

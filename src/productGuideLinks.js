@@ -74,6 +74,7 @@ const guides = {
 };
 
 const productGuideMap = {
+  "ckb": ["how-to-compare-paper-quotes-from-different-suppliers"],
   "grey-board": ["custom-paper-sizes-slitting-minimize-waste-guide", "how-to-compare-paper-quotes-from-different-suppliers"],
   "folding-box-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],
   "c2s-art-board": ["custom-paper-sizes-slitting-minimize-waste-guide"],

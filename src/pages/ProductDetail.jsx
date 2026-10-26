@@ -66,8 +66,8 @@ export default function ProductDetail() {
   const seoTitle = p.seoTitle || `${productName} Supplier in China`;
   const seoDesc = p.metaDescription || `Compare ${productName.toLowerCase()} specifications, applications, available formats and export options from YOUNGSUN PAPER. Request samples or a quotation.`;
   const mainImageAlt = isEs
-    ? `${productName} suministrado por YOUNGSUN PAPER para aplicaciones de embalaje, impresión y conversión`
-    : `${productName} supplied by YOUNGSUN PAPER for packaging, printing and converting applications`;
+    ? (p.imageAltEs || `${productName} suministrado por YOUNGSUN PAPER para aplicaciones de embalaje, impresión y conversión`)
+    : (p.imageAlt || `${productName} supplied by YOUNGSUN PAPER for packaging, printing and converting applications`);
 
   return (
     <section className="section product-detail-page" style={{ paddingTop: 120, background: "linear-gradient(180deg, #0a1f13 0%, #143622 100%)" }}>
@@ -99,9 +99,10 @@ export default function ProductDetail() {
         <div className="product-detail-hero" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 48, marginTop: 24, alignItems: "start" }}>
           <div className="product-detail-image-wrap" style={{ borderRadius: 12, overflow: "hidden", border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.02)", position: "sticky", top: 100 }}>
             <img src={p.image} alt={mainImageAlt} style={{ width: "100%", height: "auto", display: "block" }} />
+            {p.imageCaption && <p className="product-material-image-note">{isEs ? (p.imageCaptionEs || p.imageCaption) : p.imageCaption}</p>}
           </div>
           <div className="product-detail-info">
-            <span className="section-label" style={{ color: "var(--lime)" }}>{p.category.replace(/-/g, " ").toUpperCase()}</span>
+            <span className="section-label" style={{ color: "var(--lime)" }}>{(category ? t(category.title) : p.category.replace(/-/g, " ")).toUpperCase()}</span>
             <h1 style={{ color: "var(--white)", marginBottom: 12, fontSize: "clamp(28px, 4vw, 40px)", lineHeight: 1.15 }}>{productName}</h1>
             <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 16, lineHeight: 1.7, marginBottom: 24 }}>{tagline}</p>
 
@@ -317,6 +318,7 @@ export default function ProductDetail() {
             images={gallery}
             productName={productName}
             isEs={isEs}
+            label={id === "mg-paper" ? (isEs ? "DETALLE DEL MATERIAL" : "MATERIAL DETAIL") : undefined}
             title={isEs ? (p.galleryTitleEs || p.galleryTitle) : p.galleryTitle}
             intro={isEs ? (p.galleryIntroEs || p.galleryIntro) : p.galleryIntro}
           />
@@ -553,7 +555,7 @@ function OptionsGallery({ items, isEs }) {
   );
 }
 
-function Gallery({ images, productName, title, intro, isEs }) {
+function Gallery({ images, productName, title, intro, isEs, label }) {
   const [lightbox, setLightbox] = useState(null);
   const isSingleImage = images.length === 1;
 
@@ -575,17 +577,17 @@ function Gallery({ images, productName, title, intro, isEs }) {
             className={`gallery-item${isSingleImage ? " product-gallery-feature-media" : ""}`}
             role="button"
             tabIndex={0}
-            aria-label={`View ${img.alt || productName + " photo " + (i + 1)} fullscreen`}
+            aria-label={isEs ? `Ampliar ${img.altEs || img.alt || productName}` : `View ${img.alt || productName} fullscreen`}
             onClick={() => setLightbox(i)}
             onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setLightbox(i); } }}
             style={{ cursor: "pointer", borderRadius: 8, overflow: "hidden", border: "1px solid rgba(255,255,255,0.1)", aspectRatio: "4/3" }}
           >
-            <img src={img.src} alt={img.alt || `${productName} photo ${i+1}`} loading="lazy" style={{ width: "100%", height: "100%", objectFit: img.fit || "cover", background: img.fit === "contain" ? "#ede9e2" : "transparent" }} />
+            <img src={img.src} alt={isEs ? (img.altEs || img.alt || `${productName} foto ${i+1}`) : (img.alt || `${productName} photo ${i+1}`)} loading="lazy" style={{ width: "100%", height: "100%", objectFit: img.fit || "cover", background: img.fit === "contain" ? "#ede9e2" : "transparent" }} />
           </div>
         ))}
         {isSingleImage && (
           <div className="product-gallery-feature-copy">
-            <span>{isEs ? "VISTA DE APLICACIÓN" : "APPLICATION VIEW"}</span>
+            <span>{label || (isEs ? "VISTA DE APLICACIÓN" : "APPLICATION VIEW")}</span>
             <h3>{title || `${isEs ? "Galería de productos" : "Product Gallery"} — ${productName}`}</h3>
             {intro && <p>{intro}</p>}
             <button type="button" onClick={() => setLightbox(0)}>{isEs ? "Ver imagen completa" : "View full image"} <span aria-hidden="true">↗</span></button>
@@ -598,13 +600,13 @@ function Gallery({ images, productName, title, intro, isEs }) {
           onKeyDown={handleKeyDown}
           tabIndex={0}
           role="dialog"
-          aria-label="Image lightbox"
+          aria-label={isEs ? "Imagen ampliada" : "Image lightbox"}
           style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.94)", zIndex: 9999, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", outline: "none" }}
         >
-          <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p - 1 + images.length) % images.length); }} aria-label="Previous image" style={{ position: "absolute", left: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1, padding: "8px 12px" }}>‹</button>
-          <img src={images[lightbox].src} alt={images[lightbox].alt || `${productName} photo ${lightbox+1}`} style={{ maxWidth: "90vw", maxHeight: "90vh", objectFit: "contain" }} />
-          <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p + 1) % images.length); }} aria-label="Next image" style={{ position: "absolute", right: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1, padding: "8px 12px" }}>›</button>
-          <button onClick={() => setLightbox(null)} aria-label="Close lightbox" style={{ position: "absolute", top: 24, right: 24, background: "rgba(255,255,255,0.1)", border: "none", color: "#fff", fontSize: 28, cursor: "pointer", zIndex: 1, width: 44, height: 44, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>✕</button>
+          {!isSingleImage && <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p - 1 + images.length) % images.length); }} aria-label={isEs ? "Imagen anterior" : "Previous image"} style={{ position: "absolute", left: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1, padding: "8px 12px" }}>‹</button>}
+          <img src={images[lightbox].src} alt={isEs ? (images[lightbox].altEs || images[lightbox].alt || productName) : (images[lightbox].alt || `${productName} photo ${lightbox+1}`)} style={{ maxWidth: "90vw", maxHeight: "90vh", objectFit: "contain" }} />
+          {!isSingleImage && <button onClick={(e) => { e.stopPropagation(); setLightbox((p) => (p + 1) % images.length); }} aria-label={isEs ? "Imagen siguiente" : "Next image"} style={{ position: "absolute", right: 24, background: "none", border: "none", color: "#fff", fontSize: 48, cursor: "pointer", zIndex: 1, padding: "8px 12px" }}>›</button>}
+          <button onClick={() => setLightbox(null)} aria-label={isEs ? "Cerrar imagen" : "Close lightbox"} style={{ position: "absolute", top: 24, right: 24, background: "rgba(255,255,255,0.1)", border: "none", color: "#fff", fontSize: 28, cursor: "pointer", zIndex: 1, width: 44, height: 44, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>✕</button>
           <span style={{ position: "absolute", bottom: 24, color: "rgba(255,255,255,0.5)", fontSize: 13 }}>{lightbox + 1} / {images.length}</span>
         </div>
       )}

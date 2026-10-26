@@ -1,7 +1,9 @@
 import { ecommerceArticle20261024 } from "./blogEcommerce20261024.js";
 import { secondaryPackagingArticle20261025 } from "./blogSecondaryPackaging20261025.js";
+import { labelRecyclingArticle20261026 } from "./blogLabelRecycling20261026.js";
 
 export const dailyBlogPosts = [
+  labelRecyclingArticle20261026,
   secondaryPackagingArticle20261025,
   ecommerceArticle20261024,
   {

@@ -9,7 +9,8 @@ const DEFAULT_DEDUPE_WINDOW = 1200;
 export function isAnalyticsEnabled() {
   return (
     typeof window !== "undefined" &&
-    PRODUCTION_HOSTS.has(window.location.hostname.toLowerCase())
+    PRODUCTION_HOSTS.has(window.location.hostname.toLowerCase()) &&
+    !/^\/(?:es\/)?admin(?:\/|$)/.test(window.location.pathname)
   );
 }
 

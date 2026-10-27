@@ -171,6 +171,7 @@
       (function (w, d) {
         var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
         if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
 
         w.clarity = w.clarity || function () {
           (w.clarity.q = w.clarity.q || []).push(arguments);

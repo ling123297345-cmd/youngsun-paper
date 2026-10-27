@@ -45,6 +45,10 @@ Deno.serve(async (request) => {
     .eq("id", user.id)
     .maybeSingle();
   if (!cmsUser?.is_active) return new Response(JSON.stringify({ error: "CMS account is not active" }), { status: 403, headers });
+  const { data: hasCmsAccess, error: accessError } = await supabase.rpc("is_cms_user");
+  if (accessError || !hasCmsAccess) {
+    return new Response(JSON.stringify({ error: "Complete two-factor verification before publishing" }), { status: 403, headers });
+  }
 
   const body = await request.json().catch(() => ({}));
   const contentType = body?.contentType === "blog" ? "blog" : "product";

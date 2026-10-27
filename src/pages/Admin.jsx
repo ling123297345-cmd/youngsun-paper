@@ -33,6 +33,7 @@ import {
   uploadCmsImage,
 } from "../lib/supabase.js";
 import "../admin.css";
+import { MfaGate, MfaSettings } from "../AdminMfa.jsx";
 
 const OWNER_EMAIL = "ling123297345@gmail.com";
 
@@ -737,6 +738,7 @@ function AccountPanel({ profile, session }) {
         <div><strong>{profile.display_name || "YOUNGSUN 用户"}</strong><span>{session.user.email}</span></div>
         <dl><div><dt>角色</dt><dd>{profile.role === "admin" ? "管理员" : "编辑"}</dd></div><div><dt>状态</dt><dd>已启用</dd></div></dl>
       </div>
+      <MfaSettings />
     </section>
   );
 }
@@ -795,7 +797,8 @@ export default function Admin() {
     });
     const { data: listener } = supabase?.auth.onAuthStateChange((_event, nextSession) => {
       setSession(nextSession);
-      loadProfile(nextSession);
+      // Avoid awaiting Supabase requests inside its auth event lock.
+      window.setTimeout(() => loadProfile(nextSession), 0);
     }) || { data: null };
     return () => {
       document.documentElement.classList.remove("admin-active");
@@ -831,7 +834,7 @@ export default function Admin() {
   };
 
   return (
-    <div className="admin-shell">
+    <MfaGate session={session}><div className="admin-shell">
       <aside className={`admin-sidebar${mobileNav ? " open" : ""}`}>
         <div className="admin-sidebar-brand"><img src="/images/logo-header.webp" alt="YOUNGSUN PAPER" /><span>内容管理后台</span></div>
         <nav>{navItems.map(({ id, label, icon: Icon }) => <button type="button" key={id} className={section === id ? "active" : ""} onClick={() => navigate(id)}><Icon size={19} />{label}</button>)}</nav>
@@ -846,6 +849,6 @@ export default function Admin() {
         {section === "blog" ? <BlogManager session={session} profile={profile} initialAction={nextAction} onActionHandled={() => setNextAction("")} notify={notify} /> : null}
         {section === "account" ? <AccountPanel profile={profile} session={session} /> : null}
       </div>
-    </div>
+    </div></MfaGate>
   );
 }

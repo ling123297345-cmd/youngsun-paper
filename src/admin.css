@@ -199,6 +199,13 @@
 .admin-account-panel strong, .admin-account-panel span { display: block; }
 .admin-account-panel span { color: var(--admin-muted); margin-top: 5px; }
 .admin-account-panel dl { grid-column: 1 / -1; margin: 12px 0 0; border-top: 1px solid var(--admin-line); }
+.admin-mfa-gate { display: grid; place-items: center; }
+.admin-mfa-settings { margin-top: 24px; max-width: 680px; }
+.admin-mfa-settings h2 { display: flex; align-items: center; gap: 10px; font-size: 20px; }
+.admin-mfa-settings p, .admin-mfa-help { line-height: 1.7; overflow-wrap: anywhere; }
+.admin-mfa-help { font-size: 13px; color: var(--admin-muted); margin: 20px 0; }
+.admin-mfa-qr { width: 220px; height: 220px; max-width: 100%; object-fit: contain; background: #fff; margin: 16px 0; }
+.admin-mfa-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
 .admin-account-panel dl div { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--admin-line); }
 .admin-account-panel dt { color: var(--admin-muted); }
 .admin-account-panel dd { margin: 0; font-weight: 700; }

@@ -42,7 +42,7 @@ createRoot(root).render(
 );
 
 // ── PWA: Register Service Worker ────────────────────────────
-if ("serviceWorker" in navigator) {
+if ("serviceWorker" in navigator && !/^\/(?:es\/)?admin(?:\/|$)/.test(window.location.pathname)) {
   // Small delay so the page renders first, then register SW
   window.addEventListener("load", () => {
     navigator.serviceWorker

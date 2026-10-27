@@ -6,7 +6,16 @@
 - Existing direct pushes and automated publishing are retained. No PR-review requirement was added.
 - Vulnerability alerts and automated security fixes enabled and read back successfully.
 
-## Implemented locally, not yet deployed
+## Applied to Supabase
+
+- Inspected deployed definitions and confirmed the old NULL-unsafe authorization guard.
+- Applied both hardening SQL files through the authenticated project SQL editor.
+- Ran the rollback-only SQL regression test successfully: absent-role users rejected; anonymous function access and direct role-column updates prohibited.
+- Deployed the existing trigger-publish function with the additional database authorization check; preserved existing authentication settings and secrets.
+- Rechecked the function anonymously: HTTP 401.
+- No records/accounts were created or edited during regression tests. No MFA factors were enrolled by the agent.
+
+## Implemented source
 
 - Vite 8.3.5, source-map-js 1.2.2; full npm audit returns zero known vulnerabilities.
 - Fail-closed CMS access function, validation of null inputs, and prevention of self-demotion/deactivation.
@@ -31,7 +40,7 @@
 
 1. Sign in to the existing Supabase project; inspect deployed function definitions, RLS and grants before applying changes. Do not assume migration files reflect production.
 2. Apply `20261026193000_harden_cms_access.sql` and `20261026194000_enforce_enrolled_cms_mfa.sql` in order. Preserve other policies and existing content.
-3. Run `supabase/tests/cms-security.sql`; it creates no records and rolls back session changes. This SQL test has NOT yet run against production.
+3. Run `supabase/tests/cms-security.sql`; it creates no records and rolls back session changes. This test passed against production on 2026-10-26.
 4. Deploy the updated `trigger-publish` Edge Function with its existing secrets and authentication settings unchanged.
 5. Push reviewed source files, run security/build checks and publish. Do not publish enrollment UI while database enforcement is still unapplied.
 6. The account owner must personally enroll their authenticator and enter the code. Never transmit QR secrets or codes to the agent. Test fresh-login challenge and sign-out. An independent Supabase project administrator must retain the ability to recover a lost factor after identity verification.
@@ -44,4 +53,4 @@
 - Confirm database/media backup retention and perform a recovery drill. Git source history is not a database backup.
 - Confirm live authentication rate limits and monitor access/security logs.
 
-Current blocker: Supabase dashboard is signed out. No production database or Edge Function changes have been made in this hardening batch.
+Supabase access blocker resolved: database and Edge Function changes are applied. The project overview currently reports no backups. MFA remains opt-in until the account owner personally binds and verifies their authenticator. The fresh-login AAL2 challenge with a real enrolled user still requires that manual enrollment step.

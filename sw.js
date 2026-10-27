@@ -3,7 +3,7 @@
 // Smart caching: offline access + always-fresh content
 // ============================================================
 
-const CACHE_VERSION = "ysp-v5";
+const CACHE_VERSION = "ysp-v6";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const IMAGE_CACHE = `${CACHE_VERSION}-images`;
 const PAGE_CACHE = `${CACHE_VERSION}-pages`;
@@ -98,6 +98,9 @@ self.addEventListener("fetch", (event) => {
   // Skip chrome-extension:// and other non-http schemes
   const url = new URL(request.url);
   if (!url.protocol.startsWith("http")) return;
+  // Never intercept authenticated APIs, third-party requests or the CMS entry.
+  if (url.origin !== self.location.origin || request.headers.has("authorization")) return;
+  if (/^\/(?:es\/)?admin(?:\/|$)/.test(url.pathname)) return;
 
   // ── Navigation (HTML pages): Network-first, fallback to offline page ──
   if (isNavigation(request)) {

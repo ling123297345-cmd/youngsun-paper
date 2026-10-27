@@ -85,6 +85,7 @@
       (function (w, d) {
         var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
         if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
 
         w.clarity = w.clarity || function () {
           (w.clarity.q = w.clarity.q || []).push(arguments);
@@ -126,10 +127,10 @@
       })(window, document);
     </script>
 
-    <script type="module" crossorigin src="/assets/index-CAbrkIXP.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-Bh1tDfsg.js">
-    <link rel="modulepreload" crossorigin href="/assets/react-runtime-CnQ8cts2.js">
-    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-B2xxv0dJ.js">
+    <script type="module" crossorigin src="/assets/index-DTBQWmqQ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
     <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
       <meta property="og:locale:alternate" content="es_ES" />
     <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/products/mg-paper/" />

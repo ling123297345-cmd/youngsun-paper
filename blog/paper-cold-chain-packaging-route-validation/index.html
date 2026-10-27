@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Paper Cold-Chain Packaging: Route Test Checklist | YOUNGSUN</title>
+    <meta name="description" content="A 48-hour insulation test is not a shipping guarantee. Compare payload, coolant, temperature profile and route evidence before buying paper cold-chain…" />
+    <link rel="canonical" href="https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Paper Cold-Chain Packaging: Route Test Checklist | YOUNGSUN" />
+    <meta property="og:description" content="A 48-hour insulation test is not a shipping guarantee. Compare payload, coolant, temperature profile and route evidence before buying paper cold-chain…" />
+    <meta property="og:url" content="https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/paper-cold-chain-packaging-route-validation.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Paper Cold-Chain Packaging: Route Test Checklist | YOUNGSUN" />
+    <meta name="twitter:description" content="A 48-hour insulation test is not a shipping guarantee. Compare payload, coolant, temperature profile and route evidence before buying paper cold-chain…" />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/paper-cold-chain-packaging-route-validation.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-CxEL2E2o.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="es_ES" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/paper-cold-chain-packaging-route-validation/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/#article","headline":"Paper Cold-Chain Packaging: What Does \"48 Hours\" Leave Out?","description":"A 48-hour insulation test is not a shipping guarantee. Compare payload, coolant, temperature profile and route evidence before buying paper cold-chain packaging.","image":"https://youngsunpaper.com/images/blog-articles/paper-cold-chain-packaging-route-validation.webp","datePublished":"2026-10-27","dateModified":"2026-10-27","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/blog#blog","name":"YOUNGSUN PAPER Blog"},"articleSection":"Packaging & Procurement","keywords":["Cold-chain packaging","Paper-fibre insulation","Packaging validation","Procurement"],"inLanguage":"en","about":[{"@type":"Thing","name":"Cold-chain packaging"},{"@type":"Thing","name":"Paper-fibre insulation"},{"@type":"Thing","name":"Packaging validation"},{"@type":"Thing","name":"Procurement"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a 48-hour test guarantee a 48-hour delivery?","acceptedAnswer":{"@type":"Answer","text":"No. It records performance under a particular configuration and exposure. Compare those conditions with your product limits, packing process and route before using the result."}},{"@type":"Question","name":"Can ordinary kraft paper replace a thermal liner?","acceptedAnswer":{"@type":"Answer","text":"Not on that basis alone. Kraft paper may have a role in a package, but the assembled insulation and coolant system needs evidence for the intended application."}},{"@type":"Question","name":"What should we send with a request for quotation?","acceptedAnswer":{"@type":"Answer","text":"Send box dimensions, product and load range, approved temperature limits, route and season, expected duration, delay assumptions, coolant constraints and available test requirements. Identify which paper component you want supplied."}},{"@type":"Question","name":"Must we review a pack-out after changing coolant or box size?","acceptedAnswer":{"@type":"Answer","text":"Yes. Have the packaging or quality team assess whether the existing qualification remains applicable, and determine what additional testing is needed. Do not assume the original report covers the change."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://youngsunpaper.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/blog/"},{"@type":"ListItem","position":3,"name":"Paper Cold-Chain Packaging: What Does \"48 Hours\" Leave Out?","item":"https://youngsunpaper.com/blog/paper-cold-chain-packaging-route-validation/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><article><header><p>Packaging &amp; Procurement · 2026-10-27</p><h1>Paper Cold-Chain Packaging: What Does &quot;48 Hours&quot; Leave Out?</h1><p>A promising paper-fibre liner does not make every shipment equivalent. The useful purchasing question is what was inside the test box, and how closely that matches your route.</p><figure><img src="/images/blog-articles/paper-cold-chain-packaging-route-validation.webp" alt="An open kraft shipping box with thick paper-fibre insulation and one blue coolant pouch on a grey tabletop." width="1280" height="800" loading="eager"><figcaption>AI-generated editorial illustration of a generic insulated pack-out. Not a tested YOUNGSUN product or a depiction of Hydropac EcoCool.</figcaption></figure></header><nav aria-label="Table of contents"><h2>In This Guide</h2><ol><li><a href="#first-separate-the-liner-from-the-complete-system">First separate the liner from the complete system</a></li><li><a href="#write-the-route-specification-before-comparing-offers">Write the route specification before comparing offers</a></li><li><a href="#compare-the-evidence-field-by-field">Compare the evidence field by field</a></li><li><a href="#test-the-order-sizes-you-actually-sell">Test the order sizes you actually sell</a></li><li><a href="#check-physical-protection-and-moisture-separately">Check physical protection and moisture separately</a></li><li><a href="#buy-a-repeatable-pack-out-not-just-cheaper-material">Buy a repeatable pack-out, not just cheaper material</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav><section aria-label="Paper Cold-Chain Packaging: What Does &quot;48 Hours&quot; Leave Out? article content"><p><strong>A test duration describes one experiment, not every shipment.</strong> Before choosing paper cold-chain packaging, match the complete tested pack-out to your product, temperature limits and transport conditions. Buying the same liner material is not enough.</p><p>On 27 October 2026, <a href="https://www.packagingeurope.com/hydropacs-paper-fibre-box-liner-insulates-and-cushions-cold-chain-goods/">Packaging Europe reported Hydropac's EcoCool paper-fibre liner</a>, including a supplier-reported 48-hour laboratory trial. This is a useful development in fibre-based shipping packaging, but it is not independent verification of every application, or evidence about YOUNGSUN products.</p><p>The practical question is not simply whether paper can insulate. It is whether a documented packaging configuration can keep your particular load within its approved limits through your delivery conditions.</p><h2 id="first-separate-the-liner-from-the-complete-system">First separate the liner from the complete system</h2><p>A thermal shipping system combines the outer container, insulation, coolant, payload, closures and preparation instructions. Change one of these and the result may change. <a href="https://store.astm.org/standards/d3103">ASTM D3103's published scope</a> addresses package thermal performance under variable ambient conditions; its summary identifies insulation, energy sources and payload as relevant factors. The full current method and a suitable laboratory are needed to design a test, not just an online summary.</p><p>Ask for the tested construction rather than a material name: box dimensions, insulation thickness, joints, lid coverage, coolant arrangement and loading instructions. A sample of fibrous material cannot establish the performance of an assembled shipper.</p><h2 id="write-the-route-specification-before-comparing-offers">Write the route specification before comparing offers</h2><p>Describe the journey from packing to customer receipt. Include warehouse staging, collection, sorting hubs, vehicle exposure, last-mile delivery and a credible delay scenario. For international shipments, customs or handover time may be relevant. A weather forecast alone does not describe what a parcel experiences inside a hub or vehicle.</p><p>Hydropac's own <a href="https://hydropac.co.uk/temperature-controlled-packaging/seasonal-pack-outs/">seasonal pack-out guidance</a> highlights route exposure, coolant preparation and configuration. Treat this as manufacturer guidance, not a universal acceptance criterion. Buyers in different climates should not assume a configuration selected for another season or market transfers unchanged.</p><p>Define the product's permitted temperature range with your quality team. Include a lower limit where overcooling is a risk and specify how excursions will be assessed. A temperature cited in another company's demonstration is not automatically a safe limit for your food, pharmaceutical or other temperature-sensitive product.</p><h2 id="compare-the-evidence-field-by-field">Compare the evidence field by field</h2><table><thead><tr><th scope="col">Test record to request</th><th scope="col">Match it to your shipment</th></tr></thead><tbody><tr><td>Exact box and liner construction</td><td>Dimensions, seams, lid and closure used in production</td></tr><tr><td>Payload identity, mass and starting temperature</td><td>Actual product and minimum and maximum order loads</td></tr><tr><td>Coolant type, quantity, position and conditioning</td><td>Instructions your packing team can repeat</td></tr><tr><td>Ambient temperature profile and duration</td><td>Relevant route, season and delay exposure</td></tr><tr><td>Sensor positions and measurement system</td><td>What was measured: air, surface or product temperature</td></tr><tr><td>Temperature traces and acceptance criteria</td><td>Your approved limits, not only a headline pass result</td></tr><tr><td>Configuration or material changes</td><td>Whether the report still applies after the change</td></tr></tbody></table><p>Request the report and temperature trace, not only a marketing chart. Confirm the measurement system's calibration status and whether sensors were located where meaningful product exposure could be detected. Air, product surface and product core readings answer different questions; they should not be silently substituted for one another.</p><h2 id="test-the-order-sizes-you-actually-sell">Test the order sizes you actually sell</h2><p>Minimum-fill and full-load shipments are different configurations. Neither should be declared universally safer without evidence. Payload mass, available space and coolant positioning interact, so your test plan should represent the loads you intend to dispatch.</p><p>For example, imagine a nominal two-day delivery service with both a small order and a full carton. One parcel may encounter a warm sorting delay or an unsuccessful first delivery. This is an illustrative planning scenario, not a YOUNGSUN test result. Its purpose is to show why the same delivery promise does not establish identical thermal exposure.</p><p><a href="https://ista.org/thermal_standards.php">ISTA's thermal standards overview</a> describes qualification frameworks and transport temperature profiles. Ask a competent laboratory which current procedure and profile fit your distribution system. A recognised test method is useful evidence, but naming it does not establish that every route or product is covered.</p><h2 id="check-physical-protection-and-moisture-separately">Check physical protection and moisture separately</h2><p>Thermal performance is not the same as protection against crushing, vibration or drops. Review the package after relevant handling exposure, and consider condensation, wet surfaces and joint integrity in the test plan. Do not infer mechanical qualification from a temperature report alone. <a href="https://ista.org/test_procedures.php">ISTA distinguishes different test procedures</a>; the packaging team should select those appropriate to the shipment.</p><p>Likewise, a fibre-based component does not prove that the finished pack is accepted in every local paper collection stream. Check coatings, mixed components, separation instructions and the condition of the used package. Avoid transferring a supplier's environmental claim to a different construction or destination market.</p><h2 id="buy-a-repeatable-pack-out-not-just-cheaper-material">Buy a repeatable pack-out, not just cheaper material</h2><p>Compare the complete cost per shipment that meets your acceptance criteria: outer box, liner, coolant, assembly, freight and the consequences of rejected deliveries. A lower material price can be misleading if the two quotations assume different coolant quantities or loading methods.</p><p>YOUNGSUN can discuss paper components such as <a href="/products/kraft-paper">kraft paper</a> and <a href="/products/pe-coated-paper">PE coated paper</a> for specified wrapping, liner or surface applications. These are not, by themselves, a qualified thermal insulation system. We do not claim to supply EcoCool or to have validated the generic pack shown here.</p><p>For a paper-component enquiry, send the intended construction, printing or coating requirements and destination to our team through the <a href="/contact?intent=quote&amp;product=kraft-paper">quotation enquiry page</a>. Our <a href="/industries/food-beverage">food and beverage applications</a> and <a href="/blog/how-to-compare-paper-quotes-from-different-suppliers">supplier quotation comparison guide</a> can help frame that discussion.</p><h2 id="frequently-asked-questions">Frequently asked questions</h2><h3 id="does-a-48-hour-test-guarantee-a-48-hour-delivery">Does a 48-hour test guarantee a 48-hour delivery?</h3><p>No. It records performance under a particular configuration and exposure. Compare those conditions with your product limits, packing process and route before using the result.</p><h3 id="can-ordinary-kraft-paper-replace-a-thermal-liner">Can ordinary kraft paper replace a thermal liner?</h3><p>Not on that basis alone. Kraft paper may have a role in a package, but the assembled insulation and coolant system needs evidence for the intended application.</p><h3 id="what-should-we-send-with-a-request-for-quotation">What should we send with a request for quotation?</h3><p>Send box dimensions, product and load range, approved temperature limits, route and season, expected duration, delay assumptions, coolant constraints and available test requirements. Identify which paper component you want supplied.</p><h3 id="must-we-review-a-pack-out-after-changing-coolant-or-box-size">Must we review a pack-out after changing coolant or box size?</h3><p>Yes. Have the packaging or quality team assess whether the existing qualification remains applicable, and determine what additional testing is needed. Do not assume the original report covers the change.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Related Articles</h2><ul><li><a href="/blog/paper-label-plastic-packaging-recyclability-buyer-checklist">Can a Paper Label Complicate Plastic Recycling?</a> - A paper label can look like an easy sustainability improvement. But the package is recycled as a system, and the label's adhesive and behaviour in washing can change the result.</li><li><a href="/blog/secondary-paper-packaging-base-paper-finished-wrap-specification">Switching the Outer Wrap to Paper? Keep These Two Specifications Separate</a> - An outer paper wrap and the sealed pack inside it do different jobs. A recent industry development highlights a purchasing trap: ordering the base paper as though it already carries every property of the finished package.</li><li><a href="/blog/right-sized-ecommerce-packaging-paper-specification">A Smaller Shipping Box Saves Paper—What Happens to Product Protection?</a> - Right-sizing is gaining attention in e-commerce packaging. The useful purchasing question is whether the complete pack can use less material while still arriving intact—not simply whether a smaller carton is available.</li></ul></aside><footer><p>Written by YOUNGSUN PAPER Editorial.</p><p><a href="/blog">Browse more paper industry articles</a> · <a href="/contact">Discuss your paper requirements</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/blog">Paper industry blog</a> · <a href="/quality">Quality assurance</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

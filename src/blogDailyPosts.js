@@ -4,8 +4,10 @@ import { labelRecyclingArticle20261026 } from "./blogLabelRecycling20261026.js";
 import { coldChainArticle20261027 } from "./blogColdChain20261027.js";
 import { asepticArticle20261028 } from "./blogAseptic20261028.js";
 import { insertArticle20261030 } from "./blogInserts20261030.js";
+import { coatingArticle20261103 } from "./blogCoating20261103.js";
 
 export const dailyBlogPosts = [
+  coatingArticle20261103,
   insertArticle20261030,
   asepticArticle20261028,
   coldChainArticle20261027,

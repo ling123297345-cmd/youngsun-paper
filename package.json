@@ -16,7 +16,7 @@
   },
   "homepage": "https://www.youngsunpaper.com",
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.2",
+    "@supabase/supabase-js": "^2.118.0",
     "@vitejs/plugin-react": "latest",
     "esbuild": "^0.28.1",
     "lucide-react": "^1.27.0",

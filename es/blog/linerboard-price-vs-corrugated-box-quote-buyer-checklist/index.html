@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Kraftliner y precio de cajas: guía para compradores | YOUNGSUN</title>
+    <meta name="description" content="Un índice estadounidense de kraftliner no equivale al precio de la caja. Compare estructura, rendimiento, flete y protección antes de aceptar cambios." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Kraftliner y precio de cajas: guía para compradores | YOUNGSUN" />
+    <meta property="og:description" content="Un índice estadounidense de kraftliner no equivale al precio de la caja. Compare estructura, rendimiento, flete y protección antes de aceptar cambios." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/linerboard-price-vs-corrugated-box-quote-buyer-checklist.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Kraftliner y precio de cajas: guía para compradores | YOUNGSUN" />
+    <meta name="twitter:description" content="Un índice estadounidense de kraftliner no equivale al precio de la caja. Compare estructura, rendimiento, flete y protección antes de aceptar cambios." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/linerboard-price-vs-corrugated-box-quote-buyer-checklist.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-DYWPy7at.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/#article","headline":"Sube el kraftliner. ¿Por qué su cotización de cajas no cambia igual?","description":"Un índice estadounidense de kraftliner no equivale al precio de la caja. Compare estructura, rendimiento, flete y protección antes de aceptar cambios.","image":"https://youngsunpaper.com/images/blog-articles/linerboard-price-vs-corrugated-box-quote-buyer-checklist.webp","datePublished":"2026-11-07","dateModified":"2026-11-07","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Compras de empaques","keywords":["Precio del kraftliner","Cotización de cajas","Compras de empaques","Cartón corrugado"],"inLanguage":"es","about":[{"@type":"Thing","name":"Precio del kraftliner"},{"@type":"Thing","name":"Cotización de cajas"},{"@type":"Thing","name":"Compras de empaques"},{"@type":"Thing","name":"Cartón corrugado"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Una subida de US$170 por tonelada implica igual aumento para mi caja?","acceptedAnswer":{"@type":"Answer","text":"No. Es una referencia del mercado estadounidense para un grado específico hasta septiembre de 2026. La caja incorpora materiales, procesos y condiciones comerciales propios."}},{"@type":"Question","name":"¿Papel kraft y kraftliner son lo mismo?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. El kraftliner es una cara de cartón corrugado con especificación concreta. Confirme grado y aplicación antes de compararlo con papel para bolsas o envolturas."}},{"@type":"Question","name":"¿Una caja más liviana puede salir más barata?","acceptedAnswer":{"@type":"Answer","text":"Es posible. Apruebe el conjunto producto-empaque para la ruta prevista; menor gramaje no demuestra por sí solo igual protección."}},{"@type":"Question","name":"¿Puedo usar un índice de EE. UU. en una compra latinoamericana?","acceptedAnswer":{"@type":"Answer","text":"Solo si el contrato define claramente esa referencia y su fórmula. Verifique región, unidad, fecha, moneda, grado y condición de entrega."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Sube el kraftliner. ¿Por qué su cotización de cajas no cambia igual?","item":"https://youngsunpaper.com/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Compras de empaques · 2026-11-07</p><h1>Sube el kraftliner. ¿Por qué su cotización de cajas no cambia igual?</h1><p>Los datos recientes de EE. UU. muestran por qué el índice del kraftliner y el precio de una caja terminada no se mueven igual. Revise qué pedir en cada cotización.</p><figure><img src="/images/blog-articles/linerboard-price-vs-corrugated-box-quote-buyer-checklist.webp" alt="Una persona sostiene la esquina de una caja corrugada y deja ver el papel ondulado entre dos caras kraft en un taller de conversión." width="1280" height="800" loading="eager"><figcaption>Ilustración editorial generada con IA de una estructura corrugada genérica; no representa un grado específico ni un ensayo.</figcaption></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#empiece-por-distinguir-el-papel-de-la-caja">Empiece por distinguir el papel de la caja</a></li><li><a href="#compare-el-mismo-alcance-en-ambas-ofertas">Compare el mismo alcance en ambas ofertas</a></li><li><a href="#solicite-el-desglose-del-ajuste">Solicite el desglose del ajuste</a></li><li><a href="#pruebe-la-caja-con-el-producto-dentro">Pruebe la caja con el producto dentro</a></li><li><a href="#un-brief-para-recibir-cotizaciones-comparables">Un brief para recibir cotizaciones comparables</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Sube el kraftliner. ¿Por qué su cotización de cajas no cambia igual? article content"><p><strong>El precio del kraftliner sirve como señal de mercado; no es el precio de una caja corrugada terminada.</strong> Si un proveedor cita un índice para ajustar su oferta, conviene separar el papel, la estructura de la caja, la conversión y la entrega. De otro modo, dos cotizaciones con el mismo nombre pueden cubrir productos distintos.</p><p>El tema cobró actualidad por un <a href="https://www.fastmarkets.com/insights/us-linerboard-price-packaging-price-volatility/">análisis de Fastmarkets publicado el 3 de noviembre de 2026</a>. Según esa fuente, el kraftliner de 42 lb en el mercado abierto estadounidense había subido US$170 <strong>por tonelada corta estadounidense</strong> en lo que iba del año hasta septiembre; la inflación de costos subyacentes estimada rondaba US$100 por tonelada. Son cifras de ese mercado y de esa metodología: no son precios internacionales, pronósticos ni cotizaciones de YOUNGSUN. La <a href="https://www.afandpa.org/news/2026/afpa-releases-q3-2026-containerboard-quarterly-report">asociación estadounidense AF&amp;PA</a> informó una tasa de operación del sector superior al 94,5 % por segundo trimestre consecutivo. Ninguno de esos datos fija el precio de su caja específica.</p><h2 id="empiece-por-distinguir-el-papel-de-la-caja">Empiece por distinguir el papel de la caja</h2><p>El liner es una de las caras planas del cartón corrugado. Entre las caras se encuentra el papel ondulado o *medium*. Después vienen la fabricación de la lámina, impresión, troquelado, plegado, pegado y envío. Un índice del kraftliner de 42 lb corresponde a un grado y condiciones de venta definidos en EE. UU.; no equivale a una caja lista para usar, a una tonelada métrica o a otro mercado.</p><p>Tampoco debe confundirse con cualquier <a href="/es/products/kraft-paper">papel kraft</a> marrón para bolsas o envolturas. El <a href="/es/products/grey-board">cartón gris</a>, el <a href="/es/products/duplex-board">cartón dúplex</a> y el <a href="/es/products/package-board">cartón para empaque</a> tienen otras aplicaciones. No los presentemos como sustitutos automáticos del liner de una caja de transporte.</p><h2 id="compare-el-mismo-alcance-en-ambas-ofertas">Compare el mismo alcance en ambas ofertas</h2><p>Pida que la cotización anterior y la nueva identifiquen lo mismo:</p><table><thead><tr><th scope="col">Dato</th><th scope="col">Pregunta útil para compras</th></tr></thead><tbody><tr><td>Estilo y medidas internas</td><td>¿Cambió el área de la lámina o el ajuste del producto?</td></tr><tr><td>Estructura del corrugado</td><td>¿Cuántas paredes, qué onda y qué grados de liner y medium incluye?</td></tr><tr><td>Unidad y material</td><td>¿El índice está en tonelada corta y la oferta en tonelada métrica o por caja?</td></tr><tr><td>Impresión y acabado</td><td>¿Incluye tintas, troquel, recubrimientos o procesos adicionales?</td></tr><tr><td>Volumen y merma</td><td>¿Cambió el tamaño del pedido o el rendimiento de fabricación?</td></tr><tr><td>Destino y condición de entrega</td><td>¿Dónde se incorporan flete, manejo, impuestos y otros cargos?</td></tr><tr><td>Vigencia</td><td>¿A qué fecha, moneda y período de mercado corresponde?</td></tr></tbody></table><p>Si se propone aligerar el material, compare <strong>costo por caja aceptada que proteja el producto</strong>, no solo precio por tonelada. Menos papel puede ser ventajoso, pero debe funcionar en la ruta de distribución real.</p><h2 id="solicite-el-desglose-del-ajuste">Solicite el desglose del ajuste</h2><p>Pida una explicación sencilla del cambio entre el precio viejo y el nuevo: materia prima, conversión, flete, moneda, impuestos y cambios de especificación. No siempre recibirá los costos internos del fabricante, pero sí debería poder identificar qué supuestos comerciales variaron. Si se usa un índice, anote grado, región, unidad, mes, fórmula contractual y fecha de aplicación.</p><p>La diferencia entre el aumento del kraftliner y la inflación de costos estimada por Fastmarkets <strong>no demuestra</strong> que un proveedor concreto esté ampliando su margen. Tampoco justifica trasladar automáticamente el índice estadounidense a una compra en México, Colombia u otro mercado. Sirve para pedir un alcance comparable y una explicación verificable.</p><h2 id="pruebe-la-caja-con-el-producto-dentro">Pruebe la caja con el producto dentro</h2><p>Un valor de resistencia del cartón ayuda a describirlo, pero no prueba por sí solo que el producto llegue intacto. La <a href="https://support.ista.org/portal/en/kb/articles/what-are-rule-41-and-item-222-in-comparison-to-ista-procedures">International Safe Transit Association (ISTA)</a> distingue requisitos de construcción de la caja de ensayos del <strong>conjunto producto-empaque</strong>. Acuerde ruta, riesgos de manipulación y criterios de aceptación; después pruebe la caja propuesta con el producto real. Documente si un cambio de material exige repetir ensayos.</p><p>En un empaque con caja de presentación dentro de una caja corrugada exterior, cotice las capas por separado. El <a href="/es/products/folding-box-board">cartón plegadizo</a> puede requerir aprobación de impresión y hendido; el embalaje exterior debe proteger durante el transporte. Consulte nuestras <a href="/es/industries/packaging-printing">aplicaciones de empaque e impresión</a>, sin confundir ambos materiales porque los dos se llamen cartón.</p><h2 id="un-brief-para-recibir-cotizaciones-comparables">Un brief para recibir cotizaciones comparables</h2><p>Envíe a todos los proveedores peso del producto empacado, medidas internas, destino, ruta logística, arte de impresión, volumen por pedido, volumen anual, condición de entrega y estructura aprobada. Pida la composición propuesta, precio por caja terminada, vigencia y plan de muestras o pruebas. Incluya cuándo se requiere una nueva aprobación. Si además necesita bolsas, envolturas o cajas de presentación, solicítelas como partidas independientes.</p><p>Para esos componentes de papel, puede <a href="/es/contact?intent=quote&amp;product=kraft-paper">contactar a YOUNGSUN</a> con el grado, las medidas, el uso y el destino. Podemos revisar opciones del catálogo; este artículo no afirma que YOUNGSUN suministre el kraftliner estadounidense de la evaluación citada ni cajas corrugadas terminadas.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="una-subida-de-us-170-por-tonelada-implica-igual-aumento-para-mi-caja">¿Una subida de US$170 por tonelada implica igual aumento para mi caja?</h3><p>No. Es una referencia del mercado estadounidense para un grado específico hasta septiembre de 2026. La caja incorpora materiales, procesos y condiciones comerciales propios.</p><h3 id="papel-kraft-y-kraftliner-son-lo-mismo">¿Papel kraft y kraftliner son lo mismo?</h3><p>No necesariamente. El kraftliner es una cara de cartón corrugado con especificación concreta. Confirme grado y aplicación antes de compararlo con papel para bolsas o envolturas.</p><h3 id="una-caja-mas-liviana-puede-salir-mas-barata">¿Una caja más liviana puede salir más barata?</h3><p>Es posible. Apruebe el conjunto producto-empaque para la ruta prevista; menor gramaje no demuestra por sí solo igual protección.</p><h3 id="puedo-usar-un-indice-de-ee-uu-en-una-compra-latinoamericana">¿Puedo usar un índice de EE. UU. en una compra latinoamericana?</h3><p>Solo si el contrato define claramente esa referencia y su fórmula. Verifique región, unidad, fecha, moneda, grado y condición de entrega.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/moulded-fibre-vs-paperboard-inserts-buyer-guide">¿Fibra moldeada o cartón troquelado? La decisión dentro de la caja</a> - Una bandeja de aspecto natural y un inserto plegado pueden caber en la misma caja. Eso no significa que sujeten el producto, se armen o soporten el transporte de la misma forma.</li><li><a href="/es/blog/paper-label-plastic-packaging-recyclability-buyer-checklist">¿Una etiqueta de papel puede dificultar el reciclaje del plástico?</a> - Una etiqueta de papel parece una mejora ambiental sencilla. Sin embargo, se recicla el envase como sistema: el adhesivo y la separación durante el lavado también importan.</li><li><a href="/es/blog/secondary-paper-packaging-base-paper-finished-wrap-specification">¿Cambiar la envoltura exterior por papel? No mezcle estas dos especificaciones</a> - La envoltura exterior y el envase sellado que contiene cumplen funciones distintas. Una novedad del sector pone de relieve un error de compra: pedir papel base suponiendo que ya ofrece todas las prestaciones del embalaje terminado.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

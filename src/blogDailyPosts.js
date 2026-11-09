@@ -6,8 +6,10 @@ import { asepticArticle20261028 } from "./blogAseptic20261028.js";
 import { insertArticle20261030 } from "./blogInserts20261030.js";
 import { coatingArticle20261103 } from "./blogCoating20261103.js";
 import { corrugatedArticle20261104 } from "./blogCorrugated20261104.js";
+import { heatSealMailerArticle20261109 } from "./blogHeatSealMailer20261109.js";
 
 export const dailyBlogPosts = [
+  heatSealMailerArticle20261109,
   corrugatedArticle20261104,
   coatingArticle20261103,
   insertArticle20261030,

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>EUDR Paper Packaging: Empty vs. Filled Cartons | YOUNGSUN</title>
+    <meta name="description" content="Compare how the EU's EUDR guidance treats empty paper cartons and ordinary packaging shipped with goods. Know what to confirm before buying." />
+    <link rel="canonical" href="https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="EUDR Paper Packaging: Empty vs. Filled Cartons | YOUNGSUN" />
+    <meta property="og:description" content="Compare how the EU's EUDR guidance treats empty paper cartons and ordinary packaging shipped with goods. Know what to confirm before buying." />
+    <meta property="og:url" content="https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/eudr-paper-packaging-empty-vs-filled-cartons.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EUDR Paper Packaging: Empty vs. Filled Cartons | YOUNGSUN" />
+    <meta name="twitter:description" content="Compare how the EU's EUDR guidance treats empty paper cartons and ordinary packaging shipped with goods. Know what to confirm before buying." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/eudr-paper-packaging-empty-vs-filled-cartons.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-DEcm9htw.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="es_ES" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/eudr-paper-packaging-empty-vs-filled-cartons/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/#article","headline":"EUDR and Paper Packaging: Why an Empty Carton Is Different","description":"Compare how the EU's EUDR guidance treats empty paper cartons and ordinary packaging shipped with goods. Know what to confirm before buying.","image":"https://youngsunpaper.com/images/blog-articles/eudr-paper-packaging-empty-vs-filled-cartons.webp","datePublished":"2026-11-13","dateModified":"2026-11-13","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/blog#blog","name":"YOUNGSUN PAPER Blog"},"articleSection":"Regulation & Compliance","keywords":["EUDR paper packaging","empty cartons","folding boxboard","EU paper packaging imports"],"inLanguage":"en","about":[{"@type":"Thing","name":"EUDR paper packaging"},{"@type":"Thing","name":"empty cartons"},{"@type":"Thing","name":"folding boxboard"},{"@type":"Thing","name":"EU paper packaging imports"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does every empty paper carton fall under EUDR?","acceptedAnswer":{"@type":"Answer","text":"No. Sale as a product in its own right is one factor. The applicable classification, relevant material and any exclusions still need to be checked."}},{"@type":"Question","name":"Does a carton leave EUDR scope just because a product is inside?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. The Commission guidance refers to ordinary packing presented with the goods, used exclusively as packing and classified with those goods. The contents and separately classified containers require their own checks."}},{"@type":"Question","name":"Is a carton with recycled content automatically excluded?","acceptedAnswer":{"@type":"Answer","text":"No. Confirm whether the relevant fiber is entirely qualifying recovered material or whether it includes non-recovered inputs such as virgin wood pulp. Check the evidence for the grade and shipment."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://youngsunpaper.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/blog/"},{"@type":"ListItem","position":3,"name":"EUDR and Paper Packaging: Why an Empty Carton Is Different","item":"https://youngsunpaper.com/blog/eudr-paper-packaging-empty-vs-filled-cartons/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Primary navigation" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/">Home</a> <a href="/products">Products</a> <a href="/industries">Industries</a> <a href="/materials">Materials</a> <a href="/processing">Processing</a> <a href="/blog">Blog</a> <a href="/about">About</a> <a href="/contact">Contact</a></nav><article><header><p>Regulation &amp; Compliance · 2026-11-13</p><h1>EUDR and Paper Packaging: Why an Empty Carton Is Different</h1><p>Two identical cartons can take different paths into the EU. Before asking for a compliance certificate, establish what is being sold, how it is classified and which actor is responsible.</p><figure><img src="/images/blog-articles/eudr-paper-packaging-empty-vs-filled-cartons.webp" alt="Two open paperboard cartons side by side, one empty and one holding an amber bottle." width="1280" height="800" loading="eager"><figcaption>AI-generated editorial illustration of empty and filled cartons. The image does not establish their customs classification.</figcaption></figure></header><nav aria-label="Table of contents"><h2>In This Guide</h2><ol><li><a href="#compare-the-transaction-before-comparing-the-boxes">Compare the transaction before comparing the boxes</a></li><li><a href="#check-what-the-board-contains-and-what-the-evidence-covers">Check what the board contains and what the evidence covers</a></li><li><a href="#put-four-fields-in-the-request-for-quotation">Put four fields in the request for quotation</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ol></nav><section aria-label="EUDR and Paper Packaging: Why an Empty Carton Is Different article content"><p>Imagine a cosmetics brand buying empty folding cartons for a packing line in the EU. Now imagine the same carton arriving around a bottle of lotion. The paperboard may be identical, but the buyer should not assume the same EU Deforestation Regulation (EUDR) treatment. The first shipment contains packaging sold as a product; the second may contain ordinary packaging classified with the goods it protects.</p><p>The distinction is worth checking now. <a href="https://www.cepi.org/cepi-guidance-on-the-revised-eu-deforestation-regulation/">Cepi's revised pulp-and-paper guidance</a>, covered by <a href="https://www.paperadvance.com/news/international-news/cepi-updates-eudr-guidance-for-pulp-and-paper.html">Paper Advance on 6 November</a>, explains how the sector interprets the rules. The <a href="https://environment.ec.europa.eu/topics/forests/deforestation/eu-deforestation-regulation-eudr_en">European Commission's EUDR page</a> links to the consolidated regulation and lists its application dates. As of 13 November 2026, the Commission lists 30 December 2026 for large and medium operators and traders and for micro and small operators already covered by the EU Timber Regulation; it lists 30 June 2027 for other qualifying micro and small operators. Check the actor's status and the applicable rules for the actual shipment.</p><h2 id="compare-the-transaction-before-comparing-the-boxes">Compare the transaction before comparing the boxes</h2><p>The <a href="https://green-forum.ec.europa.eu/nature-and-biodiversity/deforestation-regulation-implementation_en">European Commission's guidance</a> (Notice C/2026/3896, section 6(a)) distinguishes packing sold as a product in its own right from ordinary packing presented with and used only to carry or protect other goods. See also question 2.5 in the <a href="https://environment.ec.europa.eu/publications/faq-eudr-implementation_en">Commission's EUDR FAQ</a>. Start with these three scenarios:</p><ul><li><strong>Empty cartons bought for an EU packing line.</strong> The cartons are the goods being supplied. If classified under heading 4819 and made with relevant wood material, they can fall within scope; verify the classification, composition and actor's role before quoting or importing.</li><li><strong>A standard carton presented with a bottle inside.</strong> If it is ordinary packing classified with the bottle and used exclusively as packing, the guidance treats the carton as outside EUDR scope for that use. The contents still need their own assessment. Being on the same invoice does not settle classification.</li><li><strong>Paperboard sheets bought for conversion.</strong> The transaction is for the board, not the eventual carton. Check the sheets against Annex I and their actual fiber composition. Do not transfer the treatment of ordinary packing around a finished product to a separate purchase of board.</li></ul><p>A separately classified container that gives the combined product its essential character can be treated differently from an ordinary folding carton. Ask your EU customs or compliance team to validate the classification for specialty gift packaging, separately supplied components or any borderline case. These scenarios are a procurement guide, not a classification decision.</p><h2 id="check-what-the-board-contains-and-what-the-evidence-covers">Check what the board contains and what the evidence covers</h2><p>Section 6(b) of the Commission guidance distinguishes products made entirely from qualifying recovered material from in-scope products with non-recovered inputs such as virgin wood pulp. A carton with recycled fiber is not automatically outside scope. For a board with several layers, request the fiber basis for the exact grade, including whether any layer contains virgin wood pulp. Verify what the mill's records cover and how the evidence follows the lots delivered. A broad description such as “recycled board” does not answer those questions.</p><p>If the EU importer confirms the shipment is in scope, have its compliance team specify the data required for its role. For example, Article 9 identifies origin, wood species and plot geolocation among the information operators may need to collect for relevant wood products under the ordinary due-diligence route. A supplier declaration or voluntary certificate may support evidence gathering, but neither replaces the applicable obligations. Confirm who checks and submits what before booking freight.</p><h2 id="put-four-fields-in-the-request-for-quotation">Put four fields in the request for quotation</h2><ol><li><strong>Goods and presentation:</strong> state whether the order is for board sheets, empty cartons or a filled product. Include the proposed customs classification for the importer to confirm.</li><li><strong>Material:</strong> identify the exact grade, mill if known, layer construction and documented virgin or recovered fiber basis. Ask what changes require advance notice.</li><li><strong>Shipment and responsibilities:</strong> record the EU destination, expected market placement and the legal entity responsible for import and compliance review. Do not assume freight terms alone determine that role.</li><li><strong>Records:</strong> agree which documents are needed before order approval and which lot-linked records must be available before dispatch. Use a secure channel for sensitive supplier data.</li></ol><p>For a board purchase, share the intended application and specifications when comparing <a href="/products/folding-box-board">folding boxboard</a> and <a href="/industries/packaging-printing">packaging and printing options</a>. You can <a href="/contact?intent=quote&amp;product=folding-box-board">send the purchase details to YOUNGSUN PAPER</a> to discuss the grade and what documentation is available for that order. Your importer or qualified adviser should confirm the regulatory scope. EUDR addresses deforestation-related due diligence; it is not a substitute for a separate assessment under the EU's <a href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste_en">Packaging and Packaging Waste Regulation</a>.</p><h2 id="frequently-asked-questions">Frequently asked questions</h2><h3 id="does-every-empty-paper-carton-fall-under-eudr">Does every empty paper carton fall under EUDR?</h3><p>No. Sale as a product in its own right is one factor. The applicable classification, relevant material and any exclusions still need to be checked.</p><h3 id="does-a-carton-leave-eudr-scope-just-because-a-product-is-inside">Does a carton leave EUDR scope just because a product is inside?</h3><p>Not automatically. The Commission guidance refers to ordinary packing presented with the goods, used exclusively as packing and classified with those goods. The contents and separately classified containers require their own checks.</p><h3 id="is-a-carton-with-recycled-content-automatically-excluded">Is a carton with recycled content automatically excluded?</h3><p>No. Confirm whether the relevant fiber is entirely qualifying recovered material or whether it includes non-recovered inputs such as virgin wood pulp. Check the evidence for the grade and shipment.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Related Articles</h2><ul><li><a href="/blog/agricultural-fiber-folding-boxboard-buyer-checklist">Folding Boxboard with Straw Fiber: What Does the Percentage Tell You?</a> - A recent model puts agricultural-residue pulp in the middle layer of a folding boxboard. Here is what to ask before you qualify a grade or compare a quote.</li><li><a href="/blog/eu-ppwr-epr-one-tonne-authorised-representative-update">Under 1 Tonne of Packaging? The EU EPR Relief Many Exporters Cannot Use</a> - A new Council position mentions a one-tonne threshold, but it is not a general EPR exemption and it does not give every non-EU exporter the same relief. This buyer guide separates the proposal from the obligations that remain.</li><li><a href="/blog/ppwr-epr-paper-packaging-buyer-checklist">Your Paper Pack Looks Compliant—But Who Actually Owes the EPR Fee?</a> - A paper pack can have an FSC claim and a clean specification while the commercial team still has not identified who must register, report and pay packaging EPR fees in each EU market. This checklist helps buyers close that gap before shipment.</li></ul></aside><footer><p>Written by YOUNGSUN PAPER Editorial.</p><p><a href="/blog">Browse more paper industry articles</a> · <a href="/contact">Discuss your paper requirements</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER supplies paper and paperboard from Dongguan, China. Request specifications, samples and export quotations from our paper team.</p><p><a href="/contact">Request a quotation</a> · <a href="/products">Browse all paper products</a> · <a href="/blog">Paper industry blog</a> · <a href="/quality">Quality assurance</a> · <a href="/resources">Buyer resources</a> · <a href="/faq">FAQ</a> · <a href="/how-to-order">How to order</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

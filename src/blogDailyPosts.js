@@ -8,8 +8,10 @@ import { coatingArticle20261103 } from "./blogCoating20261103.js";
 import { corrugatedArticle20261104 } from "./blogCorrugated20261104.js";
 import { heatSealMailerArticle20261109 } from "./blogHeatSealMailer20261109.js";
 import { residueFiberArticle20261111 } from "./blogResidueFiber20261111.js";
+import { eudrCartonsArticle20261113 } from "./blogEudrCartons20261113.js";
 
 export const dailyBlogPosts = [
+  eudrCartonsArticle20261113,
   residueFiberArticle20261111,
   heatSealMailerArticle20261109,
   corrugatedArticle20261104,

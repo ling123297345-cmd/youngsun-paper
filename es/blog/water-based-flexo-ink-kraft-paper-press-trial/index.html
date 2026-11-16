@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Tinta flexográfica al agua en kraft: pruebas | YOUNGSUN</title>
+    <meta name="description" content="¿Vas a cambiar la tinta flexográfica al agua en papel kraft? Evalúa color, secado, resistencia al roce, transferencia y costo por bolsa conforme." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Tinta flexográfica al agua en kraft: pruebas | YOUNGSUN" />
+    <meta property="og:description" content="¿Vas a cambiar la tinta flexográfica al agua en papel kraft? Evalúa color, secado, resistencia al roce, transferencia y costo por bolsa conforme." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/water-based-flexo-ink-kraft-paper-press-trial.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tinta flexográfica al agua en kraft: pruebas | YOUNGSUN" />
+    <meta name="twitter:description" content="¿Vas a cambiar la tinta flexográfica al agua en papel kraft? Evalúa color, secado, resistencia al roce, transferencia y costo por bolsa conforme." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/water-based-flexo-ink-kraft-paper-press-trial.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-BFEve_3m.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/water-based-flexo-ink-kraft-paper-press-trial/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/water-based-flexo-ink-kraft-paper-press-trial/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/#article","headline":"Tinta flexográfica al agua en kraft: ¿por qué no basta con igualar el color?","description":"¿Vas a cambiar la tinta flexográfica al agua en papel kraft? Evalúa color, secado, resistencia al roce, transferencia y costo por bolsa conforme.","image":"https://youngsunpaper.com/images/blog-articles/water-based-flexo-ink-kraft-paper-press-trial.webp","datePublished":"2026-11-16","dateModified":"2026-11-16","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Compras de empaques","keywords":["tinta flexográfica al agua","impresión en papel kraft","prueba en prensa flexográfica","resistencia al roce"],"inLanguage":"es","about":[{"@type":"Thing","name":"tinta flexográfica al agua"},{"@type":"Thing","name":"impresión en papel kraft"},{"@type":"Thing","name":"prueba en prensa flexográfica"},{"@type":"Thing","name":"resistencia al roce"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo aprobar una tinta flexográfica al agua con la muestra de color?","acceptedAnswer":{"@type":"Answer","text":"Sirve como primer filtro. Prueba el secado a velocidad real, la transferencia después del rebobinado, el roce y el desempeño al convertir sobre el papel previsto."}},{"@type":"Question","name":"¿Las dos tintas deben correr con el mismo pH y la misma viscosidad?","acceptedAnswer":{"@type":"Answer","text":"No necesariamente. Documenta los ajustes y respeta el rango que recomienda el proveedor de cada formulación."}},{"@type":"Question","name":"¿Un extensor sin acrílicos demuestra que el empaque kraft es reciclable?","acceptedAnswer":{"@type":"Answer","text":"No. Describe la formulación de un componente. La afirmación sobre el empaque necesita evidencia de toda la estructura y del sistema de reciclaje pertinente."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Tinta flexográfica al agua en kraft: ¿por qué no basta con igualar el color?","item":"https://youngsunpaper.com/es/blog/water-based-flexo-ink-kraft-paper-press-trial/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Compras de empaques · 2026-11-16</p><h1>Tinta flexográfica al agua en kraft: ¿por qué no basta con igualar el color?</h1><p>Una muestra de color no revela cómo se comportará la tinta a velocidad de producción. Compara las dos formulaciones sobre el mismo lote de papel kraft.</p><figure><img src="/images/blog-articles/water-based-flexo-ink-kraft-paper-press-trial.webp" alt="Papel kraft marrón con un bloque de tinta verde azulado y líneas de prueba bajo un rodillo de impresión flexográfica." width="1280" height="800" loading="eager"><figcaption>Ilustración generada con IA de una prueba de impresión flexográfica en kraft. No muestra una tinta ni un grado de papel ensayados.</figcaption></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#para-comparar-tintas-empieza-con-el-mismo-lote-de-kraft">Para comparar tintas, empieza con el mismo lote de kraft</a></li><li><a href="#revisa-la-impresion-al-rebobinar-y-despues-de-fabricar-la-bolsa">Revisa la impresión al rebobinar y después de fabricar la bolsa</a></li><li><a href="#compara-el-costo-por-bolsa-conforme">Compara el costo por bolsa conforme</a></li><li><a href="#que-enviar-al-pedir-muestras-de-papel">Qué enviar al pedir muestras de papel</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Tinta flexográfica al agua en kraft: ¿por qué no basta con igualar el color? article content"><p>Dos tintas pueden verse casi iguales en una muestra de laboratorio y comportarse distinto cuando la prensa alcanza la velocidad del pedido. Una puede marcar el reverso al rebobinar o perder color por roce durante el armado de la bolsa. Lo que debes aprobar es la combinación de tinta, papel y condiciones de producción, no solo el tono de la muestra.</p><p>El <a href="https://www.siegwerk.com/en/news-media/press-releases/details/siegwerks-unileaf-wins-sustainability-award-2026-for-research-development.html">12 de noviembre, Siegwerk anunció</a> que su extensor sin acrílicos para tintas flexográficas al agua sobre papel y cartón ganó en la categoría de Investigación y Desarrollo de los <a href="https://www.packagingeurope.com/winners-of-the-sustainability-awards-2026-announced/">Sustainability Awards</a>. La empresa reportó un menor consumo en secado durante sus primeras pruebas industriales. Ese resultado corresponde a su comparación, no es una proyección para tu prensa. El extensor es un componente de la tinta y el premio no califica por sí solo la tinta final ni el empaque.</p><h2 id="para-comparar-tintas-empieza-con-el-mismo-lote-de-kraft">Para comparar tintas, empieza con el mismo lote de kraft</h2><p>Corre la tinta habitual como referencia y prueba la candidata sobre la misma cara del mismo lote de <a href="/es/products/kraft-paper">papel kraft</a>, de preferencia en tramos cercanos de una bobina. Conserva el arte, la plancha y la especificación del anilox en la primera comparación. Guarda también una muestra sin imprimir: si cambia el tono marrón del soporte, puede cambiar el color que ves aunque uses la misma tinta. Si vas a cambiar de papel, haz una comparación aparte antes de aprobar ambos cambios juntos.</p><p>Establece condiciones de referencia y deja que impresión y el proveedor ajusten cada formulación dentro de su rango recomendado. Registra viscosidad, pH, temperatura de la tinta, velocidad y ajustes de secado. No hace falta imponer los mismos valores a dos formulaciones distintas. La <a href="https://www.siegwerk.com/en/services/consulting/flexographic-printing-guide.html">guía de problemas de impresión de Siegwerk</a> muestra que un mismo defecto puede tener varias causas. Verifica cuál es la tuya antes de cambiar la especificación del papel.</p><h2 id="revisa-la-impresion-al-rebobinar-y-despues-de-fabricar-la-bolsa">Revisa la impresión al rebobinar y después de fabricar la bolsa</h2><p>Acuerda qué se va a aceptar antes de entrar a máquina. En la prueba, incluye un área de color sólido, detalles finos y una zona impresa que vaya a doblarse o rozar. Conserva muestras del arranque y de la producción estable a la velocidad prevista.</p><ul><li><strong>En prensa:</strong> compara color, detalle y uniformidad con iluminación o medición acordadas. Después del tiempo pactado en bobina o pila, revisa tanto la cara impresa como el reverso para detectar transferencia.</li><li><strong>Después del acondicionamiento:</strong> mide la resistencia al roce y observa si se desprende tinta. Si acuerdan un método de laboratorio como <a href="https://store.astm.org/d5264-98r19.html">ASTM D5264</a>, registra carga, ciclos, material de contacto y criterio de aceptación. El método no fija una tolerancia universal para todos los empaques.</li><li><strong>En conversión:</strong> fabrica la bolsa o envoltura real. Revisa si se marca en pliegues y zonas de contacto y, cuando corresponda, si la impresión afecta el pegado. Una muestra sin rebobinar ni convertir no cubre estas etapas.</li></ul><h2 id="compara-el-costo-por-bolsa-conforme">Compara el costo por bolsa conforme</h2><p>Mantén los mismos requisitos del producto y registra la velocidad real. Si puedes medir el consumo del secador, divídelo entre los metros cuadrados impresos aceptados o las bolsas conformes de esa corrida. Incluye merma de arranque, rechazos, tiempo adicional y consumo de tinta. Un secador que registra menos energía no es un ahorro para compras si la prensa trabajó más lento o aumentó la merma. Para una afirmación ambiental sobre el empaque terminado, solicita evidencia con el alcance definido para esa estructura.</p><h2 id="que-enviar-al-pedir-muestras-de-papel">Qué enviar al pedir muestras de papel</h2><p>Indica grado y tono del papel actual, cara de impresión, gramaje, ancho de bobina, sistema de tinta, tipo de prensa y secador, velocidad habitual, cobertura del arte y uso final. Pide una muestra representativa y explica cómo la compararás con el material aprobado. Revisa nuestras <a href="/es/industries/packaging-printing">aplicaciones de empaque e impresión</a> o <a href="/es/contact?intent=quote&amp;product=kraft-paper">envía tu especificación a YOUNGSUN PAPER</a> para consultar grados y muestras disponibles. La validación de la combinación en producción corresponde al convertidor y al proveedor de tinta.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="puedo-aprobar-una-tinta-flexografica-al-agua-con-la-muestra-de-color">¿Puedo aprobar una tinta flexográfica al agua con la muestra de color?</h3><p>Sirve como primer filtro. Prueba el secado a velocidad real, la transferencia después del rebobinado, el roce y el desempeño al convertir sobre el papel previsto.</p><h3 id="las-dos-tintas-deben-correr-con-el-mismo-ph-y-la-misma-viscosidad">¿Las dos tintas deben correr con el mismo pH y la misma viscosidad?</h3><p>No necesariamente. Documenta los ajustes y respeta el rango que recomienda el proveedor de cada formulación.</p><h3 id="un-extensor-sin-acrilicos-demuestra-que-el-empaque-kraft-es-reciclable">¿Un extensor sin acrílicos demuestra que el empaque kraft es reciclable?</h3><p>No. Describe la formulación de un componente. La afirmación sobre el empaque necesita evidencia de toda la estructura y del sistema de reciclaje pertinente.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/agricultural-fiber-folding-boxboard-buyer-checklist">Cartón plegadizo con fibra de paja: ¿qué te dice el porcentaje?</a> - Un modelo reciente incorpora pulpa de residuos agrícolas en la capa central del cartón plegadizo. Esto es lo que conviene pedir antes de validar un grado o comparar ofertas.</li><li><a href="/es/blog/heat-seal-paper-mailer-buyer-approval-checklist">El sobre de papel sella. ¿Resistirá el envío?</a> - El termosellado permite fabricar sobres de papel a medida. La decisión de compra depende del sustrato, la unión real y el desempeño del paquete durante el transporte.</li><li><a href="/es/blog/linerboard-price-vs-corrugated-box-quote-buyer-checklist">Sube el kraftliner. ¿Por qué su cotización de cajas no cambia igual?</a> - Los datos recientes de EE. UU. muestran por qué el índice del kraftliner y el precio de una caja terminada no se mueven igual. Revise qué pedir en cada cotización.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

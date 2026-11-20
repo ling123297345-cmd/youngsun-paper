@@ -11,8 +11,10 @@ import { residueFiberArticle20261111 } from "./blogResidueFiber20261111.js";
 import { eudrCartonsArticle20261113 } from "./blogEudrCartons20261113.js";
 import { flexoKraftArticle20261116 } from "./blogFlexoKraft20261116.js";
 import { butterWrapArticle20261118 } from "./blogButterWrap20261118.js";
+import { magnetFreeArticle20261119 } from "./blogMagnetFree20261119.js";
 
 export const dailyBlogPosts = [
+  magnetFreeArticle20261119,
   butterWrapArticle20261118,
   flexoKraftArticle20261116,
   eudrCartonsArticle20261113,

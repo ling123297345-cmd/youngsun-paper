@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+      // Redirect legacy Spanish query URLs before the English page renders.
+      (function () {
+        var url = new URL(window.location.href);
+        if (url.searchParams.get("lang") !== "es" || /^\/es(?:\/|$)/.test(url.pathname)) return;
+        url.searchParams.delete("lang");
+        var query = url.searchParams.toString();
+        var spanishPath = url.pathname === "/" ? "/es/" : "/es" + url.pathname;
+        window.location.replace(spanishPath + (query ? "?" + query : "") + url.hash);
+      })();
+    </script>
+
+    <title>Pegado de cajas corrugadas: validar la unión | YOUNGSUN</title>
+    <meta name="description" content="Detectar adhesivo no valida la unión terminada. Define superficies, adhesivo y condiciones de producción antes de aprobar la solapa de una caja corrugada." />
+    <link rel="canonical" href="https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/" />
+
+    <!-- ===== Primary SEO Meta Tags — rendered dynamically per page ===== -->
+    <meta
+      name="keywords"
+      content="YOUNGSUN PAPER, paper trading, paper manufacturing, kraft paper, coated paper, specialty paper, sustainable paper, packaging materials, B2B paper supplier, China paper exporter, international paper trade, eco-friendly paper, paper wholesale, paper mill, cardboard, paperboard, printing paper, tissue paper, industrial paper, paper export, global paper supplier, papel, cartón, proveedor de papel, exportador de papel China, papel kraft, papel estucado, papel especial, papel sostenible, cartulina, embalaje, papel para vasos, papel antigrasa"
+    />
+    <meta name="author" content="YOUNGSUN PAPER" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large" />
+    <meta name="bingbot" content="index, follow" />
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, Pinterest) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="YOUNGSUN PAPER" />
+    <meta property="og:title" content="Pegado de cajas corrugadas: validar la unión | YOUNGSUN" />
+    <meta property="og:description" content="Detectar adhesivo no valida la unión terminada. Define superficies, adhesivo y condiciones de producción antes de aprobar la solapa de una caja corrugada." />
+    <meta property="og:url" content="https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content="https://youngsunpaper.com/images/blog-articles/corrugated-glue-flap-bond-approval.webp" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="900" />
+    <meta property="og:image:alt" content="YOUNGSUN PAPER grey board, black paper and specialty paper products" />
+
+    <!-- ===== Twitter Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pegado de cajas corrugadas: validar la unión | YOUNGSUN" />
+    <meta name="twitter:description" content="Detectar adhesivo no valida la unión terminada. Define superficies, adhesivo y condiciones de producción antes de aprobar la solapa de una caja corrugada." />
+    <meta name="twitter:image" content="https://youngsunpaper.com/images/blog-articles/corrugated-glue-flap-bond-approval.webp" />
+
+    <!-- ===== Geo Tags ===== -->
+    <meta name="geo.region" content="CN" />
+    <meta name="geo.placename" content="China" />
+
+    <!-- ===== Preconnect for Performance ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ===== PWA Manifest ===== -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ===== PWA Theme Colors ===== -->
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f2b1a" media="(prefers-color-scheme: dark)" />
+
+    <!-- ===== Apple iOS PWA Support ===== -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="YOUNGSUN PAPER" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="/apple-touch-icon.png" />
+
+    <!-- ===== Microsoft / Windows PWA ===== -->
+    <meta name="msapplication-TileColor" content="#0f2b1a" />
+    <meta name="msapplication-TileImage" content="/icon-144.png" />
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+
+    <!-- ===== Favicon (standard) ===== -->
+    <link rel="icon" type="image/png" sizes="48x48" href="/icon-48.png" />
+
+    <!-- ===== JSON-LD Structured Data (AI & Search Engine Readable) ===== -->
+
+    <!-- Analytics load only on the public website, never on localhost previews. -->
+    <script type="text/javascript">
+      (function (w, d) {
+        var publicHosts = ["youngsunpaper.com", "www.youngsunpaper.com"];
+        if (publicHosts.indexOf(w.location.hostname.toLowerCase()) === -1) return;
+        if (/^\/(?:es\/)?admin(?:\/|$)/.test(w.location.pathname)) return;
+
+        w.clarity = w.clarity || function () {
+          (w.clarity.q = w.clarity.q || []).push(arguments);
+        };
+        w.dataLayer = w.dataLayer || [];
+        w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+        w.gtag("js", new Date());
+        w.gtag("config", "G-ZE8FN6W0MQ");
+
+        var loaded = false;
+        function loadAnalytics() {
+          if (loaded) return;
+          loaded = true;
+
+          var clarityScript = d.createElement("script");
+          clarityScript.async = true;
+          clarityScript.src = "https://www.clarity.ms/tag/xihy3l4pof";
+          d.head.appendChild(clarityScript);
+
+          var gaScript = d.createElement("script");
+          gaScript.async = true;
+          gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZE8FN6W0MQ";
+          d.head.appendChild(gaScript);
+        }
+
+        function scheduleAnalytics() {
+          if ("requestIdleCallback" in w) {
+            w.requestIdleCallback(loadAnalytics, { timeout: 2500 });
+          } else {
+            w.setTimeout(loadAnalytics, 1200);
+          }
+        }
+
+        if (d.readyState === "loading") {
+          d.addEventListener("DOMContentLoaded", scheduleAnalytics, { once: true });
+        } else {
+          scheduleAnalytics();
+        }
+      })(window, document);
+    </script>
+
+    <script type="module" crossorigin src="/assets/index-ps98C_dY.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-WkwZ5CU-.js">
+    <link rel="modulepreload" crossorigin href="/assets/react-runtime-BumHILd5.js">
+    <link rel="modulepreload" crossorigin href="/assets/createLucideIcon-ChiqH5os.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-BO6mckBh.css">
+      <meta property="og:locale:alternate" content="en_US" />
+    <link rel="alternate" hreflang="en" href="https://youngsunpaper.com/blog/corrugated-box-gluing-glue-flap-bond-approval/" />
+    <link rel="alternate" hreflang="es" href="https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/" />
+    <link rel="alternate" hreflang="x-default" href="https://youngsunpaper.com/blog/corrugated-box-gluing-glue-flap-bond-approval/" />
+  
+    <script id="article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/#article","headline":"Pegado de cajas corrugadas: lo que el sensor no te dice","description":"Detectar adhesivo no valida la unión terminada. Define superficies, adhesivo y condiciones de producción antes de aprobar la solapa de una caja corrugada.","image":"https://youngsunpaper.com/images/blog-articles/corrugated-glue-flap-bond-approval.webp","datePublished":"2026-11-24","dateModified":"2026-11-24","author":{"@type":"Organization","name":"YOUNGSUN PAPER Editorial","url":"https://youngsunpaper.com/"},"publisher":{"@type":"Organization","@id":"https://youngsunpaper.com/#organization","name":"YOUNGSUN PAPER","url":"https://youngsunpaper.com","logo":{"@type":"ImageObject","url":"https://youngsunpaper.com/images/logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/"},"isPartOf":{"@type":"Blog","@id":"https://youngsunpaper.com/es/blog#blog","name":"Blog de YOUNGSUN PAPER"},"articleSection":"Empaques y conversión","keywords":["pegado de cajas corrugadas","solapa de pegado","costura lateral","liner kraft","calidad de conversión"],"inLanguage":"es","about":[{"@type":"Thing","name":"pegado de cajas corrugadas"},{"@type":"Thing","name":"solapa de pegado"},{"@type":"Thing","name":"costura lateral"},{"@type":"Thing","name":"liner kraft"},{"@type":"Thing","name":"calidad de conversión"}]}</script>
+    <script id="faq-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Un sensor de adhesivo demuestra que la unión es resistente?","acceptedAnswer":{"@type":"Answer","text":"No. Su evidencia depende de las funciones diseñadas y configuradas. La unión terminada necesita una evaluación apropiada y acordada por separado."}},{"@type":"Question","name":"¿Toda solapa debe quedar sin recubrimiento?","acceptedAnswer":{"@type":"Answer","text":"No como regla universal. Algunos sistemas se adaptan a determinadas superficies recubiertas; otros requieren cambiar el área de pegado o el adhesivo. Confirma la combinación por ensayo."}},{"@type":"Question","name":"¿Puedo aprobar la costura con una muestra pegada a mano?","acceptedAnswer":{"@type":"Answer","text":"Puede ayudar a seleccionar materiales, pero la aprobación de producción debe incluir el proceso real, muestras representativas y la secuencia de inspección y acondicionamiento acordada."}}]}</script>
+    <script id="route-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","@id":"https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://youngsunpaper.com/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://youngsunpaper.com/es/blog/"},{"@type":"ListItem","position":3,"name":"Pegado de cajas corrugadas: lo que el sensor no te dice","item":"https://youngsunpaper.com/es/blog/corrugated-box-gluing-glue-flap-bond-approval/"}]}</script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- PWA Install Prompt (iOS Safari) — hidden by default, shown via JS -->
+    <div id="pwa-install-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--forest, #0f2b1a);color:#fff;padding:14px 20px 18px;text-align:center;font-family:system-ui,-apple-system,sans-serif;" role="alert" aria-live="polite">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:10px;flex-wrap:wrap;">
+        <img src="/apple-touch-icon.png" alt="" width="32" height="32" style="border-radius:7px;" />
+        <span style="font-size:14px;font-weight:600;">Add <strong>YOUNGSUN PAPER</strong> to your home screen</span>
+      </div>
+      <div style="font-size:12px;opacity:0.75;margin-bottom:12px;">
+        Tap <span style="display:inline-block;vertical-align:middle;margin:0 2px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 8v8M8 12h8"/></svg></span> <strong>Share</strong> &rarr; <strong>Add to Home Screen</strong> 📲
+      </div>
+      <button onclick="document.getElementById('pwa-install-banner').style.display='none'" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 18px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;">Dismiss</button>
+    </div>
+
+    <div id="root"><div class="seo-prerender" style="min-height:100vh;background:#f7f6f2;color:#143622;padding:88px 24px 64px;font-family:Arial,sans-serif"><main style="max-width:1120px;margin:0 auto;line-height:1.7"><nav aria-label="Navegacion principal" style="display:flex;gap:18px;flex-wrap:wrap;margin-bottom:48px"><a href="/es/">Inicio</a> <a href="/es/products">Productos</a> <a href="/es/industries">Industrias</a> <a href="/es/materials">Materiales</a> <a href="/es/processing">Procesamiento</a> <a href="/es/blog">Blog</a> <a href="/es/about">Nosotros</a> <a href="/es/contact">Contacto</a></nav><article><header><p>Empaques y conversión · 2026-11-24</p><h1>Pegado de cajas corrugadas: lo que el sensor no te dice</h1><p>La línea puede detectar el cordón de adhesivo y aun así faltar evidencia sobre la unión terminada. Separa el control de aplicación de la aprobación del cartón, su superficie y el adhesivo.</p><figure><img src="/images/blog-articles/corrugated-glue-flap-bond-approval.webp" alt="Desarrollo corrugado parcialmente plegado con paneles verde petróleo, solapa kraft, cordón de adhesivo y boquilla" width="1280" height="800" loading="eager"><figcaption>Ilustración genérica generada con IA; no representa una máquina específica, un ajuste de producción ni un resultado de ensayo.</figcaption></figure></header><nav aria-label="Contenido"><h2>En esta guía</h2><ol><li><a href="#identifica-las-dos-superficies-que-se-van-a-unir">Identifica las dos superficies que se van a unir</a></li><li><a href="#pregunta-que-comprueba-realmente-el-sistema">Pregunta qué comprueba realmente el sistema</a></li><li><a href="#una-comparacion-que-ayude-a-encontrar-la-causa">Una comparación que ayude a encontrar la causa</a></li><li><a href="#revisa-la-union-no-solamente-el-cordon">Revisa la unión, no solamente el cordón</a></li><li><a href="#aprueba-una-revision-identificable">Aprueba una revisión identificable</a></li><li><a href="#incluye-la-zona-de-pegado-en-la-solicitud-de-cotizacion">Incluye la zona de pegado en la solicitud de cotización</a></li><li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li></ol></nav><section aria-label="Pegado de cajas corrugadas: lo que el sensor no te dice article content"><p><strong>Detectar un cordón de adhesivo no demuestra por sí solo la resistencia o durabilidad de la unión terminada.</strong> En la costura lateral de una caja corrugada deben aprobarse juntas las superficies, el adhesivo y las condiciones de producción. El ajuste de la máquina y una línea de pegamento bien presentada no resuelven toda la evaluación.</p><p>El tema tiene un punto de partida reciente: <a href="https://www.bobst.com/oce/en/news/the-new-masterfold-redefining-corrugated-folder-gluing">BOBST publicó el 24 de noviembre de 2026</a> información de su nueva gama MASTERFOLD para plegado y pegado de corrugado, con preparación conectada, posicionamiento automático y opciones de control y rechazo. Son herramientas de producción, no resultados de ensayo de una combinación de materiales aún no probada. La noticia tampoco significa que YOUNGSUN PAPER opere ese equipo.</p><p>Aquí tratamos la unión lateral del fabricante, donde una solapa se pega sobre otro panel. No es una especificación del adhesivo entre liner y onda, ni del pegamento para cerrar las tapas de una caja ya llena. Aclara esa diferencia al solicitar asesoría.</p><h2 id="identifica-las-dos-superficies-que-se-van-a-unir">Identifica las dos superficies que se van a unir</h2><p>Marca en el plano el recorrido del adhesivo y el área que tocará al plegarse. Anota qué hay realmente en <strong>cada cara</strong>: liner expuesto, impresión, recubrimiento, barniz o laminado. Entrega al convertidor un desarrollo impreso terminado, no únicamente una muestra de cartón sin imprimir. Un cambio de arte que extienda el acabado hacia la unión modifica lo que se está aprobando.</p><p>Puede reservarse una zona sin recubrimiento cuando sea adecuado, pero no es una exigencia universal para cualquier adhesivo. La <a href="https://d3files.jowat-cloud.com/additional-data-sheets-v2/151/Product_Information/P014148611-c9c7_englisch.PDF">información de Jowat sobre pegado de cajas</a> distingue aplicaciones sobre superficies recubiertas o barnizadas y pide ensayos en condiciones normales de proceso. Consulta la ficha técnica vigente del adhesivo elegido y valida la pareja concreta de superficies.</p><p>Registra construcción del corrugado, referencias de liners, onda, espesor, medidas, hendidos y tolerancias acordadas. Al conversar sobre <a href="/es/products/kraft-paper">opciones de papel kraft</a>, especifica el uso como liner y la construcción posterior. La referencia del papel no sustituye la especificación del cartón corrugado terminado.</p><h2 id="pregunta-que-comprueba-realmente-el-sistema">Pregunta qué comprueba realmente el sistema</h2><p><a href="https://www.baumerhhs.com/applications/corrugated">Baumer hhs describe soluciones para corrugado</a> que monitorean trazos de adhesivo, separaciones del desarrollo plegado y otras desviaciones. Son tareas concretas. Pregunta al convertidor qué funciones tiene instaladas, qué mide, cómo fija la referencia y cómo maneja los productos rechazados.</p><p>Para compras, la conclusión es conservar por separado la evidencia del monitoreo y la evaluación de la unión. Detectar adhesivo no comprueba automáticamente el comportamiento después del fraguado, almacenamiento o manipulación. Tampoco una muestra aprobada demuestra que todos los desarrollos posteriores recibieron el patrón correcto. Se necesitan control del proceso y revisiones representativas del producto.</p><h2 id="una-comparacion-que-ayude-a-encontrar-la-causa">Una comparación que ayude a encontrar la causa</h2><p>Usa la construcción actual aprobada como referencia. Compara la propuesta bajo condiciones de producción documentadas, con participación del convertidor y el proveedor de adhesivo. Si cambian a la vez liner, acabado y pegamento, identifica ese cambio conjunto; no atribuyas todo el resultado al papel.</p><p>Registra referencia y lote del adhesivo, método de aplicación, posición del trazo y cantidad o medida acordada, velocidad, tiempo hasta el contacto, compresión y momento de inspección. Incluye acondicionamiento del material y parámetros de preparación u operación cuando correspondan. Esta guía no fija temperatura, viscosidad, presión o velocidad universales: deben proceder de las instrucciones vigentes y del proceso validado.</p><p>Toma muestras identificadas al arrancar, durante marcha estable y después de un paro y reinicio representativos. Conserva ajustes y rechazos. Una probeta pegada a mano puede servir para descartar incompatibilidades iniciales, pero no reproduce todas las condiciones de una plegadora-pegadora en movimiento.</p><h2 id="revisa-la-union-no-solamente-el-cordon">Revisa la unión, no solamente el cordón</h2><p>Acuerda cantidad de muestras, tiempo de inspección, acondicionamiento, método y límites antes del ensayo. Esta tabla es una propuesta de investigación, no una norma ni un diagnóstico de una máquina determinada.</p><table><thead><tr><th scope="col">Observación</th><th scope="col">Qué conviene revisar</th></tr></thead><tbody><tr><td>Hay adhesivo detectado, pero la costura se abre</td><td>Superficies, traslape, tiempos y compresión frente al ajuste aprobado; evaluar tras el fraguado acordado</td></tr><tr><td>La costura queda torcida o cambia la separación</td><td>Medidas, hendidos, alineación del plegado y traslape real antes de cambiar pegamento</td></tr><tr><td>Se desprende papel o una capa superficial</td><td>Identificar la capa que falló y distinguirla de la separación del adhesivo</td></tr><tr><td>Las muestras iniciales cambian al almacenarse</td><td>Repetir la secuencia acordada de acondicionamiento e inspección con referencia y propuesta</td></tr><tr><td>Los defectos aparecen sobre todo al reiniciar</td><td>Comparar material, aplicación y registros del arranque con la marcha estable</td></tr></tbody></table><p>Si el método acordado incluye abrir la unión, registra dónde se produce la separación y conserva fotos e identificación. El desgarro de fibra puede ser una observación, pero no corresponde inventar un porcentaje universal ni convertirlo en el único criterio. El convertidor o un laboratorio competente debe seleccionar la evaluación apropiada para el diseño y el uso.</p><h2 id="aprueba-una-revision-identificable">Aprueba una revisión identificable</h2><p>Vincula la muestra aceptada con revisión de plano, lote de cartón, acabado, adhesivo y condiciones de línea. Una sustitución posterior requiere revisión documentada. Si necesitas validar protección durante transporte, evalúa aparte el producto con su embalaje completo; una muestra de costura lateral no representa todo el envío.</p><p>Para importar a México, Colombia o Chile, comunica almacenamiento y distribución reales. Compara costo por caja conforme, incluyendo preparación, merma, rechazos, inspección y retrabajo, además del precio del material. No heredes automáticamente el perfil de ensayo de otra ruta logística.</p><h2 id="incluye-la-zona-de-pegado-en-la-solicitud-de-cotizacion">Incluye la zona de pegado en la solicitud de cotización</h2><p>Envía plano, fotos de ambas caras del traslape, construcción del corrugado, impresión y acabado, adhesivo si se conoce, equipo previsto y muestra del fallo cuando exista. Aclara si solicitas papel base, cartón convertido o caja terminada. Consulta las <a href="/es/industries/packaging-printing">aplicaciones de empaque e impresión</a> o <a href="/es/contact?intent=quote&amp;product=kraft-paper">envía la especificación del papel a YOUNGSUN PAPER</a>. Podemos revisar papeles candidatos y documentación disponible; la aprobación del proceso de unión corresponde al convertidor y al proveedor de adhesivo.</p><h2 id="preguntas-frecuentes">Preguntas frecuentes</h2><h3 id="un-sensor-de-adhesivo-demuestra-que-la-union-es-resistente">¿Un sensor de adhesivo demuestra que la unión es resistente?</h3><p>No. Su evidencia depende de las funciones diseñadas y configuradas. La unión terminada necesita una evaluación apropiada y acordada por separado.</p><h3 id="toda-solapa-debe-quedar-sin-recubrimiento">¿Toda solapa debe quedar sin recubrimiento?</h3><p>No como regla universal. Algunos sistemas se adaptan a determinadas superficies recubiertas; otros requieren cambiar el área de pegado o el adhesivo. Confirma la combinación por ensayo.</p><h3 id="puedo-aprobar-la-costura-con-una-muestra-pegada-a-mano">¿Puedo aprobar la costura con una muestra pegada a mano?</h3><p>Puede ayudar a seleccionar materiales, pero la aprobación de producción debe incluir el proceso real, muestras representativas y la secuencia de inspección y acondicionamiento acordada.</p></section><aside aria-labelledby="related-guides-heading"><h2 id="related-guides-heading">Artículos relacionados</h2><ul><li><a href="/es/blog/wash-off-paper-labels-returnable-glass-bottle-trial">Etiquetas de papel wash-off: la prueba antes de volver a llenar</a> - La etiqueta debe permanecer en la botella durante el uso y desprenderse al llegar al lavado. Aprueba ambas etapas con el envase real, no solo con una muestra de papel.</li><li><a href="/es/blog/magnet-free-rigid-boxes-paper-closure-approval">Cajas rígidas sin imanes: el detalle que decide si el cierre funciona</a> - La caja puede lucir impecable abierta y fallar justo al cerrarse. Para sustituir los imanes, aprueba la estructura de papel con el producto dentro, no solo una muestra vacía.</li><li><a href="/es/blog/paper-butter-wrap-greaseproof-vs-barrier-validation">Papel para envolver mantequilla: ¿por qué no basta con resistir la grasa?</a> - Que el papel no se manche de grasa no demuestra que conserve la mantequilla. La aprobación empieza por el empaque terminado, sus pliegues y la ruta real de distribución.</li></ul></aside><footer><p>Escrito por YOUNGSUN PAPER Editorial.</p><p><a href="/es/blog">Ver más artículos</a> · <a href="/es/contact">Consultar sus requisitos de papel</a></p></footer></article><footer style="margin-top:56px;padding-top:24px;border-top:1px solid #d7ddd8"><p>YOUNGSUN PAPER fabrica y suministra papel y cartón desde Dongguan, China. Solicite especificaciones, muestras y cotizaciones de exportación a nuestro equipo.</p><p><a href="/es/contact">Solicitar cotización</a> · <a href="/es/products">Ver todos los productos</a> · <a href="/es/blog">Blog</a> · <a href="/es/quality">Control de calidad</a> · <a href="/es/resources">Recursos para compradores</a> · <a href="/es/faq">Preguntas frecuentes</a> · <a href="/es/how-to-order">Cómo comprar</a></p></footer></main></div></div>
+    <script>
+      (function() {
+        var p = sessionStorage.getItem("redirectPath");
+        sessionStorage.removeItem("redirectPath");
+        if (p && p !== "/" && p !== location.pathname) {
+          history.replaceState(null, "", p + location.search + location.hash);
+        }
+      })();
+
+      // ── PWA: Show install banner for iOS Safari ─────────
+      (function() {
+        if (window.matchMedia("(display-mode: standalone)").matches) return;
+
+        var isIOS = /iphone|ipad|ipod/.test(navigator.userAgent.toLowerCase());
+        var isSafari = /safari/.test(navigator.userAgent.toLowerCase()) && !/crios|fxios/.test(navigator.userAgent.toLowerCase());
+        var dismissed = sessionStorage.getItem("pwa-banner-dismissed");
+
+        if (isIOS && isSafari && !dismissed) {
+          setTimeout(function() {
+            var banner = document.getElementById("pwa-install-banner");
+            if (banner) {
+              banner.style.display = "block";
+              // Animate in
+              requestAnimationFrame(function() {
+                banner.style.transition = "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1)";
+                banner.style.transform = "translateY(0)";
+              });
+            }
+          }, 2000);
+        }
+
+        // Store dismiss state
+        var banner = document.getElementById("pwa-install-banner");
+        if (banner) {
+          banner.style.transform = "translateY(100%)";
+          var dismissBtn = banner.querySelector("button");
+          if (dismissBtn) {
+            dismissBtn.addEventListener("click", function() {
+              sessionStorage.setItem("pwa-banner-dismissed", "1");
+            });
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

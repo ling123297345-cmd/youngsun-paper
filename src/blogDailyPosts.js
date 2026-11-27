@@ -16,8 +16,10 @@ import { washoffArticle20261123 } from "./blogWashoff20261123.js";
 import { glueFlapArticle20261124 } from "./blogGlueFlap20261124.js";
 import { yogurtArticle20261125 } from "./blogYogurt20261125.js";
 import { voidFillArticle20261126 } from "./blogVoidFill20261126.js";
+import { traceabilityArticle20261127 } from "./blogTraceability20261127.js";
 
 export const dailyBlogPosts = [
+  traceabilityArticle20261127,
   voidFillArticle20261126,
   yogurtArticle20261125,
   glueFlapArticle20261124,

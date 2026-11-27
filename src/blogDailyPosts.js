@@ -15,8 +15,10 @@ import { magnetFreeArticle20261119 } from "./blogMagnetFree20261119.js";
 import { washoffArticle20261123 } from "./blogWashoff20261123.js";
 import { glueFlapArticle20261124 } from "./blogGlueFlap20261124.js";
 import { yogurtArticle20261125 } from "./blogYogurt20261125.js";
+import { voidFillArticle20261126 } from "./blogVoidFill20261126.js";
 
 export const dailyBlogPosts = [
+  voidFillArticle20261126,
   yogurtArticle20261125,
   glueFlapArticle20261124,
   washoffArticle20261123,
